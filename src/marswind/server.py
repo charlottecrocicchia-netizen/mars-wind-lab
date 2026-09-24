@@ -5,13 +5,15 @@ import numpy as np
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.responses import FileResponse, Response, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.gzip import GZipMiddleware
 from pydantic import BaseModel, Field, model_validator
 from typing import Annotated, Literal
 from . import analysis
 from .mcd import ROOT, installation
 from .export import dataset, csv_bytes, png_bytes, LABELS
 
-app=FastAPI(title='Mars Wind Lab',version='0.2.0')
+app=FastAPI(title='Mars Wind Lab',version='0.3.0')
+app.add_middleware(GZipMiddleware,minimum_size=1000)
 app.mount('/assets',StaticFiles(directory=ROOT/'web'),name='assets')
 
 class Parameters(BaseModel):
@@ -126,3 +128,25 @@ def note(p:Annotated[ExperimentParameters,Query()]):
         raise HTTPException(status_code=422,detail=str(exc)) from exc
     return Response(study_note(result,p.question),media_type='text/markdown; charset=utf-8',
                     headers={'Content-Disposition':'attachment; filename="marswind-study.md"'})
+
+
+class MotionParameters(Parameters):
+    axis:Literal['season','altitude']='season'
+    fps:int=Field(2,ge=1,le=4)
+    @model_validator(mode='after')
+    def playback_rate(self):
+        if self.fps not in (1,2,4):
+            raise ValueError('Playback must be 1, 2 or 4 frames per second.')
+        return self
+
+@app.get('/api/sequence')
+def sequence(p:Annotated[MotionParameters,Query()]):
+    from .motion import sequence_product
+    return clean(sequence_product(axis=p.axis,field=p.field,altitude=p.altitude,**options(p)))
+
+@app.get('/api/movie')
+def movie(p:Annotated[MotionParameters,Query()]):
+    from .motion import sequence_product,movie_bytes
+    sequence=sequence_product(axis=p.axis,field=p.field,altitude=p.altitude,**options(p))
+    return Response(movie_bytes(sequence,p.fps),media_type='video/mp4',
+        headers={'Content-Disposition':f'attachment; filename="marswind_{p.axis}_{p.field}.mp4"'})

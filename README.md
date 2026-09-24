@@ -14,7 +14,7 @@ Mars Wind Lab is part of my broader personal interest in **Mars and its hemisphe
 
 ## What can you use it for?
 
-The starting screen offers three guided experiments. Each gives a numerical conclusion, an explained plot, the calculation parameters, and a useful next step.
+The opening atlas provides direct altitude and season sliders, seasonal/altitude playback and labelled MP4 downloads. The guided-experiments view offers three controlled comparisons. Each gives a numerical conclusion, an explained plot, the calculation parameters, and a useful next step.
 
 | Question | Controlled comparison | Physical use |
 |---|---|---|
@@ -46,7 +46,7 @@ python -m pytest -q
 python -m uvicorn marswind.server:app --app-dir src --host 127.0.0.1 --port 8765
 ```
 
-Open **http://127.0.0.1:8765**. An initial experiment runs automatically. Choose a question, change a parameter and click **Run experiment**. **Study note** downloads the explained result with parameters, limitations and provenance.
+Open **http://127.0.0.1:8765**. The wind atlas opens first. Drag **Altitude** or **Season** to update the map, or press **Play** for a complete sweep. Open **Guided experiments** to choose a physical question and click **Run experiment**. **Study note** downloads the explained result with parameters, limitations and provenance.
 
 On an already configured Mac, double-click `Launch Mars Wind.command` to restart the local server. The application needs no cloud service or user account. Publishing this code on GitHub does not publish your local server.
 
@@ -82,7 +82,7 @@ Useful contributions include analytic cases, physical conventions, independent v
 |---|---|
 | `native/` | Fortran adapter to CALL_MCD; no redistributed MCD source |
 | `src/marswind/` | Sampling, physics, experiments, exports and local API |
-| `web/` | English interface, with a local copy of Plotly |
+| `web/` | English interface, local Mars backdrop, timeline player and Plotly |
 | `tests/` | Analytic solutions, edge cases and optional MCD integration |
 | `scripts/` | Compilation and figure reproduction |
 | `docs/` | Usage, method, validation and research directions |
@@ -98,5 +98,7 @@ Atmospheric data come from the **Mars Climate Database**, developed by LMD / IPS
 - [MCD documentation and requested references](https://www-mars.lmd.jussieu.fr/mars/info_web/index.html), including Forget et al. (1999), Millour et al. (2018), and references for the processes studied.
 - [Ortiz et al. (2022), *Autocorrelation Infrasound Interferometry on Mars*](https://doi.org/10.1029/2021GL096225), for the Martian acoustics and wind context.
 - [InSight TWINS / PDS](https://atmos.nmsu.edu/data_and_services/atmospheres_data/INSIGHT/retrieving_insight.html) and [SEIS](https://www.seis-insight.eu/en/59-scientifique), potential observational validation sources, not yet integrated here.
+
+The decorative Mars backdrop is a Viking mosaic credited to NASA/JPL-Caltech; see [visual asset credits](docs/ASSETS.md). It is separate from the numerical maps.
 
 Original application code is provided under the [MIT licence](LICENSE). Plotly.js retains its [own MIT notice](web/PLOTLY-LICENSE.txt). Neither licence applies to external MCD data, MCD software or internship archives.

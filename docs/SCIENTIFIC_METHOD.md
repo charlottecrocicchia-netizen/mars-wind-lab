@@ -55,3 +55,11 @@ Reconstruct the original solver conventions, frequency catalogue, radial model a
 The [MCD documentation](https://www-mars.lmd.jussieu.fr/mars/info_web/index.html) describes the source model and requested references. [Ortiz et al. (2022)](https://doi.org/10.1029/2021GL096225) provides the Martian wind/acoustic context. The density-scale comparison is an additional local diagnostic implemented here.
 
 Next steps include physically motivated boundaries, gravity and frequency-dependent losses, verified global mode conventions, multiple dust/EUV scenarios, and independent TWINS/SEIS comparisons with instrument responses and quality flags. No SEIS inversion, energy partition or observationally validated arrival prediction is provided in this version.
+
+## Animation semantics
+
+A seasonal sequence varies only solar longitude; an altitude sequence varies only geometric height. All other atmospheric query parameters are held fixed. Every frame is independently sampled through the same official MCD adapter as a standalone map. No interpolation is added between frames. A seasonal sequence has 24 frames at 15° intervals; an altitude sequence has 20 frames at 10 km intervals.
+
+One colour range is computed over all finite values of the selected field across the entire sequence. Signed fields use symmetric bounds; nonnegative speed/shear fields start at zero. Missing values remain missing. This prevents independent frame scaling from creating apparent variability. The 5° spatial sampling and MCD interpolation limits still apply.
+
+Playback speed is chosen for presentation. Solar longitude is an orbital angle, not a uniform time coordinate; advancing in altitude is a spatial sweep. Neither animation is a parcel trajectory or a forecast. MP4 renders the same sampled fields and shared scale on a flat map with explicit metadata.

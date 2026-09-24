@@ -25,3 +25,6 @@ repository. External MCD software, MCD datasets and internship archives are
 not distributed here and retain their own terms. Model-derived figures and
 outputs remain subject to the applicable MCD data terms. The bundled Plotly.js file
 retains the notice in web/PLOTLY-LICENSE.txt.
+
+The NASA/JPL-Caltech Mars mosaic in web/images/ retains its source terms;
+see docs/ASSETS.md for credit and source.

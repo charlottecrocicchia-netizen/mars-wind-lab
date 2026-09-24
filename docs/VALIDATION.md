@@ -4,7 +4,7 @@ Locally checked with Python 3.14, gfortran 15.1 and MCD 6.1 on macOS. Exact Pyth
 
 ## Numerical checks
 
-Run `python -m pytest -q`. The current suite contains 24 cases: 17 checks independent of external scientific data and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
+Run `python -m pytest -q`. The current suite contains 28 cases: 21 checks independent of external scientific data and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
 
 - Sound speed, invalid thermodynamic states and four cardinal projections.
 - Known shear on a nonuniform geometric grid and SI conversion.
@@ -37,3 +37,9 @@ Plotly is served locally; its cloud-share button is removed. Study notes and plo
 The reduced-model default case has a grid-frequency difference below 0.1% between 101 and 201 samples for its six modes. This checks discretization sensitivity within that formulation, not boundary conditions or the full propagation model.
 
 There is no TWINS validation, SEIS inversion, complete GSH coupling matrix or recalculation of the original global modes yet. See [Scientific method](SCIENTIFIC_METHOD.md) for interpretation and [Research directions](ROADMAP.md) for proposed development.
+
+## Animation and video checks
+
+A controlled synthetic sampler checks that seasonal sequences preserve altitude, hour and azimuth, while altitude sequences preserve season and hour. Tests check shared colour limits across all frames, signed symmetry and retention of missing samples. API tests reject unsupported sweep axes, heights and playback rates. A generated H.264 MP4 is decoded to verify its 1280×720 dimensions, chosen frame rate and complete 20-frame count.
+
+Local browser checks cover automatic altitude updates, northern-season shortcuts, seasonal playback, a 20-frame altitude sweep, pause/scrub, field changes that invalidate a prepared sequence, MP4 download, and a guided experiment at Ls 123° over 80–180 km. A real MCD seasonal movie at 80 km was decoded as 24 frames at 2 fps (12 seconds, 1280×720). The dark interface was visually inspected in the desktop app browser.

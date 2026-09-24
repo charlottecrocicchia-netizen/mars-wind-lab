@@ -1,13 +1,15 @@
 """Portable, labelled model outputs and static scientific figures."""
 import io
 import json
+import threading
 import numpy as np
 import xarray as xr
 from .mcd import UNITS
 UNITS={**UNITS,'speed':'m s-1','sound_speed':'m s-1','along_wind':'m s-1','effective_speed':'m s-1','shear':'m s-1 km-1'}
+PLOT_LOCK=threading.Lock()
 LABELS={'speed':'Horizontal speed','u':'Zonal wind (eastward)','v':'Meridional wind (northward)',
         'w':'Vertical wind (upward)','temperature':'Temperature','effective_speed':'Effective sound speed',
-        'shear':'Vertical shear horizontal','sound_speed':'Vitesse du son'}
+        'shear':'Vertical shear of horizontal wind','sound_speed':'Sound speed'}
 
 
 def dataset(product):
@@ -31,6 +33,11 @@ def csv_bytes(product):
 
 
 def png_bytes(product,field='speed'):
+    with PLOT_LOCK:
+        return _png_bytes(product,field)
+
+
+def _png_bytes(product,field='speed'):
     import matplotlib
     matplotlib.use('Agg')
     from matplotlib import pyplot as plt
