@@ -12,7 +12,7 @@ from . import analysis
 from .mcd import ROOT, installation
 from .export import dataset, csv_bytes, png_bytes, LABELS
 
-app=FastAPI(title='Mars Wind Lab',version='0.4.0')
+app=FastAPI(title='Mars Wind Lab',version='0.5.0')
 app.add_middleware(GZipMiddleware,minimum_size=1000)
 app.mount('/assets',StaticFiles(directory=ROOT/'web'),name='assets')
 app.mount('/research/files',StaticFiles(directory=ROOT/'research'),name='research-files')
@@ -67,7 +67,22 @@ async def model_error(request,exc):
     return JSONResponse(status_code=503,content={'detail':str(exc)})
 
 @app.get('/')
-def index():return FileResponse(ROOT/'web/index.html')
+def index():return FileResponse(ROOT/'web/home.html')
+
+@app.get('/atmosphere')
+def atmosphere_index():return FileResponse(ROOT/'web/index.html')
+
+@app.get('/research/hypotheses')
+def ideas_index():return FileResponse(ROOT/'web/ideas.html')
+
+@app.get('/research/data')
+def observations_index():return FileResponse(ROOT/'web/data.html')
+
+@app.get('/research/tests')
+def tests_index():return FileResponse(ROOT/'web/tests.html')
+
+@app.get('/research/library')
+def library_index():return FileResponse(ROOT/'web/library.html')
 
 @app.get('/research')
 def research_index():return FileResponse(ROOT/'web/research.html')

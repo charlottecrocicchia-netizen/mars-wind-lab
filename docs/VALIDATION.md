@@ -4,7 +4,7 @@ Locally checked with Python 3.14, gfortran 15.1 and MCD 6.1 on macOS. Exact Pyth
 
 ## Numerical checks
 
-Run `python -m pytest -q`. The current suite contains 34 cases: 27 checks independent of external scientific data and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
+Run `python -m pytest -q`. The current suite contains 40 cases: 33 checks that run without MCD or raw scientific downloads and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
 
 - Sound speed, invalid thermodynamic states and four cardinal projections.
 - Known shear on a nonuniform geometric grid and SI conversion.
@@ -49,3 +49,9 @@ Local browser checks cover automatic altitude updates, northern-season shortcuts
 Sequence streaming is checked for every progress event, completion payload, preserved masked cells and explicit failure reporting. The MP4 test decodes the encoded movie and verifies dimensions, rate and frame count. Local browser checks exercised direct numeric altitude entry, preparation feedback, seasonal playback, pause and the inline MP4 player.
 
 The literature checks cover DOI uniqueness, source-reading counts, core annotations, correction linkage, export record counts, exclusion of private abstracts and references between the local reading pages. These are catalog-integrity checks, **not validation of the scientific conclusions of the papers**. The research interface can load without a working MCD installation.
+
+## Observation diagnostics
+
+The observation tests verify an analytic axial dipole and its radial decay, spherical weighting against an analytic integral, local-surface temperature interpolation with no extrapolation, missing/negative source-depth handling, product integrity and pages available without MCD. The completed scientific calculations are documented separately in [First results](../research/FIRST_RESULTS.md); unit tests do not validate their planetary interpretation.
+
+The revised workspace was checked in the local browser: persistent navigation, map-layer and altitude/density switches, crater selection, meteorite search, specimen switching, expandable test methods, bibliography search and browser Back within atmospheric views. Seasonal playback prepared 24 frames and advanced while preserving the shared color scale.

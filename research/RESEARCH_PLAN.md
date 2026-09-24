@@ -8,7 +8,7 @@ These are proposed investigations, not results already computed. They prioritize
 
 **Question.** How much of the magnetic contrast remains after accounting for geological province, resurfacing, altitude and spatial bandwidth?
 
-Acquire MOLA, a global crustal-field model, a crustal-thickness ensemble and geological units. Compare geological highlands/lowlands using several published boundary definitions, not only the equator. Evaluate magnetic models at a common altitude and bandwidth. Mask large basins and young volcanic provinces in separate sensitivity runs. Weight by spherical area, and use spatial blocks for uncertainty rather than treating every map pixel as independent.
+**Initial execution:** these four products have been acquired; common-altitude, boundary and density-sensitivity results are in [First diagnostics](FIRST_RESULTS.md). Further work: Compare geological highlands/lowlands using several published boundary definitions, not only the equator. Evaluate magnetic models at a common altitude and bandwidth. Mask large basins and young volcanic provinces in separate sensitivity runs. Weight by spherical area, and use spatial blocks for uncertainty rather than treating every map pixel as independent.
 
 **Deliverable.** Maps of coverage and residual contrast, distributions by geological unit, and an uncertainty table across boundary/model choices. A contrast that disappears under plausible masks is less diagnostic than one that persists. Neither outcome alone identifies a dynamo geometry.
 

@@ -57,7 +57,7 @@ class Links(HTMLParser):
 
 def test_reading_pages_keep_internal_links_navigable():
     client=TestClient(server.app)
-    files=[ROOT/'web/research.html',*sorted((ROOT/'web/reading').glob('*.html'))]
+    files=[*(ROOT/f'web/{name}.html' for name in ['research','home','ideas','data','tests','library']),*sorted((ROOT/'web/reading').glob('*.html'))]
     assert len(files)>5
     visited=set()
     for path in files:

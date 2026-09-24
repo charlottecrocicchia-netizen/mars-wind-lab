@@ -102,8 +102,9 @@ $('time_mode').addEventListener('change',()=>$('status').textContent='Time conve
 $('apply').onclick=guarded(()=>refresh());$('field').onchange=()=>{state.field=$('field').value;drawMap();};$('vectors').onchange=drawMap;
 $('flatBtn').onclick=()=>{projection='flat';$('flatBtn').classList.add('selected');$('globeBtn').classList.remove('selected');drawMap();};$('globeBtn').onclick=()=>{projection='globe';$('globeBtn').classList.add('selected');$('flatBtn').classList.remove('selected');drawMap();};
 $('setProbe').onclick=guarded(()=>setProbe(+$('probeLon').value,+$('probeLat').value));$('resetProbe').onclick=guarded(()=>setProbe(135.623,4.502));$('compareBtn').onclick=guarded(compare);$('modesBtn').onclick=guarded(modes);
-async function navigateTo(name){
+async function navigateTo(name,record=true){
  if(!titles[name])return;
+ if(record&&location.hash!=='#'+name)history.pushState(null,'','#'+name);
  if(currentTab==='atlas'&&name!=='atlas'&&typeof pauseMotion==='function')await pauseMotion(true);
  currentTab=name;document.body.dataset.view=name;
  document.querySelectorAll('.nav').forEach(x=>x.classList.toggle('active',x.dataset.tab===name));
@@ -127,4 +128,5 @@ $('goToJet').onclick=guarded(async()=>{
 });
 $('exportToggle').onclick=()=>{$('exportMenu').hidden=!$('exportMenu').hidden;document.querySelectorAll('[data-format]').forEach(a=>a.href='/api/export?'+new URLSearchParams({...state,format:a.dataset.format}));};document.addEventListener('click',e=>{if(!e.target.closest('.header-right'))$('exportMenu').hidden=true;});
 let resize;window.addEventListener('resize',()=>{clearTimeout(resize);resize=setTimeout(drawMap,120);});
-(async()=>{try{await api('health');$('engine').textContent='MCD engine ready';await refresh();}catch(e){$('engine').textContent='Engine needs configuration';fail(e);}})();
+window.addEventListener('popstate',guarded(()=>navigateTo(location.hash.slice(1)||'atlas',false)));
+(async()=>{try{await api('health');$('engine').textContent='MCD engine ready';await refresh();if(location.hash)await navigateTo(location.hash.slice(1),false);}catch(e){$('engine').textContent='Engine needs configuration';fail(e);}})();

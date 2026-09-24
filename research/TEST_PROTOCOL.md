@@ -2,7 +2,7 @@
 
 **Proposed analysis specification · 24 September 2026 · Not externally preregistered.**
 
-Companion to the [working hypothesis](HYPOTHESES.md). The target is a falsifiable consistency test, not a vote among papers. No empirical model comparison has been run.
+Companion to the [working hypothesis](HYPOTHESES.md). The target is a falsifiable consistency test, not a vote among papers. The [first observational diagnostics](FIRST_RESULTS.md) have been executed; the joint acquisition/survival model comparison below remains a proposed study.
 
 ## Question and estimand
 
@@ -21,7 +21,7 @@ Primary output: a set of feasible histories and recording-depth/time windows, wi
 | [Berne et al., 2026](https://doi.org/10.1038/s41586-026-10893-x) time-variable gravity | Present interior endpoint, including composition/melt alternatives | Do not impose its inferred temperature contrast as a directly observed ancient crust temperature; check shared gravity/systematic errors |
 | Meteorite mineralogy, event ages and preservation tests in the [sample dossier](METEORITES.md) | Carrier alternatives and local chronological constraints | Unknown depth/provenance; paired specimens and common source terrains require grouping |
 
-These are identified sources, not a completed acquisition manifest. Before analysis record product version, download URL, access date, checksum, units, frame, latitude convention, reference radius, harmonic normalization, uncertainty representation and permitted use. The author archives above were identified; their contents have not yet been reproduced here.
+The [acquisition manifest](data/manifest.json) now records downloaded products and checksums. [Data conventions and licenses](data/README.md) document units, frames, resolution and permitted use. Field evaluation, depth-quality screening, four crustal grids and a present-day thermal gate have been computed. Full thermal histories, covariance and the joint fit below remain outstanding.
 
 ## Freeze the spatial comparison before interpreting it
 
@@ -82,4 +82,4 @@ Abandon the recording-first baseline for the tested regions if no physically all
 - Withheld-region predictions and sensitivity to field geometry, dynamo intervals and alteration.
 - A conclusion that states which causal links are constrained and which origin triggers remain indistinguishable.
 
-**Current status: scientific design completed; acquisition, benchmark reproduction and inference not started.** This protocol is a concrete next study, not a claim that a new joint planetary model has already been validated.
+**Current status: initial acquisitions and five exploratory diagnostics completed; joint time-dependent inference not implemented.** See [completed results](FIRST_RESULTS.md). This protocol is not a claim that a new joint planetary model has been validated.

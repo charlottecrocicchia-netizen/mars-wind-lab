@@ -1,6 +1,8 @@
 # Using Mars Wind Lab
 
-Open the local application. An example above InSight is calculated on startup. These coordinates are a starting point, not an assimilation of InSight observations.
+Open the local application. The overview offers Ideas, Data, Tests, Library and Atmosphere. In **Data**, choose a map layer and a candidate crater, or use its Meteorite records, Lab magnetism and Sources views. **Tests** shows executed diagnostics with methods tucked into expandable panels.
+
+Select **Atmosphere** for the wind laboratory. An example above InSight is calculated when this section opens. These coordinates are a starting point, not an assimilation of InSight observations.
 
 ## 1. Choose a question
 
@@ -48,6 +50,6 @@ Guided experiments also have a continuous season slider and editable lower/upper
 
 ## Dichotomy research
 
-Select **Dichotomy research** in the top navigation, or open `http://127.0.0.1:8765/research`. Start with the synthesis or meteorite dossier, then use the library filters. The default collection contains 65 core records; switch to **All discovery candidates** to search the 1,980-record inventory. Reading-depth badges distinguish metadata, abstracts and selected full-text sections. A record in the catalog is not an endorsement of its conclusions.
+Select **Library** in the navigation, or open `http://127.0.0.1:8765/research/library`. Open **Reading notes** for the synthesis or meteorite dossier, then use search and the expandable filters. The default collection contains 69 core records; switch to **All discovery candidates** to search the 1,981-record inventory. Reading-depth badges distinguish metadata, abstracts and selected full-text sections. A record in the catalog is not an endorsement of its conclusions.
 
 Use **Export these results · RIS** to import the filtered bibliography into Zotero, or download the complete RIS/BibTeX/CSV files. The reading room includes missions and data, a concrete research programme, the search method and separately assessed forum leads. The research page needs no MCD installation and makes no model calls.

@@ -15,7 +15,9 @@ A research component of **Charlotte Crocicchia's personal Mars project**. This c
 - [Search method, coverage and reading status](METHOD.md)
 - [Forum leads and their scientific checks](COMMUNITY.md)
 
-Launch the existing application and open **[Dichotomy research](http://127.0.0.1:8765/research)** for the hypothesis explorer, scientific argument and searchable library. This page works without MCD; atmospheric calculations still require a separate MCD installation.
+Open the **[research workspace](http://127.0.0.1:8765/)**. Its persistent navigation separates Ideas, Data, Tests, Library and Atmosphere. The observation snapshot and reading pages work without MCD. Atmospheric calculations still require a separate MCD installation.
+
+The [first executed diagnostics](FIRST_RESULTS.md) connect orbital fields, surface geology, crustal models, thermal endpoints, candidate meteorite sources and laboratory measurements. [Download provenance](data/manifest.json) and [data conventions](data/README.md) accompany the results.
 
 ## What is in this release?
 

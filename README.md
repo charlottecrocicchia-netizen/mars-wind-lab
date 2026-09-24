@@ -16,17 +16,35 @@ Mars Wind Lab is part of my broader personal interest in **Mars and its hemisphe
 
 **Could two hemispheres record a shared ancient dynamo differently?** The [working hypothesis](research/HYPOTHESES.md) connects early crustal asymmetry to thermal evolution, magnetic acquisition and preservation. Four explicit model families separate inherited versus later recording from shared versus asymmetric ancient fields. Each states a requirement and a possible failure.
 
-The proposed first study tests which source-depth and recording-time windows remain compatible with crustal, thermal and meteorite constraints. Its [analysis protocol](research/TEST_PROTOCOL.md) defines dependencies, physical gates and rejection rules. This is a research design grounded in published work; no joint fit or new origin mechanism is claimed. The local site presents the argument before the bibliography.
+The proposed first study tests which source-depth and recording-time windows remain compatible with crustal, thermal and meteorite constraints. Its [analysis protocol](research/TEST_PROTOCOL.md) defines dependencies, physical gates and rejection rules. This is a research design grounded in published work; no joint fit or new origin mechanism is claimed. The local site separates the argument, data explorer, completed diagnostics and bibliography.
+
+## Explore the observations and completed tests
+
+The homepage offers three starting points: **understand the idea**, **explore the data**, and **read completed tests**. Persistent navigation keeps the library and atmosphere laboratory accessible. Maps, meteorite records, laboratory measurements and source downloads each have a separate view.
+
+The [first observational diagnostics](research/FIRST_RESULTS.md) use **87 downloaded products**: MOLA, MGS/MAVEN magnetism, equivalent source depths, an InSight crustal-model archive, thermal outputs, the USGS geologic map, meteorite chronology/candidate sources and NWA 7034 laboratory data. The public snapshot includes 44 geologic units, 94 meteorite sample records, 16 candidate craters and 1,073 laboratory measurements. Original archives stay local; scripts and checksums make acquisition reproducible.
+
+Two useful outcomes: the modeled south/north magnetic contrast persists at common altitudes, while inferred crustal thickness changes strongly with assumed density. A mineral-dependent thermal gate motivates testing higher-ordering-temperature carriers in deep southern sources. These are conditional diagnostics, not a unique origin or a validated remanence history. [Numerical results](research/data/results.json) · [Data conventions and licensing](research/data/README.md)
+
+To view the committed snapshot, install the base package and run the local server; MCD is needed only for atmospheric calculations. To regenerate the observations:
+
+```bash
+python -m pip install -e '.[observations,test]'
+python scripts/data/acquire.py --large
+python scripts/data/build.py
+```
+
+The archive download requires several GB of disk space. Dataset licenses are separate from the code license; Herd-derived meteorite tables retain CC BY-NC 4.0.
 
 ## The dichotomy evidence atlas
 
-Open **Dichotomy research** in the app, or read the [scientific synthesis](research/SYNTHESIS.md) on GitHub. The English library contains **1,981 DOI candidates**, a **69-record core reading route**, and source notes distinguishing metadata from abstracts and selected full-text readings. It includes dedicated [meteorite magnetism](research/METEORITES.md), [mission/data](research/MISSIONS.md) and [research programme](research/RESEARCH_PLAN.md) dossiers. Download [RIS for Zotero](research/library.ris), [BibTeX](research/library.bib) or [CSV](research/catalog.csv).
+Open **Library** in the app, or read the [scientific synthesis](research/SYNTHESIS.md) on GitHub. The English library contains **1,981 DOI candidates**, a **69-record core reading route**, and source notes distinguishing metadata from abstracts and selected full-text readings. It includes dedicated [meteorite magnetism](research/METEORITES.md), [mission/data](research/MISSIONS.md) and [research programme](research/RESEARCH_PLAN.md) dossiers. Download [RIS for Zotero](research/library.ris), [BibTeX](research/library.bib) or [CSV](research/catalog.csv).
 
 This is a broad, dated inventory with selective assessment, **not an exhaustive review of every Mars paper**. Fifty-two abstracts and twelve selected full-text readings are documented; complete methodological audits and joint analysis of the newly identified mission datasets remain outstanding. [Search method and coverage](research/METHOD.md) document the query caps, 2,328 unscreened citation leads and remaining gaps. Research notes were assembled with AI assistance and need source verification before manuscript use.
 
 ## What can you use it for?
 
-The opening atlas provides direct altitude and season sliders, seasonal/altitude playback with preparation progress, and labelled MP4 videos you can play in the page or download. The guided-experiments view offers three controlled comparisons. Each gives a numerical conclusion, an explained plot, the calculation parameters, and a useful next step.
+The **Atmosphere** section provides direct altitude and season sliders, seasonal/altitude playback with preparation progress, and labelled MP4 videos you can play in the page or download. The guided-experiments view offers three controlled comparisons. Each gives a numerical conclusion, an explained plot, the calculation parameters, and a useful next step.
 
 | Question | Controlled comparison | Physical use |
 |---|---|---|
@@ -58,7 +76,7 @@ python -m pytest -q
 python -m uvicorn marswind.server:app --app-dir src --host 127.0.0.1 --port 8765
 ```
 
-Open **http://127.0.0.1:8765**. The wind atlas opens first. Drag **Altitude** or **Season** to update the map, or press **Play** for a complete sweep. Open **Guided experiments** to choose a physical question and click **Run experiment**. **Study note** downloads the explained result with parameters, limitations and provenance.
+Open **http://127.0.0.1:8765**. The research overview opens first. Choose **Atmosphere** for the wind atlas. Drag **Altitude** or **Season** to update the map, or press **Play** for a complete sweep. Open **Guided experiments** to choose a physical question and click **Run experiment**. **Study note** downloads the explained result with parameters, limitations and provenance.
 
 On an already configured Mac, double-click `Launch Mars Wind.command` to restart the local server. The application needs no cloud service or user account. Publishing this code on GitHub does not publish your local server.
 

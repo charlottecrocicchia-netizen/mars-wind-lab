@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Completed diagnostics — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css"><link rel="stylesheet" href="/assets/workspace.css"></head><body class="workspace">
+<a class="skip" href="#article">Skip to the article</a><header class="workspace-header"><a href="/" class="wordmark"><i></i><span>Mars research<small>CHARLOTTE CROCICCHIA</small></span></a><nav aria-label="Main navigation"><a href="/">Overview</a><a href="/research/hypotheses">Ideas</a><a href="/research/data">Data</a><a href="/research/tests">Tests</a><a href="/research/library">Library</a><a href="/atmosphere">Atmosphere</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">READING ROOM</p><a class="current" href="/assets/reading/first_results.html">Completed diagnostics</a><a class="" href="/assets/reading/hypotheses.html">Working hypothesis</a><a class="" href="/assets/reading/test_protocol.html">First physical test</a><a class="" href="/assets/reading/synthesis.html">Scientific synthesis</a><a class="" href="/assets/reading/meteorites.html">Meteorite magnetism</a><a class="" href="/assets/reading/missions.html">Missions &amp; data</a><a class="" href="/assets/reading/research_plan.html">Research programme</a><a class="" href="/assets/reading/method.html">Search &amp; reading method</a><a class="" href="/assets/reading/community.html">Community leads</a><a class="" href="/assets/reading/readme.html">About this collection</a></aside><article class="prose" id="article"><h1 id="first-observational-diagnostics">First observational diagnostics</h1>
+<p><strong>Executed analysis · 24 September 2026 · Exploratory, not a joint origin inference.</strong></p>
+<p>The calculations now connect real public products. They test consistency and sensitivity; they do not identify the mechanism that formed the dichotomy. The <a href="/research/files/data/results.json">saved numerical results</a>, <a href="/research/files/data/manifest.json">input manifest</a>, <a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/scripts/data/sources.json">source registry</a> and <a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/scripts/data/build.py">pipeline</a> accompany this note.</p>
+<h2 id="what-is-available">What is available</h2>
+<ul>
+<li>MOLA global topography and the USGS geological map: <strong>1,311 polygons, 44 units</strong>.</li>
+<li>MGS/MAVEN crustal magnetic coefficients and <strong>412 equivalent source-depth estimates</strong>.</li>
+<li>The full 2.67 GB InSight crustal-model archive; four published grids from its Khan2022 family evaluated here.</li>
+<li>Northern and southern thermal profiles, plus additional thermal and elastic-thickness ensembles downloaded for subsequent work.</li>
+<li><strong>94 meteorite sample records</strong>, <strong>10 ejection-group entries</strong>, <strong>16 candidate craters</strong>, the separate ejection-age compilation and the NWA 7034 isotope table.</li>
+<li><strong>1,073 laboratory measurements from 11 specimens</strong> belonging to nine NWA 7034 paired stones.</li>
+</ul>
+<p>The manifest records <strong>87 downloaded products across 17 source entries</strong>. This is a useful initial collection, not every observation made of Mars. Some downloaded ensembles and morphology products remain unanalyzed. The <a href="/assets/reading/missions.html">mission inventory</a> describes additional archives.</p>
+<h2 id="1-a-common-altitude-magnetic-comparison">1. A common-altitude magnetic comparison</h2>
+<p>We evaluate the <a href="https://doi.org/10.1029/2018JE005854">Langlais et al. (2019) model</a> at its full degree 134 on 2° cell centers. Radii are 3,393.5 km + 150 or 400 km. Schmidt semi-normalized coefficients and the SHTOOLS magnetic convention are retained; an analytic axial-dipole test verifies normalization and cubic radial decay.</p>
+<p>Area-weighted means of the field magnitude use cosine-latitude weights. Regions follow the Andrews-Hanna boundary supplied in the <a href="https://zenodo.org/records/6477509">crust archive</a>, rasterized with the archive authors' spherical-mask method at 1° and sampled on the analysis grid. Tharsis is included.</p>
+<table>
+<thead>
+<tr>
+<th>Comparison altitude</th>
+<th style="text-align: right;">North mean</th>
+<th style="text-align: right;">South mean</th>
+<th style="text-align: right;">South / north</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>150 km</td>
+<td style="text-align: right;">21.68 nT</td>
+<td style="text-align: right;">81.77 nT</td>
+<td style="text-align: right;">3.77</td>
+</tr>
+<tr>
+<td>400 km</td>
+<td style="text-align: right;">4.99 nT</td>
+<td style="text-align: right;">17.40 nT</td>
+<td style="text-align: right;">3.48</td>
+</tr>
+</tbody>
+</table>
+<p>A latitude-only split yields ratios of 3.07 and 3.17; excluding ±20° gives 4.45 and 4.46. These checks expose sensitivity to region definition rather than selecting the largest contrast. The persistent contrast is consistent with different magnetic archives, different ancient fields, or both. It does not distinguish these causes. Grid cells are correlated; no p-values or confidence intervals are inferred from their count.</p>
+<h2 id="2-source-depth-quality-before-interpretation">2. Source-depth quality before interpretation</h2>
+<p>The <a href="https://zenodo.org/records/4686358">Gong &amp; Wieczorek data</a> retain negative fits and missing-bound sentinels. Of 412 windows, 61 lack available intervals and 67 have a negative best fit; 11 belong to both categories. <strong>295</strong> have a nonnegative fit bracketed by published bounds.</p>
+<p>This conservative subset does not mean all excluded regions are physically unmagnetized. Negative estimates may have intervals extending into the crust. Depths refer to the regional mean local surface, as clarified in the <a href="https://doi.org/10.1029/2020JE006690">paper</a>. The fitted source-cap radius and the 20° localization-window radius are separate quantities.</p>
+<p>These overlapping windows and the orbital coefficients are dependent information. Equivalent thin-layer depths are neither magnetic-layer bottom depths nor Curie depths. Their uncertainty is retained in the output and figure.</p>
+<h2 id="3-a-mineral-dependent-thermal-check">3. A mineral-dependent thermal check</h2>
+<p>The <a href="https://figshare.com/articles/dataset/_/5909929">Thiriet et al. model endpoints</a> are interpolated below each profile's own local surface. Each magnetic window is assigned the northern or southern profile by its center's side of the published boundary. Windows can span both regions, so this is a coarse screening assumption.</p>
+<p>Illustrative ordering temperatures are 598.15 K for pyrrhotite, 853.15 K for magnetite and 943.15 K for hematite (Néel temperature in the latter case). They are endmember screening choices, not measured mineral compositions or blocking-temperature spectra. There is no extrapolation beyond a thermal profile.</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Carrier</th>
+<th style="text-align: right;">Best-fit depths below threshold</th>
+<th style="text-align: right;">Entire nonnegative portion of depth interval below threshold</th>
+<th style="text-align: right;">Model threshold depth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>North</td>
+<td>Pyrrhotite</td>
+<td style="text-align: right;">107 / 107</td>
+<td style="text-align: right;">73 / 107</td>
+<td style="text-align: right;">95.3 km</td>
+</tr>
+<tr>
+<td>North</td>
+<td>Magnetite</td>
+<td style="text-align: right;">107 / 107</td>
+<td style="text-align: right;">107 / 107</td>
+<td style="text-align: right;">175.7 km</td>
+</tr>
+<tr>
+<td>North</td>
+<td>Hematite</td>
+<td style="text-align: right;">107 / 107</td>
+<td style="text-align: right;">107 / 107</td>
+<td style="text-align: right;">205.2 km</td>
+</tr>
+<tr>
+<td>South</td>
+<td>Pyrrhotite</td>
+<td style="text-align: right;">128 / 188</td>
+<td style="text-align: right;">50 / 188</td>
+<td style="text-align: right;">44.1 km</td>
+</tr>
+<tr>
+<td>South</td>
+<td>Magnetite</td>
+<td style="text-align: right;">188 / 188</td>
+<td style="text-align: right;">152 / 188</td>
+<td style="text-align: right;">90.7 km</td>
+</tr>
+<tr>
+<td>South</td>
+<td>Hematite</td>
+<td style="text-align: right;">188 / 188</td>
+<td style="text-align: right;">183 / 188</td>
+<td style="text-align: right;">116.5 km</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A useful next hypothesis:</strong> deep southern sources could require higher-ordering-temperature carriers than pure pyrrhotite, or a different thermal history/profile. Under this particular endpoint model, 60 of 188 southern best-fit depths exceed the pyrrhotite threshold. Only 13 southern windows have their entire nonnegative depth interval above the pyrrhotite threshold; 50 have it entirely below, leaving 125 straddling the threshold. These counts are conditional on the chosen endpoint profile and are not rejection probabilities.</p>
+<p>A surviving ancient record must also pass time-dependent acquisition, relaxation, alteration, shock and cancellation tests. None is established by being cool enough today. The published southern “Min” and “Max” temperature files have identical checksums; we do not interpret them as a validated uncertainty envelope. Present models also cannot date magnetization.</p>
+<h2 id="4-crustal-density-changes-the-interpretation">4. Crustal density changes the interpretation</h2>
+<p>Four gridded examples from <a href="https://doi.org/10.1029/2022JE007298">Wieczorek et al. (2022)</a> share a Khan2022 interior, 39 km InSight anchor and northern density 2,900 kg/m³. We sample their 0.25° node-registered grids at the analysis cell centers, then apply the same boundary and area weights.</p>
+<table>
+<thead>
+<tr>
+<th>Southern density</th>
+<th style="text-align: right;">North mean thickness</th>
+<th style="text-align: right;">South mean thickness</th>
+<th style="text-align: right;">South minus north</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2,600 kg/m³</td>
+<td style="text-align: right;">42.35 km</td>
+<td style="text-align: right;">40.00 km</td>
+<td style="text-align: right;">−2.35 km</td>
+</tr>
+<tr>
+<td>2,700 kg/m³</td>
+<td style="text-align: right;">42.55 km</td>
+<td style="text-align: right;">46.08 km</td>
+<td style="text-align: right;">+3.53 km</td>
+</tr>
+<tr>
+<td>2,800 kg/m³</td>
+<td style="text-align: right;">42.78 km</td>
+<td style="text-align: right;">54.33 km</td>
+<td style="text-align: right;">+11.55 km</td>
+</tr>
+<tr>
+<td>2,900 kg/m³</td>
+<td style="text-align: right;">43.06 km</td>
+<td style="text-align: right;">66.21 km</td>
+<td style="text-align: right;">+23.15 km</td>
+</tr>
+</tbody>
+</table>
+<p>Within these examples, the sign and amplitude of the thickness contrast depend on density. Treating one thickness map as an independent, uniquely measured geological fact would conceal that tradeoff. These four examples are not the full ensemble and have no assigned probabilities.</p>
+<h2 id="5-meteorites-are-contextual-samples-not-a-global-magnetic-map">5. Meteorites are contextual samples, not a global magnetic map</h2>
+<p><a href="https://doi.org/10.1126/sciadv.adn2378">Herd et al. (2024)</a> provides sample ages, conditional crater alternatives and five preferred associations. We retain all alternatives and add the Karratha hypothesis for NWA 7034 from <a href="https://doi.org/10.1038/s41467-022-31444-8">Lagain et al. (2022)</a>. Karratha is at 15.7° S, 203.6° E. Its source table's coordinate headings are inverted; the correction is explicit. No candidate becomes a confirmed provenance.</p>
+<p>Crystallization uncertainties in Herd S1 are 2σ; group summaries in S3 use 1σ. Ejection, cosmic-ray exposure, terrestrial residence, breccia lithification and individual clast ages remain distinct. Multiple stones and group members are not independent locations. The isotope table preserves the original columns and dating systems without treating each date as a separate geological event.</p>
+<p>The <a href="https://doi.org/10.3133/sim3292">Tanaka et al. surface map</a> is joined at crater centers. Some centers fall in impact units while the source paper describes surrounding terrain; both labels are retained. Neither fixes the deep rock's mineralogy. Field values evaluated above a candidate are contemporary crustal-model predictions, not the meteorite's measured paleointensity.</p>
+<p>The <a href="https://earthref.org/MagIC/19658">MagIC laboratory data</a> are a particularly useful quality counterexample. <a href="https://doi.org/10.1029/2022JE007464">Vervelidou et al. (2023)</a> identified terrestrial hand-magnet remagnetization in the nine paired stones. The interface shows archived moment by measurement order and retains method codes. Treatment amplitudes contain discontinuities in some sequences; no unverified unit correction or paleofield fitting is applied. Terrestrial find coordinates are never placed on the Mars map.</p>
+<h2 id="what-remains-scientifically-open">What remains scientifically open</h2>
+<p>A source-depth inversion has been parsed, not independently re-inverted. The thermal endpoint comparison is not a coupled evolution model. Density sensitivity is not an origin likelihood. The next discriminating analysis is still the <a href="/assets/reading/test_protocol.html">acquisition and survival protocol</a>: spatially matched source-volume uncertainty, carrier alternatives, time-dependent cooling, coherent remanence and withheld regional magnetic predictions.</p>
+<p>Additional acquisitions should target calibrated InSight/Zhurong comparisons, GRS elemental products, CRISM mineral products and other paleomagnetic datasets. Local measurements and orbital inversions require separate observation operators and shared-error accounting. A surface abundance should not silently constrain an inaccessible deep carrier fraction.</p>
+<h2 id="reproduction-and-reuse">Reproduction and reuse</h2>
+<pre><code class="language-bash">python -m pip install -e '.[observations,test]'
+python scripts/data/acquire.py --large
+python scripts/data/build.py
+python -m pytest -q -m 'not integration'
+</code></pre>
+<p>The large archive requires several GB of local disk space. Raw downloads remain under ignored <code>data/observations/raw/</code>. The source manifest contains URLs, file sizes, SHA-256 and provider checksums where supplied. The result records the input-manifest, pipeline and numerical-module hashes and key package versions. All calculations are deterministic apart from the run timestamp; no Monte Carlo probabilities are generated here.</p>
+<p>The code's MIT license does not replace source-data licenses. In particular, the Herd-derived meteorite table retains <strong>CC BY-NC 4.0</strong>; NASA/USGS public products, CC BY products and other sources retain their own terms. See <a href="/research/files/data/README.md">data licensing and conventions</a>.</p><div class="reading-tools"><a href="/research/library">← Browse the library</a><a href="/research/files/FIRST_RESULTS.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/FIRST_RESULTS.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Research snapshot · 24 September 2026 · Read the source and its limitations together.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>

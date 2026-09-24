@@ -1,0 +1,1226 @@
+[
+  {
+    "id": "magnetic_depth",
+    "provider": "zenodo",
+    "api": "https://zenodo.org/api/records/4686358",
+    "title": "Equivalent magnetic source depths",
+    "paper": "https://doi.org/10.1029/2020JE006690",
+    "landing_url": "https://zenodo.org/records/4686358",
+    "limitation": "Overlapping 20-degree windows; rejected fits and negative estimates require explicit flags.",
+    "checked_at": "2026-09-24T17:48:02.248470+00:00",
+    "files": [
+      {
+        "name": "MarsMagnetizationDepth.zip",
+        "url": "https://zenodo.org/api/records/4686358/files/MarsMagnetizationDepth.zip/content",
+        "size": 39533,
+        "md5": "16780170ee3e0dccaaf719fc201e4281",
+        "local_path": "data/observations/raw/magnetic_depth/MarsMagnetizationDepth.zip",
+        "status": "downloaded",
+        "sha256": "026c821b87b9036fe30f2d20495ae92bccb3fa3343b550a72cbdbd6ab1a3f04a",
+        "bytes": 39533,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "7d2d58f15dd49928967cb0aad104934f30abd8d0a445fc6880d8cfa732c714c5",
+    "license": "cc-by-4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "magnetic_field",
+    "provider": "zenodo",
+    "api": "https://zenodo.org/api/records/3876714",
+    "title": "Global crustal magnetic field",
+    "paper": "https://doi.org/10.1029/2018JE005854",
+    "landing_url": "https://zenodo.org/records/3876714",
+    "limitation": "MGS and MAVEN inversion, degree 134; not direct surface measurements.",
+    "checked_at": "2026-09-24T17:48:02.247586+00:00",
+    "files": [
+      {
+        "name": "Langlais2019.sh.gz",
+        "url": "https://zenodo.org/api/records/3876714/files/Langlais2019.sh.gz/content",
+        "size": 84853,
+        "md5": "39245feef66555366108aecb6d5c0f67",
+        "local_path": "data/observations/raw/magnetic_field/Langlais2019.sh.gz",
+        "status": "downloaded",
+        "sha256": "3cad9e268f0673be1702f1df504a4cbcb8dba4480c7b3f629921911488fe247b",
+        "bytes": 84853,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "e9eed12476d67a4b313c8fd331bd3d4a37413ac87fac6e5b118bea4e385becb4",
+    "license": "cc-by-4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "ejection_ages",
+    "provider": "zenodo",
+    "api": "https://zenodo.org/api/records/10028641",
+    "title": "Meteorite ejection-age compilation",
+    "paper": "https://doi.org/10.1126/sciadv.adn2378",
+    "landing_url": "https://zenodo.org/records/10028641",
+    "limitation": "Literature through July 2023; samples and ejection groups are not independent sites.",
+    "checked_at": "2026-09-24T17:48:02.248769+00:00",
+    "files": [
+      {
+        "name": "Martian_meteorite_ejection_ages_v1_0.xlsx",
+        "url": "https://zenodo.org/api/records/10028641/files/Martian_meteorite_ejection_ages_v1_0.xlsx/content",
+        "size": 61705,
+        "md5": "02f6b8775ffd0f3f9f4805cc38805e9d",
+        "local_path": "data/observations/raw/ejection_ages/Martian_meteorite_ejection_ages_v1_0.xlsx",
+        "status": "downloaded",
+        "sha256": "0200998a92e21370b048475e6095a4eab8dd2b4d969d71884ba084ffec25ed83",
+        "bytes": 61705,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Martian_meteorite_ejection_ages_v1_0_refs.docx",
+        "url": "https://zenodo.org/api/records/10028641/files/Martian_meteorite_ejection_ages_v1_0_refs.docx/content",
+        "size": 29244,
+        "md5": "185680de3e4953e81b97efaaf000b516",
+        "local_path": "data/observations/raw/ejection_ages/Martian_meteorite_ejection_ages_v1_0_refs.docx",
+        "status": "downloaded",
+        "sha256": "b0c87ac10fb8f01cfa0dbcabf3f4dfbc1059426a6d2edb2da7667530d32fbeef",
+        "bytes": 29244,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "0e9c0352425e638260055a78153562536908acfce76f09f03f1e9350ee5b39a4",
+    "license": "cc-by-4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "ejection_models",
+    "provider": "zenodo",
+    "api": "https://zenodo.org/api/records/8360890",
+    "title": "Meteorite impact-ejection calculations",
+    "paper": "https://doi.org/10.1126/sciadv.adn2378",
+    "landing_url": "https://zenodo.org/records/8360890",
+    "limitation": "Model results used to propose source-crater associations.",
+    "checked_at": "2026-09-24T17:48:02.627784+00:00",
+    "files": [
+      {
+        "name": "Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.shx",
+        "url": "https://zenodo.org/api/records/8360890/files/Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.shx/content",
+        "size": 2500,
+        "md5": "829500fc2c5fe72cd105fb7f132fb12f",
+        "local_path": "data/observations/raw/ejection_models/Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.shx",
+        "status": "downloaded",
+        "sha256": "498aea159cceed1dd37ce302e572db9fbc42b11e73deed40948eeab3061406d7",
+        "bytes": 2500,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.shp",
+        "url": "https://zenodo.org/api/records/8360890/files/Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.shp/content",
+        "size": 8500,
+        "md5": "828531df34982caf374d349c9a61bd83",
+        "local_path": "data/observations/raw/ejection_models/Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.shp",
+        "status": "downloaded",
+        "sha256": "136518915e74002ba391f642dbe633b1bb397caaf65d83e0512e21818c6e1964",
+        "bytes": 8500,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "CRPM_public_DB_description_README_v5_3_2023.rtf",
+        "url": "https://zenodo.org/api/records/8360890/files/CRPM_public_DB_description_README_v5_3_2023.rtf/content",
+        "size": 7380,
+        "md5": "f14d5a2da60344517eb78a7bed019afc",
+        "local_path": "data/observations/raw/ejection_models/CRPM_public_DB_description_README_v5_3_2023.rtf",
+        "status": "downloaded",
+        "sha256": "dbbcce56977bd6c444c8c5a4d740e07240c38b0115759c9ad23c326d85860df2",
+        "bytes": 7380,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.dbf",
+        "url": "https://zenodo.org/api/records/8360890/files/Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.dbf/content",
+        "size": 79917,
+        "md5": "d55fa5a8ed68122835ce1c5e37b84f45",
+        "local_path": "data/observations/raw/ejection_models/Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.dbf",
+        "status": "downloaded",
+        "sha256": "fd26b76c55c480d4b96a9c020ac53b2c1e2a32d35d3f67eab8f5662d68f97ebe",
+        "bytes": 79917,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.csv",
+        "url": "https://zenodo.org/api/records/8360890/files/Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.csv/content",
+        "size": 29395,
+        "md5": "9dfdcc9c063f84618fbcc214740fb03a",
+        "local_path": "data/observations/raw/ejection_models/Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.csv",
+        "status": "downloaded",
+        "sha256": "c9f66808249d6b468537cf06736d4102f62e5fec423a7cb0f8e9e02372ca9b0f",
+        "bytes": 29395,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.prj",
+        "url": "https://zenodo.org/api/records/8360890/files/Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.prj/content",
+        "size": 194,
+        "md5": "4a8e2f8712fa9b03b638853a74bb3e95",
+        "local_path": "data/observations/raw/ejection_models/Crater-Related_Pitted_Materials_craters_CRPM_v5_3_public.prj",
+        "status": "downloaded",
+        "sha256": "bdd5b25ad3d958ca37d0c25c8ed7e76cdd75c65939756a946ac6800c31b72c3c",
+        "bytes": 194,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "cf6849598ea196b8751fc155d82df5830673289b1addf3bddbfbf7e9d458c286",
+    "license": "cc-by-4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "thermal_5909827",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909827",
+    "title": "NUCM wet-crust ensemble",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909827",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "checked_at": "2026-09-24T17:48:02.865378+00:00",
+    "files": [
+      {
+        "name": "EnrichmentFactor_LowerSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544647",
+        "size": 298225,
+        "md5": "92202b82ca2b6448ed7c4b7d20b98db1",
+        "local_path": "data/observations/raw/thermal_5909827/EnrichmentFactor_LowerSouth.csv",
+        "status": "downloaded",
+        "sha256": "c5a71d71302e7389f8a279159416535cd100697092950c00362c743159363e24",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Gaussian_maximum.csv",
+        "url": "https://ndownloader.figshare.com/files/10544650",
+        "size": 75,
+        "md5": "e32d4f9ab776c06cf10a29324005e67d",
+        "local_path": "data/observations/raw/thermal_5909827/Gaussian_maximum.csv",
+        "status": "downloaded",
+        "sha256": "4bf567899cea38ca84fd55954b3db969c507b706c56be9e6917a7733f4e71485",
+        "bytes": 75,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_Noachian.csv",
+        "url": "https://ndownloader.figshare.com/files/10544656",
+        "size": 298225,
+        "md5": "fd93709737d44d242ba9327845c583ce",
+        "local_path": "data/observations/raw/thermal_5909827/Score_Noachian.csv",
+        "status": "downloaded",
+        "sha256": "1d8639c542f3bff55e193a0a96cc2182e72be40befed8d046f18d37caeb0938c",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_NorthPolarCap.csv",
+        "url": "https://ndownloader.figshare.com/files/10544659",
+        "size": 298225,
+        "md5": "3dd57a92d9ca0b6054ea7f32d70b38d5",
+        "local_path": "data/observations/raw/thermal_5909827/Score_NorthPolarCap.csv",
+        "status": "downloaded",
+        "sha256": "12e6c0ff4551723af7fabdf6a05ae8746e83304347080633d07dd3f8326df95f",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_SouthPolarCap.csv",
+        "url": "https://ndownloader.figshare.com/files/10544662",
+        "size": 298225,
+        "md5": "c0fef0218e6b25e36e9fa85f06ea69ef",
+        "local_path": "data/observations/raw/thermal_5909827/Score_SouthPolarCap.csv",
+        "status": "downloaded",
+        "sha256": "9718a2356d2c695c26766d76ecdf98f3b1167f388fe10e3a918fcde55ed067d9",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Thickness_LowerSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544668",
+        "size": 298225,
+        "md5": "821a13942c3b0f19ff6ba080e614bd6c",
+        "local_path": "data/observations/raw/thermal_5909827/Thickness_LowerSouth.csv",
+        "status": "downloaded",
+        "sha256": "86918b536d54328fcd69894178c8e12f813f70085c88da2fdac99fd13953369b",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Thickness_UpperSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544671",
+        "size": 298225,
+        "md5": "cd937467ef3d77e9182ac06f31317a2e",
+        "local_path": "data/observations/raw/thermal_5909827/Thickness_UpperSouth.csv",
+        "status": "downloaded",
+        "sha256": "de8c63139d4abced8a0858a4f0334e68db9072a8a8b82a0a1c97f65bace6eb87",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MeltFormation.csv",
+        "url": "https://ndownloader.figshare.com/files/10545094",
+        "size": 299352,
+        "md5": "db55d1bdd6a9e98aa9a1daa8eaa26d40",
+        "local_path": "data/observations/raw/thermal_5909827/MeltFormation.csv",
+        "status": "downloaded",
+        "sha256": "22be5697b8d7ddf8e1a012f52a60be98a9d1e97415b00e2a238cfd7130a7cacf",
+        "bytes": 299352,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "6bbcb398f3a8691ad8c824ac4556ee058c28f52e4f48796a801a539a2f02bd3a",
+    "license": "CC BY 4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "thermal_profiles",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909929",
+    "title": "Present-day thermal profiles",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909929",
+    "limitation": "Present-day published model endpoints; not time histories or temperature measurements.",
+    "checked_at": "2026-09-24T17:48:02.658513+00:00",
+    "files": [
+      {
+        "name": "North_radius_BestModel.csv",
+        "url": "https://ndownloader.figshare.com/files/10544911",
+        "size": 11575,
+        "md5": "e585a465e55792a23eb92787ad5f597c",
+        "local_path": "data/observations/raw/thermal_profiles/North_radius_BestModel.csv",
+        "status": "downloaded",
+        "sha256": "dd43c48250fafc664bd43ed4a91e9bea49be3ed0e7842586cee2c71a223bb24e",
+        "bytes": 11575,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_radius_Max.csv",
+        "url": "https://ndownloader.figshare.com/files/10544914",
+        "size": 10850,
+        "md5": "a7830f26095777896114221b59b09b39",
+        "local_path": "data/observations/raw/thermal_profiles/North_radius_Max.csv",
+        "status": "downloaded",
+        "sha256": "c883d782a8f0b52e98940e3635cb9877845e1aeee297773087d3d6d795136eaf",
+        "bytes": 10850,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_radius_Min.csv",
+        "url": "https://ndownloader.figshare.com/files/10544920",
+        "size": 11800,
+        "md5": "79f9e393b6051b84f4658d1a8eea9135",
+        "local_path": "data/observations/raw/thermal_profiles/North_radius_Min.csv",
+        "status": "downloaded",
+        "sha256": "804db72d8a37066f6022eaa16a137f45f7fe919b64c59c7df13640d99387d766",
+        "bytes": 11800,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_TemperatureProfile_BestModel.csv",
+        "url": "https://ndownloader.figshare.com/files/10544917",
+        "size": 11575,
+        "md5": "2f973c41ad9188b81136460c8ab22a4d",
+        "local_path": "data/observations/raw/thermal_profiles/North_TemperatureProfile_BestModel.csv",
+        "status": "downloaded",
+        "sha256": "bbafd6b8ffdad2c7a8613f1a389864178e4b30be01449af948af0870ea005be4",
+        "bytes": 11575,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_TemperatureProfile_Max.csv",
+        "url": "https://ndownloader.figshare.com/files/10544923",
+        "size": 10850,
+        "md5": "55d8825704f064618cd58a7840b72555",
+        "local_path": "data/observations/raw/thermal_profiles/North_TemperatureProfile_Max.csv",
+        "status": "downloaded",
+        "sha256": "e18f73e25e1a66c12490ddbfe4909359202582a16a1732977e9f4c7190bf5a76",
+        "bytes": 10850,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_TemperatureProfile_Min.csv",
+        "url": "https://ndownloader.figshare.com/files/10544926",
+        "size": 11800,
+        "md5": "29670fa7c096acd893edc977d3129954",
+        "local_path": "data/observations/raw/thermal_profiles/North_TemperatureProfile_Min.csv",
+        "status": "downloaded",
+        "sha256": "7b2037bee80b3482f62d350ebe7692d411b200732fb899158bdcb3bc7e4c6b9b",
+        "bytes": 11800,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_radius_BestModel.csv",
+        "url": "https://ndownloader.figshare.com/files/10544929",
+        "size": 8425,
+        "md5": "ecd07c77ecd2c8c2cb012373657aeede",
+        "local_path": "data/observations/raw/thermal_profiles/South_radius_BestModel.csv",
+        "status": "downloaded",
+        "sha256": "bcde99224e6a19d0da65c0afdffbba5f52aaa59c04dc4c317b4d7008fae2353b",
+        "bytes": 8425,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_radius_Max.csv",
+        "url": "https://ndownloader.figshare.com/files/10544932",
+        "size": 8175,
+        "md5": "0376abe662581a2662c70c147292921b",
+        "local_path": "data/observations/raw/thermal_profiles/South_radius_Max.csv",
+        "status": "downloaded",
+        "sha256": "394262895060522b997ca1b30ca0694b4d3fbf154b801f1b5884a9a2883faf5e",
+        "bytes": 8175,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_radius_Min.csv",
+        "url": "https://ndownloader.figshare.com/files/10544935",
+        "size": 8175,
+        "md5": "0376abe662581a2662c70c147292921b",
+        "local_path": "data/observations/raw/thermal_profiles/South_radius_Min.csv",
+        "status": "downloaded",
+        "sha256": "394262895060522b997ca1b30ca0694b4d3fbf154b801f1b5884a9a2883faf5e",
+        "bytes": 8175,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_TemperatureProfile_BestModel.csv",
+        "url": "https://ndownloader.figshare.com/files/10544938",
+        "size": 8425,
+        "md5": "39ce1b08c34268bb72c5c4f346dd4d3b",
+        "local_path": "data/observations/raw/thermal_profiles/South_TemperatureProfile_BestModel.csv",
+        "status": "downloaded",
+        "sha256": "419b06031d443d9c52fec418d9bba2e5161133924be416221c13a8fb67fcf8f1",
+        "bytes": 8425,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_TemperatureProfile_Max.csv",
+        "url": "https://ndownloader.figshare.com/files/10544941",
+        "size": 8175,
+        "md5": "16e2f00381e3b1bb5996d6f04ace6ee4",
+        "local_path": "data/observations/raw/thermal_profiles/South_TemperatureProfile_Max.csv",
+        "status": "downloaded",
+        "sha256": "64c927d73d0f16435a5bc10eb8502b5a17d9038ab50203d50cfab9e281c57160",
+        "bytes": 8175,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_TemperatureProfile_Min.csv",
+        "url": "https://ndownloader.figshare.com/files/10544944",
+        "size": 8175,
+        "md5": "16e2f00381e3b1bb5996d6f04ace6ee4",
+        "local_path": "data/observations/raw/thermal_profiles/South_TemperatureProfile_Min.csv",
+        "status": "downloaded",
+        "sha256": "64c927d73d0f16435a5bc10eb8502b5a17d9038ab50203d50cfab9e281c57160",
+        "bytes": 8175,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "ea5157d7b9547e19db745e3856f05c38217543a5120813866f346033e83afb18",
+    "license": "CC BY 4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "thermal_5909857",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909857",
+    "title": "UCM wet-crust ensemble",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909857",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "checked_at": "2026-09-24T17:48:03.897925+00:00",
+    "files": [
+      {
+        "name": "EnrichmentFactor_LowerSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544710",
+        "size": 361825,
+        "md5": "bf3f0514ff7ef64dd5d7b01ff538cb3e",
+        "local_path": "data/observations/raw/thermal_5909857/EnrichmentFactor_LowerSouth.csv",
+        "status": "downloaded",
+        "sha256": "bfd098a4c4f0c4ebfa13d6e60b512a215c00c6c7179ea2ec65318b2fb47d571e",
+        "bytes": 361825,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Gaussian_maximum.csv",
+        "url": "https://ndownloader.figshare.com/files/10544713",
+        "size": 75,
+        "md5": "e32d4f9ab776c06cf10a29324005e67d",
+        "local_path": "data/observations/raw/thermal_5909857/Gaussian_maximum.csv",
+        "status": "downloaded",
+        "sha256": "4bf567899cea38ca84fd55954b3db969c507b706c56be9e6917a7733f4e71485",
+        "bytes": 75,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "NorthernCrust_RadioelementContent.csv",
+        "url": "https://ndownloader.figshare.com/files/10544719",
+        "size": 361825,
+        "md5": "d71f815fac008e0047b773b7bf14d455",
+        "local_path": "data/observations/raw/thermal_5909857/NorthernCrust_RadioelementContent.csv",
+        "status": "downloaded",
+        "sha256": "13252a352d88d62203a50cff6134408a782aa243116142482cad1055d4dd95b2",
+        "bytes": 361825,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_Noachian.csv",
+        "url": "https://ndownloader.figshare.com/files/10544722",
+        "size": 361825,
+        "md5": "ab859eac8818d62226ae12bb4f5bfc80",
+        "local_path": "data/observations/raw/thermal_5909857/Score_Noachian.csv",
+        "status": "downloaded",
+        "sha256": "892ede1012e851dc9132c1cc2a012285af49aa85243da4aa99dbac1d2342a6e3",
+        "bytes": 361825,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_NorthPolarCap.csv",
+        "url": "https://ndownloader.figshare.com/files/10544725",
+        "size": 361825,
+        "md5": "35c4258e000b001df795c39d60738e40",
+        "local_path": "data/observations/raw/thermal_5909857/Score_NorthPolarCap.csv",
+        "status": "downloaded",
+        "sha256": "de61049202da37781557ecffdadc5544c8a53a39cd05e96cb6865f62aeb9e3e8",
+        "bytes": 361825,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_SouthPolarCap.csv",
+        "url": "https://ndownloader.figshare.com/files/10544728",
+        "size": 361825,
+        "md5": "d7a509d631f8a8f547ecad875c79a42f",
+        "local_path": "data/observations/raw/thermal_5909857/Score_SouthPolarCap.csv",
+        "status": "downloaded",
+        "sha256": "5bfcd043f1f7800060dead6c57a43865094f7b13b2f915d80ec1746c74237901",
+        "bytes": 361825,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "SouthernCrust_RadioelementContent.csv",
+        "url": "https://ndownloader.figshare.com/files/10544731",
+        "size": 361825,
+        "md5": "b1550a5fb6e1608add7b0ffc7d75b945",
+        "local_path": "data/observations/raw/thermal_5909857/SouthernCrust_RadioelementContent.csv",
+        "status": "downloaded",
+        "sha256": "f0151829b0d8b09b9311d3551ca8541536d60d1ecc64acc4bb3acff4034b56b0",
+        "bytes": 361825,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Thickness_LowerSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544737",
+        "size": 361825,
+        "md5": "a7b2d8fc1810f8a0bf4d56adc843adde",
+        "local_path": "data/observations/raw/thermal_5909857/Thickness_LowerSouth.csv",
+        "status": "downloaded",
+        "sha256": "bcf06fef75363c11b86cecaaa093f8070c7fec2613c2a964b03ee69d20efd8a7",
+        "bytes": 361825,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Thickness_UpperSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544740",
+        "size": 361825,
+        "md5": "40ec8c8f184074c46d2493b7b02bc1f3",
+        "local_path": "data/observations/raw/thermal_5909857/Thickness_UpperSouth.csv",
+        "status": "downloaded",
+        "sha256": "c3c52a86e8ccdcbbb9cd9fdf415f023681506a3da4c47d3fe71d750aac78e365",
+        "bytes": 361825,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MeltFormation.csv",
+        "url": "https://ndownloader.figshare.com/files/10545091",
+        "size": 363582,
+        "md5": "f89a998825510c57a1668cd279db9a94",
+        "local_path": "data/observations/raw/thermal_5909857/MeltFormation.csv",
+        "status": "downloaded",
+        "sha256": "d5dec88a3469190b4f85ad4fe329283a84ae0a5a104ab84e469bfb0227efee7f",
+        "bytes": 363582,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "19329c8ebaf549f2d99e1eb7276fa5db6a1a19a85b55314f04d3e85970ddf355",
+    "license": "CC BY 4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "thermal_5909875",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909875",
+    "title": "NUCM2 wet-crust ensemble",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909875",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "checked_at": "2026-09-24T17:48:05.694254+00:00",
+    "files": [
+      {
+        "name": "Gaussian_maximum.csv",
+        "url": "https://ndownloader.figshare.com/files/10544746",
+        "size": 75,
+        "md5": "e32d4f9ab776c06cf10a29324005e67d",
+        "local_path": "data/observations/raw/thermal_5909875/Gaussian_maximum.csv",
+        "status": "downloaded",
+        "sha256": "4bf567899cea38ca84fd55954b3db969c507b706c56be9e6917a7733f4e71485",
+        "bytes": 75,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "NorthernCrust_RadioelementContent.csv",
+        "url": "https://ndownloader.figshare.com/files/10544752",
+        "size": 597325,
+        "md5": "33b35e858ac535a60ca536c2da983a48",
+        "local_path": "data/observations/raw/thermal_5909875/NorthernCrust_RadioelementContent.csv",
+        "status": "downloaded",
+        "sha256": "57e007b20484223fabcbf2904859e9dfb18ab07e46bf0ba3ca712df7365e4d0b",
+        "bytes": 597325,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_Noachian.csv",
+        "url": "https://ndownloader.figshare.com/files/10544755",
+        "size": 597325,
+        "md5": "dcdf06da3cba94a9613a247034e0d271",
+        "local_path": "data/observations/raw/thermal_5909875/Score_Noachian.csv",
+        "status": "downloaded",
+        "sha256": "0c18db7b235887feb5e5361210af1473e1d8cd3eeb55967e19b6f43c3ca66cbd",
+        "bytes": 597325,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_NorthPolarCap.csv",
+        "url": "https://ndownloader.figshare.com/files/10544758",
+        "size": 597325,
+        "md5": "048d150cef33fee66e672abd75ce43ce",
+        "local_path": "data/observations/raw/thermal_5909875/Score_NorthPolarCap.csv",
+        "status": "downloaded",
+        "sha256": "17f15fcfc916a39fcaed02fdf4962ac9c10de04e1f230935a1e35dfa42579d57",
+        "bytes": 597325,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_SouthPolarCap.csv",
+        "url": "https://ndownloader.figshare.com/files/10544761",
+        "size": 597325,
+        "md5": "4e21b63960f28d392c2f468e4ddc7591",
+        "local_path": "data/observations/raw/thermal_5909875/Score_SouthPolarCap.csv",
+        "status": "downloaded",
+        "sha256": "fa3f77c0b9dad705b970859b96979029b6a284712f85ad167b349867adbb2942",
+        "bytes": 597325,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "SouthernCrust_RadioelementContent.csv",
+        "url": "https://ndownloader.figshare.com/files/10544764",
+        "size": 597325,
+        "md5": "f3e4a4d33bda834cc772d51079452631",
+        "local_path": "data/observations/raw/thermal_5909875/SouthernCrust_RadioelementContent.csv",
+        "status": "downloaded",
+        "sha256": "af16cf0db78498620d7cee771821623ba149254b5c3dd172b30f6a6f8b281a9b",
+        "bytes": 597325,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MeltFormation.csv",
+        "url": "https://ndownloader.figshare.com/files/10545106",
+        "size": 600423,
+        "md5": "1204a4aa79a01bd75bf0411630c36452",
+        "local_path": "data/observations/raw/thermal_5909875/MeltFormation.csv",
+        "status": "downloaded",
+        "sha256": "9c9bb7b62a7c81cf75862dd8be77101a6e137157dfe00ba835dc7d43cb56673b",
+        "bytes": 600423,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "636838d997a6d47aec5ee177673366ad254ad7f44ed0e6831c45b6412a29bdb1",
+    "license": "CC BY 4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "thermal_5909908",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909908",
+    "title": "NUCM dry-crust ensemble",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909908",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "checked_at": "2026-09-24T17:48:05.869914+00:00",
+    "files": [
+      {
+        "name": "EnrichmentFactor_LowerSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544803",
+        "size": 298225,
+        "md5": "92202b82ca2b6448ed7c4b7d20b98db1",
+        "local_path": "data/observations/raw/thermal_5909908/EnrichmentFactor_LowerSouth.csv",
+        "status": "downloaded",
+        "sha256": "c5a71d71302e7389f8a279159416535cd100697092950c00362c743159363e24",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Gaussian_maximum.csv",
+        "url": "https://ndownloader.figshare.com/files/10544806",
+        "size": 75,
+        "md5": "e32d4f9ab776c06cf10a29324005e67d",
+        "local_path": "data/observations/raw/thermal_5909908/Gaussian_maximum.csv",
+        "status": "downloaded",
+        "sha256": "4bf567899cea38ca84fd55954b3db969c507b706c56be9e6917a7733f4e71485",
+        "bytes": 75,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_Noachian.csv",
+        "url": "https://ndownloader.figshare.com/files/10544812",
+        "size": 298225,
+        "md5": "2aef558d7a646c14e970bbaa3f023a2b",
+        "local_path": "data/observations/raw/thermal_5909908/Score_Noachian.csv",
+        "status": "downloaded",
+        "sha256": "e7696aec9c9deb567af6396b8e35a4977b645282f8210c1bb3650c35eb0d24ce",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_NorthPolarCap.csv",
+        "url": "https://ndownloader.figshare.com/files/10544815",
+        "size": 298225,
+        "md5": "3dd57a92d9ca0b6054ea7f32d70b38d5",
+        "local_path": "data/observations/raw/thermal_5909908/Score_NorthPolarCap.csv",
+        "status": "downloaded",
+        "sha256": "12e6c0ff4551723af7fabdf6a05ae8746e83304347080633d07dd3f8326df95f",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_SouthPolarCap.csv",
+        "url": "https://ndownloader.figshare.com/files/10544818",
+        "size": 298225,
+        "md5": "49c0800d29e395c1e98d588022fe41d8",
+        "local_path": "data/observations/raw/thermal_5909908/Score_SouthPolarCap.csv",
+        "status": "downloaded",
+        "sha256": "6d1c4ddea53645aa3de9f8533280114b899123022a69074522394056c5f544b5",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Thickness_LowerSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544824",
+        "size": 298225,
+        "md5": "821a13942c3b0f19ff6ba080e614bd6c",
+        "local_path": "data/observations/raw/thermal_5909908/Thickness_LowerSouth.csv",
+        "status": "downloaded",
+        "sha256": "86918b536d54328fcd69894178c8e12f813f70085c88da2fdac99fd13953369b",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Thickness_UpperSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544827",
+        "size": 298225,
+        "md5": "cd937467ef3d77e9182ac06f31317a2e",
+        "local_path": "data/observations/raw/thermal_5909908/Thickness_UpperSouth.csv",
+        "status": "downloaded",
+        "sha256": "de8c63139d4abced8a0858a4f0334e68db9072a8a8b82a0a1c97f65bace6eb87",
+        "bytes": 298225,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MeltFormation.csv",
+        "url": "https://ndownloader.figshare.com/files/10545115",
+        "size": 299352,
+        "md5": "db55d1bdd6a9e98aa9a1daa8eaa26d40",
+        "local_path": "data/observations/raw/thermal_5909908/MeltFormation.csv",
+        "status": "downloaded",
+        "sha256": "22be5697b8d7ddf8e1a012f52a60be98a9d1e97415b00e2a238cfd7130a7cacf",
+        "bytes": 299352,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "e09160c94ec8413687bb70de668c0b29e5c4e08b36931dd97a577f073e812a59",
+    "license": "CC BY 4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "thermal_5909914",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909914",
+    "title": "UCM dry-crust ensemble",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909914",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "checked_at": "2026-09-24T17:48:07.860172+00:00",
+    "files": [
+      {
+        "name": "EnrichmentFactor_LowerSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544830",
+        "size": 243675,
+        "md5": "ad9583df741ed0056b263419f9861328",
+        "local_path": "data/observations/raw/thermal_5909914/EnrichmentFactor_LowerSouth.csv",
+        "status": "downloaded",
+        "sha256": "4e8d725bbc93d2563983ce03354686c5c2ac113dddefbdafff60237b312b2738",
+        "bytes": 243675,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Gaussian_maximum.csv",
+        "url": "https://ndownloader.figshare.com/files/10544833",
+        "size": 75,
+        "md5": "e32d4f9ab776c06cf10a29324005e67d",
+        "local_path": "data/observations/raw/thermal_5909914/Gaussian_maximum.csv",
+        "status": "downloaded",
+        "sha256": "4bf567899cea38ca84fd55954b3db969c507b706c56be9e6917a7733f4e71485",
+        "bytes": 75,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_Noachian.csv",
+        "url": "https://ndownloader.figshare.com/files/10544839",
+        "size": 243675,
+        "md5": "222ee8a28bdae4c3a5c41e4e9691bf36",
+        "local_path": "data/observations/raw/thermal_5909914/Score_Noachian.csv",
+        "status": "downloaded",
+        "sha256": "12c6d87569ccebf9a64e01c2f25d4384fc9065acc9e97786a141bad0f0ad3dfc",
+        "bytes": 243675,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_NorthPolarCap.csv",
+        "url": "https://ndownloader.figshare.com/files/10544842",
+        "size": 243675,
+        "md5": "4e6ce3dec0cf2a8299c3414bb0b8b2bf",
+        "local_path": "data/observations/raw/thermal_5909914/Score_NorthPolarCap.csv",
+        "status": "downloaded",
+        "sha256": "61e7d59a6bb067754e0953f3e0bcf2a1d2134f22b65b598a2a1f2d2d05227b38",
+        "bytes": 243675,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Score_SouthPolarCap.csv",
+        "url": "https://ndownloader.figshare.com/files/10544845",
+        "size": 243675,
+        "md5": "f0cb46c79dc9d0733c17789c3ec0602b",
+        "local_path": "data/observations/raw/thermal_5909914/Score_SouthPolarCap.csv",
+        "status": "downloaded",
+        "sha256": "61741051a38f3b2ff1bccdafed7e08bff83e974de011ad5527201f9e05d1d41d",
+        "bytes": 243675,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Thickness_LowerSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544851",
+        "size": 243675,
+        "md5": "5bf519fbfca57931c702964f375f547a",
+        "local_path": "data/observations/raw/thermal_5909914/Thickness_LowerSouth.csv",
+        "status": "downloaded",
+        "sha256": "ddade004004f334ae7aaf08946f4bc3c9fff1d2f8da58eb3c7d14f4c5a4472f4",
+        "bytes": 243675,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "Thickness_UpperSouth.csv",
+        "url": "https://ndownloader.figshare.com/files/10544854",
+        "size": 243675,
+        "md5": "d62b901b74d671cf293c0d9078f3a26d",
+        "local_path": "data/observations/raw/thermal_5909914/Thickness_UpperSouth.csv",
+        "status": "downloaded",
+        "sha256": "b2eb2597fc5e51c40ea76975442d5005348227a48e4a0edb6b0c62c5d0e85871",
+        "bytes": 243675,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MeltFormation.csv",
+        "url": "https://ndownloader.figshare.com/files/10545121",
+        "size": 363582,
+        "md5": "f89a998825510c57a1668cd279db9a94",
+        "local_path": "data/observations/raw/thermal_5909914/MeltFormation.csv",
+        "status": "downloaded",
+        "sha256": "d5dec88a3469190b4f85ad4fe329283a84ae0a5a104ab84e469bfb0227efee7f",
+        "bytes": 363582,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "e723618bff59c1326e330f496ff202fa6b0642f96b53a8163a3dc0f87450d42c",
+    "license": "CC BY 4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "lagain2022",
+    "title": "NWA 7034 candidate source and geological context",
+    "provider": "publisher",
+    "license": "CC BY 4.0 article; retain source attribution",
+    "landing_url": "https://www.nature.com/articles/s41467-022-31444-8",
+    "limitation": "Candidate provenance, not a measured launch position.",
+    "products": [
+      {
+        "name": "41467_2022_31444_MOESM1_ESM.pdf",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-31444-8/MediaObjects/41467_2022_31444_MOESM1_ESM.pdf"
+      },
+      {
+        "name": "41467_2022_31444_MOESM3_ESM.xlsx",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-31444-8/MediaObjects/41467_2022_31444_MOESM3_ESM.xlsx"
+      }
+    ],
+    "checked_at": "2026-09-24T17:48:10.787262+00:00",
+    "files": [
+      {
+        "name": "41467_2022_31444_MOESM1_ESM.pdf",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-31444-8/MediaObjects/41467_2022_31444_MOESM1_ESM.pdf",
+        "local_path": "data/observations/raw/lagain2022/41467_2022_31444_MOESM1_ESM.pdf",
+        "status": "downloaded",
+        "sha256": "4961302b987c34fbd72d716a88fea47bcdfcc3ba469ae22a0d7227470559f318",
+        "bytes": 2025297,
+        "provider_checksum_verified": false
+      },
+      {
+        "name": "41467_2022_31444_MOESM3_ESM.xlsx",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-31444-8/MediaObjects/41467_2022_31444_MOESM3_ESM.xlsx",
+        "local_path": "data/observations/raw/lagain2022/41467_2022_31444_MOESM3_ESM.xlsx",
+        "status": "downloaded",
+        "sha256": "a46d82de0c2acf499eb77eb1605a58f517ddea021e9982fde351149ee291579c",
+        "bytes": 25466,
+        "provider_checksum_verified": false
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "id": "mola",
+    "title": "MOLA global topography, 4 pixels per degree",
+    "provider": "PDS",
+    "license": "NASA PDS public archive; retain attribution",
+    "landing_url": "https://pds-geosciences.wustl.edu/missions/mgs/megdr.html",
+    "limitation": "Topography relative to the areoid; distinct from crustal thickness.",
+    "products": [
+      {
+        "name": "megt90n000cb.img",
+        "url": "https://pds-geosciences.wustl.edu/mgs/urn-nasa-pds-mgs_mola_topography_derived/meg004/megt90n000cb.img"
+      },
+      {
+        "name": "megt90n000cb.xml",
+        "url": "https://pds-geosciences.wustl.edu/mgs/urn-nasa-pds-mgs_mola_topography_derived/meg004/megt90n000cb.xml"
+      }
+    ],
+    "checked_at": "2026-09-24T17:48:08.834740+00:00",
+    "files": [
+      {
+        "name": "megt90n000cb.img",
+        "url": "https://pds-geosciences.wustl.edu/mgs/urn-nasa-pds-mgs_mola_topography_derived/meg004/megt90n000cb.img",
+        "local_path": "data/observations/raw/mola/megt90n000cb.img",
+        "status": "downloaded",
+        "sha256": "25f16fb7aaf857898dcf98bc4f841341a24f8b9f7e98453ca083bc45d897ca2c",
+        "bytes": 2073600,
+        "provider_checksum_verified": false
+      },
+      {
+        "name": "megt90n000cb.xml",
+        "url": "https://pds-geosciences.wustl.edu/mgs/urn-nasa-pds-mgs_mola_topography_derived/meg004/megt90n000cb.xml",
+        "local_path": "data/observations/raw/mola/megt90n000cb.xml",
+        "status": "downloaded",
+        "sha256": "e3982cb17458a9d59896b0c21e0485322ccc42f8e6089d9d856a62032775b60b",
+        "bytes": 15509,
+        "provider_checksum_verified": false
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "id": "thermal_5909917",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909917",
+    "title": "Elastic thickness evolution",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909917",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "checked_at": "2026-09-24T17:48:08.639505+00:00",
+    "files": [
+      {
+        "name": "data_Te_nord.csv",
+        "url": "https://ndownloader.figshare.com/files/10544857",
+        "size": 84,
+        "md5": "f32b1df3cc7567053da34db2c3086cae",
+        "local_path": "data/observations/raw/thermal_5909917/data_Te_nord.csv",
+        "status": "downloaded",
+        "sha256": "b098e1725b93bf6c44f10ad671130637b0004fe151d3c9a9f941fcd90edfcc22",
+        "bytes": 84,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "data_Te_sud.csv",
+        "url": "https://ndownloader.figshare.com/files/10544860",
+        "size": 230,
+        "md5": "f1f1ca1aa4361be3984f2d548af80386",
+        "local_path": "data/observations/raw/thermal_5909917/data_Te_sud.csv",
+        "status": "downloaded",
+        "sha256": "e5dedbfa4940913434ef02529c41da4767521e87cab187ae7f821380def53a3f",
+        "bytes": 230,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "data_Te_volcans.csv",
+        "url": "https://ndownloader.figshare.com/files/10544863",
+        "size": 157,
+        "md5": "708482842322c1d0f5a37f544b7508ce",
+        "local_path": "data/observations/raw/thermal_5909917/data_Te_volcans.csv",
+        "status": "downloaded",
+        "sha256": "3826f657dafd95a0fe79caae828714bbc3be6860376cb33764f97a08022855fe",
+        "bytes": 157,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_ElasticThickness1014_BestModel.csv",
+        "url": "https://ndownloader.figshare.com/files/10544866",
+        "size": 11250,
+        "md5": "3e839e7916753ca18183e18bb31a0f5b",
+        "local_path": "data/observations/raw/thermal_5909917/North_ElasticThickness1014_BestModel.csv",
+        "status": "downloaded",
+        "sha256": "fbcbdd62dbfbf91dd9e2177a7fd592c80a002d9a96e9f23f4723cae154024afa",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_ElasticThickness1014_Max.csv",
+        "url": "https://ndownloader.figshare.com/files/10544869",
+        "size": 11250,
+        "md5": "71109b27a71aca15591edfdbbc0b58cc",
+        "local_path": "data/observations/raw/thermal_5909917/North_ElasticThickness1014_Max.csv",
+        "status": "downloaded",
+        "sha256": "f122fd97f0a7547d1343c74e9aaabc4521f62eb580d2377e178cdd1b47775843",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_ElasticThickness1014_Min.csv",
+        "url": "https://ndownloader.figshare.com/files/10544872",
+        "size": 11250,
+        "md5": "bb602e06af07fbb225f4927f033c9c8d",
+        "local_path": "data/observations/raw/thermal_5909917/North_ElasticThickness1014_Min.csv",
+        "status": "downloaded",
+        "sha256": "bdbb56d8c17f7c05878316342092afe1fdec466f72b25ce2c5063df508c9743d",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_ElasticThickness1017_BestModel.csv",
+        "url": "https://ndownloader.figshare.com/files/10544875",
+        "size": 11250,
+        "md5": "7549b9eae09852787fd39b0083530ace",
+        "local_path": "data/observations/raw/thermal_5909917/North_ElasticThickness1017_BestModel.csv",
+        "status": "downloaded",
+        "sha256": "ca2f1cf86dd359cf172221935b24b1dfceab029499b57c76664b9c572781b3d5",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_ElasticThickness1017_Max.csv",
+        "url": "https://ndownloader.figshare.com/files/10544878",
+        "size": 11250,
+        "md5": "69d264d3840f57202111f82031f2807e",
+        "local_path": "data/observations/raw/thermal_5909917/North_ElasticThickness1017_Max.csv",
+        "status": "downloaded",
+        "sha256": "d1f4c30d5c82a2ddd842667d6d763342f3068a596cdc99489401fef91b0ce545",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "North_ElasticThickness1017_Min.csv",
+        "url": "https://ndownloader.figshare.com/files/10544881",
+        "size": 11250,
+        "md5": "5ed1ec5bd7f89cccb0b197a1918b5834",
+        "local_path": "data/observations/raw/thermal_5909917/North_ElasticThickness1017_Min.csv",
+        "status": "downloaded",
+        "sha256": "47b07821384bbb84f04e39988145db6432b84e34c86562633fa4b9102dbd76e0",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_ElasticThickness1014_BestModel.csv",
+        "url": "https://ndownloader.figshare.com/files/10544884",
+        "size": 11250,
+        "md5": "2d3c3734a83ce18926248634291fbf0a",
+        "local_path": "data/observations/raw/thermal_5909917/South_ElasticThickness1014_BestModel.csv",
+        "status": "downloaded",
+        "sha256": "2fc38dd20e366410b9ce924e7f594315467eb46409437a84427dcd5a5bafc1b2",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_ElasticThickness1014_Max.csv",
+        "url": "https://ndownloader.figshare.com/files/10544887",
+        "size": 11250,
+        "md5": "132343901c4da7a25f20d7e7665a08bd",
+        "local_path": "data/observations/raw/thermal_5909917/South_ElasticThickness1014_Max.csv",
+        "status": "downloaded",
+        "sha256": "6628b3d12dd9134d6ffbd45cf17d53dfaa861820b2e0a3c795b15bb5cca4007c",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_ElasticThickness1014_Min.csv",
+        "url": "https://ndownloader.figshare.com/files/10544890",
+        "size": 11250,
+        "md5": "b6ce063a8869045fec7b38458657c773",
+        "local_path": "data/observations/raw/thermal_5909917/South_ElasticThickness1014_Min.csv",
+        "status": "downloaded",
+        "sha256": "5d7bafb6ebdfa4b821a3757cac002ce8b2497441e5a3a6816d35852bc843113b",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_ElasticThickness1017_BestModel.csv",
+        "url": "https://ndownloader.figshare.com/files/10544893",
+        "size": 11250,
+        "md5": "1ac1da12e0da8bf3ef8ee31a335492b0",
+        "local_path": "data/observations/raw/thermal_5909917/South_ElasticThickness1017_BestModel.csv",
+        "status": "downloaded",
+        "sha256": "1b7483dd3ff1dc7034360a1eb7d41a5ac75538bde8b0b8e74c233a9a69c515b8",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_ElasticThickness1017_Max.csv",
+        "url": "https://ndownloader.figshare.com/files/10544896",
+        "size": 11250,
+        "md5": "b20cb792549989c0675ffbbc2fbdbaf7",
+        "local_path": "data/observations/raw/thermal_5909917/South_ElasticThickness1017_Max.csv",
+        "status": "downloaded",
+        "sha256": "eb9d1f4034c770de3e71738f22dcdd736fc6731bfe3b6b79566f24ff5fbdb9e8",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "South_ElasticThickness1017_Min.csv",
+        "url": "https://ndownloader.figshare.com/files/10544899",
+        "size": 11250,
+        "md5": "e6e610bc824da8684889baf754075599",
+        "local_path": "data/observations/raw/thermal_5909917/South_ElasticThickness1017_Min.csv",
+        "status": "downloaded",
+        "sha256": "4bccc0d0064f67dd61326c24e81ba9b15bdff1b6cec1160b4ea1472c9de31f21",
+        "bytes": 11250,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "3b259f4f6ee02dec75d40639b3f1e96708c1839922797290aa71e99b9c3b0f65",
+    "license": "CC BY 4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "crustal_models",
+    "provider": "zenodo",
+    "api": "https://zenodo.org/api/records/6477509",
+    "title": "InSight crustal thickness archive",
+    "paper": "https://doi.org/10.1029/2022JE007298",
+    "landing_url": "https://zenodo.org/records/6477509",
+    "limitation": "An ensemble conditional on density, seismic and interior assumptions.",
+    "checked_at": "2026-09-24T17:48:02.248639+00:00",
+    "files": [
+      {
+        "name": "InSight-Crustal-Thickness-Archive.tar.gz",
+        "url": "https://zenodo.org/api/records/6477509/files/InSight-Crustal-Thickness-Archive.tar.gz/content",
+        "size": 2670861118,
+        "md5": "c051f38aef217e59c03b66c96c931026",
+        "local_path": "data/observations/raw/crustal_models/InSight-Crustal-Thickness-Archive.tar.gz",
+        "status": "downloaded",
+        "sha256": "5781ca8bdbab5eee9e40c3e44a830ceb61435a972639814cb053da2c4fee4a59",
+        "bytes": 2670861118,
+        "provider_checksum_verified": true
+      }
+    ],
+    "metadata_sha256": "27d03ce0fb48cb712a2a362fef09db1abedc44b699ef26be99432b6e55aa3998",
+    "license": "cc-by-4.0",
+    "status": "downloaded"
+  },
+  {
+    "id": "herd2024",
+    "title": "Meteorite source-crater tables",
+    "provider": "publisher repository",
+    "license": "CC BY-NC 4.0 article; retain attribution and noncommercial restriction",
+    "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11328911/",
+    "limitation": "Candidate associations and modeled burial depths; not confirmed launch sites.",
+    "products": [
+      {
+        "name": "supplementary.zip",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11328911/supplementaryFiles"
+      }
+    ],
+    "checked_at": "2026-09-24T17:58:20.443028+00:00",
+    "files": [
+      {
+        "name": "supplementary.zip",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11328911/supplementaryFiles",
+        "local_path": "data/observations/raw/herd2024/supplementary.zip",
+        "status": "downloaded",
+        "sha256": "938f993ce46f6494d5915a38c08a6755d865a403c36da5ccb5773fd4a6217c51",
+        "bytes": 1732916,
+        "provider_checksum_verified": false
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "id": "geology",
+    "title": "USGS global geologic units, SIM 3292",
+    "provider": "USGS ArcGIS service",
+    "license": "USGS public domain map; retain Tanaka et al. (2014) attribution",
+    "landing_url": "https://usgs.maps.arcgis.com/apps/webappviewer/index.html?id=fc004c3d21b64c398ed5458580ab7c58",
+    "limitation": "Map interpretation at 1:20 million, not direct rock chemistry; surface units do not represent deep sources.",
+    "products": [
+      {
+        "name": "units.json",
+        "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Tanaka_et_al_2014_Mars_Global_Map_Features/FeatureServer/3/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=104971&f=json&resultRecordCount=2000"
+      },
+      {
+        "name": "layer.json",
+        "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Tanaka_et_al_2014_Mars_Global_Map_Features/FeatureServer/3?f=json"
+      }
+    ],
+    "checked_at": "2026-09-24T17:58:20.443498+00:00",
+    "files": [
+      {
+        "name": "units.json",
+        "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Tanaka_et_al_2014_Mars_Global_Map_Features/FeatureServer/3/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=104971&f=json&resultRecordCount=2000",
+        "local_path": "data/observations/raw/geology/units.json",
+        "status": "downloaded",
+        "sha256": "7bdc007316104b7017dfb7f6fb4a87a136ff5afb520b248c3570465e5a024880",
+        "bytes": 148128735,
+        "provider_checksum_verified": false
+      },
+      {
+        "name": "layer.json",
+        "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Tanaka_et_al_2014_Mars_Global_Map_Features/FeatureServer/3?f=json",
+        "local_path": "data/observations/raw/geology/layer.json",
+        "status": "downloaded",
+        "sha256": "67edebda90b56a7fc619dab1b44fc4d5219c49970975fe69566d227e0169538d",
+        "bytes": 37886,
+        "provider_checksum_verified": false
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "id": "rock_magnetism",
+    "title": "NWA 7034 paired stones: laboratory demagnetization",
+    "provider": "MagIC",
+    "landing_url": "https://earthref.org/MagIC/19658",
+    "paper": "https://doi.org/10.1029/2022JE007464",
+    "license": "CC BY 4.0, MagIC / EarthRef",
+    "limitation": "Nine paired stones were remagnetized by hand magnets. Earth find locations are not Mars launch positions; these measurements are not an ancient Martian paleofield.",
+    "products": [
+      {
+        "name": "magic_contribution_19658.txt",
+        "url": "https://earthref.org/MagIC/download/19658/magic_contribution_19658.txt"
+      }
+    ],
+    "checked_at": "2026-09-24T18:07:27.429052+00:00",
+    "files": [
+      {
+        "name": "magic_contribution_19658.txt",
+        "url": "https://earthref.org/MagIC/download/19658/magic_contribution_19658.txt",
+        "local_path": "data/observations/raw/rock_magnetism/magic_contribution_19658.txt",
+        "status": "downloaded",
+        "sha256": "580e18c1856399a955525ba42ffcbdc19e503f33694d57a6d883ebf3a8b10446",
+        "bytes": 232080,
+        "provider_checksum_verified": false
+      }
+    ],
+    "status": "downloaded"
+  }
+]

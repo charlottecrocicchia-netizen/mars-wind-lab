@@ -1,0 +1,193 @@
+[
+  {
+    "id": "magnetic_field",
+    "provider": "zenodo",
+    "api": "https://zenodo.org/api/records/3876714",
+    "title": "Global crustal magnetic field",
+    "paper": "https://doi.org/10.1029/2018JE005854",
+    "landing_url": "https://zenodo.org/records/3876714",
+    "limitation": "MGS and MAVEN inversion, degree 134; not direct surface measurements."
+  },
+  {
+    "id": "magnetic_depth",
+    "provider": "zenodo",
+    "api": "https://zenodo.org/api/records/4686358",
+    "title": "Equivalent magnetic source depths",
+    "paper": "https://doi.org/10.1029/2020JE006690",
+    "landing_url": "https://zenodo.org/records/4686358",
+    "limitation": "Overlapping 20-degree windows; rejected fits and negative estimates require explicit flags."
+  },
+  {
+    "id": "crustal_models",
+    "provider": "zenodo",
+    "api": "https://zenodo.org/api/records/6477509",
+    "title": "InSight crustal thickness archive",
+    "paper": "https://doi.org/10.1029/2022JE007298",
+    "landing_url": "https://zenodo.org/records/6477509",
+    "limitation": "An ensemble conditional on density, seismic and interior assumptions."
+  },
+  {
+    "id": "ejection_ages",
+    "provider": "zenodo",
+    "api": "https://zenodo.org/api/records/10028641",
+    "title": "Meteorite ejection-age compilation",
+    "paper": "https://doi.org/10.1126/sciadv.adn2378",
+    "landing_url": "https://zenodo.org/records/10028641",
+    "limitation": "Literature through July 2023; samples and ejection groups are not independent sites."
+  },
+  {
+    "id": "ejection_models",
+    "provider": "zenodo",
+    "api": "https://zenodo.org/api/records/8360890",
+    "title": "Crater-related pitted-materials catalog",
+    "paper": "https://doi.org/10.1126/sciadv.adn2378",
+    "landing_url": "https://zenodo.org/records/8360890",
+    "limitation": "Published crater morphology inventory used in candidate screening; not impact-ejection simulation output."
+  },
+  {
+    "id": "thermal_profiles",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909929",
+    "title": "Present-day thermal profiles",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909929",
+    "limitation": "Present-day published model endpoints; not time histories or temperature measurements."
+  },
+  {
+    "id": "thermal_5909827",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909827",
+    "title": "NUCM wet-crust ensemble",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909827",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+  },
+  {
+    "id": "thermal_5909857",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909857",
+    "title": "UCM wet-crust ensemble",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909857",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+  },
+  {
+    "id": "thermal_5909875",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909875",
+    "title": "NUCM2 wet-crust ensemble",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909875",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+  },
+  {
+    "id": "thermal_5909908",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909908",
+    "title": "NUCM dry-crust ensemble",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909908",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+  },
+  {
+    "id": "thermal_5909914",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909914",
+    "title": "UCM dry-crust ensemble",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909914",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+  },
+  {
+    "id": "thermal_5909917",
+    "provider": "figshare",
+    "api": "https://api.figshare.com/v2/articles/5909917",
+    "title": "Elastic thickness evolution",
+    "paper": "https://doi.org/10.1002/2017JE005431",
+    "landing_url": "https://figshare.com/articles/dataset/_/5909917",
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+  },
+  {
+    "id": "mola",
+    "title": "MOLA global topography, 4 pixels per degree",
+    "provider": "PDS",
+    "license": "NASA PDS public archive; retain attribution",
+    "landing_url": "https://pds-geosciences.wustl.edu/missions/mgs/megdr.html",
+    "limitation": "Topography relative to the areoid; distinct from crustal thickness.",
+    "products": [
+      {
+        "name": "megt90n000cb.img",
+        "url": "https://pds-geosciences.wustl.edu/mgs/urn-nasa-pds-mgs_mola_topography_derived/meg004/megt90n000cb.img"
+      },
+      {
+        "name": "megt90n000cb.xml",
+        "url": "https://pds-geosciences.wustl.edu/mgs/urn-nasa-pds-mgs_mola_topography_derived/meg004/megt90n000cb.xml"
+      }
+    ]
+  },
+  {
+    "id": "lagain2022",
+    "title": "NWA 7034 candidate source and geological context",
+    "provider": "publisher",
+    "license": "CC BY 4.0 article; retain source attribution",
+    "landing_url": "https://www.nature.com/articles/s41467-022-31444-8",
+    "limitation": "Candidate provenance, not a measured launch position.",
+    "products": [
+      {
+        "name": "41467_2022_31444_MOESM1_ESM.pdf",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-31444-8/MediaObjects/41467_2022_31444_MOESM1_ESM.pdf"
+      },
+      {
+        "name": "41467_2022_31444_MOESM3_ESM.xlsx",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-31444-8/MediaObjects/41467_2022_31444_MOESM3_ESM.xlsx"
+      }
+    ]
+  },
+  {
+    "id": "herd2024",
+    "title": "Meteorite source-crater tables",
+    "provider": "publisher repository",
+    "license": "CC BY-NC 4.0 article; retain attribution and noncommercial restriction",
+    "landing_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11328911/",
+    "limitation": "Candidate associations and modeled burial depths; not confirmed launch sites.",
+    "products": [
+      {
+        "name": "supplementary.zip",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11328911/supplementaryFiles"
+      }
+    ]
+  },
+  {
+    "id": "geology",
+    "title": "USGS global geologic units, SIM 3292",
+    "provider": "USGS ArcGIS service",
+    "license": "USGS public domain map; retain Tanaka et al. (2014) attribution",
+    "landing_url": "https://usgs.maps.arcgis.com/apps/webappviewer/index.html?id=fc004c3d21b64c398ed5458580ab7c58",
+    "limitation": "Map interpretation at 1:20 million, not direct rock chemistry; surface units do not represent deep sources.",
+    "products": [
+      {
+        "name": "units.json",
+        "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Tanaka_et_al_2014_Mars_Global_Map_Features/FeatureServer/3/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=104971&f=json&resultRecordCount=2000"
+      },
+      {
+        "name": "layer.json",
+        "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Tanaka_et_al_2014_Mars_Global_Map_Features/FeatureServer/3?f=json"
+      }
+    ]
+  },
+  {
+    "id": "rock_magnetism",
+    "title": "NWA 7034 paired stones: laboratory demagnetization",
+    "provider": "MagIC",
+    "landing_url": "https://earthref.org/MagIC/19658",
+    "paper": "https://doi.org/10.1029/2022JE007464",
+    "license": "CC BY 4.0, MagIC / EarthRef",
+    "limitation": "Nine paired stones were remagnetized by hand magnets. Earth find locations are not Mars launch positions; these measurements are not an ancient Martian paleofield.",
+    "products": [
+      {
+        "name": "magic_contribution_19658.txt",
+        "url": "https://earthref.org/MagIC/download/19658/magic_contribution_19658.txt"
+      }
+    ]
+  }
+]

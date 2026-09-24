@@ -11,7 +11,7 @@ tmp/
 *.egg-info/
 
 # External scientific datasets, local research outputs and machine configuration
-data/
+/data/
 output/
 local_settings.json
 .env.*
