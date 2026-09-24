@@ -1,0 +1,38 @@
+[
+  {
+    "file": "newton.html",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/4236",
+    "bytes": 83136,
+    "sha256": "3383688d91d744056bd79ec4bef2adde3a69676899c6b39a876e1b735e9d6999"
+  },
+  {
+    "file": "copernicus.html",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/1297",
+    "bytes": 83204,
+    "sha256": "4fddb0b02061724e04df780e161f95d4057e12edb93d3e2847134adfb8af7ffa"
+  },
+  {
+    "file": "huygens.html",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/2596",
+    "bytes": 83202,
+    "sha256": "93efa57e287345449fa0442d4d75dce4975381677bc8f01fac693f3cbb97d6e3"
+  },
+  {
+    "file": "schiaparelli.html",
+    "url": "https://planetarynames.wr.usgs.gov/Feature/5366",
+    "bytes": 83127,
+    "sha256": "7084bef8a85ee8bced96a73c0453f7e47ff8b26dfdad5c487b774aac28b6fe51"
+  },
+  {
+    "file": "mocaas.html",
+    "url": "https://www.ias.u-psud.fr/moccas/",
+    "bytes": 13496,
+    "sha256": "1978c36f1b12a6cf11b6b636ce3706a62ed3f8e8a0f916e1a6ae6a0f1e839acb"
+  },
+  {
+    "file": "lagain_db.json.zip",
+    "url": "https://raw.githubusercontent.com/alagain/martian_crater_database/ccd5de7bbc6525d25d746332b4a1e58ba1f72680/Global/lagain_db.json.zip",
+    "bytes": 8148444,
+    "sha256": "a1cab2142b955e0ed8f84d06b71ff9578d28c8fab9503624a4e909d42c7de325"
+  }
+]

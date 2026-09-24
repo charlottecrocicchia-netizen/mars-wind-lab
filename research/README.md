@@ -1,5 +1,7 @@
 # Mars dichotomy evidence atlas
 
+**New: [completed regional study](PILOT_STUDY.md)** — five navigable local pages, regional magnetic contrasts, geological-reference sensitivity, explicit hypotheses and reproducible outputs.
+
 A research component of **Charlotte Crocicchia's personal Mars project**. This collection connects the northern-lowland / southern-highland contrast with interior structure, impact and convection models, rock magnetism, meteorite histories, surface geology and atmospheric evolution.
 
 **Snapshot: 24 September 2026.** This is an evidence inventory with selective source assessment, not a completed exhaustive systematic review and not a new discovery about the origin of Mars's dichotomy.

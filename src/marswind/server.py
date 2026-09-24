@@ -84,6 +84,13 @@ def tests_index():return FileResponse(ROOT/'web/tests.html')
 @app.get('/research/library')
 def library_index():return FileResponse(ROOT/'web/library.html')
 
+@app.get('/research/pilot')
+def pilot_index():return FileResponse(ROOT/'web/pilot/start.html')
+
+@app.get('/research/pilot/{page}')
+def pilot_page(page:Literal['regions','hypotheses','method','results']):
+    return FileResponse(ROOT/f'web/pilot/{page}.html')
+
 @app.get('/research')
 def research_index():return FileResponse(ROOT/'web/research.html')
 

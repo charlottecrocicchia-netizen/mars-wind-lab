@@ -1,0 +1,140 @@
+{
+  "id": "regional-recording-v1",
+  "date": "2026-09-24",
+  "status": "Exploratory protocol fixed before the first regional calculation; not a registered confirmatory study",
+  "question": "Do crater interiors show the same sign of orbital magnetic contrast, and how sensitive is it to altitude, reference area and mapped surface geology?",
+  "selection_source": "https://doi.org/10.1029/2024JE008832",
+  "selection_note": "Literature-selected hydrothermal candidate regions, not a random or representative sample of Mars. Newton and Copernicus belong to one region. No wet/dry classification.",
+  "sites": [
+    {
+      "id": "newton",
+      "name": "Newton",
+      "region": "Eridania",
+      "lat": -40.5,
+      "lon": 201.97,
+      "diameter_km": 299.94,
+      "geometry_source": "https://planetarynames.wr.usgs.gov/Feature/4236",
+      "geometry_convention": "MDIM 2.1; planetocentric, east-positive; circular approximation",
+      "role": "Primary crater case",
+      "age_control": "No numerical impact/alteration age matched in this pilot"
+    },
+    {
+      "id": "copernicus",
+      "name": "Copernicus",
+      "region": "Eridania",
+      "lat": -48.84,
+      "lon": 191.17,
+      "diameter_km": 301.83,
+      "geometry_source": "https://planetarynames.wr.usgs.gov/Feature/1297",
+      "geometry_convention": "MDIM 2.1; planetocentric, east-positive; circular approximation",
+      "role": "Primary crater case",
+      "age_control": "No numerical impact/alteration age matched in this pilot"
+    },
+    {
+      "id": "huygens",
+      "name": "Huygens",
+      "region": "Huygens",
+      "lat": -13.88,
+      "lon": 55.58,
+      "diameter_km": 467.25,
+      "geometry_source": "https://planetarynames.wr.usgs.gov/Feature/2596",
+      "geometry_convention": "MDIM 2.1; planetocentric, east-positive; circular approximation",
+      "role": "Primary crater case",
+      "age_control": "No numerical impact/alteration age matched in this pilot"
+    },
+    {
+      "id": "schiaparelli",
+      "name": "Schiaparelli",
+      "region": "Schiaparelli",
+      "lat": -2.71,
+      "lon": 16.77,
+      "diameter_km": 458.52,
+      "geometry_source": "https://planetarynames.wr.usgs.gov/Feature/5366",
+      "geometry_convention": "MDIM 2.1; planetocentric, east-positive; circular approximation",
+      "role": "Primary crater case",
+      "age_control": "No numerical impact/alteration age matched in this pilot"
+    },
+    {
+      "id": "ladon",
+      "name": "Ladon window",
+      "region": "Ladon",
+      "lat": -18.24,
+      "lon": 333.087999,
+      "diameter_km": 1096.65,
+      "geometry_source": "https://github.com/alagain/martian_crater_database/tree/ccd5de7bbc6525d25d746332b4a1e58ba1f72680/Global",
+      "catalog_id": "19-000000",
+      "geometry_convention": "Unfiltered catalog radius in meters converted to km; east-positive longitude",
+      "role": "Sensitivity case only",
+      "catalog_status": "Misidentified",
+      "age_control": "No numerical impact/alteration age matched in this pilot",
+      "caution": "Large catalog window in the Ladon region. The revised catalog flags this entry Misidentified. It is retained transparently as a regional window, excluded from primary crater conclusions, and is not a validated rim or an independent control."
+    }
+  ],
+  "grid_step_deg": 0.5,
+  "radius_km": 3393.5,
+  "harmonic_degree": 134,
+  "altitudes_km": [
+    130,
+    150,
+    400
+  ],
+  "baseline": {
+    "altitude_km": 150,
+    "inside_radius_R": 0.8,
+    "outside_radius_R": [
+      1.2,
+      2.0
+    ],
+    "radius_scale": 1.0
+  },
+  "sensitivity": {
+    "inside_radius_R": [
+      0.6,
+      0.8,
+      1.0
+    ],
+    "outside_radius_R": [
+      [
+        1.2,
+        1.8
+      ],
+      [
+        1.2,
+        2.0
+      ],
+      [
+        1.5,
+        2.5
+      ]
+    ],
+    "radius_scale": [
+      0.9,
+      1.0,
+      1.1
+    ],
+    "azimuth_sectors": 8
+  },
+  "matching": "Exact USGS SIM3292 map unit; outside means reweighted to inside unit area on common support. Report support fraction; never treat a map unit as deep lithology or exact age.",
+  "uncertainty": "Sensitivity envelopes are not confidence intervals. No independent pixel counts, p-values or origin probabilities.",
+  "prediction_rules": [
+    {
+      "id": "uniform-low",
+      "statement": "All primary crater interiors have smaller mean orbital |B| than their nearby reference rings.",
+      "criterion": "Each baseline ratio < 1; robustness checked across all predefined geometry and altitude variants.",
+      "scope": "Restrictive observable rule only; failure cannot reject thermal or chemical alteration."
+    },
+    {
+      "id": "uniform-high",
+      "statement": "All primary crater interiors have larger mean orbital |B| than their nearby reference rings.",
+      "criterion": "Each baseline ratio > 1; same sensitivity checks.",
+      "scope": "Restrictive observable rule only; failure cannot reject remanence acquisition or a past dynamo."
+    }
+  ],
+  "deferred": [
+    "Coverage-controlled mineral\u2013field association",
+    "Age/lithology/impact-matched causal controls",
+    "Thermal/chemical forward-model fitting",
+    "Held-out physical predictions",
+    "Joint gravity/magnetic inversion and dichotomy-origin inference"
+  ]
+}

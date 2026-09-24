@@ -61,3 +61,12 @@ Open **Data → Lab magnetism** and choose a meteorite. MIL 03346 is the default
 Choose Lafayette to see crystallization and aqueous alteration as separate events. “Secondary” describes a later recording event; it can still have occurred on Mars. Follow the recording guide for the distinction from terrestrial contamination.
 
 Open **Data → Water & alteration**, choose a mineral class and instrument, then switch between elevation and the crustal magnetic-field background. Markers denote occupied 2° cells. They do not fill the entire cell with altered rock, and an unmarked cell is not a dry control. **Tests**, diagnostic 06, records the descriptive overlap and explains what is still needed for a physical association test.
+
+
+## Follow the regional study
+
+Choose **Study** in the main navigation. Five persistent chapter links guide you from the question to **Explore regions**, **Compare histories**, **How we tested**, and **Results**. Previous/next links are available at the bottom of every page.
+
+In **Explore regions**, select Newton, Copernicus, Huygens, Schiaparelli or the flagged Ladon window. Switch between magnetic field and elevation, choose 130/150/400 km for the field, and optionally show mineral detections. The side panel explains the inside/reference ratio and the effect of map-unit standardization. The URL preserves these selections for sharing or bookmarking. Open the geology or crater-depth details only when needed.
+
+**Results** compares all cases and offers a PNG/SVG figure, the 405 sensitivity settings as CSV, complete JSON provenance and a downloadable scientific note. **Compare histories** links the possible recording mechanisms to meteorite evidence without assigning unknown source locations. No atmospheric installation or live computation is required to view this saved study.

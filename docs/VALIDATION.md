@@ -4,7 +4,7 @@ Locally checked with Python 3.14, gfortran 15.1 and MCD 6.1 on macOS. Exact Pyth
 
 ## Numerical checks
 
-Run `python -m pytest -q`. The current suite contains 46 cases: 39 checks that run without MCD or raw scientific downloads and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
+Run `python -m pytest -q`. The current suite contains 53 cases: 46 checks that run without MCD or raw scientific downloads and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
 
 - Sound speed, invalid thermodynamic states and four cardinal projections.
 - Known shear on a nonuniform geometric grid and SI conversion.
@@ -61,3 +61,12 @@ The revised workspace was checked in the local browser: persistent navigation, m
 Six additional checks protect distinct natural and laboratory remanence, preserved treatment labels and unverified units, upper/lower bounds and missing errors, separated mineral/event ages, coordinate wrapping and instrument unions, and reproducible occupancy/field summaries with code and input hashes. The ALH archive's coordinate placeholders are never treated as source locations.
 
 Browser checks exercised MIL and ALH specimen selection, ALH thermal demagnetization, the exclusion of the appended MIL25 laboratory TRM, expandable directions, Lafayette's separate age table, mineral-class and instrument/background controls, and the new descriptive-overlap diagnostic. No component fitting, paleointensity replication, coverage-controlled mineral association or joint origin inference is claimed.
+
+
+## Regional recording pilot — 24 September 2026
+
+The complete local suite passes **53 tests**: 46 run without MCD and 7 require the configured atmospheric installation. Seven new pilot tests verify great-circle geometry and longitude wrapping, MOLA pixel registration and periodic interpolation, a known bowl's depth and datum invariance, composition-driven contrast reversal, missing common-unit support, scientific snapshot/provenance accounting, and all five study routes/downloads without MCD.
+
+The saved regional build recomputes the full degree-134 magnetic model at three altitudes, runs 81 analysis settings for each of five windows, retains the Ladon catalog warning, and checks four direct field values against the rounded existing atlas. No p-values, confidence intervals or physical-history posteriors are manufactured from correlated grid nodes.
+
+Browser checks exercise chapter navigation, region and altitude changes, the elevation layer, presence-only mineral overlays, the Schiaparelli common-support warning, and expandable MOLA profiles. Browser console errors were checked. Reproduction of the original paper's joint inversion is not claimed.

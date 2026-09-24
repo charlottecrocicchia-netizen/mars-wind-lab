@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Regional study &amp; results — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css"><link rel="stylesheet" href="/assets/workspace.css"></head><body class="workspace">
+<a class="skip" href="#article">Skip to the article</a><header class="workspace-header"><a href="/" class="wordmark"><i></i><span>Mars research<small>CHARLOTTE CROCICCHIA</small></span></a><nav aria-label="Main navigation"><a href="/">Overview</a><a href="/research/pilot">Study</a><a href="/research/hypotheses">Ideas</a><a href="/research/data">Data</a><a href="/research/tests">Tests</a><a href="/research/library">Library</a><a href="/atmosphere">Atmosphere</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">READING ROOM</p><a class="current" href="/assets/reading/pilot_study.html">Regional study &amp; results</a><a class="" href="/assets/reading/recording.html">Primary &amp; secondary remanence</a><a class="" href="/assets/reading/water.html">Water &amp; alteration</a><a class="" href="/assets/reading/first_results.html">Completed diagnostics</a><a class="" href="/assets/reading/hypotheses.html">Working hypothesis</a><a class="" href="/assets/reading/test_protocol.html">First physical test</a><a class="" href="/assets/reading/synthesis.html">Scientific synthesis</a><a class="" href="/assets/reading/meteorites.html">Meteorite magnetism</a><a class="" href="/assets/reading/missions.html">Missions &amp; data</a><a class="" href="/assets/reading/research_plan.html">Research programme</a><a class="" href="/assets/reading/method.html">Search &amp; reading method</a><a class="" href="/assets/reading/community.html">Community leads</a><a class="" href="/assets/reading/readme.html">About this collection</a></aside><article class="prose" id="article"><h1 id="regional-recording-pilot-the-comparison-changes-the-interpretation">Regional recording pilot: the comparison changes the interpretation</h1>
+<p><strong>Completed exploratory analysis, 24 September 2026.</strong> Four primary craters in three regional settings, plus one flagged Ladon window. No unique remanence history or origin of the Martian dichotomy is selected.</p>
+<p>With the local server running: <a href="http://127.0.0.1:8765/research/pilot">start the guided study</a> · <a href="http://127.0.0.1:8765/research/pilot/regions">explore regions</a> · <a href="http://127.0.0.1:8765/research/pilot/hypotheses">compare histories</a> · <a href="http://127.0.0.1:8765/research/pilot/method">method</a> · <a href="http://127.0.0.1:8765/research/pilot/results">results</a></p>
+<h2 id="question-and-scope">Question and scope</h2>
+<p>Do crater interiors have the same sign of orbital magnetic contrast, and does that sign survive changes in altitude, reference terrain and mapped surface geology? This is a necessary measurement audit before fitting competing recording histories. A magnetic field measured above the surface is not the magnetization of a particular rock, nor the ancient field that magnetized it.</p>
+<p>The cases are motivated by <a href="https://doi.org/10.1029/2024JE008832">Mittelholz et al. (2025)</a>. Their hydrothermal interpretation motivates the selection; our amplitude ratios do not reproduce their joint density–magnetization inversion. The cases are literature-selected, not independent wet/dry controls or a representative sample of Mars. Newton and Copernicus belong to the same Eridania setting.</p>
+<h2 id="what-was-calculated">What was calculated</h2>
+<p>The <a href="/research/files/pilot/protocol.json">protocol</a> specifies the primary comparison and sensitivity settings, fixed before the first regional calculation. This is not a preregistered or confirmatory study.</p>
+<ul>
+<li>Evaluate all degree-134 coefficients of the <a href="https://doi.org/10.1029/2018JE005854">Langlais et al. magnetic model</a> at 130, 150 and 400 km above its 3393.5 km reference sphere. Take the magnitude at each point before averaging. These are three evaluations of one model, not independent datasets.</li>
+<li>Sample on a 0.5° grid, weighting latitude–longitude cells by cos(latitude). The sampling interval does not establish physical resolution or an independent observation count.</li>
+<li>Divide mean field inside 0.8 R by mean field in a reference ring 1.2–2 R, where R is half the catalog diameter. The ring is not assumed to be unaltered.</li>
+<li>Repeat for 81 combinations of altitude, inside radius, reference ring and catalog-radius factor per case. Also omit each of eight azimuthal sectors and separately exclude other catalog crater interiors ≥150 km from the reference ring.</li>
+<li>Standardize the reference to the interior's proportions of common <a href="https://doi.org/10.3133/sim3292">USGS surface map units</a>. This is descriptive stratification. It does not control deep lithology, exact age, exposure or heating; surface units can themselves reflect the impact or alteration being studied.</li>
+</ul>
+<p>For common units u, the standardized ratio is</p>
+<p><code>sum(A_inside,u × mean(B_inside,u)) / sum(A_inside,u × mean(B_outside,u))</code>.</p>
+<p>Only units with samples on both sides enter the sum. The retained fraction of interior area is reported. Unmatched terrain is never assigned a synthetic control value.</p>
+<h3 id="source-geometry-audit">Source geometry audit</h3>
+<p>Four crater geometries were checked against acquired IAU/USGS Gazetteer pages, using <strong>MDIM 2.1, planetocentric, east-positive</strong> values: <a href="https://planetarynames.wr.usgs.gov/Feature/4236">Newton</a>, <a href="https://planetarynames.wr.usgs.gov/Feature/1297">Copernicus</a>, <a href="https://planetarynames.wr.usgs.gov/Feature/2596">Huygens</a>, and <a href="https://planetarynames.wr.usgs.gov/Feature/5366">Schiaparelli</a>. Circular apertures approximate the features; they are not traced geological boundaries.</p>
+<p>The large Ladon-region entry <code>19-000000</code> in the <a href="https://github.com/alagain/martian_crater_database/tree/ccd5de7bbc6525d25d746332b4a1e58ba1f72680/Global">versioned author-hosted revised crater catalog</a> is labelled <strong>Misidentified</strong>. We preserve the flag, retain its coordinates and diameter only as an exploratory regional window, and exclude it from primary crater conclusions. This is a catalog-quality flag, not a claim that all geological interpretations of Ladon are invalid. Its large footprint also makes it unsuitable as a size-matched control for the other cases.</p>
+<h3 id="published-method-transfer-and-numerical-checks">Published-method transfer and numerical checks</h3>
+<p>The radial depth diagnostic follows the recipe in Mittelholz et al.: sample azimuths every 30°, take their median profile, use the minimum within 0.2 R and the outer median at 1–1.2 R, and divide the depth difference by diameter. Here we use the local <a href="https://pds-geosciences.wustl.edu/missions/mgs/megdr.html">MOLA 4 ppd MEGDR</a>, bilinear interpolation and fixed catalog rims; sensitivity varies radius and azimuth spacing. Their visual rim adjustment, full gravity selection and joint inversion are <strong>not reproduced</strong>. Their inversion regularization favours related density and magnetization patterns; those inferred relationships cannot be counted as wholly independent confirmation.</p>
+<p>Four direct magnetic evaluations agree with the existing atlas within its 0.001 nT rounding. Analytic tests separately check a known radial bowl, invariance to a vertical datum shift, spherical distances and longitude wrapping, map-unit selection effects, and missing common support. These validate calculation behavior, not the geological mechanisms.</p>
+<h2 id="results">Results</h2>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th style="text-align: right;">Raw ratio, 150 km</th>
+<th style="text-align: right;">Same-unit ratio, 150 km</th>
+<th style="text-align: right;">Interior retained</th>
+<th style="text-align: right;">Raw range over all 81 settings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Newton</td>
+<td style="text-align: right;">0.778</td>
+<td style="text-align: right;">1.448</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0.606–0.881</td>
+</tr>
+<tr>
+<td>Copernicus</td>
+<td style="text-align: right;">0.771</td>
+<td style="text-align: right;">0.746</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0.568–0.839</td>
+</tr>
+<tr>
+<td>Huygens</td>
+<td style="text-align: right;">0.463</td>
+<td style="text-align: right;">0.384</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0.262–0.922</td>
+</tr>
+<tr>
+<td>Schiaparelli</td>
+<td style="text-align: right;">0.951</td>
+<td style="text-align: right;">1.707</td>
+<td style="text-align: right;">34.7%</td>
+<td style="text-align: right;">0.864–1.523</td>
+</tr>
+<tr>
+<td>Ladon window — sensitivity only</td>
+<td style="text-align: right;">0.340</td>
+<td style="text-align: right;">0.386</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0.263–0.791</td>
+</tr>
+</tbody>
+</table>
+<p>The full-precision saved values and every setting are in <a href="/research/files/pilot/results.json">results JSON</a> and <a href="/research/files/pilot/contrasts.csv">contrasts CSV</a>. The <a href="/research/files/pilot/regional_pilot.png">scientific figure</a> is also available as <a href="/research/files/pilot/regional_pilot.svg">SVG</a>. Ranges are <strong>sensitivity envelopes, not confidence intervals</strong>. No coefficient covariance, independent regional sampling distribution or inferred uncertainty on a physical history is supplied.</p>
+<p><strong>Newton is sensitive to the geological reference mixture.</strong> Its raw interior mean is about 135.0 nT, versus 173.5 nT in the ring. Giving the ring the interior's common-unit proportions reverses the ratio. This does not make the standardized value a uniquely correct estimate of the impact's effect: the strata remain spatially structured, and the map describes surface units rather than magnetic source volumes.</p>
+<p><strong>Schiaparelli is sensitive to observation scale and common support.</strong> Its raw ratio increases from 0.870 at 130 km to 1.367 at 400 km. Upward continuation changes the relative contribution of spatial wavelengths; the three measurements cannot be interpreted as distinct geological events. About 65% of the interior lacks the same map unit in the reference ring. The standardized ratio describes the remaining terrain, not the full crater.</p>
+<p><strong>Copernicus and Huygens provide more stable contrasts to explain.</strong> Both raw and standardized ratios remain below one over all 81 settings for each case. Baseline sector omissions and the additional large-crater reference screen also leave these ratios below one. This stability applies only to the tested model and choices; it does not establish removal of magnetization or identify its cause.</p>
+<h2 id="what-can-be-decided-about-the-histories">What can be decided about the histories?</h2>
+<p>The restrictive observable rule “all primary crater interiors are stronger” is contradicted at the baseline. “All are weaker” agrees with that baseline but does not survive every altitude and comparison choice. Neither rule is a forward model of thermal or chemical evolution.</p>
+<table>
+<thead>
+<tr>
+<th>Recording history</th>
+<th>Required distinguishing constraint</th>
+<th>Current verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Early remanence preserved</td>
+<td>Dated carrier/component and a compatible survival history</td>
+<td>Not identifiable from orbital amplitude alone</td>
+</tr>
+<tr>
+<td>Later thermal resetting</td>
+<td>Blocking spectrum and time–temperature path consistent with other surviving records</td>
+<td>Not fitted; remains possible</td>
+</tr>
+<tr>
+<td>Chemical rebuilding</td>
+<td>Mineral-generation age, reaction path and component linked to that generation</td>
+<td>Not fitted; remains possible</td>
+</tr>
+</tbody>
+</table>
+<p>Meteorites supply mechanism and event-order constraints, not automatic geographic labels. <a href="https://doi.org/10.1029/2021JE006856">MIL 03346</a> helps assess interior versus fusion-crust records; <a href="https://doi.org/10.1111/maps.12172">Tissint</a> illustrates a proposed post-shock acquisition history; <a href="https://doi.org/10.1126/sciadv.ade9071">ALH 84001</a> supplies ancient carrier-scale records. Lafayette's <a href="https://doi.org/10.7185/geochemlet.2443">742 ± 15 Ma alteration date</a> is kept separate from crystallization and magnetic-component ages. Unknown source locations remain unknown, and local crustal fields remain alternatives to a late core dynamo. The <a href="/assets/reading/recording.html">recording guide</a> explains primary/secondary remanence and contamination, drawing on Gattacceca, Clara Maurel, Roger Fu, Benjamin Weiss and collaborators' studies.</p>
+<h2 id="why-a-water-effect-estimate-is-still-unavailable">Why a water-effect estimate is still unavailable</h2>
+<p><a href="https://www.ias.u-psud.fr/moccas/">MOCAAS</a> supplies positive mineral detections. The paper <a href="https://doi.org/10.1016/j.icarus.2022.115164">Carter et al. (2023)</a> describes coverage products and limitations, but no usable survey/exposure mask was acquired from the ten-raster archive or listed global downloads. A generic CRISM footprint alone would not specify dust, burial, analyzed observations or mineral detectability. We therefore neither label blank cells dry nor fit a water–magnetism regression.</p>
+<p>The maps show presence-only 2° occupancy as context. They do not establish the altered volume, fluid-event age or magnetic carrier content. Native mineral-map georeferencing and latitude conventions have not been independently validated for precise deposit-scale association. These coarse markers never enter the magnetic estimand.</p>
+<h2 id="physical-interpretation-and-the-next-discriminating-evidence">Physical interpretation and the next discriminating evidence</h2>
+<p>Our working strategy is to constrain <strong>recording and preservation before inferring ancient field asymmetry</strong>. This pilot supports the need for that strategy; it does not demonstrate a particular recording history. Copernicus and Huygens are priorities for geometry-constrained source modeling, while Newton and Schiaparelli are useful tests of geological and spatial-scale dependence.</p>
+<p>A subsequent physical model needs regional age and carrier constraints, time-dependent thermal or reaction paths, observation coverage, and a consistent magnetic source geometry. Only then can histories be fitted and evaluated on a region withheld from fitting. No held-out physical prediction has been made here. Origin mechanisms for the crustal dichotomy remain separate, unresolved hypotheses; later magnetic modification need not have created the original crustal contrast.</p>
+<h2 id="reproduction-and-attribution">Reproduction and attribution</h2>
+<p>From the repository root, after the base observation acquisition/build:</p>
+<pre><code class="language-bash">python -m pip install -e '.[observations,research,test]'
+python scripts/data/acquire_pilot.py
+python scripts/data/build_pilot.py
+python scripts/research/render_pilot.py
+python -m pytest -q -m 'not integration'
+</code></pre>
+<p>The <a href="/research/files/pilot/sources.json">additional source manifest</a>, protocol and output provenance include input/code hashes. The build is offline and deterministic apart from serialization changes caused by software versions; versions are recorded. Original third-party archives and source HTML remain local. The public products are project-computed numerical summaries, figures and original explanatory text; underlying dataset terms are separate from the repository's code license. This is a personal research prototype by Charlotte Crocicchia, developed with AI assistance, not a peer-reviewed result.</p><div class="reading-tools"><a href="/research/library">← Browse the library</a><a href="/research/files/PILOT_STUDY.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/PILOT_STUDY.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Research snapshot · 24 September 2026 · Read the source and its limitations together.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>

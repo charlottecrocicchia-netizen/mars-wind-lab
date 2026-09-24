@@ -45,7 +45,7 @@ These are recording histories, not mutually exclusive global origin theories. Im
 3. Compare carrier-growth, thermal-reset and unchanged-carrier forward models. Propagate uncertain alteration ages, depth, mineral abundance, field history and acquisition efficiency.
 4. Withhold regions for prediction. A chemical branch is justified if it explains those observations better under defensible constraints, not merely because extra free parameters improve an in-sample fit.
 
-**Status:** data ingestion and descriptive overlap completed. Coverage-controlled association, reaction/transport modeling and joint origin inference remain unperformed.
+**Status:** data ingestion, descriptive overlap and the [regional magnetic pilot](PILOT_STUDY.md) are completed. The pilot compares four primary craters plus a flagged Ladon window, with altitude, geometry and surface-unit sensitivity. Coverage-controlled mineral association, reaction/transport modeling and joint origin inference remain unperformed.
 
 ## Other evidence that belongs in the same history
 

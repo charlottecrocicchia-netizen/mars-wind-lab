@@ -88,3 +88,8 @@ The discriminating question becomes: **does the same dated thermal and chemical 
 Our A–D comparison now permits separately constrained thermal and chemical rebuilding within B and D; it does not introduce an unconstrained correction wherever a model fails. Local crustal fields must be considered when younger meteorites record nonzero fields. A global dynamo is only one source-field alternative.
 
 The mineral–magnetism overlay is available, but a valid wet-versus-dry test requires a survey/exposure mask and matched regional controls. An empty spectral cell is not a dry control. This limitation is explicit in the interface and prevents the preliminary overlay from being promoted into an origin claim.
+
+
+## Completed regional measurement audit
+
+The [regional pilot](PILOT_STUDY.md) finds that Newton changes contrast sign after surface-unit standardization and Schiaparelli with altitude. Copernicus and Huygens retain lower interior orbital amplitudes across the tested settings. This prioritizes targets for source/recording models but does not prefer any of the four global model families or identify a thermal versus chemical history.
