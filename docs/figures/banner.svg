@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
+<title id="title">Mars Wind Lab</title><desc id="desc">A personal project by Charlotte Crocicchia. Winds, waves and Martian exploration.</desc>
+<rect width="1280" height="340" rx="18" fill="#223a33"/>
+<g fill="none" stroke="#d5c49a" opacity=".25"><circle cx="1060" cy="170" r="115"/><ellipse cx="1060" cy="170" rx="115" ry="37"/><ellipse cx="1060" cy="170" rx="43" ry="115"/><ellipse cx="1060" cy="170" rx="181" ry="44" transform="rotate(-27 1060 170)"/><path d="M945 170h230M1060 55v230"/></g>
+<circle cx="1176" cy="99" r="7" fill="#bf855e"/>
+<text x="64" y="67" font-family="Arial,sans-serif" font-size="14" letter-spacing="4" fill="#c9cda6">A PERSONAL PROJECT · CHARLOTTE CROCICCHIA</text>
+<text x="60" y="159" font-family="Georgia,serif" font-size="78" fill="#f4f1e8">Mars Wind Lab</text>
+<text x="64" y="210" font-family="Arial,sans-serif" font-size="25" fill="#d4daca">Winds. Waves. Martian questions.</text>
+<path d="M64 251h730" stroke="#53675b"/>
+<text x="64" y="287" font-family="Arial,sans-serif" font-size="16" fill="#b9c4b0">EXPLORE DATA · TEST ASSUMPTIONS · UNDERSTAND THE PHYSICS</text>
+</svg>

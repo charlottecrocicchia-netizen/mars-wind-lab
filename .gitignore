@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+.pytest_cache/
+build/
+data/cache/
+tmp/
+.env
+*.mod
+*.o
+.DS_Store
+*.egg-info/
+
+# External scientific datasets, local research outputs and machine configuration
+data/
+output/
+local_settings.json
+.env.*
+*.pdf
