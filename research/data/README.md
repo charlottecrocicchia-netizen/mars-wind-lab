@@ -29,3 +29,13 @@ These compact products accompany [the first diagnostics](../FIRST_RESULTS.md). T
 The MagIC series include changes in archived treatment amplitude and moment. The viewer uses measurement order, exposing the original amplitude on hover. Values are not rescaled to force monotonic treatment steps. The repository's source files should be checked with authors before using them for quantitative demagnetization fits. No terrestrial collection coordinates are interpreted as Martian coordinates.
 
 Source metadata can change between API queries. File checksums provide the product identity; the manifest checksum identifies this particular acquisition snapshot. Rerunning acquisition refreshes access metadata. “Downloaded” and “processed” are separate states in the interface. This collection is not an exhaustive or continuously updated Mars archive.
+
+## Laboratory and water extension
+
+- `paleomagnetism.json`: manually checked numerical transcription of all 15 entries in Weiss et al. (2025), SI Table S1, plus the NWA contamination case. The source PDF hash, table/page, uncertainty conventions and bounds are retained. This is curated input, not a new measurement or an exhaustive meteorite catalogue.
+- `laboratory_extended.json`: MIL RockPy natural-remanence files (CC0; 813 records, including one explicitly labelled appended laboratory TRM), and 492 ALH QDM fitted-source records (MagIC 19859, CC BY 4.0). Export treatment labels remain unchanged; MIL curves use relative magnitudes because units are not declared in the export. Original ALH magnetic maps are downloaded but no new map inversion is performed.
+- `water.json`: ten MOCAAS maps, November 2023 release, reduced to occupied 2° cells and joined descriptively to the existing magnetic display grid. No dry-area classification, water abundance or statistical association is inferred. Original raster reuse terms are unspecified; only project-computed coarse numerical occupancy is published.
+
+Rebuild with `python scripts/data/build_evidence.py` after acquisition and `build.py`. This extension uses `rasterio` and `tifffile` from the observations extra. Each nonzero native pixel contributes before aggregation. Identical compressed empty tiles are skipped only after decoding and verifying that exact tile content is all zero.
+
+The ALH provider returns a ZIP even for its `.txt` download URL; it is stored and validated as ZIP. Only the contribution table is unpacked for the web snapshot; the large map collection stays local. Run acquisition with `--large` to retrieve the original ALH and crustal archives.

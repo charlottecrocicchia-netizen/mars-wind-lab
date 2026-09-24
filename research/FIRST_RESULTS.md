@@ -13,7 +13,7 @@ The calculations now connect real public products. They test consistency and sen
 - **94 meteorite sample records**, **10 ejection-group entries**, **16 candidate craters**, the separate ejection-age compilation and the NWA 7034 isotope table.
 - **1,073 laboratory measurements from 11 specimens** belonging to nine NWA 7034 paired stones.
 
-The manifest records **87 downloaded products across 17 source entries**. This is a useful initial collection, not every observation made of Mars. Some downloaded ensembles and morphology products remain unanalyzed. The [mission inventory](MISSIONS.md) describes additional archives.
+The manifest records **115 downloaded products across 21 source entries**, including the later laboratory and water extension. The diagnostics below use selected products from that archive. This is a useful initial collection, not every observation made of Mars. Some downloaded ensembles and morphology products remain unanalyzed. The [mission inventory](MISSIONS.md) describes additional archives.
 
 ## 1. A common-altitude magnetic comparison
 
@@ -96,3 +96,5 @@ python -m pytest -q -m 'not integration'
 The large archive requires several GB of local disk space. Raw downloads remain under ignored `data/observations/raw/`. The source manifest contains URLs, file sizes, SHA-256 and provider checksums where supplied. The result records the input-manifest, pipeline and numerical-module hashes and key package versions. All calculations are deterministic apart from the run timestamp; no Monte Carlo probabilities are generated here.
 
 The code's MIT license does not replace source-data licenses. In particular, the Herd-derived meteorite table retains **CC BY-NC 4.0**; NASA/USGS public products, CC BY products and other sources retain their own terms. See [data licensing and conventions](data/README.md).
+
+The later [laboratory extension](RECORDING.md) and [water/alteration screening](WATER.md) add explicit recording-process and fluid-history constraints. These additions do not change the previously computed global field and crustal contrasts.

@@ -1222,5 +1222,532 @@
       }
     ],
     "status": "downloaded"
+  },
+  {
+    "id": "paleomag_inventory",
+    "title": "Published Martian meteorite paleomagnetism inventory (Weiss et al., 2025), SI Table S1",
+    "landing_url": "https://doi.org/10.1073/pnas.2404259121",
+    "provider": "Europe PMC",
+    "license": "Original article and supplement: CC BY-NC-ND 4.0. Original PDFs remain local; public inventory transcribes numerical facts with separately authored notes.",
+    "limitation": "Published inventory, not a catalogue of all Martian meteorites or independent ejection events.",
+    "products": [
+      {
+        "name": "supplementary.zip",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11745385/supplementaryFiles"
+      }
+    ],
+    "checked_at": "2026-09-24T18:41:14.315095+00:00",
+    "files": [
+      {
+        "name": "supplementary.zip",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11745385/supplementaryFiles",
+        "local_path": "data/observations/raw/paleomag_inventory/supplementary.zip",
+        "status": "downloaded",
+        "sha256": "412c79ad4b0c53a770de4dddc4ea6354cccf702712bceb2774950949619d5dc8",
+        "bytes": 4711039,
+        "provider_checksum_verified": false
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "id": "mil03346",
+    "title": "MIL 03346 laboratory demagnetization and rock magnetism (Volk et al., 2021)",
+    "landing_url": "https://doi.org/10.7910/DVN/S0R98P",
+    "paper_doi": "10.1029/2021JE006856",
+    "provider": "Harvard Dataverse",
+    "license": "CC0 1.0",
+    "limitation": "Selected bulk experimental files; quantum diamond microscopy maps remain in the linked archive. Sample axes are arbitrary, not geographic Mars directions.",
+    "products": [
+      {
+        "name": "MIL03346_MIL1.4(Tup_Nright_VSM).DCD",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374516",
+        "size": 9221,
+        "md5": "c1f457226b785bbf4e36cb827d9acf90"
+      },
+      {
+        "name": "MIL03346_(MIL1.4_Tup_Nright_VSM).forc",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374498",
+        "size": 1374481,
+        "md5": "6436ecfbe60aceb0799dc3e4b19c3b5f"
+      },
+      {
+        "name": "MIL03346_MIL1.4(Tup_Nright_VSM).HYS",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374507",
+        "size": 26349,
+        "md5": "a2ebac83c7d6a3e02b8ddfb874d1fc21"
+      },
+      {
+        "name": "MIL03346_MIL1.4(Tup_Nright_VSM).rforc",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374519",
+        "size": 2718245,
+        "md5": "1dbc2b2276bbc9fd5e0e07481768556a"
+      },
+      {
+        "name": "MIL1.1.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374513",
+        "size": 12048,
+        "md5": "bf51e6be98520f4ad2147d8570689bcc"
+      },
+      {
+        "name": "MIL1.1.irm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374497",
+        "size": 12786,
+        "md5": "485263fb291c63dc4da82b0e2bce0baa"
+      },
+      {
+        "name": "MIL1.1.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374500",
+        "size": 12738,
+        "md5": "f112464231575d2fe996e2e26fa8cdca"
+      },
+      {
+        "name": "MIL1.2.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374502",
+        "size": 12623,
+        "md5": "8fff3056b0f26046d8053500523fb774"
+      },
+      {
+        "name": "MIL1.2.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374527",
+        "size": 12738,
+        "md5": "c8a2d0f8a72c8d4047391f623ba2599b"
+      },
+      {
+        "name": "MIL1.3.aniso",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374503",
+        "size": 16208,
+        "md5": "f4b7b9a79e854e1ec73208efd961bbe0"
+      },
+      {
+        "name": "MIL1.3.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374499",
+        "size": 12278,
+        "md5": "b2726a9f6cbeefabab747c6292c4b350"
+      },
+      {
+        "name": "MIL1.3.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374509",
+        "size": 12738,
+        "md5": "573e19eb93726deb98ccba035abed43f"
+      },
+      {
+        "name": "MIL1.4.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374505",
+        "size": 11933,
+        "md5": "8b51a63a7683eebbee0d29aea4aa16c1"
+      },
+      {
+        "name": "MIL1.4.irm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374493",
+        "size": 4001,
+        "md5": "bf22e7e2a7dce9cdc8b73f36099c7f36"
+      },
+      {
+        "name": "MIL1.4.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374514",
+        "size": 12738,
+        "md5": "bacf937de09fddcdc58ea22bb2afb5f9"
+      },
+      {
+        "name": "MIL2.1.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374523",
+        "size": 12048,
+        "md5": "ea073623eb5961393be56e6c92781344"
+      },
+      {
+        "name": "MIL2.1.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374525",
+        "size": 12048,
+        "md5": "aeb9568f8f0a77a95131efc5b168157e"
+      },
+      {
+        "name": "MIL23.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374490",
+        "size": 3035,
+        "md5": "e19db65a863bcd6edb5fb673a6c7f87c"
+      },
+      {
+        "name": "MIL2.4.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374496",
+        "size": 12048,
+        "md5": "139a1ed89781cd4784a8548df80ef1ff"
+      },
+      {
+        "name": "MIL2.4.irm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374524",
+        "size": 9863,
+        "md5": "2c3404b24d76c6f178bafb39b27c36d3"
+      },
+      {
+        "name": "MIL2.4.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374489",
+        "size": 12048,
+        "md5": "ead181eeec55187261080ce7181cd57d"
+      },
+      {
+        "name": "MIL2.5(af_cleaning).nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374506",
+        "size": 1352,
+        "md5": "43ee8386c07a291a58ebee528c30d12b"
+      },
+      {
+        "name": "MIL2.5.irm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374518",
+        "size": 12738,
+        "md5": "631e8c59b92454f8d0bb4fa49217bcf7"
+      },
+      {
+        "name": "MIL25.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374522",
+        "size": 3390,
+        "md5": "dd9f7355249cc74fe58e03ca5ec3c886"
+      },
+      {
+        "name": "MIL3.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374521",
+        "size": 11703,
+        "md5": "38505876b3892ad6a3da5b5a2b19d92d"
+      }
+    ],
+    "checked_at": "2026-09-24T18:41:14.314658+00:00",
+    "files": [
+      {
+        "name": "MIL03346_MIL1.4(Tup_Nright_VSM).DCD",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374516",
+        "size": 9221,
+        "md5": "c1f457226b785bbf4e36cb827d9acf90",
+        "local_path": "data/observations/raw/mil03346/MIL03346_MIL1.4(Tup_Nright_VSM).DCD",
+        "status": "downloaded",
+        "sha256": "137355eb45cc41f1265fa52d9f070f6db7df49351777917c2de250c05c01056e",
+        "bytes": 9221,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL03346_(MIL1.4_Tup_Nright_VSM).forc",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374498",
+        "size": 1374481,
+        "md5": "6436ecfbe60aceb0799dc3e4b19c3b5f",
+        "local_path": "data/observations/raw/mil03346/MIL03346_(MIL1.4_Tup_Nright_VSM).forc",
+        "status": "downloaded",
+        "sha256": "bcaad8a503aee8f06a91fb199c78b9da63ef8abf455f458426fb1a6b7a59664f",
+        "bytes": 1374481,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL03346_MIL1.4(Tup_Nright_VSM).HYS",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374507",
+        "size": 26349,
+        "md5": "a2ebac83c7d6a3e02b8ddfb874d1fc21",
+        "local_path": "data/observations/raw/mil03346/MIL03346_MIL1.4(Tup_Nright_VSM).HYS",
+        "status": "downloaded",
+        "sha256": "5e8aabea4d3b7d7bf3664353fe9cb5669b50d8e750dad31881e558e5570134bb",
+        "bytes": 26349,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL03346_MIL1.4(Tup_Nright_VSM).rforc",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374519",
+        "size": 2718245,
+        "md5": "1dbc2b2276bbc9fd5e0e07481768556a",
+        "local_path": "data/observations/raw/mil03346/MIL03346_MIL1.4(Tup_Nright_VSM).rforc",
+        "status": "downloaded",
+        "sha256": "9baeb716f1e787c57fd12f37bd2619bae6a38df21e1051af2f17da6b293a45c0",
+        "bytes": 2718245,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.1.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374513",
+        "size": 12048,
+        "md5": "bf51e6be98520f4ad2147d8570689bcc",
+        "local_path": "data/observations/raw/mil03346/MIL1.1.arm",
+        "status": "downloaded",
+        "sha256": "ad293dc03692a673f1a8f8b344e96f51ae5daa0f15f834494b339444aecf7e4f",
+        "bytes": 12048,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.1.irm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374497",
+        "size": 12786,
+        "md5": "485263fb291c63dc4da82b0e2bce0baa",
+        "local_path": "data/observations/raw/mil03346/MIL1.1.irm",
+        "status": "downloaded",
+        "sha256": "7c9c8ac25a2070575127da65e8c6dde4fa91069ade9f2de6280116f45f840de4",
+        "bytes": 12786,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.1.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374500",
+        "size": 12738,
+        "md5": "f112464231575d2fe996e2e26fa8cdca",
+        "local_path": "data/observations/raw/mil03346/MIL1.1.nrm",
+        "status": "downloaded",
+        "sha256": "59831660f1e8e305869eb1d07e6b641fa9521f6c835676b246db5d38766dc9f3",
+        "bytes": 12738,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.2.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374502",
+        "size": 12623,
+        "md5": "8fff3056b0f26046d8053500523fb774",
+        "local_path": "data/observations/raw/mil03346/MIL1.2.arm",
+        "status": "downloaded",
+        "sha256": "7ef733284cbe95a9eb0ea14fa61bd00a22ca735f8b36ae7897829aede708cb2c",
+        "bytes": 12623,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.2.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374527",
+        "size": 12738,
+        "md5": "c8a2d0f8a72c8d4047391f623ba2599b",
+        "local_path": "data/observations/raw/mil03346/MIL1.2.nrm",
+        "status": "downloaded",
+        "sha256": "da792a2fec3ed18a0247524360264c1888b0404e76be9fc7a8211bf2c777176a",
+        "bytes": 12738,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.3.aniso",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374503",
+        "size": 16208,
+        "md5": "f4b7b9a79e854e1ec73208efd961bbe0",
+        "local_path": "data/observations/raw/mil03346/MIL1.3.aniso",
+        "status": "downloaded",
+        "sha256": "7103b7908ed686c0a8c4029279607672ffca7b8add79acb5361ac7f1bc989a6a",
+        "bytes": 16208,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.3.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374499",
+        "size": 12278,
+        "md5": "b2726a9f6cbeefabab747c6292c4b350",
+        "local_path": "data/observations/raw/mil03346/MIL1.3.arm",
+        "status": "downloaded",
+        "sha256": "9808568481cd01688741b90a7ffeba3cc9e78cc66118e868518f07a93bcc9458",
+        "bytes": 12278,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.3.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374509",
+        "size": 12738,
+        "md5": "573e19eb93726deb98ccba035abed43f",
+        "local_path": "data/observations/raw/mil03346/MIL1.3.nrm",
+        "status": "downloaded",
+        "sha256": "f5302567beda629f328958544cb0a501874ae3dc9e27d98cbeb3ebac1c2a089e",
+        "bytes": 12738,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.4.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374505",
+        "size": 11933,
+        "md5": "8b51a63a7683eebbee0d29aea4aa16c1",
+        "local_path": "data/observations/raw/mil03346/MIL1.4.arm",
+        "status": "downloaded",
+        "sha256": "9a1e9626d309fc1540d0e5ebc7e6b15d52162d75c4042e9bab20a0c0b3e95b27",
+        "bytes": 11933,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.4.irm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374493",
+        "size": 4001,
+        "md5": "bf22e7e2a7dce9cdc8b73f36099c7f36",
+        "local_path": "data/observations/raw/mil03346/MIL1.4.irm",
+        "status": "downloaded",
+        "sha256": "6d1905d3abd339db20c38f7e9634e45398af4b3ab147ff6b1585a54b7d430a41",
+        "bytes": 4001,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL1.4.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374514",
+        "size": 12738,
+        "md5": "bacf937de09fddcdc58ea22bb2afb5f9",
+        "local_path": "data/observations/raw/mil03346/MIL1.4.nrm",
+        "status": "downloaded",
+        "sha256": "67abbdd5ce92f37433089036e45d2cde30b2e74614fcd7cc338e9cf6bca919a9",
+        "bytes": 12738,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL2.1.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374523",
+        "size": 12048,
+        "md5": "ea073623eb5961393be56e6c92781344",
+        "local_path": "data/observations/raw/mil03346/MIL2.1.arm",
+        "status": "downloaded",
+        "sha256": "bd2734e129dfd6b87e6a6dc03d4811b143a58ea0ce3a97bf3f67f3c9e133b2a1",
+        "bytes": 12048,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL2.1.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374525",
+        "size": 12048,
+        "md5": "aeb9568f8f0a77a95131efc5b168157e",
+        "local_path": "data/observations/raw/mil03346/MIL2.1.nrm",
+        "status": "downloaded",
+        "sha256": "c6e27c7f3378ab2253717530c500f3c0a401cd85659f7b12508334212a64fdaf",
+        "bytes": 12048,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL23.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374490",
+        "size": 3035,
+        "md5": "e19db65a863bcd6edb5fb673a6c7f87c",
+        "local_path": "data/observations/raw/mil03346/MIL23.nrm",
+        "status": "downloaded",
+        "sha256": "bd1df0b55a787f797d285ce9a9c61ee3198d8197940f21ec97f45d84fae73846",
+        "bytes": 3035,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL2.4.arm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374496",
+        "size": 12048,
+        "md5": "139a1ed89781cd4784a8548df80ef1ff",
+        "local_path": "data/observations/raw/mil03346/MIL2.4.arm",
+        "status": "downloaded",
+        "sha256": "5edf0ccd4c205a4217d65e679a4cc90a32d0098121871d165b0b69bec3933634",
+        "bytes": 12048,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL2.4.irm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374524",
+        "size": 9863,
+        "md5": "2c3404b24d76c6f178bafb39b27c36d3",
+        "local_path": "data/observations/raw/mil03346/MIL2.4.irm",
+        "status": "downloaded",
+        "sha256": "bf11026d90e18192fd3c266265d1a6145d62f02f62098cb3c241dd512b97d9df",
+        "bytes": 9863,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL2.4.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374489",
+        "size": 12048,
+        "md5": "ead181eeec55187261080ce7181cd57d",
+        "local_path": "data/observations/raw/mil03346/MIL2.4.nrm",
+        "status": "downloaded",
+        "sha256": "62e02a36151f2d2e570da0f6592c24b4ebe3eb6c6eb26604686dcd7196af358b",
+        "bytes": 12048,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL2.5(af_cleaning).nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374506",
+        "size": 1352,
+        "md5": "43ee8386c07a291a58ebee528c30d12b",
+        "local_path": "data/observations/raw/mil03346/MIL2.5(af_cleaning).nrm",
+        "status": "downloaded",
+        "sha256": "c11cfbbf2d9b6f9e7409c259faf90e5d13bc298718392e001c2add1223a6cb77",
+        "bytes": 1352,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL2.5.irm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374518",
+        "size": 12738,
+        "md5": "631e8c59b92454f8d0bb4fa49217bcf7",
+        "local_path": "data/observations/raw/mil03346/MIL2.5.irm",
+        "status": "downloaded",
+        "sha256": "f0fff3340b1f5999a94336af418ef0ba7c72f27206cf16b36902f1828891ae2a",
+        "bytes": 12738,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL25.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374522",
+        "size": 3390,
+        "md5": "dd9f7355249cc74fe58e03ca5ec3c886",
+        "local_path": "data/observations/raw/mil03346/MIL25.nrm",
+        "status": "downloaded",
+        "sha256": "16af3212ebebfadccc52f78d20e0a2959cf69b9a38a5a5beb5b03373639baabb",
+        "bytes": 3390,
+        "provider_checksum_verified": true
+      },
+      {
+        "name": "MIL3.nrm",
+        "url": "https://dataverse.harvard.edu/api/access/datafile/4374521",
+        "size": 11703,
+        "md5": "38505876b3892ad6a3da5b5a2b19d92d",
+        "local_path": "data/observations/raw/mil03346/MIL3.nrm",
+        "status": "downloaded",
+        "sha256": "e40370ab2c8083bb42b6309dbdcab2ac48382716be5961b98e2e1edcb0c963ac",
+        "bytes": 11703,
+        "provider_checksum_verified": true
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "id": "aqueous_minerals",
+    "title": "MOCAAS orbital aqueous alteration signatures, November 2023 release",
+    "landing_url": "https://www.ias.u-psud.fr/moccas/",
+    "paper_doi": "10.1016/j.icarus.2022.115164",
+    "provider": "IAS / OMEGA and CRISM",
+    "license": "Public download; no explicit reuse license stated on project page. Original raster files are not redistributed here.",
+    "limitation": "Spectral mineral classes, not present liquid water; uneven orbital coverage, dust and exposure prevent interpreting blank regions as dry. Maps cover approximately 70\u00b0S\u201370\u00b0N.",
+    "products": [
+      {
+        "name": "MOCAAS_2023-11-15_v2.zip",
+        "url": "https://www.ias.u-psud.fr/moccas/database/MOCAAS_2023-11-15_v2.zip",
+        "size": 16778760
+      }
+    ],
+    "checked_at": "2026-09-24T18:42:50.826097+00:00",
+    "files": [
+      {
+        "name": "MOCAAS_2023-11-15_v2.zip",
+        "url": "https://www.ias.u-psud.fr/moccas/database/MOCAAS_2023-11-15_v2.zip",
+        "size": 16778760,
+        "local_path": "data/observations/raw/aqueous_minerals/MOCAAS_2023-11-15_v2.zip",
+        "status": "downloaded",
+        "sha256": "389ae3a30b6014ad153be0611959863be8c5af7bb06b7d986a395dab80ac9813",
+        "bytes": 16778760,
+        "provider_checksum_verified": false
+      }
+    ],
+    "status": "downloaded"
+  },
+  {
+    "id": "alh84001",
+    "title": "ALH 84001 laboratory magnetism (Steele, Fu et al., 2023)",
+    "landing_url": "https://earthref.org/MagIC/19859",
+    "paper_doi": "10.1126/sciadv.ade9071",
+    "provider": "MagIC",
+    "license": "CC BY 4.0",
+    "limitation": "Specimen-scale directions use laboratory reference axes, not known Martian geographic orientation. Different remanence components must not be merged.",
+    "products": [
+      {
+        "name": "magic_contribution_19859.zip",
+        "url": "https://earthref.org/MagIC/download/19859/magic_contribution_19859.txt",
+        "size": 1749592728
+      }
+    ],
+    "checked_at": "2026-09-24T18:46:54.500384+00:00",
+    "files": [
+      {
+        "name": "magic_contribution_19859.zip",
+        "url": "https://earthref.org/MagIC/download/19859/magic_contribution_19859.txt",
+        "size": 1749592728,
+        "local_path": "data/observations/raw/alh84001/magic_contribution_19859.zip",
+        "status": "downloaded",
+        "sha256": "4ad16166acc39775e2ec6c6918da0475b422bfd009483067389864ba725b49cb",
+        "bytes": 1749592728,
+        "provider_checksum_verified": false
+      }
+    ],
+    "status": "downloaded"
   }
 ]

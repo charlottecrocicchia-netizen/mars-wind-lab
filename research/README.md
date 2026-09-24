@@ -23,14 +23,16 @@ The [first executed diagnostics](FIRST_RESULTS.md) connect orbital fields, surfa
 
 | Product | Coverage |
 |---|---|
-| DOI catalog | 1,981 deduplicated candidate records across 41 topical queries and targeted additions |
-| Core reading route | 69 selected records, including a correction notice |
-| Sources consulted beyond metadata | 64: 52 abstracts and 12 selected full-text readings |
+| DOI catalog | 1,986 deduplicated candidate records across 41 topical queries and targeted additions |
+| Core reading route | 75 selected records, including a correction notice |
+| Sources consulted beyond metadata | 69: 51 abstracts and 18 selected full-text readings |
 | Complete full-text methodological audits | 0; none are presented as completed |
-| Backward-citation queue | 2,328 additional DOI leads, not yet retrieved or screened; many may be non-Mars background |
+| Backward-citation queue | 2,489 additional DOI leads, not yet retrieved or screened; many may be non-Mars background |
 
 The catalog contains articles, conference publications, preprints, chapters, datasets and other records. A Crossref `journal-article` label does **not** certify peer review or relevance. Duplicate DOIs are removed; different versions of the same work can remain.
 
 Download [BibTeX](library.bib), [core BibTeX](core.bib), [RIS for Zotero](library.ris), [CSV](catalog.csv) or [JSON with provenance](catalog.json). The [search log](search_log.json) preserves query URLs, retrieval times and result caps. [Summary counts](summary.json) are generated from the records. Publisher abstracts, downloaded PDFs and the internship report are not redistributed.
 
 The interpretations here are project research notes assembled with AI assistance and require scientific verification before use in a manuscript. They are not results attributable to the cited authors unless explicitly described as such. No personal unpublished dichotomy bibliography was supplied; this version was assembled from public sources.
+
+The expanded [recording guide](RECORDING.md) and [water study](WATER.md) connect mineral generations, fluid events and magnetic components. Raw laboratory archives and orbital mineral products are available alongside the curated, explicitly non-exhaustive paleointensity inventory.

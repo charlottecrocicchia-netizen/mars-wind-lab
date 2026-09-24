@@ -74,5 +74,5 @@ def test_all_workspaces_and_derived_products_work_without_mcd(monkeypatch):
     for route in ['/','/atmosphere','/research/hypotheses','/research/data','/research/tests','/research/library']:
         r=client.get(route);assert r.status_code==200
         assert 'lang="en"' in r.text
-    for name in ['atlas','meteorites','depths','thermal','results','laboratory','manifest']:
+    for name in ['atlas','meteorites','depths','thermal','results','laboratory','manifest','laboratory_extended','paleomagnetism','water']:
         assert client.get('/research/files/data/'+name+'.json').status_code==200

@@ -20,9 +20,9 @@ The proposed first study tests which source-depth and recording-time windows rem
 
 ## Explore the observations and completed tests
 
-The homepage offers three starting points: **understand the idea**, **explore the data**, and **read completed tests**. Persistent navigation keeps the library and atmosphere laboratory accessible. Maps, meteorite records, laboratory measurements and source downloads each have a separate view.
+The homepage offers three starting points: **understand the idea**, **explore the data**, and **read completed tests**. Persistent navigation keeps the library and atmosphere laboratory accessible. Maps, meteorite records, laboratory measurements, water/alteration and source downloads each have a separate view. Start with MIL 03346 in **Data → Lab magnetism**, or choose **Data → Water & alteration** to compare mineral detections with topography and the orbital magnetic field.
 
-The [first observational diagnostics](research/FIRST_RESULTS.md) use **87 downloaded products**: MOLA, MGS/MAVEN magnetism, equivalent source depths, an InSight crustal-model archive, thermal outputs, the USGS geologic map, meteorite chronology/candidate sources and NWA 7034 laboratory data. The public snapshot includes 44 geologic units, 94 meteorite sample records, 16 candidate craters and 1,073 laboratory measurements. Original archives stay local; scripts and checksums make acquisition reproducible.
+The archive now contains **115 downloaded products**. The [initial observational diagnostics](research/FIRST_RESULTS.md) and expanded explorers use selected products from MOLA, MGS/MAVEN magnetism, equivalent source depths, an InSight crustal-model archive, thermal outputs, the USGS geologic map, meteorite chronology/candidate sources and laboratory archives for MIL 03346, ALH 84001 and NWA 7034 paired stones, plus OMEGA/CRISM aqueous-mineral maps. The public snapshot includes 44 geologic units, 94 meteorite sample records, 16 candidate craters, 15 published paleointensity entries and a separate NWA contamination suite. Laboratory views retain 813 MIL records (one appended laboratory TRM is excluded from the NRM plot), 492 ALH fitted-source records and 1,073 NWA measurements. Original archives stay local; scripts and checksums make acquisition reproducible. The [recording guide](research/RECORDING.md) separates primary remanence, later Martian recording and terrestrial contamination. The [water study](research/WATER.md) develops a testable thermal and chemical history; the mineral overlap is descriptive, because a coverage/exposure mask is still missing.
 
 Two useful outcomes: the modeled south/north magnetic contrast persists at common altitudes, while inferred crustal thickness changes strongly with assumed density. A mineral-dependent thermal gate motivates testing higher-ordering-temperature carriers in deep southern sources. These are conditional diagnostics, not a unique origin or a validated remanence history. [Numerical results](research/data/results.json) · [Data conventions and licensing](research/data/README.md)
 
@@ -32,15 +32,16 @@ To view the committed snapshot, install the base package and run the local serve
 python -m pip install -e '.[observations,test]'
 python scripts/data/acquire.py --large
 python scripts/data/build.py
+python scripts/data/build_evidence.py
 ```
 
 The archive download requires several GB of disk space. Dataset licenses are separate from the code license; Herd-derived meteorite tables retain CC BY-NC 4.0.
 
 ## The dichotomy evidence atlas
 
-Open **Library** in the app, or read the [scientific synthesis](research/SYNTHESIS.md) on GitHub. The English library contains **1,981 DOI candidates**, a **69-record core reading route**, and source notes distinguishing metadata from abstracts and selected full-text readings. It includes dedicated [meteorite magnetism](research/METEORITES.md), [mission/data](research/MISSIONS.md) and [research programme](research/RESEARCH_PLAN.md) dossiers. Download [RIS for Zotero](research/library.ris), [BibTeX](research/library.bib) or [CSV](research/catalog.csv).
+Open **Library** in the app, or read the [scientific synthesis](research/SYNTHESIS.md) on GitHub. The English library contains **1,986 DOI candidates**, a **75-record core reading route**, and source notes distinguishing metadata from abstracts and selected full-text readings. It includes dedicated [meteorite magnetism](research/METEORITES.md), [mission/data](research/MISSIONS.md) and [research programme](research/RESEARCH_PLAN.md) dossiers. Download [RIS for Zotero](research/library.ris), [BibTeX](research/library.bib) or [CSV](research/catalog.csv).
 
-This is a broad, dated inventory with selective assessment, **not an exhaustive review of every Mars paper**. Fifty-two abstracts and twelve selected full-text readings are documented; complete methodological audits and joint analysis of the newly identified mission datasets remain outstanding. [Search method and coverage](research/METHOD.md) document the query caps, 2,328 unscreened citation leads and remaining gaps. Research notes were assembled with AI assistance and need source verification before manuscript use.
+This is a broad, dated inventory with selective assessment, **not an exhaustive review of every Mars paper**. Fifty-one abstracts and eighteen selected full-text readings are documented; complete methodological audits and joint analysis of the newly identified mission datasets remain outstanding. [Search method and coverage](research/METHOD.md) document the query caps, 2,489 unscreened citation leads and remaining gaps. Research notes were assembled with AI assistance and need source verification before manuscript use.
 
 ## What can you use it for?
 

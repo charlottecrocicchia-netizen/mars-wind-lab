@@ -54,3 +54,9 @@ Treat the connection as a chain: **crust production → mineral formation → fi
 A first useful analysis would compare permitted magnetization ranges for the observed carrier assemblages with the magnetization required by orbital forward models. Re-run it under alternative source depths, recording fields and preservation histories. If a model needs a large volume of carrier-rich material unsupported by petrology, that is a specific tension worth investigating. If several combinations fit, report the degeneracy rather than selecting a unique dynamo history.
 
 No new paleointensity, provenance assignment or magnetization inversion is computed in this release. Its contribution is to make the valid comparisons and missing measurements explicit.
+
+## Expanded laboratory and paleointensity coverage
+
+The site now has a [16-entry study explorer](/research/data?view=laboratory): all 15 entries in Weiss et al. (2025), SI Table S1, plus the NWA paired-stone contamination suite. It includes MIL 03346, ALH 84001, EETA 79001, LEW 88516, GRV 020090, Yamato 000593, Shergotty, Zagami, Tissint, SaU 005, Dho 019, Nakhla, Governador Valadares, Lafayette and Chassigny. This population is distinct from the 94-record chronology table.
+
+MIL laboratory files and the ALH MagIC archive are now downloaded, alongside the NWA measurements. See [Primary and secondary remanence](RECORDING.md) for interpretation and exact coverage, and [Water and alteration](WATER.md) for the separately dated Lafayette alteration and orbital mineral products. Missing raw curves are explicitly labelled; published estimates are not presented as newly measured values.

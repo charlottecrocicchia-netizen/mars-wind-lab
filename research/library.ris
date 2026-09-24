@@ -1154,6 +1154,20 @@ N1  - Discovery candidate — not screened
 ER  - 
 
 TY  - JOUR
+TI  - Curation and Storage of Astromaterials: A Magnetic Perspective
+AU  - Jérôme Gattacceca
+AU  - Clara Maurel
+AU  - Aurore Hutzler
+AU  - Pierre Rochette
+AU  - Benjamin P. Weiss
+PY  - 2025
+JO  - Space Science Reviews
+DO  - 10.1007/s11214-025-01194-2
+UR  - https://doi.org/10.1007/s11214-025-01194-2
+N1  - Selected full-text sections consulted
+ER  - 
+
+TY  - JOUR
 TI  - Correction to: Photogeologic Map of the Perseverance Rover Field Site in Jezero Crater Constructed by the Mars 2020 Science Team
 AU  - Kathryn M. Stack
 AU  - Nathan R. Williams
@@ -1539,6 +1553,19 @@ JO  - Journal of Geophysical Research: Planets
 DO  - 10.1029/2024je008819
 UR  - https://doi.org/10.1029/2024je008819
 N1  - Discovery candidate — not screened
+ER  - 
+
+TY  - JOUR
+TI  - Gravity and Magnetic Field Signatures in Hydrothermally Affected Regions on Mars
+AU  - Anna Mittelholz
+AU  - Max Moorkamp
+AU  - Adrien Broquet
+AU  - Lujendra Ojha
+PY  - 2025
+JO  - Journal of Geophysical Research: Planets
+DO  - 10.1029/2024je008832
+UR  - https://doi.org/10.1029/2024je008832
+N1  - Selected full-text sections consulted
 ER  - 
 
 TY  - JOUR
@@ -3292,7 +3319,7 @@ PY  - 2024
 JO  - Meteoritics & Planetary Science
 DO  - 10.1111/maps.14136
 UR  - https://doi.org/10.1111/maps.14136
-N1  - Discovery candidate — not screened
+N1  - Abstract consulted
 ER  - 
 
 TY  - JOUR
@@ -3986,6 +4013,23 @@ UR  - https://doi.org/10.64628/aai.cpfasxtvk
 N1  - Discovery candidate — not screened
 ER  - 
 
+TY  - JOUR
+TI  - Dating recent aqueous activity on Mars
+AU  - M.M. Tremblay
+AU  - D.F. Mark
+AU  - D.N. Barfod
+AU  - B.E. Cohen
+AU  - R.B. Ickert
+AU  - M.R. Lee
+AU  - T. Tomkinson
+AU  - C.L. Smith
+PY  - 2024
+JO  - Geochemical Perspectives Letters
+DO  - 10.7185/geochemlet.2443
+UR  - https://doi.org/10.7185/geochemlet.2443
+N1  - Selected full-text sections consulted
+ER  - 
+
 TY  - GEN
 TI  - Mars Odyssey
 AU  - Frances Westall
@@ -4147,6 +4191,21 @@ JO  - Earth and Planetary Science Letters
 DO  - 10.1016/j.epsl.2023.118126
 UR  - https://doi.org/10.1016/j.epsl.2023.118126
 N1  - Discovery candidate — not screened
+ER  - 
+
+TY  - JOUR
+TI  - A Mars orbital catalog of aqueous alteration signatures (MOCAAS)
+AU  - John Carter
+AU  - Lucie Riu
+AU  - François Poulet
+AU  - Jean-Pierre Bibring
+AU  - Yves Langevin
+AU  - Brigitte Gondet
+PY  - 2023
+JO  - Icarus
+DO  - 10.1016/j.icarus.2022.115164
+UR  - https://doi.org/10.1016/j.icarus.2022.115164
+N1  - Abstract consulted
 ER  - 
 
 TY  - JOUR
@@ -5292,7 +5351,7 @@ PY  - 2023
 JO  - Science Advances
 DO  - 10.1126/sciadv.ade9071
 UR  - https://doi.org/10.1126/sciadv.ade9071
-N1  - Abstract consulted
+N1  - Selected full-text sections consulted
 ER  - 
 
 TY  - GEN
@@ -8734,7 +8793,7 @@ PY  - 2021
 JO  - Journal of Geophysical Research: Planets
 DO  - 10.1029/2021je006856
 UR  - https://doi.org/10.1029/2021je006856
-N1  - Abstract consulted
+N1  - Selected full-text sections consulted
 ER  - 
 
 TY  - JOUR
@@ -15553,7 +15612,7 @@ PY  - 2013
 JO  - Meteoritics & Planetary Science
 DO  - 10.1111/maps.12172
 UR  - https://doi.org/10.1111/maps.12172
-N1  - Abstract consulted
+N1  - Selected full-text sections consulted
 ER  - 
 
 TY  - JOUR
@@ -21260,6 +21319,17 @@ JO  - Earth and Planetary Science Letters
 DO  - 10.1016/j.epsl.2004.05.022
 UR  - https://doi.org/10.1016/j.epsl.2004.05.022
 N1  - Discovery candidate — not screened
+ER  - 
+
+TY  - JOUR
+TI  - Toward a robust normalized magnetic paleointensity method applied to meteorites
+AU  - J. Gattacceca
+AU  - P. Rochette
+PY  - 2004
+JO  - Earth and Planetary Science Letters
+DO  - 10.1016/j.epsl.2004.09.013
+UR  - https://doi.org/10.1016/j.epsl.2004.09.013
+N1  - Metadata / preview only
 ER  - 
 
 TY  - JOUR

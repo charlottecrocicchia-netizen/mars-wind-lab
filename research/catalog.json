@@ -2946,7 +2946,7 @@
       "10.1038/nature25031"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:35.907733+00:00",
+    "retrieved": "2026-09-24T18:54:26.421764+00:00",
     "volume": "10",
     "pages": "1301-1308",
     "relations": {},
@@ -3199,7 +3199,7 @@
       "10.5281/zenodo.20823472"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:35.904138+00:00",
+    "retrieved": "2026-09-24T18:54:26.418533+00:00",
     "volume": "656",
     "pages": "848-853",
     "relations": {},
@@ -5776,6 +5776,140 @@
     "domain_basis": "Search query, not verified classification"
   },
   {
+    "doi": "10.1007/s11214-025-01194-2",
+    "title": "Curation and Storage of Astromaterials: A Magnetic Perspective",
+    "authors": [
+      "Jérôme Gattacceca",
+      "Clara Maurel",
+      "Aurore Hutzler",
+      "Pierre Rochette",
+      "Benjamin P. Weiss"
+    ],
+    "year": 2025,
+    "date": [
+      2025,
+      7,
+      8
+    ],
+    "dates": {
+      "published": [
+        2025,
+        7,
+        8
+      ],
+      "published-print": [
+        2025,
+        8
+      ],
+      "published-online": [
+        2025,
+        7,
+        8
+      ]
+    },
+    "journal": "Space Science Reviews",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1007/s11214-025-01194-2",
+    "domains": [
+      "Meteorite magnetism"
+    ],
+    "queries": [],
+    "references": [
+      "10.1111/maps.14193",
+      "10.1016/s0016-7037(98)00199-9",
+      "10.2307/j.ctv1v7zdmm.45",
+      "10.3847/1538-4357/ab7cd4",
+      "10.1111/maps.14079",
+      "10.1126/sciadv.adp3333",
+      "10.1111/maps.14136",
+      "10.1073/pnas.1017165108",
+      "10.1089/ast.2021.0110",
+      "10.1029/2020gc009266",
+      "10.1007/978-94-015-3979-1",
+      "10.1016/j.epsl.2019.116042",
+      "10.1130/g45831.1",
+      "10.1017/cbo9780511612794",
+      "10.1029/93jb02566",
+      "10.1126/science.1258022",
+      "10.1029/2020gc009147",
+      "10.1016/j.epsl.2010.02.013",
+      "10.1016/j.epsl.2004.09.013",
+      "10.1111/j.1365-246x.2004.02297.x",
+      "10.1016/j.epsl.2008.03.047",
+      "10.1016/j.epsl.2016.09.008",
+      "10.1111/maps.13995",
+      "10.1111/j.1945-5100.2001.tb01827.x",
+      "10.1111/maps.12603",
+      "10.2307/j.ctv1v7zdmm.47",
+      "10.1111/j.1365-246x.1980.tb02601.x",
+      "10.26907/2542-064x.2025.2.353-366",
+      "10.1029/gl005i001p00073",
+      "10.1007/s11214-017-0405-1",
+      "10.1016/s0016-7037(03)00486-1",
+      "10.1016/j.pepi.2019.03.004",
+      "10.1088/0953-8984/26/6/064213",
+      "10.1029/2008jb006006",
+      "10.1088/0957-0233/25/10/105401",
+      "10.1073/pnas.2312802121",
+      "10.1007/s11214-019-0615-9",
+      "10.1126/sciadv.aax0883",
+      "10.1073/pnas.1708344114",
+      "10.1016/0012-821x(75)90221-6",
+      "10.1002/9781118798478.ch3",
+      "10.1029/2002gc000328",
+      "10.1111/j.1945-5100.2003.tb00263.x",
+      "10.1111/j.1945-5100.2005.tb00961.x",
+      "10.1111/j.1945-5100.2008.tb01092.x",
+      "10.1111/j.1945-5100.2009.tb00741.x",
+      "10.2113/gselements.5.4.223",
+      "10.1016/j.epsl.2010.02.007",
+      "10.5277/met120108",
+      "10.1029/2022je007405",
+      "10.1007/s11214-019-0622-x",
+      "10.1029/2023gl105152",
+      "10.1016/j.epsl.2014.07.010",
+      "10.1111/maps.14087",
+      "10.1029/2009gc002653",
+      "10.1016/j.pepi.2012.04.007",
+      "10.1063/1.5008905",
+      "10.1007/s11214-020-00668-9",
+      "10.1111/maps.13818",
+      "10.1029/2022je007464",
+      "10.1126/science.aaf5043",
+      "10.1016/0031-9201(81)90105-9",
+      "10.1126/science.1162459",
+      "10.1029/2008gl035585",
+      "10.1007/s11214-009-9580-z",
+      "10.1126/sciadv.aba5967",
+      "10.1073/pnas.2404259121",
+      "10.2138/rmg.2023.89.05",
+      "10.1111/maps.14140",
+      "10.1111/maps.12027",
+      "10.1038/s41550-021-01550-6",
+      "10.1029/2003gc000630",
+      "10.1038/s41598-021-98083-9"
+    ],
+    "metadata_source": "Crossref DOI lookup",
+    "retrieved": "2026-09-24T18:54:27.840358+00:00",
+    "volume": "221",
+    "pages": "67",
+    "relations": {},
+    "core": true,
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
+    "finding": "Describes terrestrial chemical, viscous and strong-field contamination and practical curation controls.",
+    "dichotomy_use": "Makes Earth overprints a separate observation-history branch from secondary Martian remanence.",
+    "limitation": "Curation sections consulted. High coercivity or unblocking temperature alone cannot establish an ancient origin.",
+    "assessment_date": "2026-09-24",
+    "primary_domain": "Meteorite magnetism",
+    "consulted_source": "https://doi.org/10.1007/s11214-025-01194-2",
+    "consulted_material": "Selected relevant full-text passages, plus abstract. Not a complete independent replication."
+  },
+  {
     "doi": "10.1007/s11214-025-01204-3",
     "title": "Correction to: Photogeologic Map of the Perseverance Rover Field Site in Jezero Crater Constructed by the Mars 2020 Science Team",
     "authors": [
@@ -7828,6 +7962,159 @@
     "review_depth": "metadata",
     "review_status": "Discovery candidate — not screened",
     "domain_basis": "Search query, not verified classification"
+  },
+  {
+    "doi": "10.1029/2024je008832",
+    "title": "Gravity and Magnetic Field Signatures in Hydrothermally Affected Regions on Mars",
+    "authors": [
+      "Anna Mittelholz",
+      "Max Moorkamp",
+      "Adrien Broquet",
+      "Lujendra Ojha"
+    ],
+    "year": 2025,
+    "date": [
+      2025,
+      4
+    ],
+    "dates": {
+      "published": [
+        2025,
+        4
+      ],
+      "published-print": [
+        2025,
+        4
+      ],
+      "published-online": [
+        2025,
+        4,
+        7
+      ]
+    },
+    "journal": "Journal of Geophysical Research: Planets",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1029/2024je008832",
+    "domains": [
+      "Magnetism"
+    ],
+    "queries": [],
+    "references": [
+      "10.1126/science.284.5415.790",
+      "10.1016/j.icarus.2018.03.021",
+      "10.1016/j.lithos.2013.04.008",
+      "10.1190/1.3114023",
+      "10.1002/2016gc006321",
+      "10.1002/9781118929063.ch3",
+      "10.1190/1.2209952",
+      "10.1038/nature17171",
+      "10.1029/2007je002887",
+      "10.1038/s41550‐022‐01836‐3",
+      "10.1029/2023je008111",
+      "10.1016/j.icarus.2014.11.011",
+      "10.1029/2012je004145",
+      "10.1002/jgre.20089",
+      "10.1016/j.pss.2006.02.003",
+      "10.1029/93je00225",
+      "10.1111/j.1365‐246x.2006.02862.x",
+      "10.1029/2005je002404",
+      "10.1029/2008je003091",
+      "10.1146/annurev‐earth‐060313‐055024",
+      "10.1038/nature10582",
+      "10.1016/j.icarus.2007.12.009",
+      "10.1016/j.icarus.2023.115700",
+      "10.1029/2010rg000330",
+      "10.1016/j.actaastro.2019.10.006",
+      "10.1016/j.icarus.2016.02.050",
+      "10.1029/2020je006690",
+      "10.1038/s41586‐021‐03860‐1",
+      "10.1038/s41561‐020‐0618‐x",
+      "10.1002/rog.20007",
+      "10.1038/s43247‐022‐00612‐5",
+      "10.1007/s10712‐013‐9232‐4",
+      "10.1130/g21258.1",
+      "10.1029/2004je002330",
+      "10.1029/2001je001616",
+      "10.2307/2346830",
+      "10.1016/j.icarus.2004.11.023",
+      "10.1016/j.precamres.2016.04.006",
+      "10.1029/2009je003548",
+      "10.1073/pnas.2418978122",
+      "10.1007/s11214‐015‐0139‐x",
+      "10.1016/j.icarus.2017.03.017",
+      "10.1029/2007gl031776",
+      "10.1126/sciadv.aaz3053",
+      "10.1029/2018je005854",
+      "10.1002/jgre.20105",
+      "10.1038/s41561‐020‐0536‐y",
+      "10.1093/gji/ggac334",
+      "10.1029/2023jb027794",
+      "10.1002/9781118929063.ch4",
+      "10.1016/j.crte.2003.08.006",
+      "10.1038/s41550‐023‐02191‐7",
+      "10.1038/ncomms15978",
+      "10.1016/j.icarus.2023.115691",
+      "10.3389/fspas.2022.895362",
+      "10.3847/psj/ace9c1",
+      "10.1126/sciadv.aba0513",
+      "10.1029/2018gl078425",
+      "10.1029/2023gl106788",
+      "10.1029/2007gl031252",
+      "10.1007/s10712‐017‐9413‐7",
+      "10.1190/segam2021-3582000.1",
+      "10.1029/2021gl096336",
+      "10.1111/j.1365‐246x.2010.04856.x",
+      "10.1002/9781118929063",
+      "10.1002/2013je004555",
+      "10.1007/978-94-017-1035-0_3",
+      "10.1126/sciadv.1500852",
+      "10.1029/2012je004149",
+      "10.1126/sciadv.abb1669",
+      "10.1038/s41467‐021‐21762‐8",
+      "10.1016/j.icarus.2023.115471",
+      "10.1016/j.pepi.2010.01.007",
+      "10.1016/j.icarus.2012.08.030",
+      "10.1029/2005je002626",
+      "10.1029/2000jb900222",
+      "10.1002/2016je005126",
+      "10.1016/j.epsl.2008.10.012",
+      "10.1007/s11214‐021‐00791‐1",
+      "10.1029/2011je003967",
+      "10.1016/j.icarus.2013.03.019",
+      "10.1016/s0012‐821x(04)00032‐9",
+      "10.1145/584091.584093",
+      "10.1038/s41467‐024‐51092‐4",
+      "10.1126/sciadv.ade9071",
+      "10.1016/0031‐9201(90)90082‐9",
+      "10.1016/j.icarus.2020.113953",
+      "10.1002/2017je005410",
+      "10.1093/gji/ggae183",
+      "10.1016/b978‐044452748‐6/00156‐5",
+      "10.1029/2022je007298",
+      "10.1038/s41467‐022‐32445‐3",
+      "10.1038/s41561‐021‐00701‐8",
+      "10.1016/j.pss.2023.105800",
+      "10.1073/pnas.2409983121"
+    ],
+    "metadata_source": "Crossref DOI lookup",
+    "retrieved": "2026-09-24T18:54:27.166139+00:00",
+    "volume": "130",
+    "pages": "e2024JE008832",
+    "relations": {},
+    "core": true,
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "discovery_domains": [
+      "Magnetism"
+    ],
+    "finding": "Joint regional gravity and magnetic interpretation explores thermal and chemical modification in potentially hydrothermal settings.",
+    "dichotomy_use": "Provides an existing physical precedent for connecting heat production, fluids and magnetic preservation.",
+    "limitation": "Discussion and data statement consulted. Regional non-unique inversions are not a unique origin model for the global dichotomy.",
+    "assessment_date": "2026-09-24",
+    "primary_domain": "Magnetism",
+    "consulted_source": "https://doi.org/10.1029/2024je008832",
+    "consulted_material": "Selected relevant full-text passages, plus abstract. Not a complete independent replication."
   },
   {
     "doi": "10.1029/2024je008846",
@@ -10900,7 +11187,7 @@
       "10.22541/essoar.171629587.76195120/v1"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:38.565230+00:00",
+    "retrieved": "2026-09-24T18:54:27.170435+00:00",
     "volume": "122",
     "pages": "e2404259121",
     "relations": {},
@@ -14760,7 +15047,7 @@
       "10.1051/0004‐6361/201730728"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:35.903270+00:00",
+    "retrieved": "2026-09-24T18:54:26.417582+00:00",
     "volume": "51",
     "pages": "e2023GL105701",
     "relations": {},
@@ -15798,7 +16085,7 @@
       "10.1007/bf00875588"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:38.566301+00:00",
+    "retrieved": "2026-09-24T18:54:27.170927+00:00",
     "volume": "129",
     "pages": "e2024JE008505",
     "relations": {
@@ -15970,7 +16257,7 @@
       "10.7910/dvn/tpw4wb"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:35.913091+00:00",
+    "retrieved": "2026-09-24T18:54:26.424468+00:00",
     "volume": "15",
     "pages": "6831",
     "relations": {},
@@ -16691,6 +16978,22 @@
       1,
       31
     ],
+    "dates": {
+      "published": [
+        2024,
+        1,
+        31
+      ],
+      "published-print": [
+        2024,
+        3
+      ],
+      "published-online": [
+        2024,
+        1,
+        31
+      ]
+    },
     "journal": "Meteoritics & Planetary Science",
     "type": "journal-article",
     "url": "https://doi.org/10.1111/maps.14136",
@@ -16764,10 +17067,23 @@
     ],
     "metadata_source": "Crossref REST API",
     "retrieved": "2026-09-24T16:17:08.224816+00:00",
-    "core": false,
-    "review_depth": "metadata",
-    "review_status": "Discovery candidate — not screened",
-    "domain_basis": "Search query, not verified classification"
+    "volume": "59",
+    "pages": "514-528",
+    "relations": {},
+    "core": true,
+    "review_depth": "abstract",
+    "review_status": "Abstract consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
+    "finding": "GRV 020090 is interpreted to preserve a Martian thermal remanence; shock loss makes 1.6 microtesla a lower bound.",
+    "dichotomy_use": "Adds an Antarctic shergottite constraint and a local-crustal-field interpretation.",
+    "limitation": "Abstract and data statement consulted; a proposed source region and lower bound are not a global dynamo measurement.",
+    "assessment_date": "2026-09-24",
+    "primary_domain": "Meteorite magnetism",
+    "consulted_source": "https://doi.org/10.1111/maps.14136",
+    "consulted_material": "Publisher or author-hosted abstract; sometimes publisher-supplied Crossref abstract. Full methods not audited."
   },
   {
     "doi": "10.1126/sciadv.adn2378",
@@ -19204,6 +19520,63 @@
     "domain_basis": "Search query, not verified classification"
   },
   {
+    "doi": "10.7185/geochemlet.2443",
+    "title": "Dating recent aqueous activity on Mars",
+    "authors": [
+      "M.M. Tremblay",
+      "D.F. Mark",
+      "D.N. Barfod",
+      "B.E. Cohen",
+      "R.B. Ickert",
+      "M.R. Lee",
+      "T. Tomkinson",
+      "C.L. Smith"
+    ],
+    "year": 2024,
+    "date": [
+      2024,
+      11
+    ],
+    "dates": {
+      "published": [
+        2024,
+        11
+      ],
+      "published-print": [],
+      "published-online": [
+        2024,
+        11
+      ]
+    },
+    "journal": "Geochemical Perspectives Letters",
+    "type": "journal-article",
+    "url": "https://doi.org/10.7185/geochemlet.2443",
+    "domains": [
+      "Surface and evolution"
+    ],
+    "queries": [],
+    "references": [],
+    "metadata_source": "Crossref DOI lookup",
+    "retrieved": "2026-09-24T18:54:29.727799+00:00",
+    "volume": "32",
+    "pages": "58-62",
+    "relations": {},
+    "core": true,
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "discovery_domains": [
+      "Surface and evolution"
+    ],
+    "finding": "Lafayette iddingsite dates aqueous alteration to 742 ± 15 Ma at 2 sigma.",
+    "dichotomy_use": "Separates mineral alteration from older crystallization and later ejection in a shared event history.",
+    "limitation": "Results and interpretation consulted. This local alteration age does not independently date remanence or demonstrate a global ocean.",
+    "assessment_date": "2026-09-24",
+    "primary_domain": "Surface and evolution",
+    "consulted_source": "https://doi.org/10.7185/geochemlet.2443",
+    "consulted_material": "Selected relevant full-text passages, plus abstract. Not a complete independent replication."
+  },
+  {
     "doi": "10.1007/978-3-662-65093-6_1756",
     "title": "Mars Odyssey",
     "authors": [
@@ -20024,6 +20397,92 @@
     "review_depth": "metadata",
     "review_status": "Discovery candidate — not screened",
     "domain_basis": "Search query, not verified classification"
+  },
+  {
+    "doi": "10.1016/j.icarus.2022.115164",
+    "title": "A Mars orbital catalog of aqueous alteration signatures (MOCAAS)",
+    "authors": [
+      "John Carter",
+      "Lucie Riu",
+      "François Poulet",
+      "Jean-Pierre Bibring",
+      "Yves Langevin",
+      "Brigitte Gondet"
+    ],
+    "year": 2023,
+    "date": [
+      2023,
+      1
+    ],
+    "dates": {
+      "published": [
+        2023,
+        1
+      ],
+      "published-print": [
+        2023,
+        1
+      ],
+      "published-online": []
+    },
+    "journal": "Icarus",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1016/j.icarus.2022.115164",
+    "domains": [
+      "Surface and evolution"
+    ],
+    "queries": [],
+    "references": [
+      "10.1029/2001je001510",
+      "10.1126/science.1122659",
+      "10.1126/science.1144174",
+      "10.1016/j.icarus.2020.113634",
+      "10.1016/j.icarus.2020.114223",
+      "10.1029/2012je004145",
+      "10.1016/j.pss.2012.11.007",
+      "10.1016/j.icarus.2015.01.020",
+      "10.1126/science.1104909",
+      "10.1029/1999je001093",
+      "10.1038/ngeo207",
+      "10.1038/nature10582",
+      "10.1002/2016je005095",
+      "10.1016/j.icarus.2019.113526",
+      "10.1016/j.icarus.2020.114024",
+      "10.1126/science.1109091",
+      "10.1029/2006je002877",
+      "10.1038/nature07097",
+      "10.1029/2012je004117",
+      "10.3847/psj/abe541",
+      "10.1029/2006je002840",
+      "10.1051/0004-6361:200810150",
+      "10.1089/ast.2009.0335",
+      "10.1016/j.icarus.2018.09.016",
+      "10.1016/j.icarus.2021.114809",
+      "10.1029/2001je001580",
+      "10.1006/icar.1998.6035",
+      "10.1029/2019gl085584",
+      "10.1016/j.icarus.2010.06.001",
+      "10.1029/2020gl092365"
+    ],
+    "metadata_source": "Crossref DOI lookup",
+    "retrieved": "2026-09-24T18:54:30.366077+00:00",
+    "volume": "389",
+    "pages": "115164",
+    "relations": {},
+    "core": true,
+    "review_depth": "abstract",
+    "review_status": "Abstract consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "discovery_domains": [
+      "Surface and evolution"
+    ],
+    "finding": "MOCAAS compiles orbital aqueous-mineral signatures from OMEGA and CRISM.",
+    "dichotomy_use": "Supplies a surface alteration layer for comparison with geology and magnetism.",
+    "limitation": "Abstract and project documentation consulted; November 2023 maps acquired. Uneven coverage and exposure prevent interpreting blank cells as dry.",
+    "assessment_date": "2026-09-24",
+    "primary_domain": "Surface and evolution",
+    "consulted_source": "https://doi.org/10.1016/j.icarus.2022.115164",
+    "consulted_material": "Publisher or author-hosted abstract; sometimes publisher-supplied Crossref abstract. Full methods not audited."
   },
   {
     "doi": "10.1016/j.icarus.2022.115303",
@@ -22101,7 +22560,7 @@
       "10.1016/s0012-821x(02)01060-9"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:38.560477+00:00",
+    "retrieved": "2026-09-24T18:54:27.169089+00:00",
     "volume": "128",
     "pages": "e2022JE007464",
     "relations": {
@@ -25108,13 +25567,13 @@
       "10.1029/2008je003104"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:38.553924+00:00",
+    "retrieved": "2026-09-24T18:54:27.166903+00:00",
     "volume": "9",
     "pages": "eade9071",
     "relations": {},
     "core": true,
-    "review_depth": "abstract",
-    "review_status": "Abstract consulted",
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
     "discovery_domains": [
       "Meteorite magnetism"
@@ -25125,7 +25584,7 @@
     "assessment_date": "2026-09-24",
     "primary_domain": "Meteorite magnetism",
     "consulted_source": "https://doi.org/10.1126/sciadv.ade9071",
-    "consulted_material": "Publisher or author-hosted abstract; sometimes publisher-supplied Crossref abstract. Full methods not audited."
+    "consulted_material": "Selected relevant full-text passages, plus abstract. Not a complete independent replication."
   },
   {
     "doi": "10.1130/abs/2023am-393598",
@@ -29375,7 +29834,7 @@
       "10.1126/science.287.5459.1788"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:35.902394+00:00",
+    "retrieved": "2026-09-24T18:54:26.416633+00:00",
     "volume": "127",
     "pages": "e2022JE007298",
     "relations": {},
@@ -33389,7 +33848,7 @@
       "10.1029/97je02527"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:35.915127+00:00",
+    "retrieved": "2026-09-24T18:54:26.426280+00:00",
     "volume": "9",
     "pages": "895362",
     "relations": {},
@@ -38249,7 +38708,7 @@
       "10.1126/science.287.5459.1788"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:38.552644+00:00",
+    "retrieved": "2026-09-24T18:54:26.428081+00:00",
     "volume": "126",
     "pages": "e2020JE006690",
     "relations": {},
@@ -38653,8 +39112,8 @@
     "pages": "e2021JE006856",
     "relations": {},
     "core": true,
-    "review_depth": "abstract",
-    "review_status": "Abstract consulted",
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
     "discovery_domains": [
       "Magnetism",
@@ -38666,7 +39125,7 @@
     "assessment_date": "2026-09-24",
     "primary_domain": "Meteorite magnetism",
     "consulted_source": "https://doi.org/10.1029/2021je006856",
-    "consulted_material": "Publisher or author-hosted abstract; sometimes publisher-supplied Crossref abstract. Full methods not audited."
+    "consulted_material": "Selected relevant full-text passages, plus abstract. Not a complete independent replication."
   },
   {
     "doi": "10.1038/d41586-021-01588-6",
@@ -39692,7 +40151,7 @@
       "10.1029/2006je002676"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:35.901789+00:00",
+    "retrieved": "2026-09-24T18:54:26.416000+00:00",
     "volume": "373",
     "pages": "438-443",
     "relations": {},
@@ -39970,7 +40429,7 @@
       "10.1002/2017jb014779"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:35.904757+00:00",
+    "retrieved": "2026-09-24T18:54:26.419086+00:00",
     "volume": "373",
     "pages": "443-448",
     "relations": {},
@@ -45166,7 +45625,7 @@
       "10.1016/j.pepi.2013.11.008"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T17:25:35.912476+00:00",
+    "retrieved": "2026-09-24T18:54:26.423958+00:00",
     "volume": "6",
     "pages": "eaba0513",
     "relations": {},
@@ -72006,8 +72465,8 @@
     "pages": "1919-1936",
     "relations": {},
     "core": true,
-    "review_depth": "abstract",
-    "review_status": "Abstract consulted",
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
     "discovery_domains": [
       "Meteorite magnetism"
@@ -72018,7 +72477,7 @@
     "assessment_date": "2026-09-24",
     "primary_domain": "Meteorite magnetism",
     "consulted_source": "https://doi.org/10.1111/maps.12172",
-    "consulted_material": "Publisher or author-hosted abstract; sometimes publisher-supplied Crossref abstract. Full methods not audited."
+    "consulted_material": "Selected relevant full-text passages, plus abstract. Not a complete independent replication."
   },
   {
     "doi": "10.1126/science.1239505",
@@ -100550,6 +101009,114 @@
     "review_depth": "metadata",
     "review_status": "Discovery candidate — not screened",
     "domain_basis": "Search query, not verified classification"
+  },
+  {
+    "doi": "10.1016/j.epsl.2004.09.013",
+    "title": "Toward a robust normalized magnetic paleointensity method applied to meteorites",
+    "authors": [
+      "J. Gattacceca",
+      "P. Rochette"
+    ],
+    "year": 2004,
+    "date": [
+      2004,
+      11
+    ],
+    "dates": {
+      "published": [
+        2004,
+        11
+      ],
+      "published-print": [
+        2004,
+        11
+      ],
+      "published-online": []
+    },
+    "journal": "Earth and Planetary Science Letters",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1016/j.epsl.2004.09.013",
+    "domains": [
+      "Meteorite magnetism"
+    ],
+    "queries": [],
+    "references": [
+      "10.1016/0012-821x(75)90210-1",
+      "10.5636/jgg.29.519",
+      "10.1007/bf00562196",
+      "10.1016/0016-7037(86)90386-8",
+      "10.1016/0012-821x(91)90053-k",
+      "10.1016/0031-9201(79)90055-4",
+      "10.1016/0031-9201(86)90019-1",
+      "10.1016/s0012-821x(01)00381-8",
+      "10.1029/93rg01771",
+      "10.1029/gl005i002p00151",
+      "10.1016/s0012-821x(01)00373-9",
+      "10.1016/j.pepi.2003.10.001",
+      "10.1016/0031-9201(92)90076-8",
+      "10.1016/s0031-9201(03)00063-3",
+      "10.1029/rg012i001p00023",
+      "10.1111/j.1945-5100.2000.tb01434.x",
+      "10.1111/j.1945-5100.2003.tb00275.x",
+      "10.1029/gl015i005p00518",
+      "10.1029/2002gl015207",
+      "10.1029/jb076i026p06339",
+      "10.1111/j.1365-246x.1982.tb05999.x",
+      "10.1016/0031-9201(81)90106-0",
+      "10.1111/j.1945-5100.1994.tb00680.x",
+      "10.1029/98gl02220",
+      "10.1029/96jb01188",
+      "10.1111/j.1365-246x.1991.tb02519.x",
+      "10.1046/j.1365-246x.1999.00875.x",
+      "10.1016/0012-821x(90)90034-u",
+      "10.5636/jgg.40.729",
+      "10.1016/0012-821x(74)90172-1",
+      "10.1111/j.1945-5100.2000.tb01974.x",
+      "10.1038/269478a0",
+      "10.1029/2003gl017359",
+      "10.1016/0031-9201(76)90060-1",
+      "10.1016/0012-821x(94)90122-8",
+      "10.1016/0012-821x(92)90083-8",
+      "10.1016/s0012-821x(02)00728-8",
+      "10.1111/j.1945-5100.2002.tb00868.x",
+      "10.1016/0031-9201(79)90056-6",
+      "10.1111/j.1945-5100.1989.tb00696.x",
+      "10.1016/0012-821x(76)90033-9",
+      "10.1126/science.284.5415.790",
+      "10.1029/2003je002048",
+      "10.1126/science.275.5306.1629",
+      "10.1038/380057a0",
+      "10.1126/science.290.5492.791",
+      "10.1029/2002je001979",
+      "10.1016/0016-7037(96)88430-4",
+      "10.1016/0016-7037(92)90268-n",
+      "10.1016/s1387-6473(03)00060-5",
+      "10.1029/gl005i001p00073",
+      "10.1029/jz066i005p01523",
+      "10.1111/j.1945-5100.1993.tb00756.x",
+      "10.1111/j.1945-5100.2003.tb00263.x",
+      "10.1016/0016-7037(91)90078-j",
+      "10.1016/s0016-7037(03)00452-6"
+    ],
+    "metadata_source": "Crossref DOI lookup",
+    "retrieved": "2026-09-24T18:54:28.572760+00:00",
+    "volume": "227",
+    "pages": "377-393",
+    "relations": {},
+    "core": true,
+    "review_depth": "metadata",
+    "review_status": "Metadata / preview only",
+    "domain_basis": "Core topic assigned after source check",
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
+    "finding": "A methodological source for normalized non-thermal paleointensity estimates used in the meteorite compilation.",
+    "dichotomy_use": "Links several meteorite estimates to shared calibration assumptions.",
+    "limitation": "Bibliographic record and citations in later primary papers checked; original methods not audited.",
+    "assessment_date": "2026-09-24",
+    "primary_domain": "Meteorite magnetism",
+    "consulted_source": "https://doi.org/10.1016/j.epsl.2004.09.013",
+    "consulted_material": "Bibliographic record or limited publisher preview. No substantive results extraction claimed."
   },
   {
     "doi": "10.1016/j.icarus.2003.09.013",

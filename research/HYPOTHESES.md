@@ -77,4 +77,14 @@ The wind laboratory has a narrower supporting role: surface-pressure harmonics c
 
 Thermal control of magnetization, impact survival tests, hemispheric dynamos and crustal feedback are established research directions. [Ruiz, 2009](https://doi.org/10.1016/j.icarus.2009.05.021) already relates early geotherms to candidate magnetic carriers. The 2026 tidal study itself discusses both thermal recording and dynamo asymmetry. We must not present their synthesis as our discovery.
 
-Our proposed contribution is a **reproducible consistency test using a common set of histories**, explicitly joining source depth, carrier uncertainty, recording chronology and interior constraints. Its scientific novelty remains to be assessed against full texts and existing joint models. The present release provides the argument, competing assumptions and analysis specification; it has not ingested the required geological/magnetic datasets, fitted histories or selected an origin mechanism.
+Our proposed contribution is a **reproducible consistency test using a common set of histories**, explicitly joining source depth, carrier uncertainty, recording chronology and interior constraints. Its scientific novelty remains to be assessed against full texts and existing joint models. The present release ingests geological and magnetic datasets, laboratory archives and orbital mineral maps, and runs descriptive diagnostics. It has not fitted full recording histories or selected an origin mechanism.
+
+## Extension: give mineral formation its own history
+
+The thermal baseline is now complemented by an explicit **fluid–mineral–remanence branch**. Water can create, transform or remove carriers; a later Martian component is not equivalent to terrestrial contamination. The [recording guide](RECORDING.md) distinguishes the relevant processes, and the [water study](WATER.md) defines competing histories and their failure criteria.
+
+The discriminating question becomes: **does the same dated thermal and chemical history explain crustal structure, mineral generations and the surviving magnetic components?** Keep acquisition, alteration, impact, ejection and terrestrial overprint ages separate. In particular, Tissint's secondary record must not be assigned automatically to crystallization, and Lafayette's aqueous alteration date must not be assigned automatically to magnetization.
+
+Our A–D comparison now permits separately constrained thermal and chemical rebuilding within B and D; it does not introduce an unconstrained correction wherever a model fails. Local crustal fields must be considered when younger meteorites record nonzero fields. A global dynamo is only one source-field alternative.
+
+The mineral–magnetism overlay is available, but a valid wet-versus-dry test requires a survey/exposure mask and matched regional controls. An empty spectral cell is not a dry control. This limitation is explicit in the interface and prevents the preliminary overlay from being promoted into an origin claim.

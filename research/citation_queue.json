@@ -56,6 +56,23 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1002/jgre.20105",
+    "cited_by_core": [
+      "10.1016/j.epsl.2018.03.031",
+      "10.1029/2024gl113926",
+      "10.1029/2024je008505",
+      "10.1029/2024je008832",
+      "10.1038/s41467-024-51092-4",
+      "10.1038/s41550-023-02008-7",
+      "10.1038/s41561-020-0537-x",
+      "10.1111/maps.14136",
+      "10.1126/sciadv.aba0513",
+      "10.1126/sciadv.ade9071",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1007/s11214-018-0563-9",
     "cited_by_core": [
       "10.1029/2018je005854",
@@ -122,21 +139,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1002/jgre.20105",
-    "cited_by_core": [
-      "10.1016/j.epsl.2018.03.031",
-      "10.1029/2024gl113926",
-      "10.1029/2024je008505",
-      "10.1038/s41467-024-51092-4",
-      "10.1038/s41550-023-02008-7",
-      "10.1038/s41561-020-0537-x",
-      "10.1126/sciadv.aba0513",
-      "10.1126/sciadv.ade9071",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/j.chemer.2013.09.006",
     "cited_by_core": [
       "10.1016/j.icarus.2022.115395",
@@ -178,6 +180,21 @@
       "10.1029/2025je009393",
       "10.1038/s41467-024-51092-4",
       "10.1038/s41550-023-02008-7"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/s0012-821x(01)00373-9",
+    "cited_by_core": [
+      "10.1002/jgre.20085",
+      "10.1016/j.epsl.2004.09.013",
+      "10.1016/s0012-821x(02)00728-8",
+      "10.1029/2022je007464",
+      "10.1111/j.1945-5100.2005.tb00961.x",
+      "10.1111/maps.12172",
+      "10.1111/maps.14136",
+      "10.1126/sciadv.ade9071",
+      "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -225,16 +242,16 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.epsl.2004.09.013",
+    "doi": "10.1016/0016-7037(86)90386-8",
     "cited_by_core": [
       "10.1002/2014gl060464",
-      "10.1029/2008gl035585",
+      "10.1016/j.epsl.2004.09.013",
+      "10.1016/s0012-821x(02)00728-8",
       "10.1029/2021je006856",
-      "10.1029/2022je007464",
-      "10.1038/s41467-024-51092-4",
       "10.1111/j.1945-5100.2005.tb00961.x",
       "10.1111/maps.12172",
-      "10.1126/sciadv.ade9071"
+      "10.1111/maps.14136",
+      "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -281,6 +298,45 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1002/2013je004555",
+    "cited_by_core": [
+      "10.1029/2018je005854",
+      "10.1029/2020gl090379",
+      "10.1029/2020je006690",
+      "10.1029/2021je006856",
+      "10.1029/2024je008832",
+      "10.1126/sciadv.aba0513",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1002/2016je005126",
+    "cited_by_core": [
+      "10.1002/2017je005431",
+      "10.1016/j.epsl.2018.03.031",
+      "10.1029/2022je007298",
+      "10.1029/2023gl103482",
+      "10.1029/2024gl110921",
+      "10.1029/2024je008832",
+      "10.1126/science.abf8966"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.epsl.2008.10.012",
+    "cited_by_core": [
+      "10.1029/2018je005854",
+      "10.1029/2022je007298",
+      "10.1029/2024gl113926",
+      "10.1029/2024je008832",
+      "10.1073/pnas.2404259121",
+      "10.1111/maps.12172",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.epsl.2021.117330",
     "cited_by_core": [
       "10.1029/2022je007298",
@@ -294,6 +350,19 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.icarus.2010.01.009",
+    "cited_by_core": [
+      "10.1002/jgre.20085",
+      "10.1029/2021je006856",
+      "10.1038/s41467-024-51092-4",
+      "10.1111/maps.14136",
+      "10.1126/sciadv.aba0513",
+      "10.1126/sciadv.ade9071",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.pss.2006.03.008",
     "cited_by_core": [
       "10.1029/2018je005854",
@@ -302,19 +371,6 @@
       "10.1073/pnas.2404259121",
       "10.1126/sciadv.aba0513",
       "10.1126/science.1161119",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1016/s0012-821x(01)00373-9",
-    "cited_by_core": [
-      "10.1002/jgre.20085",
-      "10.1016/s0012-821x(02)00728-8",
-      "10.1029/2022je007464",
-      "10.1111/j.1945-5100.2005.tb00961.x",
-      "10.1111/maps.12172",
-      "10.1126/sciadv.ade9071",
       "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
@@ -411,6 +467,19 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1126/science.275.5306.1629",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013",
+      "10.1016/s0012-821x(02)00728-8",
+      "10.1029/2008gl035585",
+      "10.1029/2021je006856",
+      "10.1111/j.1945-5100.2005.tb00961.x",
+      "10.1126/sciadv.ade9071",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1130/g19975.1",
     "cited_by_core": [
       "10.1016/j.icarus.2022.115395",
@@ -420,30 +489,6 @@
       "10.1126/sciadv.ade9071",
       "10.1126/science.abi7730",
       "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1002/2013je004555",
-    "cited_by_core": [
-      "10.1029/2018je005854",
-      "10.1029/2020gl090379",
-      "10.1029/2020je006690",
-      "10.1029/2021je006856",
-      "10.1126/sciadv.aba0513",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1002/2016je005126",
-    "cited_by_core": [
-      "10.1002/2017je005431",
-      "10.1016/j.epsl.2018.03.031",
-      "10.1029/2022je007298",
-      "10.1029/2023gl103482",
-      "10.1029/2024gl110921",
-      "10.1126/science.abf8966"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -472,30 +517,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/0016-7037(86)90386-8",
-    "cited_by_core": [
-      "10.1002/2014gl060464",
-      "10.1016/s0012-821x(02)00728-8",
-      "10.1029/2021je006856",
-      "10.1111/j.1945-5100.2005.tb00961.x",
-      "10.1111/maps.12172",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1016/j.epsl.2008.10.012",
-    "cited_by_core": [
-      "10.1029/2018je005854",
-      "10.1029/2022je007298",
-      "10.1029/2024gl113926",
-      "10.1073/pnas.2404259121",
-      "10.1111/maps.12172",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/j.gca.2015.02.023",
     "cited_by_core": [
       "10.1029/2020je006523",
@@ -504,18 +525,6 @@
       "10.1038/s41467-022-31444-8",
       "10.1126/sciadv.aap8306",
       "10.1126/sciadv.abl7497"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1016/j.icarus.2010.01.009",
-    "cited_by_core": [
-      "10.1002/jgre.20085",
-      "10.1029/2021je006856",
-      "10.1038/s41467-024-51092-4",
-      "10.1126/sciadv.aba0513",
-      "10.1126/sciadv.ade9071",
-      "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -592,6 +601,30 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/2005je002404",
+    "cited_by_core": [
+      "10.1002/jgre.20085",
+      "10.1029/2020gl090379",
+      "10.1029/2021je006856",
+      "10.1029/2022je007298",
+      "10.1029/2024je008832",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2007je002887",
+    "cited_by_core": [
+      "10.1029/2020gl090379",
+      "10.1029/2022je007298",
+      "10.1029/2024gl110921",
+      "10.1029/2024je008832",
+      "10.1038/s41467-022-31444-8",
+      "10.1126/science.abf8966"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/2018ea000420",
     "cited_by_core": [
       "10.1029/2021je006856",
@@ -640,6 +673,18 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1038/nature17171",
+    "cited_by_core": [
+      "10.1016/j.epsl.2018.03.031",
+      "10.1029/2018je005854",
+      "10.1029/2019gl083046",
+      "10.1029/2024je008832",
+      "10.1073/pnas.2404259121",
+      "10.1126/sciadv.ade9071"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1098/rsta.1994.0132",
     "cited_by_core": [
       "10.1002/2017je005431",
@@ -671,18 +716,6 @@
       "10.1038/nature07025",
       "10.1126/sciadv.aba0513",
       "10.1146/annurev.earth.35.031306.140220",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1126/science.275.5306.1629",
-    "cited_by_core": [
-      "10.1016/s0012-821x(02)00728-8",
-      "10.1029/2008gl035585",
-      "10.1029/2021je006856",
-      "10.1111/j.1945-5100.2005.tb00961.x",
-      "10.1126/sciadv.ade9071",
       "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
@@ -767,6 +800,39 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.icarus.2007.12.009",
+    "cited_by_core": [
+      "10.1029/2019gl083046",
+      "10.1029/2024je008832",
+      "10.1038/s41467-024-51092-4",
+      "10.1126/sciadv.aba0513",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.icarus.2013.03.019",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.1038/s41467-024-51092-4",
+      "10.1126/sciadv.aba0513",
+      "10.1126/sciadv.ade9071",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/s0012-821x(01)00381-8",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013",
+      "10.1016/s0012-821x(02)00728-8",
+      "10.1029/2021je006856",
+      "10.1111/j.1945-5100.2005.tb00961.x",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/s0012-821x(04)00032-9",
     "cited_by_core": [
       "10.1029/2020je006690",
@@ -774,6 +840,17 @@
       "10.1111/j.1945-5100.2005.tb00961.x",
       "10.1126/sciadv.adq3694",
       "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1017/cbo9780511612794",
+    "cited_by_core": [
+      "10.1002/jgre.20085",
+      "10.1007/s11214-025-01194-2",
+      "10.1016/s0012-821x(02)00728-8",
+      "10.1073/pnas.2404259121",
+      "10.1111/maps.12172"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -811,28 +888,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2005je002404",
-    "cited_by_core": [
-      "10.1002/jgre.20085",
-      "10.1029/2020gl090379",
-      "10.1029/2021je006856",
-      "10.1029/2022je007298",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1029/2007je002887",
-    "cited_by_core": [
-      "10.1029/2020gl090379",
-      "10.1029/2022je007298",
-      "10.1029/2024gl110921",
-      "10.1038/s41467-022-31444-8",
-      "10.1126/science.abf8966"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1029/2020ea001317",
     "cited_by_core": [
       "10.1029/2023gl103482",
@@ -866,13 +921,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1038/nature17171",
+    "doi": "10.1038/nature10582",
     "cited_by_core": [
-      "10.1016/j.epsl.2018.03.031",
-      "10.1029/2018je005854",
-      "10.1029/2019gl083046",
-      "10.1073/pnas.2404259121",
-      "10.1126/sciadv.ade9071"
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2024je008832",
+      "10.1029/2025je009393",
+      "10.1038/s41561-024-01634-8",
+      "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -950,6 +1005,17 @@
       "10.1038/s41586-023-06601-8",
       "10.1038/s41586-025-09361-9",
       "10.1126/science.abi7730"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1126/science.1122659",
+    "cited_by_core": [
+      "10.1016/j.epsl.2014.03.027",
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2022je007472",
+      "10.1029/2025je009393",
+      "10.1038/s41561-024-01634-8"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1037,6 +1103,16 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1007/s11214-009-9580-z",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2022je007464",
+      "10.1073/pnas.2404259121",
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1007/s11214-012-9935-8",
     "cited_by_core": [
       "10.1016/j.icarus.2022.115395",
@@ -1057,12 +1133,32 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.epsl.2004.10.038",
+    "cited_by_core": [
+      "10.1029/2024gl113926",
+      "10.1111/maps.14136",
+      "10.1126/sciadv.aba0513",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.epsl.2005.04.033",
     "cited_by_core": [
       "10.1029/2023gl105701",
       "10.1038/s41550-026-02907-5",
       "10.1126/science.abf8966",
       "10.1126/science.abi7730"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.icarus.2004.11.023",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.1038/s41467-022-31444-8",
+      "10.1126/sciadv.abl7497",
+      "10.1126/sciadv.adn2378"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1077,31 +1173,11 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.icarus.2007.12.009",
-    "cited_by_core": [
-      "10.1029/2019gl083046",
-      "10.1038/s41467-024-51092-4",
-      "10.1126/sciadv.aba0513",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/j.icarus.2009.10.016",
     "cited_by_core": [
       "10.1016/j.icarus.2022.115395",
       "10.1016/j.pepi.2013.01.001",
       "10.1126/sciadv.aba0513",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1016/j.icarus.2013.03.019",
-    "cited_by_core": [
-      "10.1038/s41467-024-51092-4",
-      "10.1126/sciadv.aba0513",
-      "10.1126/sciadv.ade9071",
       "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
@@ -1147,32 +1223,12 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/s0012-821x(01)00381-8",
-    "cited_by_core": [
-      "10.1016/s0012-821x(02)00728-8",
-      "10.1029/2021je006856",
-      "10.1111/j.1945-5100.2005.tb00961.x",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/s0012-821x(98)00030-2",
     "cited_by_core": [
       "10.1016/j.icarus.2024.116137",
       "10.1038/nature07070",
       "10.1126/sciadv.aed5787",
       "10.1126/science.abi7730"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1017/cbo9780511612794",
-    "cited_by_core": [
-      "10.1002/jgre.20085",
-      "10.1016/s0012-821x(02)00728-8",
-      "10.1073/pnas.2404259121",
-      "10.1111/maps.12172"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1203,6 +1259,16 @@
       "10.1029/2019gl083046",
       "10.1029/2025je008931",
       "10.1038/s41467-024-51092-4"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2001je001616",
+    "cited_by_core": [
+      "10.1029/2020je006690",
+      "10.1029/2024je008505",
+      "10.1029/2024je008832",
+      "10.1126/sciadv.aba0513"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1243,6 +1309,16 @@
       "10.1038/s41467-024-51092-4",
       "10.1126/sciadv.aba0513",
       "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2005je002626",
+    "cited_by_core": [
+      "10.1002/2017je005431",
+      "10.1029/2010je003658",
+      "10.1029/2024je008832",
+      "10.1038/nature07011"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1367,6 +1443,16 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1038/ncomms15978",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.1029/2025je009393",
+      "10.1038/s41467-022-31444-8",
+      "10.1126/sciadv.adq3694"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1038/ngeo392",
     "cited_by_core": [
       "10.1016/j.epsl.2018.03.031",
@@ -1397,6 +1483,16 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1038/s41467-021-26648-3",
+    "cited_by_core": [
+      "10.1038/s41467-022-31444-8",
+      "10.1111/maps.14136",
+      "10.1126/sciadv.adn2378",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1038/s41550-022-01803-y",
     "cited_by_core": [
       "10.1016/j.icarus.2024.116137",
@@ -1417,12 +1513,12 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1126/science.1122659",
+    "doi": "10.1111/j.1945-5100.2003.tb00275.x",
     "cited_by_core": [
-      "10.1016/j.epsl.2014.03.027",
-      "10.1029/2022je007472",
-      "10.1029/2025je009393",
-      "10.1038/s41561-024-01634-8"
+      "10.1002/2014gl060464",
+      "10.1016/j.epsl.2004.09.013",
+      "10.1029/2022je007464",
+      "10.1038/s41467-024-51092-4"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1491,6 +1587,24 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1007/s11214\u2010015\u20100139\u2010x",
+    "cited_by_core": [
+      "10.1029/2018gl079972",
+      "10.1029/2024gl113926",
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0012-821x(75)90221-6",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2021je006856",
+      "10.1111/maps.12172"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/0016-7037(86)90376-5",
     "cited_by_core": [
       "10.1016/s0012-821x(01)00345-4",
@@ -1514,15 +1628,6 @@
       "10.1029/2022je007298",
       "10.1029/2026gl122393",
       "10.1038/s41586-023-06601-8"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1016/j.epsl.2004.10.038",
-    "cited_by_core": [
-      "10.1029/2024gl113926",
-      "10.1126/sciadv.aba0513",
-      "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1608,15 +1713,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.icarus.2004.11.023",
-    "cited_by_core": [
-      "10.1038/s41467-022-31444-8",
-      "10.1126/sciadv.abl7497",
-      "10.1126/sciadv.adn2378"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/j.icarus.2005.10.025",
     "cited_by_core": [
       "10.1038/s41467-024-51092-4",
@@ -1640,6 +1736,15 @@
       "10.1002/2017je005431",
       "10.1038/s41467-024-51092-4",
       "10.1126/sciadv.aap8306"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.icarus.2014.11.011",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.1029/2025je009393",
+      "10.1038/s41561-024-01634-8"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1676,6 +1781,15 @@
       "10.1029/2018je005854",
       "10.1038/s41586-026-10893-x",
       "10.1073/pnas.2404259121"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.icarus.2020.113634",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2025je009393",
+      "10.1038/s41561-024-01634-8"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1721,6 +1835,15 @@
       "10.1029/2021je006856",
       "10.1029/2022je007464",
       "10.1126/sciadv.ade9071"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/s0012\u2010821x(04)00032\u20109",
+    "cited_by_core": [
+      "10.1002/jgre.20085",
+      "10.1029/2024je008505",
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1779,11 +1902,11 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2001je001616",
+    "doi": "10.1029/2001je001580",
     "cited_by_core": [
-      "10.1029/2020je006690",
-      "10.1029/2024je008505",
-      "10.1126/sciadv.aba0513"
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2020gl090379",
+      "10.1029/2025je009393"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1842,15 +1965,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2005je002626",
-    "cited_by_core": [
-      "10.1002/2017je005431",
-      "10.1029/2010je003658",
-      "10.1038/nature07011"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1029/2006je002676",
     "cited_by_core": [
       "10.1029/2022je007472",
@@ -1892,6 +2006,33 @@
       "10.1038/s41467-024-51092-4",
       "10.1126/sciadv.ade9071",
       "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2011je003967",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.1038/s41550-023-02008-7",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2012je004117",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2020gl090379",
+      "10.1029/2025je009393"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2012je004145",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2024je008832",
+      "10.1029/2025je009393"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -1955,6 +2096,15 @@
       "10.1029/2023gl105701",
       "10.1038/s41586-023-06601-8",
       "10.1126/science.abi7730"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2020gc009147",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2021je006856",
+      "10.1126/sciadv.ade9071"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -2076,29 +2226,20 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1038/nature07097",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2025je009393",
+      "10.1126/sciadv.adq3694"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1038/nature09903",
     "cited_by_core": [
       "10.1002/2017je005431",
       "10.1029/2022je007298",
       "10.1038/s41586-026-10893-x"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1038/nature10582",
-    "cited_by_core": [
-      "10.1029/2025je009393",
-      "10.1038/s41561-024-01634-8",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1038/ncomms15978",
-    "cited_by_core": [
-      "10.1029/2025je009393",
-      "10.1038/s41467-022-31444-8",
-      "10.1126/sciadv.adq3694"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -2112,20 +2253,20 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1038/s41467-021-26648-3",
-    "cited_by_core": [
-      "10.1038/s41467-022-31444-8",
-      "10.1126/sciadv.adn2378",
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1038/s41561-019-0380-0",
     "cited_by_core": [
       "10.1029/2020je006523",
       "10.1126/sciadv.abl7497",
       "10.1126/sciadv.adq3694"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1038/s41561\u2010020\u20100536\u2010y",
+    "cited_by_core": [
+      "10.1029/2023gl105701",
+      "10.1029/2024gl110921",
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -2175,6 +2316,15 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1111/j.1365-246x.1980.tb02601.x",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1111/maps.14136",
+      "10.1126/sciadv.ade9071"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1111/j.1365-246x.1996.tb05285.x",
     "cited_by_core": [
       "10.1002/2014gl060464",
@@ -2202,11 +2352,29 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1111/j.1945-5100.2003.tb00275.x",
+    "doi": "10.1111/j.1945-5100.2000.tb01434.x",
     "cited_by_core": [
-      "10.1002/2014gl060464",
-      "10.1029/2022je007464",
-      "10.1038/s41467-024-51092-4"
+      "10.1016/j.epsl.2004.09.013",
+      "10.1029/2021je006856",
+      "10.1029/2022je007464"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/j.1945-5100.2000.tb01478.x",
+    "cited_by_core": [
+      "10.1029/2020gl090379",
+      "10.1111/j.1945-5100.2005.tb00961.x",
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/j.1945-5100.2003.tb00263.x",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1016/j.epsl.2004.09.013",
+      "10.1029/2022je007464"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -2265,11 +2433,29 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1126/science.1258022",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2021je006856",
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1126/science.228.4701.877",
     "cited_by_core": [
       "10.1016/0019-1035(91)90221-e",
       "10.1016/j.icarus.2022.115395",
       "10.1038/nature07011"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1126/science.279.5357.1676",
+    "cited_by_core": [
+      "10.1029/2018je005854",
+      "10.1038/s41586-023-06601-8",
+      "10.1111/maps.14136"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -2288,6 +2474,15 @@
       "10.1029/2010je003658",
       "10.1029/2020gl090379",
       "10.1146/annurev.earth.35.031306.140220"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1126/science.aaf5043",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2024je008505",
+      "10.1111/maps.14136"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -2402,6 +2597,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1002/2015je004840",
+    "cited_by_core": [
+      "10.1029/2021je006856",
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1002/2015je004932",
     "cited_by_core": [
       "10.1029/2020je006523",
@@ -2450,6 +2653,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1002/jgre.20089",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1002/jgre.20107",
     "cited_by_core": [
       "10.1029/2019gl083046",
@@ -2490,6 +2701,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1007/978-94-015-3979-1",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2021je006856"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1007/bf00578814",
     "cited_by_core": [
       "10.1029/2010je003658",
@@ -2510,14 +2729,6 @@
     "cited_by_core": [
       "10.1016/j.epsl.2014.03.027",
       "10.1126/science.1161119"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1007/s11214-009-9580-z",
-    "cited_by_core": [
-      "10.1029/2022je007464",
-      "10.1073/pnas.2404259121"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -2570,14 +2781,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1007/s11214\u2010015\u20100139\u2010x",
-    "cited_by_core": [
-      "10.1029/2018gl079972",
-      "10.1029/2024gl113926"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1007/s11214\u2010018\u20100574\u20106",
     "cited_by_core": [
       "10.1029/2023gl105701",
@@ -2594,14 +2797,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/0012-821x(75)90221-6",
-    "cited_by_core": [
-      "10.1029/2021je006856",
-      "10.1111/maps.12172"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/0012-821x(77)90060-7",
     "cited_by_core": [
       "10.1038/s41586-018-0222-z",
@@ -2613,6 +2808,14 @@
     "doi": "10.1016/0012-821x(86)90157-3",
     "cited_by_core": [
       "10.1016/s0012-821x(02)00728-8",
+      "10.1111/j.1945-5100.2005.tb00961.x"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0012-821x(90)90034-u",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013",
       "10.1111/j.1945-5100.2005.tb00961.x"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
@@ -2674,6 +2877,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/0031-9201(79)90055-4",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013",
+      "10.1029/2021je006856"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/0031-9201(81)90046-7",
     "cited_by_core": [
       "10.1029/2023gl103482",
@@ -2726,6 +2937,14 @@
     "cited_by_core": [
       "10.1126/science.abf8966",
       "10.1126/science.abi7730"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/b978\u2010044452748\u20106/00156\u20105",
+    "cited_by_core": [
+      "10.1029/2024je008486",
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -2806,6 +3025,14 @@
     "cited_by_core": [
       "10.1002/jgre.20085",
       "10.1038/s41467-024-51092-4"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.epsl.2010.02.007",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2022je007464"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -3090,6 +3317,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.icarus.2010.06.001",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2025je009393"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.icarus.2010.06.030",
     "cited_by_core": [
       "10.1016/j.icarus.2022.115395",
@@ -3162,14 +3397,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.icarus.2014.11.011",
-    "cited_by_core": [
-      "10.1029/2025je009393",
-      "10.1038/s41561-024-01634-8"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/j.icarus.2015.01.016",
     "cited_by_core": [
       "10.1029/2020je006523",
@@ -3202,6 +3429,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.icarus.2018.03.021",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.icarus.2018.05.021",
     "cited_by_core": [
       "10.1029/2019gl083046",
@@ -3218,10 +3453,10 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.icarus.2020.113634",
+    "doi": "10.1016/j.icarus.2019.113526",
     "cited_by_core": [
-      "10.1029/2025je009393",
-      "10.1038/s41561-024-01634-8"
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2020je006523"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -3230,6 +3465,22 @@
     "cited_by_core": [
       "10.1029/2020je006523",
       "10.1126/sciadv.adn2378"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.icarus.2020.114024",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2025je009393"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.icarus.2020.114223",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2025je009393"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -3250,10 +3501,18 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.icarus.2022.115164",
+    "doi": "10.1016/j.icarus.2023.115471",
     "cited_by_core": [
-      "10.1029/2025je009393",
-      "10.1038/s41561-024-01634-8"
+      "10.1029/2024gl113926",
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.icarus.2023.115700",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.1038/s41550-026-02907-5"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -3442,10 +3701,10 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/s0012\u2010821x(04)00032\u20109",
+    "doi": "10.1016/s0016-7037(03)00171-6",
     "cited_by_core": [
-      "10.1002/jgre.20085",
-      "10.1029/2024je008505"
+      "10.1111/j.1945-5100.2005.tb00961.x",
+      "10.1111/maps.14136"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -3530,6 +3789,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/1999je001093",
+    "cited_by_core": [
+      "10.1002/jgre.20085",
+      "10.1016/j.icarus.2022.115164"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/2000je001253",
     "cited_by_core": [
       "10.1029/2022je007472",
@@ -3578,18 +3845,18 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2001je001534",
+    "doi": "10.1029/2001je001510",
     "cited_by_core": [
-      "10.1029/2020je006690",
-      "10.1038/s41561-020-0537-x"
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2020gl090379"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2001je001580",
+    "doi": "10.1029/2001je001534",
     "cited_by_core": [
-      "10.1029/2020gl090379",
-      "10.1029/2025je009393"
+      "10.1029/2020je006690",
+      "10.1038/s41561-020-0537-x"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -3622,6 +3889,14 @@
     "cited_by_core": [
       "10.1002/jgre.20085",
       "10.1038/s41467-024-51092-4"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2003je002195",
+    "cited_by_core": [
+      "10.1111/maps.14136",
+      "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -3698,6 +3973,30 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/2006je002840",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2025je009393"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2006je002877",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2025je009393"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2007gl031252",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.1038/nature07011"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/2007gl031635",
     "cited_by_core": [
       "10.1016/j.icarus.2022.115395",
@@ -3746,6 +4045,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/2009gc002653",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1111/maps.12172"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/2009je003351",
     "cited_by_core": [
       "10.1029/2025je009393",
@@ -3762,18 +4069,18 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2010je003755",
+    "doi": "10.1029/2009je003548",
     "cited_by_core": [
-      "10.1029/2019gl083046",
-      "10.1029/2025je009393"
+      "10.1029/2024je008832",
+      "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2011je003967",
+    "doi": "10.1029/2010je003755",
     "cited_by_core": [
-      "10.1038/s41550-023-02008-7",
-      "10.3389/fspas.2022.895362"
+      "10.1029/2019gl083046",
+      "10.1029/2025je009393"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -3786,14 +4093,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2012je004117",
-    "cited_by_core": [
-      "10.1029/2020gl090379",
-      "10.1029/2025je009393"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1029/2012je004234",
     "cited_by_core": [
       "10.1029/2022je007298",
@@ -3802,18 +4101,18 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2019je006190",
+    "doi": "10.1029/2019gc008238",
     "cited_by_core": [
-      "10.1029/2024je008505",
-      "10.1073/pnas.2404259121"
+      "10.1029/2021je006856",
+      "10.1111/maps.14136"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2020gc009147",
+    "doi": "10.1029/2019je006190",
     "cited_by_core": [
-      "10.1029/2021je006856",
-      "10.1126/sciadv.ade9071"
+      "10.1029/2024je008505",
+      "10.1073/pnas.2404259121"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -3845,6 +4144,14 @@
     "doi": "10.1029/2020je006505",
     "cited_by_core": [
       "10.1038/s41550-023-02008-7",
+      "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2021ea001860",
+    "cited_by_core": [
+      "10.1111/maps.14136",
       "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
@@ -3950,6 +4257,22 @@
     "cited_by_core": [
       "10.1029/2025je008931",
       "10.1038/nature07025"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/gl005i001p00073",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/gl015i005p00518",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013",
+      "10.1016/s0012-821x(02)00728-8"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -4090,6 +4413,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1038/380057a0",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013",
+      "10.1126/sciadv.ade9071"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1038/44776",
     "cited_by_core": [
       "10.1016/j.pepi.2013.01.001",
@@ -4114,14 +4445,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1038/nature07097",
-    "cited_by_core": [
-      "10.1029/2025je009393",
-      "10.1126/sciadv.adq3694"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1038/nature10201",
     "cited_by_core": [
       "10.1016/j.epsl.2014.03.027",
@@ -4138,6 +4461,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1038/ngeo207",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2020je006523"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1038/ngeo2845",
     "cited_by_core": [
       "10.1029/2024je008486",
@@ -4150,6 +4481,30 @@
     "cited_by_core": [
       "10.1029/2020je006523",
       "10.1029/2021je006856"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1038/s41467\u2010021\u201021762\u20108",
+    "cited_by_core": [
+      "10.1029/2024gl113926",
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1038/s41467\u2010024\u201051092\u20104",
+    "cited_by_core": [
+      "10.1029/2024je008505",
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1038/s41550\u2010023\u201002191\u20107",
+    "cited_by_core": [
+      "10.1029/2024je008486",
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -4178,7 +4533,7 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1038/s41561\u2010020\u20100536\u2010y",
+    "doi": "10.1038/s41561\u2010020\u20100539\u20108",
     "cited_by_core": [
       "10.1029/2023gl105701",
       "10.1029/2024gl110921"
@@ -4186,10 +4541,10 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1038/s41561\u2010020\u20100539\u20108",
+    "doi": "10.1038/s41561\u2010021\u201000701\u20108",
     "cited_by_core": [
-      "10.1029/2023gl105701",
-      "10.1029/2024gl110921"
+      "10.1029/2024je008832",
+      "10.1029/2025je009393"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -4258,6 +4613,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1073/pnas.1017165108",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1126/sciadv.ade9071"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1073/pnas.1109444108",
     "cited_by_core": [
       "10.1029/2020je006523",
@@ -4270,6 +4633,14 @@
     "cited_by_core": [
       "10.1038/s41586-023-06601-8",
       "10.1126/science.abi7730"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1073/pnas.1708344114",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2024je008505"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -4442,6 +4813,14 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1111/j.1365-246x.2004.02297.x",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2022je007464"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1111/j.1365-246x.2010.04861.x",
     "cited_by_core": [
       "10.1126/science.abf8966",
@@ -4466,26 +4845,18 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1111/j.1945-5100.2000.tb01434.x",
-    "cited_by_core": [
-      "10.1029/2021je006856",
-      "10.1029/2022je007464"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1111/j.1945-5100.2000.tb01478.x",
-    "cited_by_core": [
-      "10.1029/2020gl090379",
-      "10.1111/j.1945-5100.2005.tb00961.x"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1111/j.1945-5100.2001.tb01809.x",
     "cited_by_core": [
       "10.1016/s0012-821x(02)00728-8",
       "10.1126/sciadv.ade9071"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/j.1945-5100.2002.tb00793.x",
+    "cited_by_core": [
+      "10.1111/j.1945-5100.2005.tb00961.x",
+      "10.1111/maps.14136"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -4570,6 +4941,22 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1111/j.1945-5100.2008.tb01092.x",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2022je007464"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/j.1945-5100.2009.tb00741.x",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2",
+      "10.1029/2022je007464"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1111/j.1945-5100.2010.01152.x",
     "cited_by_core": [
       "10.1029/2020je006523",
@@ -4630,6 +5017,14 @@
     "cited_by_core": [
       "10.1029/2020je006523",
       "10.1126/sciadv.adn2378"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1126/sciadv.abb1669",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.1038/s41550-026-02907-5"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -4706,14 +5101,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1126/science.279.5357.1676",
-    "cited_by_core": [
-      "10.1029/2018je005854",
-      "10.1038/s41586-023-06601-8"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1126/science.7809625",
     "cited_by_core": [
       "10.1029/2010je003658",
@@ -4774,6 +5161,14 @@
     "cited_by_core": [
       "10.1029/2010je003658",
       "10.1126/sciadv.aed5787"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1146/annurev\u2010earth\u2010060313\u2010055024",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.1029/2025je009393"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -4882,10 +5277,26 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.3847/psj/abe541",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164",
+      "10.1029/2025je009393"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.3847/psj/acae93",
     "cited_by_core": [
       "10.1029/2024gl113926",
       "10.1038/s41586-026-10893-x"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.3847/psj/ace9c1",
+    "cited_by_core": [
+      "10.1029/2024je008832",
+      "10.1038/s41467-024-51092-4"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -5124,13 +5535,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1002/2015je004840",
-    "cited_by_core": [
-      "10.1029/2021je006856"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1002/2015je004896",
     "cited_by_core": [
       "10.1038/s41467-024-51092-4"
@@ -5162,6 +5566,13 @@
     "doi": "10.1002/2015je004972",
     "cited_by_core": [
       "10.1029/2025je009393"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1002/2016gc006321",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -5253,6 +5664,13 @@
     "doi": "10.1002/2016je005048",
     "cited_by_core": [
       "10.1029/2018je005854"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1002/2016je005095",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -5376,6 +5794,34 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1002/9781118798478.ch3",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1002/9781118929063",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1002/9781118929063.ch3",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1002/9781118929063.ch4",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1002/essoar.10502580.1",
     "cited_by_core": [
       "10.1029/2020je006523"
@@ -5439,13 +5885,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1002/jgre.20089",
-    "cited_by_core": [
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1002/jgre.20100",
     "cited_by_core": [
       "10.1029/2019gl083046"
@@ -5470,6 +5909,13 @@
     "doi": "10.1002/jgre.20168",
     "cited_by_core": [
       "10.1126/science.abf8966"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1002/rog.20007",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -5505,6 +5951,13 @@
     "doi": "10.1006/icar.1996.0028",
     "cited_by_core": [
       "10.1038/nature07011"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1006/icar.1998.6035",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -5628,9 +6081,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1007/978-94-015-3979-1",
+    "doi": "10.1007/978-94-017-1035-0_3",
     "cited_by_core": [
-      "10.1029/2021je006856"
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -5677,6 +6130,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1007/bf00303452",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1007/bf00308368",
     "cited_by_core": [
       "10.1029/2024je008505"
@@ -5708,6 +6168,13 @@
     "doi": "10.1007/bf00375311",
     "cited_by_core": [
       "10.1126/sciadv.aed5787"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1007/bf00562196",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -5943,6 +6410,20 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1007/s10712\u2010013\u20109232\u20104",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1007/s10712\u2010017\u20109413\u20107",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1007/s10967-014-3293-9",
     "cited_by_core": [
       "10.1126/sciadv.aap8306"
@@ -6048,6 +6529,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1007/s11214-017-0405-1",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1007/s11214-017-0409-x",
     "cited_by_core": [
       "10.1038/s41561-020-0537-x"
@@ -6079,6 +6567,27 @@
     "doi": "10.1007/s11214-018-0567-5",
     "cited_by_core": [
       "10.1126/science.abi7730"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1007/s11214-019-0615-9",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1007/s11214-019-0622-x",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1007/s11214-020-00668-9",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -6209,6 +6718,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1007/s11214\u2010021\u201000791\u20101",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1007/s11214\u2010021\u201000807\u2010w",
     "cited_by_core": [
       "10.1029/2024je008505"
@@ -6307,9 +6823,37 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/0012-821x(74)90172-1",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0012-821x(74)90191-5",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/0012-821x(75)90088-6",
     "cited_by_core": [
       "10.1126/sciadv.abl7497"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0012-821x(75)90210-1",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0012-821x(76)90033-9",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -6377,9 +6921,16 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/0012-821x(90)90034-u",
+    "doi": "10.1016/0012-821x(91)90053-k",
     "cited_by_core": [
-      "10.1111/j.1945-5100.2005.tb00961.x"
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0012-821x(92)90083-8",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -6387,6 +6938,13 @@
     "doi": "10.1016/0012-821x(92)90225-k",
     "cited_by_core": [
       "10.1029/94je00216"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0012-821x(94)90122-8",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -6468,6 +7026,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/0016-7037(91)90078-j",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/0016-7037(91)90137-t",
     "cited_by_core": [
       "10.1126/sciadv.aap8306"
@@ -6478,6 +7043,13 @@
     "doi": "10.1016/0016-7037(92)90172-f",
     "cited_by_core": [
       "10.1126/sciadv.aed5787"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0016-7037(92)90268-n",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -6520,6 +7092,13 @@
     "doi": "10.1016/0016-7037(96)00122-6",
     "cited_by_core": [
       "10.1029/2020je006523"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0016-7037(96)88430-4",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -6706,6 +7285,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/0031-9201(76)90060-1",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/0031-9201(77)90108-x",
     "cited_by_core": [
       "10.1029/2021je006856"
@@ -6713,9 +7299,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/0031-9201(79)90055-4",
+    "doi": "10.1016/0031-9201(79)90056-6",
     "cited_by_core": [
-      "10.1029/2021je006856"
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -6734,9 +7320,30 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/0031-9201(81)90105-9",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0031-9201(81)90106-0",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/0031-9201(82)90020-6",
     "cited_by_core": [
       "10.1029/2022je007472"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0031-9201(86)90019-1",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -6751,6 +7358,13 @@
     "doi": "10.1016/0031-9201(90)90082-9",
     "cited_by_core": [
       "10.1029/2022je007298"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0031-9201(92)90076-8",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -6779,6 +7393,13 @@
     "doi": "10.1016/0031\u20109201(89)90116\u20107",
     "cited_by_core": [
       "10.1002/jgre.20085"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/0031\u20109201(90)90082\u20109",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -6902,6 +7523,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/b978-0-444-53802-4.00102-0",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/b978-0-444-53802-4.00126-3",
     "cited_by_core": [
       "10.1029/2022je007472"
@@ -6979,13 +7607,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/b978\u2010044452748\u20106/00156\u20105",
-    "cited_by_core": [
-      "10.1029/2024je008486"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/b978\u20100\u201008\u2010100355\u20108\u201000014\u2010x",
     "cited_by_core": [
       "10.1029/2025je009393"
@@ -6996,6 +7617,13 @@
     "doi": "10.1016/bs.agph.2018.09.002",
     "cited_by_core": [
       "10.1126/science.abi7730"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.actaastro.2019.10.006",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -7087,6 +7715,13 @@
     "doi": "10.1016/j.chemgeo.2017.12.024",
     "cited_by_core": [
       "10.1126/sciadv.adq3694"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.crte.2003.08.006",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -7238,9 +7873,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.epsl.2010.02.007",
+    "doi": "10.1016/j.epsl.2010.02.013",
     "cited_by_core": [
-      "10.1029/2022je007464"
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -7301,6 +7936,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.epsl.2012.05.024",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.epsl.2012.06.002",
     "cited_by_core": [
       "10.1029/2020je006523"
@@ -7339,6 +7981,13 @@
     "doi": "10.1016/j.epsl.2014.06.003",
     "cited_by_core": [
       "10.1029/2020je006523"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.epsl.2014.07.010",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -7409,6 +8058,13 @@
     "doi": "10.1016/j.epsl.2016.02.035",
     "cited_by_core": [
       "10.1126/sciadv.abl7497"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.epsl.2016.09.008",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -7528,6 +8184,13 @@
     "doi": "10.1016/j.epsl.2019.115889",
     "cited_by_core": [
       "10.1029/2022je007472"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.epsl.2019.116042",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -7924,6 +8587,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.gloplacha.2013.08.003",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.gloplacha.2013.11.005",
     "cited_by_core": [
       "10.1126/sciadv.aba0513"
@@ -8162,13 +8832,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.icarus.2010.06.001",
-    "cited_by_core": [
-      "10.1029/2025je009393"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/j.icarus.2010.06.015",
     "cited_by_core": [
       "10.1016/j.pepi.2012.09.008"
@@ -8288,6 +8951,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.icarus.2012.08.030",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.icarus.2012.09.036",
     "cited_by_core": [
       "10.1038/s41467-024-51092-4"
@@ -8372,6 +9042,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.icarus.2015.01.020",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.icarus.2015.07.026",
     "cited_by_core": [
       "10.1029/2019gl083046"
@@ -8400,6 +9077,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.icarus.2017.03.017",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.icarus.2017.07.003",
     "cited_by_core": [
       "10.1126/sciadv.adn2378"
@@ -8421,13 +9105,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.icarus.2018.03.021",
-    "cited_by_core": [
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/j.icarus.2018.08.009",
     "cited_by_core": [
       "10.1029/2019gl083046"
@@ -8438,6 +9115,13 @@
     "doi": "10.1016/j.icarus.2018.08.021",
     "cited_by_core": [
       "10.1029/2019gl083046"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.icarus.2018.09.016",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -8512,13 +9196,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.icarus.2019.113526",
-    "cited_by_core": [
-      "10.1029/2020je006523"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1016/j.icarus.2020.113623",
     "cited_by_core": [
       "10.1126/sciadv.adn2378"
@@ -8547,9 +9224,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.icarus.2020.114024",
+    "doi": "10.1016/j.icarus.2020.113953",
     "cited_by_core": [
-      "10.1029/2025je009393"
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -8557,13 +9234,6 @@
     "doi": "10.1016/j.icarus.2020.114176",
     "cited_by_core": [
       "10.1016/j.icarus.2022.115395"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1016/j.icarus.2020.114223",
-    "cited_by_core": [
-      "10.1029/2025je009393"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -8582,6 +9252,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.icarus.2021.114809",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.icarus.2021.114869",
     "cited_by_core": [
       "10.1126/sciadv.adn2378"
@@ -8592,13 +9269,6 @@
     "doi": "10.1016/j.icarus.2022.115266",
     "cited_by_core": [
       "10.1029/2025je008931"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1016/j.icarus.2023.115471",
-    "cited_by_core": [
-      "10.1029/2024gl113926"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -8617,9 +9287,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/j.icarus.2023.115700",
+    "doi": "10.1016/j.icarus.2023.115691",
     "cited_by_core": [
-      "10.1038/s41550-026-02907-5"
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -8729,6 +9399,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.lithos.2013.04.008",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.marpetgeo.2009.01.003",
     "cited_by_core": [
       "10.1029/2024je008486"
@@ -8746,6 +9423,13 @@
     "doi": "10.1016/j.nima.2005.09.014",
     "cited_by_core": [
       "10.1126/sciadv.aap8306"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.pepi.2003.10.001",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -8834,9 +9518,23 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.pepi.2010.01.004",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.pepi.2010.01.004.this",
     "cited_by_core": [
       "10.1002/jgre.20085"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.pepi.2010.01.007",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -8858,6 +9556,13 @@
     "doi": "10.1016/j.pepi.2012.02.008",
     "cited_by_core": [
       "10.3389/fspas.2022.895362"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.pepi.2012.04.007",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -8904,6 +9609,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.pepi.2019.03.004",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.pepi.2020.106541",
     "cited_by_core": [
       "10.1038/s41586-025-09361-9"
@@ -8942,6 +9654,13 @@
     "doi": "10.1016/j.precamres.2015.10.005",
     "cited_by_core": [
       "10.1029/2024je008486"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.precamres.2016.04.006",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -9023,6 +9742,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/j.pss.2012.11.007",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/j.pss.2013.05.006",
     "cited_by_core": [
       "10.1038/s41561-024-01634-8"
@@ -9096,6 +9822,13 @@
     "doi": "10.1016/j.pss.2023.105687",
     "cited_by_core": [
       "10.1029/2025je008931"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/j.pss.2023.105800",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -9331,9 +10064,16 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1016/s0016-7037(03)00171-6",
+    "doi": "10.1016/s0016-7037(03)00452-6",
     "cited_by_core": [
-      "10.1111/j.1945-5100.2005.tb00961.x"
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/s0016-7037(03)00486-1",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -9373,6 +10113,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1016/s0016-7037(98)00199-9",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1016/s0016-7037(99)00401-9",
     "cited_by_core": [
       "10.1126/science.abi7730"
@@ -9404,6 +10151,13 @@
     "doi": "10.1016/s0031-9201(02)00078-x",
     "cited_by_core": [
       "10.1016/j.pepi.2013.01.001"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/s0031-9201(03)00063-3",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -9502,6 +10256,13 @@
     "doi": "10.1016/s0925-8388(99)00170-x",
     "cited_by_core": [
       "10.1111/maps.12172"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1016/s1387-6473(03)00060-5",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -9793,13 +10554,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/1999je001093",
-    "cited_by_core": [
-      "10.1002/jgre.20085"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1029/1999je001189",
     "cited_by_core": [
       "10.1002/2017je005431"
@@ -9845,6 +10599,20 @@
     "doi": "10.1029/2000jb900192",
     "cited_by_core": [
       "10.1016/s0012-821x(02)00728-8"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2000jb900222",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2000jb900326",
+    "cited_by_core": [
+      "10.1111/maps.14136"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -10017,13 +10785,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2001je001510",
-    "cited_by_core": [
-      "10.1029/2020gl090379"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1029/2001je001537",
     "cited_by_core": [
       "10.1029/2010je003658"
@@ -10048,6 +10809,20 @@
     "doi": "10.1029/2001je001835",
     "cited_by_core": [
       "10.1146/annurev.earth.35.031306.140220"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2002gc000328",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2002gl015207",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -10083,6 +10858,13 @@
     "doi": "10.1029/2002je001974",
     "cited_by_core": [
       "10.1038/nature07011"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2003gc000630",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -10146,13 +10928,6 @@
     "doi": "10.1029/2003je002144",
     "cited_by_core": [
       "10.1029/2025je008931"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1029/2003je002195",
-    "cited_by_core": [
-      "10.3389/fspas.2022.895362"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -10223,6 +10998,13 @@
     "doi": "10.1029/2004je002294",
     "cited_by_core": [
       "10.1126/science.abi7730"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2004je002330",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -10507,23 +11289,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2006je002840",
-    "cited_by_core": [
-      "10.1029/2025je009393"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1029/2006je002875",
     "cited_by_core": [
       "10.1029/2010je003658"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1029/2006je002877",
-    "cited_by_core": [
-      "10.1029/2025je009393"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -10556,16 +11324,16 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2007gl031252",
+    "doi": "10.1029/2007gl031267",
     "cited_by_core": [
-      "10.1038/nature07011"
+      "10.1029/2025je009393"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2007gl031267",
+    "doi": "10.1029/2007gl031776",
     "cited_by_core": [
-      "10.1029/2025je009393"
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -10619,6 +11387,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/2008gc001987",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/2008gl033256",
     "cited_by_core": [
       "10.1126/science.abf8966"
@@ -10643,6 +11418,20 @@
     "doi": "10.1029/2008ja013937",
     "cited_by_core": [
       "10.1029/2018gl079972"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2008jb006006",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2008je003091",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -10692,13 +11481,6 @@
     "doi": "10.1029/2009gc002420",
     "cited_by_core": [
       "10.1126/sciadv.ade9071"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1029/2009gc002653",
-    "cited_by_core": [
-      "10.1111/maps.12172"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -10787,13 +11569,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2009je003548",
-    "cited_by_core": [
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1029/2010je003579",
     "cited_by_core": [
       "10.1002/2017je005431"
@@ -10811,6 +11586,13 @@
     "doi": "10.1029/2010je003694",
     "cited_by_core": [
       "10.1029/2025je009393"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2010rg000330",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -10906,6 +11688,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/2012gc004242",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/2012gc004276",
     "cited_by_core": [
       "10.1126/sciadv.aba0513"
@@ -10941,9 +11730,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2012je004145",
+    "doi": "10.1029/2012je004149",
     "cited_by_core": [
-      "10.1029/2025je009393"
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -11032,6 +11821,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/2018jb015706",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/2018jb017128",
     "cited_by_core": [
       "10.1126/sciadv.ade9071"
@@ -11102,13 +11898,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2019gc008238",
-    "cited_by_core": [
-      "10.1029/2021je006856"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1029/2019gc008761",
     "cited_by_core": [
       "10.1029/2021je006856"
@@ -11133,6 +11922,13 @@
     "doi": "10.1029/2019gl085234",
     "cited_by_core": [
       "10.1029/2022je007298"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2019gl085584",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -11284,6 +12080,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/2020gc009266",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/2020gl089607",
     "cited_by_core": [
       "10.1029/2024je008505"
@@ -11361,13 +12164,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/2021ea001860",
-    "cited_by_core": [
-      "10.3389/fspas.2022.895362"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1029/2021gl093127",
     "cited_by_core": [
       "10.1029/2022je007298"
@@ -11406,6 +12202,13 @@
     "doi": "10.1029/2021gl096260",
     "cited_by_core": [
       "10.1038/s41586-023-06601-8"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2021gl096336",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -11557,6 +12360,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/2022je007405",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/2022je007450",
     "cited_by_core": [
       "10.1029/2024je008505"
@@ -11613,6 +12423,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/2023gl105152",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/2023gl105910",
     "cited_by_core": [
       "10.1038/s41586-026-10893-x"
@@ -11623,6 +12440,13 @@
     "doi": "10.1029/2023gl106656",
     "cited_by_core": [
       "10.1038/s41586-026-10893-x"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2023jb027794",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -11665,6 +12489,13 @@
     "doi": "10.1029/2023je008054",
     "cited_by_core": [
       "10.1038/s41586-026-10893-x"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/2023je008111",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -11963,6 +12794,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/93jb02566",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/93jb03205",
     "cited_by_core": [
       "10.1038/s41467-024-51092-4"
@@ -11977,9 +12815,23 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/93je00225",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/93je01775",
     "cited_by_core": [
       "10.1029/94je00216"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/93rg01771",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -12068,6 +12920,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/96jb01188",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/96jb02097",
     "cited_by_core": [
       "10.1016/s0012-821x(01)00345-4"
@@ -12117,6 +12976,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/98gl02220",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/98gl51331",
     "cited_by_core": [
       "10.1029/2018je005854"
@@ -12162,6 +13028,13 @@
     "doi": "10.1029/gl001i004p00157",
     "cited_by_core": [
       "10.1038/s41586-025-09361-9"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/gl005i002p00151",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -12236,13 +13109,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1029/gl015i005p00518",
-    "cited_by_core": [
-      "10.1016/s0012-821x(02)00728-8"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1029/jb074i022p05277",
     "cited_by_core": [
       "10.1111/maps.12172"
@@ -12267,6 +13133,13 @@
     "doi": "10.1029/jb076i002p00313",
     "cited_by_core": [
       "10.1029/2010je003658"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/jb076i026p06339",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -12593,6 +13466,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1029/jz066i005p01523",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1029/jz066i007p02199",
     "cited_by_core": [
       "10.1126/science.abf8966"
@@ -12631,6 +13511,13 @@
     "doi": "10.1029/rf003p0189",
     "cited_by_core": [
       "10.1002/2014gl060464"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1029/rg012i001p00023",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -12740,6 +13627,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1038/269478a0",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1038/278533a0",
     "cited_by_core": [
       "10.1029/2010je003658"
@@ -12827,13 +13721,6 @@
     "doi": "10.1038/378571a0",
     "cited_by_core": [
       "10.1016/j.epsl.2018.03.031"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1038/380057a0",
-    "cited_by_core": [
-      "10.1126/sciadv.ade9071"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -12978,13 +13865,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1038/ngeo207",
-    "cited_by_core": [
-      "10.1029/2020je006523"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1038/ngeo2075",
     "cited_by_core": [
       "10.1126/sciadv.adq3694"
@@ -13090,13 +13970,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1038/s41467\u2010021\u201021762\u20108",
-    "cited_by_core": [
-      "10.1029/2024gl113926"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1038/s41467\u2010022\u201031444\u20108",
     "cited_by_core": [
       "10.1029/2024je008486"
@@ -13104,9 +13977,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1038/s41467\u2010024\u201051092\u20104",
+    "doi": "10.1038/s41467\u2010022\u201032445\u20103",
     "cited_by_core": [
-      "10.1029/2024je008505"
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -13121,6 +13994,13 @@
     "doi": "10.1038/s41550-017-0377-9",
     "cited_by_core": [
       "10.1038/s41561-024-01634-8"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1038/s41550-021-01550-6",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -13146,9 +14026,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1038/s41550\u2010023\u201002191\u20107",
+    "doi": "10.1038/s41550\u2010022\u201001836\u20103",
     "cited_by_core": [
-      "10.1029/2024je008486"
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -13244,9 +14124,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1038/s41561\u2010021\u201000701\u20108",
+    "doi": "10.1038/s41561\u2010020\u20100618\u2010x",
     "cited_by_core": [
-      "10.1029/2025je009393"
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -13342,6 +14222,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1038/s41586\u2010021\u201003860\u20101",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1038/s41586\u2010022\u201005147\u20105",
     "cited_by_core": [
       "10.1029/2025je008931"
@@ -13384,6 +14271,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1038/s41598-021-98083-9",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1038/s41598-022-16816-w",
     "cited_by_core": [
       "10.1038/s41467-024-51092-4"
@@ -13401,6 +14295,13 @@
     "doi": "10.1038/s43247-022-00602-7",
     "cited_by_core": [
       "10.1038/s41561-024-01634-8"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1038/s43247\u2010022\u201000612\u20105",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -13464,6 +14365,13 @@
     "doi": "10.1046/j.1365-246x.1999.00850.x",
     "cited_by_core": [
       "10.1111/j.1945-5100.2005.tb00961.x"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1046/j.1365-246x.1999.00875.x",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -13552,6 +14460,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1051/0004-6361:200810150",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1051/0004\u20106361/201730728",
     "cited_by_core": [
       "10.1029/2023gl105701"
@@ -13594,9 +14509,23 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1063/1.370176",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1063/1.4954295",
     "cited_by_core": [
       "10.1029/2024gl113926"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1063/1.5008905",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -13615,23 +14544,9 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1073/pnas.1017165108",
-    "cited_by_core": [
-      "10.1126/sciadv.ade9071"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1073/pnas.1517557112",
     "cited_by_core": [
       "10.1126/sciadv.abl7497"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1073/pnas.1708344114",
-    "cited_by_core": [
-      "10.1029/2024je008505"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -13657,9 +14572,30 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1073/pnas.2312802121",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1073/pnas.2404257121",
     "cited_by_core": [
       "10.1126/sciadv.aed5787"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1073/pnas.2409983121",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1073/pnas.2418978122",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -13776,6 +14712,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1088/0953-8984/26/6/064213",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1088/0957-0233/13/7/321",
     "cited_by_core": [
       "10.1038/s41550-023-02008-7"
@@ -13783,9 +14726,23 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1088/0957-0233/25/10/105401",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1089/153110703321632471",
     "cited_by_core": [
       "10.1126/sciadv.abl7497"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1089/ast.2009.0335",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -13846,6 +14803,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1089/ast.2021.0110",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1089/ast.2021.0121",
     "cited_by_core": [
       "10.1073/pnas.2404259121"
@@ -13863,6 +14827,20 @@
     "doi": "10.1093/gji/ggab418",
     "cited_by_core": [
       "10.1029/2023gl103482"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1093/gji/ggac334",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1093/gji/ggae183",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14266,16 +15244,16 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1111/j.1365-246x.1980.tb02601.x",
+    "doi": "10.1111/j.1365-246x.1981.tb04877.x",
     "cited_by_core": [
-      "10.1126/sciadv.ade9071"
+      "10.1029/2018je005854"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1111/j.1365-246x.1981.tb04877.x",
+    "doi": "10.1111/j.1365-246x.1982.tb05999.x",
     "cited_by_core": [
-      "10.1029/2018je005854"
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14311,6 +15289,13 @@
     "doi": "10.1111/j.1365-246x.1991.tb02501.x",
     "cited_by_core": [
       "10.1126/science.abf8966"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/j.1365-246x.1991.tb02519.x",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14360,13 +15345,6 @@
     "doi": "10.1111/j.1365-246x.2004.02206.x",
     "cited_by_core": [
       "10.1038/s41550-026-02907-5"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1111/j.1365-246x.2004.02297.x",
-    "cited_by_core": [
-      "10.1029/2022je007464"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14483,6 +15461,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1111/j.1365\u2010246x.2006.02862.x",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1111/j.1365\u2010246x.2007.03647.x",
     "cited_by_core": [
       "10.1029/2024gl110921"
@@ -14493,6 +15478,13 @@
     "doi": "10.1111/j.1365\u2010246x.2009.04152.x",
     "cited_by_core": [
       "10.1002/jgre.20085"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/j.1365\u2010246x.2010.04856.x",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14546,9 +15538,30 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1111/j.1945-5100.1989.tb00696.x",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1111/j.1945-5100.1993.tb00251.x",
     "cited_by_core": [
       "10.1029/2020je006523"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/j.1945-5100.1993.tb00756.x",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/j.1945-5100.1994.tb00680.x",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14609,9 +15622,23 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1111/j.1945-5100.2000.tb01974.x",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1111/j.1945-5100.2001.tb01825.x",
     "cited_by_core": [
       "10.1016/s0012-821x(02)00728-8"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/j.1945-5100.2001.tb01827.x",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14623,16 +15650,16 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1111/j.1945-5100.2002.tb00793.x",
+    "doi": "10.1111/j.1945-5100.2002.tb00835.x",
     "cited_by_core": [
       "10.1111/j.1945-5100.2005.tb00961.x"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1111/j.1945-5100.2002.tb00835.x",
+    "doi": "10.1111/j.1945-5100.2002.tb00868.x",
     "cited_by_core": [
-      "10.1111/j.1945-5100.2005.tb00961.x"
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14647,13 +15674,6 @@
     "doi": "10.1111/j.1945-5100.2003.tb00018.x",
     "cited_by_core": [
       "10.1029/2020je006523"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1111/j.1945-5100.2003.tb00263.x",
-    "cited_by_core": [
-      "10.1029/2022je007464"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14731,20 +15751,6 @@
     "doi": "10.1111/j.1945-5100.2008.tb00653.x",
     "cited_by_core": [
       "10.1002/jgre.20085"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1111/j.1945-5100.2008.tb01092.x",
-    "cited_by_core": [
-      "10.1029/2022je007464"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1111/j.1945-5100.2009.tb00741.x",
-    "cited_by_core": [
-      "10.1029/2022je007464"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14829,6 +15835,13 @@
     "doi": "10.1111/j.1945-5100.2012.01382.x",
     "cited_by_core": [
       "10.1029/2020je006523"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/j.1945-5100.2012.01404.x",
+    "cited_by_core": [
+      "10.1111/maps.14136"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -14945,6 +15958,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1111/maps.12027",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1111/maps.12092",
     "cited_by_core": [
       "10.1029/2020je006523"
@@ -14955,6 +15975,13 @@
     "doi": "10.1111/maps.12140",
     "cited_by_core": [
       "10.1029/2020je006523"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/maps.12183",
+    "cited_by_core": [
+      "10.1111/maps.14136"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -15025,6 +16052,13 @@
     "doi": "10.1111/maps.12582",
     "cited_by_core": [
       "10.1029/2020je006523"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/maps.12603",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -15113,6 +16147,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1111/maps.12912",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1111/maps.12918",
     "cited_by_core": [
       "10.1126/sciadv.ade9071"
@@ -15169,9 +16210,58 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1111/maps.13818",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1111/maps.13935",
     "cited_by_core": [
       "10.1126/sciadv.adn2378"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/maps.13937",
+    "cited_by_core": [
+      "10.1111/maps.14136"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/maps.13995",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/maps.14079",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/maps.14087",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/maps.14140",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1111/maps.14193",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -15193,6 +16283,13 @@
     "doi": "10.1126/sciadv.1500109",
     "cited_by_core": [
       "10.1038/s41586-018-0222-z"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1126/sciadv.1500852",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -15232,9 +16329,23 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1126/sciadv.abb1669",
+    "doi": "10.1126/sciadv.aax0883",
     "cited_by_core": [
-      "10.1038/s41550-026-02907-5"
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1126/sciadv.aaz3053",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1126/sciadv.aba5967",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -15270,6 +16381,13 @@
     "doi": "10.1126/sciadv.adf2906",
     "cited_by_core": [
       "10.1126/sciadv.adn2378"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1126/sciadv.adp3333",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -15330,6 +16448,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1126/science.1104909",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1126/science.1108806",
     "cited_by_core": [
       "10.1029/2020je006523"
@@ -15372,6 +16497,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1126/science.1144174",
+    "cited_by_core": [
+      "10.1016/j.icarus.2022.115164"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1126/science.1150690",
     "cited_by_core": [
       "10.1016/j.epsl.2014.03.027"
@@ -15382,6 +16514,13 @@
     "doi": "10.1126/science.1157546",
     "cited_by_core": [
       "10.1002/2017je005431"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1126/science.1162459",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -15466,13 +16605,6 @@
     "doi": "10.1126/science.1245267",
     "cited_by_core": [
       "10.1029/2025je009393"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1126/science.1258022",
-    "cited_by_core": [
-      "10.1029/2021je006856"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -15694,13 +16826,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.1126/science.aaf5043",
-    "cited_by_core": [
-      "10.1029/2024je008505"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.1126/science.aag3055",
     "cited_by_core": [
       "10.1038/s41550-026-02907-5"
@@ -15883,6 +17008,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1130/g21258.1",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1130/g21898.1",
     "cited_by_core": [
       "10.1002/jgre.20085"
@@ -15974,6 +17106,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1130/g45831.1",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1130/ges00132.1",
     "cited_by_core": [
       "10.1126/sciadv.aba0513"
@@ -16005,6 +17144,13 @@
     "doi": "10.1145/1268776.1268779",
     "cited_by_core": [
       "10.1038/s41467-024-51092-4"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1145/584091.584093",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -16159,13 +17305,6 @@
     "doi": "10.1146/annurev\u2010earth\u2010060313\u2010054732",
     "cited_by_core": [
       "10.1029/2024gl110921"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.1146/annurev\u2010earth\u2010060313\u2010055024",
-    "cited_by_core": [
-      "10.1029/2025je009393"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -16352,9 +17491,30 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.1190/1.2209952",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1190/1.3114023",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.1190/1.3457445",
     "cited_by_core": [
       "10.1126/science.abf8966"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.1190/segam2021-3582000.1",
+    "cited_by_core": [
+      "10.1029/2024je008832"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -16618,6 +17778,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.2113/gselements.5.4.223",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.2113/gselements.6.2.107",
     "cited_by_core": [
       "10.1126/science.abf8966"
@@ -16807,6 +17974,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.2138/rmg.2023.89.05",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.2172/5176006",
     "cited_by_core": [
       "10.1038/s41467-022-31444-8"
@@ -16856,6 +18030,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.2307/2346830",
+    "cited_by_core": [
+      "10.1029/2024je008832"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.2307/2674260",
     "cited_by_core": [
       "10.1126/science.284.5415.790"
@@ -16873,6 +18054,20 @@
     "doi": "10.2307/j.ctt207g59v.15",
     "cited_by_core": [
       "10.1016/s0012-821x(01)00345-4"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.2307/j.ctv1v7zdmm.45",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.2307/j.ctv1v7zdmm.47",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -16936,6 +18131,13 @@
     "doi": "10.26464/epp2023031",
     "cited_by_core": [
       "10.1029/2025je008931"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.26907/2542-064x.2025.2.353-366",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -17073,6 +18275,13 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
+    "doi": "10.3847/1538-4357/ab7cd4",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
     "doi": "10.3847/2041-8213/abffd1",
     "cited_by_core": [
       "10.1016/j.icarus.2022.115395"
@@ -17094,13 +18303,6 @@
     "status": "Not retrieved or screened; may be non-Mars background"
   },
   {
-    "doi": "10.3847/psj/abe541",
-    "cited_by_core": [
-      "10.1029/2025je009393"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
     "doi": "10.3847/psj/ac19b1",
     "cited_by_core": [
       "10.1016/j.icarus.2022.115395"
@@ -17118,13 +18320,6 @@
     "doi": "10.3847/psj/acb3bc",
     "cited_by_core": [
       "10.1029/2025je009393"
-    ],
-    "status": "Not retrieved or screened; may be non-Mars background"
-  },
-  {
-    "doi": "10.3847/psj/ace9c1",
-    "cited_by_core": [
-      "10.1038/s41467-024-51092-4"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -17202,6 +18397,13 @@
     "doi": "10.5194/se\u20105\u2010425\u20102014",
     "cited_by_core": [
       "10.1029/2024gl110921"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.5277/met120108",
+    "cited_by_core": [
+      "10.1007/s11214-025-01194-2"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },
@@ -17328,6 +18530,20 @@
     "doi": "10.5636/jgg.26.311",
     "cited_by_core": [
       "10.1016/s0012-821x(02)00728-8"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.5636/jgg.29.519",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
+    ],
+    "status": "Not retrieved or screened; may be non-Mars background"
+  },
+  {
+    "doi": "10.5636/jgg.40.729",
+    "cited_by_core": [
+      "10.1016/j.epsl.2004.09.013"
     ],
     "status": "Not retrieved or screened; may be non-Mars background"
   },

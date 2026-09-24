@@ -24,6 +24,7 @@ def validate_payload(path,name):
     if name.endswith('.pdf') and not header.startswith(b'%PDF'):raise ValueError('Expected PDF, received an invalid response')
     if name.endswith('.gz') and not header.startswith(b'\x1f\x8b'):raise ValueError('Expected gzip, received an invalid response')
     if name.endswith(('.csv','.dat','.txt')) and b'<html' in header.lower():raise ValueError('Expected tabular data, received HTML')
+    if name.endswith(('.csv','.dat','.txt')) and header.startswith(b'PK\x03\x04'):raise ValueError('Expected tabular data, received ZIP; inspect and register the actual archive format')
     if name.endswith('.json'):
         data=json.loads(path.read_text())
         if isinstance(data,dict) and ('error' in data or data.get('exceededTransferLimit')):raise ValueError('API error or incomplete transfer')

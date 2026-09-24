@@ -9,3 +9,6 @@ body.workspace{background:var(--ink);color:var(--paper);font-family:Inter,-apple
 @media(prefers-reduced-motion:reduce){.route-card{transition:none}.route-card:hover{transform:none}}
 
 .workspace .reading-layout h1{font-size:36px;line-height:1.2}.workspace .reading-layout{padding-top:35px}.workspace .reading-nav{top:120px}.workspace .prose{min-width:0}.workspace .prose table{display:block;overflow:auto}.workspace .prose h2{margin-top:36px}
+
+.evidence-card{padding:28px 32px;border:1px solid var(--line);border-radius:8px;background:var(--panel);margin:24px 0}.evidence-card p{color:var(--muted);font-size:14px}.evidence-card h2{margin-top:12px}.evidence-card details{margin-top:24px;border-top:1px solid var(--line);padding-top:17px}.evidence-facts{display:grid;grid-template-columns:180px 1fr;gap:10px 25px;font-size:14px;margin:24px 0}.evidence-facts dt{color:var(--muted)}.evidence-facts dd{margin:0}.map-panel #waterMap{height:470px}.workspace #paleoSample{max-width:100%}.workspace #rawLabScope,.workspace #labCaption,.workspace #labDirectionCaption{font-size:13px;color:var(--muted)}
+@media(max-width:650px){.evidence-card{padding:22px 18px}.evidence-facts{grid-template-columns:1fr;gap:3px}.evidence-facts dd{margin-bottom:14px}.map-panel #waterMap{height:320px}.workspace #paleoSample{width:100%}}

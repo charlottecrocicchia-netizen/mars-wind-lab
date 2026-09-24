@@ -10,9 +10,9 @@ The cutoff is **2026-09-24**. The included material spans early hypotheses throu
 
 1. `scripts/research/queries.json` defines 41 Crossref title queries. `harvest.py` retrieves 80–500 ranked results per query, with the cutoff filter, and records the exact URL and counts in `search_log.json`.
 2. An automated title filter retains Mars/Martian terms and named Martian meteorites. This produced 1,967 unique DOI candidates. The filter is an efficiency choice, **not** a scientific exclusion decision. It can miss relevant titles that omit these terms.
-3. Targeted searches of publisher pages, author repositories, NASA/ESA/ISRO/USGS archives and public discussions supplied additional leads. `core_dois.json` identifies 69 anchor records; exact Crossref DOI enrichment gives a final total of 1,981 candidates.
+3. Targeted searches of publisher pages, author repositories, NASA/ESA/ISRO/USGS archives and public discussions supplied additional leads. `core_dois.json` identifies 75 anchor records; exact Crossref DOI enrichment gives a final total of 1,986 candidates.
 4. DOI normalization removes case-only duplicates. Crossref types and query provenance are preserved. Preprint and journal versions with different DOIs have **not** been fully reconciled.
-5. References attached to core metadata are compared with the catalog. The resulting `citation_queue.json` contains 2,328 missing DOI leads. These are not included in the 1,981 count and are not all about Mars. A citation is a discovery lead, not evidence of relevance.
+5. References attached to core metadata are compared with the catalog. The resulting `citation_queue.json` contains 2,489 missing DOI leads. These are not included in the 1,986 count and are not all about Mars. A citation is a discovery lead, not evidence of relevance.
 
 The enormous `total_results_reported` values in the search log are fuzzy-search totals, **not** the size of the Martian-dichotomy literature. Queries were capped and not paginated to exhaustion. A record appearing in several queries can carry several topic labels; these discovery labels are not independently verified classifications.
 
@@ -68,3 +68,5 @@ python scripts/research/build.py --input research/catalog.json
 ```
 
 The site's prose pages are generated from these Markdown files with `python scripts/research/render_docs.py` after installing the optional `research` dependencies. Do not hand-edit generated HTML. The scientific statements are original summaries linked to their sources, not redistributed publisher full texts.
+
+The 24 September extension added targeted primary-source checks for meteorite remanence, curation and water–rock interaction. Bibliographic totals include these targeted DOI additions, not six new systematic search queries. SI Table S1 was visually checked against its PDF; raw laboratory and orbital data acquisition are documented separately in the observation manifest.

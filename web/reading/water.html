@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Water &amp; alteration — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css"><link rel="stylesheet" href="/assets/workspace.css"></head><body class="workspace">
+<a class="skip" href="#article">Skip to the article</a><header class="workspace-header"><a href="/" class="wordmark"><i></i><span>Mars research<small>CHARLOTTE CROCICCHIA</small></span></a><nav aria-label="Main navigation"><a href="/">Overview</a><a href="/research/hypotheses">Ideas</a><a href="/research/data">Data</a><a href="/research/tests">Tests</a><a href="/research/library">Library</a><a href="/atmosphere">Atmosphere</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">READING ROOM</p><a class="" href="/assets/reading/recording.html">Primary &amp; secondary remanence</a><a class="current" href="/assets/reading/water.html">Water &amp; alteration</a><a class="" href="/assets/reading/first_results.html">Completed diagnostics</a><a class="" href="/assets/reading/hypotheses.html">Working hypothesis</a><a class="" href="/assets/reading/test_protocol.html">First physical test</a><a class="" href="/assets/reading/synthesis.html">Scientific synthesis</a><a class="" href="/assets/reading/meteorites.html">Meteorite magnetism</a><a class="" href="/assets/reading/missions.html">Missions &amp; data</a><a class="" href="/assets/reading/research_plan.html">Research programme</a><a class="" href="/assets/reading/method.html">Search &amp; reading method</a><a class="" href="/assets/reading/community.html">Community leads</a><a class="" href="/assets/reading/readme.html">About this collection</a></aside><article class="prose" id="article"><h1 id="water-alteration-and-the-dichotomy">Water, alteration and the dichotomy</h1>
+<p>Our working question is whether different thermal and chemical histories changed <strong>the ability of northern and southern rocks to record and retain magnetization</strong>. This can connect water to the magnetic dichotomy without assuming that water created the original crustal contrast.</p>
+<h2 id="a-physical-branch-with-competing-outcomes">A physical branch with competing outcomes</h2>
+<p>Water–rock reactions can create magnetic minerals, transform existing carriers or destroy them. Heating, fluid chemistry, oxygen fugacity, permeability and the availability of a field determine the result. “Water removes magnetism” is therefore not a universal law. Nor does a hydrated surface mineral automatically identify a deep magnetic source.</p>
+<p>This mechanism has published precedents. <a href="https://doi.org/10.1029/2024JE008832">Mittelholz et al. (2025)</a> compare gravity, magnetism and potentially hydrothermal regions, discussing thermal, chemical and radiogenic controls. Those interpretations motivate regional tests; they do not establish a unique origin for the global dichotomy.</p>
+<h2 id="new-orbital-data-mocaas">New orbital data: MOCAAS</h2>
+<p>The November 2023 <a href="https://www.ias.u-psud.fr/moccas/">MOCAAS archive</a> is downloaded and processed: five mineral-class maps from OMEGA/Mars Express and five from CRISM/MRO. The classes include Fe/Mg clays, Al clays/hydrated silica, sulfate groups, and carbonate/locally serpentine signatures. The map preserves the source's class ambiguities. <a href="https://doi.org/10.1016/j.icarus.2022.115164">Carter et al. (2023)</a>.</p>
+<p>The <a href="/research/data?view=water">interactive water view</a> compares those detections with topography or the crustal field at 150 km. A 2° marker means at least one native detection in that cell. It is neither a deposit centroid nor the altered fraction of the cell. Every nonzero raster pixel is included before aggregation, and instrument overlaps are unioned.</p>
+<p>The <a href="/research/files/data/water.json">numerical product</a> records input hashes, processing code hashes and occupied cells. Original rasters remain local because the archive does not state an explicit reuse license. We publish a coarse project-computed occupancy summary and the retrieval/processing code.</p>
+<h3 id="what-the-completed-overlap-diagnostic-means">What the completed overlap diagnostic means</h3>
+<p>For each mineral class, we calculate the minimum, median and maximum modeled field at occupied display-cell centers. These are descriptive values, without significance or causal interpretation. They do not compare wet and dry areas: <strong>non-detection is not an observed absence of alteration</strong>. The maps do not provide a complete survey/exposure mask. Dust, burial, observation targeting and surface age can confound an apparent relationship.</p>
+<p>This audit identifies what must be supplied before a hypothesis test is valid. Reporting an attractive correlation at this stage would confuse the observation process with geology.</p>
+<h2 id="a-separate-clock-inside-a-meteorite">A separate clock inside a meteorite</h2>
+<p><a href="https://doi.org/10.7185/geochemlet.2443">Tremblay et al. (2024)</a> date Lafayette iddingsite alteration to <strong>742 ± 15 Ma (2σ)</strong>. The authors interpret local, transient activity; the result is not evidence for a global ocean at that time. Keep this event separate from the rock's much older crystallization and its later ejection. It does not automatically date Lafayette's magnetic component. The <a href="/research/data?view=laboratory&amp;sample=lafayette">Lafayette entry</a> shows these clocks separately.</p>
+<p>Fluid histories can be constrained through mineral assemblages and chemistry as well as age. <a href="https://www.sciencedirect.com/science/article/pii/S0012821X12005407">Bridges &amp; Schwenzer (2012)</a> model the nakhlite hydrothermal brine. Such modeled conditions are conditional constraints, not direct thermometer measurements from every nakhlite.</p>
+<h2 id="three-explicit-alternatives-to-test">Three explicit alternatives to test</h2>
+<table>
+<thead>
+<tr>
+<th>History</th>
+<th>Prediction</th>
+<th>Observation that would challenge it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Retention of early remanence</td>
+<td>An early component survives in carriers unaffected by later fluids/heating</td>
+<td>That carrier generation was destroyed or formed after the proposed recording event</td>
+</tr>
+<tr>
+<td>Chemical rebuilding</td>
+<td>New mineral generations carry a later, distinguishable component</td>
+<td>The remanence predates mineral growth, or required fluid chemistry cannot produce the carrier</td>
+</tr>
+<tr>
+<td>Thermal resetting with limited chemical change</td>
+<td>Reset follows blocking spectrum and time–temperature exposure</td>
+<td>The thermal history cannot reset the observed component while preserving independently dated material</td>
+</tr>
+</tbody>
+</table>
+<p>These are recording histories, not mutually exclusive global origin theories. Impact excavation, impact-driven crust production and internal growth must each supply compatible histories of heat, fluids, carriers and fields. Mixtures must be constrained by geology; assigning a free history to every pixel would make any origin fit.</p>
+<h2 id="the-next-discriminating-analysis">The next discriminating analysis</h2>
+<ol>
+<li>Start with bounded regions such as Eridania, Huygens, Ladon and Schiaparelli, checking the published hydrothermal interpretations against original mineral products. Include regional controls, not only visually striking anomalies.</li>
+<li>Obtain a survey/exposure mask and stratigraphic constraints. Compare like lithology and age at a common magnetic altitude and bandwidth. Treat spatial blocks, not neighboring pixels, as the replication scale.</li>
+<li>Compare carrier-growth, thermal-reset and unchanged-carrier forward models. Propagate uncertain alteration ages, depth, mineral abundance, field history and acquisition efficiency.</li>
+<li>Withhold regions for prediction. A chemical branch is justified if it explains those observations better under defensible constraints, not merely because extra free parameters improve an in-sample fit.</li>
+</ol>
+<p><strong>Status:</strong> data ingestion and descriptive overlap completed. Coverage-controlled association, reaction/transport modeling and joint origin inference remain unperformed.</p>
+<h2 id="other-evidence-that-belongs-in-the-same-history">Other evidence that belongs in the same history</h2>
+<table>
+<thead>
+<tr>
+<th>Evidence stream</th>
+<th>Role in the joint model</th>
+<th>Current project status / next constraint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crust, gravity, topography</td>
+<td>Initial structure, loading and density–thickness tradeoffs</td>
+<td>Global products ingested; expand beyond four crust examples</td>
+</tr>
+<tr>
+<td>Seismology and tidal response</td>
+<td>Present interior endpoints</td>
+<td>Literature assessed; avoid imposing today's temperature on ancient crust</td>
+</tr>
+<tr>
+<td>Radiogenic elements and geochemistry</td>
+<td>Heat production, melt sources and carrier supply</td>
+<td>Meteorite chemistry and literature available; GRS quantitative join still needed</td>
+</tr>
+<tr>
+<td>Impact and ejection chronology</td>
+<td>Heating, excavation, mixing and provenance</td>
+<td>Chronology and candidate craters ingested; candidates remain conditional</td>
+</tr>
+<tr>
+<td>Mineral alteration and isotope ages</td>
+<td>Fluid processes and event ordering</td>
+<td>MOCAAS ingested; Lafayette age curated; full mineral-age database incomplete</td>
+</tr>
+<tr>
+<td>Valleys, lakes, deltas and erosion</td>
+<td>Surface transport, deposition and boundary modification</td>
+<td>Literature leads; dated geomorphic catalog and exposure controls still needed</td>
+</tr>
+<tr>
+<td>Ice and radar structure</td>
+<td>Water reservoirs, burial and present distribution</td>
+<td>Mission archive inventory; no radar/ice inversion incorporated yet</td>
+</tr>
+<tr>
+<td>Atmosphere and escape</td>
+<td>Water loss, pressure history and climate boundary conditions</td>
+<td>Present MCD atmosphere available; ancient escape histories are not fitted</td>
+</tr>
+<tr>
+<td>Volcanism and tectonics</td>
+<td>Resurfacing, intrusive heating, permeability and stress</td>
+<td>Geologic units ingested; event-resolved regional histories still needed</td>
+</tr>
+</tbody>
+</table>
+<p>These streams share measurements and assumptions. For example, several magnetic products use the same spacecraft observations, and paired meteorites can share one ejection. A joint analysis must track these dependencies instead of counting each paper as an independent vote. “A theory that fits the puzzle” should mean a model that survives incompatible constraints and predicts withheld observations, not one flexible enough to accommodate everything afterward.</p><div class="reading-tools"><a href="/research/library">← Browse the library</a><a href="/research/files/WATER.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/WATER.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Research snapshot · 24 September 2026 · Read the source and its limitations together.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>
