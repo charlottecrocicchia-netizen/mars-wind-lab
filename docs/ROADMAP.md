@@ -18,3 +18,7 @@ A rigorous comparison must distinguish latitude, season, local solar time, altit
 6. Confront explicit predictions with observations, uncertainty estimates and recovery tests.
 
 The project should be judged by questions it can answer, errors it can quantify and calculations another person can reproduce.
+
+## Dichotomy evidence and physical tests
+
+The [evidence atlas](../research/README.md) adds a dated literature inventory, a selective synthesis and a meteorite-magnetism dossier. The [research programme](../research/RESEARCH_PLAN.md) prioritizes spatially fair magnetic comparisons, sample-record preservation, explicit chronology and seasonal atmospheric-loading corrections for gravity. These investigations are proposed; the required joint geological/magnetic dataset and inversions have not yet been implemented. The catalog's reading status and citation queue make outstanding review work explicit.

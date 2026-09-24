@@ -6,15 +6,21 @@
 
 I started this project to build on my internship work on Martian winds and acoustics. I want to make useful, thoughtful and visually engaging tools for Martian research: start from the data, test assumptions, and make the results easier to explore.
 
-Mars Wind Lab is part of my broader personal interest in **Mars and its hemispheric dichotomy** — the contrast between the northern lowlands and southern highlands ([NASA overview](https://science.nasa.gov/photojournal/martian-dichotomy-boundary/)). This repository is the **atmosphere and waves** part of that effort. Connecting it to the dichotomy is a research direction to develop: the current version does not model the origin of the dichotomy or establish a causal link between winds and internal structure.
+Mars Wind Lab is part of my broader personal interest in **Mars and its hemispheric dichotomy** — the contrast between the northern lowlands and southern highlands ([NASA overview](https://science.nasa.gov/photojournal/martian-dichotomy-boundary/)). It brings together an **atmosphere and waves laboratory** and a **dichotomy evidence atlas** covering interior structure, impacts, meteorite magnetism, geological history and mission data. The research atlas helps define testable questions; the current code does not model the origin of the dichotomy or establish a causal link between winds and internal structure.
 
 > **Status: active research prototype.** The application analyses Mars Climate Database 6.1 fields using the official sampler. Its comparisons are reproducible; full propagation and independent observational validation remain future work.
 
-[Getting started](docs/USAGE.md) · [Scientific method](docs/SCIENTIFIC_METHOD.md) · [Validation](docs/VALIDATION.md) · [Research directions](docs/ROADMAP.md)
+[Getting started](docs/USAGE.md) · [Scientific method](docs/SCIENTIFIC_METHOD.md) · [Validation](docs/VALIDATION.md) · [Dichotomy research](research/README.md)
+
+## The dichotomy evidence atlas
+
+Open **Dichotomy research** in the app, or read the [scientific synthesis](research/SYNTHESIS.md) on GitHub. The English library contains **1,980 DOI candidates**, a **65-record core reading route**, and source notes distinguishing metadata from abstracts and selected full-text readings. It includes dedicated [meteorite magnetism](research/METEORITES.md), [mission/data](research/MISSIONS.md) and [research programme](research/RESEARCH_PLAN.md) dossiers. Download [RIS for Zotero](research/library.ris), [BibTeX](research/library.bib) or [CSV](research/catalog.csv).
+
+This is a broad, dated inventory with selective assessment, **not an exhaustive review of every Mars paper**. Fifty abstracts and nine selected full-text readings are documented; complete methodological audits and joint analysis of the newly identified mission datasets remain outstanding. [Search method and coverage](research/METHOD.md) document the query caps, 2,297 unscreened citation leads and remaining gaps. Research notes were assembled with AI assistance and need source verification before manuscript use.
 
 ## What can you use it for?
 
-The opening atlas provides direct altitude and season sliders, seasonal/altitude playback and labelled MP4 downloads. The guided-experiments view offers three controlled comparisons. Each gives a numerical conclusion, an explained plot, the calculation parameters, and a useful next step.
+The opening atlas provides direct altitude and season sliders, seasonal/altitude playback with preparation progress, and labelled MP4 videos you can play in the page or download. The guided-experiments view offers three controlled comparisons. Each gives a numerical conclusion, an explained plot, the calculation parameters, and a useful next step.
 
 | Question | Controlled comparison | Physical use |
 |---|---|---|

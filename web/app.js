@@ -116,7 +116,7 @@ async function navigateTo(name){
  if(name==='guide'&&$('studyChart').data)Plotly.Plots.resize('studyChart');
  document.querySelector('.intro').scrollIntoView({behavior:'smooth',block:'start'});
 }
-for(const button of document.querySelectorAll('.nav'))button.onclick=guarded(()=>navigateTo(button.dataset.tab));
+for(const button of document.querySelectorAll('.nav[data-tab]'))button.onclick=guarded(()=>navigateTo(button.dataset.tab));
 for(const button of document.querySelectorAll('[data-open]'))button.onclick=guarded(()=>navigateTo(button.dataset.open));
 $('goToJet').onclick=guarded(async()=>{
  if(!mapData)return;

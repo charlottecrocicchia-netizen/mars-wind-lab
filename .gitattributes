@@ -1,1 +1,11 @@
 web/plotly.min.js linguist-vendored=true
+# Generated research exports; edit annotations and source Markdown instead.
+research/catalog.* linguist-generated=true
+research/*library* linguist-generated=true
+research/core.bib linguist-generated=true
+research/citation_queue.json linguist-generated=true
+research/summary.json linguist-generated=true
+research/search_log.json linguist-generated=true
+web/reading/*.html linguist-generated=true
+# RIS uses a six-character tag prefix even for empty end-of-record values.
+research/*.ris whitespace=-blank-at-eol

@@ -62,3 +62,26 @@ def test_movie_is_decodable_and_preserves_frame_count(sampler,tmp_path):
     assert metadata['size']==(1280,720) and metadata['fps']==4
     assert sum(1 for _ in reader)==20
     with pytest.raises(ValueError):motion.movie_bytes(sequence,fps=3)
+
+
+def test_stream_reports_each_frame_before_complete_payload(sampler):
+    import json
+    client=TestClient(app)
+    response=client.get('/api/sequence/stream',params={'axis':'altitude','field':'speed'})
+    assert response.status_code==200
+    assert response.headers['content-type'].startswith('text/event-stream')
+    events=[json.loads(block[6:]) for block in response.text.strip().split('\n\n')]
+    assert [event['completed'] for event in events[:-1]]==list(range(21))
+    assert all(event['total']==20 for event in events[:-1])
+    assert events[-1]['event']=='complete'
+    assert len(events[-1]['sequence']['frames'])==20
+
+
+def test_stream_surfaces_model_errors_instead_of_silent_stall(monkeypatch):
+    import json
+    def failed(**p):raise RuntimeError('Test model unavailable')
+    monkeypatch.setattr(motion,'map_product',failed)
+    response=TestClient(app).get('/api/sequence/stream')
+    events=[json.loads(block[6:]) for block in response.text.strip().split('\n\n')]
+    assert events[0]['event']=='progress'
+    assert events[-1]=={'event':'error','detail':'Test model unavailable'}

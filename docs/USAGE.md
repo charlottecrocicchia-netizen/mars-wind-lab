@@ -38,10 +38,16 @@ For persistent local configuration, a root-level `local_settings.json` may conta
 
 The atlas is the opening screen. **Altitude** and **Season** sliders sit directly above the map. Drag either slider, type a number, or use the four northern-season shortcuts. The map updates after a short debounce; its label always identifies the last completed calculation. **Time & direction** contains the less frequently changed settings.
 
-Choose **A Martian year** to hold altitude fixed and sample Ls 0–345° every 15°. Choose **Through the atmosphere** to hold season fixed and sample 10–200 km every 10 km. Press **Play** to prepare all frames and calculate one shared colour scale. The first uncached sequence may take a minute. Preparation can be cancelled; the last completed map remains visible.
+Choose **A Martian year** to hold altitude fixed and sample Ls 0–345° every 15°. Choose **Through the atmosphere** to hold season fixed and sample 10–200 km every 10 km. Press **Play** to prepare all frames and calculate one shared colour scale. A frame counter and progress bar show the calculation. An uncached sequence can take a few minutes. Preparation can be cancelled; the last completed map remains visible.
 
 **Pause**, step buttons and the timeline let you examine individual frames. Slow/Normal/Fast correspond to 1/2/4 displayed frames per second. This is presentation timing: equal Ls intervals are not equal elapsed time, and an altitude sweep is not atmospheric evolution. Playback repeats. Changing physical controls clears the sequence to avoid reusing frames for a different experiment.
 
-**MP4** becomes available after the sequence has been prepared. It downloads an H.264 movie with fixed colours, variable and units, frame parameters, time convention, and MCD credits. MP4 uses a flat geographic map even if the interactive view is a globe. A sequence is sampled climatology, not a forecast or parcel trajectory.
+**Create video** prepares the sequence if necessary, then encodes a labelled H.264 MP4 with fixed colours, variable and units, frame parameters, time convention and MCD credits. A player appears under the timeline: press its Play control to watch, or **Download MP4** to save a copy. It uses a flat geographic map even if the interactive view is a globe. A sequence is sampled climatology, not a forecast or parcel trajectory. The player retains the last generated movie with its own parameter label even if you subsequently change the map controls. Browser video controls follow the browser/system language.
 
 Guided experiments also have a continuous season slider and editable lower/upper altitude bounds. These define the column interval analysed by the experiment; they are separate from the altitude of an atlas map.
+
+## Dichotomy research
+
+Select **Dichotomy research** in the top navigation, or open `http://127.0.0.1:8765/research`. Start with the synthesis or meteorite dossier, then use the library filters. The default collection contains 65 core records; switch to **All discovery candidates** to search the 1,980-record inventory. Reading-depth badges distinguish metadata, abstracts and selected full-text sections. A record in the catalog is not an endorsement of its conclusions.
+
+Use **Export these results · RIS** to import the filtered bibliography into Zotero, or download the complete RIS/BibTeX/CSV files. The reading room includes missions and data, a concrete research programme, the search method and separately assessed forum leads. The research page needs no MCD installation and makes no model calls.

@@ -4,7 +4,7 @@ Locally checked with Python 3.14, gfortran 15.1 and MCD 6.1 on macOS. Exact Pyth
 
 ## Numerical checks
 
-Run `python -m pytest -q`. The current suite contains 28 cases: 21 checks independent of external scientific data and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
+Run `python -m pytest -q`. The current suite contains 34 cases: 27 checks independent of external scientific data and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
 
 - Sound speed, invalid thermodynamic states and four cardinal projections.
 - Known shear on a nonuniform geometric grid and SI conversion.
@@ -43,3 +43,9 @@ There is no TWINS validation, SEIS inversion, complete GSH coupling matrix or re
 A controlled synthetic sampler checks that seasonal sequences preserve altitude, hour and azimuth, while altitude sequences preserve season and hour. Tests check shared colour limits across all frames, signed symmetry and retention of missing samples. API tests reject unsupported sweep axes, heights and playback rates. A generated H.264 MP4 is decoded to verify its 1280×720 dimensions, chosen frame rate and complete 20-frame count.
 
 Local browser checks cover automatic altitude updates, northern-season shortcuts, seasonal playback, a 20-frame altitude sweep, pause/scrub, field changes that invalidate a prepared sequence, MP4 download, and a guided experiment at Ls 123° over 80–180 km. A real MCD seasonal movie at 80 km was decoded as 24 frames at 2 fps (12 seconds, 1280×720). The dark interface was visually inspected in the desktop app browser.
+
+## Version 0.4: playback feedback and research atlas
+
+Sequence streaming is checked for every progress event, completion payload, preserved masked cells and explicit failure reporting. The MP4 test decodes the encoded movie and verifies dimensions, rate and frame count. Local browser checks exercised direct numeric altitude entry, preparation feedback, seasonal playback, pause and the inline MP4 player.
+
+The literature checks cover DOI uniqueness, source-reading counts, core annotations, correction linkage, export record counts, exclusion of private abstracts and references between the local reading pages. These are catalog-integrity checks, **not validation of the scientific conclusions of the papers**. The research interface can load without a working MCD installation.

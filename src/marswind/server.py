@@ -3,7 +3,7 @@ from pathlib import Path
 import json
 import numpy as np
 from fastapi import FastAPI, Query, HTTPException
-from fastapi.responses import FileResponse, Response, JSONResponse
+from fastapi.responses import FileResponse, Response, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.gzip import GZipMiddleware
 from pydantic import BaseModel, Field, model_validator
@@ -12,9 +12,10 @@ from . import analysis
 from .mcd import ROOT, installation
 from .export import dataset, csv_bytes, png_bytes, LABELS
 
-app=FastAPI(title='Mars Wind Lab',version='0.3.0')
+app=FastAPI(title='Mars Wind Lab',version='0.4.0')
 app.add_middleware(GZipMiddleware,minimum_size=1000)
 app.mount('/assets',StaticFiles(directory=ROOT/'web'),name='assets')
+app.mount('/research/files',StaticFiles(directory=ROOT/'research'),name='research-files')
 
 class Parameters(BaseModel):
     ls:float=Field(255,ge=0,le=360)
@@ -67,6 +68,18 @@ async def model_error(request,exc):
 
 @app.get('/')
 def index():return FileResponse(ROOT/'web/index.html')
+
+@app.get('/research')
+def research_index():return FileResponse(ROOT/'web/research.html')
+
+@app.get('/api/research/export')
+def research_export(search:str='',scope:Literal['core','all']='core',topic:str='',
+                    depth:Literal['','metadata','abstract','sections']='',kind:str='',
+                    from_year:int=Query(0,alias='fromYear',ge=0)):
+    from .research import filtered_ris
+    data=filtered_ris(search,scope,topic,depth,kind,from_year)
+    return Response(data,media_type='application/x-research-info-systems; charset=utf-8',
+                    headers={'Content-Disposition':'attachment; filename="mars-dichotomy-filtered.ris"'})
 
 @app.get('/api/health')
 def health():
@@ -143,6 +156,18 @@ class MotionParameters(Parameters):
 def sequence(p:Annotated[MotionParameters,Query()]):
     from .motion import sequence_product
     return clean(sequence_product(axis=p.axis,field=p.field,altitude=p.altitude,**options(p)))
+
+@app.get('/api/sequence/stream')
+def sequence_stream(p:Annotated[MotionParameters,Query()]):
+    from .motion import sequence_events
+    def events():
+        try:
+            for event in sequence_events(axis=p.axis,field=p.field,altitude=p.altitude,**options(p)):
+                yield 'data: '+json.dumps(clean(event),separators=(',',':'))+'\n\n'
+        except Exception as exc:
+            yield 'data: '+json.dumps({'event':'error','detail':str(exc)})+'\n\n'
+    # Event streams are excluded from GZip buffering, so progress arrives promptly.
+    return StreamingResponse(events(),media_type='text/event-stream',headers={'Cache-Control':'no-cache'})
 
 @app.get('/api/movie')
 def movie(p:Annotated[MotionParameters,Query()]):

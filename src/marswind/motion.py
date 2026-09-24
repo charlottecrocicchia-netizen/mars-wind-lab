@@ -9,11 +9,12 @@ SEQUENTIAL=['#251626','#6b2940','#b64938','#e88448','#f5c77a','#fff0c5']
 DIVERGING=['#484268','#7875b1','#b8abd6','#eee4d5','#e89b67','#c85d39','#763325']
 
 
-def sequence_product(axis='season',field='speed',altitude=60,ls=255,lt=12,time_mode='universal',azimuth=90):
+def sequence_events(axis='season',field='speed',altitude=60,ls=255,lt=12,time_mode='universal',azimuth=90):
     if axis not in ('season','altitude') or field not in ('speed','u','v','w','temperature','effective_speed','shear'):
         raise ValueError('Unknown sweep axis or physical field.')
     values=np.arange(0,360,15) if axis=='season' else np.arange(10,201,10)
     frames=[];minimum=np.inf;maximum=-np.inf
+    yield {'event':'progress','completed':0,'total':len(values)}
     for value in values:
         height=float(value) if axis=='altitude' else altitude
         season=float(value) if axis=='season' else ls
@@ -25,6 +26,7 @@ def sequence_product(axis='season',field='speed',altitude=60,ls=255,lt=12,time_m
         # Only the map, tooltip and statistics fields travel in the sequence.
         fields={key:product['fields'][key] for key in {field,'speed','u','v','temperature','local_time'}}
         frames.append({'value':float(value),'fields':fields,'stats':product['stats'],'provenance':product['provenance']})
+        yield {'event':'progress','completed':len(frames),'total':len(values)}
     if not np.isfinite(minimum):
         raise ValueError('No finite atmospheric values in this sequence.')
     signed=field in ('u','v','w') or minimum<0
@@ -32,11 +34,16 @@ def sequence_product(axis='season',field='speed',altitude=60,ls=255,lt=12,time_m
         bound=max(abs(minimum),abs(maximum),1e-9);minimum,maximum=-bound,bound
     elif field!='temperature':minimum=0.
     if maximum<=minimum:maximum=minimum+1.
-    return {'axis':axis,'field':field,'values':values,'frames':frames,
+    yield {'event':'complete','sequence':{'axis':axis,'field':field,'values':values,'frames':frames,
             'longitude':product['longitude'],'latitude':product['latitude'],
             'scale':{'min':minimum,'max':maximum,'colors':DIVERGING if signed else SEQUENTIAL},
             'context':{'altitude':altitude,'ls':ls,'lt':lt,'time_mode':time_mode,'azimuth':azimuth},
-            'note':'A sweep of sampled climatology, not a weather forecast or parcel trajectory. Equal Ls steps are not equal elapsed times. Altitudes are above the areoid.'}
+            'note':'A sweep of sampled climatology, not a weather forecast or parcel trajectory. Equal Ls steps are not equal elapsed times. Altitudes are above the areoid.'}}
+
+
+def sequence_product(**parameters):
+    for event in sequence_events(**parameters):
+        if event['event']=='complete':return event['sequence']
 
 
 def movie_bytes(sequence,fps=2):

@@ -10,3 +10,6 @@
 @media(max-width:780px){.numeric-value input[type=number]{font-size:25px;width:62px}}
 
 body[data-view=guide] .hero-link{display:none}
+
+#motionProgress{width:100%;height:8px;accent-color:#e99b70;margin:12px 0}.movie-panel{border-top:1px solid var(--line);margin-top:20px;padding-top:18px}.movie-panel video{display:block;width:100%;max-height:620px;margin:18px 0;border-radius:8px;background:#100e11}.movie-panel h3{margin:0 0 6px}.movie-panel p{font-size:12px;color:var(--muted)}.movie-panel a{display:inline-block;cursor:pointer}
+.research-nav-link{text-decoration:none}

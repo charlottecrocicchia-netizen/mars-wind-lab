@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-09-24",
+  "records": 1980,
+  "core_records": 65,
+  "source_consulted": 59,
+  "review_depth_counts": {
+    "metadata": 1921,
+    "abstract": 50,
+    "sections": 9
+  },
+  "types": {
+    "book-chapter": 141,
+    "journal-article": 1475,
+    "posted-content": 162,
+    "proceedings-article": 157,
+    "book": 7,
+    "monograph": 3,
+    "dataset": 7,
+    "other": 11,
+    "reference-entry": 3,
+    "report": 7,
+    "edited-book": 4,
+    "database": 2,
+    "report-component": 1
+  },
+  "queries": 41,
+  "failed_queries": 0,
+  "citation_queue": 2297,
+  "complete_full_text_audits": 0,
+  "scope": "Broad evidence inventory and selective source assessment; not an exhaustive systematic review."
+}
