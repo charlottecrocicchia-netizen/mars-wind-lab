@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Search &amp; reading method — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css"></head><body>
 <a class="skip" href="#article">Skip to the article</a><header class="research-header"><a href="/research" class="brand"><span class="planet-icon"></span><span>MARS DICHOTOMY<small>CHARLOTTE CROCICCHIA · EVIDENCE ATLAS</small></span></a><nav aria-label="Main navigation"><a href="/">Wind atlas ↗</a><a href="/research#library">Research library ↗</a></nav></header>
-<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">READING ROOM</p><a class="" href="/assets/reading/synthesis.html">Scientific synthesis</a><a class="" href="/assets/reading/meteorites.html">Meteorite magnetism</a><a class="" href="/assets/reading/missions.html">Missions &amp; data</a><a class="" href="/assets/reading/research_plan.html">Research programme</a><a class="current" href="/assets/reading/method.html">Search &amp; reading method</a><a class="" href="/assets/reading/community.html">Community leads</a><a class="" href="/assets/reading/readme.html">About this collection</a></aside><article class="prose" id="article"><h1 id="search-method-and-coverage">Search method and coverage</h1>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">READING ROOM</p><a class="" href="/assets/reading/hypotheses.html">Working hypothesis</a><a class="" href="/assets/reading/test_protocol.html">First physical test</a><a class="" href="/assets/reading/synthesis.html">Scientific synthesis</a><a class="" href="/assets/reading/meteorites.html">Meteorite magnetism</a><a class="" href="/assets/reading/missions.html">Missions &amp; data</a><a class="" href="/assets/reading/research_plan.html">Research programme</a><a class="current" href="/assets/reading/method.html">Search &amp; reading method</a><a class="" href="/assets/reading/community.html">Community leads</a><a class="" href="/assets/reading/readme.html">About this collection</a></aside><article class="prose" id="article"><h1 id="search-method-and-coverage">Search method and coverage</h1>
 <h2 id="question-and-scope">Question and scope</h2>
 <p>Which observations distinguish possible <strong>formation mechanisms</strong> of the Martian hemispheric dichotomy from its <strong>later modification</strong>? The search also covers evidence needed to evaluate those observations: interior and magnetic inversions, meteorite preservation, geochronology, surface alteration, atmospheric escape and mission sampling.</p>
 <p>The cutoff is <strong>2026-09-24</strong>. The included material spans early hypotheses through 2026 publications. Publication dates come from Crossref; online and issue dates can differ. DOI strings containing a year are not used as publication dates. For example, the Sun–Tkalčić attenuation work has an online/issue-date distinction; inspect its full citation rather than inferring the year from <code>2024GL110921</code>.</p>
@@ -9,9 +9,9 @@
 <ol>
 <li><code>scripts/research/queries.json</code> defines 41 Crossref title queries. <code>harvest.py</code> retrieves 80–500 ranked results per query, with the cutoff filter, and records the exact URL and counts in <code>search_log.json</code>.</li>
 <li>An automated title filter retains Mars/Martian terms and named Martian meteorites. This produced 1,967 unique DOI candidates. The filter is an efficiency choice, <strong>not</strong> a scientific exclusion decision. It can miss relevant titles that omit these terms.</li>
-<li>Targeted searches of publisher pages, author repositories, NASA/ESA/ISRO/USGS archives and public discussions supplied additional leads. <code>core_dois.json</code> identifies 65 anchor records; exact Crossref DOI enrichment gives a final total of 1,980 candidates.</li>
+<li>Targeted searches of publisher pages, author repositories, NASA/ESA/ISRO/USGS archives and public discussions supplied additional leads. <code>core_dois.json</code> identifies 69 anchor records; exact Crossref DOI enrichment gives a final total of 1,981 candidates.</li>
 <li>DOI normalization removes case-only duplicates. Crossref types and query provenance are preserved. Preprint and journal versions with different DOIs have <strong>not</strong> been fully reconciled.</li>
-<li>References attached to core metadata are compared with the catalog. The resulting <code>citation_queue.json</code> contains 2,297 missing DOI leads. These are not included in the 1,980 count and are not all about Mars. A citation is a discovery lead, not evidence of relevance.</li>
+<li>References attached to core metadata are compared with the catalog. The resulting <code>citation_queue.json</code> contains 2,328 missing DOI leads. These are not included in the 1,981 count and are not all about Mars. A citation is a discovery lead, not evidence of relevance.</li>
 </ol>
 <p>The enormous <code>total_results_reported</code> values in the search log are fuzzy-search totals, <strong>not</strong> the size of the Martian-dichotomy literature. Queries were capped and not paginated to exhaustion. A record appearing in several queries can carry several topic labels; these discovery labels are not independently verified classifications.</p>
 <h2 id="what-was-actually-read">What was actually read?</h2>
@@ -27,17 +27,17 @@
 <tr>
 <td>Metadata / preview only</td>
 <td>Bibliographic record, title or limited publisher preview</td>
-<td style="text-align: right;">1,921, including 6 core records</td>
+<td style="text-align: right;">1,917, including 5 core records</td>
 </tr>
 <tr>
 <td>Abstract consulted</td>
 <td>Publisher/author abstract or publisher-supplied Crossref abstract</td>
-<td style="text-align: right;">50</td>
+<td style="text-align: right;">52</td>
 </tr>
 <tr>
 <td>Selected full-text sections consulted</td>
 <td>Relevant passages, figure captions or methods inspected, without complete audit</td>
-<td style="text-align: right;">9</td>
+<td style="text-align: right;">12</td>
 </tr>
 <tr>
 <td>Complete full-text audit</td>
@@ -46,8 +46,12 @@
 </tr>
 </tbody>
 </table>
-<p>Original short annotations identify a finding, its relevance and a limitation. They are a reading aid, not peer review. The nine selected-section records are Irwin–Watters 2010, Wieczorek et al. 2022, Berne et al. 2026, the 2025 inner-core correction, Mackay-Champion et al. 2026, Steele et al. 2024, Gattacceca et al. 2014, Vervelidou et al. 2023 and Weiss et al. 2025. For Weiss et al., the returned-sample review's meteorite discussion and preservation-test figure were inspected. Berne et al.'s atmospheric-loading methods were checked explicitly.</p>
+<p>Original short annotations identify a finding, its relevance and a limitation. They are a reading aid, not peer review. The original nine selected-section records are Irwin–Watters 2010, Wieczorek et al. 2022, Berne et al. 2026, the 2025 inner-core correction, Mackay-Champion et al. 2026, Steele et al. 2024, Gattacceca et al. 2014, Vervelidou et al. 2023 and Weiss et al. 2025. For Weiss et al., the returned-sample review's meteorite discussion and preservation-test figure were inspected. Berne et al.'s atmospheric-loading methods were checked explicitly.</p>
 <p>Primary-source links are attached to every core record. Paywalled previews are not marked as full-text readings. A bibliography entry does not imply that its dataset or code was downloaded, run or validated. No mission archive has yet been ingested into a joint dichotomy inversion.</p>
+<h2 id="targeted-hypothesis-building-pass">Targeted hypothesis-building pass</h2>
+<p>A second targeted pass on 24 September 2026 added the source-depth paper of Gong and Wieczorek (2021) by exact DOI and promoted three existing discoveries to the core route. This pass concerns prior work needed to avoid claiming thermal/magnetic consistency as a new mechanism. The catalog increased by one record; the broad 41-query search was not rerun.</p>
+<p>Thiriet et al. (2018), sections 5.5–6 on thermal structure, limitations and conclusions, were read on the publisher site. Citron and Zhong (2012), discussion/conclusion passages, were consulted through the <a href="https://lunar.earth.northwestern.edu/courses/438/dichotomymag.pdf">hosted paper copy</a>. Cassata et al. (2018), the dichotomy-age discussion, was consulted in the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5966191/">open full text</a>. These three additions make twelve selected-section readings. Ruiz (2009), Gong and Wieczorek (2021), and Dietrich and Wicht (2013) are marked as abstract readings; the latter was consulted through the <a href="https://arxiv.org/abs/1402.0337">author-hosted abstract</a>. Limited publisher snippets do not count as a complete reading.</p>
+<p>Berne et al. (2026)'s discussion of magnetic acquisition and alternative dynamo asymmetry was also checked. The <a href="/assets/reading/hypotheses.html">working hypothesis</a> and <a href="/assets/reading/test_protocol.html">test protocol</a> distinguish the proposed project contribution from this prior art. No scientific novelty, joint fit or completed data acquisition is claimed.</p>
 <h2 id="inclusion-and-assessment-rules-for-the-next-screening-pass">Inclusion and assessment rules for the next screening pass</h2>
 <p>Retain an original study if it constrains formation, timing, geometry, crustal structure, thermal evolution, magnetization, or subsequent modification of the contrast, or provides a necessary measurement/model validation. Retain reviews for orientation but do not count them as independent observations. Mark conference abstracts and preprints separately from journal versions. Exclude unrelated Mars uses, news, duplicate versions and peripheral astrobiology unless an explicit connection to a testable dichotomy constraint exists. Record exclusions rather than silently deleting them.</p>
 <p>Extract: actual measured quantity; location/footprint/depth; age being dated; uncertainty; calibration; assumptions; alternative explanations; dependence on other studies; data/code availability; correction or retraction status. Presently only one identified author correction was checked; a corpus-wide retraction/correction audit is outstanding.</p>

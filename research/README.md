@@ -6,6 +6,8 @@ A research component of **Charlotte Crocicchia's personal Mars project**. This c
 
 ## Start here
 
+- [Working hypothesis: two different magnetic archives](HYPOTHESES.md)
+- [First test: joint thermal and magnetic histories](TEST_PROTOCOL.md)
 - [Scientific synthesis and competing hypotheses](SYNTHESIS.md)
 - [Meteorite magnetism: what the samples can actually tell us](METEORITES.md)
 - [Mission and public-data inventory](MISSIONS.md)
@@ -13,17 +15,17 @@ A research component of **Charlotte Crocicchia's personal Mars project**. This c
 - [Search method, coverage and reading status](METHOD.md)
 - [Forum leads and their scientific checks](COMMUNITY.md)
 
-Launch the existing application and open **[Dichotomy research](http://127.0.0.1:8765/research)** for the searchable library. This page works without MCD; atmospheric calculations still require a separate MCD installation.
+Launch the existing application and open **[Dichotomy research](http://127.0.0.1:8765/research)** for the hypothesis explorer, scientific argument and searchable library. This page works without MCD; atmospheric calculations still require a separate MCD installation.
 
 ## What is in this release?
 
 | Product | Coverage |
 |---|---|
-| DOI catalog | 1,980 deduplicated candidate records across 41 topical queries and targeted additions |
-| Core reading route | 65 selected records, including a correction notice |
-| Sources consulted beyond metadata | 59: 50 abstracts and 9 selected full-text readings |
+| DOI catalog | 1,981 deduplicated candidate records across 41 topical queries and targeted additions |
+| Core reading route | 69 selected records, including a correction notice |
+| Sources consulted beyond metadata | 64: 52 abstracts and 12 selected full-text readings |
 | Complete full-text methodological audits | 0; none are presented as completed |
-| Backward-citation queue | 2,297 additional DOI leads, not yet retrieved or screened; many may be non-Mars background |
+| Backward-citation queue | 2,328 additional DOI leads, not yet retrieved or screened; many may be non-Mars background |
 
 The catalog contains articles, conference publications, preprints, chapters, datasets and other records. A Crossref `journal-article` label does **not** certify peer review or relevance. Duplicate DOIs are removed; different versions of the same work can remain.
 

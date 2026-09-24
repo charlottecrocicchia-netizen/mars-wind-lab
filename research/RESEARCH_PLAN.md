@@ -1,5 +1,7 @@
 # From a literature atlas to useful physical tests
 
+The selected first study is now specified in the [joint thermal–magnetic test protocol](TEST_PROTOCOL.md), based on the [working hypothesis](HYPOTHESES.md). The directions below remain complementary analyses rather than completed results.
+
 These are proposed investigations, not results already computed. They prioritize questions that can fail a model, quantify uncertainty or improve an observation. The existing wind maps and acoustics experiments remain atmospheric diagnostics.
 
 ## 1. Does magnetic asymmetry survive fair spatial comparisons?

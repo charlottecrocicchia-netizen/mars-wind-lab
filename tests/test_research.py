@@ -79,4 +79,5 @@ def test_filtered_ris_is_a_real_attachment_and_matches_the_visible_filters():
     assert 'DO  - 10.1038/s41586-026-10893-x' in response.text
     assert client.get('/api/research/export',params={'search':'VERVELIDOU','topic':'Meteorite magnetism'}).text.count('ER  -')==1
     assert client.get('/api/research/export',params={'scope':'all','search':'not-a-real-Mars-title-unique'}).text==''
-    assert client.get('/api/research/export').text.count('ER  -')==65
+    summary=json.loads((ROOT/'research/summary.json').read_text())
+    assert client.get('/api/research/export').text.count('ER  -')==summary['core_records']

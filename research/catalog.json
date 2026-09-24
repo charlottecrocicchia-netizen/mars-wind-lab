@@ -2946,7 +2946,7 @@
       "10.1038/nature25031"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.074675+00:00",
+    "retrieved": "2026-09-24T17:25:35.907733+00:00",
     "volume": "10",
     "pages": "1301-1308",
     "relations": {},
@@ -3199,7 +3199,7 @@
       "10.5281/zenodo.20823472"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.068538+00:00",
+    "retrieved": "2026-09-24T17:25:35.904138+00:00",
     "volume": "656",
     "pages": "848-853",
     "relations": {},
@@ -10900,7 +10900,7 @@
       "10.22541/essoar.171629587.76195120/v1"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.086784+00:00",
+    "retrieved": "2026-09-24T17:25:38.565230+00:00",
     "volume": "122",
     "pages": "e2404259121",
     "relations": {},
@@ -14760,7 +14760,7 @@
       "10.1051/0004‐6361/201730728"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.066804+00:00",
+    "retrieved": "2026-09-24T17:25:35.903270+00:00",
     "volume": "51",
     "pages": "e2023GL105701",
     "relations": {},
@@ -15798,7 +15798,7 @@
       "10.1007/bf00875588"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.087425+00:00",
+    "retrieved": "2026-09-24T17:25:38.566301+00:00",
     "volume": "129",
     "pages": "e2024JE008505",
     "relations": {
@@ -15970,7 +15970,7 @@
       "10.7910/dvn/tpw4wb"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.079621+00:00",
+    "retrieved": "2026-09-24T17:25:35.913091+00:00",
     "volume": "15",
     "pages": "6831",
     "relations": {},
@@ -22101,7 +22101,7 @@
       "10.1016/s0012-821x(02)01060-9"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.085314+00:00",
+    "retrieved": "2026-09-24T17:25:38.560477+00:00",
     "volume": "128",
     "pages": "e2022JE007464",
     "relations": {
@@ -25108,7 +25108,7 @@
       "10.1029/2008je003104"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.082944+00:00",
+    "retrieved": "2026-09-24T17:25:38.553924+00:00",
     "volume": "9",
     "pages": "eade9071",
     "relations": {},
@@ -29375,7 +29375,7 @@
       "10.1126/science.287.5459.1788"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.065181+00:00",
+    "retrieved": "2026-09-24T17:25:35.902394+00:00",
     "volume": "127",
     "pages": "e2022JE007298",
     "relations": {},
@@ -33389,7 +33389,7 @@
       "10.1029/97je02527"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.082360+00:00",
+    "retrieved": "2026-09-24T17:25:35.915127+00:00",
     "volume": "9",
     "pages": "895362",
     "relations": {},
@@ -38175,6 +38175,100 @@
     "domain_basis": "Search query, not verified classification"
   },
   {
+    "doi": "10.1029/2020je006690",
+    "title": "Depth of Martian Magnetization From Localized Power Spectrum Analysis",
+    "authors": [
+      "Shengxia Gong",
+      "Mark Wieczorek"
+    ],
+    "year": 2021,
+    "date": [
+      2021,
+      8
+    ],
+    "dates": {
+      "published": [
+        2021,
+        8
+      ],
+      "published-print": [
+        2021,
+        8
+      ],
+      "published-online": [
+        2021,
+        8,
+        17
+      ]
+    },
+    "journal": "Journal of Geophysical Research: Planets",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1029/2020je006690",
+    "domains": [
+      "Magnetism"
+    ],
+    "queries": [],
+    "references": [
+      "10.1126/science.284.5415.790",
+      "10.1038/nature07011",
+      "10.1038/s41561-020-0544-y",
+      "10.1016/j.pepi.2012.09.008",
+      "10.1111/j.1365-246x.2008.03854.x",
+      "10.1029/2019je006274",
+      "10.1029/2001je001616",
+      "10.1016/j.icarus.2005.02.008",
+      "10.1038/35084184",
+      "10.1016/j.pepi.2011.01.004",
+      "10.1029/2018je005854",
+      "10.1029/2012gl052708",
+      "10.1002/jgre.20085",
+      "10.1029/jz071i008p02179",
+      "10.1038/nature07070",
+      "10.1126/sciadv.aba0513",
+      "10.1016/j.pepi.2014.12.005",
+      "10.1002/2013je004555",
+      "10.1029/2004je002262",
+      "10.1038/nature07025",
+      "10.1002/2015je004869",
+      "10.1038/35047163",
+      "10.1016/s0012-821x(04)00032-9",
+      "10.1029/2000je001364",
+      "10.1126/science.284.5419.1495",
+      "10.1007/s11214-018-0563-9",
+      "10.1126/science.1161119",
+      "10.1029/2007je002928",
+      "10.1029/2001je001534",
+      "10.1016/s0012-821x(02)00728-8",
+      "10.1029/90eo00319",
+      "10.1016/b978-0-444-53802-4.00169-x",
+      "10.1002/2017je005418",
+      "10.1029/2018je005909",
+      "10.1029/2018gc007529",
+      "10.1111/j.1365-246x.2005.02687.x",
+      "10.1007/s00041-006-6904-1",
+      "10.1126/science.287.5459.1788"
+    ],
+    "metadata_source": "Crossref DOI lookup",
+    "retrieved": "2026-09-24T17:25:38.552644+00:00",
+    "volume": "126",
+    "pages": "e2020JE006690",
+    "relations": {},
+    "core": true,
+    "review_depth": "abstract",
+    "review_status": "Abstract consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "discovery_domains": [
+      "Magnetism"
+    ],
+    "finding": "Localized magnetic spectra are interpreted as different equivalent source depths in northern lowlands and southern highlands.",
+    "dichotomy_use": "Depth estimates offer a target for joint thermal and magnetic history tests.",
+    "limitation": "Abstract consulted. Source geometry and spectral localization affect equivalent depths; these estimates reuse the Langlais field model and are not independent observations of layer boundaries.",
+    "assessment_date": "2026-09-24",
+    "primary_domain": "Magnetism",
+    "consulted_source": "https://doi.org/10.1029/2020je006690",
+    "consulted_material": "Publisher or author-hosted abstract; sometimes publisher-supplied Crossref abstract. Full methods not audited."
+  },
+  {
     "doi": "10.1029/2021ea001755",
     "title": "Seismic Noise Autocorrelations on Mars",
     "authors": [
@@ -39598,7 +39692,7 @@
       "10.1029/2006je002676"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.063050+00:00",
+    "retrieved": "2026-09-24T17:25:35.901789+00:00",
     "volume": "373",
     "pages": "438-443",
     "relations": {},
@@ -39876,7 +39970,7 @@
       "10.1002/2017jb014779"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.070003+00:00",
+    "retrieved": "2026-09-24T17:25:35.904757+00:00",
     "volume": "373",
     "pages": "443-448",
     "relations": {},
@@ -45072,7 +45166,7 @@
       "10.1016/j.pepi.2013.11.008"
     ],
     "metadata_source": "Crossref DOI lookup",
-    "retrieved": "2026-09-24T16:34:42.078648+00:00",
+    "retrieved": "2026-09-24T17:25:35.912476+00:00",
     "volume": "6",
     "pages": "eaba0513",
     "relations": {},
@@ -51169,21 +51263,21 @@
     "pages": "823-848",
     "relations": {},
     "core": true,
-    "review_depth": "abstract",
-    "review_status": "Abstract consulted",
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
     "discovery_domains": [
       "Dichotomy",
       "Interior",
       "Volcanism and tectonics"
     ],
-    "finding": "Unequal crustal thickness and radiogenic heating produce different hemispheric thermal histories.",
-    "dichotomy_use": "Shows how a thermal dichotomy can follow an existing crustal dichotomy.",
-    "limitation": "Current thermal asymmetry cannot on its own identify the process that created the original crustal contrast.",
+    "finding": "Two-hemisphere thermal models connect crustal thickness and radiogenic enrichment to different lithospheric temperatures and elastic thicknesses.",
+    "dichotomy_use": "Provides a thermal benchmark for testing magnetic acquisition and retention in the same crustal histories.",
+    "limitation": "Sections 5.5, 5.6 and 6 consulted. Polar elastic thickness need not represent an entire hemisphere; a well-mixed mantle and parameterized columns omit spatial dynamics.",
     "assessment_date": "2026-09-24",
     "primary_domain": "Interior",
     "consulted_source": "https://doi.org/10.1002/2017je005431",
-    "consulted_material": "Publisher or author-hosted abstract; sometimes publisher-supplied Crossref abstract. Full methods not audited."
+    "consulted_material": "Selected relevant full-text passages, plus abstract. Not a complete independent replication."
   },
   {
     "doi": "10.1002/2018gl077281",
@@ -53877,8 +53971,8 @@
     "pages": "eaap8306",
     "relations": {},
     "core": true,
-    "review_depth": "metadata",
-    "review_status": "Metadata / preview only",
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
     "discovery_domains": [
       "Dichotomy",
@@ -53886,13 +53980,13 @@
       "Meteorite provenance",
       "Meteorite geochemistry and provenance"
     ],
-    "finding": "Links NWA 7034 chronology to hypotheses about early dichotomy formation.",
-    "dichotomy_use": "A key target for testing absolute age constraints on the southern crust.",
-    "limitation": "Title and editorial summary checked; mineral-by-mineral chronology needs full-text review before adopting a global formation date.",
+    "finding": "Multiple chronometers constrain ancient near-surface material and later heterogeneous heating in the NWA 7034 source terrain.",
+    "dichotomy_use": "Conditional survival and burial constraints can test event sequences predicted by dichotomy origin models.",
+    "limitation": "Dichotomy-age discussion consulted. Local provenance, burial and thermal assumptions prevent a universal formation date; crystallization and later metamorphism are distinct.",
     "assessment_date": "2026-09-24",
     "primary_domain": "Meteorite geochemistry and provenance",
     "consulted_source": "https://doi.org/10.1126/sciadv.aap8306",
-    "consulted_material": "Bibliographic record or limited publisher preview. No substantive results extraction claimed."
+    "consulted_material": "Selected relevant full-text passages, plus abstract. Not a complete independent replication."
   },
   {
     "doi": "10.1126/sciadv.aar6887",
@@ -70567,6 +70661,17 @@
       2013,
       4
     ],
+    "dates": {
+      "published": [
+        2013,
+        4
+      ],
+      "published-print": [
+        2013,
+        4
+      ],
+      "published-online": []
+    },
     "journal": "Physics of the Earth and Planetary Interiors",
     "type": "journal-article",
     "url": "https://doi.org/10.1016/j.pepi.2013.01.001",
@@ -70625,10 +70730,23 @@
     ],
     "metadata_source": "Crossref REST API",
     "retrieved": "2026-09-24T16:16:50.856187+00:00",
-    "core": false,
-    "review_depth": "metadata",
-    "review_status": "Discovery candidate — not screened",
-    "domain_basis": "Search query, not verified classification"
+    "volume": "217",
+    "pages": "10-21",
+    "relations": {},
+    "core": true,
+    "review_depth": "abstract",
+    "review_status": "Abstract consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "discovery_domains": [
+      "Magnetism"
+    ],
+    "finding": "Numerical hemispherical dynamos driven by imposed core-mantle boundary heat-flux variations can reverse rapidly.",
+    "dichotomy_use": "A hemispheric field explanation must satisfy time-integrated magnetic recording as well as spatial field contrast.",
+    "limitation": "Author-hosted abstract consulted. The reported reversal problem concerns this simulated regime, not every possible Martian dynamo.",
+    "assessment_date": "2026-09-24",
+    "primary_domain": "Magnetism",
+    "consulted_source": "https://doi.org/10.1016/j.pepi.2013.01.001",
+    "consulted_material": "Publisher or author-hosted abstract; sometimes publisher-supplied Crossref abstract. Full methods not audited."
   },
   {
     "doi": "10.1016/j.proeng.2013.05.065",
@@ -74690,11 +74808,22 @@
       2012,
       12
     ],
+    "dates": {
+      "published": [
+        2012,
+        12
+      ],
+      "published-print": [
+        2012,
+        12
+      ],
+      "published-online": []
+    },
     "journal": "Physics of the Earth and Planetary Interiors",
     "type": "journal-article",
     "url": "https://doi.org/10.1016/j.pepi.2012.09.008",
     "domains": [
-      "Dichotomy"
+      "Magnetism"
     ],
     "queries": [
       {
@@ -74765,10 +74894,24 @@
     ],
     "metadata_source": "Crossref REST API",
     "retrieved": "2026-09-24T16:16:03.328461+00:00",
-    "core": false,
-    "review_depth": "metadata",
-    "review_status": "Discovery candidate — not screened",
-    "domain_basis": "Search query, not verified classification"
+    "volume": "212-213",
+    "pages": "55-63",
+    "relations": {},
+    "core": true,
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "discovery_domains": [
+      "Dichotomy",
+      "Magnetism"
+    ],
+    "finding": "Models ejecta burial and heating of the southern crust and considers a convection-based origin for magnetic lineations.",
+    "dichotomy_use": "Prior work directly connects dichotomy formation scenarios to magnetic survival; any new consistency test must engage with it.",
+    "limitation": "Discussion and conclusion consulted. Uniform ejecta and assumed thermal/recording histories restrict generality; later reacquisition must also be considered.",
+    "assessment_date": "2026-09-24",
+    "primary_domain": "Magnetism",
+    "consulted_source": "https://doi.org/10.1016/j.pepi.2012.09.008",
+    "consulted_material": "Selected relevant full-text passages, plus abstract. Not a complete independent replication."
   },
   {
     "doi": "10.1016/j.pss.2012.08.001",
@@ -84005,12 +84148,22 @@
       2009,
       10
     ],
+    "dates": {
+      "published": [
+        2009,
+        10
+      ],
+      "published-print": [
+        2009,
+        10
+      ],
+      "published-online": []
+    },
     "journal": "Icarus",
     "type": "journal-article",
     "url": "https://doi.org/10.1016/j.icarus.2009.05.021",
     "domains": [
-      "Meteorite geochemistry",
-      "Chronology"
+      "Magnetism"
     ],
     "queries": [
       {
@@ -84025,10 +84178,25 @@
     "references": [],
     "metadata_source": "Crossref REST API",
     "retrieved": "2026-09-24T16:17:40.514624+00:00",
-    "core": false,
-    "review_depth": "metadata",
-    "review_status": "Discovery candidate — not screened",
-    "domain_basis": "Search query, not verified classification"
+    "volume": "203",
+    "pages": "454-459",
+    "relations": {},
+    "core": true,
+    "review_depth": "abstract",
+    "review_status": "Abstract consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "discovery_domains": [
+      "Meteorite geochemistry",
+      "Chronology",
+      "Magnetism"
+    ],
+    "finding": "Early geotherms inferred for Terra Cimmeria are used to evaluate candidate magnetic carriers and magnetized depths.",
+    "dichotomy_use": "Establishes prior thermal-carrier consistency tests that a modern joint analysis should extend rather than claim to invent.",
+    "limitation": "Abstract consulted with limited section previews. Inferred heat flow, loading age and source depths are conditional; Curie depth is not a directly measured magnetic boundary.",
+    "assessment_date": "2026-09-24",
+    "primary_domain": "Magnetism",
+    "consulted_source": "https://doi.org/10.1016/j.icarus.2009.05.021",
+    "consulted_material": "Publisher or author-hosted abstract; sometimes publisher-supplied Crossref abstract. Full methods not audited."
   },
   {
     "doi": "10.1016/j.icarus.2009.07.020",

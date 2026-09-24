@@ -4,7 +4,7 @@ from html import escape, unescape
 import re
 import markdown
 ROOT=Path(__file__).resolve().parents[2]
-PAGES={'SYNTHESIS':'Scientific synthesis','METEORITES':'Meteorite magnetism','MISSIONS':'Missions & data','RESEARCH_PLAN':'Research programme','METHOD':'Search & reading method','COMMUNITY':'Community leads','README':'About this collection'}
+PAGES={'HYPOTHESES':'Working hypothesis','TEST_PROTOCOL':'First physical test','SYNTHESIS':'Scientific synthesis','METEORITES':'Meteorite magnetism','MISSIONS':'Missions & data','RESEARCH_PLAN':'Research programme','METHOD':'Search & reading method','COMMUNITY':'Community leads','README':'About this collection'}
 out=ROOT/'web/reading';out.mkdir(exist_ok=True)
 for stem,label in PAGES.items():
  source=(ROOT/f'research/{stem}.md').read_text()

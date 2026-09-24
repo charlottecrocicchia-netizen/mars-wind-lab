@@ -12,11 +12,17 @@ Mars Wind Lab is part of my broader personal interest in **Mars and its hemisphe
 
 [Getting started](docs/USAGE.md) · [Scientific method](docs/SCIENTIFIC_METHOD.md) · [Validation](docs/VALIDATION.md) · [Dichotomy research](research/README.md)
 
+## The scientific question
+
+**Could two hemispheres record a shared ancient dynamo differently?** The [working hypothesis](research/HYPOTHESES.md) connects early crustal asymmetry to thermal evolution, magnetic acquisition and preservation. Four explicit model families separate inherited versus later recording from shared versus asymmetric ancient fields. Each states a requirement and a possible failure.
+
+The proposed first study tests which source-depth and recording-time windows remain compatible with crustal, thermal and meteorite constraints. Its [analysis protocol](research/TEST_PROTOCOL.md) defines dependencies, physical gates and rejection rules. This is a research design grounded in published work; no joint fit or new origin mechanism is claimed. The local site presents the argument before the bibliography.
+
 ## The dichotomy evidence atlas
 
-Open **Dichotomy research** in the app, or read the [scientific synthesis](research/SYNTHESIS.md) on GitHub. The English library contains **1,980 DOI candidates**, a **65-record core reading route**, and source notes distinguishing metadata from abstracts and selected full-text readings. It includes dedicated [meteorite magnetism](research/METEORITES.md), [mission/data](research/MISSIONS.md) and [research programme](research/RESEARCH_PLAN.md) dossiers. Download [RIS for Zotero](research/library.ris), [BibTeX](research/library.bib) or [CSV](research/catalog.csv).
+Open **Dichotomy research** in the app, or read the [scientific synthesis](research/SYNTHESIS.md) on GitHub. The English library contains **1,981 DOI candidates**, a **69-record core reading route**, and source notes distinguishing metadata from abstracts and selected full-text readings. It includes dedicated [meteorite magnetism](research/METEORITES.md), [mission/data](research/MISSIONS.md) and [research programme](research/RESEARCH_PLAN.md) dossiers. Download [RIS for Zotero](research/library.ris), [BibTeX](research/library.bib) or [CSV](research/catalog.csv).
 
-This is a broad, dated inventory with selective assessment, **not an exhaustive review of every Mars paper**. Fifty abstracts and nine selected full-text readings are documented; complete methodological audits and joint analysis of the newly identified mission datasets remain outstanding. [Search method and coverage](research/METHOD.md) document the query caps, 2,297 unscreened citation leads and remaining gaps. Research notes were assembled with AI assistance and need source verification before manuscript use.
+This is a broad, dated inventory with selective assessment, **not an exhaustive review of every Mars paper**. Fifty-two abstracts and twelve selected full-text readings are documented; complete methodological audits and joint analysis of the newly identified mission datasets remain outstanding. [Search method and coverage](research/METHOD.md) document the query caps, 2,328 unscreened citation leads and remaining gaps. Research notes were assembled with AI assistance and need source verification before manuscript use.
 
 ## What can you use it for?
 

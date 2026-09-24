@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>First physical test — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css"></head><body>
+<a class="skip" href="#article">Skip to the article</a><header class="research-header"><a href="/research" class="brand"><span class="planet-icon"></span><span>MARS DICHOTOMY<small>CHARLOTTE CROCICCHIA · EVIDENCE ATLAS</small></span></a><nav aria-label="Main navigation"><a href="/">Wind atlas ↗</a><a href="/research#library">Research library ↗</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">READING ROOM</p><a class="" href="/assets/reading/hypotheses.html">Working hypothesis</a><a class="current" href="/assets/reading/test_protocol.html">First physical test</a><a class="" href="/assets/reading/synthesis.html">Scientific synthesis</a><a class="" href="/assets/reading/meteorites.html">Meteorite magnetism</a><a class="" href="/assets/reading/missions.html">Missions &amp; data</a><a class="" href="/assets/reading/research_plan.html">Research programme</a><a class="" href="/assets/reading/method.html">Search &amp; reading method</a><a class="" href="/assets/reading/community.html">Community leads</a><a class="" href="/assets/reading/readme.html">About this collection</a></aside><article class="prose" id="article"><h1 id="test-01-a-common-thermal-history-for-crust-and-magnetism">Test 01 — A common thermal history for crust and magnetism</h1>
+<p><strong>Proposed analysis specification · 24 September 2026 · Not externally preregistered.</strong></p>
+<p>Companion to the <a href="/assets/reading/hypotheses.html">working hypothesis</a>. The target is a falsifiable consistency test, not a vote among papers. No empirical model comparison has been run.</p>
+<h2 id="question-and-estimand">Question and estimand</h2>
+<p>For each selected province and candidate carrier, which crustal growth and temperature histories permit the inferred source volume to acquire and retain enough coherent magnetization to reproduce regional orbital magnetic spectra?</p>
+<p>Primary output: a set of feasible histories and recording-depth/time windows, with explicit dependence on nuisance parameters. Secondary output: whether a shared dynamo-history model predicts withheld magnetic observations adequately, and whether a hemispheric-field alternative improves those predictions enough to justify its extra freedom. This is not yet a probability distribution over impact versus convection origins.</p>
+<h2 id="inputs-and-independent-information">Inputs and independent information</h2>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Intended role</th>
+<th>Dependency or limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://doi.org/10.1029/2018JE005854">Langlais et al., 2019</a> MGS/MAVEN field model and coefficients</td>
+<td>Magnetic observations represented at a common radius and harmonic bandwidth</td>
+<td>Model coefficients, regularization and measurement coverage affect spectra</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1029/2020JE006690">Gong &amp; Wieczorek, 2021</a> source-depth analysis; <a href="https://doi.org/10.5281/zenodo.4686358">author dataset</a></td>
+<td>Reproduction target and starting geometry alternatives</td>
+<td>Derived from the same field model: depth and field amplitude are not independent likelihood terms</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1029/2022JE007298">Wieczorek et al., 2022</a> crustal ensembles, MOLA and geology</td>
+<td>Crustal thickness, province definition, basin/volcanic masks</td>
+<td>Density assumptions and common gravity information propagate into depth comparisons</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1002/2017JE005431">Thiriet et al., 2018</a> thermal histories; <a href="https://figshare.com/projects/2017JE005431RR/29467">author result archive</a></td>
+<td>Thermal benchmark, followed by updated crustal constraints</td>
+<td>Hemispheric parameterization, polar elastic-thickness assumptions; endpoint temperatures alone cannot reconstruct a history</td>
+</tr>
+<tr>
+<td><a href="https://doi.org/10.1038/s41586-026-10893-x">Berne et al., 2026</a> time-variable gravity</td>
+<td>Present interior endpoint, including composition/melt alternatives</td>
+<td>Do not impose its inferred temperature contrast as a directly observed ancient crust temperature; check shared gravity/systematic errors</td>
+</tr>
+<tr>
+<td>Meteorite mineralogy, event ages and preservation tests in the <a href="/assets/reading/meteorites.html">sample dossier</a></td>
+<td>Carrier alternatives and local chronological constraints</td>
+<td>Unknown depth/provenance; paired specimens and common source terrains require grouping</td>
+</tr>
+</tbody>
+</table>
+<p>These are identified sources, not a completed acquisition manifest. Before analysis record product version, download URL, access date, checksum, units, frame, latitude convention, reference radius, harmonic normalization, uncertainty representation and permitted use. The author archives above were identified; their contents have not yet been reproduced here.</p>
+<h2 id="freeze-the-spatial-comparison-before-interpreting-it">Freeze the spatial comparison before interpreting it</h2>
+<p>Use geological provinces rather than an equatorial split. Begin with Cimmeria/Sirenum and northern controls selected for usable magnetic signal and data coverage. Document selection without tuning it to maximize hemispheric separation. Treat weak-signal locations as uninformative or upper limits where justified; excluding them limits the target population and must be reported.</p>
+<p>Evaluate coefficients at one stated radius. Use the source paper's bandwidth for reproduction; then vary altitude, degree range, localization window, source geometry and masks. Use the intersection of supported bandwidths for cross-model comparisons. Do not compare surface downward-continuation maxima to orbital measurements as equivalent observations. Fit vector-field statistics or spectra; a signed mean can cancel genuine magnetization.</p>
+<p>Publish a footprint and resolution table. Area weighting and spatial blocks are required; grid cells, overlapping windows and spherical-harmonic coefficients cannot be counted as independent observations. Hold out whole spatial blocks, large enough to account for localization and smoothing. Estimate their separation from the actual correlation structure rather than guessing an independence scale.</p>
+<h2 id="forward-model-and-physical-gates">Forward model and physical gates</h2>
+<p>The thermal calculation must follow time since formation, not just draw a present-day conductive geotherm. It requires crustal accretion/burial, heat production and redistribution, basal heat flux, conductivity, heat capacity and event heating. First reproduce a published benchmark. Specify when a one-dimensional column is inadequate for lateral intrusion or impact cooling.</p>
+<p>For a thermoremanent branch, a schematic linear recording model is:</p>
+<pre><code class="language-text">M_today(x,z) = integral K_acquire(x,z,t; thermal history, carrier)
+                      * R_survive(x,z,t -&gt; today) * B_ancient(x,z,t) dt
+B_predicted = G_geometry_and_altitude[M_today]
+</code></pre>
+<p><code>K_acquire</code> is a time-distributed, unit-consistent recording response, not a fitted arbitrary weight at every time. <code>R_survive</code> represents subsequent relaxation, heating and shock damage. <code>B_ancient</code> is a vector, so polarity reversals and cooling duration can cancel bulk signals. <code>G</code> is the magnetic forward operator. This schematic expression is a model specification, not an implemented solver. Chemical and shock remanence require separate response models rather than silently sharing a thermoremanent kernel.</p>
+<p>For each candidate history:</p>
+<ol>
+<li><strong>Geometry:</strong> magnetic material must lie in a permitted source volume. A thin-layer equivalent depth is not a magnetic bottom depth or Curie depth.</li>
+<li><strong>Acquisition:</strong> the material must form or cool through its blocking-temperature spectrum while a field is available. Curie temperatures alone do not specify blocking temperatures or retention over billions of years.</li>
+<li><strong>Survival:</strong> later thermal duration, mineral alteration and shocks must permit the proposed record to survive. Laboratory grain-size and relaxation properties matter.</li>
+<li><strong>Amplitude and coherence:</strong> surviving material and its vector-summed remanence must reproduce observed spectral power within errors. Thermal feasibility alone passes neither this gate nor the next one.</li>
+<li><strong>Joint consistency:</strong> the same histories must satisfy crustal and chronological constraints and the present interior endpoint. Do not fit a separate thermal history to each observable.</li>
+</ol>
+<h2 id="comparisons-and-outcomes-fixed-in-advance">Comparisons and outcomes fixed in advance</h2>
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+<th>Permitted conclusion</th>
+<th>Conclusion not permitted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Early inheritance fits held-out magnetic data and other constraints</td>
+<td>An inherited archive remains viable in the tested regions</td>
+<td>Impact or convection has been proven</td>
+</tr>
+<tr>
+<td>Inheritance fails; later acquisition succeeds</td>
+<td>Later recording is required within the tested parameterization</td>
+<td>Every southern rock was remagnetized</td>
+</tr>
+<tr>
+<td>Both recording histories work</td>
+<td>Current constraints do not identify acquisition history</td>
+<td>Choose the more attractive narrative</td>
+</tr>
+<tr>
+<td>Shared-history field models fail, asymmetric variants predict withheld data better</td>
+<td>Field geometry is a useful additional parameter under stated carrier/thermal assumptions</td>
+<td>The ancient dynamo was necessarily hemispheric</td>
+</tr>
+<tr>
+<td>No acquisition/survival window remains</td>
+<td>Reject that parameterized thermal/carrier history</td>
+<td>Increase field strength to rescue zero recording capacity</td>
+</tr>
+<tr>
+<td>Missing uncertainty, no usable spectrum or incompatible resolutions</td>
+<td>Not yet testable</td>
+<td>Assign zero likelihood or “no magnetization”</td>
+</tr>
+</tbody>
+</table>
+<p>Declare residual statistics, measurement/model covariance and the predictive comparison rule after auditing data error products but before examining the main comparison. A numerical acceptance threshold is deliberately not invented without those errors. Compare identical data and nuisance-parameter budgets. Sensitivity to prior ranges must be reported; no posterior odds can be obtained by counting compatible papers.</p>
+<h2 id="dependencies-counterexamples-and-stopping-conditions">Dependencies, counterexamples and stopping conditions</h2>
+<p>Orbital source depths reuse magnetic coefficients. Crustal models reuse gravity and InSight constraints. Different meteorite stones can share a parent rock, pairing group, ejection event or reservoir. These dependencies belong in the covariance/hierarchical grouping or must be acknowledged by using one summary per family, not counted twice.</p>
+<p>Published basin models show why weak fields can coexist with an active dynamo (<a href="https://doi.org/10.1038/s41467-024-51092-4">Steele et al., 2024</a>). Their tested basin scales do not justify direct extrapolation to Borealis. Use them to verify cancellation physics before changing scale. Surface mineral maps and meteorites cannot silently fix unobserved deep carrier abundance.</p>
+<p>Abandon the recording-first baseline for the tested regions if no physically allowed carrier/history ensemble fits the joint constraints, or if success requires unconstrained per-region adjustments that eliminate predictive power. Do not claim its survival if only arbitrary mixtures work. If the field and recording kernels remain unidentifiable, publish that result and identify which contextualized sample age, magnetic depth constraint or mineral measurement would discriminate them.</p>
+<h2 id="deliverables-and-present-status">Deliverables and present status</h2>
+<ul>
+<li>Source/version manifest and a table separating direct measurements from derived inversions.</li>
+<li>Reproduced magnetic/thermal benchmarks with resolution and covariance checks.</li>
+<li>Depth–time feasibility diagrams for each carrier/history family, including rejected histories.</li>
+<li>Withheld-region predictions and sensitivity to field geometry, dynamo intervals and alteration.</li>
+<li>A conclusion that states which causal links are constrained and which origin triggers remain indistinguishable.</li>
+</ul>
+<p><strong>Current status: scientific design completed; acquisition, benchmark reproduction and inference not started.</strong> This protocol is a concrete next study, not a claim that a new joint planetary model has already been validated.</p><div class="reading-tools"><a href="/research#library">← Browse the library</a><a href="/research/files/TEST_PROTOCOL.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/TEST_PROTOCOL.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Research snapshot · 24 September 2026 · Read the source and its limitations together.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>
