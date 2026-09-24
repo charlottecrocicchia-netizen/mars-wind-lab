@@ -1,6 +1,6 @@
 # Using Mars Wind Lab
 
-Open the local application. The overview offers Ideas, Data, Tests, Library and Atmosphere. In **Data**, choose a map layer and a candidate crater, or use its Meteorite records, Lab magnetism and Sources views. **Tests** shows executed diagnostics with methods tucked into expandable panels.
+Open the local application. The overview offers Ideas, Data, Tests, Library and Atmosphere. In **Data**, choose a map layer and a candidate crater, or use its Meteorite records, Lab magnetism, Water & alteration and Sources views. **Tests** shows executed diagnostics with methods tucked into expandable panels.
 
 Select **Atmosphere** for the wind laboratory. An example above InSight is calculated when this section opens. These coordinates are a starting point, not an assimilation of InSight observations.
 
@@ -53,3 +53,11 @@ Guided experiments also have a continuous season slider and editable lower/upper
 Select **Library** in the navigation, or open `http://127.0.0.1:8765/research/library`. Open **Reading notes** for the synthesis or meteorite dossier, then use search and the expandable filters. The default collection contains 69 core records; switch to **All discovery candidates** to search the 1,981-record inventory. Reading-depth badges distinguish metadata, abstracts and selected full-text sections. A record in the catalog is not an endorsement of its conclusions.
 
 Use **Export these results · RIS** to import the filtered bibliography into Zotero, or download the complete RIS/BibTeX/CSV files. The reading room includes missions and data, a concrete research programme, the search method and separately assessed forum leads. The research page needs no MCD installation and makes no model calls.
+
+## Meteorite records and water–rock histories
+
+Open **Data → Lab magnetism** and choose a meteorite. MIL 03346 is the default; ALH 84001 and the NWA suite also have measurements to inspect. Other entries show sourced published results and clearly state that raw series have not yet been acquired. The sample selector is separate from the specimen selector. Open **Inspect laboratory directions** only when you need that additional detail. The directions are laboratory-relative, not geographic coordinates on Mars.
+
+Choose Lafayette to see crystallization and aqueous alteration as separate events. “Secondary” describes a later recording event; it can still have occurred on Mars. Follow the recording guide for the distinction from terrestrial contamination.
+
+Open **Data → Water & alteration**, choose a mineral class and instrument, then switch between elevation and the crustal magnetic-field background. Markers denote occupied 2° cells. They do not fill the entire cell with altered rock, and an unmarked cell is not a dry control. **Tests**, diagnostic 06, records the descriptive overlap and explains what is still needed for a physical association test.

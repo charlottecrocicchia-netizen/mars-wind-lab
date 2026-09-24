@@ -4,7 +4,7 @@ Locally checked with Python 3.14, gfortran 15.1 and MCD 6.1 on macOS. Exact Pyth
 
 ## Numerical checks
 
-Run `python -m pytest -q`. The current suite contains 40 cases: 33 checks that run without MCD or raw scientific downloads and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
+Run `python -m pytest -q`. The current suite contains 46 cases: 39 checks that run without MCD or raw scientific downloads and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
 
 - Sound speed, invalid thermodynamic states and four cardinal projections.
 - Known shear on a nonuniform geometric grid and SI conversion.
@@ -55,3 +55,9 @@ The literature checks cover DOI uniqueness, source-reading counts, core annotati
 The observation tests verify an analytic axial dipole and its radial decay, spherical weighting against an analytic integral, local-surface temperature interpolation with no extrapolation, missing/negative source-depth handling, product integrity and pages available without MCD. The completed scientific calculations are documented separately in [First results](../research/FIRST_RESULTS.md); unit tests do not validate their planetary interpretation.
 
 The revised workspace was checked in the local browser: persistent navigation, map-layer and altitude/density switches, crater selection, meteorite search, specimen switching, expandable test methods, bibliography search and browser Back within atmospheric views. Seasonal playback prepared 24 frames and advanced while preserving the shared color scale.
+
+## Expanded meteorite and water evidence
+
+Six additional checks protect distinct natural and laboratory remanence, preserved treatment labels and unverified units, upper/lower bounds and missing errors, separated mineral/event ages, coordinate wrapping and instrument unions, and reproducible occupancy/field summaries with code and input hashes. The ALH archive's coordinate placeholders are never treated as source locations.
+
+Browser checks exercised MIL and ALH specimen selection, ALH thermal demagnetization, the exclusion of the appended MIL25 laboratory TRM, expandable directions, Lafayette's separate age table, mineral-class and instrument/background controls, and the new descriptive-overlap diagnostic. No component fitting, paleointensity replication, coverage-controlled mineral association or joint origin inference is claimed.
