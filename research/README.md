@@ -10,6 +10,8 @@ A research component of **Charlotte Crocicchia's personal Mars project**. This c
 
 **Catalog updated: 27 September 2026; broad search: 24 September 2026.** This is an evidence inventory with selective source assessment, not a completed exhaustive systematic review and not a new discovery about the origin of Mars's dichotomy.
 
+**Dynamo test programme:** [30 proposals and a targeted source assessment](DYNAMO_TESTS.md), with conditional tests and three next calculations. Planned tests remain separate from completed results.
+
 ## Start here
 
 - [September research review: checked claims and next tests](DICHOTOMY_REVIEW.md)

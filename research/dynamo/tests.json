@@ -1,0 +1,726 @@
+{
+  "schema_version": 1,
+  "language": "en",
+  "updated": "2026-09-27",
+  "title": "Martian dynamo test programme",
+  "scope": "Thirty proposals from a user-supplied research synthesis, reorganized into compatible dimensions. Original project test designs with a targeted primary-source assessment; not a complete literature audit or a ranking of theories.",
+  "execution_status": "All thirty proposed discriminating tests are planned, not executed. Existing regional and thermal calculations are explicitly separate building blocks.",
+  "provenance": "The supplied synthesis is a discovery aid, not a source of established results. No private internship material, external code, new dataset or publisher full text is incorporated.",
+  "groups": [
+    {
+      "id": "chronology",
+      "title": "When was it active?",
+      "description": "Separate dated activity, permanent shutdown and gaps in the preserved record."
+    },
+    {
+      "id": "engine",
+      "title": "What could power it?",
+      "description": "Energy sources, boundary conditions and shutdown behavior play different roles."
+    },
+    {
+      "id": "geometry",
+      "title": "What shape was the field?",
+      "description": "Compare the generated field with what rocks would record over time."
+    },
+    {
+      "id": "recording",
+      "title": "What did the rocks preserve?",
+      "description": "Acquisition, alteration, shock, burial and measurement can change the observed contrast."
+    },
+    {
+      "id": "interior",
+      "title": "What does today’s interior constrain?",
+      "description": "Present structure is an endpoint for evolution models, not a direct ancient measurement."
+    }
+  ],
+  "sources": {
+    "hsieh24": {
+      "label": "Hsieh et al. (2024) · Core conductivity",
+      "doi": "10.1126/sciadv.adk1087",
+      "url": "https://www.jsg.utexas.edu/lin/files/HsiehMarsDynamoFeSSciAd2024.pdf",
+      "review_depth": "selected_sections",
+      "consulted_material": "Primary author-hosted article: results, Fig. 4 discussion and conductivity methods; selected reading, not a full methodological audit."
+    },
+    "steele24": {
+      "label": "Steele et al. (2024) · Reversing dynamo and basin fields",
+      "doi": "10.1038/s41467-024-51092-4",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11316139/",
+      "review_depth": "selected_sections",
+      "consulted_material": "Open primary article: basin magnetization, reversal and low-altitude predictions, and stated sensitivities."
+    },
+    "steele25": {
+      "label": "Steele et al. (2025) · Mantle excavation in impact basins",
+      "doi": "10.1029/2025JE009173",
+      "url": "https://doi.org/10.1029/2025JE009173",
+      "review_depth": "abstract",
+      "consulted_material": "Publisher-supplied abstract retrieved through the official Crossref works API. Full methods and numerical thresholds have not been audited."
+    },
+    "yan25": {
+      "label": "Yan et al. (2025) · Full-sphere hemispheric dynamo",
+      "doi": "10.1029/2024GL113926",
+      "url": "https://doi.org/10.1029/2024GL113926",
+      "review_depth": "selected_sections",
+      "consulted_material": "Publisher text and institutional copy: selected results on forcing, reversals and time averaging; not a complete numerical audit."
+    },
+    "bi25": {
+      "label": "Bi et al. (2025) · Proposed solid inner core",
+      "doi": "10.1038/s41586-025-09361-9",
+      "url": "https://doi.org/10.1038/s41586-025-09361-9",
+      "review_depth": "abstract",
+      "consulted_material": "Primary abstract and the existing project catalog entry. Present-day seismic inference; no inner-core formation age established here."
+    },
+    "bi25correction": {
+      "label": "Bi et al. (2025) · Author correction",
+      "doi": "10.1038/s41586-025-09981-1",
+      "url": "https://doi.org/10.1038/s41586-025-09981-1",
+      "review_depth": "correction_notice",
+      "consulted_material": "Complete short correction notice: a Methods reference changes from 54 to 70. It does not withdraw the inner-core inference."
+    },
+    "berne26": {
+      "label": "Berné et al. (2026) · Tidal tomography and mantle asymmetry",
+      "doi": "10.1038/s41586-026-10893-x",
+      "url": "https://doi.org/10.1038/s41586-026-10893-x",
+      "review_depth": "selected_sections",
+      "consulted_material": "Primary article, selected sections on seasonal tidal-gravity inversion and model interpretation; see the existing catalog reading notes."
+    },
+    "steele23": {
+      "label": "Steele et al. (2023) · ALH 84001 magnetic components",
+      "doi": "10.1126/sciadv.ade9071",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10957104/",
+      "review_depth": "abstract",
+      "consulted_material": "Primary abstract consulted. Component counts, directional statistics and age associations still require a figure/table-level audit."
+    },
+    "mittelholz20": {
+      "label": "Mittelholz et al. (2020) · Early and late dynamo indicators",
+      "doi": "10.1126/sciadv.aba0513",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7195189/",
+      "review_depth": "abstract",
+      "consulted_material": "Primary abstract consulted. The age and depth assignments require a separate methodological assessment."
+    },
+    "mittelholz24": {
+      "label": "Mittelholz et al. (2024) · Weak local fields and dynamo history",
+      "doi": "10.1029/2023GL106788",
+      "url": "https://doi.org/10.1029/2023GL106788",
+      "review_depth": "selected_excerpt",
+      "consulted_material": "Publisher excerpt on compatibility of weak local fields with a longer dynamo. Full methods have not been audited in this assessment."
+    },
+    "milbury12": {
+      "label": "Milbury et al. (2012) · Hesperian magnetization",
+      "doi": "10.1029/2012JE004099",
+      "url": "https://doi.org/10.1029/2012JE004099",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "zhang25": {
+      "label": "Zhang et al. (2025) · Basin-era field intensity",
+      "doi": "10.3847/1538-4357/add3f3",
+      "url": "https://doi.org/10.3847/1538-4357/add3f3",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "roberts17": {
+      "label": "Roberts & Arkani-Hamed (2017) · Impact effects on the dynamo",
+      "doi": "10.1016/j.epsl.2017.08.031",
+      "url": "https://doi.org/10.1016/j.epsl.2017.08.031",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "hemingway21": {
+      "label": "Hemingway & Driscoll (2021) · Thermal and compositional histories",
+      "doi": "10.1029/2020JE006663",
+      "url": "https://doi.org/10.1029/2020JE006663",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "breuer03": {
+      "label": "Breuer & Spohn (2003) · Mantle evolution and dynamo",
+      "doi": "10.1029/2002JE001999",
+      "url": "https://doi.org/10.1029/2002JE001999",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "connerney05": {
+      "label": "Connerney et al. (2005) · Magnetic lineations and tectonics",
+      "doi": "10.1073/pnas.0507469102",
+      "url": "https://doi.org/10.1073/pnas.0507469102",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "reese10": {
+      "label": "Reese & Solomatov (2010) · Impact-driven thermal evolution",
+      "doi": "10.1016/j.icarus.2009.10.016",
+      "url": "https://doi.org/10.1016/j.icarus.2009.10.016",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "helffrich17": {
+      "label": "Helffrich et al. (2017) · A silicate dynamo proposal",
+      "doi": "10.1186/s40645-017-0135-8",
+      "url": "https://doi.org/10.1186/s40645-017-0135-8",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "samuel23": {
+      "label": "Samuel et al. (2023) · Basal molten silicate layer",
+      "doi": "10.1038/s41586-023-06601-8",
+      "url": "https://doi.org/10.1038/s41586-023-06601-8",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "hori13": {
+      "label": "Hori & Wicht (2013) · Dynamo shutdown and hysteresis",
+      "doi": "10.1016/j.pepi.2013.03.005",
+      "url": "https://doi.org/10.1016/j.pepi.2013.03.005",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "stanley08": {
+      "label": "Stanley et al. (2008) · Hemispheric dynamo",
+      "doi": "10.1126/science.1161119",
+      "url": "https://doi.org/10.1126/science.1161119",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "monteux15": {
+      "label": "Monteux et al. (2015) · Impact-induced hemispheric forcing",
+      "doi": "10.1016/j.pepi.2014.12.005",
+      "url": "https://doi.org/10.1016/j.pepi.2014.12.005",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "thomas18": {
+      "label": "Thomas et al. (2018) · Ancient field geometry",
+      "doi": "10.1002/2017JE005511",
+      "url": "https://doi.org/10.1002/2017JE005511",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "bultel25": {
+      "label": "Bultel et al. (2025) · Hydrothermal magnetization",
+      "doi": "10.1029/2023JE008111",
+      "url": "https://doi.org/10.1029/2023JE008111",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "mittelholz25": {
+      "label": "Mittelholz et al. (2025) · Hydrothermal demagnetization",
+      "doi": "10.1029/2024JE008832",
+      "url": "https://doi.org/10.1029/2024JE008832",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "gattacceca10": {
+      "label": "Gattacceca et al. (2010) · Shock remanence",
+      "doi": "10.1016/j.pepi.2010.06.009",
+      "url": "https://doi.org/10.1016/j.pepi.2010.06.009",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    },
+    "gong21": {
+      "label": "Gong & Wieczorek (2021) · Equivalent magnetic source depths",
+      "doi": "10.1029/2020JE006690",
+      "url": "https://doi.org/10.1029/2020JE006690",
+      "review_depth": "report_lead",
+      "consulted_material": "Reference identified in the supplied report. Not methodologically checked in this assessment; the proposed test is a project design, not a verified author conclusion."
+    }
+  },
+  "tests": [
+    {
+      "id": "T1",
+      "group": "chronology",
+      "title": "Early permanent shutdown",
+      "role": "Chronology hypothesis",
+      "claim": "The dynamo stopped permanently around 4.1–4.0 Ga.",
+      "test": "Search for younger, independently dated remanence attributable to a global field; compare active-field and no-dynamo predictions under the same recording and detection model.",
+      "required_inputs": "Magnetization ages, local crustal-field estimates, carrier histories and calibrated detection limits.",
+      "discriminator": "A secure younger global-field record would contradict permanent shutdown at the proposed age.",
+      "limits": "A weak or null local field cannot establish shutdown: erasure, burial, cancellation and insufficient resolution remain alternatives.",
+      "sources": [
+        "mittelholz20",
+        "steele24",
+        "mittelholz24"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "T2",
+      "group": "chronology",
+      "title": "Activity at early and late epochs",
+      "role": "Chronology constraint",
+      "claim": "Magnetic observations have been interpreted as activity at about 4.5 and 3.7 Ga.",
+      "test": "Audit the relation between mapped unit age, magnetic source depth and remanence acquisition age at both epochs.",
+      "required_inputs": "Unit chronology, subsurface geometry, component origin and age uncertainties.",
+      "discriminator": "Failure of an age-to-magnetization association removes that particular timing constraint.",
+      "limits": "Two active epochs do not demonstrate continuous activity in between; surface age need not date buried magnetization.",
+      "sources": [
+        "mittelholz20"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "T3",
+      "group": "chronology",
+      "title": "Long-lived activity with reversals",
+      "role": "Chronology and recording hypothesis",
+      "claim": "A reversing dynamo could leave weak basin fields through cancellation during cooling.",
+      "test": "Predict the same basins at several altitudes for reversing, stable, intermittent and extinguished histories; include noise and mineral-source uncertainty.",
+      "required_inputs": "Cooling and acquisition kernels, source mineralogy, excavation geometry, field histories and measurement response.",
+      "discriminator": "A shared observation model must reproduce both strong surrounding fields and weak basin interiors, including resolvable spatial structure.",
+      "limits": "The reversal rate is a model parameter, not a measured Martian time series. Mantle excavation alone is not tested under an absent dynamo in the 2025 abstract.",
+      "sources": [
+        "steele24",
+        "steele25"
+      ],
+      "execution_status": "planned",
+      "building_block": "The existing thermal column supplies synthetic temperature histories only; no remanence or orbital-field calculation is connected yet."
+    },
+    {
+      "id": "T4",
+      "group": "chronology",
+      "title": "Distinct ALH 84001 recording episodes",
+      "role": "Sample chronology constraint",
+      "claim": "Separate magnetic components may record different field directions during the rock’s history.",
+      "test": "Build a component-level ledger of carrier, petrographic context, direction, laboratory treatment and event-age association before comparing episodes.",
+      "required_inputs": "Published component measurements, age links, uncertainty and alteration/handling history; reuse permission for any data import.",
+      "discriminator": "Age-resolved, independent components can test directional changes; inconsistent component assignments weaken the inference.",
+      "limits": "Dates may be assigned by association, not measured for each magnetic grain. Components from one rock are not independent global events.",
+      "sources": [
+        "steele23"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "T5",
+      "group": "chronology",
+      "title": "Hesperian dynamo activity",
+      "role": "Chronology hypothesis",
+      "claim": "Some young magnetic sources could require activity after the main early interval.",
+      "test": "Separate intrusive emplacement ages from remanence ages and test whether local crustal fields could explain acquisition.",
+      "required_inputs": "Source geometry, intrusion chronology, carrier stability and local-field bounds.",
+      "discriminator": "A securely dated young global-field signal challenges early permanent shutdown.",
+      "limits": "Later activity can coexist with an earlier dynamo. Young surface units alone do not date the magnetic source.",
+      "sources": [
+        "milbury12"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "T6",
+      "group": "chronology",
+      "title": "Weak activity during basin formation",
+      "role": "Intensity hypothesis",
+      "claim": "The dynamo may have been active but weak while major basins formed.",
+      "test": "Fit field-intensity histories jointly with recording efficiency, instead of treating orbital contrast as a direct intensity ratio.",
+      "required_inputs": "Calibrated recording efficiencies, comparable source volumes, thermal histories and age constraints.",
+      "discriminator": "A weak-field history must explain independent intensity constraints as well as basin morphology.",
+      "limits": "Orbital anomaly amplitude also depends on geometry, mineral abundance and cancellation. The report’s numerical intensity claims remain unaudited.",
+      "sources": [
+        "zhang25",
+        "steele25"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "T7",
+      "group": "chronology",
+      "title": "Impact-controlled onset or interruption",
+      "role": "Causal chronology hypothesis",
+      "claim": "Major impacts could change the timing of core dynamo activity.",
+      "test": "Link an impact chronology to mantle/core energy evolution, then compare predicted interruptions with independently dated remanence.",
+      "required_inputs": "Impact energy deposition, core entropy budget, transport times and magnetic ages.",
+      "discriminator": "A proposed event must produce a physically sufficient core response at the required time.",
+      "limits": "Local impact demagnetization does not demonstrate core dynamo shutdown or restart.",
+      "sources": [
+        "roberts17"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "T8",
+      "group": "chronology",
+      "title": "Intermittent dynamo episodes",
+      "role": "Chronology hypothesis",
+      "claim": "Thermal or compositional evolution could permit more than one active interval.",
+      "test": "Calculate the energy budget and restart conditions, then compare a dated episode model against continuous and permanently extinct alternatives.",
+      "required_inputs": "Core/mantle histories, dynamo thresholds, hysteresis assumptions and dated recording windows.",
+      "discriminator": "An interval model must be energetically possible and predict observations beyond those used to choose the intervals.",
+      "limits": "A gap in preserved magnetic records is not evidence that the dynamo was off.",
+      "sources": [
+        "hemingway21",
+        "hori13"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D1",
+      "group": "engine",
+      "title": "Thermal convection under a stagnant lid",
+      "role": "Energy source",
+      "claim": "Core cooling may power convection without sustained plate tectonics.",
+      "test": "Evaluate entropy available for dynamo action across defensible core conductivity and mantle heat-flow histories.",
+      "required_inputs": "Core composition, thermal conductivity, initial temperatures, mantle rheology and energy/entropy equations.",
+      "discriminator": "A specified parameter set fails if it cannot power the independently required active intervals.",
+      "limits": "Lifetime depends on assumptions. A universal 3.7 Ga cutoff does not follow from the conductivity paper reviewed here.",
+      "sources": [
+        "breuer03",
+        "hemingway21",
+        "hsieh24"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D2",
+      "group": "engine",
+      "title": "Early mobile lid followed by stagnation",
+      "role": "Mantle boundary history",
+      "claim": "Early mobile-lid heat loss might support a dynamo before a transition to a stagnant lid.",
+      "test": "Compare the thermal consequences with independent tectonic and chronological observations under the same interior parameters.",
+      "required_inputs": "Lid-transition timing, heat transport, crustal reconstruction and dynamo constraints.",
+      "discriminator": "The proposed transition must fit both the energy budget and independent geological evidence.",
+      "limits": "Magnetic stripes alone do not establish plate tectonics; lithological contrasts and acquisition histories can produce structure.",
+      "sources": [
+        "breuer03",
+        "connerney05"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D3",
+      "group": "engine",
+      "title": "Impact suppression of convection",
+      "role": "Perturbation mechanism",
+      "claim": "Impact heating or stratification could suppress the core dynamo.",
+      "test": "Propagate impact heating through a core/mantle evolution calculation and compare suppression duration with dated records.",
+      "required_inputs": "Deposited energy, mixing, stable stratification and core cooling after the event.",
+      "discriminator": "A claimed shutdown requires enough suppression for the relevant interval within allowable impact parameters.",
+      "limits": "Crustal shock resetting and global loss of dynamo power are separate processes.",
+      "sources": [
+        "roberts17"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D4",
+      "group": "engine",
+      "title": "Impact-triggered dynamo activity",
+      "role": "Perturbation mechanism",
+      "claim": "An impact could create conditions for a transient dynamo episode.",
+      "test": "Predict the onset, duration and power of the episode, including the transport delay between impact and core response.",
+      "required_inputs": "Impact history, mantle/core coupling and an independently constrained magnetic recording window.",
+      "discriminator": "An episode shorter than a securely required continuous recording interval would fail that timing test.",
+      "limits": "A short episode does not refute all late activity; the relevant event ages must first be matched.",
+      "sources": [
+        "reese10"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D5",
+      "group": "engine",
+      "title": "Dynamo in a silicate magma ocean",
+      "role": "Alternative energy source and location",
+      "claim": "An early conducting silicate layer might generate a magnetic field.",
+      "test": "Test electrical conductivity, convection and field amplitude for a specified layer lifetime against early recording constraints.",
+      "required_inputs": "Silicate conductivity, melt depth, convective speeds, cooling history and early magnetization ages.",
+      "discriminator": "The layer must sustain induction and a surface field during the recording interval.",
+      "limits": "A present-day solid inner core does not by itself exclude an ancient dynamo outside the metallic core.",
+      "sources": [
+        "helffrich17",
+        "bi25"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D6",
+      "group": "engine",
+      "title": "Basal molten layer as a thermal blanket",
+      "role": "Boundary condition, not a dynamo engine",
+      "claim": "A molten silicate layer may alter heat extraction from the core.",
+      "test": "Include the layer in a coupled thermal/entropy model and compare with a no-layer case using identical other assumptions.",
+      "required_inputs": "Layer thickness, material properties, seismic constraints and heat transport.",
+      "discriminator": "A particular layer history fails if it prevents independently required dynamo activity or violates interior constraints.",
+      "limits": "Its present existence would not establish its ancient thickness or thermal effect. Do not add this as an independent dynamo mechanism.",
+      "sources": [
+        "samuel23",
+        "hsieh24"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D7",
+      "group": "engine",
+      "title": "Inner-core compositional buoyancy",
+      "role": "Energy source",
+      "claim": "Solidification could release buoyancy and contribute to dynamo power.",
+      "test": "Jointly model inner-core growth, light-element partitioning and the entropy budget before comparing the active intervals.",
+      "required_inputs": "Core composition, phase diagram, growth age and present-day seismic bounds.",
+      "discriminator": "Growth must begin early enough and supply enough buoyancy for the proposed recording interval.",
+      "limits": "A proposed present-day inner core does not date its nucleation. The 2025 correction changes a reference, not the detection claim.",
+      "sources": [
+        "hemingway21",
+        "bi25",
+        "bi25correction"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D8",
+      "group": "engine",
+      "title": "Iron snow and remelting",
+      "role": "Energy and stratification mechanism",
+      "claim": "Iron crystallization near the top of the core could affect compositional convection.",
+      "test": "Trace snow formation, settling and remelting with a composition-dependent phase diagram and entropy balance.",
+      "required_inputs": "Core composition, liquidus, transport and thermal evolution.",
+      "discriminator": "The selected regime must sustain the required field without imposing incompatible stratification.",
+      "limits": "A threshold from a binary alloy cannot be applied universally to Mars’s multicomponent core.",
+      "sources": [
+        "hemingway21"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D9",
+      "group": "engine",
+      "title": "Conductivity and stable stratification",
+      "role": "Material constraint, not a separate engine",
+      "claim": "Thermal conductivity influences conductive losses and the onset of convection.",
+      "test": "Propagate measurement and extrapolation uncertainties into coupled thermal histories; state elapsed time and absolute ages separately.",
+      "required_inputs": "Solid-to-liquid extrapolation, composition, pressure/temperature dependence and mantle parameters.",
+      "discriminator": "An energy source must clear the entropy requirement over the inferred active interval for the chosen parameters.",
+      "limits": "Hsieh et al. extrapolate laboratory results to liquid-core conditions. Mantle assumptions also change the modeled lifetime.",
+      "sources": [
+        "hsieh24"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D10",
+      "group": "engine",
+      "title": "Light-oxide exsolution",
+      "role": "Candidate energy source",
+      "claim": "Exsolution of light components could provide buoyancy if permitted by Martian core chemistry.",
+      "test": "First establish a Mars-relevant solubility and partitioning model, then calculate the available energy through time.",
+      "required_inputs": "Experimental phase relations, core composition, cooling path and energy conversion.",
+      "discriminator": "If admissible compositions do not exsolve the necessary mass at the required time, that specified mechanism fails.",
+      "limits": "This is an unverified lead in the supplied report. No dedicated Mars-specific supporting primary source has been established in this assessment.",
+      "sources": [],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "D11",
+      "group": "engine",
+      "title": "Subcritical behavior and hysteresis",
+      "role": "Dynamo response, not an energy source",
+      "claim": "A field might persist below its onset threshold or restart at a different threshold.",
+      "test": "Perform calibrated magnetohydrodynamic parameter sweeps with controlled initial states and available power.",
+      "required_inputs": "Dynamo equations, diffusivities, boundary conditions, convergence checks and physical scaling.",
+      "discriminator": "A proposed hysteresis history must be reproducible and compatible with the interior energy budget.",
+      "limits": "Hysteresis cannot supply missing energy; a conductive crustal column does not simulate this mechanism.",
+      "sources": [
+        "hori13"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "G1",
+      "group": "geometry",
+      "title": "Hemispheric dynamo in a spherical shell",
+      "role": "Field geometry",
+      "claim": "Uneven heat extraction at the core–mantle boundary could concentrate field in one hemisphere.",
+      "test": "Compare time-integrated magnetization with the spatial observations over realistic acquisition windows.",
+      "required_inputs": "Boundary heat-flow pattern, dynamo solution, reversal history and acquisition durations.",
+      "discriminator": "The model must retain sufficient hemispheric contrast and amplitude after the same recording and observation filters.",
+      "limits": "Instantaneous field asymmetry is not the same as preserved crustal asymmetry. Recording efficiency can mimic field geometry.",
+      "sources": [
+        "stanley08",
+        "yan25"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "G2",
+      "group": "geometry",
+      "title": "Hemispheric dynamo in a full sphere",
+      "role": "Field geometry and early boundary state",
+      "claim": "A core without a solid inner core could generate a hemispheric field under asymmetric forcing.",
+      "test": "Reproduce the dependence on forcing and averaging window, then connect to a dated acquisition kernel.",
+      "required_inputs": "Full-sphere solutions, forcing amplitudes, polarity histories and rock cooling durations.",
+      "discriminator": "Compare models using the same averaging statistic, acquisition window and spatial observation operator.",
+      "limits": "Not every simulated regime reverses. Averaging over a limited interval can strengthen asymmetry; averaging many reversals can weaken the field. Present structure does not fix early structure.",
+      "sources": [
+        "yan25",
+        "bi25"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "G3",
+      "group": "geometry",
+      "title": "Impact-driven hemispheric forcing",
+      "role": "Cause of field geometry",
+      "claim": "An impact could generate asymmetric core–mantle heat flow.",
+      "test": "Model the lifetime and transport of the thermal anomaly before coupling it to field generation and recording.",
+      "required_inputs": "Impact geometry, mantle mixing, boundary heat-flow evolution and remanence ages.",
+      "discriminator": "The anomaly must reach the core boundary with adequate amplitude and duration at the recording time.",
+      "limits": "A present mantle asymmetry is not a dated measurement of the ancient core-boundary condition.",
+      "sources": [
+        "monteux15",
+        "berne26"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "G4",
+      "group": "geometry",
+      "title": "Axial mean field with an independent reversal history",
+      "role": "Field geometry",
+      "claim": "A mean field aligned with the rotation axis may have stable or changing polarity.",
+      "test": "Infer palaeodirections with source-geometry and local-rotation uncertainty; fit polarity changes separately.",
+      "required_inputs": "Oriented magnetic directions, ages, crustal rotations and source assumptions.",
+      "discriminator": "A single axial geometry must be compared with alternatives after propagating the same directional uncertainties.",
+      "limits": "Axial does not mean non-reversing. A reversal changes polarity and does not by itself refute axial symmetry.",
+      "sources": [
+        "thomas18",
+        "steele23"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "G5",
+      "group": "geometry",
+      "title": "Lineations from reversals and crustal growth",
+      "role": "Recording pattern and tectonic interpretation",
+      "claim": "Spatial magnetic bands may record polarity changes as crust forms.",
+      "test": "Test predicted spacing, paired structure and timing against lithology and independent tectonic evidence.",
+      "required_inputs": "Resolved vector fields, crustal ages, geological boundaries and acquisition models.",
+      "discriminator": "A proposed growth history must predict the observed pattern beyond the bands used to fit it.",
+      "limits": "Reversals do not prove seafloor spreading, and lineations can have non-tectonic sources.",
+      "sources": [
+        "connerney05"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "G6",
+      "group": "geometry",
+      "title": "Multipolar or non-axial field",
+      "role": "Field geometry",
+      "claim": "Non-dipolar fields may explain directional or spatial complexity.",
+      "test": "Compare field geometries with identical source and uncertainty models using observations held out from fitting.",
+      "required_inputs": "Directional data, source depths, recording times and local rotations.",
+      "discriminator": "Additional field complexity should improve independent predictions, not merely fit uncertain source parameters.",
+      "limits": "Different ages, local rotations and poorly constrained source geometry can mimic non-axial behavior.",
+      "sources": [
+        "helffrich17",
+        "yan25"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    },
+    {
+      "id": "C3a",
+      "group": "recording",
+      "title": "Hydrothermal creation of remanence",
+      "role": "Rock-recording process",
+      "claim": "Fluid-driven mineral growth could create or modify a magnetic record.",
+      "test": "Date magnetic mineral growth and test whether the inferred fluid chemistry and available field permit acquisition.",
+      "required_inputs": "Carrier mineralogy, reaction path, alteration age and field origin.",
+      "discriminator": "A proposed chemical remanence requires the appropriate carrier to grow during the candidate field interval.",
+      "limits": "Surface evidence for water does not specify deep carrier abundance; primary/secondary remanence does not uniquely identify the field source.",
+      "sources": [
+        "bultel25"
+      ],
+      "execution_status": "planned",
+      "building_block": "Existing alteration maps provide spatial context only; no fluid-reaction or chemical-remanence model has been run."
+    },
+    {
+      "id": "C3b",
+      "group": "recording",
+      "title": "Hydrothermal destruction of remanence",
+      "role": "Rock-recording process",
+      "claim": "Alteration could remove or transform magnetic carriers and weaken the record.",
+      "test": "Compare alteration and magnetic contrasts while controlling geology, depth and resolution; model carrier-specific reactions.",
+      "required_inputs": "Fluid chemistry, mineral transformations, timing and matched spatial sampling.",
+      "discriminator": "Destruction must affect enough source volume at the right time to explain the contrast without contradicting mineralogical observations.",
+      "limits": "Fluids may create as well as destroy carriers. Spatial association alone is not a causal test.",
+      "sources": [
+        "mittelholz25",
+        "bultel25"
+      ],
+      "execution_status": "planned",
+      "building_block": "The regional study measures contrasts and sensitivity to reference terrain; it does not demonstrate hydrothermal erasure."
+    },
+    {
+      "id": "C3c",
+      "group": "recording",
+      "title": "Shock remanence and shock resetting",
+      "role": "Rock-recording process",
+      "claim": "An impact may acquire, erase or modify remanence through pressure and associated heating.",
+      "test": "Use carrier-specific pressure/coercivity constraints with an impact pressure–temperature history and an explicit ambient field.",
+      "required_inputs": "Shock path, grain properties, field origin, relaxation and post-shock preservation.",
+      "discriminator": "The modeled shock response must reproduce component survival and acquisition for the same minerals and pressures.",
+      "limits": "A thermal pulse is not a shock-remanence model. Laboratory effects require mineral-specific scaling.",
+      "sources": [
+        "gattacceca10"
+      ],
+      "execution_status": "planned",
+      "building_block": "The existing reheating scenario is a synthetic conductive thermal experiment; it includes no pressure or shock physics."
+    },
+    {
+      "id": "C5",
+      "group": "recording",
+      "title": "Burial, mineralogy and observation height",
+      "role": "Recording and observation alternatives",
+      "claim": "A common dynamo could leave different measured fields because the magnetic archives and viewing geometry differ.",
+      "test": "Compare shared-field and different-field histories using the same source geometry, acquisition and instrument response; perform signal-injection recovery tests.",
+      "required_inputs": "Source volume, mineral abundance, burial, observation altitude, noise and recording history.",
+      "discriminator": "A shared-field model must predict independent regional contrasts with physically admissible source properties.",
+      "limits": "Equivalent magnetic depths are not directly layer thicknesses or Curie depths. A local surface measurement is not a global hemispheric mean.",
+      "sources": [
+        "gong21",
+        "steele24"
+      ],
+      "execution_status": "planned",
+      "building_block": "Regional altitude/reference sensitivity and the synthetic thermal gate are available separately. No joint magnetic inversion has been run."
+    },
+    {
+      "id": "H",
+      "group": "interior",
+      "title": "Present-day degree-one mantle structure",
+      "role": "Interior boundary constraint",
+      "claim": "A present thermal asymmetry may constrain interior evolution models relevant to the dichotomy.",
+      "test": "Compare evolution histories that reach the inferred present structure and test their ancient magnetic predictions separately.",
+      "required_inputs": "Tidal inversion uncertainties, material properties, mantle evolution and independently dated remanence.",
+      "discriminator": "A history should fit both present interior constraints and ancient observations without treating them as simultaneous measurements.",
+      "limits": "Present mantle structure does not directly demonstrate ancient core heat flow, a particular dynamo geometry or crustal demagnetization.",
+      "sources": [
+        "berne26"
+      ],
+      "execution_status": "planned",
+      "building_block": "No corresponding physical model has been run in this project."
+    }
+  ]
+}

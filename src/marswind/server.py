@@ -30,6 +30,11 @@ def comparison_index():
     return FileResponse(ROOT / 'web/comparison.html')
 
 
+@app.get('/research/dynamo')
+def dynamo_index():
+    return FileResponse(ROOT / 'web/dynamo.html')
+
+
 @app.get('/research/hypotheses')
 def ideas_index():
     return FileResponse(ROOT / 'web/ideas.html')
