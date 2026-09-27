@@ -6,11 +6,15 @@ from pathlib import Path
 import shlex
 import shutil
 import subprocess
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'src'))
+from marswind.source_policy import require_mcd_authorization
 
 
 def main():
+    require_mcd_authorization(ROOT)
     settings_path = ROOT / 'local_settings.json'
     settings = json.loads(settings_path.read_text()) if settings_path.exists() else {}
     mcd = Path(os.environ.get('MCD_ROOT', settings.get('MCD_ROOT', Path.home() / 'MCD_6.1'))).resolve()

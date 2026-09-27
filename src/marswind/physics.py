@@ -44,7 +44,7 @@ def acoustic_modes(z, rho, c, wind, horizontal_degree=150, count=6):
     -(a p')' + k² a p = omega² b p, a=1/rho, b=1/(rho*c²).
     P1 FEM with positive lumped mass; no surface/solid coupling.
     First-order diagonal advection only: delta_omega = k * <U>_b.
-    This is a benchmark/sensitivity operator, NOT the report's global modes.
+    This is a benchmark/sensitivity operator, not a coupled solid-planet/atmosphere model.
     """
     z, rho, c, wind = map(lambda x: np.asarray(x, dtype=float), (z, rho, c, wind))
     n = len(z)

@@ -4,7 +4,7 @@
 
 **A personal project by Charlotte Crocicchia: exploring Mars through physical questions, reproducible calculations and understandable scientific tools.**
 
-I started this project to build on my internship work on Martian winds and acoustics. I want to make useful, thoughtful and visually engaging tools for Martian research: start from the data, test assumptions, and make the results easier to explore.
+I started this independent project to investigate Martian winds and acoustics with documented scientific sources and original analysis code. I want to make useful, thoughtful and visually engaging tools for Martian research: start from the data, test assumptions, and make the results easier to explore.
 
 Mars Wind Lab is part of my broader personal interest in **Mars and its hemispheric dichotomy** — the contrast between the northern lowlands and southern highlands ([NASA overview](https://science.nasa.gov/photojournal/martian-dichotomy-boundary/)). It brings together an **atmosphere and waves laboratory** and a **dichotomy evidence atlas** covering interior structure, impacts, meteorite magnetism, geological history and mission data. The research atlas helps define testable questions; the current code does not model the origin of the dichotomy or establish a causal link between winds and internal structure.
 
@@ -56,7 +56,7 @@ The **Atmosphere** section provides direct altitude and season sliders, seasonal
 | Why does the season matter? | Two seasons at the same location and local solar time | Separate wind and thermodynamic contributions to the change in effective sound speed |
 | Can we use acoustic rays? | Reference wavelength versus the vertical density scale | Examine a necessary scale-separation consideration; this diagnostic alone cannot validate ray theory |
 
-The explorer adds a flat/globe atlas, vertical profiles, latitude–altitude sections, seasonal cycles, shear and scientific exports. A scalar modal benchmark and an optional internship-archive reader are available under **Advanced research**.
+The explorer adds a flat/globe atlas, vertical profiles, latitude–altitude sections, seasonal cycles, shear and scientific exports. An independently implemented scalar modal benchmark is available under **Advanced research**.
 
 ![Three controlled atmospheric experiments above InSight, sampled from MCD 6.1](docs/figures/experiments.png)
 
@@ -64,7 +64,9 @@ The explorer adds a flat/globe atlas, vertical profiles, latitude–altitude sec
 
 ## Installation
 
-This repository provides the application code. **Install MCD 6.1 and its datasets separately** through the [MCD producers](https://www-mars.lmd.jussieu.fr/mars/access.html). Cloning this repository alone does not provide the atmospheric fields. Internship archives are optional and are not distributed.
+This repository provides the application code. **Install MCD 6.1 and its datasets separately** through the [MCD producers](https://www-mars.lmd.jussieu.fr/mars/access.html). Cloning this repository alone does not provide the atmospheric fields. Private internship files and scripts are excluded from the implementation; see [Source policy](docs/SOURCE_POLICY.md).
+
+Before compiling, record the authorized installation in the ignored `local_settings.json`: `{"MCD_ROOT": "/path/to/MCD_6.1", "MCD_AUTHORIZED": true}`. Set the authorization flag only when the installation is permitted for your use; a copied internship installation is not automatically authorized.
 
 Requirements: Python ≥3.11, `gfortran`, and NetCDF C/Fortran libraries. On macOS: `brew install gcc netcdf-fortran`.
 
@@ -95,18 +97,18 @@ On an already configured Mac, double-click `Launch Mars Wind.command` to restart
 - Guided experiments hold **local solar time** fixed. The atlas also supports a simultaneous map referenced to solar time at 0° E. These are different experiments.
 - Climatology / average EUV does not reconstruct a particular event. RMS fields describe model variability, not observational confidence intervals.
 - A column and its effective sound speed do not determine a source–receiver path, arrival time or SEIS detection.
-- The experimental modal benchmark uses rigid walls and a first-order diagonal advective correction. It does not reproduce the internship’s global modes, acoustic losses or ground coupling.
+- The experimental modal benchmark uses rigid walls and a first-order diagonal advective correction. It does not reproduce coupled solid-planet/atmosphere modes, acoustic losses or ground coupling.
 
 ## Reproduction and contributions
 
 ```bash
-# Analytic checks; no MCD or internship archives required
+# Analytic checks; no external MCD installation required
 python -m pytest -q -m 'not integration'
 # Includes local integration checks when MCD is installed
 python -m pytest -q
 # Three experiment plots and local study notes
 python scripts/illustrate_experiments.py
-# Extended research bundle; also requires the original archives
+# Atmospheric research bundle; requires an authorized MCD installation
 python scripts/reproduce.py
 ```
 
@@ -121,11 +123,11 @@ Useful contributions include analytic cases, physical conventions, independent v
 | `scripts/` | Compilation and figure reproduction |
 | `docs/` | Usage, method, validation and research directions |
 
-Caches, research outputs, machine-specific paths, MCD files and internship archives are excluded from Git. Provenance fingerprints identify queries and code. The NetCDF inventory fingerprint covers names, sizes and modification times; **it is not a hash of the full dataset contents**. See [Usage](docs/USAGE.md) for `MARS_LEGACY_ROOT` and local configuration.
+Caches, research outputs, machine-specific paths, MCD files and private source material are excluded from Git. Provenance fingerprints identify queries and code. The NetCDF inventory fingerprint covers names, sizes and modification times; **it is not a hash of the full dataset contents**. See [Usage](docs/USAGE.md) for `MCD_ROOT` and local configuration.
 
 ## Credits and data terms
 
-A personal project by **Charlotte Crocicchia**, developed from questions encountered during her internship. This repository is not an official product of IPGP, JPL, NASA or the MCD teams.
+A personal project by **Charlotte Crocicchia**, developed independently from public scientific literature and authorized data. This repository is not an official product of IPGP, JPL, NASA or the MCD teams.
 
 Atmospheric data come from the **Mars Climate Database**, developed by LMD / IPSL with the Open University, Oxford and IAA. [MCD terms](https://www-mars.lmd.jussieu.fr/mars/access.html) require attribution and keeping the producers informed of uses and developments; commercial use requires specific authorization. Publishing this application does not change those terms.
 
@@ -135,4 +137,4 @@ Atmospheric data come from the **Mars Climate Database**, developed by LMD / IPS
 
 The decorative Mars backdrop is a Viking mosaic credited to NASA/JPL-Caltech; see [visual asset credits](docs/ASSETS.md). It is separate from the numerical maps.
 
-Original application code is provided under the [MIT licence](LICENSE). Plotly.js retains its [own MIT notice](web/PLOTLY-LICENSE.txt). Neither licence applies to external MCD data, MCD software or internship archives.
+Original application code is provided under the [MIT licence](LICENSE). Plotly.js retains its [own MIT notice](web/PLOTLY-LICENSE.txt). Neither licence applies to external MCD data or MCD software.

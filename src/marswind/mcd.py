@@ -18,6 +18,8 @@ LOCK = threading.Lock()
 
 
 def installation():
+    from .source_policy import require_mcd_authorization
+    require_mcd_authorization(ROOT)
     build = ROOT/'build/mcd_build.json'
     if not build.exists() or not (ROOT/'build/sample_mcd').exists():
         raise RuntimeError('Build the engine with python scripts/build_mcd.py.')

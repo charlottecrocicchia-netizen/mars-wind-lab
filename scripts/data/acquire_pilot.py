@@ -7,8 +7,14 @@ from pathlib import Path
 import hashlib
 import json
 import urllib.request
+import sys
 
 ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT/'src'))
+from marswind.source_policy import require_source_permission
+
+CATALOG_PERMISSION={'id':'revised_crater_catalog','reuse_approved':False,
+    'permission_note':'The source repository has no explicit reuse license. Resolve the catalogue permission before acquiring this bundle.'}
 OUT=ROOT/'data/observations/raw/pilot'
 SOURCES={
     'newton.html':'https://planetarynames.wr.usgs.gov/Feature/4236',
@@ -20,6 +26,7 @@ SOURCES={
 }
 
 def main():
+    require_source_permission(CATALOG_PERMISSION)
     OUT.mkdir(exist_ok=True,parents=True)
     records=[]
     for name,url in SOURCES.items():

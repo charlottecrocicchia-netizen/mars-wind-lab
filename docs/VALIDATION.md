@@ -4,7 +4,7 @@ Locally checked with Python 3.14, gfortran 15.1 and MCD 6.1 on macOS. Exact Pyth
 
 ## Numerical checks
 
-Run `python -m pytest -q`. The current suite contains 53 cases: 46 checks that run without MCD or raw scientific downloads and 7 optional integration checks requiring the local MCD installation (including an optional archive check).
+Run `python -m pytest -q`. The suite separates analytic/API checks from optional integration checks requiring an authorized local MCD installation.
 
 - Sound speed, invalid thermodynamic states and four cardinal projections.
 - Known shear on a nonuniform geometric grid and SI conversion.
@@ -18,11 +18,10 @@ Run `python -m pytest -q`. The current suite contains 53 cases: 46 checks that r
 - MCD seasonal periodicity, equation of state, terrain masking and consistent map/profile fields.
 - API responses, NetCDF reopening, CSV metadata and PNG signature.
 - Real MCD columns, reverse-direction symmetry and English study notes with reproducible parameters.
-- Optional archive shapes, radial boundaries and normalization diagnostics.
 
 An independent reference distributed with MCD, `REF_OUTPUT_K9`, is sampled at 150 km, 5° E, 15° N, Ls≈97.9° and local time≈7.47 h. Reference values include p≈4.79×10⁻⁶ Pa, T≈193 K, u≈−306 m/s and v≈−79.9 m/s. The adapter agrees within 0.5%; rounded reference timestamps do not support a bit-for-bit claim.
 
-The GitHub workflow runs analytic/API validation on Python 3.11 and 3.14 without MCD or internship archives. It does not claim to validate the external data or Fortran sampler in CI.
+The GitHub workflow runs analytic/API validation on Python 3.11 and 3.14 without MCD. It does not claim to validate the external data or Fortran sampler in CI.
 
 ## Interface checks
 
@@ -32,11 +31,11 @@ Plotly is served locally; its cloud-share button is removed. Study notes and plo
 
 ## Reproducible examples
 
-`python scripts/illustrate_experiments.py` creates the three-panel overview and English study notes. It requires MCD but not the archives. `python scripts/reproduce.py` creates the extended atmospheric and archived-mode research bundle, requiring both external sources.
+`python scripts/illustrate_experiments.py` creates the three-panel overview and English study notes. Both it and `python scripts/reproduce.py` use authorized MCD fields and the project’s own scalar benchmark. Neither reads private internship material.
 
 The reduced-model default case has a grid-frequency difference below 0.1% between 101 and 201 samples for its six modes. This checks discretization sensitivity within that formulation, not boundary conditions or the full propagation model.
 
-There is no TWINS validation, SEIS inversion, complete GSH coupling matrix or recalculation of the original global modes yet. See [Scientific method](SCIENTIFIC_METHOD.md) for interpretation and [Research directions](ROADMAP.md) for proposed development.
+There is no TWINS validation, SEIS inversion, complete GSH coupling matrix or a coupled solid-planet/atmosphere mode solver yet. See [Scientific method](SCIENTIFIC_METHOD.md) for interpretation and [Research directions](ROADMAP.md) for proposed development.
 
 ## Animation and video checks
 

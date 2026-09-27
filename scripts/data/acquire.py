@@ -3,8 +3,10 @@ Raw products stay in ignored data/observations/raw; only metadata is published.
 """
 from pathlib import Path
 from datetime import datetime,timezone
-import argparse,hashlib,json,urllib.request,concurrent.futures,zipfile
+import argparse,hashlib,json,urllib.request,concurrent.futures,zipfile,sys
 ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0,str(ROOT/'src'))
+from marswind.source_policy import require_source_permission
 RAW=ROOT/'data/observations/raw';RAW.mkdir(parents=True,exist_ok=True)
 OUT=ROOT/'research/data';OUT.mkdir(exist_ok=True)
 REGISTRY=ROOT/'scripts/data/sources.json'
@@ -30,6 +32,7 @@ def validate_payload(path,name):
         if isinstance(data,dict) and ('error' in data or data.get('exceededTransferLimit')):raise ValueError('API error or incomplete transfer')
 
 def acquire(source,large=False):
+    require_source_permission(source)
     result=dict(source,checked_at=datetime.now(timezone.utc).isoformat(),files=[])
     try:
         if source.get('api'):
@@ -77,6 +80,7 @@ def acquire(source,large=False):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--only',nargs='*');p.add_argument('--large',action='store_true');args=p.parse_args()
     sources=json.loads(REGISTRY.read_text());chosen=[s for s in sources if not args.only or s['id'] in args.only]
+    for source in chosen:require_source_permission(source)
     output=OUT/'manifest.json';previous={s['id']:s for s in json.loads(output.read_text())} if output.exists() else {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         futures=[pool.submit(acquire,s,args.large) for s in chosen]

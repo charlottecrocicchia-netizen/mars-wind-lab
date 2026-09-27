@@ -61,20 +61,6 @@ def test_http_products_validation_and_portable_exports():
     assert len(png.content)>10000
 
 
-def test_archived_modes_preserve_surface_and_normalization_diagnostics():
-    from marswind.legacy import DEFAULT,load_archived_modes
-    if not DEFAULT.is_dir():pytest.skip('Legacy eigenfunctions absent')
-    result=load_archived_modes()
-    assert result['surface_radius_km']==3383
-    assert len(result['modes'])==10
-    assert len(result['provenance']['files'])==40
-    for m in result['modes']:
-        assert m['altitude_km'][0]==0
-        assert m['altitude_km'][-1]==200
-        assert 0<=m['lower_10km_fraction_of_atmosphere']<=1
-        assert m['normalization_integral_ratio']>1
-        assert np.max(m['U']['magnitude'])==pytest.approx(1)
-
 
 def test_official_distributed_k9_reference():
     # Independent bundled reference: mcd/testcase/REF_OUTPUT_K9.

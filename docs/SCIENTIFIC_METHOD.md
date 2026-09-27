@@ -42,13 +42,6 @@ For uniform flow, `(ω − k·W)² = c²k²` gives `δω = k·W` at first order.
 
 Non-Hermiticity alone proves neither attenuation nor complex eigenvalues. Attenuation requires a defensible operator, inner product, boundary fluxes and dissipation or exchange terms. This benchmark does not infer damping from a uniform wind.
 
-## Optional archived eigenfunctions
-
-The read-only archive reader preserves complex U/V components and duplicate radial samples at discontinuities. The archived model surface is at radius 3383 km; its reference must not be silently replaced by MCD’s areoid. Displayed shapes are normalized individually by their maximum modulus.
-
-Modal integrals depend on whether the vector-harmonic V component is scaled. The reader compares coefficients 2 and ℓ(ℓ+1) to expose sensitivity to that convention; the comparison does not choose the correct convention by itself. Original density scaling is not certified as SI. Only shapes and conditional ratios are reported. An amplitude maximum is not total energy; atmospheric inertia fractions do not predict ground excitation or detectability.
-
-Reconstruct the original solver conventions, frequency catalogue, radial model and derivative units before calculating a global coupling matrix. Preserve complex phase through Fourier and spherical-harmonic projections. Never extend atmospheric winds into the solid or beyond the available domain by constant extrapolation.
 
 ## Sources and next validation steps
 

@@ -26,15 +26,15 @@ The explanation below the plot describes axes and curves. **Turn it into a scien
 
 The atlas provides spatial context. Drag the **Altitude** slider above the map, then click the map once it updates. **Find the fastest sampled wind** selects the maximum horizontal speed on the current grid and opens its vertical structure. This point depends on altitude, season and time convention.
 
-Experimental modes and archives are under **Advanced research**. Their interpretation requires the precautions in [Scientific method](SCIENTIFIC_METHOD.md).
+Experimental modes are under **Advanced research**. Their interpretation requires the precautions in [Scientific method](SCIENTIFIC_METHOD.md).
 
 ## Local data configuration
 
 `MCD_ROOT` points to a folder containing `mcd/MCD.F90` and `data/`. Compilation records this location in `build/mcd_build.json`, which is excluded from Git.
 
-`MARS_LEGACY_ROOT` points to the folder containing `marslmd_modes_200km_fbvire`. These archives are required only for the archive view and historical reproduction script. With MCD installed, the rest of the laboratory works without them.
+Private internship files and scripts are not inputs to this project. See [Source policy](SOURCE_POLICY.md).
 
-For persistent local configuration, a root-level `local_settings.json` may contain these two path keys. Git ignores this file. Environment variables take precedence. Recompile the adapter after changing the MCD source version.
+For persistent local configuration, a root-level `local_settings.json` contains this path key. It must also contain `"MCD_AUTHORIZED": true` after the owner has established permission to use this MCD installation. Without this explicit authorization, compilation and model calls are disabled; the saved research views remain available. Git ignores this file. Environment variables take precedence. Recompile the adapter after changing the MCD source version.
 
 ## Mars in motion: direct controls and movies
 

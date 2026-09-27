@@ -83,5 +83,5 @@ def modal_product(lon=135.623,lat=4.502,ls=255,lt=12,time_mode='universal',azimu
     result['provenance'].update({'horizontal_degree':degree,'horizontal_reference_radius_m':3389500.,
                                 'modal_model':'scalar pressure P1, lumped mass, rigid endpoints',
                                 'fine_nodes':201,'coarse_nodes':101,'top_altitude_areoid_km':200})
-    result['assumptions']='Experimental scalar pressure column; rigid top and bottom, no buoyancy, loss or solid coupling. Diagonal first-order advection only. Not the normal modes of the internship report.'
+    result['assumptions']='Experimental scalar pressure column; rigid top and bottom, no buoyancy, loss or solid coupling. Diagonal first-order advection only. Coupled solid-planet/atmosphere modes are not modeled.'
     return result

@@ -6,7 +6,8 @@
     "title": "Global crustal magnetic field",
     "paper": "https://doi.org/10.1029/2018JE005854",
     "landing_url": "https://zenodo.org/records/3876714",
-    "limitation": "MGS and MAVEN inversion, degree 134; not direct surface measurements."
+    "limitation": "MGS and MAVEN inversion, degree 134; not direct surface measurements.",
+    "reuse_approved": true
   },
   {
     "id": "magnetic_depth",
@@ -15,7 +16,8 @@
     "title": "Equivalent magnetic source depths",
     "paper": "https://doi.org/10.1029/2020JE006690",
     "landing_url": "https://zenodo.org/records/4686358",
-    "limitation": "Overlapping 20-degree windows; rejected fits and negative estimates require explicit flags."
+    "limitation": "Overlapping 20-degree windows; rejected fits and negative estimates require explicit flags.",
+    "reuse_approved": true
   },
   {
     "id": "crustal_models",
@@ -24,7 +26,8 @@
     "title": "InSight crustal thickness archive",
     "paper": "https://doi.org/10.1029/2022JE007298",
     "landing_url": "https://zenodo.org/records/6477509",
-    "limitation": "An ensemble conditional on density, seismic and interior assumptions."
+    "limitation": "An ensemble conditional on density, seismic and interior assumptions.",
+    "reuse_approved": true
   },
   {
     "id": "ejection_ages",
@@ -33,7 +36,8 @@
     "title": "Meteorite ejection-age compilation",
     "paper": "https://doi.org/10.1126/sciadv.adn2378",
     "landing_url": "https://zenodo.org/records/10028641",
-    "limitation": "Literature through July 2023; samples and ejection groups are not independent sites."
+    "limitation": "Literature through July 2023; samples and ejection groups are not independent sites.",
+    "reuse_approved": true
   },
   {
     "id": "ejection_models",
@@ -42,7 +46,8 @@
     "title": "Crater-related pitted-materials catalog",
     "paper": "https://doi.org/10.1126/sciadv.adn2378",
     "landing_url": "https://zenodo.org/records/8360890",
-    "limitation": "Published crater morphology inventory used in candidate screening; not impact-ejection simulation output."
+    "limitation": "Published crater morphology inventory used in candidate screening; not impact-ejection simulation output.",
+    "reuse_approved": true
   },
   {
     "id": "thermal_profiles",
@@ -51,7 +56,8 @@
     "title": "Present-day thermal profiles",
     "paper": "https://doi.org/10.1002/2017JE005431",
     "landing_url": "https://figshare.com/articles/dataset/_/5909929",
-    "limitation": "Present-day published model endpoints; not time histories or temperature measurements."
+    "limitation": "Present-day published model endpoints; not time histories or temperature measurements.",
+    "reuse_approved": true
   },
   {
     "id": "thermal_5909827",
@@ -60,7 +66,8 @@
     "title": "NUCM wet-crust ensemble",
     "paper": "https://doi.org/10.1002/2017JE005431",
     "landing_url": "https://figshare.com/articles/dataset/_/5909827",
-    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "reuse_approved": true
   },
   {
     "id": "thermal_5909857",
@@ -69,7 +76,8 @@
     "title": "UCM wet-crust ensemble",
     "paper": "https://doi.org/10.1002/2017JE005431",
     "landing_url": "https://figshare.com/articles/dataset/_/5909857",
-    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "reuse_approved": true
   },
   {
     "id": "thermal_5909875",
@@ -78,7 +86,8 @@
     "title": "NUCM2 wet-crust ensemble",
     "paper": "https://doi.org/10.1002/2017JE005431",
     "landing_url": "https://figshare.com/articles/dataset/_/5909875",
-    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "reuse_approved": true
   },
   {
     "id": "thermal_5909908",
@@ -87,7 +96,8 @@
     "title": "NUCM dry-crust ensemble",
     "paper": "https://doi.org/10.1002/2017JE005431",
     "landing_url": "https://figshare.com/articles/dataset/_/5909908",
-    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "reuse_approved": true
   },
   {
     "id": "thermal_5909914",
@@ -96,7 +106,8 @@
     "title": "UCM dry-crust ensemble",
     "paper": "https://doi.org/10.1002/2017JE005431",
     "landing_url": "https://figshare.com/articles/dataset/_/5909914",
-    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "reuse_approved": true
   },
   {
     "id": "thermal_5909917",
@@ -105,7 +116,8 @@
     "title": "Elastic thickness evolution",
     "paper": "https://doi.org/10.1002/2017JE005431",
     "landing_url": "https://figshare.com/articles/dataset/_/5909917",
-    "limitation": "Published forward-model outputs; preserve original model selection assumptions."
+    "limitation": "Published forward-model outputs; preserve original model selection assumptions.",
+    "reuse_approved": true
   },
   {
     "id": "mola",
@@ -123,7 +135,8 @@
         "name": "megt90n000cb.xml",
         "url": "https://pds-geosciences.wustl.edu/mgs/urn-nasa-pds-mgs_mola_topography_derived/meg004/megt90n000cb.xml"
       }
-    ]
+    ],
+    "reuse_approved": true
   },
   {
     "id": "lagain2022",
@@ -141,7 +154,8 @@
         "name": "41467_2022_31444_MOESM3_ESM.xlsx",
         "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-022-31444-8/MediaObjects/41467_2022_31444_MOESM3_ESM.xlsx"
       }
-    ]
+    ],
+    "reuse_approved": true
   },
   {
     "id": "herd2024",
@@ -155,7 +169,8 @@
         "name": "supplementary.zip",
         "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11328911/supplementaryFiles"
       }
-    ]
+    ],
+    "reuse_approved": true
   },
   {
     "id": "geology",
@@ -173,7 +188,8 @@
         "name": "layer.json",
         "url": "https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Tanaka_et_al_2014_Mars_Global_Map_Features/FeatureServer/3?f=json"
       }
-    ]
+    ],
+    "reuse_approved": true
   },
   {
     "id": "rock_magnetism",
@@ -188,7 +204,8 @@
         "name": "magic_contribution_19658.txt",
         "url": "https://earthref.org/MagIC/download/19658/magic_contribution_19658.txt"
       }
-    ]
+    ],
+    "reuse_approved": true
   },
   {
     "id": "mil03346",
@@ -349,7 +366,8 @@
         "size": 11703,
         "md5": "38505876b3892ad6a3da5b5a2b19d92d"
       }
-    ]
+    ],
+    "reuse_approved": true
   },
   {
     "id": "paleomag_inventory",
@@ -363,7 +381,8 @@
         "name": "supplementary.zip",
         "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11745385/supplementaryFiles"
       }
-    ]
+    ],
+    "reuse_approved": true
   },
   {
     "id": "aqueous_minerals",
@@ -372,14 +391,16 @@
     "paper_doi": "10.1016/j.icarus.2022.115164",
     "provider": "IAS / OMEGA and CRISM",
     "license": "Public download; no explicit reuse license stated on project page. Original raster files are not redistributed here.",
-    "limitation": "Spectral mineral classes, not present liquid water; uneven orbital coverage, dust and exposure prevent interpreting blank regions as dry. Maps cover approximately 70\u00b0S\u201370\u00b0N.",
+    "limitation": "Spectral mineral classes, not present liquid water; uneven orbital coverage, dust and exposure prevent interpreting blank regions as dry. Maps cover approximately 70°S–70°N.",
     "products": [
       {
         "name": "MOCAAS_2023-11-15_v2.zip",
         "url": "https://www.ias.u-psud.fr/moccas/database/MOCAAS_2023-11-15_v2.zip",
         "size": 16778760
       }
-    ]
+    ],
+    "reuse_approved": false,
+    "permission_note": "The producer offers public downloads but no explicit reuse license. Resolve permission before acquiring or incorporating new raster data."
   },
   {
     "id": "alh84001",
@@ -395,6 +416,7 @@
         "url": "https://earthref.org/MagIC/download/19859/magic_contribution_19859.txt",
         "size": 1749592728
       }
-    ]
+    ],
+    "reuse_approved": true
   }
 ]

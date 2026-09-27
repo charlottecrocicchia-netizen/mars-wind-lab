@@ -139,11 +139,6 @@ def export(p:Annotated[Parameters,Query()]):
     else:data=png_bytes(product,p.field);mime='image/png'
     return Response(data,media_type=mime,headers={'Content-Disposition':f'attachment; filename="{filename}.{p.format}"'})
 
-@app.get('/api/legacy')
-def legacy():
-    from .legacy import load_archived_modes
-    return clean(load_archived_modes())
-
 
 @app.get('/api/experiment')
 def experiment(p:Annotated[ExperimentParameters,Query()]):
