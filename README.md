@@ -9,8 +9,8 @@
 A personal research project by **Charlotte Crocicchia** · Mars Wind Lab
 
 [![Scientific checks](https://github.com/charlottecrocicchia-netizen/mars-wind-lab/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/charlottecrocicchia-netizen/mars-wind-lab/actions/workflows/tests.yml)
-[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-92d7ce?labelColor=162330)](pyproject.toml)
-[![Code license: MIT](https://img.shields.io/badge/Code_license-MIT-92d7ce?labelColor=162330)](LICENSE)
+[![Python 3.11+](docs/images/python-version.svg)](pyproject.toml)
+[![Code license: MIT](docs/images/code-license.svg)](LICENSE)
 
 [Explore the project](#explore-the-project) · [Research results](#what-the-tests-show) · [Run locally](#run-locally) · [Methods & sources](#methods--sources)
 

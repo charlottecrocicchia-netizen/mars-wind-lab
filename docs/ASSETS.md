@@ -1,5 +1,7 @@
 # Visual assets
 
+The README's Python-version and code-license badges are original SVG labels in `docs/images/`. They are served from the repository; the scientific-checks badge is supplied by GitHub Actions.
+
 ## Repository screenshots
 
 `docs/images/site-overview.png` and `docs/images/meteorite-atlas.png` are unaltered browser captures of the local research website taken on 27 September 2026. The second image shows the meteorite atlas with Karratha selected. These are interface previews of the committed research snapshot, not new measurements or inferred meteorite locations.
