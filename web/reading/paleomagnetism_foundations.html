@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Learn paleomagnetism with project controls — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css?v=design1"><link rel="stylesheet" href="/assets/workspace.css?v=20260927-design"></head><body class="workspace">
+<a class="skip" href="#article">Skip to the article</a><header class="workspace-header"><a href="/" class="wordmark"><i></i><span>Martian dichotomy<small>CHARLOTTE CROCICCHIA</small></span></a><nav aria-label="Main navigation" lang="en"><a href="/">Overview</a><a href="/research/data">Atlas</a><a href="/research/tests">Results</a><a href="/research/comparison">Hypotheses</a><a href="/research/library" aria-current="page">Sources</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">SCIENTIFIC NOTES</p><a href="/research/comparison">Comparison and chronology →</a><details class="reading-index"><summary lang="en">Browse the notes</summary><a class="" href="/assets/reading/dichotomy_physics.html">Composition, amplification &amp; deformation</a><a class="current" href="/assets/reading/paleomagnetism_foundations.html">Learn paleomagnetism with project controls</a><a class="" href="/assets/reading/executed_experiments.html">Executed magnetic experiments</a><a class="" href="/assets/reading/dynamo_tests.html">Dynamo tests &amp; source assessment</a><a class="" href="/assets/reading/thermal_experiment.html">Thermal history experiment</a><a class="" href="/assets/reading/comparison.html">Comparison &amp; chronology method</a><a class="" href="/assets/reading/pilot_study.html">Regional study &amp; results</a><a class="" href="/assets/reading/recording.html">Primary &amp; secondary remanence</a><a class="" href="/assets/reading/water.html">Water &amp; alteration</a><a class="" href="/assets/reading/first_results.html">Completed diagnostics</a><a class="" href="/assets/reading/hypotheses.html">Working hypothesis</a><a class="" href="/assets/reading/test_protocol.html">First physical test</a><a class="" href="/assets/reading/dichotomy_review.html">September review &amp; next tests</a><a class="" href="/assets/reading/synthesis.html">Scientific synthesis</a><a class="" href="/assets/reading/meteorites.html">Meteorite magnetism</a><a class="" href="/assets/reading/missions.html">Missions &amp; data</a><a class="" href="/assets/reading/research_plan.html">Research programme</a><a class="" href="/assets/reading/method.html">Search &amp; reading method</a><a class="" href="/assets/reading/community.html">Community leads</a><a class="" href="/assets/reading/readme.html">About this collection</a></details></aside><article class="prose" id="article"><div class="route-context" lang="en"><a href="/research/library">← Sources and notes</a><span>Detailed scientific note</span></div><h1 id="read-the-rock-before-inferring-the-ancient-field">Read the rock before inferring the ancient field</h1>
+<p>A short learning path tied to this project's actual controls. <a href="/research/physics?view=paleomagnetism">Open the interactive example</a> · <a href="/assets/reading/dichotomy_physics.html">Three physical studies</a>.</p>
+<p>The central question is not simply whether a rock is magnetic. It is <strong>which process made each component, when that happened, and how its response relates to the field we want to infer</strong>. Direction, strength and acquisition age require different evidence.</p>
+<h2 id="1-identify-the-quantity-and-the-recording-process">1. Identify the quantity and the recording process</h2>
+<p>The foundational reference is <a href="https://earthref.org/MagIC/books/Tauxe/Essentials/">Tauxe et al., Essentials of Paleomagnetism</a>, especially chapters 4, 7, 9 and 10. Read those sections alongside the following vocabulary:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B, magnetic flux density</td>
+<td>A field, commonly expressed here in nT or µT.</td>
+</tr>
+<tr>
+<td>Magnetic moment</td>
+<td>A specimen-scale quantity, in A m²; not a field strength.</td>
+</tr>
+<tr>
+<td>Magnetization</td>
+<td>Moment per volume, in A/m. Volume or other normalization must be known.</td>
+</tr>
+<tr>
+<td>NRM</td>
+<td>Natural remanent magnetization as initially measured; it may contain several components.</td>
+</tr>
+<tr>
+<td>TRM</td>
+<td>Remanence acquired during cooling in a field.</td>
+</tr>
+<tr>
+<td>CRM</td>
+<td>Remanence acquired during chemical mineral growth or change.</td>
+</tr>
+<tr>
+<td>VRM</td>
+<td>Time-dependent remanence acquired while material resides in a field.</td>
+</tr>
+<tr>
+<td>IRM</td>
+<td>Remanence acquired through an applied field, potentially including handling contamination.</td>
+</tr>
+</tbody>
+</table>
+<p>Induced magnetization depends on a present field; remanence persists after removal. Shock can also modify a record. These processes cannot be substituted for one another merely because vectors align. Blocking depends on time, temperature and grain properties; an ordering temperature is not a universal blocking temperature. <a href="https://earthref.org/MagIC/books/Tauxe/Essentials/">Tauxe et al.</a></p>
+<p><strong>Project exercise:</strong> a file contains a vector amplitude but no unit or specimen volume. Can it supply an absolute ancient field? <strong>No.</strong> First establish what was measured and how it was normalized. Our MIL 03346 RockPy material remains a relative-amplitude diagnostic, not a field estimate.</p>
+<h2 id="2-separate-components-before-assigning-an-age">2. Separate components before assigning an age</h2>
+<p>Demagnetization progressively changes the measured vector. A fitted line can describe one segment; a plane can describe another geometry. Component analysis is associated with <a href="https://doi.org/10.1111/j.1365-246X.1980.tb02601.x">Kirschvink (1980)</a>. Our existing SVD implementation reports angular scatter through MAD. <strong>MAD is not a confidence interval on the ancient field and does not establish antiquity.</strong> We accessed the publisher's summary in this pass, not the full methodological paper.</p>
+<p>In our already executed contaminated NWA control, 19 of 32 candidate fits have MAD below 5°. They overlap and are not 32 independent specimens. The published <a href="https://doi.org/10.1029/2022JE007464">hand-magnet study</a> is why these data are a contamination control, not evidence for 19 ancient fields. <a href="/research/experiments?view=laboratory">Inspect the actual fits</a>.</p>
+<p><strong>Project exercise:</strong> selecting the straightest segment produces a small MAD. What has improved? The geometric description of that selected segment. What is still missing? Evidence for its acquisition process, age, specimen orientation and independence from later overprints. A sample-coordinate direction cannot be promoted to a Martian geographic direction without an orientation history.</p>
+<h2 id="3-understand-what-an-arai-slope-assumes">3. Understand what an Arai slope assumes</h2>
+<p>An ideal Thellier-type comparison plots natural remanence remaining against laboratory partial TRM gained during paired heating steps. If natural and laboratory responses are equivalent and proportional to field, an ideal straight slope b gives Banc = −b Blab. Real protocols require controls; linearity alone is insufficient. <a href="https://doi.org/10.1002/2013GC005135">Paterson et al. (2014)</a></p>
+<p>We wrote a deliberately exact counterexample. The input ancient field is 25 µT and laboratory field 50 µT. Let r be natural recording efficiency divided by laboratory recording efficiency and f the replaced fraction. Define:</p>
+<pre><code class="language-text">x = f Blab / (r Btrue)
+y = 1 − f
+b = −r Btrue / Blab
+uncorrected apparent field = −b Blab = r Btrue
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Efficiency ratio r</th>
+<th style="text-align: right;">True input field</th>
+<th style="text-align: right;">Apparent field from slope</th>
+<th>Is the line perfectly straight?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.5</td>
+<td style="text-align: right;">25 µT</td>
+<td style="text-align: right;">12.5 µT</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align: right;">25 µT</td>
+<td style="text-align: right;">25 µT</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: right;">25 µT</td>
+<td style="text-align: right;">50 µT</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Three synthetic Arai lines with identical true input field and differing recording efficiencies" src="/research/files/physics/paleointensity_control.png" /></p>
+<p>These curves are original synthetic controls, not observations and not a physical simulation of a particular alteration process. The ratio has been prescribed, not estimated from a mineral. We do not claim that any single laboratory check would detect all three cases.</p>
+<p><strong>Project exercise:</strong> adding more exact points to the wrong-efficiency line reduces fitting scatter. Does it recover the true field? <strong>No.</strong> It adds precision to a biased conversion. That is why a regression score is not a replacement for recording physics.</p>
+<h2 id="4-match-each-inference-to-its-controls">4. Match each inference to its controls</h2>
+<p><a href="https://doi.org/10.1002/2013GC005135">Paterson et al. (2014)</a> assess paleointensity selection with independently constrained material. Their work motivates checking acceptance rules against independent controls rather than tuning cutoffs until desired results pass. <a href="https://doi.org/10.3389/feart.2014.00024">Biggin &amp; Paterson (2014)</a> separate reliability issues including acquisition age, alteration, domain behavior, anisotropy and cooling. We use that separation as a checklist, not an automatically transferable Earth-to-Mars quality score.</p>
+<table>
+<thead>
+<tr>
+<th>Proposed project claim</th>
+<th>Evidence we would need before making it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A component is primary</td>
+<td>Petrographic and chronological context, repeatable components across appropriate specimens, and tests of plausible later overprints.</td>
+</tr>
+<tr>
+<td>Heating did not change the recorder</td>
+<td>Protocol-specific alteration checks, including repeat partial-TRM checks where applicable, with their actual sensitivity and failures reported.</td>
+</tr>
+<tr>
+<td>The response is suitable for paleointensity</td>
+<td>Domain-behavior and reciprocity evidence appropriate to the method; a linear-looking segment alone is inadequate.</td>
+</tr>
+<tr>
+<td>Laboratory and natural efficiencies are comparable</td>
+<td>Appropriate anisotropy, cooling-rate and nonlinearity checks or justified corrections and uncertainty.</td>
+</tr>
+<tr>
+<td>The reported uncertainty reflects independent material</td>
+<td>Specimen and site/ejection-group structure, not every measurement step or overlapping fit counted as a separate sample.</td>
+</tr>
+<tr>
+<td>A direction constrains location</td>
+<td>A defensible reference frame, orientation and subsequent rotation history.</td>
+</tr>
+</tbody>
+</table>
+<p>This table is a project admission rule for future claims. It is not a claim that every listed measurement exists in the assembled meteorite data, nor that meeting a checklist guarantees accuracy.</p>
+<h2 id="5-connect-retention-and-age-to-the-geological-event">5. Connect retention and age to the geological event</h2>
+<p><a href="https://doi.org/10.1073/pnas.1708344114">Nagy et al. (2017)</a> show why retention cannot be reduced to a single-domain-only rule: suitable vortex-state magnetite can be very stable. Their result is not a license to assign a billion-year lifetime to every grain. Our thermal histories test temperature compatibility; they do not calculate a specimen-specific micromagnetic retention probability.</p>
+<p>For each project sample, we must keep the following clocks distinct: crystallization, chemical alteration, shock, acquisition or resetting of the magnetic component, and ejection. A crystallization age does not automatically date every remanent component. A proposed source crater does not restore a lost specimen orientation. The <a href="/research/comparison?view=timeline">event timeline</a> makes these distinctions visible.</p>
+<p><strong>Project exercise:</strong> a modeled rock stays below its selected ordering temperature after an impact. Is its ancient record proved intact? <strong>No.</strong> Grain-scale relaxation, chemical change, shock and earlier history remain unresolved. The model has only passed its stated temperature test.</p>
+<h2 id="6-keep-local-magnetic-evidence-separate-from-a-planetary-dynamo-claim">6. Keep local magnetic evidence separate from a planetary dynamo claim</h2>
+<p>Our <a href="/research/experiments?view=recording">recording experiment</a> already constructs different input field histories with the same recovered contribution. Our <a href="/research/experiments?view=detection">detection experiment</a> shows how source geometry and altitude filter a signal. These are project examples of non-uniqueness, not proofs of which history occurred on Mars.</p>
+<p>A weak orbital anomaly is therefore not, by itself, a date for dynamo shutdown. A measured meteorite component is also not a direct observation of a planet-wide dipole. A planetary inference needs a spatial and chronological sampling argument, compatible recording processes, and comparisons with alternative field geometries and overprints.</p>
+<h3 id="what-each-current-dataset-is-allowed-to-do">What each current dataset is allowed to do</h3>
+<table>
+<thead>
+<tr>
+<th>Project material</th>
+<th>Current role</th>
+<th>Inference not performed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NWA 7034 pairing-group measurements</td>
+<td>Published contamination control; vector-fit sensitivity</td>
+<td>Ancient Martian paleointensity</td>
+</tr>
+<tr>
+<td>MIL 03346 RockPy extract</td>
+<td>Relative-amplitude and component diagnostics, with acquisition sequences kept separate</td>
+<td>Absolute field from undocumented amplitude units</td>
+</tr>
+<tr>
+<td>ALH 84001 QDM-derived tables</td>
+<td>Inspection of published specimen-level results and their stated interpretation</td>
+<td>Independent refit of raw magnetic images or global field reconstruction</td>
+</tr>
+<tr>
+<td>Curated meteorite literature values</td>
+<td>Attributed published constraints with methods, dates and limits</td>
+<td>Homogeneous measurements with identical calibration</td>
+</tr>
+<tr>
+<td>New Arai curves</td>
+<td>Known-input test of a conversion assumption</td>
+<td>A new observation or an accepted paleointensity estimator</td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-practical-sequence-for-our-next-real-data-analysis">A practical sequence for our next real-data analysis</h2>
+<ol>
+<li>Write the claim in advance: component geometry, acquisition age, local field intensity or planetary field history.</li>
+<li>Select permitted records that actually contain the required measurements. Preserve specimen IDs, treatment order, units, lab field, method codes and handling history.</li>
+<li>Inspect raw component paths and protocol metadata before defining fit windows. Record excluded steps and reasons. Keep laboratory-added sequences separate from natural remanence.</li>
+<li>Declare selection rules and sensitivity cases before interpreting a preferred fit. Use known controls and retain failures in the report.</li>
+<li>Track independent specimens and shared provenance. Propagate calibration and reference-frame uncertainty separately from fit scatter.</li>
+<li>If a required control is missing, report the narrower supported result. Do not invent a correction or turn “not measured” into “passed.”</li>
+</ol>
+<p>This learning path is meant to support reading and transparent analysis, not replace supervised laboratory training or a full paper's methods. The next useful advance is a <strong>specimen-level admission table</strong> linking each proposed claim to available controls and missing metadata, before attempting any new paleointensity estimate.</p>
+<h2 id="trace-and-reproduce">Trace and reproduce</h2>
+<p><a href="/research/files/physics/sources.json">Reading depth and source ledger</a> · <a href="/research/files/physics/protocol.json">Synthetic input protocol</a> · <a href="/research/files/physics/arai_counterexample.csv">Arai CSV</a> · <a href="/research/files/physics/paleointensity_control.svg">Arai SVG</a> · <a href="/research/files/physics/manifest.json">Run manifest</a>.</p>
+<p><code>python scripts/physics/build.py</code> recreates the three curves offline. <code>python -m pytest -q tests/test_dichotomy_physics.py</code> verifies that all lines are exact while the inferred fields differ as prescribed. The existing <a href="/assets/reading/executed_experiments.html">laboratory controls report</a> documents the separate real-data fits.</p><div class="reading-tools"><a href="/research/library">← Browse the library</a><a href="/research/files/PALEOMAGNETISM_FOUNDATIONS.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/PALEOMAGNETISM_FOUNDATIONS.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Living research notes · Check each article’s date, sources and limitations.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>

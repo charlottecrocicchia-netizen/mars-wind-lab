@@ -25,12 +25,16 @@ python scripts/research/render_docs.py
 python scripts/research/render_pilot.py
 python scripts/thermal/build.py
 python scripts/experiments/build.py
+python scripts/physics/build.py
+python scripts/research/render_physics.py
 python scripts/research/render_overview.py
 ```
 
 The experiment builders rerun numerical calculations and may take time. Inspect generated diffs before committing. Runtime-version metadata, floating-point results and rendered figures can differ between environments.
 
 The comparison JSON is curated by hand; its CSV exports and interactive views share that source. The overview and result cards read the saved experiment outputs. `render_overview.py` also renders the navigation globe from the authorized MOLA display grid.
+
+The physical-studies builder reproduces crustal support, spherical-shell response, conditional boundary restoration and an Arai counterexample from small committed inputs. It needs no raw archive or network. Its optional `--extract` flag refreshes MOLA strips and hemisphere summaries from already permitted local products; this additionally requires the observation extras. See the [physical methods](../research/DICHOTOMY_PHYSICS.md), [source ledger](../research/physics/sources.json) and [input hashes](../research/physics/input_provenance.json). Source hashes describe the saved run, not a promise of bit-identical figure rendering across library versions.
 
 Raw-data acquisition and full atlas reconstruction are separate workflows. Large source archives remain local. Consult the [source policy](SOURCE_POLICY.md), [data guide](../research/data/README.md) and [manifest](../research/data/manifest.json) before adding or reacquiring inputs. Permission to use a derived product does not establish redistribution rights for its source archive.
 

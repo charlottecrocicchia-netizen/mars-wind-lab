@@ -58,7 +58,7 @@ class Links(HTMLParser):
 
 def test_reading_pages_keep_internal_links_navigable():
     client=TestClient(server.app)
-    files=[*(ROOT/f'web/{name}.html' for name in ['home','comparison','ideas','data','tests','library','thermal','dynamo','experiments']),*sorted((ROOT/'web/reading').glob('*.html'))]
+    files=[*(ROOT/f'web/{name}.html' for name in ['home','comparison','ideas','data','tests','library','thermal','dynamo','experiments','physics']),*sorted((ROOT/'web/reading').glob('*.html'))]
     assert len(files)>5
     visited=set()
     for path in files:

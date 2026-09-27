@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-27",
+  "status": "First bounded tests; no formation model selected",
+  "radius_km": 3390,
+  "crust": {
+    "mantle_densities_kg_m3": [
+      3400,
+      3500,
+      3600
+    ],
+    "map_south_densities_kg_m3": [
+      2600,
+      2700,
+      2800,
+      2900
+    ],
+    "map_north_density_kg_m3": 2900,
+    "context_density_kg_m3": {
+      "north": 2622,
+      "south": 2492
+    },
+    "context_reported_plus_minus_kg_m3": {
+      "north": 42,
+      "south": 36
+    },
+    "context_note": "Published NASA PGDA summary, Goossens & Sabaka 2026. Not a new gravity inversion. Reported plus/minus values are not used as independent Gaussian uncertainties. Different regularization and density assumptions prevent mixing these densities with old thickness maps as a fitted solution.",
+    "layer_column_km": 50,
+    "basal_layer_km": [
+      0,
+      7,
+      14
+    ],
+    "upper_grain_densities_kg_m3": [
+      2600,
+      2800,
+      3000
+    ],
+    "basal_densities_kg_m3": [
+      3200,
+      3400,
+      3600,
+      3700
+    ],
+    "upper_porosities": [
+      0,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "layer_note": "Synthetic sensitivity grid, not mineral-specific compositions or a petrological fit. Empty pores occur only in the upper layer; the basal layer has no porosity. A 14 km endmember is motivated by a local InSight interpretation, not a global measurement. Density inversion is a necessary instability condition, not a foundering timescale."
+  },
+  "feedback": {
+    "lid_thicknesses_km": [
+      50,
+      100,
+      200
+    ],
+    "maximum_degree": 40,
+    "cells": 400,
+    "degree_one_efolds": [
+      0,
+      1,
+      3,
+      5,
+      10
+    ],
+    "power_spectrum_maximum_degree": 20,
+    "note": "Independent finite-volume solution of a steady spherical conductive-shell perturbation. Relative thermal response is the relative linear growth rate only under a common positive heating-to-temperature feedback coefficient. No geological growth timescale is assigned. Large e-fold counts illustrate extrapolation outside guaranteed linear validity."
+  },
+  "boundary": {
+    "longitude_centers_deg_e": [
+      56,
+      62,
+      68,
+      74
+    ],
+    "half_strip_width_deg": 1,
+    "latitude_range_deg": [
+      10,
+      60
+    ],
+    "reference_latitude_deg": 35,
+    "search_latitude_range_deg": [
+      25,
+      45
+    ],
+    "smoothing_km": [
+      25,
+      50,
+      100
+    ],
+    "elastic_thicknesses_km": [
+      10,
+      30,
+      60
+    ],
+    "load_peaks_km": [
+      -1,
+      -0.5,
+      0.5,
+      1
+    ],
+    "load_offsets_km": [
+      -150,
+      150
+    ],
+    "load_widths_km": [
+      100,
+      200
+    ],
+    "young_modulus_gpa": 100,
+    "poisson_ratio": 0.25,
+    "mantle_density_kg_m3": 3500,
+    "load_density_kg_m3": 2900,
+    "gravity_m_s2": 3.71,
+    "padding": 2,
+    "note": "Meridional median MOLA profiles in the Nilosyrtis region, not fault traces or boundary-normal sections. Gaussian signed loads are scenarios, not mapped deposits. Each assumed history has an exact backward topographic correction; topography alone cannot rank them. No viscous flow, fault slip, erosion chronology or true polar wander is reconstructed.",
+    "profile_radius_km": 3396
+  },
+  "paleomagnetism": {
+    "true_field_ut": 25,
+    "laboratory_field_ut": 50,
+    "natural_to_lab_efficiency_ratios": [
+      0.5,
+      1,
+      2
+    ],
+    "note": "Synthetic Arai-line counterexample only. No real specimen field, age or geographic direction is re-estimated."
+  }
+}

@@ -1,8 +1,20 @@
 # From a literature atlas to useful physical tests
 
-The selected first study is now specified in the [joint thermal–magnetic test protocol](TEST_PROTOCOL.md), based on the [working hypothesis](HYPOTHESES.md). The directions below remain complementary analyses rather than completed results.
+The initial thermal–magnetic study is specified in the [joint test protocol](TEST_PROTOCOL.md), based on the [working hypothesis](HYPOTHESES.md). Complementary analyses now include the three executed physical studies below. The remaining directions are questions for further work, with completed parts identified individually.
 
 The [results directory](/research/tests) separates completed diagnostics and synthetic experiments from the remaining investigations below. They prioritize questions that can fail a model, quantify uncertainty or improve an observation.
+
+## Executed physical studies · September 2026
+
+The [new workbench](/research/physics) and [methods report](DICHOTOMY_PHYSICS.md) implement all three complementary axes:
+
+| Axis | Executed result | Next missing constraint |
+| --- | --- | --- |
+| Composition and buoyancy | Density assumptions can reverse the inferred thickness contrast while maintaining highland support; 180 layer cases retain the dense residue. | Composition-to-density predictions with pressure, temperature and depth-dependent porosity, checked jointly against seismic and gravity data. |
+| Amplification of an initial difference | A 100 km conductive shell gives nearly equal growth rates for degrees one and two; the initial spectrum controls the finite-amplification power share. | Conserved melt/heat inventories, nonlinear saturation, absolute timescales and alternative convective forcing. |
+| Earlier boundary through deformation | Four observed MOLA profiles tested under 48 loads plus a control; the 56°E proxy can switch features by hundreds of kilometres. | Dated features, measured loading history and a restoration that tracks the same structure rather than the steepest available slope. |
+
+The [paleomagnetism learning path](PALEOMAGNETISM_FOUNDATIONS.md) supplies the complementary foundation: recording process, component geometry, conversion to intensity, retention, age and the difference between local and planetary claims. A known-input Arai counterexample demonstrates why a perfect line can still yield a biased field. No new meteorite paleointensity has been inferred.
 
 ## 1. Does magnetic asymmetry survive fair spatial comparisons?
 

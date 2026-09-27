@@ -6,6 +6,7 @@ import re
 import markdown
 ROOT=Path(__file__).resolve().parents[2]
 PAGES={'EXECUTED_EXPERIMENTS':'Executed magnetic experiments','DYNAMO_TESTS':'Dynamo tests & source assessment','THERMAL_EXPERIMENT':'Thermal history experiment','COMPARISON':'Comparison & chronology method','PILOT_STUDY':'Regional study & results','RECORDING':'Primary & secondary remanence','WATER':'Water & alteration','FIRST_RESULTS':'Completed diagnostics','HYPOTHESES':'Working hypothesis','TEST_PROTOCOL':'First physical test','DICHOTOMY_REVIEW':'September review & next tests','SYNTHESIS':'Scientific synthesis','METEORITES':'Meteorite magnetism','MISSIONS':'Missions & data','RESEARCH_PLAN':'Research programme','METHOD':'Search & reading method','COMMUNITY':'Community leads','README':'About this collection'}
+PAGES={'DICHOTOMY_PHYSICS':'Composition, amplification & deformation','PALEOMAGNETISM_FOUNDATIONS':'Learn paleomagnetism with project controls',**PAGES}
 out=ROOT/'web/reading';out.mkdir(exist_ok=True)
 for stem,label in PAGES.items():
  source=(ROOT/f'research/{stem}.md').read_text()

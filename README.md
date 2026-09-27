@@ -50,6 +50,18 @@ Our completed calculations currently establish methodological limits, rather tha
 
 Each result links its assumptions, numerical checks and outputs in the [experiment report](research/EXECUTED_EXPERIMENTS.md). Explore the [regional study](research/PILOT_STUDY.md), [thermal experiment](research/THERMAL_EXPERIMENT.md) and [planned dynamo tests](research/DYNAMO_TESTS.md) for the next questions.
 
+### Three new physical studies
+
+The [physical studies report](research/DICHOTOMY_PHYSICS.md) adds executable calculations and an interactive workbench at `/research/physics`:
+
+- **Composition & buoyancy:** separate thickness and density in the support budget of four published crust maps, then explore 180 layered-column cases.
+- **Thermal amplification:** test whether a slightly faster hemispheric mode actually dominates other spatial scales. Initial conditions remain decisive in this linear benchmark.
+- **Earlier boundaries:** explore conditional elastic unloading of four MOLA profiles. A jump between slope features must not be interpreted as tectonic displacement.
+
+The [paleomagnetism learning guide](research/PALEOMAGNETISM_FOUNDATIONS.md) connects recording physics to our laboratory controls. Its synthetic Arai example gives three perfect lines but different apparent fields from one known input field.
+
+[Protocol](research/physics/protocol.json) · [Source assessments](research/physics/sources.json) · [Reproducible outputs](research/physics/manifest.json). These bounded studies do not yet identify a unique origin of the dichotomy.
+
 ## Run locally
 
 Requires **Python 3.11+** and Git. The repository includes the research snapshot needed to browse the site; no raw scientific archive download is needed.

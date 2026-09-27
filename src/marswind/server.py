@@ -70,6 +70,11 @@ def thermal_index():
     return FileResponse(ROOT / 'web/thermal.html')
 
 
+@app.get('/research/physics')
+def physics_index():
+    return FileResponse(ROOT / 'web/physics.html')
+
+
 @app.get('/research/library')
 def library_index():
     return FileResponse(ROOT / 'web/library.html')
