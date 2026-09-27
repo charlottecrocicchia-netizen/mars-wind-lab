@@ -2,7 +2,7 @@
 from pathlib import Path
 from typing import Literal
 
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, Request
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
@@ -12,6 +12,16 @@ app = FastAPI(title='Martian dichotomy research', version='0.6.0')
 app.add_middleware(GZipMiddleware, minimum_size=1000)
 app.mount('/assets', StaticFiles(directory=ROOT / 'web'), name='assets')
 app.mount('/research/files', StaticFiles(directory=ROOT / 'research'), name='research-files')
+
+
+@app.middleware('http')
+async def refresh_local_snapshot(request: Request, call_next):
+    """Keep evolving pages fresh while retaining conditional asset downloads."""
+    response = await call_next(request)
+    is_page = (response.headers.get('content-type', '').startswith('text/html')
+               or request.url.path.endswith('.html'))
+    response.headers['Cache-Control'] = 'no-store' if is_page else 'no-cache'
+    return response
 
 
 @app.get('/')

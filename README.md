@@ -17,6 +17,8 @@ python -m uvicorn marswind.server:app --app-dir src --host 127.0.0.1 --port 8765
 
 Open **http://127.0.0.1:8765**. On an already configured Mac, `Launch Mars Wind.command` starts the same server. It is local; pushing the repository does not publish this server.
 
+If a browser still shows an earlier design, reload once while bypassing its old cache: **Command+Shift+R in Firefox on macOS**. The server now sends HTML with `Cache-Control: no-store`; styles, scripts and datasets must revalidate before reuse, with ETags avoiding unnecessary downloads. GitHub Actions checks the repository; it does not refresh an already open browser tab.
+
 ## Follow the question
 
 - **Hypotheses**: five common observations face four overlapping origin families. Open a cell for its requirement, proposed test and primary sources. This is a qualitative synthesis, not a probability ranking or a new model fit.
