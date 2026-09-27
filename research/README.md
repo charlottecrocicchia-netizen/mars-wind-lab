@@ -12,6 +12,8 @@ A research component of **Charlotte Crocicchia's personal Mars project**. This c
 
 **Dynamo test programme:** [30 proposals and a targeted source assessment](DYNAMO_TESTS.md), with conditional tests and three next calculations. Planned tests remain separate from completed results.
 
+**Executed magnetic experiments:** [recording, detection, regional transfer and laboratory controls](EXECUTED_EXPERIMENTS.md), with original implementations, numerical checks and qualified conclusions.
+
 ## Start here
 
 - [September research review: checked claims and next tests](DICHOTOMY_REVIEW.md)

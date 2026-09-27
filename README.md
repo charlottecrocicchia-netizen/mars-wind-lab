@@ -20,6 +20,7 @@ Open **http://127.0.0.1:8765**. On an already configured Mac, `Launch Mars Wind.
 ## Follow the question
 
 - **Compare**: five common observations face four overlapping origin families. Open a cell for its requirement, proposed test and primary sources. This is a qualitative synthesis, not a probability ranking or a new model fit.
+- **Executed experiments**, inside Study: thermal acquisition kernels, exact synthetic magnetic fields, injection/recovery, 96 map-validation settings and a candidate laboratory component ledger. [Methods and qualified conclusions](research/EXECUTED_EXPERIMENTS.md) · local route `/research/experiments`.
 - **Dynamo test programme**, inside Compare: 30 proposals across five research questions, conditional tests, required inputs and explicit source-reading limits. These are planned discriminating tests, not executed dynamo models. [Assessment and next calculations](research/DYNAMO_TESTS.md) · local route `/research/dynamo`.
 - **Chronology**, inside Compare: formation, alteration, shock, magnetization and ejection remain distinct. Eleven selected events preserve ranges, reported uncertainties, approximate ages, bounds and unknown dates. [Method and exports](research/COMPARISON.md).
 - **Data**: maps of relief, crust, magnetism and geology, meteorite records, laboratory measurements and alteration evidence, with provenance.
@@ -35,6 +36,7 @@ python scripts/research/render_dynamo.py
 python scripts/research/render_docs.py
 python scripts/research/render_pilot.py
 python scripts/thermal/build.py
+python scripts/experiments/build.py
 python -m pytest -q -m 'not integration'
 node --test tests/comparison.test.mjs
 ```

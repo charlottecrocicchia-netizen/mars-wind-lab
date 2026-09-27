@@ -14,7 +14,7 @@ function filter() {
     card.hidden = Boolean((group.value && card.dataset.group !== group.value) || (term && !text.includes(term)));
     if (!card.hidden) visible++;
   }
-  count.textContent = `${visible} of ${cards.length} proposals · all discriminating tests are planned`;
+  count.textContent = `${visible} of ${cards.length} proposals · full discriminating tests remain open`;
   document.querySelector('#dynamoEmpty').hidden = visible !== 0;
 }
 

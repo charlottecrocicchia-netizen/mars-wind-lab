@@ -10,6 +10,8 @@ Third-party packages retain their licenses. Plotly's MIT notice is retained in `
 
 The [thermal experiment](../research/THERMAL_EXPERIMENT.md), added on 2026-09-27, is an original conductive-column implementation checked against analytic heat-equation solutions. Its parameters are synthetic and its figures and numerical exports are project-generated. Published papers supply scientific context and limitations; no external code, article figure or new dataset was incorporated. This experiment neither invokes MCD nor uses private internship material.
 
+The [executed magnetic experiments](../research/EXECUTED_EXPERIMENTS.md) reuse only existing authorized extracted atlas and MagIC numerical products, preserving their attributions and terms. Synthetic recording/detection inputs and all new implementation code and figures are original. The workflow does not reacquire MOCAAS, crater catalogues or other raw archives. Candidate laboratory fits keep their provenance and do not replace published component interpretations.
+
 ## Atmospheric model
 
 On 2026-09-27, the atmospheric interface and HTTP calculation endpoints were removed from the research website. The server and desktop launcher no longer import, build or call MCD. Independently authored numerical modules remain as historical offline work; their presence is not authorization to invoke an external installation. No local datasets were deleted as part of this website change.

@@ -4,7 +4,7 @@
   "updated": "2026-09-27",
   "title": "Martian dynamo test programme",
   "scope": "Thirty proposals from a user-supplied research synthesis, reorganized into compatible dimensions. Original project test designs with a targeted primary-source assessment; not a complete literature audit or a ranking of theories.",
-  "execution_status": "All thirty proposed discriminating tests are planned, not executed. Existing regional and thermal calculations are explicitly separate building blocks.",
+  "execution_status": "Initial recording/detection benchmarks, regional predictive checks and laboratory candidate-window diagnostics have been executed. Full discriminating tests and causal interpretations remain open.",
   "provenance": "The supplied synthesis is a discovery aid, not a source of established results. No private internship material, external code, new dataset or publisher full text is incorporated.",
   "groups": [
     {
@@ -87,8 +87,8 @@
       "label": "Steele et al. (2023) · ALH 84001 magnetic components",
       "doi": "10.1126/sciadv.ade9071",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10957104/",
-      "review_depth": "abstract",
-      "consulted_material": "Primary abstract consulted. Component counts, directional statistics and age associations still require a figure/table-level audit."
+      "review_depth": "selected_sections",
+      "consulted_material": "Primary institutional article: selected sections on carriers, demagnetization, rotation/reversal alternatives and magnetization timing. Published component intervals and supplements remain incompletely audited; new candidate-window fits are not a reproduction."
     },
     "mittelholz20": {
       "label": "Mittelholz et al. (2020) · Early and late dynamo indicators",
@@ -240,8 +240,9 @@
         "steele24",
         "mittelholz24"
       ],
-      "execution_status": "planned",
-      "building_block": "No corresponding physical model has been run in this project."
+      "execution_status": "partial_benchmark",
+      "building_block": "Executed an idealized detection benchmark; it does not establish a shutdown date or a younger global-field record.",
+      "results_url": "/research/experiments"
     },
     {
       "id": "T2",
@@ -273,8 +274,9 @@
         "steele24",
         "steele25"
       ],
-      "execution_status": "planned",
-      "building_block": "The existing thermal column supplies synthetic temperature histories only; no remanence or orbital-field calculation is connected yet."
+      "execution_status": "partial_benchmark",
+      "building_block": "Executed exact acquisition-window integration and synthetic layered-cylinder field predictions for stable, reversing, intermittent and absent fields. Real basin geometry and calibrated carriers remain missing.",
+      "results_url": "/research/experiments"
     },
     {
       "id": "T4",
@@ -289,8 +291,9 @@
       "sources": [
         "steele23"
       ],
-      "execution_status": "planned",
-      "building_block": "No corresponding physical model has been run in this project."
+      "execution_status": "partial_benchmark",
+      "building_block": "Built a candidate-window ledger from permitted MagIC measurements with PCA, origin anchoring and treatment/repeat sensitivity. Component acquisition ages and geographic orientation remain unresolved.",
+      "results_url": "/research/experiments"
     },
     {
       "id": "T5",
@@ -355,8 +358,9 @@
         "hemingway21",
         "hori13"
       ],
-      "execution_status": "planned",
-      "building_block": "No corresponding physical model has been run in this project."
+      "execution_status": "partial_benchmark",
+      "building_block": "Compared intermittent and continuous histories through the same acquisition kernel; no core-energy or restart model has been implemented.",
+      "results_url": "/research/experiments"
     },
     {
       "id": "D1",
@@ -703,8 +707,9 @@
         "gong21",
         "steele24"
       ],
-      "execution_status": "planned",
-      "building_block": "Regional altitude/reference sensitivity and the synthetic thermal gate are available separately. No joint magnetic inversion has been run."
+      "execution_status": "partial_benchmark",
+      "building_block": "Executed synthetic recording/observation benchmarks, regional transfer and spatial controls on the existing atlas. No joint physical inversion or causal origin test is complete.",
+      "results_url": "/research/experiments"
     },
     {
       "id": "H",

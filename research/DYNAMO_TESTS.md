@@ -2,7 +2,7 @@
 
 **Assessment date: 27 September 2026.** [Explore the proposals](/research/dynamo) · [Machine-readable register](dynamo/tests.json) · [CSV export](dynamo/tests.csv)
 
-The supplied research synthesis is a useful discovery map. This assessment converts its 30 proposals into original, conditional test designs. **None of these 30 discriminating tests has been executed here.** Existing regional contrasts and synthetic conductive histories are separate building blocks; they do not establish a dynamo history.
+The supplied research synthesis is a useful discovery map. This assessment converts its 30 proposals into original, conditional test designs. **Full discriminating tests remain open.** Five questions now have executed building blocks: recording and detection benchmarks, regional transfer checks and a candidate laboratory ledger. [Inspect the calculations and their limits](EXECUTED_EXPERIMENTS.md). They do not establish a dynamo history.
 
 The register retains the supplied identifiers (T1–T8, D1–D11, G1–G6, C3a–C3c, C5 and H) so that each proposal can be traced. Those identifiers are not a ranking. The list is the coverage of the supplied matrix, not an exhaustive inventory of all possible Martian dynamos.
 
@@ -52,6 +52,8 @@ Likewise, the present mantle asymmetry inferred by Berné et al. (2026) is an en
 
 ## Next calculations
 
+**Progress update:** the first implementation is now available in [Executed experiments](EXECUTED_EXPERIMENTS.md). The roadmap below distinguishes those initial benchmarks from the still-missing calibrated physics and geological inference.
+
 ### 1. Connect a recording model to the thermal histories
 
 **Question:** can different field histories leave an indistinguishable remanence under the same recording conditions?
@@ -80,7 +82,7 @@ The [regional study](PILOT_STUDY.md) already demonstrates sensitivity to referen
 
 For each candidate magnetic component, record the sample or region, mineral carrier, petrographic relation, demagnetization treatment, direction and intensity where available, uncertainty, handling history, and the event used to assign an age. Distinguish measured acquisition ages from ages inferred through association. Preserve dependencies between components from the same rock or event.
 
-Begin with the ALH 84001 evidence trail, but first audit its figures, statistical tests and age associations against the primary article and supplements. Only its abstract was assessed in this pass. Do not import a table or repository merely because it is publicly visible. The ledger is a planned original synthesis, not a reproduced dataset. [Steele et al. (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10957104/)
+Begin with the ALH 84001 evidence trail, but first audit its figures, statistical tests and age associations against the primary article and supplements. The initial pass assessed its abstract; the subsequent experiment pass read selected primary carrier, direction and timing sections. Supplements and published component intervals still require a full audit. Do not import a table or repository merely because it is publicly visible. The first candidate-window ledger has now been computed independently from the existing permitted MagIC extract. It retains null acquisition ages; a published-component chronology audit remains unfinished. [Steele et al. (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10957104/)
 
 **Required deliverable:** traceable records with qualified ages and component origin, data-use status and unresolved alternatives; no duplicated measurements counted as independent dynamo episodes.
 
@@ -88,7 +90,7 @@ Begin with the ALH 84001 evidence trail, but first audit its figures, statistica
 
 Core and mantle energy evolution, magnetohydrodynamic dynamos, inner-core growth, iron snow, fluid reactions and shock acquisition require additional equations, inputs and validation. They cannot be switched on by renaming the existing conductive scenarios. This register records those dependencies instead of presenting all thirty ideas as immediately executable options.
 
-No probability ranking, fitted dynamo lifetime, measured reversal rate or newly established Martian origin is produced here. The proposed calculations are methodological priorities, not findings attributed to the source authors.
+No probability ranking, fitted dynamo lifetime, measured reversal rate or newly established Martian origin is produced here. The proposed full tests are methodological priorities. New project benchmarks and reanalyses are documented separately and are not findings attributed to the source authors.
 
 ## Reading depth and reproducibility
 

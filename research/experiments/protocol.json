@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "language": "en",
+  "status": "Exploratory protocol declared before this calculation; not preregistered or calibrated to Mars",
+  "seed": 20260928,
+  "recording": {
+    "thermal_protocol": "research/thermal/protocol.json",
+    "source_top_km": 20.0,
+    "source_bottom_km": 30.0,
+    "layer_thickness_km": 1.0,
+    "radius_km": 150.0,
+    "reference_magnetization_a_m": 10.0,
+    "blocking_bands_c": [[100,300],[250,550],[400,575]],
+    "threshold_samples": 1024,
+    "integration": "Exact interval integration on piecewise-linear thermal histories; threshold_samples is an independent midpoint-quadrature cross-check only.",
+    "ensemble_members": 32,
+    "chron_durations_myr": [5,20,100],
+    "shutdown_elapsed_myr": 500.0,
+    "intermittent_on_intervals_myr": [[0,300],[900,1200]],
+    "height_km": [10,50,150,400],
+    "noise_sigma_nt": 5.0,
+    "test_false_alarm_probability": 0.01,
+    "injection_trials": 8192,
+    "assumptions": "Uniform synthetic blocking-temperature bands, instantaneous erasure above each threshold, acquisition on last downward crossing, common upward field axis, linear recording, no relaxation or chemistry. Known new contribution is reported separately from unresolved initial remanence. Its bound assumes |initial magnetization| <= reference_magnetization_a_m. Bands are not measured mineral spectra; 575 C is below the illustrative magnetite ordering point, not evidence for magnetite.",
+    "observation_scope": "Exact on-axis fields for a flat finite layered cylinder and independent Gaussian noise; an ideal known-template detection benchmark, not an instrument or orbital inversion. Reference amplitude, dimensions and noise are arbitrary declared inputs."
+  },
+  "maps": {
+    "input": "research/data/atlas.json",
+    "latitude_limit_deg": 75,
+    "altitude_km": [150,400],
+    "crust_density_kg_m3": [2600,2700,2800,2900],
+    "folds": 6,
+    "longitude_buffer_deg": 10,
+    "wedge_offsets_deg": [0,30],
+    "ridge_penalty_mean_loss": 0.01,
+    "negative_control_shifts_deg": [60,120,180],
+    "target": "log(1 + magnetic magnitude in nT)",
+    "models": ["mean","location","structure","combined"],
+    "features": "Location: degree-one and degree-two Cartesian functions on a sphere. Structure: elevation, crust thickness, their squares and interaction, and geological-unit indicators. Combined: both. Weighted centering and scaling use training data only. Fixed penalty, no parameter search.",
+    "scope": "Random-point interpolation versus transfer to held-out longitude wedges, with a buffer. Not a causal estimate. Altitudes and crust-density variants are dependent products, not independent observations. Shifts preserve latitude structure but are stress tests, not exchangeable randomization nulls."
+  },
+  "laboratory": {
+    "inputs": ["research/data/laboratory_extended.json","research/data/laboratory.json"],
+    "af_windows_mt": [[10,40],[20,60],[40,100]],
+    "thermal_windows_c": [[200,300],[250,340],[275,350]],
+    "minimum_unique_treatments": 5,
+    "aggregation": "Average Cartesian vectors at repeated treatment levels; compare with retaining the last repeat. Exclude laboratory-imparted remanence by explicit experiment selection.",
+    "methods": ["unanchored PCA","origin-anchored PCA comparison","leave-one-treatment-out","mean-repeat versus last-repeat comparison"],
+    "scope": "Fixed candidate windows, not the authors' component selection and not an automatic ancient-component classification. Directions remain in each specimen's archived frame. MAD and sensitivity angles are not dating or field-intensity estimates. NWA paired stones are a known-contaminated control dataset, not a claim about every NWA 7034 specimen."
+  }
+}

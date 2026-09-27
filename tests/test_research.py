@@ -53,11 +53,12 @@ class Links(HTMLParser):
     def __init__(self):super().__init__();self.links=[]
     def handle_starttag(self,tag,attrs):
         if tag=='a':self.links.extend(v for k,v in attrs if k=='href')
+        if tag=='img':self.links.extend(v for k,v in attrs if k=='src')
 
 
 def test_reading_pages_keep_internal_links_navigable():
     client=TestClient(server.app)
-    files=[*(ROOT/f'web/{name}.html' for name in ['home','comparison','ideas','data','tests','library','thermal','dynamo']),*sorted((ROOT/'web/reading').glob('*.html'))]
+    files=[*(ROOT/f'web/{name}.html' for name in ['home','comparison','ideas','data','tests','library','thermal','dynamo','experiments']),*sorted((ROOT/'web/reading').glob('*.html'))]
     assert len(files)>5
     visited=set()
     for path in files:
