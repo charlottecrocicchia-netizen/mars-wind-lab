@@ -1,5 +1,11 @@
 # Visual assets
 
+## Repository screenshots
+
+`docs/images/site-overview.png` and `docs/images/meteorite-atlas.png` are unaltered browser captures of the local research website taken on 27 September 2026. The second image shows the meteorite atlas with Karratha selected. These are interface previews of the committed research snapshot, not new measurements or inferred meteorite locations.
+
+The map and globe use the existing authorized MOLA display grid; meteorite proposals retain their source links and uncertainty labels. Underlying data attribution and terms remain in the [manifest](../research/data/manifest.json) and [meteorite records](../research/data/meteorites.json). Capture only the website viewport when refreshing these images, so browser controls and unrelated personal information are excluded.
+
 ## Current research workspace
 
 The blue, slate and teal interface uses original HTML, CSS and SVG graphics. Plotly supplies the interactive charts and retains its own [license](../web/PLOTLY-LICENSE.txt). Chart colors encode the quantities and categories stated in their captions; colors do not rank origin hypotheses.

@@ -1,64 +1,84 @@
-# Mars Wind Lab · Martian dichotomy research
+<div align="center">
 
-A personal research project by **Charlotte Crocicchia**: understand the contrast between the northern lowlands and southern highlands by keeping observations, possible explanations and tests distinct.
+# Martian Dichotomy
 
-The active website focuses on the dichotomy, crustal structure and the magnetic history of rocks. Its navigation has five entries: **Overview, Atlas, Results, Hypotheses, Sources**. The entire website, research notes and repository documentation are in English.
+### One planet. Two different histories?
 
-## Start locally
+**Interactive maps, original experiments and a traceable research notebook.**
 
-Python 3.11 or newer is sufficient to serve the committed research snapshot. No MCD installation, compilation or archive download is required.
+A personal research project by **Charlotte Crocicchia** · Mars Wind Lab
+
+[![Scientific checks](https://github.com/charlottecrocicchia-netizen/mars-wind-lab/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/charlottecrocicchia-netizen/mars-wind-lab/actions/workflows/tests.yml)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-92d7ce?labelColor=162330)](pyproject.toml)
+[![Code license: MIT](https://img.shields.io/badge/Code_license-MIT-92d7ce?labelColor=162330)](LICENSE)
+
+[Explore the project](#explore-the-project) · [Research results](#what-the-tests-show) · [Run locally](#run-locally) · [Methods & sources](#methods--sources)
+
+</div>
+
+![The research website: a blue Mars globe, proposed meteorite sources and the question “One planet. Two different histories?”](docs/images/site-overview.png)
+
+Mars has low northern plains and high southern terrain. How did that contrast form, and what can rocks, crustal structure and magnetic records tell us about its history?
+
+This workspace brings the evidence together so you can **explore a place, inspect a measurement, compare an explanation and follow a calculation**. Observations, published interpretations and our own experiments remain clearly identified. The origin of the dichotomy is still an open question.
+
+## Explore the project
+
+| On the website | What you can do | Read on GitHub |
+| --- | --- | --- |
+| **Overview** | Start with the question and the latest computed results. | [Research guide](research/README.md) |
+| **Atlas** | Compare relief, crust, magnetism and geology; follow meteorites to their proposed source craters. | [Data guide & provenance](research/data/README.md) |
+| **Results** | Explore experiments, regional comparisons and downloadable outputs. | [Executed experiments](research/EXECUTED_EXPERIMENTS.md) |
+| **Hypotheses** | Compare four origin families and distinguish formation, alteration, magnetization and ejection ages. | [Comparison & chronology](research/COMPARISON.md) |
+| **Sources** | Search the literature and inspect reading notes, methods and source links. | [Search & reading method](research/METHOD.md) |
+
+### From a meteorite to a place on Mars
+
+![The meteorite atlas with Karratha selected, showing proposed source craters, the dichotomy boundary and a linked interpretation panel](docs/images/meteorite-atlas.png)
+
+**94 sample records · 10 ejection groups · 16 candidate craters.** Select a sample or crater to follow its published source proposals. Mapped locations are candidates, not confirmed origins; shared ejection groups do not represent independent samples of Mars. [Data and references](research/data/meteorites.json)
+
+*Both images are captures of the working website. [Visual credits](docs/ASSETS.md)*
+
+## What the tests show
+
+Our completed calculations currently establish methodological limits, rather than a unique explanation for the dichotomy:
+
+- **A good local prediction can fail elsewhere.** Map-prediction performance changes when whole regions are held out instead of scattered cells.
+- **Different magnetic histories can leave the same record.** A synthetic reheating experiment illustrates how rock recording can erase distinctions between field histories.
+- **A clean laboratory fit can be misleading.** A contaminated control can produce tightly aligned demagnetization segments; fit quality alone cannot establish ancient remanence.
+
+Each result links its assumptions, numerical checks and outputs in the [experiment report](research/EXECUTED_EXPERIMENTS.md). Explore the [regional study](research/PILOT_STUDY.md), [thermal experiment](research/THERMAL_EXPERIMENT.md) and [planned dynamo tests](research/DYNAMO_TESTS.md) for the next questions.
+
+## Run locally
+
+Requires **Python 3.11+** and Git. The repository includes the research snapshot needed to browse the site; no raw scientific archive download is needed.
 
 ```bash
+git clone https://github.com/charlottecrocicchia-netizen/mars-wind-lab.git
+cd mars-wind-lab
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e '.[test,research]'
+python -m pip install -e .
 python -m uvicorn marswind.server:app --app-dir src --host 127.0.0.1 --port 8765
 ```
 
-Open **http://127.0.0.1:8765**. On an already configured Mac, `Launch Mars Wind.command` starts the same server. It is local; pushing the repository does not publish this server.
+Open **[localhost:8765](http://127.0.0.1:8765/)**. On an already configured Mac, double-click `Launch Mars Wind.command` to start the same site. On Windows, replace the activation command with `.venv\Scripts\Activate.ps1` in PowerShell.
 
-If a browser still shows an earlier design, reload once while bypassing its old cache: **Command+Shift+R in Firefox on macOS**. The server now sends HTML with `Cache-Control: no-store`; styles, scripts and datasets must revalidate before reuse, with ETags avoiding unnecessary downloads. GitHub Actions checks the repository; it does not refresh an already open browser tab.
+The website runs on your computer. GitHub hosts the code, notes and saved outputs; GitHub Actions runs the scientific and browser-data checks.
 
-## Follow the question
+## Methods & sources
 
-- **Hypotheses**: five common observations face four overlapping origin families. Open a cell for its requirement, proposed test and primary sources. This is a qualitative synthesis, not a probability ranking or a new model fit.
-- **Overview and Results**: three computed findings have visual summaries linked to their experiments. The Results directory also collects the regional study, thermal model, dataset diagnostics and downloadable outputs.
-- **Executed experiments**, inside Results: thermal acquisition kernels, exact synthetic magnetic fields, injection/recovery, 96 map-validation settings and a candidate laboratory component ledger. [Methods and qualified conclusions](research/EXECUTED_EXPERIMENTS.md) · local route `/research/experiments`.
-- **Dynamo test programme**, inside Hypotheses: 30 proposals across five research questions, conditional tests, required inputs and explicit source-reading limits. These are planned discriminating tests, not executed dynamo models. [Assessment and next calculations](research/DYNAMO_TESTS.md) · local route `/research/dynamo`.
-- **Chronology**, inside Hypotheses: formation, alteration, shock, magnetization and ejection remain distinct. Eleven selected events preserve ranges, reported uncertainties, approximate ages, bounds and unknown dates. [Method and exports](research/COMPARISON.md).
-- **Atlas**: maps of relief, crust, magnetism and geology, 94 chronological sample records linked to 10 ejection groups and 16 proposed source craters, laboratory measurements and alteration evidence, with provenance.
-- **Regional study**, inside Results: five guided chapters comparing regional magnetic contrasts. Reference terrain and observation altitude can change the result; the study does not select a unique origin. [Study and results](research/PILOT_STUDY.md) · [Other completed diagnostics](research/FIRST_RESULTS.md).
-- **Thermal experiment**, inside Results: two original synthetic cooling histories, depth–time diagrams and an ordering-temperature exclusion gate. The solver is checked against analytic solutions and grid refinement; the histories are not fitted to Mars. [Method, sources and outputs](research/THERMAL_EXPERIMENT.md) · local route `/research/thermal`.
-- **Sources**: 1,823 records in the active solid-planet selection, including 76 core references and 70 consulted beyond metadata. The historical 1,990-record catalog remains archived; atmosphere topics are excluded from the site search and filtered RIS exports. This is not a complete audit of the literature. [Search method](research/METHOD.md) · [September review](research/DICHOTOMY_REVIEW.md) · [RIS](research/library.ris) · [BibTeX](research/library.bib).
+The site, research notes and repository documentation are in English. Calculations are independently implemented from published methods and permitted inputs, with analytic benchmarks and sensitivity checks where applicable.
 
-## Reproduce the small site artifacts
+- [Research plan](research/RESEARCH_PLAN.md) and [critical literature review](research/DICHOTOMY_REVIEW.md)
+- [Source policy](docs/SOURCE_POLICY.md), [dataset manifest](research/data/manifest.json) and [regional-study provenance](research/pilot/sources.json)
+- [Development, reproduction & checks](docs/DEVELOPMENT.md)
 
-```bash
-python scripts/research/export_comparison.py
-python scripts/research/render_dynamo.py
-python scripts/research/render_docs.py
-python scripts/research/render_pilot.py
-python scripts/thermal/build.py
-python scripts/experiments/build.py
-python scripts/research/render_overview.py
-python -m pytest -q -m 'not integration'
-node --test tests/*.test.mjs
-```
+The active literature selection contains **1,823 records**, including **76 core references** and **70 consulted beyond metadata**. These counts describe the current selection, not an exhaustive review. Research notes prepared with AI assistance record reading depth and uncertainty.
 
-The overview figures use the committed experiment outputs; `render_overview.py` also renders an original orthographic navigation globe from the permitted MOLA display grid. The meteorite explorer preserves preferred proposals, separately linked candidates, conditional alternatives and unlocated samples.
+## Credits & license
 
-The comparison JSON is curated by hand; the CSV files and both interactive views use that same source. Regeneration does not download external data. The saved observations and study retain their existing [data notes](research/data/README.md), [manifest](research/data/manifest.json) and [study provenance](research/pilot/sources.json).
+Created by **Charlotte Crocicchia**. Original code is released under the [MIT license](LICENSE). External datasets and visual assets retain their own attribution and terms; see the [data guide](research/data/README.md), [visual credits](docs/ASSETS.md) and [Plotly license](web/PLOTLY-LICENSE.txt).
 
-Large raw archives remain local and are not needed for browsing. Full reacquisition is deliberately blocked while some source permissions remain unresolved; see the [source policy](docs/SOURCE_POLICY.md). Existing extracted numerical products were expressly authorized by the project owner; that does not establish new redistribution rights for their source archives.
-
-## Retired atmospheric interface
-
-The atmospheric pages, browser scripts and HTTP calculation endpoints were removed on 27 September 2026 at the owner's request. The research server and desktop launcher do not import, build or call MCD. Old `/atmosphere` bookmarks return to the homepage.
-
-Independently authored numerical modules, analytic tests and historical method notes remain in the repository as offline work. They are outside the active website. Any use of the external MCD software still requires an authorized installation and compliance with its terms; no MCD source or dataset is distributed here. Private internship/professor material is excluded and must not be restored.
-
-## Credits and terms
-
-Developed independently from published scientific methods and authorized data. This is not an official IPGP, NASA, JPL or MCD product. Research notes assembled with AI assistance retain reading-depth and uncertainty statements.
-
-Original code uses the [MIT license](LICENSE). Plotly retains its [license](web/PLOTLY-LICENSE.txt). External datasets have separate licenses, including noncommercial terms where documented; the code license does not override them. Source links, attribution and [asset credits](docs/ASSETS.md) remain with the corresponding products.
+This is an independent personal research project, with no institutional endorsement.
