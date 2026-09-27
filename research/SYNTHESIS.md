@@ -4,7 +4,7 @@ For the integrated project argument and its falsifiable first study, start with 
 
 **Research synthesis · 24 September 2026 · provisional source assessment.** Read [the search method](METHOD.md) for the distinction between metadata, abstract consultation and selected full-text reading. This synthesis defines tests; it does not report a new inversion or settle the origin debate.
 
-A [27 September targeted review](DICHOTOMY_REVIEW.md) adds qualifications on density, chronology and causal interpretation, plus atmospheric reading leads. The original synthesis date and reading scope remain as stated above.
+A [27 September targeted review](DICHOTOMY_REVIEW.md) adds qualifications on density, chronology and causal interpretation. The original synthesis date and reading scope remain as stated above.
 
 ## The question is larger than a north–south colour contrast
 
@@ -36,7 +36,7 @@ Gravity/topography models anchored by InSight constrain global crustal thickness
 
 Attenuation differences along northern and southern source paths suggest thermal structure, but path geometry, source effects and scattering complicate a direct temperature interpretation. A single lander still provides a restricted sampling geometry. [Sun & Tkalčić](https://doi.org/10.1029/2024GL110921); [Drilleau et al., 2024](https://doi.org/10.1029/2023GL105701).
 
-A 2026 tidal-gravity inversion supports a hotter southern mantle and tests atmospheric-loading corrections. It explicitly leaves room for interior circulation or insulation by thicker crust. This is evidence about the **present interior**, not a unique record of the original formation event. [Berne et al., 2026](https://doi.org/10.1038/s41586-026-10893-x). Thermal evolution models already show that unequal crust and radiogenic heating can create unequal mantle temperatures. [Thiriet et al., 2018](https://doi.org/10.1002/2017JE005431).
+A 2026 tidal-gravity inversion supports a hotter southern mantle with model-dependent observation corrections. It explicitly leaves room for interior circulation or insulation by thicker crust. This is evidence about the **present interior**, not a unique record of the original formation event. [Berne et al., 2026](https://doi.org/10.1038/s41586-026-10893-x). Thermal evolution models already show that unequal crust and radiogenic heating can create unequal mantle temperatures. [Thiriet et al., 2018](https://doi.org/10.1002/2017JE005431).
 
 Recent lower-crustal petrological modelling beneath InSight illustrates another issue: a seismic discontinuity can reflect differentiation within the crust, rather than a simple universal crust–mantle boundary. Local lithological interpretations must be propagated through global models with uncertainty. [Mackay-Champion et al., 2026](https://doi.org/10.1038/s41550-026-02907-5).
 
@@ -60,13 +60,12 @@ Ancient zircon U–Pb ages and Hf reservoir modelling constrain early crust extr
 
 The most urgent magnetic quality issue is collection history. Hand magnets have remagnetized the nine studied stones of the NWA 7034 pairing group. Those natural-remanence measurements cannot be treated as intact Martian paleofields. Carrier mineralogy can still inform crustal analogues; it answers a different question. [Vervelidou et al., 2023](https://doi.org/10.1029/2022JE007464); [Gattacceca et al., 2014](https://doi.org/10.1002/2014GL060464). See the dedicated [meteorite dossier](METEORITES.md) for preservation criteria and sample-level distinctions.
 
-## Water, surface modification and atmosphere
+## Water and surface modification
 
 Clay-bearing exposures and geological mapping along the boundary constrain alteration, substrate and later resurfacing. These are useful tests of an evolutionary scenario but may substantially postdate the initial dichotomy. Spectral non-detection can reflect dust, exposure or resolution. [Boundary clay study, 2026](https://doi.org/10.1029/2025JE009393); [Southern Utopia mapping, 2025](https://doi.org/10.1029/2025JE008931).
 
 Proposed northern oceans require careful elevation, deformation and age tests. Regional delta elevations can instead support separate lakes; that result does not eliminate every ocean hypothesis. [Rivera-Hernández & Palucis, 2019](https://doi.org/10.1029/2019GL083046). Meteorite hydrogen isotopes constrain water-reservoir models but also depend on exchange and fractionation assumptions. [Kurokawa et al., 2014](https://doi.org/10.1016/j.epsl.2014.03.027).
 
-The causal story “dynamo stopped, atmosphere disappeared, dichotomy followed” is too compressed. Magnetic topology, solar forcing, volatile supply and loss pathways interact. A weak dipole can increase ion escape in particular simulations; neither universal protection nor universal enhanced escape follows. [Sakai et al., 2018](https://doi.org/10.1029/2018GL079972). Present atmospheric circulation is primarily a constraint on present conditions and observation corrections. It cannot alone identify a primordial crust-forming event.
 
 ## A productive way to combine the evidence
 

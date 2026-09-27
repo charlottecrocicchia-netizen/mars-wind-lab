@@ -10,10 +10,16 @@ def normalize(value):
     return ''.join(c for c in unicodedata.normalize('NFKD',str(value or '')) if not unicodedata.combining(c)).lower()
 
 
+def in_site_scope(record):
+    """Keep the historical catalogue intact, with atmosphere topics out of the site."""
+    return not any(domain.startswith('Atmosphere') for domain in record['domains'])
+
+
 def filtered_ris(search='',scope='core',topic='',depth='',kind='',from_year=0):
     records=json.loads((ROOT/'research/catalog.json').read_text())
     words=normalize(search).split();output=[]
     for p in records:
+        if not in_site_scope(p):continue
         if scope=='core' and not p['core']:continue
         if topic and topic not in p['domains']:continue
         if depth and p['review_depth']!=depth:continue

@@ -2,7 +2,7 @@
 
 ## Question and scope
 
-Which observations distinguish possible **formation mechanisms** of the Martian hemispheric dichotomy from its **later modification**? The search also covers evidence needed to evaluate those observations: interior and magnetic inversions, meteorite preservation, geochronology, surface alteration, atmospheric escape and mission sampling.
+Which observations distinguish possible **formation mechanisms** of the Martian hemispheric dichotomy from its **later modification**? The search also covers evidence needed to evaluate those observations: interior and magnetic inversions, meteorite preservation, geochronology, surface alteration and mission sampling.
 
 The broad-search cutoff is **2026-09-24**. A targeted review supplied by Charlotte was assessed on **2026-09-27**; this did not rerun or extend the systematic coverage of the broad queries. The included material spans early hypotheses through 2026 publications. Publication dates come from Crossref; online and issue dates can differ. DOI strings containing a year are not used as publication dates. For example, the Sun–Tkalčić attenuation work has an online/issue-date distinction; inspect its full citation rather than inferring the year from `2024GL110921`.
 
@@ -25,7 +25,7 @@ The enormous `total_results_reported` values in the search log are fuzzy-search 
 | Selected full-text sections consulted | Relevant passages, figure captions or methods inspected, without complete audit | 20 |
 | Complete full-text audit | Methods, supplements, uncertainties and result reproduction all audited | 0 |
 
-Original short annotations identify a finding, its relevance and a limitation. They are a reading aid, not peer review. The original nine selected-section records are Irwin–Watters 2010, Wieczorek et al. 2022, Berne et al. 2026, the 2025 inner-core correction, Mackay-Champion et al. 2026, Steele et al. 2024, Gattacceca et al. 2014, Vervelidou et al. 2023 and Weiss et al. 2025. For Weiss et al., the returned-sample review's meteorite discussion and preservation-test figure were inspected. Berne et al.'s atmospheric-loading methods were checked explicitly.
+Original short annotations identify a finding, its relevance and a limitation. They are a reading aid, not peer review. The original nine selected-section records are Irwin–Watters 2010, Wieczorek et al. 2022, Berne et al. 2026, the 2025 inner-core correction, Mackay-Champion et al. 2026, Steele et al. 2024, Gattacceca et al. 2014, Vervelidou et al. 2023 and Weiss et al. 2025. For Weiss et al., the returned-sample review's meteorite discussion and preservation-test figure were inspected.
 
 Primary-source links are attached to every core record. Paywalled previews are not marked as full-text readings. A bibliography entry does not imply that its dataset or code was downloaded, run or validated. No mission archive has yet been ingested into a joint dichotomy inversion.
 

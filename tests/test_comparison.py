@@ -92,7 +92,7 @@ class Navigation(HTMLParser):
 
 
 def test_navigation_has_the_same_five_destinations_on_all_pages():
-    expected=['/','/research/comparison','/research/data','/research/pilot','/research/library']
+    expected=['/','/research/data','/research/tests','/research/comparison','/research/library']
     for path in (ROOT/'web').rglob('*.html'):
         parser=Navigation();parser.feed(path.read_text())
         assert parser.links==expected,path

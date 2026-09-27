@@ -1,9 +1,10 @@
 """Shared navigation used by generated scientific reading pages."""
 from html import escape
 
-DESTINATIONS=[('/', 'Home'),('/research/comparison', 'Compare'),('/research/data', 'Data'),('/research/pilot', 'Study'),('/research/library', 'Sources')]
+DESTINATIONS=[('/', 'Overview'),('/research/data', 'Atlas'),('/research/tests', 'Results'),('/research/comparison', 'Hypotheses'),('/research/library', 'Sources')]
 
 def navigation(active=''):
+    if active=='/research/pilot':active='/research/tests'
     links=''.join('<a href="'+url+'"'+(' aria-current="page"' if url==active else '')+'>'+label+'</a>' for url,label in DESTINATIONS)
     return '<nav aria-label="Main navigation" lang="en">'+links+'</nav>'
 

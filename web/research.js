@@ -49,10 +49,11 @@ function render(){
 function turnPage(delta){page+=delta;render();byId('library').scrollIntoView({block:'start'});}
 async function loadLibrary(){
  try{
-  const [catalogResponse,summaryResponse]=await Promise.all([fetch('/research/files/catalog.json'),fetch('/research/files/summary.json')]);
-  if(!catalogResponse.ok||!summaryResponse.ok)throw new Error('The research files could not be loaded. Reload the page or consult the repository.');
-  const [catalog,summary]=await Promise.all([catalogResponse.json(),summaryResponse.json()]);papers=catalog;
-  byId('totalCount').textContent=summary.records.toLocaleString('en-US');byId('coreCount').textContent=summary.core_records;byId('readCount').textContent=summary.source_consulted;
+  const catalogResponse=await fetch('/research/files/catalog.json');
+  if(!catalogResponse.ok)throw new Error('The research files could not be loaded. Reload the page or consult the repository.');
+  const catalog=await catalogResponse.json();
+  papers=catalog.filter(p=>!p.domains.some(domain=>domain.startsWith('Atmosphere')));
+  byId('totalCount').textContent=papers.length.toLocaleString('en-US');byId('coreCount').textContent=papers.filter(p=>p.core).length;byId('readCount').textContent=papers.filter(p=>p.review_depth!=='metadata').length;
   // A discovery-topic label must not make an unrelated title match a keyword.
   for(const p of papers)p.searchText=normalize([p.title,...p.authors,p.doi,p.finding,p.dichotomy_use,p.limitation].join(' '));
   addOptions('topic',papers.flatMap(p=>p.domains));addOptions('kind',papers.map(p=>p.type),typeLabels);

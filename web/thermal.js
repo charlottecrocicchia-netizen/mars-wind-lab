@@ -9,11 +9,11 @@ let experiment;
 
 function plotLayout(caseData, candidate = false) {
   return {
-    paper_bgcolor: '#1d1c1b', plot_bgcolor: '#1d1c1b', font: {color: '#d8d1ca', size: 11},
+    paper_bgcolor: '#141b24', plot_bgcolor: '#141b24', font: {color: '#cad0d8', size: 11},
     margin: {l: 48, r: 52, t: 20, b: 56},
     xaxis: {title: {text: candidate ? 'Candidate recording time (Gyr elapsed)' : 'Time (Gyr elapsed)', font: {size: 11}}, range: windowSelect.value === 'event' ? [.999, 1.003] : [0, 4], tickformat: windowSelect.value === 'event' ? '.3f' : '.1f', fixedrange: true},
     yaxis: {title: {text: 'Depth (km)'}, range: [50, 0], fixedrange: true},
-    shapes: caseData.pulses.map(p => ({type: 'line', x0: p.time_myr/1000, x1: p.time_myr/1000, y0: 0, y1: 50, line: {color: '#f0d7c4', dash: 'dash', width: 1}})),
+    shapes: caseData.pulses.map(p => ({type: 'line', x0: p.time_myr/1000, x1: p.time_myr/1000, y0: 0, y1: 50, line: {color: '#c5efea', dash: 'dash', width: 1}})),
     showlegend: false
   };
 }
@@ -25,7 +25,7 @@ async function render() {
   const temperature = transpose(c.temperature_k).map(row => row.map(k => k-273.15));
   const config = {responsive: true, displayModeBar: false};
   const temperaturePlot = Plotly.react('thermalTemperature', [
-    {type: 'heatmap', x, y, z: temperature, colorscale: [[0,'#000004'],[.2,'#3b0f70'],[.4,'#8c2981'],[.6,'#de4968'],[.8,'#fe9f6d'],[1,'#fcfdbf']], zmin: -55, zmax: 725,
+    {type: 'heatmap', x, y, z: temperature, colorscale: [[0,'#000004'],[.2,'#3b0f70'],[.4,'#8c2981'],[.6,'#55d2c3'],[.8,'#8be0d6'],[1,'#cbf1ed']], zmin: -55, zmax: 725,
       colorbar: {title: {text: '°C', side: 'top'}, len: .95, thickness: 10, tickfont: {size: 10}},
       hovertemplate: '%{x:.3f} Gyr elapsed<br>%{y:.1f} km depth<br>%{z:.1f} °C<extra></extra>'},
     {type: 'contour', x, y, z: temperature, contours: {start: carrier.temperature_c, end: carrier.temperature_c, size: 1, coloring: 'none'},
@@ -34,7 +34,7 @@ async function render() {
   const gateData = transpose(c.gates[carrier.id]);
   const gatePlot = Plotly.react('thermalGate', [{
     type: 'heatmap', x, y, z: gateData, zmin: -.5, zmax: 2.5,
-    colorscale: [[0, '#5eaca4'], [1/3, '#5eaca4'], [1/3, '#d7825b'], [2/3, '#d7825b'], [2/3, '#454c58'], [1, '#454c58']],
+    colorscale: [[0, '#5eaca4'], [1/3, '#5eaca4'], [1/3, '#b3a0d0'], [2/3, '#b3a0d0'], [2/3, '#454e58'], [1, '#454e58']],
     showscale: false, text: gateData.map(row => row.map(code => ['No crossing; survival unresolved', 'Later ordering-temperature crossing', 'At or above ordering temperature'][code])),
     hovertemplate: '%{x:.3f} Gyr elapsed<br>%{y:.1f} km depth<br>%{text}<extra></extra>'
   }], plotLayout(c, true), config);

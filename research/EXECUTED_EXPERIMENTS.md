@@ -156,7 +156,7 @@ Using more data is useful when the join has a defensible meaning. The source aud
 | Present equivalent source depths and thermal endpoints | Context only | They do not directly reconstruct ancient acquisition or layer thickness |
 | Seismic and tidal interior constraints | Published context | A coupled interior evolution model is still needed |
 
-No old internship material, MCD call, new restricted dataset or external analysis code is used. Existing data retain their source-specific terms in the [manifest](experiments/manifest.json) and [data provenance](data/manifest.json). The new numerical outputs and plots occupy roughly 1.4 MB; no research archive was downloaded.
+No old internship material, new restricted dataset or external analysis code is used. Existing data retain their source-specific terms in the [manifest](experiments/manifest.json) and [data provenance](data/manifest.json). The new numerical outputs and plots occupy roughly 1.4 MB; no research archive was downloaded.
 
 ## Verification and remaining work
 

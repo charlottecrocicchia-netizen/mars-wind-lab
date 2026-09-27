@@ -7,12 +7,12 @@
   const pct = n => `${Math.round(n*100)}%`;
   const config = {responsive:true,displaylogo:false,scrollZoom:false,
     modeBarButtonsToRemove:['sendDataToCloud','sendChartToCloud','lasso2d','select2d']};
-  const base = {paper_bgcolor:'#1b1a19',plot_bgcolor:'#1b1a19',font:{family:'Inter, Arial, sans-serif',color:'#cfc3b8',size:12},
+  const base = {paper_bgcolor:'#131921',plot_bgcolor:'#131921',font:{family:'Inter, Arial, sans-serif',color:'#b8c3cf',size:12},
     margin:{l:62,r:30,t:25,b:58},hovermode:'closest',legend:{orientation:'h',y:1.17,x:0,font:{size:11}}};
-  const fieldColors = [[0,'#100e22'],[.2,'#452052'],[.4,'#853956'],[.6,'#c36550'],[.8,'#e9a16a'],[1,'#fae4b7']];
-  const topoColors = [[0,'#454b61'],[.25,'#929093'],[.45,'#c1ab96'],[.65,'#a46648'],[.85,'#d39d71'],[1,'#f1dcc0']];
-  const minerals = {RED:['Fe/Mg clays','#efb38c'],GREEN:['Hydrated sulfate / zeolite class','#d8cba5'],
-    BLUE:['Monohydrated sulfates','#b3a0d0'],ORANGE:['Carbonate / serpentine class','#e9b557'],CYAN:['Al clay / silica class','#8db7cb']};
+  const fieldColors = [[0,'#101c37'],[.25,'#345a89'],[.5,'#508ba8'],[.75,'#89d6cc'],[1,'#eefbf5']];
+  const topoColors = [[0,'#193957'],[.267,'#4c7384'],[.534,'#aecbcb'],[1,'#e9f1f1']];
+  const minerals = {RED:['Fe/Mg clays','#98e3da'],GREEN:['Hydrated sulfate / zeolite class','#a5d8d2'],
+    BLUE:['Monohydrated sulfates','#b3a0d0'],ORANGE:['Carbonate / serpentine class','#69d7ca'],CYAN:['Al clay / silica class','#8db7cb']};
   let data, current, renderVersion=0;
 
   function circle(site, factor) {
@@ -24,7 +24,7 @@
       const l2=l+Math.atan2(Math.sin(b)*Math.sin(d)*Math.cos(p),Math.cos(d)-Math.sin(p)*Math.sin(p2));
       lat.push(p2*180/Math.PI);lon.push(l2*180/Math.PI);
     }
-    return {x:lon,y:lat,type:'scatter',mode:'lines',line:{color:'#f6e9d9',width:factor===.8?2:1,dash:factor===.8?'solid':factor===1?'dot':'dash'},
+    return {x:lon,y:lat,type:'scatter',mode:'lines',line:{color:'#daf5f2',width:factor===.8?2:1,dash:factor===.8?'solid':factor===1?'dot':'dash'},
       hoverinfo:'skip',showlegend:false};
   }
 
@@ -73,16 +73,16 @@
     $('pilotMapLegend').hidden=!legend.length;
     const extent=2.13*s.diameter_km/2/3393.5*180/Math.PI;
     await Plotly.react('pilotMap',traces,{...base,margin:{l:55,r:30,t:20,b:48},
-      xaxis:{title:{text:'East longitude (°)'},range:[s.lon-extent/Math.cos(s.lat*Math.PI/180),s.lon+extent/Math.cos(s.lat*Math.PI/180)],gridcolor:'#39322d',zeroline:false,constrain:'domain'},
-      yaxis:{title:{text:'Latitude (°)'},range:[s.lat-extent,s.lat+extent],gridcolor:'#39322d',zeroline:false,scaleanchor:'x',scaleratio:1/Math.cos(s.lat*Math.PI/180),constrain:'domain'}},config);
+      xaxis:{title:{text:'East longitude (°)'},range:[s.lon-extent/Math.cos(s.lat*Math.PI/180),s.lon+extent/Math.cos(s.lat*Math.PI/180)],gridcolor:'#253141',zeroline:false,constrain:'domain'},
+      yaxis:{title:{text:'Latitude (°)'},range:[s.lat-extent,s.lat+extent],gridcolor:'#253141',zeroline:false,scaleanchor:'x',scaleratio:1/Math.cos(s.lat*Math.PI/180),constrain:'domain'}},config);
     if(version!==renderVersion)return;
     const profileTraces=Object.entries(c.profiles).map(([alt,rows],i)=>({type:'scatter',mode:'lines+markers',
       x:rows.map(p=>p.radius_R),y:rows.map(p=>p.mean),name:alt+' km',
-      line:{color:['#e3a077','#879db7','#b998a5'][i],width:alt===h?3:1.5},marker:{size:alt===h?5:3},
+      line:{color:['#7dddd1','#879db7','#b998a5'][i],width:alt===h?3:1.5},marker:{size:alt===h?5:3},
       hovertemplate:'%{x:.2f} R · %{y:.2f} nT<extra>'+alt+' km</extra>'}));
-    await Plotly.react('pilotProfile',profileTraces,{...base,xaxis:{title:{text:'Distance / catalog radius R'},range:[0,2.5],gridcolor:'#332e29',zeroline:false},
-      yaxis:{title:{text:'Mean orbital |B| (nT)'},gridcolor:'#332e29',rangemode:'tozero'},
-      shapes:[{type:'line',xref:'x',yref:'paper',x0:1,x1:1,y0:0,y1:1,line:{dash:'dot',color:'#8e8175'}}]},config);
+    await Plotly.react('pilotProfile',profileTraces,{...base,xaxis:{title:{text:'Distance / catalog radius R'},range:[0,2.5],gridcolor:'#212c3b',zeroline:false},
+      yaxis:{title:{text:'Mean orbital |B| (nT)'},gridcolor:'#212c3b',rangemode:'tozero'},
+      shapes:[{type:'line',xref:'x',yref:'paper',x0:1,x1:1,y0:0,y1:1,line:{dash:'dot',color:'#75808e'}}]},config);
     if(version!==renderVersion)return;
     $('pilotGeology').innerHTML=`<p>Retained interior: <strong>${pct(b.common_support_fraction)}</strong>. Raw ratio: ${fmt(b.ratio)}. Standardized ratio: ${fmt(b.matched_ratio)}.</p>
       ${b.common_support_fraction<.5?'<p class="notice">More than half the interior has no matching surface unit in the reference ring. The standardized value cannot describe the whole crater.</p>':''}
@@ -95,9 +95,9 @@
     if(!current)return;
     const m=current.morphology;
     const traces=[{x:m.normalized_radius,y:m.azimuth_q25_km,type:'scatter',mode:'lines',line:{width:0},showlegend:false,hoverinfo:'skip'},
-      {x:m.normalized_radius,y:m.azimuth_q75_km,type:'scatter',mode:'lines',line:{width:0},fill:'tonexty',fillcolor:'#d7996e25',name:'Azimuthal 25–75% range',hoverinfo:'skip'},
-      {x:m.normalized_radius,y:m.median_elevation_km,type:'scatter',mode:'lines',line:{color:'#e3a077',width:2},name:'Median elevation',hovertemplate:'%{x:.2f} R · %{y:.2f} km<extra></extra>'}];
-    await Plotly.react('pilotMorphology',traces,{...base,xaxis:{title:{text:'Distance / catalog radius R'},gridcolor:'#332e29'},yaxis:{title:{text:'Elevation above areoid (km)'},gridcolor:'#332e29'},legend:{...base.legend,y:1.2}},config);
+      {x:m.normalized_radius,y:m.azimuth_q75_km,type:'scatter',mode:'lines',line:{width:0},fill:'tonexty',fillcolor:'#6ed7ca25',name:'Azimuthal 25–75% range',hoverinfo:'skip'},
+      {x:m.normalized_radius,y:m.median_elevation_km,type:'scatter',mode:'lines',line:{color:'#7dddd1',width:2},name:'Median elevation',hovertemplate:'%{x:.2f} R · %{y:.2f} km<extra></extra>'}];
+    await Plotly.react('pilotMorphology',traces,{...base,xaxis:{title:{text:'Distance / catalog radius R'},gridcolor:'#212c3b'},yaxis:{title:{text:'Elevation above areoid (km)'},gridcolor:'#212c3b'},legend:{...base.legend,y:1.2}},config);
     $('pilotMorphNote').textContent=`Fixed-rim depth: ${fmt(m.depth_km)} km. Depth / diameter: ${m.depth_diameter.toFixed(4)}. ${m.rays} radial rays. These descriptive values are not a hydrothermal classification.`;
   }
 

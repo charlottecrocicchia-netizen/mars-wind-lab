@@ -58,7 +58,6 @@ These are recording histories, not mutually exclusive global origin theories. Im
 | Mineral alteration and isotope ages | Fluid processes and event ordering | MOCAAS ingested; Lafayette age curated; full mineral-age database incomplete |
 | Valleys, lakes, deltas and erosion | Surface transport, deposition and boundary modification | Literature leads; dated geomorphic catalog and exposure controls still needed |
 | Ice and radar structure | Water reservoirs, burial and present distribution | Mission archive inventory; no radar/ice inversion incorporated yet |
-| Atmosphere and escape | Water loss, pressure history and climate boundary conditions | Present MCD atmosphere available; ancient escape histories are not fitted |
 | Volcanism and tectonics | Resurfacing, intrusive heating, permeability and stress | Geologic units ingested; event-resolved regional histories still needed |
 
 These streams share measurements and assumptions. For example, several magnetic products use the same spacecraft observations, and paired meteorites can share one ejection. A joint analysis must track these dependencies instead of counting each paper as an independent vote. “A theory that fits the puzzle” should mean a model that survives incompatible constraints and predicts withheld observations, not one flexible enough to accommodate everything afterward.

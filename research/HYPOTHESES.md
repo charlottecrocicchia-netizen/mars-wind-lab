@@ -65,13 +65,12 @@ Start with Terra Cimmeria and Terra Sirenum, where strong orbital anomalies moti
 
 If inheritance fails but a later recording window works, we gain a conditional constraint on remagnetization. If both fail for reasonable carriers and thermal histories, that parameterized crustal history is inadequate. A stronger dynamo cannot rescue a volume that never records or retains remanence. If several histories remain viable, the honest result is a quantified degeneracy and a specification of the additional measurement needed.
 
-## Where meteorites, water and the atmosphere enter
+## Where meteorites and alteration enter
 
 Meteorites constrain mineral carriers, local event sequences and recording processes. NWA 7034 chemistry can remain useful even where hand magnets compromised its natural remanence; the nine tested paired stones are not nine independent Martian regions ([Gattacceca et al., 2014](https://doi.org/10.1002/2014GL060464); [Vervelidou et al., 2023](https://doi.org/10.1029/2022JE007464)). ALH 84001 helps constrain possible field-active intervals, with its own age and recording interpretation. Neither meteorite family supplies a known global field geometry.
 
 Alteration and water can change magnetic carriers; erosion, burial and volcanism can separate the visible boundary from its initial position. These are explicit recording/modification branches, not direct evidence for an ocean-caused crustal dichotomy. Surface mineral abundance is not assumed to represent deep sources ([AlHantoobi et al., 2021](https://doi.org/10.1029/2020GL090379); [McNeil et al., 2025](https://doi.org/10.1038/s41561-024-01634-8)).
 
-The wind laboratory has a narrower supporting role: surface-pressure harmonics can assess atmospheric loading corrections in time-variable gravity. Present winds do not explain the origin of an ancient crustal contrast. That calculation is a separate sensitivity test and has not yet been implemented; the [research programme](RESEARCH_PLAN.md) specifies the required time and surface conventions.
 
 ## What is new to this project, and what is already published?
 

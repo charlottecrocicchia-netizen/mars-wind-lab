@@ -33,7 +33,7 @@ Each scenario starts in this exact steady state for its initial sources. The sub
 | Input | Illustrative value or law | Interpretation |
 |---|---|---|
 | Column thickness | 50 km | Fixed solid column, not inferred source depth |
-| Surface temperature | 220 K | Fixed boundary; no atmospheric calculation |
+| Surface temperature | 220 K | Prescribed, fixed boundary |
 | Conductivity | 3 W m⁻¹ K⁻¹ | Constant |
 | Density | 2,900 kg m⁻³ | Constant |
 | Heat capacity | 800 J kg⁻¹ K⁻¹ | Constant; no latent heat |
@@ -83,7 +83,7 @@ Remaining below an ordering threshold does not demonstrate billion-year retentio
 | [Steele et al. (2024)](https://doi.org/10.1038/s41467-024-51092-4) | Publisher abstract; full methods not audited in this step | Cooling and field reversals affect basin magnetism. Their magnetic recording calculation is not reproduced here. |
 | [Nagy et al. (2017)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5625920/) | Selected stability and methods sections in the PMC full text | Grain-scale energy barriers and temperature/time dependence motivate the gate's limitation, not a calibrated carrier model. |
 
-The methods note supplies these references directly; it does not change the larger library's catalog counts or promote these readings to full methodological audits. The solver was written independently from the heat equation and analytic cases. Inputs are synthetic; figures and tables are project-generated. No external code, article figure, full text or new dataset is redistributed. No MCD, former internship material or raw archive acquisition is involved.
+The methods note supplies these references directly; it does not change the larger library's catalog counts or promote these readings to full methodological audits. The solver was written independently from the heat equation and analytic cases. Inputs are synthetic; figures and tables are project-generated. No external code, article figure, full text or new dataset is redistributed. No former internship material or raw archive acquisition is involved.
 
 ## Reproduction and outputs
 

@@ -5,19 +5,20 @@ const link=(label,url)=>{const e=make('a',label);e.href=url;return e;};
 const num=(v,n=1)=>typeof v==='number'?v.toLocaleString('en-US',{maximumFractionDigits:n,minimumFractionDigits:n}):v??'Not reported';
 const get=async name=>{const r=await fetch('/research/files/data/'+name+'.json');if(!r.ok)throw Error('Could not load '+name+'. Please reload or use the source downloads.');return r.json();};
 const config={responsive:true,displaylogo:false,scrollZoom:false,modeBarButtonsToRemove:['sendChartToCloud','select2d','lasso2d','autoScale2d']};
-const layout={paper_bgcolor:'transparent',plot_bgcolor:'#1b1a19',font:{family:'Arial, sans-serif',color:'#bdb5ad',size:11},margin:{l:57,r:32,t:25,b:52},xaxis:{gridcolor:'#38312b',zeroline:false},yaxis:{gridcolor:'#38312b',zeroline:false},legend:{orientation:'h',y:1.15}};
-let atlas,met,depths,thermal,results,lab,manifest,paleo,extended,water;
+const layout={paper_bgcolor:'transparent',plot_bgcolor:'#131921',font:{family:'Arial, sans-serif',color:'#adb4bd',size:11},margin:{l:57,r:32,t:25,b:52},xaxis:{gridcolor:'#24303f',zeroline:false},yaxis:{gridcolor:'#24303f',zeroline:false},legend:{orientation:'h',y:1.15}};
+let atlas,met,depths,thermal,results,lab,manifest,paleo,extended,water,meteoriteLinks,selectedSample='';
 const sourceUse={magnetic_field:'Evaluated at 150 and 400 km',magnetic_depth:'Parsed with uncertainty and fit-quality flags',crustal_models:'Four published grids analyzed; full ensemble archived',ejection_ages:'Original age table parsed',ejection_models:'Downloaded; morphological analysis pending',thermal_profiles:'Present-day compatibility diagnostics completed',mola:'Mapped as 2° block averages',lagain2022:'Candidate location and isotope table retained',herd2024:'Samples, groups and crater candidates parsed',geology:'44 units mapped; candidate points classified',rock_magnetism:'1,073 measurements parsed; contamination context retained',mil03346:'Natural-remanence series plotted; ARM, IRM and other bulk experiments archived',alh84001:'492 QDM source-moment records parsed; original magnetic maps archived',paleomag_inventory:'All 15 entries of SI Table S1 transcribed with bounds and uncertainty conventions',aqueous_minerals:'Ten mineral maps reduced to 2° presence cells; coverage-controlled association testing pending'};
 async function init(){
  try{
   if($('testStatus')){[results,thermal,water]=await Promise.all([get('results'),get('thermal'),get('water')]);renderTests();return;}
-  const view=new URLSearchParams(location.search).get('view')||'map';
-  const intros={laboratory:['Meteorite magnetic histories.','Choose a meteorite, inspect its interpretation, then explore the available measurements.'],water:['Water, rock and magnetic memory.','Choose a mineral class and compare its orbital detections with elevation or magnetism.'],meteorites:['Meteorites have several clocks.','Search the chronological catalogue, then explore candidate source regions.'],sources:['Trace each dataset to its source.','See what was downloaded, what was analyzed, and which constraints remain missing.']};if(intros[view]){document.querySelector('.page-intro h1').textContent=intros[view][0];document.querySelector('.page-intro .lead').textContent=intros[view][1];}
+  const requestedView=new URLSearchParams(location.search).get('view');
+  const view=['meteorites','laboratory','water','sources'].includes(requestedView)?requestedView:'map';
+  const intros={laboratory:['Meteorite magnetic histories.','Choose a meteorite, inspect its interpretation, then explore the available measurements.'],water:['Water, rock and magnetic memory.','Choose a mineral class and compare its orbital detections with elevation or magnetism.'],meteorites:['Meteorites. Possible origins.','Connect a sample, its ejection group and the craters proposed in published studies. Every mapped source remains a hypothesis.'],sources:['Trace each dataset to its source.','See what was downloaded, what was analyzed, and which constraints remain missing.']};if(intros[view]){document.querySelector('.page-intro h1').textContent=intros[view][0];document.querySelector('.page-intro .lead').textContent=intros[view][1];}
   for(const a of document.querySelectorAll('[data-view]'))if(a.dataset.view===view)a.setAttribute('aria-current','page');
   if(view==='sources'){manifest=await get('manifest');renderSources();$('sourcesView').hidden=false;}
   else if(view==='laboratory'){[lab,paleo,extended]=await Promise.all([get('laboratory'),get('paleomagnetism'),get('laboratory_extended')]);$('laboratoryView').hidden=false;renderPaleo();}
   else if(view==='water'){[water,atlas]=await Promise.all([get('water'),get('atlas')]);$('waterView').hidden=false;renderWater();}
-  else if(view==='meteorites'){met=await get('meteorites');renderSamples();renderGroups();$('sampleSearch').addEventListener('input',renderSamples);$('meteoriteView').hidden=false;}
+  else if(view==='meteorites'){[met,atlas,meteoriteLinks]=await Promise.all([get('meteorites'),get('atlas'),import('/assets/meteorite-links.mjs?v=design1')]);$('meteoriteView').hidden=false;setupMeteorites();}
   else{[atlas,met,depths]=await Promise.all([get('atlas'),get('meteorites'),get('depths')]);$('mapView').hidden=false;setupMap();}
   $('dataStatus').textContent='';$('dataStatus').hidden=true;
  }catch(e){const status=$('testStatus')||$('dataStatus');status.textContent=e.message;status.setAttribute('role','alert');}
@@ -33,15 +34,15 @@ function setupMap(){
  drawMap();
  $('observationMap').on('plotly_click',e=>{const p=e.points[0];if(typeof p.customdata==='string'&&met.craters.some(c=>c.id===p.customdata)){$('candidateSite').value=p.customdata;$('candidateSite').dispatchEvent(new Event('change'));}else if(p.data.type==='heatmap'){cellDetail(p);}});
 }
-const magneticColors=[[0,'#000004'],[.125,'#1c1044'],[.25,'#4f127b'],[.375,'#812581'],[.5,'#b5367a'],[.625,'#e55964'],[.75,'#fb8761'],[.875,'#fec287'],[1,'#fcfdbf']];
-const topoColors=[[0,'#41465b'],[.23,'#8d929a'],[.34,'#c8b8a5'],[.45,'#c19170'],[.65,'#9a5133'],[.85,'#ce9264'],[1,'#efe0c5']];
+const magneticColors=[[0,'#101c37'],[.25,'#345a89'],[.5,'#508ba8'],[.75,'#89d6cc'],[1,'#eefbf5']];
+const topoColors=[[0,'#193957'],[.267,'#4c7384'],[.534,'#aecbcb'],[1,'#e9f1f1']];
 function drawMap(){
  const kind=$('mapLayer').value,h=$('magHeight').value,density=$('crustDensity').value,c=met.craters.find(c=>c.id===$('candidateSite').value);
  $('heightControl').hidden=kind!=='magnetic';$('densityControl').hidden=kind!=='crust';
  let z=atlas.topography_km,colors=topoColors,title='km',min=-8,max=22,caption='MOLA elevation relative to the areoid. Surface elevation is not crustal thickness.',ticks;
  if(kind==='magnetic'){z=atlas.magnetic_nT[h].map(row=>row.map(v=>Math.log10(Math.max(v,.01))));colors=magneticColors;title='nT';min=0;max=3;ticks={tickvals:[0,1,2,3],ticktext:['1','10','100','1,000']};caption=`Langlais et al. (2019): modeled crustal |B| at ${h} km above the 3,393.5 km reference sphere; degree 134. This is not a meteorite paleointensity. Fixed color scale at both altitudes.`;}
- if(kind==='crust'){z=atlas.crust_km[density];colors='YlOrBr';title='km';min=0;max=120;caption=`Wieczorek et al. (2022), Khan2022 interior, 39 km at InSight; north density 2,900 and south ${num(+density,0)} kg/m³. Four selected models illustrate assumptions; they are not a confidence interval.`;}
- if(kind==='geology'){z=atlas.geology.grid.map(row=>row.map(v=>v<0?null:v));colors=Array.from({length:44},(_,i)=>[i/43,`hsl(${[15,28,38,280,330,225][i%6]},${20+i%3*13}%,${27+i%5*10}%)`]);title='Unit';min=-.5;max=43.5;caption='Tanaka et al. (2014), USGS SIM 3292, 1:20 million. Hover for a unit; click a cell for its interpretation. This is surface geology, not deep source lithology.';}
+ if(kind==='crust'){z=atlas.crust_km[density];colors='Blues';title='km';min=0;max=120;caption=`Wieczorek et al. (2022), Khan2022 interior, 39 km at InSight; north density 2,900 and south ${num(+density,0)} kg/m³. Four selected models illustrate assumptions; they are not a confidence interval.`;}
+ if(kind==='geology'){z=atlas.geology.grid.map(row=>row.map(v=>v<0?null:v));colors=Array.from({length:44},(_,i)=>[i/43,`hsl(${[170,195,215,250,280,310][i%6]},${20+i%3*13}%,${27+i%5*10}%)`]);title='Unit';min=-.5;max=43.5;caption='Tanaka et al. (2014), USGS SIM 3292, 1:20 million. Hover for a unit; click a cell for its interpretation. This is surface geology, not deep source lithology.';}
  if(kind==='depth')caption='Gong et al. (2021): equivalent source depth from overlapping 20° windows. Colored points have nonnegative fits and available bounds; grey crosses are excluded. This is not magnetic-layer thickness or a Curie depth.';
  let heat={type:'heatmap',x:atlas.longitude,y:atlas.latitude,z,colorscale:colors,zmin:min,zmax:max,colorbar:{title:{text:title},thickness:10,len:.7,...ticks},hovertemplate:kind==='geology'?'%{x}°E, %{y}°N<br>%{text}<extra></extra>':kind==='magnetic'?'%{x}°E, %{y}°N<br>|B| %{customdata:.2f} nT<extra></extra>':'%{x}°E, %{y}°N<br>%{z:.2f} '+title+'<extra></extra>',showscale:kind!=='geology'&&kind!=='depth'};
  if(kind==='magnetic')heat.customdata=atlas.magnetic_nT[h];
@@ -49,28 +50,34 @@ function drawMap(){
  if(kind==='depth'){heat.opacity=.18;heat.z=atlas.topography_km;heat.colorscale=topoColors;heat.zmin=-8;heat.zmax=22;}
  const traces=[heat];
  const bx=[],by=[];let prev=null;for(const [x,y] of atlas.boundary){if(prev!==null&&Math.abs(x-prev)>180){bx.push(null);by.push(null);}bx.push(x);by.push(y);prev=x;}
- traces.push({type:'scatter',x:bx,y:by,mode:'lines',line:{color:'#e8ddcb',width:1.3,dash:'dot'},hoverinfo:'skip',showlegend:false});
- if(kind==='depth')for(const valid of [true,false]){const d=depths.filter(d=>d.usable===valid);traces.push({type:'scatter',x:d.map(d=>d.lon),y:d.map(d=>d.lat),mode:'markers',marker:{size:valid?7:5,symbol:valid?'circle':'x',color:valid?d.map(d=>d.depth_km):'#b8b4b0',colorscale:magneticColors,cmin:0,cmax:100,showscale:valid,colorbar:{title:{text:'km'},thickness:10,len:.7}},text:d.map(d=>valid?`${num(d.depth_km)} km; interval ${num(d.lower_km)} to ${num(d.upper_km)} km`:`Excluded: fit ${num(d.depth_km)} km; ${d.interval_available?'interval available':'no interval'}`),hovertemplate:'%{text}<extra></extra>',showlegend:false});}
- traces.push({type:'scatter',x:met.craters.map(c=>c.lon),y:met.craters.map(c=>c.lat),customdata:met.craters.map(c=>c.id),text:met.craters.map(c=>c.name==='Unnamed'?c.id:c.name),mode:'markers',marker:{symbol:'x',size:7,color:'#f7eddf',line:{width:1}},hovertemplate:'%{text}<br>Candidate source<extra></extra>',showlegend:false});
- traces.push({type:'scatter',x:[c.lon],y:[c.lat],customdata:[c.id],mode:'markers',marker:{symbol:'circle-open',size:20,color:'#ffdb83',line:{width:2}},hovertemplate:c.name+'<extra></extra>',showlegend:false});
- Plotly.react('observationMap',traces,{...layout,margin:{l:49,r:kind==='geology'?15:60,t:20,b:48},xaxis:{...layout.xaxis,title:{text:'East longitude (°)'},range:[0,360],dtick:60},yaxis:{...layout.yaxis,title:{text:'Latitude (°)'},range:[-90,90],dtick:30},uirevision:'mars-map'},config);
+ traces.push({type:'scatter',x:bx,y:by,mode:'lines',line:{color:'#cbe8e5',width:1.3,dash:'dot'},hoverinfo:'skip',showlegend:false});
+ if(kind==='depth')for(const valid of [true,false]){const d=depths.filter(d=>d.usable===valid);traces.push({type:'scatter',x:d.map(d=>d.lon),y:d.map(d=>d.lat),mode:'markers',marker:{size:valid?7:5,symbol:valid?'circle':'x',color:valid?d.map(d=>d.depth_km):'#b0b4b8',colorscale:magneticColors,cmin:0,cmax:100,showscale:valid,colorbar:{title:{text:'km'},thickness:10,len:.7}},text:d.map(d=>valid?`${num(d.depth_km)} km; interval ${num(d.lower_km)} to ${num(d.upper_km)} km`:`Excluded: fit ${num(d.depth_km)} km; ${d.interval_available?'interval available':'no interval'}`),hovertemplate:'%{text}<extra></extra>',showlegend:false});}
+ traces.push({type:'scatter',x:met.craters.map(c=>c.lon),y:met.craters.map(c=>c.lat),customdata:met.craters.map(c=>c.id),text:met.craters.map(c=>c.name==='Unnamed'?c.id:c.name),mode:'markers',marker:{symbol:'x',size:7,color:'#dff7f4',line:{width:1}},hovertemplate:'%{text}<br>Candidate source<extra></extra>',showlegend:false});
+ traces.push({type:'scatter',x:[c.lon],y:[c.lat],customdata:[c.id],mode:'markers',marker:{symbol:'circle-open',size:20,color:'#9de5dc',line:{width:2}},hovertemplate:c.name+'<extra></extra>',showlegend:false});
+ Plotly.react('observationMap',traces,{...layout,width:$('observationMap').clientWidth,margin:{l:49,r:kind==='geology'?15:60,t:20,b:48},xaxis:{...layout.xaxis,title:{text:'East longitude (°)'},range:[0,360],dtick:60},yaxis:{...layout.yaxis,title:{text:'Latitude (°)'},range:[-90,90],dtick:30},uirevision:'mars-map'},config);
  $('mapCaption').textContent=caption;siteDetail(c);
 }
 function siteDetail(c){
  const root=$('siteDetails');root.replaceChildren(make('span','PROPOSED SOURCE','tag'),make('h2',c.name==='Unnamed'?c.id:c.name),make('p',`${num(Math.abs(c.lat))}°${c.lat<0?'S':'N'} · ${num(c.lon)}°E · ${num(c.diameter_km)} km diameter`));
  const dl=make('dl');for(const [k,v] of [['Linked ejection groups',c.groups.length?c.groups.join(', '):'No preferred link in this compilation'],['Crustal model field at 150 km',num(c.field_150_nT)+' nT'],['At 400 km',num(c.field_400_nT)+' nT'],['Crater-center surface unit',c.geologic_units_at_point?.map(u=>u.Unit).join(', ')||'Unassigned / boundary'],['Surrounding unit reported in source',c.reported_unit||'See source study']])dl.append(make('dt',k),make('dd',v));root.append(dl,make('p',c.status));
  for(const u of c.geologic_units_at_point||[])root.append(make('p',u.UnitDesc));
- root.append(link('Published source ↗',c.source_url),make('p','The orbital field describes the surroundings today. It does not measure the ancient field recorded by a meteorite.'));
+ root.append(link('Published source ↗',c.source_url),link('See linked meteorite groups →','/research/data?view=meteorites&site='+encodeURIComponent(c.id)),make('p','The orbital field describes the surroundings today. It does not measure the ancient field recorded by a meteorite.'));
  if(c.coordinate_note){const d=make('details');d.append(make('summary','Coordinate correction'),make('p',c.coordinate_note));root.append(d);}
  if(c.excavation?.length){const d=make('details');d.append(make('summary','Modeled excavation depths'));for(const r of c.excavation)d.append(make('p',r.sample+': '+r.maximum_depth_as_reported));root.append(d);}
 }
 function cellDetail(p){const root=$('siteDetails'),i=atlas.latitude.indexOf(p.y),j=atlas.longitude.indexOf(p.x);if(i<0||j<0)return;const unit=atlas.geology.grid[i][j];root.replaceChildren(make('span','DISPLAY CELL','tag'),make('h2',`${p.x}°E, ${p.y}°N`),make('p','A 2° display cell. Use the candidate menu to return to a proposed meteorite source.'));for(const [name,value] of [['Elevation',num(atlas.topography_km[i][j])+' km above areoid'],['Modeled |B| at 150 km',num(atlas.magnetic_nT['150'][i][j])+' nT']])root.append(make('h3',name),make('p',value));if(unit>=0){const u=atlas.geology.units[unit];root.append(make('h3',u.Unit+' · '+u.UnitDesc),make('p',u.Interpretation));}}
-function renderSamples(){const q=($('sampleSearch').value||'').toLowerCase(),rows=met.samples.filter(s=>[s.name,s.type,s.ejection_group].join(' ').toLowerCase().includes(q));$('sampleCount').textContent=`${rows.length} of ${met.samples.length} sample records · Herd et al. (2024), Data S1`;$('sampleRows').replaceChildren(...rows.map(s=>{const r=make('tr');for(const v of [s.name,s.type,s.ejection_group,s.ejection_Ma==null?'Not reported':num(s.ejection_Ma,2)+(s.ejection_sigma_Ma!=null?' ± '+num(s.ejection_sigma_Ma,2)+' (1σ)':''),s.crystallization_Ma==null?'Not reported':num(s.crystallization_Ma,0)+(s.crystallization_2sigma_Ma!=null?' ± '+num(s.crystallization_2sigma_Ma,0)+' (2σ)':'')])r.append(make('td',v));return r;}));}
+function renderSamples(){
+ const q=($('sampleSearch').value||'').toLowerCase().replace(/\s/g,''),group=$('meteoriteGroup').value;
+ const rows=met.samples.filter(s=>(!group||meteoriteLinks.sampleGroup(s)===group)&&[s.name,s.type,s.ejection_group].join(' ').toLowerCase().replace(/\s/g,'').includes(q));
+ $('sampleCount').textContent=`${rows.length} of ${met.samples.length} sample records · ${group||'all groups'} · Herd et al. (2024), Data S1`;
+ $('sampleRows').replaceChildren(...rows.map(s=>{const r=make('tr');if(s.name===selectedSample)r.className='selected-sample';const name=make('button',s.name,'sample-link');name.type='button';name.setAttribute('aria-label',`Inspect ${s.name} source proposals`);name.onclick=()=>selectMeteoriteSample(s);const cell=make('td');cell.append(name);r.append(cell);for(const v of [s.type,meteoriteLinks.groupKey(s.ejection_group),s.ejection_Ma==null?'Not reported':num(s.ejection_Ma,2)+(s.ejection_sigma_Ma!=null?' ± '+num(s.ejection_sigma_Ma,2)+' (1σ)':''),s.crystallization_Ma==null?'Not reported':num(s.crystallization_Ma,0)+(s.crystallization_2sigma_Ma!=null?' ± '+num(s.crystallization_2sigma_Ma,0)+' (2σ)':'')])r.append(make('td',v));return r;}));
+ if(!rows.length){const row=make('tr'),cell=make('td','No samples match this group and search. Clear the search or choose All groups.');cell.colSpan=5;row.append(cell);$('sampleRows').append(row);}
+}
 function renderGroups(){for(const g of met.groups){const d=make('details');d.append(make('summary',g.group+' · '+g.petrology),make('p',g.main_samples),make('p',`Exposure: ${g.exposure_Ma_as_reported} Ma. Crystallization: ${g.crystallization_Ma_as_reported}.`),make('p',`Preferred candidate in this study: ${g.preferred_candidate||'not selected'}. Province: ${g.province}.`));const c=met.craters.find(c=>c.name===g.preferred_candidate||(g.group==='group 5-2'&&c.name==='Karratha'));if(c)d.append(link('Inspect candidate on the map →','/research/data?site='+encodeURIComponent(c.id)));d.append(make('h3','Alternatives & conditions'));const ul=make('ul');g.alternatives.forEach(a=>ul.append(make('li',a)));d.append(ul);$('ejectionGroups').append(d);}}
 function renderSources(){for(const s of manifest){const c=make('article',undefined,'source-card');c.append(make('span',s.status==='downloaded'?'DOWNLOADED':'PARTIAL / UNAVAILABLE','tag'),make('h3',s.title),make('p',sourceUse[s.id]||'Downloaded; additional model analysis pending.'),make('p',s.limitation),link('Original archive ↗',s.landing_url),make('p','License: '+s.license));const d=make('details');d.append(make('summary',`${s.files?.length||0} products · files & checksums`));const ul=make('ul');for(const f of s.files||[]){const li=make('li');li.append(link(f.name,f.url),make('p',f.status+(f.bytes?' · '+num(f.bytes/1e6,2)+' MB':'')+(f.error?' · '+f.error:'')));if(f.sha256)li.append(make('code','SHA256 '+f.sha256));ul.append(li);}d.append(ul);c.append(d);$('sourceCards').append(c);}}
 function testCard(number,title,result,meaning,limit){const c=make('article',undefined,'test-card');c.append(make('span',number+' / COMPLETED DIAGNOSTIC','tag'),make('h2',title),make('div',result,'result-line'),make('p',meaning,'test-result'),make('p',limit));const d=make('details');d.append(make('summary','Method, sensitivity & evidence'));c.append(d);$('testCards').append(c);return d;}
 function tableIn(parent,headers,rows){const wrap=make('div',undefined,'table-scroll'),t=make('table'),h=make('tr');headers.forEach(x=>h.append(make('th',x)));const head=make('thead');head.append(h);t.append(head);const b=make('tbody');rows.forEach(row=>{const r=make('tr');row.forEach(x=>r.append(make('td',x)));b.append(r);});t.append(b);wrap.append(t);parent.append(wrap);}
-function drawThermal(){const traces=['North','South'].map((h,i)=>({type:'scatter',mode:'lines',x:thermal[h].BestModel.temperature_k,y:thermal[h].BestModel.depth_km,name:h,line:{color:i?'#df9470':'#829ab4'}}));Plotly.react('thermalProfiles',traces,{...layout,xaxis:{...layout.xaxis,title:{text:'Temperature (K)'},range:[200,1300]},yaxis:{...layout.yaxis,title:{text:'Depth below local surface (km)'},range:[180,0]},shapes:[598.15,853.15,943.15].map(x=>({type:'line',x0:x,x1:x,y0:0,y1:180,line:{color:'#777',width:1,dash:'dot'}}))},config);}
+function drawThermal(){const traces=['North','South'].map((h,i)=>({type:'scatter',mode:'lines',x:thermal[h].BestModel.temperature_k,y:thermal[h].BestModel.depth_km,name:h,line:{color:i?'#75dace':'#829ab4'}}));Plotly.react('thermalProfiles',traces,{...layout,xaxis:{...layout.xaxis,title:{text:'Temperature (K)'},range:[200,1300]},yaxis:{...layout.yaxis,title:{text:'Depth below local surface (km)'},range:[180,0]},shapes:[598.15,853.15,943.15].map(x=>({type:'line',x0:x,x1:x,y0:0,y1:180,line:{color:'#777',width:1,dash:'dot'}}))},config);}
 function renderTests(){
  $('testStatus').textContent=`Run completed ${new Date(results.generated_at).toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})} · Selected-product diagnostics; archive contains ${results.counts.downloaded_products} downloaded products. No origin mechanism selected.`;
  const m=results.boundary_magnetic_contrast,a=results.depth_quality,c=results.crust_density_sensitivity;
@@ -121,10 +128,10 @@ function drawRawLab(){
  else if(r.raw_dataset==='alh'){rows=alhSeries().filter(m=>(m.measurement.includes('-TT_')?'Thermal demagnetization':'AF demagnetization')===$('labExperiment').value);y=rows.map(m=>Number(m.magn_moment));hover=rows.map(m=>`${m.method_codes}<br>AF: ${num(+m.treat_ac_field*1000,2)} mT${m.treat_temp?'<br>Temperature: '+num(+m.treat_temp,1)+' K':''}`);unit='Fitted QDM source moment (A m²)';description=`${rows.length} natural-remanence records for source ${name}. QDM dipole-inversion moments; not whole-rock moments. ARM/TRM acquisition experiments are excluded from this NRM view. Original source quality flags retained in the download.`;}
  else{rows=lab.measurements.filter(m=>m.specimen===name);y=rows.map(m=>+m.magn_moment);hover=rows.map(m=>`${m.method_codes}<br>Archived AF: ${num(+m.treat_ac_field*1000,2)} mT`);unit='Remanent moment (A m²)';description=`${rows.length} archived measurements. Some AF amplitudes have discontinuities; acquisition order is shown without silent correction. This suite documents hand-magnet contamination.`;}
  const x=rows.map((_,i)=>i+1);
- Plotly.react('labPlot',[{type:'scatter',mode:'lines+markers',x,y,marker:{size:4,color:'#df9470'},line:{width:1},text:hover,hovertemplate:'Step %{x}<br>%{y:.4g}<br>%{text}<extra></extra>'}],{...layout,xaxis:{...layout.xaxis,title:{text:'Measurement order (as archived)'}},yaxis:{...layout.yaxis,title:{text:unit},type:r.raw_dataset==='mil'?'linear':'log'}},config);$('labCaption').textContent=description;
+ Plotly.react('labPlot',[{type:'scatter',mode:'lines+markers',x,y,marker:{size:4,color:'#75dace'},line:{width:1},text:hover,hovertemplate:'Step %{x}<br>%{y:.4g}<br>%{text}<extra></extra>'}],{...layout,xaxis:{...layout.xaxis,title:{text:'Measurement order (as archived)'}},yaxis:{...layout.yaxis,title:{text:unit},type:r.raw_dataset==='mil'?'linear':'log'}},config);$('labCaption').textContent=description;
  $('labDirectionPlot').hidden=false;$('labDirectionCaption').hidden=false;
  const direction=(key,alternative)=>rows.map(m=>{const v=m[key]??m[alternative];return v==null||v===''?null:Number(v);});
- Plotly.react('labDirectionPlot',[{type:'scatter',mode:'markers',x,y:direction('declination_deg','dir_dec'),name:'Declination',marker:{color:'#df9470',size:5}},{type:'scatter',mode:'markers',x,y:direction('inclination_deg','dir_inc'),name:'Inclination',marker:{color:'#87aebe',size:5}}],{...layout,xaxis:{...layout.xaxis,title:{text:'Measurement order'}},yaxis:{...layout.yaxis,title:{text:'Laboratory direction (°)'},range:[-90,360]},legend:{orientation:'h',y:1.16}},config);
+ Plotly.react('labDirectionPlot',[{type:'scatter',mode:'markers',x,y:direction('declination_deg','dir_dec'),name:'Declination',marker:{color:'#75dace',size:5}},{type:'scatter',mode:'markers',x,y:direction('inclination_deg','dir_inc'),name:'Inclination',marker:{color:'#87aebe',size:5}}],{...layout,xaxis:{...layout.xaxis,title:{text:'Measurement order'}},yaxis:{...layout.yaxis,title:{text:'Laboratory direction (°)'},range:[-90,360]},legend:{orientation:'h',y:1.16}},config);
 }
 function renderWater(){
  const classes=[...new Map(water.products.map(p=>[p.class,p])).values()];for(const c of classes){const o=make('option',c.label);o.value=c.class;$('waterClass').append(o);}$('waterClass').value='RED';
@@ -135,9 +142,81 @@ function drawWater(){
  const cells=[...new Map(products.flatMap(p=>p.cells).map(c=>[c.join(','),c])).values()],c=products[0],mag=$('waterBackground').value==='magnetic';
  const base={type:'heatmap',x:atlas.longitude,y:atlas.latitude,z:mag?atlas.magnetic_nT['150'].map(r=>r.map(v=>Math.log10(Math.max(v,.01)))):atlas.topography_km,colorscale:mag?magneticColors:topoColors,zmin:mag?0:-8,zmax:mag?3:22,showscale:false,opacity:.5,hoverinfo:'skip'};
  const points={type:'scatter',mode:'markers',x:cells.map(([i,j])=>atlas.longitude[j]),y:cells.map(([i,j])=>atlas.latitude[i]),marker:{color:c.color,size:5,symbol:'square',opacity:.85},customdata:cells.map(([i,j])=>atlas.magnetic_nT['150'][i][j]),hovertemplate:'Detection inside cell centered on %{x}°E, %{y}°N<br>Modeled |B| at center: %{customdata:.2f} nT<extra></extra>',showlegend:false};
- const bx=[],by=[];let prev=null;for(const [x,y] of atlas.boundary){if(prev!==null&&Math.abs(x-prev)>180){bx.push(null);by.push(null);}bx.push(x);by.push(y);prev=x;}const boundary={type:'scatter',x:bx,y:by,mode:'lines',line:{color:'#eee1d0',width:1,dash:'dot'},hoverinfo:'skip',showlegend:false};
+ const bx=[],by=[];let prev=null;for(const [x,y] of atlas.boundary){if(prev!==null&&Math.abs(x-prev)>180){bx.push(null);by.push(null);}bx.push(x);by.push(y);prev=x;}const boundary={type:'scatter',x:bx,y:by,mode:'lines',line:{color:'#d0eeea',width:1,dash:'dot'},hoverinfo:'skip',showlegend:false};
  Plotly.react('waterMap',[base,boundary,points],{...layout,margin:{l:48,r:20,t:20,b:50},xaxis:{...layout.xaxis,title:{text:'East longitude (°)'},range:[0,360],dtick:60},yaxis:{...layout.yaxis,title:{text:'Latitude (°)'},range:[-90,90],dtick:30},uirevision:'water-map'},config);
  $('waterCaption').textContent=`${num(cells.length,0)} occupied 2° cells · ${c.label} · ${inst==='both'?'OMEGA + CRISM union':inst}. Background: ${mag?'modeled crustal |B| at 150 km (log scale)':'MOLA elevation'}. Marker area is not deposit area. Dotted curve: published dichotomy boundary.`;
  const fields=cells.map(([i,j])=>atlas.magnetic_nT['150'][i][j]).sort((a,b)=>a-b),n=fields.length,median=n%2?fields[(n-1)/2]:(fields[n/2-1]+fields[n/2])/2;
  const root=$('waterDiagnostic');root.replaceChildren(make('span','COMPLETED · DESCRIPTIVE OVERLAP','tag'),make('h2','An overlay is a starting point.'),make('p',`At these occupied cell centers, the modeled 150 km field ranges from ${num(fields[0],2)} to ${num(fields[n-1],2)} nT (median ${num(median,2)} nT). This is an unweighted display-cell summary, not a deposit-scale field measurement.`),make('p','The comparison does not isolate the effect of water. Survey coverage, exposed surface age, lithology, impact history and spatial dependence still need controls. No wet-versus-dry correlation or significance is claimed.'),link('Read the next discriminating test →','/assets/reading/water.html'));
 }
+
+function setupMeteorites(){
+ const params=new URLSearchParams(location.search);
+ $('meteoriteStats').innerHTML=`<span><b>${met.samples.length}</b> sample records</span><span><b>${met.groups.length}</b> ejection groups</span><span><b>${met.craters.length}</b> candidate craters</span>`;
+ for(const g of met.groups){const o=make('option',`${g.group.replace('group','Group')} · ${g.petrology}`);o.value=g.group;$('meteoriteGroup').append(o);}
+ for(const c of met.craters){const o=make('option',craterName(c));o.value=c.id;$('meteoriteCrater').append(o);}
+ if(met.groups.some(g=>g.group===params.get('group')))$('meteoriteGroup').value=params.get('group');
+ if(met.craters.some(c=>c.id===params.get('site')))$('meteoriteCrater').value=params.get('site');
+ $('sampleSearch').value=params.get('q')||'';
+ const sample=met.samples.find(s=>s.name===params.get('sample'));
+ if(sample){selectedSample=sample.name;$('meteoriteGroup').value=meteoriteLinks.sampleGroup(sample);}
+ $('meteoriteGroup').onchange=()=>{selectedSample='';chooseGroupCrater();refreshMeteorites();};
+ $('meteoriteCrater').onchange=()=>refreshMeteorites();
+ $('sampleSearch').oninput=()=>{renderSamples();saveMeteoriteSelection();};
+ $('resetMeteorites').onclick=()=>{selectedSample='';for(const id of ['meteoriteGroup','meteoriteCrater','sampleSearch'])$(id).value='';refreshMeteorites();};
+ renderGroups();refreshMeteorites();
+ $('meteoriteMap').on('plotly_click',e=>{const id=e.points[0].customdata;if(met.craters.some(c=>c.id===id)){$('meteoriteCrater').value=id;refreshMeteorites();}});
+}
+const craterName=c=>c.name==='Unnamed'?`Unnamed · ${c.id}`:c.name;
+function chooseGroupCrater(){
+ const group=met.groups.find(g=>g.group===$('meteoriteGroup').value),relations=meteoriteLinks.candidateRelations(group,met.craters);
+ $('meteoriteCrater').value=(relations.find(r=>r.kind!=='alternative')||relations[0])?.crater.id||'';
+}
+function selectMeteoriteSample(sample){
+ selectedSample=sample.name;$('meteoriteGroup').value=meteoriteLinks.sampleGroup(sample);chooseGroupCrater();refreshMeteorites();
+ $('meteoriteDetails').scrollIntoView({block:'nearest',behavior:'auto'});
+}
+function saveMeteoriteSelection(){
+ const url=new URL(location.href);url.searchParams.set('view','meteorites');
+ for(const [key,value] of [['group',$('meteoriteGroup').value],['site',$('meteoriteCrater').value],['q',$('sampleSearch').value],['sample',selectedSample]])if(value)url.searchParams.set(key,value);else url.searchParams.delete(key);
+ history.replaceState(null,'',url);
+}
+function refreshMeteorites(){renderSamples();drawMeteoriteMap();meteoriteDetail();saveMeteoriteSelection();}
+function drawMeteoriteMap(){
+ const group=met.groups.find(g=>g.group===$('meteoriteGroup').value),relations=meteoriteLinks.candidateRelations(group,met.craters),site=$('meteoriteCrater').value;
+ const traces=[{type:'heatmap',x:atlas.longitude,y:atlas.latitude,z:atlas.topography_km,colorscale:topoColors,zmin:-8,zmax:22,showscale:false,opacity:.75,hovertemplate:'%{x}°E, %{y}°N<br>Elevation %{z:.1f} km<extra></extra>'}];
+ const bx=[],by=[];let prev=null;for(const [x,y] of atlas.boundary){if(prev!==null&&Math.abs(x-prev)>180){bx.push(null);by.push(null);}bx.push(x);by.push(y);prev=x;}
+ traces.push({type:'scatter',mode:'lines',x:bx,y:by,line:{color:'#d6e7ee',width:1,dash:'dot'},hoverinfo:'skip',showlegend:false});
+ for(const kind of ['other','alternative','linked','preferred']){
+  const craters=met.craters.filter(c=>{const r=relations.find(r=>r.crater.id===c.id);return (r?.kind||'other')===kind;});if(!craters.length)continue;
+  traces.push({type:'scatter',mode:'markers',x:craters.map(c=>c.lon),y:craters.map(c=>c.lat),customdata:craters.map(c=>c.id),text:craters.map(craterName),marker:{size:kind==='other'?8:12,symbol:kind==='alternative'?'diamond':'circle',color:kind==='other'?'#8fa9bb':kind==='alternative'?'#c0aff0':'#79dace',line:{color:'#102330',width:1.5}},hovertemplate:'%{text}<br>Proposed source · not confirmed<extra></extra>',showlegend:false});
+ }
+ const c=met.craters.find(c=>c.id===site);
+ if(c)traces.push({type:'scatter',mode:'markers',x:[c.lon],y:[c.lat],customdata:[c.id],marker:{size:23,symbol:'circle-open',color:'#ffffff',line:{width:2}},hovertemplate:craterName(c)+'<extra></extra>',showlegend:false});
+ const annotations=met.craters.filter(c=>['Karratha','Tooting','Corinto'].includes(c.name)||c.id===site).map(c=>({x:c.lon,y:c.lat,text:craterName(c),showarrow:true,arrowhead:0,ax:c.name==='Corinto'?-28:28,ay:c.name==='Karratha'?30:-28,font:{color:'#eaf5f8',size:10},bgcolor:'#102130d9',borderpad:3,arrowcolor:'#d0e6ed'}));
+ Plotly.react('meteoriteMap',traces,{...layout,width:$('meteoriteMap').clientWidth,margin:{l:43,r:16,t:18,b:43},annotations,xaxis:{...layout.xaxis,title:{text:'East longitude (°)'},range:[0,360],dtick:60},yaxis:{...layout.yaxis,title:{text:'Latitude (°)'},range:[-90,90],dtick:30},uirevision:'meteorite-world'},config);
+}
+function meteoriteDetail(){
+ const root=$('meteoriteDetails'),g=met.groups.find(g=>g.group===$('meteoriteGroup').value),c=met.craters.find(c=>c.id===$('meteoriteCrater').value);
+ root.replaceChildren(make('span','SOURCE PROPOSALS','tag'),make('h2',selectedSample||g?.group.replace('group','Group')||'Where could these rocks come from?'));
+ if(g){
+  root.append(make('p',g.petrology),make('p',`Group context: ${g.main_samples}.`),make('p',`Exposure age: ${g.exposure_Ma_as_reported} Ma. This is not the crystallization age.`));
+  const relations=meteoriteLinks.candidateRelations(g,met.craters);
+  if(!relations.length)root.append(make('p','No mapped source is assigned to this group in the compilation. Its samples remain in the catalogue.'));
+  const list=make('ul',undefined,'group-candidate-list');for(const r of relations.filter(r=>r.kind!=='alternative')){const li=make('li'),b=make('button',`${craterName(r.crater)} · ${r.kind==='preferred'?'preferred proposal':r.kind==='linked'?'linked proposal':'alternative'}`);b.type='button';b.onclick=()=>{$('meteoriteCrater').value=r.crater.id;refreshMeteorites();};li.append(b,make('p',r.condition));list.append(li);}root.append(list);
+  if(g.alternatives.length){const d=make('details');d.append(make('summary','Alternatives & source conditions'));for(const text of g.alternatives)d.append(make('p',text));root.append(d);}
+ }else root.append(make('p','Select an ejection group or a sample to highlight its published candidates. Shared ejection groups are not independent samples of the Martian surface.'));
+ if(c){const d=make('div',undefined,'candidate-detail');d.append(make('h3',craterName(c)),make('p',`${num(Math.abs(c.lat))}°${c.lat<0?'S':'N'} · ${num(c.lon)}°E · ${num(c.diameter_km)} km diameter`),make('p',c.status));
+  if(g&&!meteoriteLinks.candidateRelations(g,met.craters).some(r=>r.crater.id===c.id))d.append(make('p','This crater has no recorded association with the selected group.'));
+  for(const name of c.groups.filter(name=>name!==g?.group)){const b=make('button',`Show ${name} samples`,'sample-link');b.type='button';b.onclick=()=>{$('meteoriteGroup').value=name;selectedSample='';$('sampleSearch').value='';refreshMeteorites();};d.append(b);}
+  d.append(make('p',`${num(c.field_150_nT)} nT · modeled crustal field at 150 km, not meteorite paleointensity.`),link('Compare surface and magnetic layers →','/research/data?site='+encodeURIComponent(c.id)+'&layer=magnetic'),make('p',''),link('Published source ↗',c.source_url));root.append(d);
+ }
+}
+let mapResizeFrame;
+window.addEventListener('resize',()=>{
+ cancelAnimationFrame(mapResizeFrame);
+ mapResizeFrame=requestAnimationFrame(()=>{
+  if(!atlas)return;
+  if($('meteoriteView')&&!$('meteoriteView').hidden)drawMeteoriteMap();
+  else if($('mapView')&&!$('mapView').hidden)drawMap();
+ });
+});

@@ -81,4 +81,19 @@ def test_filtered_ris_is_a_real_attachment_and_matches_the_visible_filters():
     assert client.get('/api/research/export',params={'search':'VERVELIDOU','topic':'Meteorite magnetism'}).text.count('ER  -')==1
     assert client.get('/api/research/export',params={'scope':'all','search':'not-a-real-Mars-title-unique'}).text==''
     summary=json.loads((ROOT/'research/summary.json').read_text())
-    assert client.get('/api/research/export').text.count('ER  -')==summary['core_records']
+    from marswind.research import in_site_scope
+    records=json.loads((ROOT/'research/catalog.json').read_text())
+    assert client.get('/api/research/export').text.count('ER  -')==sum(r['core'] and in_site_scope(r) for r in records)
+
+
+def test_active_library_export_excludes_retired_topics_without_changing_the_archive():
+    from marswind.research import in_site_scope
+    records=json.loads((ROOT/'research/catalog.json').read_text())
+    visible=[r for r in records if in_site_scope(r)]
+    excluded=[r for r in records if not in_site_scope(r)]
+    assert visible and excluded
+    response=TestClient(server.app).get('/api/research/export',params={'scope':'all'})
+    exported={line[6:] for line in response.text.splitlines() if line.startswith('DO  - ')}
+    assert exported=={r['doi'] for r in visible}
+    assert not exported.intersection(r['doi'] for r in excluded)
+    assert TestClient(server.app).get('/api/research/export',params={'scope':'all','topic':'Atmosphere'}).text==''

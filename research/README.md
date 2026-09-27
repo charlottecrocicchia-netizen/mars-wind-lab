@@ -1,12 +1,12 @@
 # Mars dichotomy evidence atlas
 
-[Compare origin scenarios and separate event ages](/research/comparison) · [Method and exports](COMPARISON.md). The active website focuses on the dichotomy; the atmospheric interface has been retired.
+[Compare origin scenarios and separate event ages](/research/comparison) · [Method and exports](COMPARISON.md). The active website focuses on crustal structure, magnetic recording and meteorite evidence.
 
 **New: [completed regional study](PILOT_STUDY.md)** — five navigable local pages, regional magnetic contrasts, geological-reference sensitivity, explicit hypotheses and reproducible outputs.
 
 **Next physical building block: [thermal experiment](THERMAL_EXPERIMENT.md)** — an independently written, analytically verified conductive column, two synthetic histories and depth–time thermal exclusions. No regional history or magnetic survival fraction is inferred.
 
-A research component of **Charlotte Crocicchia's personal Mars project**. This collection connects the northern-lowland / southern-highland contrast with interior structure, impact and convection models, rock magnetism, meteorite histories, surface geology and atmospheric evolution.
+A research component of **Charlotte Crocicchia's personal Mars project**. This collection connects the northern-lowland / southern-highland contrast with interior structure, impact and convection models, rock magnetism, meteorite histories, surface geology and alteration.
 
 **Catalog updated: 27 September 2026; broad search: 24 September 2026.** This is an evidence inventory with selective source assessment, not a completed exhaustive systematic review and not a new discovery about the origin of Mars's dichotomy.
 
@@ -26,7 +26,7 @@ A research component of **Charlotte Crocicchia's personal Mars project**. This c
 - [Search method, coverage and reading status](METHOD.md)
 - [Forum leads and their scientific checks](COMMUNITY.md)
 
-Open the **[research workspace](http://127.0.0.1:8765/)**. Its persistent navigation has Home, Compare, Data, Study and Sources. The thermal experiment sits inside Study. The active website works without MCD; the atmospheric interface has been retired.
+Open the **[research workspace](http://127.0.0.1:8765/)**. The current site selection contains 1,823 records, including 76 core references; the larger search archive and its original counts remain available for provenance. Its persistent navigation has Overview, Atlas, Results, Hypotheses and Sources. Results groups the regional study, thermal model, magnetic experiments and dataset diagnostics. The meteorite atlas connects samples to conditional source proposals.
 
 The [first executed diagnostics](FIRST_RESULTS.md) connect orbital fields, surface geology, crustal models, thermal endpoints, candidate meteorite sources and laboratory measurements. [Download provenance](data/manifest.json) and [data conventions](data/README.md) accompany the results.
 

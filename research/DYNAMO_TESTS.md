@@ -98,7 +98,7 @@ The [register](dynamo/tests.json) is the authoritative source for the 30 proposa
 
 This targeted source trail is separate from the existing library catalog and does not change its counts or review-depth labels. Researcher biographies, mission funding claims, unverified personal statements and the report’s assertion that research communities do not cite one another are not adopted. The cited basin literature itself acknowledges earlier cancellation ideas.
 
-The supplied report and publisher full texts are not redistributed. This release introduces original test designs, short attributed assessments and source links. It imports no external code or new numerical dataset, accesses no former internship material and does not use MCD.
+The supplied report and publisher full texts are not redistributed. This release introduces original test designs, short attributed assessments and source links. It imports no external code or new numerical dataset, accesses no former internship material.
 
 To regenerate the small committed outputs, without downloading data:
 
