@@ -33,7 +33,7 @@ function paperCard(p){
   card.append(notes);
   const details=element('details');details.append(element('summary','Limits & reading record'),element('p',p.limitation),element('p',p.consulted_material));
   if(p.dates){const dates=Object.entries(p.dates).filter(([,d])=>d.length).map(([k,d])=>`${k.replace('published','Publication')}: ${d.join('-')}`).join(' · ');details.append(element('p',dates));}
-  if(p.correction_doi)details.append(externalLink('Author correction ↗','https://doi.org/'+p.correction_doi));
+  if(p.correction_doi)details.append(externalLink('Correction notice ↗','https://doi.org/'+p.correction_doi));
   card.append(details);
  }else card.append(element('p','Discovery candidate. Relevance, publication status and scientific claims have not been assessed.','candidate-note'));
  return card;

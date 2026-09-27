@@ -1,7 +1,9 @@
 """Serve a filtered bibliography as a normal HTTP attachment, without MCD."""
 import json
 import unicodedata
-from .mcd import ROOT
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def normalize(value):

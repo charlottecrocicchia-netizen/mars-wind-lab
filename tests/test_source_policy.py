@@ -15,10 +15,13 @@ def test_retired_private_archive_is_not_accessible(monkeypatch, tmp_path):
     monkeypatch.setenv('MARS_LEGACY_ROOT', str(tmp_path))
     client = TestClient(app)
     assert client.get('/api/legacy').status_code == 404
-    page = client.get('/atmosphere')
-    assert page.status_code == 200
-    assert 'data-tab="legacy"' not in page.text
-    assert 'id="legacy"' not in page.text
+    page = client.get('/atmosphere', follow_redirects=False)
+    assert page.status_code == 308 and page.headers['location'] == '/'
+    for path in ['/assets/index.html', '/assets/app.js', '/api/map', '/api/profile',
+                 '/api/section', '/api/seasonal', '/api/modes', '/api/export',
+                 '/api/experiment', '/api/study-note', '/api/sequence',
+                 '/api/sequence/stream', '/api/movie']:
+        assert client.get(path).status_code == 404
 
 
 def test_mcd_requires_explicit_owner_authorization(tmp_path):

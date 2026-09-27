@@ -96,7 +96,7 @@ def test_saved_pilot_provenance_and_scientific_accounting():
 
 def test_pilot_navigation_and_downloads_without_atmospheric_installation(monkeypatch):
     def unavailable():raise RuntimeError('No MCD installation')
-    monkeypatch.setattr(server,'installation',unavailable)
+    monkeypatch.setattr('marswind.mcd.installation',unavailable)
     client=TestClient(server.app)
     for page in ['', '/regions','/hypotheses','/method','/results']:
         response=client.get('/research/pilot'+page)

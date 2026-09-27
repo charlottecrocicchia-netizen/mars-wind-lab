@@ -4,10 +4,8 @@ from pathlib import Path
 import numpy as np
 import pytest
 import xarray as xr
-from fastapi.testclient import TestClient
 from marswind.mcd import ROOT, sample
 from marswind.analysis import map_product,profile_product,modal_product
-from marswind.server import app
 
 pytestmark=[pytest.mark.integration,pytest.mark.skipif(not (ROOT/'build/sample_mcd').exists(),reason='Local MCD adapter missing')]
 
@@ -41,24 +39,18 @@ def test_map_and_local_solar_conventions_differ():
     np.testing.assert_allclose(m['fields']['speed'],np.hypot(m['fields']['u'],m['fields']['v']))
 
 
-def test_http_products_validation_and_portable_exports():
-    client=TestClient(app)
-    for endpoint in ['/','/api/health','/api/map','/api/profile','/api/section','/api/seasonal','/api/modes']:
-        response=client.get(endpoint)
-        assert response.status_code==200,(endpoint,response.text[:500])
-    for params in [{'altitude':-5},{'lat':100},{'time_mode':'ambiguous'},{'ls':361},{'format':'exe'}]:
-        assert client.get('/api/map',params=params).status_code==422
-    response=client.get('/api/export',params={'format':'nc'})
-    assert response.status_code==200
-    with xr.open_dataset(io.BytesIO(response.content),engine='scipy') as ds:
+def test_portable_exports():
+    from marswind.export import dataset, csv_bytes, png_bytes
+    product=map_product()
+    content=bytes(dataset(product).to_netcdf(engine='scipy'))
+    with xr.open_dataset(io.BytesIO(content),engine='scipy') as ds:
         assert ds.u.attrs['units']=='m s-1'
         assert ds.sizes['longitude']==72
         assert json.loads(ds.attrs['provenance_json'])['Ls']==255
-    csv=client.get('/api/export',params={'format':'csv'})
-    assert csv.text.startswith('# {') and 'u [m s-1]' in csv.text
-    png=client.get('/api/export',params={'format':'png'})
-    assert png.content.startswith(b'\x89PNG\r\n\x1a\n')
-    assert len(png.content)>10000
+    csv=csv_bytes(product).decode()
+    assert csv.startswith('# {') and 'u [m s-1]' in csv
+    png=png_bytes(product,'speed')
+    assert png.startswith(b'\x89PNG\r\n\x1a\n') and len(png)>10000
 
 
 

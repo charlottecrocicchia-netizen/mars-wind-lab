@@ -4,6 +4,8 @@ For the integrated project argument and its falsifiable first study, start with 
 
 **Research synthesis · 24 September 2026 · provisional source assessment.** Read [the search method](METHOD.md) for the distinction between metadata, abstract consultation and selected full-text reading. This synthesis defines tests; it does not report a new inversion or settle the origin debate.
 
+A [27 September targeted review](DICHOTOMY_REVIEW.md) adds qualifications on density, chronology and causal interpretation, plus atmospheric reading leads. The original synthesis date and reading scope remain as stated above.
+
 ## The question is larger than a north–south colour contrast
 
 The target is the relationship between low northern terrain, high southern terrain, crustal structure and geological history. These are related observables, but their boundaries need not coincide everywhere. The southern highlands and northern lowlands are geological provinces, not simply everything south and north of the equator. The visible escarpment has also evolved. Work on boundary stratigraphy and eroded remnants makes the separation between **initial formation** and **later modification** essential. [Watters et al., 2007](https://doi.org/10.1146/annurev.earth.35.031306.140220); [Irwin & Watters, 2010](https://doi.org/10.1029/2010JE003658); [McNeil et al., 2025](https://doi.org/10.1038/s41561-024-01634-8).

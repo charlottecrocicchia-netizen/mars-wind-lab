@@ -1,9 +1,7 @@
 """Physical controls and movie invariants, using independent small map fixtures."""
 import numpy as np
 import pytest
-from fastapi.testclient import TestClient
 from marswind import motion
-from marswind.server import app
 
 
 @pytest.fixture
@@ -43,15 +41,6 @@ def test_altitude_sweep_has_one_scale_and_holds_season_fixed(sampler):
         assert frame['provenance']['altitude_km']==frame['value']
 
 
-def test_sequence_api_preserves_nulls_and_validates_movie_fps(sampler):
-    client=TestClient(app)
-    result=client.get('/api/sequence',params={'axis':'season','field':'u','fps':'2'})
-    assert result.status_code==200
-    assert result.json()['frames'][0]['fields']['u'][0][0] is None
-    for endpoint,params in [('/api/sequence',{'axis':'weather'}),('/api/movie',{'fps':3}),('/api/movie',{'fps':0}),('/api/sequence',{'altitude':201})]:
-        assert client.get(endpoint,params=params).status_code==422
-
-
 def test_movie_is_decodable_and_preserves_frame_count(sampler,tmp_path):
     import imageio_ffmpeg
     sequence=motion.sequence_product(axis='altitude',field='speed')
@@ -65,23 +54,17 @@ def test_movie_is_decodable_and_preserves_frame_count(sampler,tmp_path):
 
 
 def test_stream_reports_each_frame_before_complete_payload(sampler):
-    import json
-    client=TestClient(app)
-    response=client.get('/api/sequence/stream',params={'axis':'altitude','field':'speed'})
-    assert response.status_code==200
-    assert response.headers['content-type'].startswith('text/event-stream')
-    events=[json.loads(block[6:]) for block in response.text.strip().split('\n\n')]
+    events=list(motion.sequence_events(axis='altitude',field='speed'))
     assert [event['completed'] for event in events[:-1]]==list(range(21))
     assert all(event['total']==20 for event in events[:-1])
     assert events[-1]['event']=='complete'
     assert len(events[-1]['sequence']['frames'])==20
 
 
-def test_stream_surfaces_model_errors_instead_of_silent_stall(monkeypatch):
-    import json
+def test_sequence_surfaces_model_errors(monkeypatch):
     def failed(**p):raise RuntimeError('Test model unavailable')
     monkeypatch.setattr(motion,'map_product',failed)
-    response=TestClient(app).get('/api/sequence/stream')
-    events=[json.loads(block[6:]) for block in response.text.strip().split('\n\n')]
-    assert events[0]['event']=='progress'
-    assert events[-1]=={'event':'error','detail':'Test model unavailable'}
+    events=motion.sequence_events(axis='altitude',field='speed')
+    assert next(events)['event']=='progress'
+    with pytest.raises(RuntimeError,match='Test model unavailable'):
+        next(events)

@@ -69,9 +69,9 @@ def test_observation_snapshot_is_consistent_and_has_no_unphysical_missing_values
 
 def test_all_workspaces_and_derived_products_work_without_mcd(monkeypatch):
     def unavailable():raise RuntimeError('MCD unavailable')
-    monkeypatch.setattr(server,'installation',unavailable)
+    monkeypatch.setattr('marswind.mcd.installation',unavailable)
     client=TestClient(server.app)
-    for route in ['/','/atmosphere','/research/hypotheses','/research/data','/research/tests','/research/library']:
+    for route in ['/','/research/comparison','/research/hypotheses','/research/data','/research/tests','/research/library']:
         r=client.get(route);assert r.status_code==200
         assert 'lang="en"' in r.text
     for name in ['atlas','meteorites','depths','thermal','results','laboratory','manifest','laboratory_extended','paleomagnetism','water']:

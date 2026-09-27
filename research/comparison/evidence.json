@@ -1,0 +1,667 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-27",
+  "language": "en",
+  "scope": "Qualitative project synthesis; no statistical ranking or new numerical fit.",
+  "age_unit": "Ma before present",
+  "sources": {
+    "boundary": {
+      "label": "Andrews-Hanna et al., 2008",
+      "doi": "10.1038/nature07011",
+      "url": "https://doi.org/10.1038/nature07011",
+      "consulted_material": "Abstract: reconstruction of the boundary beneath Tharsis.",
+      "checked": "2026-09-27"
+    },
+    "crust": {
+      "label": "Kim et al., 2023",
+      "doi": "10.1029/2023GL103482",
+      "url": "https://doi.org/10.1029/2023GL103482",
+      "consulted_material": "Abstract and seismic density constraints; no reanalysis of the data.",
+      "checked": "2026-09-27"
+    },
+    "tides": {
+      "label": "Berne et al., 2026",
+      "doi": "10.1038/s41586-026-10893-x",
+      "url": "https://doi.org/10.1038/s41586-026-10893-x",
+      "consulted_material": "Tidal tomography sections and discussion of mechanisms.",
+      "checked": "2026-09-27"
+    },
+    "south": {
+      "label": "Cheng et al., 2024",
+      "doi": "10.1016/j.icarus.2024.116137",
+      "url": "https://doi.org/10.1016/j.icarus.2024.116137",
+      "consulted_material": "Abstract and description of the impact–interior evolution models.",
+      "checked": "2026-09-27"
+    },
+    "feedback": {
+      "label": "Bonnet Gibet et al., 2022",
+      "doi": "10.1029/2022JE007472",
+      "url": "https://doi.org/10.1029/2022JE007472",
+      "consulted_material": "Abstract: feedback between crustal thickness, heating and melting.",
+      "checked": "2026-09-27"
+    },
+    "field": {
+      "label": "Langlais et al., 2019",
+      "doi": "10.1029/2018JE005854",
+      "url": "https://doi.org/10.1029/2018JE005854",
+      "consulted_material": "Magnetic model already documented in the project data.",
+      "checked": "2026-09-27"
+    },
+    "reversals": {
+      "label": "Steele et al., 2024",
+      "doi": "10.1038/s41467-024-51092-4",
+      "url": "https://doi.org/10.1038/s41467-024-51092-4",
+      "consulted_material": "Abstract and cancellation mechanism during field reversals.",
+      "checked": "2026-09-27"
+    },
+    "zircons": {
+      "label": "Bouvier et al., 2018",
+      "doi": "10.1038/s41586-018-0222-z",
+      "url": "https://doi.org/10.1038/s41586-018-0222-z",
+      "consulted_material": "Abstract: seven zircons and isotopic interpretation of the reservoir.",
+      "checked": "2026-09-27"
+    },
+    "alh": {
+      "label": "Steele et al., 2023",
+      "doi": "10.1126/sciadv.ade9071",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10957104/",
+      "consulted_material": "Abstract and introduction; crystallization age cited from Lapen et al. (2010).",
+      "checked": "2026-09-27"
+    },
+    "lafayette": {
+      "label": "Tremblay et al., 2024",
+      "doi": "10.7185/geochemlet.2443",
+      "url": "https://www.geochemicalperspectivesletters.org/article2443/",
+      "consulted_material": "Abstract and age discussion; shock and ejection context cited by the authors.",
+      "checked": "2026-09-27"
+    },
+    "ejection": {
+      "label": "Lagain et al., 2022",
+      "doi": "10.1038/s41467-022-31444-8",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9276826/",
+      "consulted_material": "Abstract and introduction; source crater attribution proposed by the authors.",
+      "checked": "2026-09-27"
+    }
+  },
+  "statuses": {
+    "compatible": {
+      "label": "Conditionally compatible",
+      "meaning": "A published mechanism can account for this aspect. This does not validate the entire family."
+    },
+    "tension": {
+      "label": "Conditional tension",
+      "meaning": "A specific variant faces a difficulty; coupled variants still need examination."
+    },
+    "not_tested": {
+      "label": "No comparable test",
+      "meaning": "The selected reading does not establish a common comparison. This is neither agreement nor rejection."
+    },
+    "non_discriminating": {
+      "label": "Not decisive alone",
+      "meaning": "This observation can constrain several scenarios without selecting an origin on its own."
+    }
+  },
+  "hypotheses": [
+    {
+      "id": "north",
+      "label": "Northern impact",
+      "short": "Excavate the north",
+      "description": "A large impact removes or thins the northern crust. Its geometry must remain recognizable after subsequent evolution.",
+      "sources": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "south",
+      "label": "Southern impact",
+      "short": "Produce southern crust",
+      "description": "Impact-induced melting can produce a thick southern crust. The cited models already include interior evolution.",
+      "sources": [
+        "south"
+      ]
+    },
+    {
+      "id": "internal",
+      "label": "Internal evolution",
+      "short": "Amplify a contrast",
+      "description": "Convection, melting and heating can create or amplify an asymmetry. The cited feedback model mainly tests amplification.",
+      "sources": [
+        "feedback"
+      ]
+    },
+    {
+      "id": "hybrid",
+      "label": "Hybrid scenario",
+      "short": "Impact followed by evolution",
+      "description": "An impact creates an initial contrast, which heat redistribution and crustal growth can modify. This family overlaps with southern-impact scenarios.",
+      "sources": [
+        "south",
+        "feedback",
+        "tides"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "geometry",
+      "family": "Topography and crust",
+      "label": "The shape of the north–south boundary",
+      "observation": "The boundary reconstructed beneath Tharsis is approximately elliptical, measuring 10,600 × 8,500 km.",
+      "kind": "Reconstruction from gravity and topography",
+      "epoch": "Present topography; reconstructed ancient geometry",
+      "uncertainty": "Removing the contribution of Tharsis is model-dependent. An ellipse is not an age measurement.",
+      "shared_inputs": [
+        "Global gravity and topography"
+      ],
+      "sources": [
+        "boundary"
+      ],
+      "cells": {
+        "north": {
+          "status": "compatible",
+          "summary": "Geometry compatible with a basin.",
+          "requirement": "Preserve a basin boundary after subsequent modification.",
+          "next_test": "Compare reconstructed boundaries using the same Tharsis correction.",
+          "sources": [
+            "boundary"
+          ]
+        },
+        "south": {
+          "status": "not_tested",
+          "summary": "The boundary must also be reproduced.",
+          "requirement": "Produce the topographic contrast and its shape within the same model.",
+          "next_test": "Extract the final boundary from simulations and apply the same geometric criterion.",
+          "sources": [
+            "south",
+            "boundary"
+          ]
+        },
+        "internal": {
+          "status": "not_tested",
+          "summary": "Amplification alone does not determine the shape.",
+          "requirement": "Asymmetric growth must explain the spatial geometry.",
+          "next_test": "Move from a two-hemisphere model to a predicted boundary.",
+          "sources": [
+            "feedback"
+          ]
+        },
+        "hybrid": {
+          "status": "not_tested",
+          "summary": "Evolution can modify the initial boundary.",
+          "requirement": "Retain compatible geometry after mantle evolution.",
+          "next_test": "Measure boundary deformation between the impact and the final state.",
+          "sources": [
+            "south",
+            "boundary"
+          ]
+        }
+      }
+    },
+    {
+      "id": "crust",
+      "family": "Topography and crust",
+      "label": "Crustal thickness and density",
+      "observation": "Seismic constraints favour similar crustal densities in the two hemispheres; a thickness difference remains necessary.",
+      "kind": "Seismic and gravity inversion",
+      "epoch": "Present structure, inherited and reworked",
+      "uncertainty": "Kim et al. exclude density contrasts above 200 kg/m³ in most of their models. Similar does not mean identical.",
+      "shared_inputs": [
+        "Global gravity and topography",
+        "InSight seismic constraints"
+      ],
+      "sources": [
+        "crust"
+      ],
+      "cells": {
+        "north": {
+          "status": "not_tested",
+          "summary": "Excavation must respect the final density.",
+          "requirement": "Explain thickness, density and reworking together.",
+          "next_test": "Apply the same density constraints to impact-model outputs.",
+          "sources": [
+            "crust",
+            "boundary"
+          ]
+        },
+        "south": {
+          "status": "compatible",
+          "summary": "Melting can thicken the southern crust.",
+          "requirement": "Simulated crustal production still needs a density check.",
+          "next_test": "Compare simulated crusts with the same seismic inversion.",
+          "sources": [
+            "south",
+            "crust"
+          ]
+        },
+        "internal": {
+          "status": "compatible",
+          "summary": "Heating can amplify thickness differences.",
+          "requirement": "The published feedback amplifies an initial contrast; its origin is a separate question.",
+          "next_test": "Test amplitude, composition and duration under the same thermal parameters.",
+          "sources": [
+            "feedback",
+            "crust"
+          ]
+        },
+        "hybrid": {
+          "status": "compatible",
+          "summary": "An initial contrast can be amplified.",
+          "requirement": "Combine crust creation and evolution while conserving mass.",
+          "next_test": "Compare the final state under the same density assumptions.",
+          "sources": [
+            "feedback",
+            "south"
+          ]
+        }
+      }
+    },
+    {
+      "id": "thermal",
+      "family": "Present-day interior",
+      "label": "A warmer southern mantle?",
+      "observation": "Tidal tomography is interpreted as a present-day thermal contrast, with the south approximately 200–400 °C warmer.",
+      "kind": "Interpretation of a geophysical inversion",
+      "epoch": "Present day; not the temperature of the primordial crust",
+      "uncertainty": "Composition and partial melting can change the conversion to temperature.",
+      "shared_inputs": [
+        "Gravity and tidal response",
+        "Interior structure assumptions"
+      ],
+      "sources": [
+        "tides"
+      ],
+      "cells": {
+        "north": {
+          "status": "tension",
+          "summary": "Ancient impact heat alone is insufficient.",
+          "requirement": "The tension concerns residual heat alone, not an impact followed by insulation.",
+          "next_test": "Evaluate contrast duration after cooling and crustal growth.",
+          "sources": [
+            "tides"
+          ]
+        },
+        "south": {
+          "status": "not_tested",
+          "summary": "The final temperature still needs comparison.",
+          "requirement": "An impact-and-evolution simulation must predict the present anomaly.",
+          "next_test": "Compare thermal outputs with the tidal signal rather than an imposed temperature.",
+          "sources": [
+            "south",
+            "tides"
+          ]
+        },
+        "internal": {
+          "status": "compatible",
+          "summary": "Crustal insulation offers a mechanism.",
+          "requirement": "Produce a lasting contrast compatible with interior structure.",
+          "next_test": "Also explore composition and partial melting.",
+          "sources": [
+            "tides",
+            "feedback"
+          ]
+        },
+        "hybrid": {
+          "status": "compatible",
+          "summary": "Impact and insulation remain possible.",
+          "requirement": "The initial contrast can evolve beneath unevenly insulating crust.",
+          "next_test": "Test crustal geometry and the present tidal response together.",
+          "sources": [
+            "tides"
+          ]
+        }
+      }
+    },
+    {
+      "id": "magnetic",
+      "family": "Magnetic record",
+      "label": "An uneven magnetic signal",
+      "observation": "The orbital crustal field shows strong regional and hemispheric contrasts.",
+      "kind": "Model constructed from orbital measurements",
+      "epoch": "Present field; variable acquisition ages",
+      "uncertainty": "Depth, minerals, heating and polarity reversals affect the signal. A weakly magnetic basin does not prove the dynamo had stopped.",
+      "shared_inputs": [
+        "MGS and MAVEN orbital measurements",
+        "Assumptions about magnetized sources"
+      ],
+      "sources": [
+        "field",
+        "reversals"
+      ],
+      "cells": {
+        "north": {
+          "status": "non_discriminating",
+          "summary": "The field also depends on recording.",
+          "requirement": "Connect rock formation with acquisition and survival of magnetization.",
+          "next_test": "Test mineral, cooling and field histories under common constraints.",
+          "sources": [
+            "field",
+            "reversals"
+          ]
+        },
+        "south": {
+          "status": "non_discriminating",
+          "summary": "The field also depends on recording.",
+          "requirement": "Connect rock formation with acquisition and survival of magnetization.",
+          "next_test": "Test mineral, cooling and field histories under common constraints.",
+          "sources": [
+            "field",
+            "reversals"
+          ]
+        },
+        "internal": {
+          "status": "non_discriminating",
+          "summary": "The field also depends on recording.",
+          "requirement": "Connect rock formation with acquisition and survival of magnetization.",
+          "next_test": "Test mineral, cooling and field histories under common constraints.",
+          "sources": [
+            "field",
+            "reversals"
+          ]
+        },
+        "hybrid": {
+          "status": "non_discriminating",
+          "summary": "The field also depends on recording.",
+          "requirement": "Connect rock formation with acquisition and survival of magnetization.",
+          "next_test": "Test mineral, cooling and field histories under common constraints.",
+          "sources": [
+            "field",
+            "reversals"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ancient",
+      "family": "Rock ages",
+      "label": "Very ancient materials have survived",
+      "observation": "Zircons in NWA 7034 record crystallization around 4.43–4.48 billion years ago.",
+      "kind": "Grain dating followed by geological interpretation",
+      "epoch": "Local material history; see the chronology",
+      "uncertainty": "Grain survival does not directly date a planetary boundary. The extent of ancient crust remains to be established.",
+      "shared_inputs": [
+        "NWA 7034 zircons",
+        "Isotopic evolution model of the reservoir"
+      ],
+      "sources": [
+        "zircons"
+      ],
+      "cells": {
+        "north": {
+          "status": "non_discriminating",
+          "summary": "Every scenario must allow local survival.",
+          "requirement": "Keep grain ages separate from the age of the dichotomy.",
+          "next_test": "Predict the fraction and context of preserved ancient materials.",
+          "sources": [
+            "zircons"
+          ]
+        },
+        "south": {
+          "status": "non_discriminating",
+          "summary": "Every scenario must allow local survival.",
+          "requirement": "Keep grain ages separate from the age of the dichotomy.",
+          "next_test": "Predict the fraction and context of preserved ancient materials.",
+          "sources": [
+            "zircons"
+          ]
+        },
+        "internal": {
+          "status": "non_discriminating",
+          "summary": "Every scenario must allow local survival.",
+          "requirement": "Keep grain ages separate from the age of the dichotomy.",
+          "next_test": "Predict the fraction and context of preserved ancient materials.",
+          "sources": [
+            "zircons"
+          ]
+        },
+        "hybrid": {
+          "status": "non_discriminating",
+          "summary": "Every scenario must allow local survival.",
+          "requirement": "Keep grain ages separate from the age of the dichotomy.",
+          "next_test": "Predict the fraction and context of preserved ancient materials.",
+          "sources": [
+            "zircons"
+          ]
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "nwa_reservoir",
+      "label": "Extraction of the source reservoir",
+      "sample": "NWA 7034",
+      "event_type": "Reservoir",
+      "age": {
+        "kind": "minimum",
+        "label": "At least 4,547 Ma",
+        "value_ma": null,
+        "younger_ma": 4547,
+        "older_ma": null,
+        "uncertainty": "Interpreted bound; no older limit specified here."
+      },
+      "method": "Hf isotopic interpretation",
+      "caveat": "This source reservoir age is neither the grain age nor the age of the dichotomy.",
+      "sources": [
+        "zircons"
+      ]
+    },
+    {
+      "id": "nwa_crystal",
+      "label": "Crystallization of seven zircons",
+      "sample": "NWA 7034",
+      "event_type": "Formation",
+      "age": {
+        "kind": "range",
+        "label": "4,429.7–4,476.3 Ma",
+        "value_ma": null,
+        "younger_ma": 4429.7,
+        "older_ma": 4476.3,
+        "uncertainty": "Range of ages across seven grains, not a confidence interval. Reported endpoint uncertainties: ±1.0 and ±0.9 Ma."
+      },
+      "method": "U–Pb dating",
+      "caveat": "The grains did not all crystallize at the same time.",
+      "sources": [
+        "zircons"
+      ]
+    },
+    {
+      "id": "alh_crystal",
+      "label": "Rock crystallization",
+      "sample": "ALH 84001",
+      "event_type": "Formation",
+      "age": {
+        "kind": "estimate",
+        "label": "4,091 ± 30 Ma",
+        "value_ma": 4091,
+        "younger_ma": 4061,
+        "older_ma": 4121,
+        "uncertainty": "Reported ±30 Ma; confidence level not re-audited here."
+      },
+      "method": "Lapen et al. (2010) age cited by Steele et al.",
+      "caveat": "Crystallization predates the magnetic reworking discussed.",
+      "sources": [
+        "alh"
+      ]
+    },
+    {
+      "id": "alh_remanence",
+      "label": "Latest ancient recording discussed",
+      "sample": "ALH 84001",
+      "event_type": "Magnetization",
+      "age": {
+        "kind": "approximate",
+        "label": "Around 3,900 Ma",
+        "value_ma": 3900,
+        "younger_ma": null,
+        "older_ma": null,
+        "uncertainty": "No numerical uncertainty propagated here."
+      },
+      "method": "Paleomagnetic interpretation and shock history",
+      "caveat": "Interpreted age marker, not direct dating of every grain or proof of a continuous dynamo.",
+      "sources": [
+        "alh"
+      ]
+    },
+    {
+      "id": "laf_crystal",
+      "label": "Host-rock formation",
+      "sample": "Lafayette",
+      "event_type": "Formation",
+      "age": {
+        "kind": "approximate",
+        "label": "Around 1,320 Ma",
+        "value_ma": 1320,
+        "younger_ma": null,
+        "older_ma": null,
+        "uncertainty": "No numerical uncertainty propagated here."
+      },
+      "method": "Chronological context cited in Tremblay et al.",
+      "caveat": "Rounded age marker, distinct from alteration.",
+      "sources": [
+        "lafayette"
+      ]
+    },
+    {
+      "id": "nakhla_shock",
+      "label": "Recorded shock episode",
+      "sample": "Nakhla",
+      "event_type": "Shock",
+      "age": {
+        "kind": "approximate",
+        "label": "Around 913 Ma",
+        "value_ma": 913,
+        "younger_ma": null,
+        "older_ma": null,
+        "uncertainty": "No numerical uncertainty propagated here."
+      },
+      "method": "Thermochronology cited from Cassata et al. (2010)",
+      "caveat": "Age discussed for Nakhla; linking it to the Lafayette shock remains an association.",
+      "sources": [
+        "lafayette"
+      ]
+    },
+    {
+      "id": "laf_water",
+      "label": "Iddingsite formation",
+      "sample": "Lafayette",
+      "event_type": "Alteration",
+      "age": {
+        "kind": "estimate",
+        "label": "742 ± 15 Ma",
+        "value_ma": 742,
+        "younger_ma": 727,
+        "older_ma": 757,
+        "uncertainty": "Reported ±15 Ma, 2σ."
+      },
+      "method": "⁴⁰Ar/³⁹Ar dating",
+      "caveat": "Dates the interpreted water–rock interaction; does not automatically date magnetization.",
+      "sources": [
+        "lafayette"
+      ]
+    },
+    {
+      "id": "laf_ejection",
+      "label": "Ejection from Mars",
+      "sample": "Lafayette",
+      "event_type": "Ejection",
+      "age": {
+        "kind": "approximate",
+        "label": "Around 10.7 Ma",
+        "value_ma": 10.7,
+        "younger_ma": null,
+        "older_ma": null,
+        "uncertainty": "No numerical uncertainty propagated here."
+      },
+      "method": "Cosmic-ray exposure context cited from Cohen et al. (2017)",
+      "caveat": "Ejection age marker for the nakhlite group, distinct from events within the rock.",
+      "sources": [
+        "lafayette"
+      ]
+    },
+    {
+      "id": "nwa_ejection",
+      "label": "Proposed ejection from Karratha",
+      "sample": "NWA 7034",
+      "event_type": "Ejection",
+      "age": {
+        "kind": "range",
+        "label": "5–10 Ma",
+        "value_ma": null,
+        "younger_ma": 5,
+        "older_ma": 10,
+        "uncertainty": "Interpreted range; not an analytical 2σ interval."
+      },
+      "method": "Crater chronology and agreement with exposure ages",
+      "caveat": "Proposed source attribution, not a directly observed location.",
+      "sources": [
+        "ejection"
+      ]
+    },
+    {
+      "id": "global_dichotomy",
+      "label": "Formation of the dichotomy",
+      "sample": "Global Mars",
+      "event_type": "Formation",
+      "age": {
+        "kind": "unknown",
+        "label": "Not fixed in this selection",
+        "value_ma": null,
+        "younger_ma": null,
+        "older_ma": null,
+        "uncertainty": "No numerical uncertainty propagated here."
+      },
+      "method": "Scenario comparison still required",
+      "caveat": "No single age is inferred from the zircons or the present mantle.",
+      "sources": [
+        "zircons",
+        "tides"
+      ]
+    },
+    {
+      "id": "laf_remanence",
+      "label": "Acquisition of magnetization",
+      "sample": "Lafayette",
+      "event_type": "Magnetization",
+      "age": {
+        "kind": "unknown",
+        "label": "Not dated here",
+        "value_ma": null,
+        "younger_ma": null,
+        "older_ma": null,
+        "uncertainty": "No numerical uncertainty propagated here."
+      },
+      "method": "Mineral–magnetic component link still to be established",
+      "caveat": "An alteration age cannot be assigned to magnetization without this link.",
+      "sources": [
+        "lafayette"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "older": "nwa_reservoir",
+      "younger": "nwa_crystal",
+      "meaning": "Event order within this material, not process duration."
+    },
+    {
+      "older": "nwa_crystal",
+      "younger": "nwa_ejection",
+      "meaning": "Event order within this material, not process duration."
+    },
+    {
+      "older": "alh_crystal",
+      "younger": "alh_remanence",
+      "meaning": "Event order within this material, not process duration."
+    },
+    {
+      "older": "laf_crystal",
+      "younger": "laf_water",
+      "meaning": "Event order within this material, not process duration."
+    },
+    {
+      "older": "laf_water",
+      "younger": "laf_ejection",
+      "meaning": "Event order within this material, not process duration."
+    }
+  ]
+}

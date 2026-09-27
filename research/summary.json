@@ -1,16 +1,16 @@
 {
-  "as_of": "2026-09-24",
-  "records": 1986,
-  "core_records": 75,
-  "source_consulted": 69,
+  "as_of": "2026-09-27",
+  "records": 1990,
+  "core_records": 79,
+  "source_consulted": 72,
   "review_depth_counts": {
-    "metadata": 1917,
-    "abstract": 51,
-    "sections": 18
+    "metadata": 1918,
+    "abstract": 52,
+    "sections": 20
   },
   "types": {
     "book-chapter": 141,
-    "journal-article": 1481,
+    "journal-article": 1485,
     "posted-content": 162,
     "proceedings-article": 157,
     "book": 7,
@@ -25,7 +25,7 @@
   },
   "queries": 41,
   "failed_queries": 0,
-  "citation_queue": 2489,
+  "citation_queue": 2570,
   "complete_full_text_audits": 0,
   "scope": "Broad evidence inventory and selective source assessment; not an exhaustive systematic review."
 }

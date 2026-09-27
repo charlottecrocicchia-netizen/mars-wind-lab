@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "marswind-lab"
-version = "0.5.0"
-description = "Reproducible Martian wind diagnostics using the official MCD 6.1 sampler"
+version = "0.6.0"
+description = "A sourced research workspace for the Martian dichotomy"
 requires-python = ">=3.11"
 dependencies = ["numpy>=2", "scipy>=1.13", "xarray>=2024.1", "netCDF4>=1.7", "matplotlib>=3.9", "fastapi>=0.115", "uvicorn>=0.30", "imageio-ffmpeg>=0.6"]
 

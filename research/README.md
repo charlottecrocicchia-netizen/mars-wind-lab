@@ -1,13 +1,16 @@
 # Mars dichotomy evidence atlas
 
+[Compare origin scenarios and separate event ages](/research/comparison) · [Method and exports](COMPARISON.md). The active website focuses on the dichotomy; the atmospheric interface has been retired.
+
 **New: [completed regional study](PILOT_STUDY.md)** — five navigable local pages, regional magnetic contrasts, geological-reference sensitivity, explicit hypotheses and reproducible outputs.
 
 A research component of **Charlotte Crocicchia's personal Mars project**. This collection connects the northern-lowland / southern-highland contrast with interior structure, impact and convection models, rock magnetism, meteorite histories, surface geology and atmospheric evolution.
 
-**Snapshot: 24 September 2026.** This is an evidence inventory with selective source assessment, not a completed exhaustive systematic review and not a new discovery about the origin of Mars's dichotomy.
+**Catalog updated: 27 September 2026; broad search: 24 September 2026.** This is an evidence inventory with selective source assessment, not a completed exhaustive systematic review and not a new discovery about the origin of Mars's dichotomy.
 
 ## Start here
 
+- [September research review: checked claims and next tests](DICHOTOMY_REVIEW.md)
 - [Working hypothesis: two different magnetic archives](HYPOTHESES.md)
 - [First test: joint thermal and magnetic histories](TEST_PROTOCOL.md)
 - [Scientific synthesis and competing hypotheses](SYNTHESIS.md)
@@ -25,16 +28,16 @@ The [first executed diagnostics](FIRST_RESULTS.md) connect orbital fields, surfa
 
 | Product | Coverage |
 |---|---|
-| DOI catalog | 1,986 deduplicated candidate records across 41 topical queries and targeted additions |
-| Core reading route | 75 selected records, including a correction notice |
-| Sources consulted beyond metadata | 69: 51 abstracts and 18 selected full-text readings |
+| DOI catalog | 1,990 deduplicated candidate records across 41 topical queries and targeted additions |
+| Core reading route | 79 selected records, including two correction notices |
+| Sources consulted beyond metadata | 72: 52 abstracts and 20 selected full-text readings |
 | Complete full-text methodological audits | 0; none are presented as completed |
-| Backward-citation queue | 2,489 additional DOI leads, not yet retrieved or screened; many may be non-Mars background |
+| Backward-citation queue | 2,570 additional DOI leads, not yet retrieved or screened; many may be non-Mars background |
 
 The catalog contains articles, conference publications, preprints, chapters, datasets and other records. A Crossref `journal-article` label does **not** certify peer review or relevance. Duplicate DOIs are removed; different versions of the same work can remain.
 
 Download [BibTeX](library.bib), [core BibTeX](core.bib), [RIS for Zotero](library.ris), [CSV](catalog.csv) or [JSON with provenance](catalog.json). The [search log](search_log.json) preserves query URLs, retrieval times and result caps. [Summary counts](summary.json) are generated from the records. Publisher abstracts, downloaded PDFs and the internship report are not redistributed.
 
-The interpretations here are project research notes assembled with AI assistance and require scientific verification before use in a manuscript. They are not results attributable to the cited authors unless explicitly described as such. No personal unpublished dichotomy bibliography was supplied; this version was assembled from public sources.
+The interpretations here are project research notes assembled with AI assistance and require scientific verification before use in a manuscript. They are not results attributable to the cited authors unless explicitly described as such. The initial version was assembled from public sources. Charlotte supplied a broad research overview on 27 September; its targeted assessment and remaining checks are documented in the September review.
 
 The expanded [recording guide](RECORDING.md) and [water study](WATER.md) connect mineral generations, fluid events and magnetic components. Raw laboratory archives and orbital mineral products are available alongside the curated, explicitly non-exhaustive paleointensity inventory.

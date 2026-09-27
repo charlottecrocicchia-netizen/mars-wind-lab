@@ -41,9 +41,9 @@ def test_catalog_does_not_promote_discovery_to_reading_or_publish_abstracts():
 
 def test_research_is_available_without_the_atmospheric_model(monkeypatch):
     def unavailable():raise RuntimeError('No MCD installed')
-    monkeypatch.setattr(server,'installation',unavailable)
+    monkeypatch.setattr('marswind.mcd.installation',unavailable)
     client=TestClient(server.app)
-    assert client.get('/api/health').status_code==503
+    assert client.get('/api/health').json()['requires_mcd'] is False
     assert client.get('/research').status_code==200
     response=client.get('/research/files/summary.json')
     assert response.status_code==200 and response.json()['core_records']>0
@@ -57,7 +57,7 @@ class Links(HTMLParser):
 
 def test_reading_pages_keep_internal_links_navigable():
     client=TestClient(server.app)
-    files=[*(ROOT/f'web/{name}.html' for name in ['research','home','ideas','data','tests','library']),*sorted((ROOT/'web/reading').glob('*.html'))]
+    files=[*(ROOT/f'web/{name}.html' for name in ['home','comparison','ideas','data','tests','library']),*sorted((ROOT/'web/reading').glob('*.html'))]
     assert len(files)>5
     visited=set()
     for path in files:

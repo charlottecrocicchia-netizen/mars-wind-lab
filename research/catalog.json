@@ -1312,6 +1312,12 @@
     "domains": [
       "Surface and evolution"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Chronology",
+      "Surface and water",
+      "Surface and evolution"
+    ],
     "queries": [
       {
         "query": "Mars hemispheric dichotomy origin",
@@ -1533,12 +1539,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Chronology",
-      "Surface and water",
-      "Surface and evolution"
-    ],
     "finding": "Orbital observations document diverse clay-bearing terrains along the dichotomy region.",
     "dichotomy_use": "Tests heterogeneous alteration histories and substrate composition.",
     "limitation": "Spectral exposure, dust and observational coverage bias comparisons between hemispheres.",
@@ -2179,6 +2179,16 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Interior",
+      "Gravity and topography",
+      "Magnetism",
+      "Chronology",
+      "Surface and water",
+      "Volcanism and tectonics",
+      "Atmosphere"
+    ],
     "queries": [
       {
         "query": "Mars hemispheric dichotomy origin",
@@ -2286,16 +2296,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Interior",
-      "Gravity and topography",
-      "Magnetism",
-      "Chronology",
-      "Surface and water",
-      "Volcanism and tectonics",
-      "Atmosphere"
-    ],
     "finding": "Orbital tracking analysis provides a constraint on the contrast in bulk crustal density between hemispheres.",
     "dichotomy_use": "Helps distinguish a thickness contrast from a density contrast.",
     "limitation": "Numerical densities were not reliably preserved in harvested abstract equations; consult the original figures before quantitative reuse.",
@@ -2890,6 +2890,9 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Interior"
+    ],
     "queries": [],
     "references": [
       "10.1017/cbo9780511575358",
@@ -2954,9 +2957,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior"
-    ],
     "finding": "Seismic and petrological modelling interprets a lower-crustal layer beneath InSight as melt-depleted ultramafic material.",
     "dichotomy_use": "Adds lithological differentiation without requiring plate tectonics.",
     "limitation": "A local seismic anchor and phase-equilibrium models do not establish global lower-crustal uniformity.",
@@ -3074,6 +3074,175 @@
     "domain_basis": "Search query, not verified classification"
   },
   {
+    "doi": "10.1038/s41561-026-02090-2",
+    "title": "Hadley circulation drives material isolation and pole-to-pole teleconnection on Mars",
+    "authors": [
+      "Chen-Shuo Fan",
+      "Cong Sun",
+      "Zhiang Xie",
+      "Yangcheng Luo",
+      "Lixiang Gu",
+      "Siteng Fan"
+    ],
+    "year": 2026,
+    "date": [
+      2026,
+      8,
+      31
+    ],
+    "dates": {
+      "published": [
+        2026,
+        8,
+        31
+      ],
+      "published-print": [],
+      "published-online": [
+        2026,
+        8,
+        31
+      ]
+    },
+    "journal": "Nature Geoscience",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1038/s41561-026-02090-2",
+    "domains": [
+      "Atmosphere and transport"
+    ],
+    "discovery_domains": [
+      "Atmosphere and transport"
+    ],
+    "queries": [],
+    "references": [
+      "10.1029/97gl03563",
+      "10.1029/2009rg000301",
+      "10.1029/2010jd015197",
+      "10.1002/2014jd021642",
+      "10.1073/pnas.1418682112",
+      "10.1002/jgre.20076",
+      "10.1016/j.icarus.2014.12.034",
+      "10.1029/2022je007252",
+      "10.1016/j.icarus.2024.116360",
+      "10.1029/2020je006480",
+      "10.1029/2005je002597",
+      "10.1038/416298a",
+      "10.1002/gdj3.77",
+      "10.1016/j.icarus.2018.07.001",
+      "10.1029/2023je008137",
+      "10.1016/j.icarus.2018.08.002",
+      "10.1002/qj.3803",
+      "10.1029/2009je003458",
+      "10.1029/96je00500",
+      "10.1038/s43017-021-00181-9",
+      "10.1175/jas3859.1",
+      "10.1002/qj.3350",
+      "10.5194/npg-27-147-2020",
+      "10.1029/2001je001520",
+      "10.1006/icar.1996.0108",
+      "10.1006/icar.1993.1003",
+      "10.3847/psj/ad045d",
+      "10.1029/2001je001522",
+      "10.1016/j.icarus.2025.116786",
+      "10.1038/ngeo1957",
+      "10.5194/egusphere-egu25-10787",
+      "10.1016/j.icarus.2006.10.032",
+      "10.1029/93je00225",
+      "10.1126/science.aaa3630",
+      "10.1002/2016je005093",
+      "10.5194/os-15-831-2019",
+      "10.5194/wes-4-193-2019",
+      "10.1175/1520-0442(1996)009<2751:oivith>2.0.co;2",
+      "10.5194/gmd-8-2569-2015",
+      "10.1175/1520-0469(1996)053<3143:tmzmca>2.0.co;2",
+      "10.18113/d3w375",
+      "10.24381/cds.bd0915c6",
+      "10.5281/zenodo.21316484"
+    ],
+    "metadata_source": "Crossref DOI lookup; targeted user-supplied review, 2026-09-27",
+    "retrieved": "2026-09-27T13:51:59.581729+00:00",
+    "volume": "",
+    "pages": "",
+    "relations": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.21203/rs.3.rs-8056596/v1",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "core": true,
+    "review_depth": "metadata",
+    "review_status": "Metadata / preview only",
+    "domain_basis": "Core topic assigned after source check",
+    "finding": "Publisher preview identifies a study of atmospheric material isolation and pole-to-pole transport; its supplementary-video caption identifies EMARS as an input.",
+    "dichotomy_use": "A candidate benchmark for a future time-dependent particle-transport experiment.",
+    "limitation": "Full abstract and transport methods were not available in the retrieved preview. No quantitative result or replication is endorsed.",
+    "assessment_date": "2026-09-27",
+    "primary_domain": "Atmosphere and transport",
+    "consulted_source": "https://doi.org/10.1038/s41561-026-02090-2",
+    "consulted_material": "Publisher metadata, limited preview and supplementary-video description; substantive transport analysis remains to be read.",
+    "correction_doi": "10.1038/s41561-026-02116-9"
+  },
+  {
+    "doi": "10.1038/s41561-026-02116-9",
+    "title": "Publisher Correction: Hadley circulation drives material isolation and pole-to-pole teleconnection on Mars",
+    "authors": [
+      "Chen-Shuo Fan",
+      "Cong Sun",
+      "Zhiang Xie",
+      "Yangcheng Luo",
+      "Lixiang Gu",
+      "Siteng Fan"
+    ],
+    "year": 2026,
+    "date": [
+      2026,
+      9,
+      8
+    ],
+    "dates": {
+      "published": [
+        2026,
+        9,
+        8
+      ],
+      "published-print": [],
+      "published-online": [
+        2026,
+        9,
+        8
+      ]
+    },
+    "journal": "Nature Geoscience",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1038/s41561-026-02116-9",
+    "domains": [
+      "Atmosphere and transport"
+    ],
+    "discovery_domains": [
+      "Atmosphere and transport"
+    ],
+    "queries": [],
+    "references": [],
+    "metadata_source": "Crossref DOI lookup; targeted user-supplied review, 2026-09-27",
+    "retrieved": "2026-09-27T13:51:59.581729+00:00",
+    "volume": "",
+    "pages": "",
+    "relations": {},
+    "core": true,
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "finding": "The publisher corrects the pressure-axis labels of Figure 2e,f to identify the inside experiment.",
+    "dichotomy_use": "Keep the correction attached before comparing a transport implementation with the paper.",
+    "limitation": "This notice concerns figure labels; it is not a retraction or a new physical result.",
+    "assessment_date": "2026-09-27",
+    "primary_domain": "Atmosphere and transport",
+    "consulted_source": "https://doi.org/10.1038/s41561-026-02116-9",
+    "consulted_material": "Complete short correction notice consulted; the underlying article methods were not audited."
+  },
+  {
     "doi": "10.1038/s41586-026-10893-x",
     "title": "Tidal tomography reveals a thermal anomaly beneath Mars’s crustal dichotomy",
     "authors": [
@@ -3119,6 +3288,9 @@
     "type": "journal-article",
     "url": "https://doi.org/10.1038/s41586-026-10893-x",
     "domains": [
+      "Interior"
+    ],
+    "discovery_domains": [
       "Interior"
     ],
     "queries": [],
@@ -3207,9 +3379,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior"
-    ],
     "finding": "Orbiter tracking reveals asymmetric seasonal tidal gravity; inversion supports a hotter southern mantle.",
     "dichotomy_use": "Adds a present-day interior constraint; atmospheric pressure loading is explicitly modelled with MCD.",
     "limitation": "Convection and crustal insulation remain alternatives. Atmospheric and elastic-model sensitivity must accompany the inversion.",
@@ -3711,6 +3880,10 @@
     "domains": [
       "Meteorite geochemistry and provenance"
     ],
+    "discovery_domains": [
+      "Interior",
+      "Meteorite geochemistry and provenance"
+    ],
     "queries": [
       {
         "query": "Mars magma ocean cumulate overturn",
@@ -3815,10 +3988,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior",
-      "Meteorite geochemistry and provenance"
-    ],
     "finding": "Experiments explore buoyant differentiated protocrust formation during oxidized magma-ocean crystallization.",
     "dichotomy_use": "Expands possible initial crustal compositions for dichotomy models.",
     "limitation": "Laboratory conditions and extrapolation to a global magma ocean are model assumptions, not direct mapping of Mars.",
@@ -5813,6 +5982,9 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
     "queries": [],
     "references": [
       "10.1111/maps.14193",
@@ -5898,9 +6070,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism"
-    ],
     "finding": "Describes terrestrial chemical, viscous and strong-field contamination and practical curation controls.",
     "dichotomy_use": "Makes Earth overprints a separate observation-history branch from secondary Martian remanence.",
     "limitation": "Curation sections consulted. High coercivity or unblocking temperature alone cannot establish an ancient origin.",
@@ -7311,6 +7480,11 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Interior",
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Mars hemispheric dichotomy origin",
@@ -7403,11 +7577,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Interior",
-      "Magnetism"
-    ],
     "finding": "Explores hemispherical magnetic-field generation in dynamo models without an inner core.",
     "dichotomy_use": "Tests how early core geometry affects asymmetric magnetism.",
     "limitation": "An early fully liquid core and a present solid inner core are different temporal hypotheses.",
@@ -7450,6 +7619,10 @@
     "type": "journal-article",
     "url": "https://doi.org/10.1029/2024je008486",
     "domains": [
+      "Interior"
+    ],
+    "discovery_domains": [
+      "Dichotomy",
       "Interior"
     ],
     "queries": [
@@ -7575,10 +7748,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Interior"
-    ],
     "finding": "Thermal models explore differentiation and partial melting of the thick southern crust.",
     "dichotomy_use": "Connects heat-producing elements, crust thickness and lithological diversity.",
     "limitation": "Conditional petrological and thermal calculations do not map observed melt throughout the south.",
@@ -7998,6 +8167,9 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Magnetism"
+    ],
     "queries": [],
     "references": [
       "10.1126/science.284.5415.790",
@@ -8105,9 +8277,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism"
-    ],
     "finding": "Joint regional gravity and magnetic interpretation explores thermal and chemical modification in potentially hydrothermal settings.",
     "dichotomy_use": "Provides an existing physical precedent for connecting heat production, fluids and magnetic preservation.",
     "limitation": "Discussion and data statement consulted. Regional non-unique inversions are not a unique origin model for the global dichotomy.",
@@ -8817,6 +8986,11 @@
     "domains": [
       "Surface and evolution"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Surface and water",
+      "Surface and evolution"
+    ],
     "queries": [
       {
         "query": "Mars hemispheric dichotomy origin",
@@ -8932,11 +9106,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Surface and water",
-      "Surface and evolution"
-    ],
     "finding": "Geological mapping reconstructs volcanic, tectonic and aqueous modifications in southern Utopia.",
     "dichotomy_use": "Provides a regional northern-lowland case study for separating formation from resurfacing.",
     "limitation": "Regional stratigraphic interpretations cannot be generalized to all northern plains.",
@@ -9805,6 +9974,11 @@
     "domains": [
       "Surface and evolution"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Surface and water",
+      "Surface and evolution"
+    ],
     "queries": [
       {
         "query": "Mars hemispheric dichotomy origin",
@@ -9907,11 +10081,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Surface and water",
-      "Surface and evolution"
-    ],
     "finding": "Erosional remnants near the dichotomy boundary indicate substantial removal of ancient highland material.",
     "dichotomy_use": "Separates retreat of the visible boundary from the original crustal boundary.",
     "limitation": "Regional erosion does not by itself explain the initial hemispheric crustal contrast.",
@@ -10166,6 +10335,9 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Interior"
+    ],
     "queries": [
       {
         "query": "Mars core molten silicate layer inner core",
@@ -10264,9 +10436,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior"
-    ],
     "finding": "Seismic phases are interpreted as evidence for a roughly 600-km-radius solid inner core.",
     "dichotomy_use": "Requires testing present-day interior models separately from early full-sphere dynamo models.",
     "limitation": "Phase identification and inversion assumptions matter. Consult the linked author correction before reuse.",
@@ -10316,6 +10485,9 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Interior"
+    ],
     "queries": [
       {
         "query": "Mars core molten silicate layer inner core",
@@ -10332,9 +10504,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior"
-    ],
     "finding": "Corrects a Methods citation for the effect of light elements on liquid-core properties.",
     "dichotomy_use": "Keeps the inner-core source trail current.",
     "limitation": "The notice corrects a reference, not the reported inner-core radius; it is not a separate independent result.",
@@ -11078,6 +11247,154 @@
     "domain_basis": "Search query, not verified classification"
   },
   {
+    "doi": "10.1073/pnas.2404254121",
+    "title": "Fundamental constraints and questions from the study of Martian meteorites and the need for returned samples",
+    "authors": [
+      "Arya Udry",
+      "Amanda M. Ostwald",
+      "James M.D. Day",
+      "Lydia J. Hallis"
+    ],
+    "year": 2025,
+    "date": [
+      2025,
+      1,
+      6
+    ],
+    "dates": {
+      "published": [
+        2025,
+        1,
+        6
+      ],
+      "published-print": [
+        2025,
+        1,
+        14
+      ],
+      "published-online": [
+        2025,
+        1,
+        6
+      ]
+    },
+    "journal": "Proceedings of the National Academy of Sciences",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1073/pnas.2404254121",
+    "domains": [
+      "Meteorite geochemistry and provenance"
+    ],
+    "discovery_domains": [
+      "Meteorite geochemistry and provenance"
+    ],
+    "queries": [],
+    "references": [
+      "10.1016/j.gca.2017.06.034",
+      "10.1073/pnas.1708236114",
+      "10.1126/science.abm1018",
+      "10.1038/scientificamerican0680-54",
+      "10.1126/science.221.4611.651",
+      "10.1029/2020je006523",
+      "10.1126/science.193.4255.786",
+      "10.1111/maps.12640",
+      "10.1016/j.gca.2011.09.047",
+      "10.1016/j.gr.2020.11.001",
+      "10.2138/am-2015-5257",
+      "10.1111/maps.12600",
+      "10.1007/978-94-017-1035-0_6",
+      "10.1029/2006je002698",
+      "10.1029/2005je002560",
+      "10.1016/j.icarus.2014.04.052",
+      "10.1029/2022je007440",
+      "10.1029/2022je007638",
+      "10.1016/j.gca.2017.08.037",
+      "10.1126/sciadv.1600922",
+      "10.1016/j.gca.2018.07.006",
+      "10.1111/maps.12095",
+      "10.1126/sciadv.adn9830",
+      "10.1126/science.1185395",
+      "10.1126/science.273.5277.924",
+      "10.1089/ast.2020.2306",
+      "10.1126/sciadv.aap8306",
+      "10.1126/science.1228858",
+      "10.1016/b978-0-444-53802-4.00170-6",
+      "10.1016/j.pss.2013.03.006",
+      "10.1111/j.1945-5100.2003.tb00017.x",
+      "10.1038/ngeo2075",
+      "10.1038/s41467-018-07191-0",
+      "10.1038/nature10077",
+      "10.1016/j.epsl.2017.06.047",
+      "10.1038/s43017-022-00370-0",
+      "10.1016/j.epsl.2018.04.040",
+      "10.1038/nature06317",
+      "10.1126/science.1196874",
+      "10.1016/j.icarus.2023.115519",
+      "10.1016/j.gca.2014.02.007",
+      "10.1016/j.chemer.2005.01.004",
+      "10.1016/j.gca.2012.07.004",
+      "10.1029/2005je002402",
+      "10.1002/2016je005143",
+      "10.1016/j.epsl.2016.06.041",
+      "10.1038/nature13175",
+      "10.1029/2023je008159",
+      "10.1038/s41561-020-0552-y",
+      "10.1016/j.gca.2018.09.017",
+      "10.1038/ncomms3662",
+      "10.1111/maps.12670",
+      "10.1038/nature02275",
+      "10.1073/pnas.2101155118",
+      "10.1016/j.epsl.2023.118126",
+      "10.1016/j.chemgeo.2017.06.009",
+      "10.1016/j.epsl.2022.117514",
+      "10.1016/j.gca.2019.07.034",
+      "10.1111/maps.12363",
+      "10.1029/2012je004234",
+      "10.1130/g34714.1",
+      "10.1002/jgre.20105",
+      "10.1029/2021je006856",
+      "10.1038/s41467-021-26648-3",
+      "10.1038/s41467-022-31444-8",
+      "10.1126/sciadv.adn2378",
+      "10.1016/j.lithos.2016.02.023",
+      "10.1006/icar.1994.1149",
+      "10.1016/j.gca.2008.09.005",
+      "10.1126/science.1077483",
+      "10.1038/ngeo579",
+      "10.1016/j.gca.2015.12.002",
+      "10.1016/j.epsl.2008.02.008",
+      "10.1038/s43017-021-00169-5",
+      "10.1038/s41561-019-0380-0",
+      "10.1016/j.epsl.2007.05.043",
+      "10.1002/2016je005017",
+      "10.1016/j.epsl.2014.06.038",
+      "10.1111/maps.13263",
+      "10.1002/2014je004782",
+      "10.1029/2020je006467",
+      "10.1029/2018gl081402",
+      "10.1126/sciadv.abo3399",
+      "10.1029/2023je008187",
+      "10.1016/b978-0-12-820245-6.00005-7",
+      "10.1029/2022je007628",
+      "10.1089/ast.2019.2132"
+    ],
+    "metadata_source": "Crossref DOI lookup; targeted user-supplied review, 2026-09-27",
+    "retrieved": "2026-09-27T13:51:59.581729+00:00",
+    "volume": "122",
+    "pages": "e2404254121",
+    "relations": {},
+    "core": true,
+    "review_depth": "sections",
+    "review_status": "Selected full-text sections consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "finding": "The review explains missing geological context and biased age and composition coverage in the meteorite collection.",
+    "dichotomy_use": "Treat stones, pairings, ejection groups and locations separately when constraining the dichotomy.",
+    "limitation": "Candidate launch craters do not recover exact outcrop context; the collection is not a spatially representative sample.",
+    "assessment_date": "2026-09-27",
+    "primary_domain": "Meteorite geochemistry and provenance",
+    "consulted_source": "https://doi.org/10.1073/pnas.2404254121",
+    "consulted_material": "Selected section on limitations of the meteorite inventory, through the open article; no full methodological audit."
+  },
+  {
     "doi": "10.1073/pnas.2404259121",
     "title": "What we can learn about Mars from the magnetism of returned samples",
     "authors": [
@@ -11115,6 +11432,9 @@
     "type": "journal-article",
     "url": "https://doi.org/10.1073/pnas.2404259121",
     "domains": [
+      "Meteorite magnetism"
+    ],
+    "discovery_domains": [
       "Meteorite magnetism"
     ],
     "queries": [],
@@ -11195,9 +11515,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism"
-    ],
     "finding": "Reviews how geologically contextualized, oriented returned samples could resolve magnetic history and thermal or aqueous alteration.",
     "dichotomy_use": "Identifies missing ages, orientations and source lithologies in the current evidence.",
     "limitation": "Existing meteorites are sparse and commonly reset. Proposed sample-return science is not an accomplished laboratory measurement.",
@@ -14465,6 +14782,9 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -14534,9 +14854,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Coupled impact and long-term mantle models build thicker crust on the impacted southern hemisphere.",
     "dichotomy_use": "Tests an impact followed by geological evolution rather than an instantaneous crater alone.",
     "limitation": "Model preference is conditional on impact parameters and mantle viscosity; data are available on request.",
@@ -14982,6 +15299,9 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Interior"
+    ],
     "queries": [],
     "references": [
       "10.1098/rspa.1959.0138",
@@ -15055,9 +15375,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior"
-    ],
     "finding": "Joint inversion of marsquake and geophysical information admits alternative thermal and crustal structures.",
     "dichotomy_use": "Tests compatibility between seismic structure and global geophysical constraints.",
     "limitation": "Event locations, temperature and structure trade off; this is not a second global seismic network.",
@@ -15550,6 +15867,10 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Interior"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -15640,10 +15961,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Interior"
-    ],
     "finding": "Different attenuation inferred along Terra Cimmeria and Cerberus paths is interpreted as a thermal contrast.",
     "dichotomy_use": "Provides a potential mantle-related expression of the dichotomy.",
     "limitation": "Limited paths, scattering and source effects complicate temperature inference; present contrast does not uniquely date its cause.",
@@ -15936,6 +16253,9 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
     "queries": [],
     "references": [
       "10.1126/science.284.5415.790",
@@ -16101,9 +16421,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism"
-    ],
     "finding": "Perseverance observations identify potential iron-oxide magnetic carriers in igneous rocks.",
     "dichotomy_use": "Helps prioritize contextualized samples for future rock-magnetic work.",
     "limitation": "Spectral identification of possible carriers is not a direct ancient paleofield measurement.",
@@ -16146,6 +16463,9 @@
     "type": "journal-article",
     "url": "https://doi.org/10.1038/s41467-024-51092-4",
     "domains": [
+      "Magnetism"
+    ],
+    "discovery_domains": [
       "Magnetism"
     ],
     "queries": [],
@@ -16265,9 +16585,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism"
-    ],
     "finding": "Cooling and polarity reversals can suppress orbital anomalies above impact basins despite an active dynamo.",
     "dichotomy_use": "Tests whether weak basin magnetism actually requires post-dynamo formation.",
     "limitation": "The explored basin-size range is much smaller than Borealis; a direct extrapolation is not validated.",
@@ -17000,6 +17317,9 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
     "queries": [
       {
         "query": "Martian meteorite paleomagnetism",
@@ -17074,9 +17394,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism"
-    ],
     "finding": "GRV 020090 is interpreted to preserve a Martian thermal remanence; shock loss makes 1.6 microtesla a lower bound.",
     "dichotomy_use": "Adds an Antarctic shergottite constraint and a local-crustal-field interpretation.",
     "limitation": "Abstract and data statement consulted; a proposed source region and lower bound are not a global dynamo measurement.",
@@ -17125,6 +17442,10 @@
     "type": "journal-article",
     "url": "https://doi.org/10.1126/sciadv.adn2378",
     "domains": [
+      "Meteorite geochemistry and provenance"
+    ],
+    "discovery_domains": [
+      "Meteorite provenance",
       "Meteorite geochemistry and provenance"
     ],
     "queries": [
@@ -17225,10 +17546,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite provenance",
-      "Meteorite geochemistry and provenance"
-    ],
     "finding": "Links groups of Martian meteorites to candidate source craters through ejection and geological modelling.",
     "dichotomy_use": "Allows explicit provenance hypotheses for comparing meteorites with mapped provinces.",
     "limitation": "Meteorites from the same launch group must not be counted as independent regional observations.",
@@ -17273,6 +17590,10 @@
     "type": "journal-article",
     "url": "https://doi.org/10.1126/sciadv.adq3694",
     "domains": [
+      "Meteorite geochemistry and provenance"
+    ],
+    "discovery_domains": [
+      "Meteorite geochemistry",
       "Meteorite geochemistry and provenance"
     ],
     "queries": [
@@ -17332,10 +17653,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite geochemistry",
-      "Meteorite geochemistry and provenance"
-    ],
     "finding": "Nanometre-scale mineral and chemical evidence in ancient zircon is interpreted as early hydrothermal activity.",
     "dichotomy_use": "Links water–rock interaction to early crustal modification and possible magnetic carriers.",
     "limitation": "A local grain-scale environment does not establish a planet-wide ocean or magnetic field.",
@@ -19554,6 +19871,9 @@
     "domains": [
       "Surface and evolution"
     ],
+    "discovery_domains": [
+      "Surface and evolution"
+    ],
     "queries": [],
     "references": [],
     "metadata_source": "Crossref DOI lookup",
@@ -19565,9 +19885,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Surface and evolution"
-    ],
     "finding": "Lafayette iddingsite dates aqueous alteration to 742 ± 15 Ma at 2 sigma.",
     "dichotomy_use": "Separates mineral alteration from older crystallization and later ejection in a shared event history.",
     "limitation": "Results and interpretation consulted. This local alteration age does not independently date remanence or demonstrate a global ocean.",
@@ -20431,6 +20748,9 @@
     "domains": [
       "Surface and evolution"
     ],
+    "discovery_domains": [
+      "Surface and evolution"
+    ],
     "queries": [],
     "references": [
       "10.1029/2001je001510",
@@ -20473,9 +20793,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Surface and evolution"
-    ],
     "finding": "MOCAAS compiles orbital aqueous-mineral signatures from OMEGA and CRISM.",
     "dichotomy_use": "Supplies a surface alteration layer for comparison with geology and magnetism.",
     "limitation": "Abstract and project documentation consulted; November 2023 maps acquired. Uneven coverage and exposure prevent interpreting blank cells as dry.",
@@ -20705,6 +21022,9 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -20848,9 +21168,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Strength-inclusive impact models with crust production favour a southern impact in their explored parameter space.",
     "dichotomy_use": "Challenges the assumption that an impact must excavate the northern hemisphere.",
     "limitation": "Preferred impact sizes and geometry depend on melting, strength and crust-production prescriptions.",
@@ -22514,6 +22831,9 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
     "queries": [],
     "references": [
       "10.1126/science.1228858",
@@ -22576,9 +22896,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism"
-    ],
     "finding": "Experiments and nine paired NWA 7034 stones demonstrate destructive remagnetization by collectors' hand magnets.",
     "dichotomy_use": "Makes collection history a mandatory quality field in any meteorite paleofield synthesis.",
     "limitation": "The studied stones cannot provide pristine Martian paleointensity; this does not negate all mineralogical information or every future sample.",
@@ -23680,6 +23997,10 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Interior",
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Mars crustal thickness density InSight",
@@ -23775,10 +24096,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior",
-      "Magnetism"
-    ],
     "finding": "Multi-orbit surface waves constrain average crustal thickness and limit large north–south density contrasts in the tested models.",
     "dichotomy_use": "Adds constraints beyond the immediate InSight column.",
     "limitation": "Path coverage and the tested structural parameterization remain important; models share underlying datasets.",
@@ -24374,6 +24691,10 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Surface and water",
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Mars Zhurong subsurface ocean radar",
@@ -24436,10 +24757,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Surface and water",
-      "Magnetism"
-    ],
     "finding": "Zhurong measurements reveal weak local crustal fields along a traverse in Utopia Planitia.",
     "dichotomy_use": "Adds a rare northern ground constraint independent of orbital altitude smoothing.",
     "limitation": "A short traverse is not representative of the entire northern hemisphere; local demagnetization is an alternative.",
@@ -25084,6 +25401,9 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Interior"
+    ],
     "queries": [
       {
         "query": "Mars core molten silicate layer inner core",
@@ -25169,9 +25489,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior"
-    ],
     "finding": "An enriched molten silicate layer above a smaller liquid core reconciles seismic and geophysical constraints.",
     "dichotomy_use": "Changes the thermal boundary conditions for early dynamo and mantle evolution models.",
     "limitation": "Inversion depends on assumed composition and layer structure; a liquid layer alone does not imply an active dynamo.",
@@ -25461,6 +25778,9 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
     "queries": [],
     "references": [
       "10.1126/science.284.5415.790",
@@ -25575,9 +25895,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism"
-    ],
     "finding": "Micromagnetic observations in ALH 84001 are interpreted as records of ancient polarity reversals.",
     "dichotomy_use": "Constrains ancient field behaviour during impact-heating episodes.",
     "limitation": "Age assignment, magnetic carriers and resetting histories must be evaluated before inferring dynamo duration.",
@@ -29674,6 +29991,9 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Interior"
+    ],
     "queries": [],
     "references": [
       "10.1029/js082i028p04524",
@@ -29842,9 +30162,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior"
-    ],
     "finding": "Combines the InSight crustal anchor with gravity and topography to generate global crustal models.",
     "dichotomy_use": "Quantifies how much hemispheric contrast must be explained by crustal thickness and density.",
     "limitation": "Absolute thickness is strongly conditional on the adopted seismic layering and crustal density.",
@@ -29994,6 +30311,9 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -30091,9 +30411,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Crustal insulation and melt extraction can amplify a long-wavelength crustal thickness perturbation.",
     "dichotomy_use": "Offers a feedback mechanism that can enlarge an initially small asymmetry.",
     "limitation": "Parameterized thermal models do not establish the origin or uniqueness of the initial perturbation.",
@@ -30144,6 +30461,10 @@
     "type": "journal-article",
     "url": "https://doi.org/10.1038/s41467-022-31444-8",
     "domains": [
+      "Meteorite geochemistry and provenance"
+    ],
+    "discovery_domains": [
+      "Meteorite provenance",
       "Meteorite geochemistry and provenance"
     ],
     "queries": [
@@ -30215,10 +30536,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite provenance",
-      "Meteorite geochemistry and provenance"
-    ],
     "finding": "Crater and terrain analysis identifies a candidate ejection site for the NWA 7034 family in the southern highlands.",
     "dichotomy_use": "Offers a route from meteorite laboratory data to geological context.",
     "limitation": "Provenance is inferred, with multiple excavation and reworking episodes; it is not a known collection coordinate on Mars.",
@@ -31512,6 +31829,10 @@
     "domains": [
       "Meteorite geochemistry and provenance"
     ],
+    "discovery_domains": [
+      "Meteorite geochemistry",
+      "Meteorite geochemistry and provenance"
+    ],
     "queries": [
       {
         "query": "Mars zircon NWA 7533 early crust",
@@ -31578,10 +31899,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite geochemistry",
-      "Meteorite geochemistry and provenance"
-    ],
     "finding": "Shock microstructures in ancient zircon record a high-pressure impact after zircon formation.",
     "dichotomy_use": "Tests early bombardment histories and preservation of primordial crust.",
     "limitation": "An old grain age alone does not date the later shock event.",
@@ -33702,6 +34019,9 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Magnetism"
+    ],
     "queries": [],
     "references": [
       "10.1029/2000je001404",
@@ -33856,9 +34176,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism"
-    ],
     "finding": "Reviews the gap between orbital, surface and sample-scale magnetic observations.",
     "dichotomy_use": "Organizes the scale mismatch that a joint dichotomy study must address.",
     "limitation": "A review supplies synthesis rather than an independent measurement for model scoring.",
@@ -38253,6 +38570,10 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Interior",
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Mars crustal thickness density InSight",
@@ -38315,10 +38636,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior",
-      "Magnetism"
-    ],
     "finding": "Compositional variations are investigated as a contributor to strong regional crustal magnetic anomalies.",
     "dichotomy_use": "Introduces carrier abundance alongside dynamo intensity and thermal history.",
     "limitation": "Surface spectra sample different depths from orbital magnetic sources; correlation does not fix causality.",
@@ -38666,6 +38983,9 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Magnetism"
+    ],
     "queries": [],
     "references": [
       "10.1126/science.284.5415.790",
@@ -38716,9 +39036,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism"
-    ],
     "finding": "Localized magnetic spectra are interpreted as different equivalent source depths in northern lowlands and southern highlands.",
     "dichotomy_use": "Depth estimates offer a target for joint thermal and magnetic history tests.",
     "limitation": "Abstract consulted. Source geometry and spectral localization affect equivalent depths; these estimates reuse the Langlais field model and are not independent observations of layer boundaries.",
@@ -38999,6 +39316,10 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Magnetism",
+      "Meteorite magnetism"
+    ],
     "queries": [
       {
         "query": "Mars crustal magnetization dynamo history",
@@ -39115,10 +39436,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism",
-      "Meteorite magnetism"
-    ],
     "finding": "Oriented subsamples of MIL 03346 preserve a tested remanence and an approximately 5-microtesla paleointensity.",
     "dichotomy_use": "Provides a nakhlite constraint with explicit laboratory preservation tests.",
     "limitation": "The signal can be explained by older magnetized crust; mutually oriented subsamples do not recover absolute Martian orientation.",
@@ -40034,6 +40351,9 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Interior"
+    ],
     "queries": [],
     "references": [
       "10.1146/annurev-earth-042711-105503",
@@ -40159,9 +40479,6 @@
     "review_depth": "metadata",
     "review_status": "Metadata / preview only",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior"
-    ],
     "finding": "InSight seismic observations constrain crustal layering and thickness beneath the lander.",
     "dichotomy_use": "Provides the local anchor for global gravity-based crustal models.",
     "limitation": "Bibliographic record and editorial summary checked; original inversion and alternatives need detailed review.",
@@ -40308,6 +40625,9 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Interior"
+    ],
     "queries": [],
     "references": [
       "10.1038/35084155",
@@ -40437,9 +40757,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior"
-    ],
     "finding": "Initial InSight reflected-wave analysis supported a large liquid core.",
     "dichotomy_use": "Constrains thermal evolution and possible dynamo histories.",
     "limitation": "Later molten-layer interpretations revise the inferred core size; these estimates must not be averaged as independent measurements.",
@@ -44331,6 +44648,10 @@
     "domains": [
       "Meteorite geochemistry and provenance"
     ],
+    "discovery_domains": [
+      "Surface and water",
+      "Meteorite geochemistry and provenance"
+    ],
     "queries": [
       {
         "query": "Mars water reservoirs meteorites isotopes",
@@ -44628,10 +44949,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Surface and water",
-      "Meteorite geochemistry and provenance"
-    ],
     "finding": "Reviews Martian meteorite petrology, isotopes, ages and sampling biases.",
     "dichotomy_use": "Provides the geochemical context needed to interpret magnetic results and mantle reservoirs.",
     "limitation": "Meteorite names, pairing groups and launch events are not equivalent independent samples.",
@@ -44777,6 +45094,10 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Interior",
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Mars crustal thickness density InSight",
@@ -44828,10 +45149,6 @@
     "review_depth": "metadata",
     "review_status": "Metadata / preview only",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior",
-      "Magnetism"
-    ],
     "finding": "Reports crustal and time-varying magnetic fields measured at the InSight landing site.",
     "dichotomy_use": "Links a ground measurement to the orbital magnetic picture.",
     "limitation": "Metadata checked; detailed separation of external and crustal fields needs full-text extraction.",
@@ -45554,6 +45871,9 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Magnetism"
+    ],
     "queries": [],
     "references": [
       "10.1126/science.284.5415.790",
@@ -45633,9 +45953,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism"
-    ],
     "finding": "Magnetic signals associated with ancient and younger terrains are interpreted as evidence of early and prolonged dynamo activity.",
     "dichotomy_use": "Challenges a single shutdown date inferred only from weakly magnetized large basins.",
     "limitation": "Geological ages and the depths and histories of magnetic sources remain uncertain.",
@@ -48975,6 +49292,10 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Magnetism",
+      "Atmosphere"
+    ],
     "queries": [
       {
         "query": "Mars MAVEN magnetic field crust",
@@ -49070,10 +49391,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism",
-      "Atmosphere"
-    ],
     "finding": "Combines MGS and MAVEN observations into a global spherical-harmonic crustal-field model.",
     "dichotomy_use": "Provides a reproducible field layer for comparison with geology and crustal thickness.",
     "limitation": "Altitude and spatial bandwidth filter the signal; downward continuation is not direct surface measurement.",
@@ -49412,6 +49729,11 @@
     "domains": [
       "Surface and evolution"
     ],
+    "discovery_domains": [
+      "Surface and water",
+      "Volcanism and tectonics",
+      "Surface and evolution"
+    ],
     "queries": [
       {
         "query": "Mars northern ocean shorelines dichotomy",
@@ -49512,11 +49834,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Surface and water",
-      "Volcanism and tectonics",
-      "Surface and evolution"
-    ],
     "finding": "Delta elevations in the examined region are consistent with local closed-basin lakes rather than one ocean level.",
     "dichotomy_use": "Tests shoreline interpretations used to reconstruct later northern hydrology.",
     "limitation": "The regional result does not exclude every proposed Martian ocean at every epoch.",
@@ -51585,6 +51902,11 @@
     "domains": [
       "Interior"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Interior",
+      "Volcanism and tectonics"
+    ],
     "queries": [
       {
         "query": "Mars hemispheric dichotomy origin",
@@ -51725,11 +52047,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Interior",
-      "Volcanism and tectonics"
-    ],
     "finding": "Two-hemisphere thermal models connect crustal thickness and radiogenic enrichment to different lithospheric temperatures and elastic thicknesses.",
     "dichotomy_use": "Provides a thermal benchmark for testing magnetic acquisition and retention in the same crustal histories.",
     "limitation": "Sections 5.5, 5.6 and 6 consulted. Polar elastic thickness need not represent an entire hemisphere; a well-mixed mantle and parameterized columns omit spatial dynamics.",
@@ -52659,6 +52976,9 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -52737,9 +53057,6 @@
     "review_depth": "metadata",
     "review_status": "Metadata / preview only",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Studies a hybrid impact-driven degree-one convection scenario.",
     "dichotomy_use": "Prevents treating impacts and convection as mutually exclusive explanations.",
     "limitation": "Bibliographic record and primary preview checked; quantitative outcomes require full-text extraction.",
@@ -53660,6 +53977,10 @@
     "domains": [
       "Surface and evolution"
     ],
+    "discovery_domains": [
+      "Atmosphere",
+      "Surface and evolution"
+    ],
     "queries": [
       {
         "query": "Mars atmospheric escape MAVEN magnetic field",
@@ -53703,10 +54024,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Atmosphere",
-      "Surface and evolution"
-    ],
     "finding": "Plasma simulations show that a weak intrinsic dipole can increase ion escape under the tested conditions.",
     "dichotomy_use": "Challenges a simple field-off, atmosphere-lost causal chain.",
     "limitation": "The dependence varies with field strength and solar conditions; present-day simulations are not a complete early-Mars loss history.",
@@ -54050,6 +54367,10 @@
     "domains": [
       "Meteorite geochemistry and provenance"
     ],
+    "discovery_domains": [
+      "Interior",
+      "Meteorite geochemistry and provenance"
+    ],
     "queries": [
       {
         "query": "Mars magma ocean cumulate overturn",
@@ -54108,10 +54429,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Interior",
-      "Meteorite geochemistry and provenance"
-    ],
     "finding": "Ancient zircon ages and hafnium isotopes imply very early extraction and subsequent reworking of a primordial crust.",
     "dichotomy_use": "Constrains how quickly initial crustal reservoirs formed.",
     "limitation": "Reservoir model ages differ from measured crystallization ages and do not directly date the hemispheric boundary.",
@@ -54339,6 +54656,12 @@
     "domains": [
       "Meteorite geochemistry and provenance"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Meteorite magnetism",
+      "Meteorite provenance",
+      "Meteorite geochemistry and provenance"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -54433,12 +54756,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Meteorite magnetism",
-      "Meteorite provenance",
-      "Meteorite geochemistry and provenance"
-    ],
     "finding": "Multiple chronometers constrain ancient near-surface material and later heterogeneous heating in the NWA 7034 source terrain.",
     "dichotomy_use": "Conditional survival and burial constraints can test event sequences predicted by dichotomy origin models.",
     "limitation": "Dichotomy-age discussion consulted. Local provenance, burial and thermal assumptions prevent a universal formation date; crystallization and later metamorphism are distinct.",
@@ -66691,6 +67008,10 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite magnetism",
+      "Meteorite provenance"
+    ],
     "queries": [
       {
         "query": "NWA 7034 magnetization",
@@ -66743,10 +67064,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism",
-      "Meteorite provenance"
-    ],
     "finding": "NWA 7034 contains abundant magnetic oxides capable of carrying strong crustal remanence.",
     "dichotomy_use": "Provides a candidate lithological analogue for strong Martian anomalies.",
     "limitation": "Rock-magnetic capacity remains informative even when natural remanence is terrestrially contaminated; the two must not be conflated.",
@@ -68041,6 +68358,11 @@
     "domains": [
       "Surface and evolution"
     ],
+    "discovery_domains": [
+      "Meteorite geochemistry",
+      "Surface and water",
+      "Surface and evolution"
+    ],
     "queries": [
       {
         "query": "Martian meteorites isotopic reservoirs crust mantle",
@@ -68127,11 +68449,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite geochemistry",
-      "Surface and water",
-      "Surface and evolution"
-    ],
     "finding": "Hydrogen-isotope measurements in meteorites constrain model histories of Martian water loss and storage.",
     "dichotomy_use": "Connects atmospheric evolution with crustal water reservoirs.",
     "limitation": "Inferred inventories depend on fractionation and reservoir-exchange assumptions; they do not identify the dichotomy-forming mechanism.",
@@ -70265,6 +70582,9 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Mars impact demagnetization shock",
@@ -70347,9 +70667,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism"
-    ],
     "finding": "Models impact-induced magnetic changes through excavation, heating and shock.",
     "dichotomy_use": "Helps distinguish field absence from destruction or removal of magnetic carriers.",
     "limitation": "Mineralogy and impact physics alter demagnetization efficiency; simplified field histories are conditional.",
@@ -71137,6 +71454,9 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Mars crustal magnetization dynamo history",
@@ -71196,9 +71516,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism"
-    ],
     "finding": "Numerical hemispherical dynamos driven by imposed core-mantle boundary heat-flux variations can reverse rapidly.",
     "dichotomy_use": "A hemispheric field explanation must satisfy time-integrated magnetic recording as well as spatial field contrast.",
     "limitation": "Author-hosted abstract consulted. The reported reversal problem concerns this simulated regime, not every possible Martian dynamo.",
@@ -72387,6 +72704,9 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
     "queries": [
       {
         "query": "Martian meteorite paleomagnetism",
@@ -72468,9 +72788,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism"
-    ],
     "finding": "Tissint records a weak post-shock field interpreted as a local Martian crustal field.",
     "dichotomy_use": "Demonstrates magnetic recording long after the early dynamo interval.",
     "limitation": "A young weak paleofield need not imply a young global dynamo.",
@@ -75284,6 +75601,10 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -75360,10 +75681,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Magnetism"
-    ],
     "finding": "Models ejecta burial and heating of the southern crust and considers a convection-based origin for magnetic lineations.",
     "dichotomy_use": "Prior work directly connects dichotomy formation scenarios to magnetic survival; any new consistency test must engage with it.",
     "limitation": "Discussion and conclusion consulted. Uniform ejecta and assumed thermal/recording histories restrict generality; later reacquisition must also be considered.",
@@ -82351,6 +82668,9 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -82501,9 +82821,6 @@
     "review_depth": "sections",
     "review_status": "Selected full-text sections consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Boundary stratigraphy and structure distinguish an ancient dichotomy from younger erosion and faulting.",
     "dichotomy_use": "Prevents dating primordial formation from the age of young boundary landforms.",
     "limitation": "Regional exposures and resurfacing limit extrapolation around the entire planet.",
@@ -84624,6 +84941,11 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite geochemistry",
+      "Chronology",
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Mars zircon NWA 7533 early crust",
@@ -84644,11 +84966,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite geochemistry",
-      "Chronology",
-      "Magnetism"
-    ],
     "finding": "Early geotherms inferred for Terra Cimmeria are used to evaluate candidate magnetic carriers and magnetized depths.",
     "dichotomy_use": "Establishes prior thermal-carrier consistency tests that a modern joint analysis should extend rather than claim to invent.",
     "limitation": "Abstract consulted with limited section previews. Inferred heat flow, loading age and source depths are conditional; Curie depth is not a directly measured magnetic boundary.",
@@ -88730,6 +89047,9 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
     "queries": [
       {
         "query": "Martian meteorite paleointensity",
@@ -88771,9 +89091,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism"
-    ],
     "finding": "ALH 84001 paleointensity work supports a substantial ancient Martian magnetic field.",
     "dichotomy_use": "Supplies a sample-scale constraint complementary to orbital remanent anomalies.",
     "limitation": "Uncertain acquisition history and unknown original location prevent a direct hemispheric map.",
@@ -88920,6 +89237,9 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -88968,9 +89288,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Removing the inferred Tharsis contribution reveals an elliptical boundary compatible with an oblique impact.",
     "dichotomy_use": "Tests northern-basin geometry using gravity and topography together.",
     "limitation": "The reconstructed ellipse depends on separating volcanic loading and crustal structure.",
@@ -89008,6 +89325,9 @@
     "type": "journal-article",
     "url": "https://doi.org/10.1038/nature07025",
     "domains": [
+      "Dichotomy"
+    ],
+    "discovery_domains": [
       "Dichotomy"
     ],
     "queries": [
@@ -89056,9 +89376,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Large-impact calculations explore crustal removal, melting and disruption as a route to the dichotomy.",
     "dichotomy_use": "Connects basin formation to crustal and magnetic consequences.",
     "limitation": "A simplified impact geometry cannot independently establish the actual impact trajectory.",
@@ -89096,6 +89413,16 @@
     "url": "https://doi.org/10.1038/nature07070",
     "domains": [
       "Dichotomy"
+    ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Interior",
+      "Gravity and topography",
+      "Magnetism",
+      "Chronology",
+      "Surface and water",
+      "Volcanism and tectonics",
+      "Atmosphere"
     ],
     "queries": [
       {
@@ -89165,16 +89492,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Interior",
-      "Gravity and topography",
-      "Magnetism",
-      "Chronology",
-      "Surface and water",
-      "Volcanism and tectonics",
-      "Atmosphere"
-    ],
     "finding": "Three-dimensional impact simulations produce a large elliptical northern excavation within a restricted impact parameter range.",
     "dichotomy_use": "Supplies quantitative northern-impact initial conditions.",
     "limitation": "Success depends on material physics, melt treatment and the assumed initial crust.",
@@ -89578,6 +89895,9 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Mars crustal magnetization dynamo history",
@@ -89625,9 +89945,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism"
-    ],
     "finding": "Hemispheric core heat-flow forcing can produce a strongly asymmetric dynamo.",
     "dichotomy_use": "Offers a source-field alternative to selective destruction of crustal magnetization.",
     "limitation": "Requires compatible core–mantle thermal forcing and preservation of the resulting crustal record.",
@@ -93433,6 +93750,16 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Interior",
+      "Gravity and topography",
+      "Magnetism",
+      "Chronology",
+      "Surface and water",
+      "Volcanism and tectonics",
+      "Atmosphere"
+    ],
     "queries": [
       {
         "query": "Mars hemispheric dichotomy origin",
@@ -93575,16 +93902,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Interior",
-      "Gravity and topography",
-      "Magnetism",
-      "Chronology",
-      "Surface and water",
-      "Volcanism and tectonics",
-      "Atmosphere"
-    ],
     "finding": "Reviews the geological, topographic and tectonic expressions of the dichotomy.",
     "dichotomy_use": "Separates formation of the contrast from subsequent modification of the boundary.",
     "limitation": "Review predates InSight; old model parameters require updating.",
@@ -95222,6 +95539,10 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Interior"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -95289,10 +95610,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Interior"
-    ],
     "finding": "Layered mantle viscosity permits degree-one convection to develop much faster than in some phase-change models.",
     "dichotomy_use": "Makes formation timescale and viscosity contrast explicit tests of an internal origin.",
     "limitation": "The appropriate early Martian rheology is uncertain; a simulated pattern is not an observation.",
@@ -99206,6 +99523,12 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Magnetism",
+      "Meteorite magnetism",
+      "Meteorite geochemistry"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -99267,12 +99590,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Magnetism",
-      "Meteorite magnetism",
-      "Meteorite geochemistry"
-    ],
     "finding": "Martian meteorite families contain different magnetic carriers, including titanomagnetite and pyrrhotite.",
     "dichotomy_use": "Shows why magnetization cannot be interpreted solely as field intensity.",
     "limitation": "The measured meteorite collection is lithologically and statistically biased.",
@@ -101039,6 +101356,9 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
     "queries": [],
     "references": [
       "10.1016/0012-821x(75)90210-1",
@@ -101107,9 +101427,6 @@
     "review_depth": "metadata",
     "review_status": "Metadata / preview only",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism"
-    ],
     "finding": "A methodological source for normalized non-thermal paleointensity estimates used in the meteorite compilation.",
     "dichotomy_use": "Links several meteorite estimates to shared calibration assumptions.",
     "limitation": "Bibliographic record and citations in later primary papers checked; original methods not audited.",
@@ -107235,6 +107552,9 @@
     "domains": [
       "Meteorite magnetism"
     ],
+    "discovery_domains": [
+      "Meteorite magnetism"
+    ],
     "queries": [
       {
         "query": "ALH84001 magnetism",
@@ -107311,9 +107631,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Meteorite magnetism"
-    ],
     "finding": "ALH 84001 carbonate-related remanence is investigated as an ancient paleofield recorder.",
     "dichotomy_use": "Links mineral formation, low-temperature history and early magnetism.",
     "limitation": "Mineral-scale recording and later overprints must be separated; meteorite crystallization age is not automatically magnetic age.",
@@ -108722,6 +109039,79 @@
     "review_depth": "metadata",
     "review_status": "Discovery candidate — not screened",
     "domain_basis": "Search query, not verified classification"
+  },
+  {
+    "doi": "10.1038/416298a",
+    "title": "A topographically forced asymmetry in the martian circulation and climate",
+    "authors": [
+      "Mark I. Richardson",
+      "R. John Wilson"
+    ],
+    "year": 2002,
+    "date": [
+      2002,
+      3
+    ],
+    "dates": {
+      "published": [
+        2002,
+        3
+      ],
+      "published-print": [
+        2002,
+        3
+      ],
+      "published-online": []
+    },
+    "journal": "Nature",
+    "type": "journal-article",
+    "url": "https://doi.org/10.1038/416298a",
+    "domains": [
+      "Atmosphere and transport"
+    ],
+    "discovery_domains": [
+      "Atmosphere and transport"
+    ],
+    "queries": [],
+    "references": [
+      "10.1029/jc079i024p03375",
+      "10.1126/science.180.4086.638",
+      "10.1016/0019-1035(80)90130-x",
+      "10.1016/0019-1035(82)90129-4",
+      "10.1175/1520-0469(1996)053<1290:cmsott>2.0.co;2",
+      "10.1029/95je02984",
+      "10.1029/97je00046",
+      "10.1029/2001je001536",
+      "10.1029/92je02946",
+      "10.1029/1999je001025",
+      "10.1175/1520-0493(1970)098<0423:otavot>2.3.co;2",
+      "10.1063/1.2809772",
+      "10.1175/1520-0469(1988)045<2416:hcfzah>2.0.co;2",
+      "10.1126/science.271.5246.184",
+      "10.1126/science.284.5419.1495",
+      "10.1029/1999jd900485",
+      "10.1006/icar.1996.0108",
+      "10.1029/2001je001804",
+      "10.1006/icar.1999.6287",
+      "10.1029/2000je001407",
+      "10.1006/icar.1993.1049"
+    ],
+    "metadata_source": "Crossref DOI lookup; targeted user-supplied review, 2026-09-27",
+    "retrieved": "2026-09-27T13:51:59.581729+00:00",
+    "volume": "416",
+    "pages": "298-301",
+    "relations": {},
+    "core": true,
+    "review_depth": "abstract",
+    "review_status": "Abstract consulted",
+    "domain_basis": "Core topic assigned after source check",
+    "finding": "Global circulation simulations attribute a persistent seasonal asymmetry to the north–south elevation contrast.",
+    "dichotomy_use": "Provides a published mechanism connecting dichotomy topography to the wind laboratory.",
+    "limitation": "An existing-topography climatology cannot reproduce the causal experiment without controlled changes to topography.",
+    "assessment_date": "2026-09-27",
+    "primary_domain": "Atmosphere and transport",
+    "consulted_source": "https://doi.org/10.1038/416298a",
+    "consulted_material": "Publisher abstract and bibliographic record consulted; full model methods not audited."
   },
   {
     "doi": "10.1038/417263a",
@@ -110344,6 +110734,15 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy",
+      "Interior",
+      "Gravity and topography",
+      "Magnetism",
+      "Chronology",
+      "Surface and water",
+      "Volcanism and tectonics"
+    ],
     "queries": [
       {
         "query": "Mars hemispheric dichotomy origin",
@@ -110434,15 +110833,6 @@
     "review_depth": "metadata",
     "review_status": "Metadata / preview only",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy",
-      "Interior",
-      "Gravity and topography",
-      "Magnetism",
-      "Chronology",
-      "Surface and water",
-      "Volcanism and tectonics"
-    ],
     "finding": "Proposes that mantle convection and the dichotomy are dynamically linked.",
     "dichotomy_use": "Foundational reference for degree-one convection.",
     "limitation": "Metadata and primary-source preview checked; detailed model assumptions remain to be extracted.",
@@ -115819,6 +116209,9 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Magnetism"
+    ],
     "queries": [
       {
         "query": "Mars crustal magnetization dynamo history",
@@ -115847,9 +116240,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Magnetism"
-    ],
     "finding": "Mars Global Surveyor measurements reveal strong, spatially heterogeneous crustal remanent fields.",
     "dichotomy_use": "Establishes magnetization as a major constraint on early crustal evolution.",
     "limitation": "Weak fields above basins are not a unique clock for dynamo cessation.",
@@ -115898,6 +116288,12 @@
     "domains": [
       "Magnetism"
     ],
+    "discovery_domains": [
+      "Gravity and topography",
+      "Magnetism",
+      "Meteorite geochemistry",
+      "Chronology"
+    ],
     "queries": [
       {
         "query": "Mars gravity topography crust dichotomy",
@@ -115944,12 +116340,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Gravity and topography",
-      "Magnetism",
-      "Meteorite geochemistry",
-      "Chronology"
-    ],
     "finding": "Alternating, elongated magnetic anomalies were interpreted in relation to ancient tectonic processes.",
     "dichotomy_use": "Tests whether magnetic spatial organization contains evidence of crustal mobility.",
     "limitation": "Orbital stripes alone do not demonstrate seafloor spreading or Earth-like plate tectonics.",
@@ -122752,6 +123142,9 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -122811,9 +123204,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Proposes northern crustal recycling and spreading, with testable structural and gravity predictions.",
     "dichotomy_use": "Retains early plate tectonics as a historical alternative to impact and stagnant-lid convection.",
     "limitation": "Proposed tectonic reconstructions are interpretations, not confirmed Martian plate boundaries.",
@@ -124786,6 +125176,9 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -124830,9 +125223,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Compares endogenous, single-impact and multiple-impact explanations against geological constraints.",
     "dichotomy_use": "Useful framework for asking which observations each mechanism actually explains.",
     "limitation": "A historical assessment predating modern gravity, radar and seismic datasets.",
@@ -126527,6 +126917,9 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy"
+    ],
     "queries": [
       {
         "query": "Mars hemispheric dichotomy origin",
@@ -126553,9 +126946,6 @@
     "review_depth": "abstract",
     "review_status": "Abstract consulted",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Tests whether an impactor population can account for the lowlands and other large basins.",
     "dichotomy_use": "Requires an impact origin to fit basin statistics as well as hemisphere shape.",
     "limitation": "Results depend on the adopted impactor size distribution and recognition of old basins.",
@@ -127543,6 +127933,9 @@
     "domains": [
       "Dichotomy"
     ],
+    "discovery_domains": [
+      "Dichotomy"
+    ],
     "queries": [
       {
         "query": "Martian dichotomy",
@@ -127580,9 +127973,6 @@
     "review_depth": "metadata",
     "review_status": "Metadata / preview only",
     "domain_basis": "Core topic assigned after source check",
-    "discovery_domains": [
-      "Dichotomy"
-    ],
     "finding": "Historical proposal that a giant impact formed the hemispheric contrast.",
     "dichotomy_use": "Establishes the northern-impact hypothesis to test.",
     "limitation": "Title and bibliographic record checked; original argument still needs full-text review.",

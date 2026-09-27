@@ -21,10 +21,12 @@ for raw in records:
  r['review_depth']='metadata';r['review_status']='Discovery candidate — not screened';r['domain_basis']='Search query, not verified classification'
  if doi in annotations:
   r.setdefault('discovery_domains',r['domains']);r['domains']=[seed_domains[doi]]
-  note=annotations[doi];r.update({k:note[k] for k in ['finding','dichotomy_use','limitation']});r['review_depth']=note['depth'];r['review_status']=labels[note['depth']];r['assessment_date']='2026-09-24';r['primary_domain']=seed_domains[doi];r['domain_basis']='Core topic assigned after source check';r['consulted_source']=r['url']
+  note=annotations[doi];r.update({k:note[k] for k in ['finding','dichotomy_use','limitation']});r['review_depth']=note['depth'];r['review_status']=labels[note['depth']];r['assessment_date']=note.get('assessment_date') or '2026-09-24';r['primary_domain']=seed_domains[doi];r['domain_basis']='Core topic assigned after source check';r['consulted_source']=r['url']
   if note['depth']=='abstract':r['consulted_material']='Publisher or author-hosted abstract; sometimes publisher-supplied Crossref abstract. Full methods not audited.'
   elif note['depth']=='sections':r['consulted_material']='Selected relevant full-text passages, plus abstract. Not a complete independent replication.'
   else:r['consulted_material']='Bibliographic record or limited publisher preview. No substantive results extraction claimed.'
+  if note.get('consulted_material'):r['consulted_material']=note['consulted_material']
+  if note.get('correction_doi'):r['correction_doi']=note['correction_doi']
  if doi=='10.1038/s41586-025-09361-9':r['correction_doi']='10.1038/s41586-025-09981-1'
  public.append(r)
 public.sort(key=lambda r:(-(r['year'] or 0),r['doi']))
@@ -57,6 +59,6 @@ for r in public:
    if ref not in known:queue[ref].add(r['doi'])
 (out/'citation_queue.json').write_text(json.dumps([{'doi':d,'cited_by_core':sorted(parents),'status':'Not retrieved or screened; may be non-Mars background'} for d,parents in sorted(queue.items(),key=lambda x:(-len(x[1]),x[0]))],indent=2)+'\n')
 log=json.loads((out/'search_log.json').read_text())
-summary={'as_of':'2026-09-24','records':len(public),'core_records':sum(r['core'] for r in public),'source_consulted':sum(r['review_depth']!='metadata' for r in public),'review_depth_counts':dict(Counter(r['review_depth'] for r in public)),'types':dict(Counter(r['type'] for r in public)),'queries':len(log),'failed_queries':sum(bool(q['error']) for q in log),'citation_queue':len(queue),'complete_full_text_audits':0,'scope':'Broad evidence inventory and selective source assessment; not an exhaustive systematic review.'}
+summary={'as_of':max(r.get('assessment_date','2026-09-24') for r in public),'records':len(public),'core_records':sum(r['core'] for r in public),'source_consulted':sum(r['review_depth']!='metadata' for r in public),'review_depth_counts':dict(Counter(r['review_depth'] for r in public)),'types':dict(Counter(r['type'] for r in public)),'queries':len(log),'failed_queries':sum(bool(q['error']) for q in log),'citation_queue':len(queue),'complete_full_text_audits':0,'scope':'Broad evidence inventory and selective source assessment; not an exhaustive systematic review.'}
 (out/'summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 print(json.dumps(summary,indent=2))

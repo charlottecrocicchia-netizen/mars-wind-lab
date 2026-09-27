@@ -10,6 +10,8 @@ Third-party packages retain their licenses. Plotly's MIT notice is retained in `
 
 ## Atmospheric model
 
+On 2026-09-27, the atmospheric interface and HTTP calculation endpoints were removed from the research website. The server and desktop launcher no longer import, build or call MCD. Independently authored numerical modules remain as historical offline work; their presence is not authorization to invoke an external installation. No local datasets were deleted as part of this website change.
+
 MCD is an external product, not code authored by this project. The [producers' documentation](https://www-mars.lmd.jussieu.fr/mars/info_web/index.html) describes its intended scientific use. The [full-version access page](https://www-mars.lmd.jussieu.fr/MCD_pro/mcd_pro.html) requires requesting access and accepting non-transmission and noncommercial-use conditions. The bundled copyright additionally requires attribution and keeping the producers informed of use and developments.
 
 An installation inherited from another person is not automatically an authorized installation for this project. Its provenance must be established before further calls to its software. Already extracted atmospheric products expressly authorized by the project owner remain separate from permission to use or redistribute the MCD software. No MCD source or datasets are distributed by this repository.

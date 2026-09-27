@@ -1,5 +1,6 @@
 # Mars Wind Lab — source and data boundaries
 
+- Keep all project-authored website content, interface labels, source notes, exports and GitHub documentation in English. The conversation with the owner may remain in French.
 - Implement project-specific analysis independently from published scientific methods and authorized inputs.
 - Do not access, restore, copy, translate, port, or derive results from the former internship/professor folders, scripts, reports, eigenfunctions, or their Trash copies. Do not recreate their reader or reconnect their paths.
 - Existing extracted data expressly authorized by the project owner may be retained. Keep each public dataset's provenance, attribution, and license; the code's MIT license does not apply to external data.

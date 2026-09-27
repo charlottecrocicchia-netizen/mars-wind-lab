@@ -4,15 +4,15 @@
 
 Which observations distinguish possible **formation mechanisms** of the Martian hemispheric dichotomy from its **later modification**? The search also covers evidence needed to evaluate those observations: interior and magnetic inversions, meteorite preservation, geochronology, surface alteration, atmospheric escape and mission sampling.
 
-The cutoff is **2026-09-24**. The included material spans early hypotheses through 2026 publications. Publication dates come from Crossref; online and issue dates can differ. DOI strings containing a year are not used as publication dates. For example, the Sun–Tkalčić attenuation work has an online/issue-date distinction; inspect its full citation rather than inferring the year from `2024GL110921`.
+The broad-search cutoff is **2026-09-24**. A targeted review supplied by Charlotte was assessed on **2026-09-27**; this did not rerun or extend the systematic coverage of the broad queries. The included material spans early hypotheses through 2026 publications. Publication dates come from Crossref; online and issue dates can differ. DOI strings containing a year are not used as publication dates. For example, the Sun–Tkalčić attenuation work has an online/issue-date distinction; inspect its full citation rather than inferring the year from `2024GL110921`.
 
 ## Discovery
 
 1. `scripts/research/queries.json` defines 41 Crossref title queries. `harvest.py` retrieves 80–500 ranked results per query, with the cutoff filter, and records the exact URL and counts in `search_log.json`.
 2. An automated title filter retains Mars/Martian terms and named Martian meteorites. This produced 1,967 unique DOI candidates. The filter is an efficiency choice, **not** a scientific exclusion decision. It can miss relevant titles that omit these terms.
-3. Targeted searches of publisher pages, author repositories, NASA/ESA/ISRO/USGS archives and public discussions supplied additional leads. `core_dois.json` identifies 75 anchor records; exact Crossref DOI enrichment gives a final total of 1,986 candidates.
+3. Targeted searches of publisher pages, author repositories, NASA/ESA/ISRO/USGS archives and public discussions supplied additional leads. `core_dois.json` now identifies 79 anchor records; exact Crossref DOI enrichment and the targeted September review give 1,990 candidates.
 4. DOI normalization removes case-only duplicates. Crossref types and query provenance are preserved. Preprint and journal versions with different DOIs have **not** been fully reconciled.
-5. References attached to core metadata are compared with the catalog. The resulting `citation_queue.json` contains 2,489 missing DOI leads. These are not included in the 1,986 count and are not all about Mars. A citation is a discovery lead, not evidence of relevance.
+5. References attached to core metadata are compared with the catalog. The resulting `citation_queue.json` contains 2,570 missing DOI leads. These are not included in the 1,990 count and are not all about Mars. A citation is a discovery lead, not evidence of relevance.
 
 The enormous `total_results_reported` values in the search log are fuzzy-search totals, **not** the size of the Martian-dichotomy literature. Queries were capped and not paginated to exhaustion. A record appearing in several queries can carry several topic labels; these discovery labels are not independently verified classifications.
 
@@ -20,9 +20,9 @@ The enormous `total_results_reported` values in the search log are fuzzy-search 
 
 | Label | Meaning | Count |
 |---|---|---:|
-| Metadata / preview only | Bibliographic record, title or limited publisher preview | 1,917, including 5 core records |
+| Metadata / preview only | Bibliographic record, title or limited publisher preview | 1,918, including 7 core records |
 | Abstract consulted | Publisher/author abstract or publisher-supplied Crossref abstract | 52 |
-| Selected full-text sections consulted | Relevant passages, figure captions or methods inspected, without complete audit | 12 |
+| Selected full-text sections consulted | Relevant passages, figure captions or methods inspected, without complete audit | 20 |
 | Complete full-text audit | Methods, supplements, uncertainties and result reproduction all audited | 0 |
 
 Original short annotations identify a finding, its relevance and a limitation. They are a reading aid, not peer review. The original nine selected-section records are Irwin–Watters 2010, Wieczorek et al. 2022, Berne et al. 2026, the 2025 inner-core correction, Mackay-Champion et al. 2026, Steele et al. 2024, Gattacceca et al. 2014, Vervelidou et al. 2023 and Weiss et al. 2025. For Weiss et al., the returned-sample review's meteorite discussion and preservation-test figure were inspected. Berne et al.'s atmospheric-loading methods were checked explicitly.
@@ -37,11 +37,19 @@ Thiriet et al. (2018), sections 5.5–6 on thermal structure, limitations and co
 
 Berne et al. (2026)'s discussion of magnetic acquisition and alternative dynamo asymmetry was also checked. The [working hypothesis](HYPOTHESES.md) and [test protocol](TEST_PROTOCOL.md) distinguish the proposed project contribution from this prior art. No scientific novelty, joint fit or completed data acquisition is claimed.
 
+## User-supplied overview: targeted pass on 27 September 2026
+
+The [September review](DICHOTOMY_REVIEW.md) checks selected high-impact claims against primary sources and records the remainder as unverified leads. Four exact DOI additions were retrieved from Crossref: Richardson and Wilson (2002), Fan et al. (2026), its publisher correction, and Udry et al. (2025). This is an explicit targeted addition, not another complete topical search.
+
+Richardson and Wilson is labeled **abstract**. Fan's main article remains **metadata / preview** because the retrieved material did not expose the full transport methods or abstract; its supplementary-video caption was visible. The Fan correction notice and the inventory-limitations section of Udry et al. were consulted and labeled **sections**. Their specific scope and assessment dates are stored in the annotations. Existing records retain their earlier assessment dates; the dedicated review records the selected rechecks without promoting whole papers to completed audits.
+
+The original four-record metadata responses were cached locally without publisher abstracts. Export rebuilding from `research/catalog.json` needs no further downloads. Annotations may supply a specific assessment date, consulted-material description and correction DOI; the catalog snapshot date reflects the latest recorded assessment.
+
 ## Inclusion and assessment rules for the next screening pass
 
 Retain an original study if it constrains formation, timing, geometry, crustal structure, thermal evolution, magnetization, or subsequent modification of the contrast, or provides a necessary measurement/model validation. Retain reviews for orientation but do not count them as independent observations. Mark conference abstracts and preprints separately from journal versions. Exclude unrelated Mars uses, news, duplicate versions and peripheral astrobiology unless an explicit connection to a testable dichotomy constraint exists. Record exclusions rather than silently deleting them.
 
-Extract: actual measured quantity; location/footprint/depth; age being dated; uncertainty; calibration; assumptions; alternative explanations; dependence on other studies; data/code availability; correction or retraction status. Presently only one identified author correction was checked; a corpus-wide retraction/correction audit is outstanding.
+Extract: actual measured quantity; location/footprint/depth; age being dated; uncertainty; calibration; assumptions; alternative explanations; dependence on other studies; data/code availability; correction or retraction status. Two identified correction notices were checked (Bi et al. and Fan et al.); a corpus-wide retraction/correction audit is outstanding.
 
 ## Coverage gaps
 

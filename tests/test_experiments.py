@@ -1,9 +1,7 @@
 import numpy as np
 import pytest
-from fastapi.testclient import TestClient
 from marswind.experiments import compare_columns
 from marswind.mcd import ROOT
-from marswind.server import app
 
 
 def column(z,c=200.,wind=30.,height=10.):
@@ -56,26 +54,17 @@ def test_invalid_grids_or_periods(z,period):
     with pytest.raises(ValueError):compare_columns(z,column(z),column(z),period)
 
 
-def test_experiment_api_rejects_unphysical_parameters():
-    client=TestClient(app)
-    for p in [{'z_min':160,'z_max':20},{'z_min':20,'z_max':23},{'period_s':0},{'period_s':'nan'},{'lt':24},{'lat':90}]:
-        assert client.get('/api/experiment',params=p).status_code==422
-
-
 @pytest.mark.integration
 @pytest.mark.skipif(not (ROOT/'build/sample_mcd').exists(),reason='Local MCD adapter missing')
 def test_experiment_on_real_columns_and_downloadable_note():
-    client=TestClient(app)
-    response=client.get('/api/experiment',params={'compare_ls':255})
-    assert response.status_code==200
-    result=response.json();f=result['fields']
+    from marswind.experiments import experiment_product, study_note
+    result=experiment_product(compare_ls=255);f=result['fields']
     assert len(result['altitude_km'])==141 and result['valid_samples']==141
     np.testing.assert_allclose(f['season_total_delta'],0,atol=1e-12)
     assert result['context']['local_solar_hour']==12
-    opposite=client.get('/api/experiment',params={'azimuth':270}).json()
+    opposite=experiment_product(azimuth=270)
     np.testing.assert_allclose(opposite['fields']['effective_speed'],f['opposite_effective_speed'],atol=1e-10)
     for question in ['direction','season','scale']:
-        note=client.get('/api/study-note',params={'question':question,'lt':15})
-        assert note.status_code==200
-        assert 'Local solar time: 15.0 h' in note.text
-        assert 'pipeline' in note.text and 'Limitations' in note.text
+        note=study_note(experiment_product(lt=15),question)
+        assert 'Local solar time: 15.0 h' in note
+        assert 'pipeline' in note and 'Limitations' in note
