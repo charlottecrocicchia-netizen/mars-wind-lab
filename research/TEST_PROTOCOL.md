@@ -4,6 +4,8 @@
 
 Companion to the [working hypothesis](HYPOTHESES.md). The target is a falsifiable consistency test, not a vote among papers. The [first observational diagnostics](FIRST_RESULTS.md) have been executed; the joint acquisition/survival model comparison below remains a proposed study.
 
+**Implementation update, 27 September 2026:** the [first thermal experiment](THERMAL_EXPERIMENT.md) now solves an independent 1-D conductive column through time, with analytic and refinement checks. Its synthetic cooling/reheating histories and ordering-temperature exclusions are a numerical building block, not calibrated regional histories or the joint magnetic model below.
+
 ## Question and estimand
 
 For each selected province and candidate carrier, which crustal growth and temperature histories permit the inferred source volume to acquire and retain enough coherent magnetization to reproduce regional orbital magnetic spectra?
@@ -21,7 +23,7 @@ Primary output: a set of feasible histories and recording-depth/time windows, wi
 | [Berne et al., 2026](https://doi.org/10.1038/s41586-026-10893-x) time-variable gravity | Present interior endpoint, including composition/melt alternatives | Do not impose its inferred temperature contrast as a directly observed ancient crust temperature; check shared gravity/systematic errors |
 | Meteorite mineralogy, event ages and preservation tests in the [sample dossier](METEORITES.md) | Carrier alternatives and local chronological constraints | Unknown depth/provenance; paired specimens and common source terrains require grouping |
 
-The [acquisition manifest](data/manifest.json) now records downloaded products and checksums. [Data conventions and licenses](data/README.md) document units, frames, resolution and permitted use. Field evaluation, depth-quality screening, four crustal grids and a present-day thermal gate have been computed. Full thermal histories, covariance and the joint fit below remain outstanding.
+The [acquisition manifest](data/manifest.json) now records downloaded products and checksums. [Data conventions and licenses](data/README.md) document units, frames, resolution and permitted use. Field evaluation, depth-quality screening, four crustal grids and a present-day thermal gate have been computed. Synthetic time-dependent columns have also been implemented separately. Geologically constrained thermal histories, covariance and the joint fit below remain outstanding.
 
 ## Freeze the spatial comparison before interpreting it
 

@@ -8,6 +8,8 @@ The project-specific Python diagnostics, scalar finite-element benchmark and thi
 
 Third-party packages retain their licenses. Plotly's MIT notice is retained in `web/PLOTLY-LICENSE.txt`; the NASA decorative asset has its own [credit and usage references](ASSETS.md). A publication may be read and cited without making its text, figures or accompanying software freely reusable.
 
+The [thermal experiment](../research/THERMAL_EXPERIMENT.md), added on 2026-09-27, is an original conductive-column implementation checked against analytic heat-equation solutions. Its parameters are synthetic and its figures and numerical exports are project-generated. Published papers supply scientific context and limitations; no external code, article figure or new dataset was incorporated. This experiment neither invokes MCD nor uses private internship material.
+
 ## Atmospheric model
 
 On 2026-09-27, the atmospheric interface and HTTP calculation endpoints were removed from the research website. The server and desktop launcher no longer import, build or call MCD. Independently authored numerical modules remain as historical offline work; their presence is not authorization to invoke an external installation. No local datasets were deleted as part of this website change.

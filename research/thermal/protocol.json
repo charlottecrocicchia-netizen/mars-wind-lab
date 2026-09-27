@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "language": "en",
+  "status": "Controlled synthetic experiment; not fitted to a Martian region",
+  "time_convention": "Myr elapsed since an assumed initial thermal state, not age before present",
+  "column": {
+    "thickness_m": 50000.0,
+    "conductivity_w_m_k": 3.0,
+    "density_kg_m3": 2900.0,
+    "heat_capacity_j_kg_k": 800.0,
+    "surface_temperature_k": 220.0,
+    "cells": 100
+  },
+  "duration_myr": 4000.0,
+  "step_myr": 0.125,
+  "pulse_step_myr": 0.015625,
+  "pulse_window_myr": 20.0,
+  "basal_flux": {"initial_w_m2": 0.045, "asymptote_w_m2": 0.015, "decay_time_myr": 1000.0},
+  "heat_production": {"initial_w_m3": 4e-8, "effective_half_life_myr": 2000.0},
+  "initial_state": "Exact steady profile for the initial basal flux and heat production",
+  "scenarios": [
+    {"id": "cooling", "label": "Progressive cooling", "pulses": []},
+    {"id": "reheating", "label": "Cooling + reheating", "pulses": [
+      {"time_myr": 1000.0, "amplitude_k": 500.0, "center_m": 25000.0, "width_m": 5000.0}
+    ]}
+  ],
+  "ordering_thresholds": [
+    {"id": "pyrrhotite", "label": "Pyrrhotite endmember", "temperature_k": 598.15, "temperature_c": 325.0},
+    {"id": "magnetite", "label": "Magnetite endmember", "temperature_k": 853.15, "temperature_c": 580.0},
+    {"id": "hematite", "label": "Hematite endmember (Néel)", "temperature_k": 943.15, "temperature_c": 670.0}
+  ],
+  "parameter_basis": "All column, heat-source and event parameters are explicit illustrative choices, not measured values or a reproduction of a published Mars thermal history. The effective heating half-life is not an isotope inventory. Thresholds reuse the existing project's illustrative ordering-temperature endmembers, not mineral identification or blocking spectra.",
+  "interpretation": "An ordered magnetic carrier is excluded at or above its chosen ordering temperature. Staying below that threshold only avoids this exclusion; duration-dependent relaxation, chemical alteration, acquisition and magnetic field geometry are not modelled.",
+  "excluded_processes": ["lateral conduction", "advection", "crustal growth", "latent heat", "temperature-dependent material properties", "chemical alteration", "shock", "grain-scale relaxation", "dynamo field and reversals", "orbital field prediction"],
+  "sources": [
+    {"doi": "10.1002/2017JE005431", "use": "Scientific context: thermal evolution depends on crustal structure and composition; this solver does not reproduce that parameterized mantle model.", "consulted": "Publisher article; thermal-model context"},
+    {"doi": "10.1038/s41467-024-51092-4", "use": "Scientific context: cooling and field reversals affect magnetic recording; no code or dataset imported.", "consulted": "Publisher abstract; full methods not audited here"},
+    {"doi": "10.1073/pnas.1708344114", "use": "Limitation: magnetic stability depends on temperature, time and grain energy barriers, not solely Curie temperature.", "consulted": "PMC full text, selected stability and methods sections; not a full methodological audit"}
+  ],
+  "reuse": "Independently written solver, synthetic inputs and project-generated figures. No new external dataset, article figure or source code copied. No MCD or private internship material accessed."
+}

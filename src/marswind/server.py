@@ -45,6 +45,11 @@ def tests_index():
     return FileResponse(ROOT / 'web/tests.html')
 
 
+@app.get('/research/thermal')
+def thermal_index():
+    return FileResponse(ROOT / 'web/thermal.html')
+
+
 @app.get('/research/library')
 def library_index():
     return FileResponse(ROOT / 'web/library.html')

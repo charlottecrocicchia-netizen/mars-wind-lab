@@ -68,6 +68,7 @@ def test_site_starts_without_importing_atmospheric_modules():
     subprocess.run([sys.executable,'-c',
         "import sys; from fastapi.testclient import TestClient; from marswind.server import app; "
         "assert TestClient(app).get('/api/research/export').status_code == 200; "
+        "assert TestClient(app).get('/research/thermal').status_code == 200; "
         "assert not {'marswind.mcd','marswind.analysis','marswind.motion'} & sys.modules.keys()"],
         cwd=ROOT,check=True)
     launcher=(ROOT/'Launch Mars Wind.command').read_text()

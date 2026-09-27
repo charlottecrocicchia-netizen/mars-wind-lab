@@ -4,6 +4,8 @@
 
 **New: [completed regional study](PILOT_STUDY.md)** — five navigable local pages, regional magnetic contrasts, geological-reference sensitivity, explicit hypotheses and reproducible outputs.
 
+**Next physical building block: [thermal experiment](THERMAL_EXPERIMENT.md)** — an independently written, analytically verified conductive column, two synthetic histories and depth–time thermal exclusions. No regional history or magnetic survival fraction is inferred.
+
 A research component of **Charlotte Crocicchia's personal Mars project**. This collection connects the northern-lowland / southern-highland contrast with interior structure, impact and convection models, rock magnetism, meteorite histories, surface geology and atmospheric evolution.
 
 **Catalog updated: 27 September 2026; broad search: 24 September 2026.** This is an evidence inventory with selective source assessment, not a completed exhaustive systematic review and not a new discovery about the origin of Mars's dichotomy.
@@ -20,7 +22,7 @@ A research component of **Charlotte Crocicchia's personal Mars project**. This c
 - [Search method, coverage and reading status](METHOD.md)
 - [Forum leads and their scientific checks](COMMUNITY.md)
 
-Open the **[research workspace](http://127.0.0.1:8765/)**. Its persistent navigation separates Ideas, Data, Tests, Library and Atmosphere. The observation snapshot and reading pages work without MCD. Atmospheric calculations still require a separate MCD installation.
+Open the **[research workspace](http://127.0.0.1:8765/)**. Its persistent navigation has Home, Compare, Data, Study and Sources. The thermal experiment sits inside Study. The active website works without MCD; the atmospheric interface has been retired.
 
 The [first executed diagnostics](FIRST_RESULTS.md) connect orbital fields, surface geology, crustal models, thermal endpoints, candidate meteorite sources and laboratory measurements. [Download provenance](data/manifest.json) and [data conventions](data/README.md) accompany the results.
 

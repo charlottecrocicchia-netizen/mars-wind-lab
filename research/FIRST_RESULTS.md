@@ -1,5 +1,7 @@
 # First observational diagnostics
 
+**New physical building block, 27 September 2026:** the [thermal experiment](THERMAL_EXPERIMENT.md) follows two synthetic cooling histories and verifies the conductive solver against exact solutions. It adds time-dependent thermal exclusions; it does not replace these observational diagnostics or establish magnetic survival.
+
 **Executed analysis · 24 September 2026 · Exploratory, not a joint origin inference.**
 
 The calculations now connect real public products. They test consistency and sensitivity; they do not identify the mechanism that formed the dichotomy. The [saved numerical results](data/results.json), [input manifest](data/manifest.json), [source registry](https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/scripts/data/sources.json) and [pipeline](https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/scripts/data/build.py) accompany this note.

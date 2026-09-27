@@ -23,6 +23,7 @@ Open **http://127.0.0.1:8765**. On an already configured Mac, `Launch Mars Wind.
 - **Chronology**, inside Compare: formation, alteration, shock, magnetization and ejection remain distinct. Eleven selected events preserve ranges, reported uncertainties, approximate ages, bounds and unknown dates. [Method and exports](research/COMPARISON.md).
 - **Data**: maps of relief, crust, magnetism and geology, meteorite records, laboratory measurements and alteration evidence, with provenance.
 - **Study**: five guided chapters comparing regional magnetic contrasts. Reference terrain and observation altitude can change the result; the study does not select a unique origin. [Study and results](research/PILOT_STUDY.md) · [Other completed diagnostics](research/FIRST_RESULTS.md).
+- **Thermal experiment**, inside Study: two original synthetic cooling histories, depth–time diagrams and an ordering-temperature exclusion gate. The solver is checked against analytic solutions and grid refinement; the histories are not fitted to Mars. [Method, sources and outputs](research/THERMAL_EXPERIMENT.md) · local route `/research/thermal`.
 - **Sources**: 1,990 discovery records and a 79-record core route. Reading depth distinguishes metadata, 52 abstracts and 20 selected full-text readings. This is not a complete audit of the literature. [Search method](research/METHOD.md) · [September review](research/DICHOTOMY_REVIEW.md) · [RIS](research/library.ris) · [BibTeX](research/library.bib).
 
 ## Reproduce the small site artifacts
@@ -31,6 +32,7 @@ Open **http://127.0.0.1:8765**. On an already configured Mac, `Launch Mars Wind.
 python scripts/research/export_comparison.py
 python scripts/research/render_docs.py
 python scripts/research/render_pilot.py
+python scripts/thermal/build.py
 python -m pytest -q -m 'not integration'
 node --test tests/comparison.test.mjs
 ```
