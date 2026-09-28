@@ -7,5 +7,18 @@ research/citation_queue.json linguist-generated=true
 research/summary.json linguist-generated=true
 research/search_log.json linguist-generated=true
 web/reading/*.html linguist-generated=true
+web/dossiers/*.html linguist-generated=true
+web/home.html linguist-generated=true
+web/method.html linguist-generated=true
+web/explore.html linguist-generated=true
+web/tests.html linguist-generated=true
+research/discriminating/*.csv linguist-generated=true
+research/followup/**/*.csv linguist-generated=true
+research/followup/**/summary.json linguist-generated=true
+research/followup/**/manifest.json linguist-generated=true
+research/followup/**/*.svg linguist-generated=true
+# Preserve saved figure checksums and the CRLF convention in CSV exports.
+research/**/*.svg whitespace=-blank-at-eol
+research/**/*.csv whitespace=cr-at-eol
 # RIS uses a six-character tag prefix even for empty end-of-record values.
 research/*.ris whitespace=-blank-at-eol

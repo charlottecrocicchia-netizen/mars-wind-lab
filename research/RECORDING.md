@@ -25,7 +25,7 @@ High coercivity or high unblocking temperature alone does not prove antiquity. A
 
 **ALH 84001 — several ancient components.** Steele, Fu et al. use mineral-scale observations and heating/shock constraints to interpret a complex record, potentially including reversals. A single bulk direction or a single rock age does not capture that history. [Primary study](https://doi.org/10.1126/sciadv.ade9071), [MagIC archive](https://earthref.org/MagIC/19859).
 
-The site now lets you [select these and other meteorites](/research/data?view=laboratory). The NWA paired-stone contamination experiment remains accessible as a distinct case, not as a representative sample of all Martian meteorites.
+The site now lets you [select these and other meteorites](data/README.md?view=laboratory). The NWA paired-stone contamination experiment remains accessible as a distinct case, not as a representative sample of all Martian meteorites.
 
 ## What was added and what remains unknown
 

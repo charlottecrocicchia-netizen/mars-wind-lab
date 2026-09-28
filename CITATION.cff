@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the exact commit used. Cite the original publications and datasets separately for their measurements and methods."
+type: software
+title: "Martian Dichotomy — Mars Wind Lab"
+authors:
+  - family-names: Crocicchia
+    given-names: Charlotte
+repository-code: "https://github.com/charlottecrocicchia-netizen/mars-wind-lab"
+url: "https://github.com/charlottecrocicchia-netizen/mars-wind-lab"
+abstract: "A personal research workspace connecting Martian geology, crustal structure, thermal evolution and magnetic recording through attributed observations, original numerical tests and an interactive atlas. Scientific conclusions remain conditional on the declared assumptions."
+keywords:
+  - Mars
+  - planetary science
+  - geophysics
+  - paleomagnetism
+  - reproducible research
+license: MIT

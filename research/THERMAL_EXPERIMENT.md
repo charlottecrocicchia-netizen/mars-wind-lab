@@ -2,7 +2,7 @@
 
 **27 September 2026 · Original controlled numerical experiment · No Martian region fitted.**
 
-[Open the interactive experiment](/research/thermal) · [Input protocol](thermal/protocol.json) · [Saved results and provenance](thermal/results.json) · [Scientific figure](thermal/thermal_history.png)
+[Open the interactive experiment](THERMAL_EXPERIMENT.md) · [Input protocol](thermal/protocol.json) · [Saved results and provenance](thermal/results.json) · [Scientific figure](thermal/thermal_history.png)
 
 This first physical building block follows a solid crustal column through time. It compares progressive cooling with the same history interrupted by an imposed heat pulse. It tests whether a hypothetical old magnetic component would encounter a selected magnetic ordering temperature later. It does **not** calculate its acquisition, duration-dependent relaxation, surviving intensity or orbital signal.
 

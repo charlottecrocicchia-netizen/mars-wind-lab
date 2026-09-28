@@ -1,49 +1,67 @@
-# Mars dichotomy evidence atlas
+# Research guide
 
-[Compare origin scenarios and separate event ages](/research/comparison) · [Method and exports](COMPARISON.md). The active website focuses on crustal structure, magnetic recording and meteorite evidence.
+**Start with [Where the evidence stands](STATE_OF_EVIDENCE.md).** It separates measured contrasts, conditional physical constraints and questions the current comparisons do not resolve.
 
-**New: [completed regional study](PILOT_STUDY.md)** — five navigable local pages, regional magnetic contrasts, geological-reference sensitivity, explicit hypotheses and reproducible outputs.
+This is an interdisciplinary investigation of the Martian dichotomy by Charlotte Crocicchia. The active work connects orbital magnetism, surface geology, gravity, crustal density, cooling, rock magnetism and distinct meteorite clocks. It does not claim a unique origin model or an exhaustive systematic literature review.
 
-**Next physical building block: [thermal experiment](THERMAL_EXPERIMENT.md)** — an independently written, analytically verified conductive column, two synthetic histories and depth–time thermal exclusions. No regional history or magnetic survival fraction is inferred.
+## A short reading route
 
-A research component of **Charlotte Crocicchia's personal Mars project**. This collection connects the northern-lowland / southern-highland contrast with interior structure, impact and convection models, rock magnetism, meteorite histories, surface geology and alteration.
+1. [Current synthesis](STATE_OF_EVIDENCE.md): what we know and what remains ambiguous.
+2. [Six discriminating tests](DISCRIMINATING_TESTS.md): the core questions, methods, numerical results and limits.
+3. [Implementation audit](DISCRIMINATING_AUDIT.md): corrections to gravity, regularization, heat flux and reversal interpretation.
+4. [Follow-up results](#follow-up-results): where the subsequent comparisons succeed, fail or add a constraint.
+5. [Scientific method](../docs/SCIENTIFIC_METHOD.md) and [reproduction guide](../docs/DEVELOPMENT.md): how to read a verdict and rerun a calculation.
 
-**Catalog updated: 27 September 2026; broad search: 24 September 2026.** This is an evidence inventory with selective source assessment, not a completed exhaustive systematic review and not a new discovery about the origin of Mars's dichotomy.
+## The six core tests
 
-**Dynamo test programme:** [30 proposals and a targeted source assessment](DYNAMO_TESTS.md), with conditional tests and three next calculations. Planned tests remain separate from completed results.
+| Test | Question | Main scope of the result |
+| --- | --- | --- |
+| 1 · Surface age and hemisphere | Which predictors retain skill outside their training regions? | Association remains; spatial support limits an age-controlled causal interpretation |
+| 2 · Cooling and acquisition | When can the modeled crust cross carrier Curie temperatures? | Conditional acquisition histories; unresolved earlier records remain separate |
+| 3 · Source strength | What magnetization matches the observations in the chosen geometry? | Cylinder-equivalent requirements, not a unique source inversion or mineral abundance |
+| 4 · Slow cooling and reversals | How much signed record survives repeated inversions? | Strong median cancellation in the tested histories, not a universal retention bound |
+| 5 · Orbital versus ground field | How well does a continued orbital model match two local measurements? | Local extrapolation discrepancies, not a universal correction factor |
+| 6 · Gravity and crust | How does lateral density change inferred thickness? | Positive contrast across the declared scenarios, with a large range in magnitude |
 
-**Executed magnetic experiments:** [recording, detection, regional transfer and laboratory controls](EXECUTED_EXPERIMENTS.md), with original implementations, numerical checks and qualified conclusions.
+[Technical report](DISCRIMINATING_TESTS.md) · [Protocol](discriminating/protocol.json) · [Sources](discriminating/sources.json) · [Manifest](discriminating/manifest.json) · [Audit controls](discriminating_audit/controls.json)
 
-## Start here
+## Follow-up results
 
-- [September research review: checked claims and next tests](DICHOTOMY_REVIEW.md)
-- [Working hypothesis: two different magnetic archives](HYPOTHESES.md)
-- [First test: joint thermal and magnetic histories](TEST_PROTOCOL.md)
-- [Scientific synthesis and competing hypotheses](SYNTHESIS.md)
-- [Meteorite magnetism: what the samples can actually tell us](METEORITES.md)
-- [Mission and public-data inventory](MISSIONS.md)
-- [Concrete research programme](RESEARCH_PLAN.md)
-- [Search method, coverage and reading status](METHOD.md)
-- [Forum leads and their scientific checks](COMMUNITY.md)
+| Study | Outcome | Saved evidence |
+| --- | --- | --- |
+| [Arabia Terra prerequisites](ARABIA_PREFLIGHT.md) | Matching lacks the declared balance and spatial support; no magnetic significance test follows | [Protocol](followup/arabia/protocol.json) · [Summary](followup/arabia/summary.json) |
+| [Boundary transects and the 23 northern cells](BOUNDARY_WALK.md) | Too few admissible blocks for the planned inference; the northern aggregate is geographically concentrated | [Protocol](followup/boundary_walk/protocol.json) · [Summary](followup/boundary_walk/summary.json) |
+| [Source depth versus surface age](DEPTH_AGE.md) | No supported association under the declared sensitivity rule | [Protocol](followup/depth_age/protocol.json) · [Summary](followup/depth_age/summary.json) |
+| [Density and remanence](DENSITY_REMANENCE.md) | Exact conditional material balances; feasibility depends on porosity, efficiency and compatible source volumes | [Protocol](followup/mixture/protocol.json) · [Summary](followup/mixture/summary.json) |
+| [Rapidly cooled bodies](RAPID_BODIES.md) | Individual bodies can retain a strong record; stack polarities stay correlated through their shared field | [Protocol](followup/bodies/protocol.json) · [Correction controls](followup/bodies_audit/controls.json) |
+| [Reversal identifiability](REVERSAL_IDENTIFIABILITY.md) | Distinct histories give identical synthetic fields when acquisition clocks are free; an ideal dated control breaks that ambiguity | [Protocol](followup/reversal/protocol.json) · [Summary](followup/reversal/summary.json) |
 
-Open the **[research workspace](http://127.0.0.1:8765/)**. The current site selection contains 1,823 records, including 76 core references; the larger search archive and its original counts remain available for provenance. Its persistent navigation has Overview, Atlas, Results, Hypotheses and Sources. Results groups the regional study, thermal model, magnetic experiments and dataset diagnostics. The meteorite atlas connects samples to conditional source proposals.
+The [protocol status](NEXT_TEST_PROTOCOLS.md) separates executed stages from the unexecuted coupled thermal stack and observed-map reversal inference. The [roadmap](../docs/ROADMAP.md) identifies independent constraints that could improve future tests. No dated Martian reversal transition or novelty claim follows from these calculations.
 
-The [first executed diagnostics](FIRST_RESULTS.md) connect orbital fields, surface geology, crustal models, thermal endpoints, candidate meteorite sources and laboratory measurements. [Download provenance](data/manifest.json) and [data conventions](data/README.md) accompany the results.
+## Five reading dossiers
 
-## What is in this release?
+| Dossier | Reading focus |
+| --- | --- |
+| [Scientific context](dossiers/science.md) | Interior, crust, observations and magnetic recording |
+| [Literature method](dossiers/literature.md) | Reading depth, provenance, search coverage and source limitations |
+| [Earlier experiments](dossiers/experiments.md) | Thermal, recording, regional and laboratory controls |
+| [Interdisciplinary review](dossiers/interdisciplinary.md) | Connect physical processes while keeping clocks and sampled volumes distinct |
+| [Audit and current evidence](dossiers/audit.md) | Corrections, current reports and limits on interpretation |
 
-| Product | Coverage |
-|---|---|
-| DOI catalog | 1,990 deduplicated candidate records across 41 topical queries and targeted additions |
-| Core reading route | 79 selected records, including two correction notices |
-| Sources consulted beyond metadata | 72: 52 abstracts and 20 selected full-text readings |
-| Complete full-text methodological audits | 0; none are presented as completed |
-| Backward-citation queue | 2,570 additional DOI leads, not yet retrieved or screened; many may be non-Mars background |
+For foundations, read [paleomagnetism](PALEOMAGNETISM_FOUNDATIONS.md), [recording processes](RECORDING.md), [meteorites](METEORITES.md) and [water and alteration](WATER.md). The [interdisciplinary synthesis](INTERDISCIPLINARY_SYNTHESIS.md) connects the broader physical history; its [source ledger](INTERDISCIPLINARY_SOURCES.md) records what was actually consulted.
 
-The catalog contains articles, conference publications, preprints, chapters, datasets and other records. A Crossref `journal-article` label does **not** certify peer review or relevance. Duplicate DOIs are removed; different versions of the same work can remain.
+Earlier hypotheses, the [regional pilot](PILOT_STUDY.md), [physical studies](DICHOTOMY_PHYSICS.md) and [research programme](RESEARCH_PLAN.md) remain background. Their original scope and dates matter; current conclusions are in the synthesis above.
 
-Download [BibTeX](library.bib), [core BibTeX](core.bib), [RIS for Zotero](library.ris), [CSV](catalog.csv) or [JSON with provenance](catalog.json). The [search log](search_log.json) preserves query URLs, retrieval times and result caps. [Summary counts](summary.json) are generated from the records. Publisher abstracts, downloaded PDFs and the internship report are not redistributed.
+## Data, literature and exports
 
-The interpretations here are project research notes assembled with AI assistance and require scientific verification before use in a manuscript. They are not results attributable to the cited authors unless explicitly described as such. The initial version was assembled from public sources. Charlotte supplied a broad research overview on 27 September; its targeted assessment and remaining checks are documented in the September review.
+The [data guide](data/README.md) and [input manifest](data/manifest.json) describe the retained observation products. Full raw archives are separate from the saved browsing snapshot. Check the [source policy](../docs/SOURCE_POLICY.md) before obtaining or redistributing an input.
 
-The expanded [recording guide](RECORDING.md) and [water study](WATER.md) connect mineral generations, fluid events and magnetic components. Raw laboratory archives and orbital mineral products are available alongside the curated, explicitly non-exhaustive paleointensity inventory.
+The September 27 catalogue contains **1,990 records**, **79 core records** and **72 consulted beyond metadata**, according to its [saved summary](summary.json). The current website filters out atmospheric topics: **1,823 records**, **76 core** and **70 consulted beyond metadata**. These are different selections, not conflicting totals. Neither count is a completed full-method audit. The interdisciplinary supplement overlaps this catalogue and must not be added to it.
+
+[Complete BibTeX](library.bib) · [Core BibTeX](core.bib) · [RIS](library.ris) · [CSV](catalog.csv) · [JSON](catalog.json) · [Search log](search_log.json)
+
+The catalogue includes articles, conference records, preprints, books, chapters and datasets. A record type does not establish peer review or relevance. Source-reading labels distinguish metadata, abstracts and selected sections; consulted material is not automatically reproduced methodology. Publisher PDFs and article figures are not redistributed as project-authored work.
+
+## Use the interactive version
+
+Follow the [installation instructions](../README.md#run-the-website) and [interface guide](../docs/USAGE.md). The four sections are Questions & answers, How we work, Results and Explore. GitHub provides the readable reports and saved artifacts; the interactive application runs locally.

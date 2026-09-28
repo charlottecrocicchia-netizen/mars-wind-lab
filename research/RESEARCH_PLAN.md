@@ -1,12 +1,14 @@
 # From a literature atlas to useful physical tests
 
+**28 September interdisciplinary extension:** the [five joint tests](INTERDISCIPLINARY_TESTS.md) connect composition, heat, water, redox chemistry, magnetic recording and event chronology. They are proposed calculations; completed results below retain their original scope.
+
 The initial thermal–magnetic study is specified in the [joint test protocol](TEST_PROTOCOL.md), based on the [working hypothesis](HYPOTHESES.md). Complementary analyses now include the three executed physical studies below. The remaining directions are questions for further work, with completed parts identified individually.
 
-The [results directory](/research/tests) separates completed diagnostics and synthetic experiments from the remaining investigations below. They prioritize questions that can fail a model, quantify uncertainty or improve an observation.
+The [results directory](DISCRIMINATING_TESTS.md) separates completed diagnostics and synthetic experiments from the remaining investigations below. They prioritize questions that can fail a model, quantify uncertainty or improve an observation.
 
 ## Executed physical studies · September 2026
 
-The [new workbench](/research/physics) and [methods report](DICHOTOMY_PHYSICS.md) implement all three complementary axes:
+The [new workbench](DICHOTOMY_PHYSICS.md) and [methods report](DICHOTOMY_PHYSICS.md) implement all three complementary axes:
 
 | Axis | Executed result | Next missing constraint |
 | --- | --- | --- |
@@ -38,13 +40,13 @@ Build a forward model that predicts the measured field at spacecraft altitude fr
 
 **Question.** Which formation histories are inconsistent with securely preserved old crust or dated resetting events?
 
-The [curated event timeline](/research/comparison?view=timeline) is available. Extend it with permitted analytical tables for zircons, ALH 84001, regolith breccias and major ejection groups. Label crystallization, reservoir extraction, alteration, shock, remanence and ejection ages separately. Include uncertainty in chronometers and provenance. Plot inferred sequences as ranges and partial order constraints rather than forcing every event to one precise date.
+The [curated event timeline](COMPARISON.md?view=timeline) is available. Extend it with permitted analytical tables for zircons, ALH 84001, regolith breccias and major ejection groups. Label crystallization, reservoir extraction, alteration, shock, remanence and ejection ages separately. Include uncertainty in chronometers and provenance. Plot inferred sequences as ranges and partial order constraints rather than forcing every event to one precise date.
 
 **Deliverable.** A machine-readable event table and a dependency-aware timeline. It should show explicitly where an age constrains one grain or province instead of the entire dichotomy. [Bouvier et al., 2018](https://doi.org/10.1038/s41586-018-0222-z); [Cox et al., 2022](https://doi.org/10.1126/sciadv.abl7497); [Herd et al., 2024](https://doi.org/10.1126/sciadv.adn2378).
 
 ## 4. Compare mechanisms on the same evidence
 
-The [current comparison](/research/comparison) provides a qualitative first matrix. The next stage is to harmonize the datasets and construct a quantitative comparison of northern impact, southern impact, internal growth and hybrid models. Require predictions for the same observables, spatial scales and epochs. Define uncertainty and model discrepancy explicitly. Keep simulations with shared codes or initial conditions grouped rather than treating their number as independent support.
+The [current comparison](COMPARISON.md) provides a qualitative first matrix. The next stage is to harmonize the datasets and construct a quantitative comparison of northern impact, southern impact, internal growth and hybrid models. Require predictions for the same observables, spatial scales and epochs. Define uncertainty and model discrepancy explicitly. Keep simulations with shared codes or initial conditions grouped rather than treating their number as independent support.
 
 A suitable output is a constraint matrix with **compatible, in tension, not tested, or non-discriminating** entries and the reason for each. Numerical posterior probabilities would require defensible priors, likelihoods and comparable model ensembles; the current qualitative literature assessment does not supply them.
 

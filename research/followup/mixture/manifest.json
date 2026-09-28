@@ -1,0 +1,33 @@
+{
+  "generated_by": "scripts/followup/mixture.py",
+  "input_sha256": {
+    "research/discriminating/amplitude.json": "b7a05335a08d58c1f683cddb209eb1970fea4e66f4657f55711ccf4875bae932",
+    "research/discriminating/crust_inversion.json": "c4b2e03fc39ea43100beeaf908e76fb8b516b9b83e0c3db8f94bd2c2f17a8902",
+    "research/followup/depth_age/correlations.csv": "fca362441dd4847a2be20717311ff10b2cb0bbb15734ae240edd2a9fd0485e5a",
+    "research/followup/depth_age/summary.json": "1f989a77b3cb8ea035df3f24e91d42bb3cd6562b64bf36c1a392681d7fd95533"
+  },
+  "protocol_sha256": "b4d4de3dfd3c947bc26f1d1505fcb7ccba3286e5e4988cb82ccad582c2d55f26",
+  "code_sha256": {
+    "scripts/followup/mixture.py": "df851a2756f8dad6f51c13511bae760683b8fbd1d5ae1f95544cebe98c741ad0",
+    "src/marswind/mixture.py": "dafd85fd87325c1fd1be4591eac609f1bfcbe4db5a91a2e03a0e6422e973a1c8",
+    "scripts/followup/render_mixture.py": "367ace772f7377835ab9aaa91b2f7a4abc2f36117a9f5753158cb7cb89fdfe63"
+  },
+  "outputs_sha256": {
+    "attainable_intervals.csv": "c6073bd43765fea848ce11dcd010b8accbb17c314c6f7b27bd3d361018e72fcc",
+    "inverse_grid.csv": "ba16b74bd6f3a8eb5d8fb5f0af4e824c1fe656782163cc98836fe5a7cbcede65",
+    "mixture.png": "38f2557186e852e95cb2c431764011aef2ad0c5197a935d02c1b61b82d1bdf04",
+    "mixture.svg": "f66b6a7313d526e1f0d11d545a10f8338e792f738e89e8725d4b1c31428cc181",
+    "prior_test_scenarios.csv": "038a6387cb224a1aae975e5fb98b39476f36f2023ecbf70209995948c08ebf4f",
+    "protocol.json": "b4d4de3dfd3c947bc26f1d1505fcb7ccba3286e5e4988cb82ccad582c2d55f26",
+    "sources.json": "6c65fbc140835a7f7c14f3e4355d2df9f1af31a50bbbe85a03fb1ddde578dcfe",
+    "summary.json": "1356ffb6d7a170bf0844d5797d27bc58e7871c407d3335847edf07ada55ae9ea",
+    "zero_carrier_baseline.csv": "702770c3546ef2f5e19d68f56b4c2d426bb127a30cb1eace7850878233eca9e8"
+  },
+  "software": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "report_sha256": "5bd0a729fc6b30abd1b676e1f173d5f4f20e01abffaa2b95dd0d2445e252ff63"
+}

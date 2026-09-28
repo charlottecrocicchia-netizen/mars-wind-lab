@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reversal histories and acquisition clocks — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css?v=design1"><link rel="stylesheet" href="/assets/workspace.css?v=20260927-design"></head><body class="workspace">
+<a class="skip" href="#article">Skip to the article</a><header class="workspace-header"><a href="/" class="wordmark"><i></i><span>Martian dichotomy<small>CHARLOTTE CROCICCHIA</small></span></a><nav aria-label="Main navigation" lang="en"><a href="/">Questions &amp; answers</a><a href="/research/method">How we work</a><a href="/research/tests">Results</a><a href="/research/explore" aria-current="page">Explore</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">FIVE READING DOSSIERS</p><a href="/research/dossiers/science">Scientific context</a><a href="/research/dossiers/literature">Literature method</a><a href="/research/dossiers/experiments">Earlier experiments</a><a href="/research/dossiers/interdisciplinary">Interdisciplinary review</a><a href="/research/dossiers/audit" aria-current="page">Audit and current evidence</a></aside><article class="prose" id="article"><div class="collection-context"><p>Current technical reference</p><a href="/research/dossiers/audit">← Audit and current evidence</a><span> · </span><a href="/research/tests">Current results →</a></div><h1 id="reversal-histories-and-acquisition-clocks">Reversal histories and acquisition clocks</h1>
+<p><strong>Synthetic prerequisite · 28 September 2026.</strong> The declared flexible recording model fails global identifiability: distinct reversal histories can produce the same source moments and orbital observations. A separate positive control succeeds when acquisition times are known. No observed Mars magnetic map is fitted, and no transition age or preferred dynamo history is inferred.</p>
+<h2 id="why">Why</h2>
+<p><a href="/assets/reading/discriminating_tests.html">Slow cooling</a> and <a href="/assets/reading/rapid_bodies.html">rapid bodies</a> show that reversal statistics and recording duration jointly determine cancellation. Before interpreting a coherent magnetic patch as a long chron, we must test whether recording histories can mimic a rate change. The earlier <a href="/research/method#next-tests">proposal</a> required this gate before any map interpretation. The <a href="/research/files/followup/reversal/protocol.json">machine protocol</a> was saved before these numerical trials; the analytic time-change argument and the preceding body results were already known. This is an internal protocol, not an external preregistration.</p>
+<h2 id="how">How</h2>
+<p>We compare rates of 0.15 then 1.5 reversals/Myr, changing at elapsed time 100 Myr, with a constant 1.5 reversals/Myr. Both families permit the same nuisance class: positive piecewise-affine acquisition clocks with slopes 0.1–10, moment scales 0.5–2 and activity windows transformed with the clock. The main example uses unit moment scale and a continuously active window. Geometry is fixed between the two descriptions.</p>
+<p>Let H(t) be integrated reversal rate and set u(t) = H(t)/1.5. Unit-rate Poisson arrivals in H generate one shared path. The constant-rate path at u(t) has exactly the same sign as the changing-rate path at t. Moving each acquisition interval to the u clock and preserving its mass therefore gives <strong>the same signed remanence for every realization</strong>. Intervals crossing the rate break are split before transformation. The field's active window is transformed too: 0–200 Myr becomes 0–110 Myr. This is a comparison of distinct physical histories when absolute acquisition ages and the activity duration are unknown, not a change of coordinates with externally fixed dates silently discarded.</p>
+<p>The construction is a direct application of the established time-rescaling property of Poisson processes; see <a href="https://www.stat.cmu.edu/~kass/papers/rescaling.pdf">Brown et al. (2002), author-hosted manuscript</a>, introduction and theorem. The implementation and acquisition-integral derivation here are original. We use a finite-horizon coupling, not a goodness-of-fit test on censored interarrival times. No novelty is claimed.</p>
+<p>The numerical check uses 24 bodies with slab acquisition kernels (1, 3 or 10 km effective thickness; 300 °C host; 430–580 °C blocking band), 128 shared field realizations, and 264 radial observations at each of 150 and 400 km. Within the early segment, shrinking time by 0.1 is also the conductive time scale of a slab thinner by √0.1: 3 km becomes 0.949 km. Each example kernel lies wholly within one segment. The orbital operator consists of z-directed point dipoles at 20 km depth, with 10¹⁴ A m² reference moments. It is a linear synthetic basis: thermal thickness, finite source geometry, density and moment are <strong>not</strong> jointly constrained by a physical body inversion.</p>
+<h2 id="result">Result</h2>
+<p>Across all 128 realizations, the largest signed-record difference is 1.13e-12. The largest relative map difference is 1.79e-13; the largest absolute difference is 2.60e-13 nT. This passes the declared equality tolerance of 10⁻¹⁰. Adding the same 0, 1 or 5 nT Gaussian noise to each equivalent pair preserves equality of their observation laws. Shared noise is a coupling demonstration; it does not claim that two independent noisy observations would be pixel-identical. These noise levels are scenarios, not Langlais coefficient uncertainties.</p>
+<p><img alt="Synthetic map equality and independently calibrated dated-sign controls" src="/research/files/followup/reversal/identifiability.png" /></p>
+<h3 id="positive-control-independently-known-acquisition-times">Positive control: independently known acquisition times</h3>
+<p>We simulate instantaneous, noiseless polarity samples at a known 0.1 Myr spacing, in two segments whose boundary is known. The sign-change probability is p = (1 − exp(−2λΔt))/2, allowing unobserved even numbers of reversals. A binomial likelihood fits either one shared rate or two rates, with the same probability bounds. The cutoff is calibrated using 4,000 simulations at each of five null rates, taking the largest 95th percentile; classification uses a strict exceedance. Separate seeds supply 4,000 held-out trials per case.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Intervals per segment</th>
+<th style="text-align: right;">True rates, /Myr</th>
+<th style="text-align: right;">Held-out detection</th>
+<th style="text-align: right;">Median fitted early / late rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0.15 → 1.5</td>
+<td style="text-align: right;">93.1%</td>
+<td style="text-align: right;">0.101 / 1.506</td>
+</tr>
+<tr>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1.5 → 0.15</td>
+<td style="text-align: right;">92.5%</td>
+<td style="text-align: right;">1.506 / 0.101</td>
+</tr>
+<tr>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0.5 → 1.5</td>
+<td style="text-align: right;">52.9%</td>
+<td style="text-align: right;">0.527 / 1.506</td>
+</tr>
+<tr>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1 → 1.5</td>
+<td style="text-align: right;">13.1%</td>
+<td style="text-align: right;">0.992 / 1.506</td>
+</tr>
+<tr>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">0.15 → 1.5</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">0.152 / 1.492</td>
+</tr>
+<tr>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">1.5 → 0.15</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">1.506 / 0.142</td>
+</tr>
+<tr>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">0.5 → 1.5</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">0.494 / 1.492</td>
+</tr>
+<tr>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">1 → 1.5</td>
+<td style="text-align: right;">78.2%</td>
+<td style="text-align: right;">1.004 / 1.506</td>
+</tr>
+</tbody>
+</table>
+<p>For the declared primary case (1,000 intervals per segment, 0.15 → 1.5/Myr), power is <strong>100.0%</strong>, and the largest held-out false-positive fraction over the null grid is <strong>5.0%</strong>. The positive control passes its rule. These are simulation frequencies under ideal dated sampling, not performance estimates for available Mars maps. Sampling uncertainty for a 5% frequency with 4,000 trials is about 0.35 percentage points (one standard error).</p>
+<h3 id="releasing-the-clock-restores-the-ambiguity">Releasing the clock restores the ambiguity</h3>
+<p>The dated-sign likelihood depends on λΔt. A constant rate of 1.5/Myr sampled with early spacing 0.01 Myr and late spacing 0.1 Myr has exactly the same probabilities as the primary changing-rate case sampled at 0.1 Myr throughout. We also profile the held-out primary counts: allowing each spacing to lie in 0.01–1 Myr, a common-rate ridge attains the two-rate maximum likelihood in <strong>4000 of 4000 trials</strong>. The <a href="/research/files/followup/reversal/unknown_clock_profile.csv">profile table</a> records rates, spacings and both likelihoods. A row outside the feasible ridge would be marked unresolved by this analytic profiling step. No arbitrary classifier is assigned a chance-level score.</p>
+<h2 id="verdict">Verdict</h2>
+<p><strong>The gate to observed-map inference is closed for this nuisance class.</strong> A counterexample disproves global uniqueness in that class, even before orbital smoothing or noise. Fitting correlation lengths or connected-sign areas cannot distinguish this pair: the entire synthetic fields agree. This does not show that all rate changes are indistinguishable in every physical model, or that existing public evidence can never help.</p>
+<p>The dated positive control shows what removes this particular degeneracy: acquisition times constrained independently of the magnetic fit. Source ages, cooling rates, geometry, material budgets and independently fixed dynamo activity windows can restrict admissible time changes. A more restrictive coupled physical model would need its own declared recovery test. The original broader programme's observed-map stage and any transition dating are not executed.</p>
+<h2 id="limits">Limits</h2>
+<ul>
+<li>The example allows flexible piecewise recording clocks; the result is conditional on that class. The simple conductive rescaling within each segment does not establish a physically admissible three-dimensional Martian crust with all other observations matched.</li>
+<li>Dipole geometry, common global-z orientation and reference moments are synthetic. No geologic-age map, measured correlation length, Langlais coefficient uncertainty or real source-direction inversion enters this calculation.</li>
+<li>The positive control knows the break, has perfectly dated instantaneous signs, and assumes Poisson increments. Uncertain ages, overlapping acquisition, unknown change dates and non-Poisson reversals require additional tests.</li>
+<li>The reported Monte Carlo trials verify the implementation; the pathwise change-of-time identity is the reason the equivalence holds. Model ambiguity is not evidence for either actual Mars history.</li>
+</ul>
+<h2 id="reproduce">Reproduce</h2>
+<pre><code class="language-sh">python scripts/followup/reversal_identifiability.py
+python -m pytest -q tests/test_reversal_identifiability.py
+python scripts/research/render_docs.py
+python scripts/research/render_site.py
+</code></pre>
+<p>The builder checks the frozen input hashes and never rewrites the protocol. <a href="/research/files/followup/reversal/sources.json">Source ledger</a>, <a href="/research/files/followup/reversal/sources.csv">source geometries</a>, <a href="/research/files/followup/reversal/record_checks.csv">record checks</a>, <a href="/research/files/followup/reversal/map_checks.csv">map checks</a>, <a href="/research/files/followup/reversal/classification.csv">classification and rate recovery</a>, <a href="/research/files/followup/reversal/calibration.csv">calibration</a>, <a href="/research/files/followup/reversal/trial_counts.npz">all trial counts</a>, <a href="/research/files/followup/reversal/summary.json">summary</a> and <a href="/research/files/followup/reversal/manifest.json">manifest</a> are saved. No new external dataset or implementation was incorporated.</p><div class="reading-tools"><a href="/research/explore#dossiers">← Reading dossiers</a><a href="/research/files/REVERSAL_IDENTIFIABILITY.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/REVERSAL_IDENTIFIABILITY.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Living research notes · Check each article’s date, sources and limitations.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>

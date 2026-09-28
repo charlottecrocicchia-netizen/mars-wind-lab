@@ -1,0 +1,41 @@
+{
+  "generated_by": "scripts/followup/arabia_preflight.py",
+  "magnetic_outcomes_used": false,
+  "input_sha256": {
+    "research/data/atlas.json": "b8a85777d9b7c55b699cc2665cefeb479048e42544b401a7f93d8c55d5bbfd34",
+    "data/observations/raw/crustal_models/selected/dichotomy_coordinates-JAH-0-360.txt": "42f2b9f32c9e9100ef4a9977171a54654c3bf25602555945405a93ca45ac6bb2"
+  },
+  "code_sha256": {
+    "scripts/followup/arabia_preflight.py": "2401f5cb0d623fb382bd74fa887bc8dbb2b7332f2279490dda9a3c1a924f02c7",
+    "src/marswind/spatial_matching.py": "30bfac6e03746f76e52e3e507319ba32cb964980c4346c654993ed142e5cceb3",
+    "src/marswind/agetransfer.py": "4036116985b7dfb94c4ca572b8fccc92c003b857dee98bd3453d98d7ef386a30"
+  },
+  "outputs_sha256": {
+    "arabia_polygon.geojson": "b58ba6f28131613fa567fd3401713017a6b4de28678493212fde3d7e8c371458",
+    "block_diagnostics.csv": "7bf6144b0e7b57d4e13a3d2ee3c8278990f89da068c8784f49ee7c3501dc2ad2",
+    "covariates_and_masks.csv": "e15bed0db865cd2b1a1a5854e3427a868e26a56203c3745b453ec93e8599ad25",
+    "geometry.png": "34b80dee2f55c6116602fa8d46f81eae20af6d2aeea7bef5581ea5b677ee080a",
+    "geometry.svg": "59b316f5cec8d3d11bdc353176664ad1e779244adc564a66e4fd560a2318c389",
+    "geometry_mask_0p5.npz": "15739b74bf272d2f8b6925bfc2c6bd3c0c3feb5f64ebb728cf0abce574248fe9",
+    "matched_pairs.csv": "da2f06f03346e86c54e0817bcab9414c419eec48dfcec845a63f274b7e98023e",
+    "matching_diagnostics.csv": "14db9ff38eadbadba115d96dd85d3a367dc33a378096717ac23239c5afad2390",
+    "northern_early_noachian_cells.csv": "e5a93d4814bfdf9efc533815018f7a7fd0d1a91b75fcfa351049111c25eb0d70",
+    "pair_block_allocations.csv": "80bf478b55c0eafb52ac62e8b9fa25a6ff43ac3b12b6398c7fbc8aaf25d6097c",
+    "protocol.json": "6d9588e70c8ffcb066e45e5f000d28b57defb45b80a78743b7588d3208f8ee75",
+    "summary.json": "279902f7db18df291290ed8ec993b167db0d89d56a33db5e99766dc5ffbaa5ba"
+  },
+  "report_sha256": "f30c0147b95ecabdba8b78b76749c644caf53c86351c9ea8567ac7c42c673112",
+  "software": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pyshtools": "4.14.1",
+    "shapely": "2.1.2"
+  },
+  "editorial_revision": {
+    "date": "2026-09-28",
+    "scope": "Relative Markdown links for GitHub and local-site rendering only; numerical outputs and numerical-run code hashes unchanged.",
+    "previous_report_sha256": "08c1ac6f25457ec2f737ddbfe811e1a36d7e1c6b7c220ed65860f1782ec01f53",
+    "report_template_sha256": "1ee86cd3691d529ed579894f55619021044b3ee8dbd23bd269fbfa0ba641d5c8"
+  }
+}

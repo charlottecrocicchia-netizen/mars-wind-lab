@@ -1,0 +1,27 @@
+{
+  "protocol_sha256": "af2bd5de1c733eb3cbdafd90d824e41a6fc7e7a725b7f6c0e5942b3a655ca337",
+  "saved_before_field_evaluation_utc": "2026-09-28T14:16:39.945458+00:00",
+  "cases": {
+    "line_0_both_pure_noachian_d200_offset0": {
+      "blocks": 3,
+      "ran": false,
+      "gate_pass": false,
+      "reason": "Fewer than eight retained blocks",
+      "nulls": []
+    },
+    "real_minus_500_both_pure_noachian_d200_offset0": {
+      "blocks": 0,
+      "ran": false,
+      "gate_pass": false,
+      "reason": "Fewer than eight retained blocks",
+      "nulls": []
+    },
+    "real_minus_1000_both_pure_noachian_d200_offset0": {
+      "blocks": 0,
+      "ran": false,
+      "gate_pass": false,
+      "reason": "Fewer than eight retained blocks",
+      "nulls": []
+    }
+  }
+}

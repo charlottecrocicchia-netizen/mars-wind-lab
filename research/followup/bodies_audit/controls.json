@@ -1,0 +1,21 @@
+{
+  "retention_rows_compared": 140,
+  "unchanged_retention_columns": [
+    "band",
+    "host_c",
+    "thickness_m",
+    "known_fraction",
+    "chron_myr",
+    "poisson_q05",
+    "poisson_median",
+    "poisson_q95",
+    "poisson_rms",
+    "periodic_median",
+    "periodic_q95"
+  ],
+  "retention_values_unchanged": true,
+  "stack_rows_compared": 20,
+  "old_stack_values_unchanged": true,
+  "original_protocol_unchanged": true,
+  "changes": "Replace sampled elapsed time to lower boundary by analytic upper-to-lower duration; add exact crossing times and analytic correlated-stack RMS. Report rendering updated after numerical build; numerical arrays unchanged by that editorial update."
+}

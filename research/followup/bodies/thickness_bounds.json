@@ -1,0 +1,302 @@
+[
+  {
+    "band": "magnetite_430_580",
+    "host_c": 100,
+    "chron_myr": 0.67,
+    "max_thickness_m_with_median_retention_ge_0.5": 3000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 0.4368155066327506,
+      "30000": 0.14641528363790118
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 100,
+    "chron_myr": 2,
+    "max_thickness_m_with_median_retention_ge_0.5": 10000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 0.9140558107940346,
+      "30000": 0.25602733974873076
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 100,
+    "chron_myr": 5,
+    "max_thickness_m_with_median_retention_ge_0.5": 10000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 1.0,
+      "30000": 0.4555887210141948
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 100,
+    "chron_myr": 20,
+    "max_thickness_m_with_median_retention_ge_0.5": 30000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 1.0,
+      "30000": 0.9595511697861986
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 100,
+    "chron_myr": 100,
+    "max_thickness_m_with_median_retention_ge_0.5": 30000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 1.0,
+      "30000": 1.0
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 300,
+    "chron_myr": 0.67,
+    "max_thickness_m_with_median_retention_ge_0.5": 3000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 0.7599035164569241,
+      "10000": 0.20979644037652043,
+      "30000": 0.08507381053867871
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 300,
+    "chron_myr": 2,
+    "max_thickness_m_with_median_retention_ge_0.5": 3000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 0.36261779765348634,
+      "30000": 0.1349680537241266
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 300,
+    "chron_myr": 5,
+    "max_thickness_m_with_median_retention_ge_0.5": 10000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 0.5929714616194871,
+      "30000": 0.19118195671581667
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 300,
+    "chron_myr": 20,
+    "max_thickness_m_with_median_retention_ge_0.5": 10000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 1.0,
+      "30000": 0.3584136977488281
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 300,
+    "chron_myr": 100,
+    "max_thickness_m_with_median_retention_ge_0.5": 30000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 1.0,
+      "30000": 0.9545984335050017
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 400,
+    "chron_myr": 0.67,
+    "max_thickness_m_with_median_retention_ge_0.5": 1000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 0.8024858858706057,
+      "3000": 0.3357353601309838,
+      "10000": 0.0992039822012098,
+      "30000": 0.03587476963026789
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 400,
+    "chron_myr": 2,
+    "max_thickness_m_with_median_retention_ge_0.5": 3000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 0.9952749074152438,
+      "3000": 0.5821621225798088,
+      "10000": 0.17002685677382937,
+      "30000": 0.06130443540579039
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 400,
+    "chron_myr": 5,
+    "max_thickness_m_with_median_retention_ge_0.5": 3000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 0.7643977324045308,
+      "10000": 0.28117213519684303,
+      "30000": 0.11479581827616181
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 400,
+    "chron_myr": 20,
+    "max_thickness_m_with_median_retention_ge_0.5": 10000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 0.5547474097255098,
+      "30000": 0.18144211645160493
+    }
+  },
+  {
+    "band": "magnetite_430_580",
+    "host_c": 400,
+    "chron_myr": 100,
+    "max_thickness_m_with_median_retention_ge_0.5": 10000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 0.8830825971684831,
+      "30000": 0.40979528957504385
+    }
+  },
+  {
+    "band": "pyrrhotite_175_325",
+    "host_c": 100,
+    "chron_myr": 0.67,
+    "max_thickness_m_with_median_retention_ge_0.5": 1000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 0.3590113599135741,
+      "10000": 0.1375206836804991,
+      "30000": 0.03613461662630782
+    }
+  },
+  {
+    "band": "pyrrhotite_175_325",
+    "host_c": 100,
+    "chron_myr": 2,
+    "max_thickness_m_with_median_retention_ge_0.5": 3000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 0.6818549770494283,
+      "10000": 0.21058115392758614,
+      "30000": 0.06640160116848541
+    }
+  },
+  {
+    "band": "pyrrhotite_175_325",
+    "host_c": 100,
+    "chron_myr": 5,
+    "max_thickness_m_with_median_retention_ge_0.5": 3000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 0.96844112478397,
+      "10000": 0.2971334087286485,
+      "30000": 0.1113255481221776
+    }
+  },
+  {
+    "band": "pyrrhotite_175_325",
+    "host_c": 100,
+    "chron_myr": 20,
+    "max_thickness_m_with_median_retention_ge_0.5": 10000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 0.6541969002075365,
+      "30000": 0.21192170765530224
+    }
+  },
+  {
+    "band": "pyrrhotite_175_325",
+    "host_c": 100,
+    "chron_myr": 100,
+    "max_thickness_m_with_median_retention_ge_0.5": 10000,
+    "medians_by_thickness": {
+      "30": 1.0,
+      "100": 1.0,
+      "300": 1.0,
+      "1000": 1.0,
+      "3000": 1.0,
+      "10000": 1.0,
+      "30000": 0.4555950113381454
+    }
+  }
+]

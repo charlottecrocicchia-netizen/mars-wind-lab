@@ -1,0 +1,133 @@
+{
+  "version": "1.0",
+  "declared_utc": "2026-09-28T20:23:41.788586+00:00",
+  "scope": "Synthetic identifiability prerequisite only. Prior body results and analytic time-change reasoning are known. No observed Martian magnetic map is fitted. No external preregistration.",
+  "question": "Can a changing Poisson reversal rate be separated from unknown acquisition clocks using the declared magnetic observations?",
+  "input_sha256": {
+    "research/followup/bodies/protocol.json": "ffd9c00da74376ace51e1601c78afadeac693989d33d5dc7c48f9c1d49bdfcfe",
+    "src/marswind/rapid_bodies.py": "9af39ca7817a680ac7ad08e245a31f8a45e28a6f774697ed9942a4efabe1c2ab",
+    "src/marswind/recording.py": "d8646f46ac7f9e1b84bc26e5834f64c31de222358adce728c049f4e28dfdec9e",
+    "research/followup/mixture/protocol.json": "b4d4de3dfd3c947bc26f1d1505fcb7ccba3286e5e4988cb82ccad582c2d55f26"
+  },
+  "model_families": {
+    "changing_rate": "Two positive Poisson rates separated at elapsed time 100 Myr; shared signed field over all bodies.",
+    "constant_rate": "One Poisson rate; acquisition kernels and emplacement ages may vary in the same declared nuisance class.",
+    "nuisance_class": "Positive piecewise-affine recording-time transformations with slopes 0.1 to 10. Both families allow this same class, plus source moment scales 0.5 to 2 and activity windows transformed with their acquisition clock. Main example is continuously active. Absolute geological source ages are not supplied."
+  },
+  "counterexample": {
+    "rates_per_myr": [
+      0.15,
+      1.5
+    ],
+    "switch_time_myr": 100,
+    "constant_rate_per_myr": 1.5,
+    "sources": 24,
+    "realizations": 128,
+    "seed": 20260928,
+    "emplacement_ranges_myr": [
+      [
+        0,
+        60
+      ],
+      [
+        110,
+        170
+      ]
+    ],
+    "cooling_thicknesses_m": [
+      1000,
+      3000,
+      10000
+    ],
+    "host_c": 300,
+    "emplacement_c": 1200,
+    "diffusivity_m2_s": 1e-06,
+    "blocking_band_c": [
+      430,
+      580
+    ],
+    "positions": 32,
+    "time_points": 400,
+    "warp": "u(t)=integral_0^t lambda(s)ds / lambda_constant. Split acquisition intervals at every rate break; preserve each subinterval mass. Source order and geometry unchanged.",
+    "activity_window_myr": [
+      0,
+      200
+    ],
+    "geometry": "24 ideal point dipoles at 20 km depth in a sphere of radius 3389.5 km; common z-directed magnetic moments of reference magnitude 1e14 A m2 times signed recorded fraction. This is a linear synthetic basis; cooling thickness is an effective temporal scale, not coupled finite dipole-body geometry.",
+    "moment_scale_a_m2": 100000000000000.0,
+    "observation_latitudes": [
+      -75,
+      -60,
+      -45,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      45,
+      60,
+      75
+    ],
+    "observation_longitudes_step_deg": 15,
+    "altitudes_km": [
+      150,
+      400
+    ],
+    "noise_nT": [
+      0,
+      1,
+      5
+    ],
+    "noise_rule": "Identical additive Gaussian noise in paired equivalent realizations establishes equality of the joint observation laws; also report signal differences before noise. No noise value is calibrated to Langlais coefficient uncertainty.",
+    "gate": "Any distinct-rate pair within the declared nuisance class that agrees to relative map error <=1e-10 falsifies global identifiability in this class. No novelty or universal impossibility claim."
+  },
+  "known_clock_positive_control": {
+    "observable": "Dated, instantaneous and noiseless binary polarity samples in two segments, with a declared common sample spacing; stronger information than orbital amplitudes.",
+    "intervals_per_segment": [
+      100,
+      1000
+    ],
+    "spacing_myr": 0.1,
+    "rates_null_per_myr": [
+      0.05,
+      0.15,
+      0.5,
+      1.5,
+      3
+    ],
+    "rates_change_per_myr": [
+      [
+        0.15,
+        1.5
+      ],
+      [
+        1.5,
+        0.15
+      ],
+      [
+        0.5,
+        1.5
+      ],
+      [
+        1.0,
+        1.5
+      ]
+    ],
+    "fit": "Binomial sign-change likelihood with p=(1-exp(-2*rate*dt))/2. Constant model shares p, change model fits each p independently; same boundary [0,0.5]. LRT max(0,2*(LL_change-LL_constant)). Break known, no search for a date.",
+    "calibration_draws_per_null": 4000,
+    "heldout_draws_per_case": 4000,
+    "seed_calibration": 41001,
+    "seed_heldout": 52002,
+    "alpha": 0.05,
+    "threshold": "Maximum 95th percentile LRT over the declared null rate grid, use strict > cutoff. Held-out null and alternative trials are separate.",
+    "success_rule": "Primary n=1000 strong change 0.15 to 1.5: held-out power >=0.8 and largest held-out false positive rate <=0.075. Other lengths/contrasts are sensitivities, not selected post hoc.",
+    "unknown_clock_control": "Likelihood depends on rate*spacing only. Repeat profiling with separate unknown segment spacings; show exact equivalent parameters, not a fabricated classifier score."
+  },
+  "deliverables": [
+    "Pathwise record and synthetic-map equality checks, with shared activity windows",
+    "Fixed-clock likelihood classification and recovery on held-out trials",
+    "A clear gate before fitting observed geology or magnetic maps",
+    "Reproducible analytic tests, figures, source notes and manifest"
+  ],
+  "interpretation": "A counterexample establishes non-identifiability in the stated flexible model class only. Independent acquisition ages, cooling histories and coupled material/geometry constraints can restrict that class. Passing a fixed-clock positive control does not establish those data exist for Mars. No reversal transition date or preferred Mars model is inferred."
+}

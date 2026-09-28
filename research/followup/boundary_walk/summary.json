@@ -1,0 +1,249 @@
+{
+  "status": "Executed conditional boundary contrasts and negative-control checks",
+  "field_evaluation_started_utc": "2026-09-28T14:16:39.945940+00:00",
+  "curve_length_km": 24042.767861445536,
+  "unique_stations": 1466,
+  "primary": [
+    {
+      "altitude_km": 150,
+      "comparison": "line_0",
+      "selection": "both_pure_noachian",
+      "distance_each_side_km": 200,
+      "block_offset_fraction": 0,
+      "eligible_pairs": 120,
+      "retained_arc_weight_km": 1834.0100168618596,
+      "pairs_in_retained_blocks": 92,
+      "arc_weight_in_retained_blocks_km": 1399.641724137275,
+      "retained_blocks": 3,
+      "block_width_km": 1001.7819942268974,
+      "equal_block_mean_delta_log1p": -0.09912651156023389,
+      "arc_weighted_delta_log1p": -0.20468893411785924,
+      "positive_blocks": 1,
+      "reference_sign_flip_tail": 0.75,
+      "primary_synthetic_null_gate_pass": false,
+      "real_data_exchangeability_established": false
+    },
+    {
+      "altitude_km": 150,
+      "comparison": "line_500",
+      "selection": "both_pure_noachian",
+      "distance_each_side_km": 200,
+      "block_offset_fraction": 0,
+      "eligible_pairs": 646,
+      "retained_arc_weight_km": 10544.241092666374,
+      "pairs_in_retained_blocks": 644,
+      "arc_weight_in_retained_blocks_km": 10506.781808038195,
+      "retained_blocks": 16,
+      "block_width_km": 1001.7819942268974,
+      "equal_block_mean_delta_log1p": 0.2848518285351295,
+      "arc_weighted_delta_log1p": 0.3552675022326961,
+      "positive_blocks": 12,
+      "reference_sign_flip_tail": 0.0226977302269773,
+      "primary_synthetic_null_gate_pass": false,
+      "real_data_exchangeability_established": false
+    },
+    {
+      "altitude_km": 150,
+      "comparison": "line_1000",
+      "selection": "both_pure_noachian",
+      "distance_each_side_km": 200,
+      "block_offset_fraction": 0,
+      "eligible_pairs": 658,
+      "retained_arc_weight_km": 10681.320836598567,
+      "pairs_in_retained_blocks": 622,
+      "arc_weight_in_retained_blocks_km": 10099.353669242799,
+      "retained_blocks": 15,
+      "block_width_km": 1001.7819942268974,
+      "equal_block_mean_delta_log1p": -0.0700808168268804,
+      "arc_weighted_delta_log1p": -0.1828999377459325,
+      "positive_blocks": 7,
+      "reference_sign_flip_tail": 0.630936906309369,
+      "primary_synthetic_null_gate_pass": false,
+      "real_data_exchangeability_established": false
+    },
+    {
+      "altitude_km": 150,
+      "comparison": "real_minus_500",
+      "selection": "both_pure_noachian",
+      "distance_each_side_km": 200,
+      "block_offset_fraction": 0,
+      "eligible_pairs": 29,
+      "retained_arc_weight_km": 399.10996221005763,
+      "pairs_in_retained_blocks": 0,
+      "arc_weight_in_retained_blocks_km": 0.0,
+      "retained_blocks": 0,
+      "block_width_km": 1001.7819942268974,
+      "equal_block_mean_delta_log1p": null,
+      "arc_weighted_delta_log1p": -0.5509018068534101,
+      "positive_blocks": 0,
+      "reference_sign_flip_tail": null,
+      "primary_synthetic_null_gate_pass": false,
+      "real_data_exchangeability_established": false
+    },
+    {
+      "altitude_km": 150,
+      "comparison": "real_minus_1000",
+      "selection": "both_pure_noachian",
+      "distance_each_side_km": 200,
+      "block_offset_fraction": 0,
+      "eligible_pairs": 29,
+      "retained_arc_weight_km": 399.10996221005763,
+      "pairs_in_retained_blocks": 0,
+      "arc_weight_in_retained_blocks_km": 0.0,
+      "retained_blocks": 0,
+      "block_width_km": 1001.7819942268974,
+      "equal_block_mean_delta_log1p": null,
+      "arc_weighted_delta_log1p": -0.1470148145979236,
+      "positive_blocks": 0,
+      "reference_sign_flip_tail": null,
+      "primary_synthetic_null_gate_pass": false,
+      "real_data_exchangeability_established": false
+    }
+  ],
+  "synthetic_null": {
+    "line_0_both_pure_noachian_d200_offset0": {
+      "blocks": 3,
+      "ran": false,
+      "gate_pass": false,
+      "reason": "Fewer than eight retained blocks",
+      "nulls": []
+    },
+    "real_minus_500_both_pure_noachian_d200_offset0": {
+      "blocks": 0,
+      "ran": false,
+      "gate_pass": false,
+      "reason": "Fewer than eight retained blocks",
+      "nulls": []
+    },
+    "real_minus_1000_both_pure_noachian_d200_offset0": {
+      "blocks": 0,
+      "ran": false,
+      "gate_pass": false,
+      "reason": "Fewer than eight retained blocks",
+      "nulls": []
+    }
+  },
+  "geometry_flags": [
+    {
+      "shift_south_km": 0,
+      "unwrapped_polyline_is_simple": true,
+      "centers_south_of_true_boundary": 71,
+      "centers_pure_noachian": 446
+    },
+    {
+      "shift_south_km": 500,
+      "unwrapped_polyline_is_simple": false,
+      "centers_south_of_true_boundary": 1466,
+      "centers_pure_noachian": 837
+    },
+    {
+      "shift_south_km": 1000,
+      "unwrapped_polyline_is_simple": false,
+      "centers_south_of_true_boundary": 1466,
+      "centers_pure_noachian": 907
+    }
+  ],
+  "regional_23": [
+    {
+      "region": "Xanthe_Chryse",
+      "altitude_km": 150,
+      "cells": 14,
+      "arithmetic_mean_nt": 78.90209252832913,
+      "back_transformed_log_mean_nt": 63.341122362926846,
+      "fraction_of_total_weighted_log_signal": 0.6559103645112493,
+      "distance_to_southern_100nt_atlas_cells_min_km": 235.73092095697288,
+      "distance_to_southern_100nt_atlas_cells_median_km": 543.5637696444564
+    },
+    {
+      "region": "Cimmeria_margin",
+      "altitude_km": 150,
+      "cells": 5,
+      "arithmetic_mean_nt": 57.16653521952519,
+      "back_transformed_log_mean_nt": 50.304181318522126,
+      "fraction_of_total_weighted_log_signal": 0.22130271216527547,
+      "distance_to_southern_100nt_atlas_cells_min_km": 118.31586999269553,
+      "distance_to_southern_100nt_atlas_cells_median_km": 165.50094797512799
+    },
+    {
+      "region": "Arabia_margin",
+      "altitude_km": 150,
+      "cells": 2,
+      "arithmetic_mean_nt": 79.8397857018515,
+      "back_transformed_log_mean_nt": 79.83631103058448,
+      "fraction_of_total_weighted_log_signal": 0.09352763125081517,
+      "distance_to_southern_100nt_atlas_cells_min_km": 246.41239795337242,
+      "distance_to_southern_100nt_atlas_cells_median_km": 324.8655616618943
+    },
+    {
+      "region": "Tempe",
+      "altitude_km": 150,
+      "cells": 2,
+      "arithmetic_mean_nt": 5.105499999999999,
+      "back_transformed_log_mean_nt": 5.058949909018889,
+      "fraction_of_total_weighted_log_signal": 0.029259292072660148,
+      "distance_to_southern_100nt_atlas_cells_min_km": 2625.2608974940417,
+      "distance_to_southern_100nt_atlas_cells_median_km": 2648.380611992081
+    },
+    {
+      "region": "All_23",
+      "altitude_km": 150,
+      "cells": 23,
+      "arithmetic_mean_nt": 69.34920705657443,
+      "back_transformed_log_mean_nt": 52.525767291738944,
+      "fraction_of_total_weighted_log_signal": 1.0,
+      "distance_to_southern_100nt_atlas_cells_min_km": 118.31586999269553,
+      "distance_to_southern_100nt_atlas_cells_median_km": 424.3310093016575
+    },
+    {
+      "region": "Xanthe_Chryse",
+      "altitude_km": 400,
+      "cells": 14,
+      "arithmetic_mean_nt": 18.465673167025237,
+      "back_transformed_log_mean_nt": 16.265252942040878,
+      "fraction_of_total_weighted_log_signal": 0.6517513908560175,
+      "distance_to_southern_100nt_atlas_cells_min_km": 235.73092095697288,
+      "distance_to_southern_100nt_atlas_cells_median_km": 543.5637696444564
+    },
+    {
+      "region": "Cimmeria_margin",
+      "altitude_km": 400,
+      "cells": 5,
+      "arithmetic_mean_nt": 21.589095803148506,
+      "back_transformed_log_mean_nt": 18.804753830128696,
+      "fraction_of_total_weighted_log_signal": 0.24374596924395694,
+      "distance_to_southern_100nt_atlas_cells_min_km": 118.31586999269553,
+      "distance_to_southern_100nt_atlas_cells_median_km": 165.50094797512799
+    },
+    {
+      "region": "Arabia_margin",
+      "altitude_km": 400,
+      "cells": 2,
+      "arithmetic_mean_nt": 9.05434703183454,
+      "back_transformed_log_mean_nt": 9.039531204545538,
+      "fraction_of_total_weighted_log_signal": 0.07133743420916006,
+      "distance_to_southern_100nt_atlas_cells_min_km": 246.41239795337242,
+      "distance_to_southern_100nt_atlas_cells_median_km": 324.8655616618943
+    },
+    {
+      "region": "Tempe",
+      "altitude_km": 400,
+      "cells": 2,
+      "arithmetic_mean_nt": 3.079,
+      "back_transformed_log_mean_nt": 3.0789939936214665,
+      "fraction_of_total_weighted_log_signal": 0.03316520569086569,
+      "distance_to_southern_100nt_atlas_cells_min_km": 2625.2608974940417,
+      "distance_to_southern_100nt_atlas_cells_median_km": 2648.380611992081
+    },
+    {
+      "region": "All_23",
+      "altitude_km": 400,
+      "cells": 23,
+      "arithmetic_mean_nt": 17.372091526492078,
+      "back_transformed_log_mean_nt": 14.4896696352832,
+      "fraction_of_total_weighted_log_signal": 1.0,
+      "distance_to_southern_100nt_atlas_cells_min_km": 118.31586999269553,
+      "distance_to_southern_100nt_atlas_cells_median_km": 424.3310093016575
+    }
+  ],
+  "limits": "No attribution to an ancient field asymmetry or archive mechanism follows from the step alone. Shifted controls are negative controls, not automatically draws from a calibrated null."
+}

@@ -1,0 +1,40 @@
+{
+  "assessed": "2026-09-28",
+  "reuse": "Existing authorized numerical products plus isolated cited numerical facts and original equations; no article text, figures, code or new external data collection copied.",
+  "sources": [
+    {
+      "id": "goossens2026",
+      "url": "https://pgda.gsfc.nasa.gov/products/102",
+      "doi": "10.1029/2026GL122393",
+      "dataset_doi": "10.60903/GSFCPGDA-MARS-RMS",
+      "consulted": "Producer summary and usage statement; 2622 \u00b1 42 north and 2492 \u00b1 36 south kg/m3. Full journal methods and covariance not inspected.",
+      "use": "Two conditional density targets, not local source densities. NASA product requests citation; existing project-authorized density facts."
+    },
+    {
+      "id": "dunlop2005",
+      "doi": "10.1029/2005JE002404",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2005JE002404",
+      "consulted": "Selected full-text sections 4, 5.3 and Table 3; 5\u201310 kA/m weak-field TRM for SD magnetite under a 50 microtesla acquisition field.",
+      "use": "Isolated cited material-range fact, not saturation or a Martian mineral assay. No copied experimental curve or table."
+    },
+    {
+      "id": "magnetite_density",
+      "url": "https://staff.aist.go.jp/r-morijiri/research/research_pmag/pmag01.html",
+      "consulted": "AIST hosted mineral-property table: magnetite density 5.18 g/cm3.",
+      "use": "Isolated reference density, converted to 5180 kg/m3, not a new dataset."
+    },
+    {
+      "id": "alhantoobi2021",
+      "doi": "10.1029/2020GL090379",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020GL090379",
+      "consulted": "Selected publisher-indexed methods and discussion on composition, source thickness and limited sensitivity of surface spectra. Supporting material not retrieved.",
+      "use": "Prior-work and depth-support context; no fitted coefficients or new calibration imported."
+    },
+    {
+      "id": "local_tests",
+      "path": "research/discriminating/manifest.json",
+      "consulted": "Existing corrected amplitude scenarios and crust inversion metadata.",
+      "use": "Conditional magnetization quantiles; no changes to saved numerical outputs."
+    }
+  ]
+}

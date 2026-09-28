@@ -60,6 +60,21 @@ def tests_index():
     return FileResponse(ROOT / 'web/tests.html')
 
 
+@app.get('/research/method')
+def method_index():
+    return FileResponse(ROOT / 'web/method.html')
+
+
+@app.get('/research/explore')
+def explore_index():
+    return FileResponse(ROOT / 'web/explore.html')
+
+
+@app.get('/research/dossiers/{name}')
+def dossier_page(name: Literal['science', 'literature', 'experiments', 'interdisciplinary', 'audit']):
+    return FileResponse(ROOT / f'web/dossiers/{name}.html')
+
+
 @app.get('/research/experiments')
 def experiments_index():
     return FileResponse(ROOT / 'web/experiments.html')

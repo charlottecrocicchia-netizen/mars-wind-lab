@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-09-28",
+  "units": "Ma before present",
+  "null_meaning": "Not established in this review; not zero.",
+  "events": [
+    {
+      "id": "early_source",
+      "event": "Early crustal source",
+      "age_ma": 4547,
+      "younger_bound_ma": null,
+      "older_bound_ma": null,
+      "age_type": "model_age_bound",
+      "material": "Source inferred from zircons",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "No later than about 4547 Ma; this is not a directly dated grain.",
+      "source_ids": [
+        "bouvier2018"
+      ],
+      "limit": "Does not directly date the dichotomy or a field."
+    },
+    {
+      "id": "zircons",
+      "event": "Analysed ancient zircons",
+      "age_ma": null,
+      "younger_bound_ma": 4429.7,
+      "older_bound_ma": 4476.3,
+      "age_type": "mineral_date_range",
+      "material": "Seven zircons in Martian breccia material",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "Range of separate grains; endpoint uncertainties 1.0 and 0.9 Ma respectively, error convention not audited here.",
+      "source_ids": [
+        "bouvier2018"
+      ],
+      "limit": "Not a continuous production interval or a common event confidence interval."
+    },
+    {
+      "id": "hydrothermal_zircon",
+      "event": "Hydrothermally interpreted zircon",
+      "age_ma": 4450,
+      "younger_bound_ma": null,
+      "older_bound_ma": null,
+      "age_type": "mineral_age_plus_process_interpretation",
+      "material": "A studied NWA 7034 zircon",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "Rounded age; uncertainty not established by this review.",
+      "source_ids": [
+        "gillespie2024"
+      ],
+      "limit": "Not a measured paleofield or global ocean date."
+    },
+    {
+      "id": "alh_formation",
+      "event": "ALH 84001 crystallization",
+      "age_ma": 4100,
+      "younger_bound_ma": null,
+      "older_bound_ma": null,
+      "age_type": "approximate_rock_age",
+      "material": "ALH 84001",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "Approximate context for interpreting later magnetic components.",
+      "source_ids": [
+        "steele2023"
+      ],
+      "limit": "Must remain separate from magnetic acquisition."
+    },
+    {
+      "id": "alh_recording",
+      "event": "ALH 84001 interpreted magnetic acquisition",
+      "age_ma": 3900,
+      "younger_bound_ma": null,
+      "older_bound_ma": null,
+      "age_type": "magnetic_acquisition_interpretation",
+      "material": "ALH 84001 magnetic components",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "Rounded interpretive age tied to impact/thermal chronology; no independent exact age assigned here.",
+      "source_ids": [
+        "steele2023"
+      ],
+      "limit": "Not a unique global shutdown or planet-oriented polarity date."
+    },
+    {
+      "id": "orbital_early",
+      "event": "Early core-field interpretation",
+      "age_ma": 4500,
+      "younger_bound_ma": null,
+      "older_bound_ma": null,
+      "age_type": "geological_association",
+      "material": "Selected orbital magnetic/geological units",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "Approximate geology-linked inference.",
+      "source_ids": [
+        "mittelholz2020"
+      ],
+      "limit": "No directly dated orbital source specimen."
+    },
+    {
+      "id": "orbital_later",
+      "event": "Later core-field interpretation",
+      "age_ma": 3700,
+      "younger_bound_ma": null,
+      "older_bound_ma": null,
+      "age_type": "geological_association",
+      "material": "Selected volcanic unit and orbital signal",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "Approximate geology-linked inference.",
+      "source_ids": [
+        "mittelholz2020"
+      ],
+      "limit": "No single global extinction date."
+    },
+    {
+      "id": "mounds",
+      "event": "Altered highland-remnant stratigraphy",
+      "age_ma": null,
+      "younger_bound_ma": 3700,
+      "older_bound_ma": 4100,
+      "age_type": "regional_geological_interval",
+      "material": "Mawrth-region remnants",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "Rounded regional context from authors reconstruction; not one dated event.",
+      "source_ids": [
+        "mcneil2025"
+      ],
+      "limit": "Not synchronous global retreat."
+    },
+    {
+      "id": "coasts",
+      "event": "Interpreted coastal deposition",
+      "age_ma": null,
+      "younger_bound_ma": null,
+      "older_bound_ma": null,
+      "age_type": "relative_geological_context",
+      "material": "Zhurong traverse radar reflectors",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "Hesperian context; no numerical depositional age assigned in this review.",
+      "source_ids": [
+        "li2025"
+      ],
+      "limit": "Not radiometric dating or proof of a global shoreline."
+    },
+    {
+      "id": "lafayette_host",
+      "event": "Lafayette igneous host",
+      "age_ma": 1322,
+      "younger_bound_ma": null,
+      "older_bound_ma": null,
+      "age_type": "host_age_cited_by_source",
+      "material": "Lafayette meteorite",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "Approximate host age from earlier chronology cited in the alteration paper; original host paper not audited here.",
+      "source_ids": [
+        "tremblay2024"
+      ],
+      "limit": "Not alteration or acquisition age."
+    },
+    {
+      "id": "lafayette_alteration",
+      "event": "Lafayette iddingsite alteration",
+      "age_ma": 741.8,
+      "younger_bound_ma": null,
+      "older_bound_ma": null,
+      "age_type": "radiometric_alteration_interpretation",
+      "material": "Twelve iddingsite aliquots",
+      "uncertainty_ma": 15.2,
+      "uncertainty_convention": "external 2 sigma",
+      "note": "Ar-Ar micro-encapsulation and recoil correction; interpretation considers thermal resetting.",
+      "source_ids": [
+        "tremblay2024"
+      ],
+      "limit": "Local alteration, not magnetic acquisition or global wet climate."
+    },
+    {
+      "id": "present",
+      "event": "Present interior and escape observations",
+      "age_ma": 0,
+      "younger_bound_ma": null,
+      "older_bound_ma": null,
+      "age_type": "present_observation",
+      "material": "Mars observed by spacecraft and InSight",
+      "uncertainty_ma": null,
+      "uncertainty_convention": null,
+      "note": "Present endpoints; inferred structure and temperature retain model uncertainty.",
+      "source_ids": [
+        "berne2026",
+        "bi2025",
+        "curry2025"
+      ],
+      "limit": "Not direct ancient initial conditions."
+    }
+  ]
+}

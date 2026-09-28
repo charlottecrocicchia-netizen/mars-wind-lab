@@ -1,6 +1,6 @@
 # Executed experiments: recording, detection, regional transfer and laboratory controls
 
-[Open the interactive results](/research/experiments) · [Protocol](experiments/protocol.json) · [Input and output checksums](experiments/manifest.json)
+[Open the interactive results](EXECUTED_EXPERIMENTS.md) · [Protocol](experiments/protocol.json) · [Input and output checksums](experiments/manifest.json)
 
 This release implements and runs four connected research diagnostics using original code, the existing permitted numerical products and explicit synthetic inputs. It advances the [dynamo test programme](DYNAMO_TESTS.md) with mathematical benchmarks and data reanalysis. It does not select a Martian dynamo history or establish the origin of the dichotomy.
 

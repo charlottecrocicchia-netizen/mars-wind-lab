@@ -1,5 +1,7 @@
 # What can distinguish the origins of Mars's dichotomy?
 
+**28 September update:** [Mars as one evolving physical system](INTERDISCIPLINARY_SYNTHESIS.md) extends this review across paleomagnetism, petrology, chronology, water, climate and interior/surface evolution, with source-level reading status and proposed joint tests.
+
 For the integrated project argument and its falsifiable first study, start with the [working hypothesis](HYPOTHESES.md) and [test protocol](TEST_PROTOCOL.md). This page supplies the broader evidence background.
 
 **Research synthesis · 24 September 2026 · provisional source assessment.** Read [the search method](METHOD.md) for the distinction between metadata, abstract consultation and selected full-text reading. This synthesis defines tests; it does not report a new inversion or settle the origin debate.

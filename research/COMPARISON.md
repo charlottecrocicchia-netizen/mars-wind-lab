@@ -1,6 +1,6 @@
 # Common observations, separate clocks
 
-**Curated synthesis · 27 September 2026.** [Open the interactive comparison](/research/comparison) or [the chronology](/research/comparison?view=timeline). The interface, source notes and exports are in English.
+**Curated synthesis · 27 September 2026.** [Open the interactive comparison](COMPARISON.md) or [the chronology](COMPARISON.md?view=timeline). The interface, source notes and exports are in English.
 
 ## What the comparison means
 

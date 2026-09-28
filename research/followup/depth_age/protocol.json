@@ -1,0 +1,33 @@
+{
+  "declared_utc": "2026-09-28T14:32:42.907468+00:00",
+  "question": "Within each hemisphere, does the equivalent magnetic source depth of Gong & Wieczorek (2021) vary with the age of the overlying surface?",
+  "prediction_declared_before_evaluation": {
+    "resurfacing_archive": "If northern sources are weak because young surfaces removed, buried or reheated the shallow record, the surviving northern sources should sit deeper where the surface is younger: a negative rank correlation between depth and the Noachian area fraction within the north.",
+    "borealis_excavation": "If northern strong material was excavated early (Gong & Wieczorek interpretation), northern depths are shallow regardless of surface age: no dependence within the north.",
+    "south": "No directional prediction is declared for the south; its correlation is reported as a comparison."
+  },
+  "inputs": {
+    "depths": "research/data/depths.json, usable windows only (nonnegative best fit with published bounds)",
+    "field": "research/discriminating/amplitude_windows.csv, RMS |B| at 150 km within 10\u00b0 (already saved)",
+    "geology": "research/data/atlas.json, USGS SIM 3292 unit at 2\u00b0 centres, epoch rank and Noachian indicator from marswind.agetransfer"
+  },
+  "surface_radii_deg": [
+    10,
+    20
+  ],
+  "unassigned_fraction_max": 0.25,
+  "depth_variants": [
+    "best",
+    "lower_1sigma",
+    "upper_1sigma"
+  ],
+  "correlation": "Spearman rank correlation; interval from a block bootstrap over 6 longitude wedges of 60\u00b0 (offsets 0\u00b0 and 30\u00b0), 2000 draws, seed 20260928. Windows are 10\u00b0 apart with 20\u00b0 radii and are not independent; the wedge is the resampling unit.",
+  "decision_rule": "An association is reported only if the sign of rho is the same for all three depth variants, both radii and both wedge offsets, and the 5\u201395% block interval excludes zero in the primary case (best depth, 10\u00b0, offset 0). Otherwise the result is reported as no supported dependence. Association is not causation and surface age is not source age.",
+  "noachian_bins": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1.0001
+  ]
+}

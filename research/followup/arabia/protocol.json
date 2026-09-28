@@ -1,0 +1,92 @@
+{
+  "version": "1.0-preflight",
+  "declared_utc": "2026-09-28T12:25:38.371053+00:00",
+  "status": "Locally declared before executing matching; no external preregistration or claim of historical blinding",
+  "scope": "Outcome-free geometry, overlap and block-dependence checks only; no observed magnetic values, contrasts or p-values",
+  "polygon_file": "arabia_polygon.geojson",
+  "polygon_sha256": "b58ba6f28131613fa567fd3401713017a6b4de28678493212fde3d7e8c371458",
+  "polygon_source": "https://planetarynames.wr.usgs.gov/Feature/336",
+  "atlas_file": "research/data/atlas.json",
+  "atlas_sha256": "b8a85777d9b7c55b699cc2665cefeb479048e42544b401a7f93d8c55d5bbfd34",
+  "boundary_file": "data/observations/raw/crustal_models/selected/dichotomy_coordinates-JAH-0-360.txt",
+  "boundary_sha256": "42f2b9f32c9e9100ef4a9977171a54654c3bf25602555945405a93ca45ac6bb2",
+  "radius_km": 3389.5,
+  "grid_degrees": 2,
+  "geometry_only_grid_degrees": 0.5,
+  "grid_rule": "Use native atlas covariates. A 0.5 degree mask illustrates geometry only; never count its samples as independent evidence.",
+  "northern_cell_reproduction": {
+    "definition": "Same validity mask, epoch rank == 1 and north-of-boundary Curve2Mask classification as six-test builder",
+    "expected_count": 23,
+    "near_boundary_bands_km": [
+      50,
+      100,
+      160
+    ]
+  },
+  "eligibility": {
+    "epoch_codes": [
+      "eN",
+      "mN",
+      "lN",
+      "N"
+    ],
+    "latitude_bounds_deg": [
+      -30,
+      55
+    ],
+    "boundary_side": "south for both Arabia and controls",
+    "maximum_boundary_distance_km": 500,
+    "control_polygon_guard_km": 300,
+    "treatment": "Eligible cells inside the saved Arabia footprint",
+    "control": "Eligible cells outside that footprint and at least 300 km from its edge"
+  },
+  "matching": {
+    "primary_density_kg_m3": 2900,
+    "density_scenarios_kg_m3": [
+      2600,
+      2700,
+      2800,
+      2900
+    ],
+    "exact_epoch_rank": true,
+    "replacement": false,
+    "algorithm": "Maximum-cardinality minimum squared scaled-distance bipartite assignment; dummy penalty exceeds the maximum sum of valid edge costs; deterministic input ordering",
+    "primary_calipers": {
+      "elevation_km": 1.0,
+      "thickness_km": 5.0,
+      "boundary_distance_km": 150.0,
+      "latitude_deg": 10.0
+    },
+    "sensitivity_caliper_multipliers": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "role": "Covariate overlap only. Calipers and densities are declared sensitivities, not independent replications."
+  },
+  "blocks": {
+    "nominal_sizes_km": [
+      300,
+      600,
+      900
+    ],
+    "grid_offsets_fraction": [
+      0,
+      0.5
+    ],
+    "construction": "Latitude bands of size/R radians; longitude sectors approximating the declared width at each band midpoint. These are nominal, not exact equal-area square blocks.",
+    "randomization_unit_candidate": "Connected components of the graph whose vertices are occupied spatial blocks and edges are matched pairs; never flip pairs sharing a block independently",
+    "minimum_components_screen": 8,
+    "minimum_between_component_distance_km_screen": 160,
+    "screen_role": "Declared feasibility screens, not a theorem of independence or exchangeability. Close components require further joint modelling."
+  },
+  "decision_gates": {
+    "minimum_target_coverage_fraction": 0.5,
+    "maximum_absolute_standardized_mean_difference": 0.1,
+    "balance_rule": "Matched area-weighted mean difference divided by pooled unmatched SD; retain the denominator across matching",
+    "pass_meaning": "Only a necessary feasibility screen. Statistical exchangeability and null calibration remain unproven.",
+    "failure_meaning": "No observed-field significance test. Preserve failed masks and matched sets; do not relax after seeing magnetic outcomes."
+  },
+  "null_calibration": "Pending a supported block design. If geometry and overlap fail, do not present a permutation p-value; no observed outcome is needed to detect this failure.",
+  "prior_context": "Global magnetic associations and the six-test results were already known. The claim is procedural non-use of magnetic values for these masks and matches, not a blind discovery."
+}

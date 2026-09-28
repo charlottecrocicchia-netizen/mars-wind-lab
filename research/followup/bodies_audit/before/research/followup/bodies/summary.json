@@ -1,0 +1,508 @@
+{
+  "field_evaluation_started_utc": "2026-09-28T20:10:25.700277+00:00",
+  "bounds": [
+    {
+      "band": "magnetite_430_580",
+      "host_c": 100,
+      "chron_myr": 0.67,
+      "max_thickness_m_with_median_retention_ge_0.5": 3000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 0.4368155066327506,
+        "30000": 0.14641528363790118
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 100,
+      "chron_myr": 2,
+      "max_thickness_m_with_median_retention_ge_0.5": 10000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 0.9140558107940346,
+        "30000": 0.25602733974873076
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 100,
+      "chron_myr": 5,
+      "max_thickness_m_with_median_retention_ge_0.5": 10000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 1.0,
+        "30000": 0.4555887210141948
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 100,
+      "chron_myr": 20,
+      "max_thickness_m_with_median_retention_ge_0.5": 30000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 1.0,
+        "30000": 0.9595511697861986
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 100,
+      "chron_myr": 100,
+      "max_thickness_m_with_median_retention_ge_0.5": 30000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 1.0,
+        "30000": 1.0
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 300,
+      "chron_myr": 0.67,
+      "max_thickness_m_with_median_retention_ge_0.5": 3000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 0.7599035164569241,
+        "10000": 0.20979644037652043,
+        "30000": 0.08507381053867871
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 300,
+      "chron_myr": 2,
+      "max_thickness_m_with_median_retention_ge_0.5": 3000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 0.36261779765348634,
+        "30000": 0.1349680537241266
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 300,
+      "chron_myr": 5,
+      "max_thickness_m_with_median_retention_ge_0.5": 10000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 0.5929714616194871,
+        "30000": 0.19118195671581667
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 300,
+      "chron_myr": 20,
+      "max_thickness_m_with_median_retention_ge_0.5": 10000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 1.0,
+        "30000": 0.3584136977488281
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 300,
+      "chron_myr": 100,
+      "max_thickness_m_with_median_retention_ge_0.5": 30000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 1.0,
+        "30000": 0.9545984335050017
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 400,
+      "chron_myr": 0.67,
+      "max_thickness_m_with_median_retention_ge_0.5": 1000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 0.8024858858706057,
+        "3000": 0.3357353601309838,
+        "10000": 0.0992039822012098,
+        "30000": 0.03587476963026789
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 400,
+      "chron_myr": 2,
+      "max_thickness_m_with_median_retention_ge_0.5": 3000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 0.9952749074152438,
+        "3000": 0.5821621225798088,
+        "10000": 0.17002685677382937,
+        "30000": 0.06130443540579039
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 400,
+      "chron_myr": 5,
+      "max_thickness_m_with_median_retention_ge_0.5": 3000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 0.7643977324045308,
+        "10000": 0.28117213519684303,
+        "30000": 0.11479581827616181
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 400,
+      "chron_myr": 20,
+      "max_thickness_m_with_median_retention_ge_0.5": 10000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 0.5547474097255098,
+        "30000": 0.18144211645160493
+      }
+    },
+    {
+      "band": "magnetite_430_580",
+      "host_c": 400,
+      "chron_myr": 100,
+      "max_thickness_m_with_median_retention_ge_0.5": 10000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 0.8830825971684831,
+        "30000": 0.40979528957504385
+      }
+    },
+    {
+      "band": "pyrrhotite_175_325",
+      "host_c": 100,
+      "chron_myr": 0.67,
+      "max_thickness_m_with_median_retention_ge_0.5": 1000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 0.3590113599135741,
+        "10000": 0.1375206836804991,
+        "30000": 0.03613461662630782
+      }
+    },
+    {
+      "band": "pyrrhotite_175_325",
+      "host_c": 100,
+      "chron_myr": 2,
+      "max_thickness_m_with_median_retention_ge_0.5": 3000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 0.6818549770494283,
+        "10000": 0.21058115392758614,
+        "30000": 0.06640160116848541
+      }
+    },
+    {
+      "band": "pyrrhotite_175_325",
+      "host_c": 100,
+      "chron_myr": 5,
+      "max_thickness_m_with_median_retention_ge_0.5": 3000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 0.96844112478397,
+        "10000": 0.2971334087286485,
+        "30000": 0.1113255481221776
+      }
+    },
+    {
+      "band": "pyrrhotite_175_325",
+      "host_c": 100,
+      "chron_myr": 20,
+      "max_thickness_m_with_median_retention_ge_0.5": 10000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 0.6541969002075365,
+        "30000": 0.21192170765530224
+      }
+    },
+    {
+      "band": "pyrrhotite_175_325",
+      "host_c": 100,
+      "chron_myr": 100,
+      "max_thickness_m_with_median_retention_ge_0.5": 10000,
+      "medians_by_thickness": {
+        "30": 1.0,
+        "100": 1.0,
+        "300": 1.0,
+        "1000": 1.0,
+        "3000": 1.0,
+        "10000": 1.0,
+        "30000": 0.4555950113381454
+      }
+    }
+  ],
+  "stack": [
+    {
+      "bodies": 1,
+      "emplacement_span_myr": 0.1,
+      "chron_myr": 0.67,
+      "coherence_q05": 1.0,
+      "coherence_median": 1.0,
+      "coherence_q95": 1.0,
+      "coherence_rms": 1.0,
+      "reference_one_over_sqrt_n": 1.0
+    },
+    {
+      "bodies": 1,
+      "emplacement_span_myr": 1,
+      "chron_myr": 0.67,
+      "coherence_q05": 1.0,
+      "coherence_median": 1.0,
+      "coherence_q95": 1.0,
+      "coherence_rms": 1.0,
+      "reference_one_over_sqrt_n": 1.0
+    },
+    {
+      "bodies": 1,
+      "emplacement_span_myr": 10,
+      "chron_myr": 0.67,
+      "coherence_q05": 1.0,
+      "coherence_median": 1.0,
+      "coherence_q95": 1.0,
+      "coherence_rms": 1.0,
+      "reference_one_over_sqrt_n": 1.0
+    },
+    {
+      "bodies": 1,
+      "emplacement_span_myr": 100,
+      "chron_myr": 0.67,
+      "coherence_q05": 1.0,
+      "coherence_median": 1.0,
+      "coherence_q95": 1.0,
+      "coherence_rms": 1.0,
+      "reference_one_over_sqrt_n": 1.0
+    },
+    {
+      "bodies": 3,
+      "emplacement_span_myr": 0.1,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.3333333333333333,
+      "coherence_median": 1.0,
+      "coherence_q95": 1.0,
+      "coherence_rms": 0.976387901058454,
+      "reference_one_over_sqrt_n": 0.5773502691896258
+    },
+    {
+      "bodies": 3,
+      "emplacement_span_myr": 1,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.3333333333333333,
+      "coherence_median": 1.0,
+      "coherence_q95": 1.0,
+      "coherence_rms": 0.8055363982396381,
+      "reference_one_over_sqrt_n": 0.5773502691896258
+    },
+    {
+      "bodies": 3,
+      "emplacement_span_myr": 10,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.3333333333333333,
+      "coherence_median": 0.3333333333333333,
+      "coherence_q95": 1.0,
+      "coherence_rms": 0.5887840577551897,
+      "reference_one_over_sqrt_n": 0.5773502691896258
+    },
+    {
+      "bodies": 3,
+      "emplacement_span_myr": 100,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.3333333333333333,
+      "coherence_median": 0.3333333333333333,
+      "coherence_q95": 1.0,
+      "coherence_rms": 0.5754225500544023,
+      "reference_one_over_sqrt_n": 0.5773502691896258
+    },
+    {
+      "bodies": 10,
+      "emplacement_span_myr": 0.1,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.4,
+      "coherence_median": 1.0,
+      "coherence_q95": 1.0,
+      "coherence_rms": 0.9548821916864928,
+      "reference_one_over_sqrt_n": 0.31622776601683794
+    },
+    {
+      "bodies": 10,
+      "emplacement_span_myr": 1,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.0,
+      "coherence_median": 0.6,
+      "coherence_q95": 1.0,
+      "coherence_rms": 0.7107038764492566,
+      "reference_one_over_sqrt_n": 0.31622776601683794
+    },
+    {
+      "bodies": 10,
+      "emplacement_span_myr": 10,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.0,
+      "coherence_median": 0.2,
+      "coherence_q95": 0.8,
+      "coherence_rms": 0.41327956639543656,
+      "reference_one_over_sqrt_n": 0.31622776601683794
+    },
+    {
+      "bodies": 10,
+      "emplacement_span_myr": 100,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.0,
+      "coherence_median": 0.2,
+      "coherence_q95": 0.6,
+      "coherence_rms": 0.3427827300200523,
+      "reference_one_over_sqrt_n": 0.31622776601683794
+    },
+    {
+      "bodies": 30,
+      "emplacement_span_myr": 0.1,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.4666666666666667,
+      "coherence_median": 1.0,
+      "coherence_q95": 1.0,
+      "coherence_rms": 0.960514908207514,
+      "reference_one_over_sqrt_n": 0.18257418583505536
+    },
+    {
+      "bodies": 30,
+      "emplacement_span_myr": 1,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.06666666666666667,
+      "coherence_median": 0.6,
+      "coherence_q95": 1.0,
+      "coherence_rms": 0.666841643703944,
+      "reference_one_over_sqrt_n": 0.18257418583505536
+    },
+    {
+      "bodies": 30,
+      "emplacement_span_myr": 10,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.0,
+      "coherence_median": 0.2,
+      "coherence_q95": 0.6,
+      "coherence_rms": 0.314942675559996,
+      "reference_one_over_sqrt_n": 0.18257418583505536
+    },
+    {
+      "bodies": 30,
+      "emplacement_span_myr": 100,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.0,
+      "coherence_median": 0.13333333333333333,
+      "coherence_q95": 0.3333333333333333,
+      "coherence_rms": 0.19669491322575908,
+      "reference_one_over_sqrt_n": 0.18257418583505536
+    },
+    {
+      "bodies": 100,
+      "emplacement_span_myr": 0.1,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.43900000000000006,
+      "coherence_median": 1.0,
+      "coherence_q95": 1.0,
+      "coherence_rms": 0.961159195971198,
+      "reference_one_over_sqrt_n": 0.1
+    },
+    {
+      "bodies": 100,
+      "emplacement_span_myr": 1,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.04,
+      "coherence_median": 0.58,
+      "coherence_q95": 1.0,
+      "coherence_rms": 0.6731849671524164,
+      "reference_one_over_sqrt_n": 0.1
+    },
+    {
+      "bodies": 100,
+      "emplacement_span_myr": 10,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.02,
+      "coherence_median": 0.2,
+      "coherence_q95": 0.5009999999999991,
+      "coherence_rms": 0.26656331330473815,
+      "reference_one_over_sqrt_n": 0.1
+    },
+    {
+      "bodies": 100,
+      "emplacement_span_myr": 100,
+      "chron_myr": 0.67,
+      "coherence_q05": 0.0,
+      "coherence_median": 0.08,
+      "coherence_q95": 0.2609999999999991,
+      "coherence_rms": 0.12839003076563227,
+      "reference_one_over_sqrt_n": 0.1
+    }
+  ],
+  "scope": "Declared slab and stack scenarios; inequalities conditional on the stated physics. No Martian body thickness or emplacement history is inferred."
+}

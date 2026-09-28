@@ -1,0 +1,17 @@
+{
+  "external_data_incorporated": false,
+  "external_code_copied": false,
+  "references": [
+    {
+      "title": "Brown et al. (2002), The Time-Rescaling Theorem and Its Application to Neural Spike Train Data Analysis",
+      "doi": "10.1162/08997660252741149",
+      "url": "https://www.stat.cmu.edu/~kass/papers/rescaling.pdf",
+      "consulted": "Introduction and theorem in author-hosted manuscript; method only, no source data/code incorporated. The manuscript header has a 2001 draft date; publication is 2002."
+    },
+    {
+      "title": "Project slab cooling and recording kernels",
+      "path": "src/marswind/rapid_bodies.py",
+      "consulted": "Existing project implementation; analytic thermal scaling checked; no new external thermal solver."
+    }
+  ]
+}

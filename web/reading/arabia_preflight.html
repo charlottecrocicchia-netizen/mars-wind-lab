@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Arabia Terra: geometry and support preflight — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css?v=design1"><link rel="stylesheet" href="/assets/workspace.css?v=20260927-design"></head><body class="workspace">
+<a class="skip" href="#article">Skip to the article</a><header class="workspace-header"><a href="/" class="wordmark"><i></i><span>Martian dichotomy<small>CHARLOTTE CROCICCHIA</small></span></a><nav aria-label="Main navigation" lang="en"><a href="/">Questions &amp; answers</a><a href="/research/method">How we work</a><a href="/research/tests">Results</a><a href="/research/explore" aria-current="page">Explore</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">FIVE READING DOSSIERS</p><a href="/research/dossiers/science">Scientific context</a><a href="/research/dossiers/literature">Literature method</a><a href="/research/dossiers/experiments">Earlier experiments</a><a href="/research/dossiers/interdisciplinary">Interdisciplinary review</a><a href="/research/dossiers/audit" aria-current="page">Audit and current evidence</a></aside><article class="prose" id="article"><div class="collection-context"><p>Current technical reference</p><a href="/research/dossiers/audit">← Audit and current evidence</a><span> · </span><a href="/research/tests">Current results →</a></div><h1 id="arabia-terra-geometry-and-support-preflight">Arabia Terra: geometry and support preflight</h1>
+<p><strong>Status: executed prerequisite checks; no observed magnetic outcomes used.</strong></p>
+<h2 id="what-the-checks-found">What the checks found</h2>
+<ul>
+<li>All <strong>23</strong> northern Early Noachian cells from Test 1 were recovered; <strong>2</strong> fall inside the declared Arabia footprint.</li>
+<li>Their distances from the supplied dichotomy polyline range from <strong>6.0 to 2279.3 km</strong>, with a median of <strong>207.1 km</strong>. Counts within 50/100/160 km are <strong>7/9/10</strong>.</li>
+<li>The declared pools contain <strong>146 Arabia cells</strong> and <strong>324 controls</strong>. The primary matching retains <strong>44 pairs</strong>, representing <strong>29.9%</strong> of eligible Arabia area.</li>
+<li>Maximum absolute standardized covariate imbalance after matching is <strong>0.464</strong>, against the declared screening threshold of 0.1.</li>
+</ul>
+<p><img alt="Geometry and declared comparison pools" src="/research/files/followup/arabia/geometry.png" /></p>
+<h2 id="why-this-is-a-preflight-not-a-magnetic-result">Why this is a preflight, not a magnetic result</h2>
+<p>The analysis discards the magnetic arrays before extracting any covariate. Global associations and earlier results were already known; this is procedural non-use of outcomes for the present matching, not a historically blind discovery. It neither estimates a magnetic deficit nor decides whether the archive hypothesis is correct.</p>
+<h2 id="region-and-input-resolution">Region and input resolution</h2>
+<p>The <a href="https://planetarynames.wr.usgs.gov/Feature/336">USGS Gazetteer footprint</a>, saved as <code>arabia_polygon.geojson</code>, is an approximate extent of a named feature. It is not a mapped geological contact. The detailed geometry (<code>wkt-25452</code>) on that page was selected before matching; its alternate rectangular extent was not substituted. Credit: USGS / IAU; USGS-produced numerical information is used under its <a href="https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits">public-domain policy</a>.</p>
+<p>The covariates are the existing native <strong>2° atlas</strong>: USGS SIM 3292 geological unit, MOLA elevation, Wieczorek crustal-thickness scenarios and the Andrews-Hanna boundary distributed with that archive. The 0.5° output contains a footprint mask only. It supplies no additional geological or magnetic resolution. The approximately 160 km surface resolution of <a href="https://doi.org/10.1029/2018JE005854">Langlais et al. (2019)</a> motivates dependence checks but is not a measured correlation length for this comparison.</p>
+<p>Boundary distances use sampled great-circle segments with at most 5 km spacing (distance overestimate no more than 2.5 km from sampling). This is separate from uncertainty in the geological boundary itself. Polygon inclusion follows the supplied longitude/latitude outline; approximate edge distances use the spherical-segment convention.</p>
+<h2 id="declared-comparison">Declared comparison</h2>
+<p>Both groups are pure Noachian units south of the dichotomy boundary, within 500 km of it and between 30°S and 55°N. Controls lie outside Arabia and at least 300 km from its outline. Thus the comparison conditions on boundary side; the 23 northern cells are a separate diagnostic, not the Arabia treatment group.</p>
+<p>Matching is without replacement and exact in epoch rank. Primary calipers are 1 km in elevation, 5 km in thickness, 150 km in boundary distance and 10° in latitude. Assignment first maximizes pair count, then minimizes squared caliper-scaled distance. The 2,600–2,900 kg/m³ atlas density scenarios and half/double calipers are declared sensitivities. Pair differences use the target cell’s area weight on both members, and balance uses the pooled unmatched standard deviation.</p>
+<table>
+<thead>
+<tr>
+<th>Density (kg/m³)</th>
+<th>Caliper multiplier</th>
+<th>Pairs</th>
+<th>Arabia area retained</th>
+<th>Max. absolute SMD</th>
+<th>Coverage + balance pass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2600</td>
+<td>0.5</td>
+<td>10</td>
+<td>6.7%</td>
+<td>0.226</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2600</td>
+<td>1</td>
+<td>47</td>
+<td>32.1%</td>
+<td>0.528</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2600</td>
+<td>2</td>
+<td>90</td>
+<td>62.5%</td>
+<td>1.126</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2700</td>
+<td>0.5</td>
+<td>10</td>
+<td>6.7%</td>
+<td>0.226</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2700</td>
+<td>1</td>
+<td>47</td>
+<td>32.1%</td>
+<td>0.528</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2700</td>
+<td>2</td>
+<td>90</td>
+<td>62.4%</td>
+<td>1.125</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2800</td>
+<td>0.5</td>
+<td>9</td>
+<td>5.9%</td>
+<td>0.213</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2800</td>
+<td>1</td>
+<td>46</td>
+<td>31.4%</td>
+<td>0.491</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2800</td>
+<td>2</td>
+<td>88</td>
+<td>61.0%</td>
+<td>1.098</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2900</td>
+<td>0.5</td>
+<td>9</td>
+<td>6.0%</td>
+<td>0.196</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2900</td>
+<td>1</td>
+<td>44</td>
+<td>29.9%</td>
+<td>0.464</td>
+<td>False</td>
+</tr>
+<tr>
+<td>2900</td>
+<td>2</td>
+<td>80</td>
+<td>55.1%</td>
+<td>0.989</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p>The 50% area-coverage and 0.1 imbalance thresholds are declared feasibility screens, not universal statistical criteria. Changing a caliper changes which population can be compared. All twelve declared variants fail at least one of these screens. This finding concerns the chosen pools and matching design; it does not prove that every possible Arabia comparison is infeasible.</p>
+<h2 id="can-the-blocks-be-exchanged">Can the blocks be exchanged?</h2>
+<p>A block shared by several pairs couples those pairs. Connecting all pairs through shared target or control blocks reveals the candidate joint sign-flip units. This diagnoses one source of dependence; components are not automatically independent, and swapping regional labels is not justified merely by matching measured covariates.</p>
+<table>
+<thead>
+<tr>
+<th>Nominal block size (km)</th>
+<th>Grid offset</th>
+<th>Target/control blocks</th>
+<th>Connected components</th>
+<th>Largest component (pairs)</th>
+<th>Closest components (km)</th>
+<th>Geometry screen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>300</td>
+<td>0</td>
+<td>17/16</td>
+<td>3</td>
+<td>32</td>
+<td>164.1</td>
+<td>False</td>
+</tr>
+<tr>
+<td>300</td>
+<td>0.5</td>
+<td>14/18</td>
+<td>6</td>
+<td>31</td>
+<td>117.4</td>
+<td>False</td>
+</tr>
+<tr>
+<td>600</td>
+<td>0</td>
+<td>9/10</td>
+<td>2</td>
+<td>32</td>
+<td>371.5</td>
+<td>False</td>
+</tr>
+<tr>
+<td>600</td>
+<td>0.5</td>
+<td>9/10</td>
+<td>2</td>
+<td>32</td>
+<td>371.5</td>
+<td>False</td>
+</tr>
+<tr>
+<td>900</td>
+<td>0</td>
+<td>7/7</td>
+<td>2</td>
+<td>32</td>
+<td>371.5</td>
+<td>False</td>
+</tr>
+<tr>
+<td>900</td>
+<td>0.5</td>
+<td>7/9</td>
+<td>3</td>
+<td>31</td>
+<td>160.2</td>
+<td>False</td>
+</tr>
+</tbody>
+</table>
+<p>The declared geometry screen asks for at least eight components and 160 km between sampled cells in different components. It does not prove exchangeability, stationarity, identical noise or independence of the underlying source footprints. The scientific target is still spatially structured and regional covariates remain unmeasured.</p>
+<p><strong>No permutation p-value is reported.</strong> The primary overlap and block screens are reported above. A supported design and synthetic-null calibration are required before an observed-field test. Naively treating grid cells or pairs sharing a block as independent would inflate the apparent sample size.</p>
+<h2 id="reproduce-and-inspect">Reproduce and inspect</h2>
+<pre><code class="language-bash">python scripts/followup/arabia_preflight.py
+python -m pytest -q tests/test_spatial_matching.py
+</code></pre>
+<p>The run is offline and writes only this follow-up directory and its report. Its inputs, protocol, numerical source code and outputs are hashed in <a href="/research/files/followup/arabia/manifest.json">the manifest</a>. Source attribution and reuse terms for the existing atlas remain in <a href="/research/files/data/manifest.json">the input manifest</a>. The six-test outputs are not rebuilt or overwritten.</p>
+<ul>
+<li><a href="/research/files/followup/arabia/protocol.json">Frozen preflight protocol</a></li>
+<li><a href="/research/files/followup/arabia/northern_early_noachian_cells.csv">23 northern-cell coordinates</a></li>
+<li><a href="/research/files/followup/arabia/covariates_and_masks.csv">Covariates and eligibility masks</a></li>
+<li><a href="/research/files/followup/arabia/matching_diagnostics.csv">Matching diagnostics</a></li>
+<li><a href="/research/files/followup/arabia/matched_pairs.csv">Matched pairs</a></li>
+<li><a href="/research/files/followup/arabia/block_diagnostics.csv">All block diagnostics</a></li>
+<li><a href="/research/files/followup/arabia/pair_block_allocations.csv">Pair/block allocation ledger</a></li>
+<li><a href="/research/files/followup/arabia/arabia_polygon.geojson">Polygon GeoJSON</a></li>
+<li><a href="/research/files/followup/arabia/geometry_mask_0p5.npz">Geometry-only 0.5° mask</a></li>
+<li><a href="/research/files/followup/arabia/summary.json">Machine-readable summary</a></li>
+</ul><div class="reading-tools"><a href="/research/explore#dossiers">← Reading dossiers</a><a href="/research/files/ARABIA_PREFLIGHT.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/ARABIA_PREFLIGHT.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Living research notes · Check each article’s date, sources and limitations.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>

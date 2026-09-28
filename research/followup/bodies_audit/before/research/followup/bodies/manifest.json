@@ -1,0 +1,22 @@
+{
+  "generated_utc": "2026-09-28T20:11:31.884542+00:00",
+  "code_sha256": {
+    "src/marswind/rapid_bodies.py": "fd3225875421a0da9f52ae3c737fd6c4fc472a42cc11db27708d95146b976113",
+    "src/marswind/recording.py": "d8646f46ac7f9e1b84bc26e5834f64c31de222358adce728c049f4e28dfdec9e",
+    "scripts/followup/rapid_bodies.py": "f1f1b07ed38f475e72e2bd4b371254c9e56427622062d3f3dc3cbf4f357993fa"
+  },
+  "outputs_sha256": {
+    "bodies.png": "033378ec5c417b9ac266626a49b2e439fc2f8c9b097622fe501a61bc733d2afd",
+    "bodies.svg": "ec999268eba070d8833527475e9982309cf4f25da1baa87c504f1b99e931e17d",
+    "protocol.json": "ffd9c00da74376ace51e1601c78afadeac693989d33d5dc7c48f9c1d49bdfcfe",
+    "retention.csv": "219062a92171c1ed4eeb7e27c1f4adbc5ba1ce78632363897f9855238312961b",
+    "stack.csv": "ff215ca87d5594ba20f8a006906cb8e5789b270e49807b7ce01beaafaddf340b",
+    "summary.json": "0976e250ca3951d749276f3dee674a3df14b158ae75d7aae869bd9f78eb2b638",
+    "thickness_bounds.json": "eee739835be62d33f6c111cd4708c8f86e91310caef160566d96715ef13bcfc9"
+  },
+  "software": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  }
+}

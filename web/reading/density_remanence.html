@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Density and remanence in one material model — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css?v=design1"><link rel="stylesheet" href="/assets/workspace.css?v=20260927-design"></head><body class="workspace">
+<a class="skip" href="#article">Skip to the article</a><header class="workspace-header"><a href="/" class="wordmark"><i></i><span>Martian dichotomy<small>CHARLOTTE CROCICCHIA</small></span></a><nav aria-label="Main navigation" lang="en"><a href="/">Questions &amp; answers</a><a href="/research/method">How we work</a><a href="/research/tests">Results</a><a href="/research/explore" aria-current="page">Explore</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">FIVE READING DOSSIERS</p><a href="/research/dossiers/science">Scientific context</a><a href="/research/dossiers/literature">Literature method</a><a href="/research/dossiers/experiments">Earlier experiments</a><a href="/research/dossiers/interdisciplinary">Interdisciplinary review</a><a href="/research/dossiers/audit" aria-current="page">Audit and current evidence</a></aside><article class="prose" id="article"><div class="collection-context"><p>Current technical reference</p><a href="/research/dossiers/audit">← Audit and current evidence</a><span> · </span><a href="/research/tests">Current results →</a></div><h1 id="density-and-remanence-in-one-material-model">Density and remanence in one material model</h1>
+<p><strong>Status: executed conditional mixture calculation. Verdict: adds a constraint; low density does not by itself exclude strong remanence.</strong></p>
+<p>The declared grid contains 21,600 exact density–magnetization solutions, 4,500 material-cap intervals and 144 illustrations using previous source scenarios. These are combinations of assumptions, not independent observations or probabilities for Mars.</p>
+<h2 id="why">Why</h2>
+<p>A dense magnetic carrier can increase crustal density, but its required abundance depends on remanence per unit mineral volume, directional coherence and pore space. Several A/m does not automatically require several percent magnetite. This follow-up puts these quantities in the same mass and remanence balance.</p>
+<p>The density scenarios are <strong>2,622 ± 42 kg/m³ north and 2,492 ± 36 kg/m³ south</strong>, from the <a href="https://pgda.gsfc.nasa.gov/products/102">NASA PGDA producer summary for Goossens &amp; Sabaka (2026)</a>. The published <a href="https://doi.org/10.1029/2026GL122393">article</a> and <a href="https://doi.org/10.60903/GSFCPGDA-MARS-RMS">dataset</a> concern a gravity–topography boundary constraint. These values are not measured densities at the locations and depths of each magnetic source. Their full covariance and depth sensitivity have not been reproduced here.</p>
+<h2 id="how">How</h2>
+<p>Let <code>f</code> be the magnetite fraction of the <strong>solid source volume</strong>, <code>phi</code> porosity, <code>q</code> the source fraction of the larger density-averaging volume, and <code>c</code> retained directional coherence. The surrounding material has the same nonmagnetic matrix and porosity. Then:</p>
+<pre><code class="language-text">rho_average = (1 - phi) * [rho_matrix + q*f*(rho_mag - rho_matrix)] + phi*rho_pore
+M_source    = (1 - phi) * f * M_carrier * c
+M_average   = q * M_source
+</code></pre>
+<p>The primary illustration assumes <code>q = 1</code>, an empty pore space, matrix density 2,900 kg/m³ and magnetite density 5,180 kg/m³. The latter is an isolated mineral-property reference from the <a href="https://staff.aist.go.jp/r-morijiri/research/research_pmag/pmag01.html">AIST-hosted table</a>. Matrix densities 2,400–3,100 kg/m³, pore densities 0 and 1,000 kg/m³, and <code>q = 0.25, 0.5, 1</code> are declared sensitivities. A volume-weighted density is bookkeeping, not the gravity measurement's actual spatial kernel.</p>
+<p>For the carrier, <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2005JE002404">Dunlop &amp; Arkani-Hamed (2005), Table 3 and section 5.3</a>, give <strong>5–10 kA/m thermoremanence for single-domain magnetite acquired in 50 µT</strong>. We use that domain-state scenario, not the 480 kA/m saturation magnetization. It is not a calibrated measurement of the Martian deep crust. A 5 µT case uses an explicitly assumed linear field scaling; preservation efficiencies 0.1 and 1, and coherent fractions 0.02, 0.1 and 1, expose further uncertainty. The underlying experimental papers were not reanalyzed.</p>
+<p>For each target, <code>b = M_source/(M_carrier*c)</code> is the carrier fraction of the <strong>bulk source volume</strong>. The equations have the exact solution:</p>
+<pre><code class="language-text">phi = [rho_matrix + q*b*(rho_mag - rho_matrix) - rho_average] / (rho_matrix - rho_pore)
+f   = b / (1 - phi)
+</code></pre>
+<p>Unphysical candidates remain flagged rather than clipped into agreement. We also solve the attainable interval exactly under porosity caps 0, 5, 10, 20 and 30%, and solid-carrier caps 1, 5 and 10%. These are scenario screens, not measured geological bounds. Tests compare the analytic interval with an independent linear-program solver. The <a href="/research/files/followup/mixture/protocol.json">protocol</a> was saved before this mixture calculation; the prior project results and literature values were already known. It is a local declaration, not external preregistration.</p>
+<h2 id="result">Result</h2>
+<h3 id="the-low-density-already-constrains-the-nonmagnetic-matrix">The low density already constrains the nonmagnetic matrix</h3>
+<p>For an empty-pore matrix of 2,900 kg/m³ with <strong>no magnetite</strong>, reaching the central density target requires <strong>14.07% porosity south and 9.59% north</strong>. The southern value falls to 4.15% if the matrix is 2,600 kg/m³, or rises to 19.61% for 3,100 kg/m³. A 2,400 kg/m³ matrix cannot reach 2,492 kg/m³ by adding empty pores alone; it would require a denser component. These examples show the composition–porosity ambiguity before magnetization is imposed.</p>
+<h3 id="previous-source-scenarios-under-the-same-volume-assumption">Previous source scenarios, under the same-volume assumption</h3>
+<p>The following targets are the saved median requirements of Test 3's centered 20 km cylinder. The corrected rows already incorporate the previous Poisson-reversal penalty for mean chrons of 0.67 Myr. <strong>They use <code>c = 1</code> here</strong>, so cancellation is not applied twice. All rows assume matrix density 2,900 kg/m³, empty pores, <code>q = 1</code>, and the central density for that hemisphere.</p>
+<table>
+<thead>
+<tr>
+<th>Target scenario</th>
+<th style="text-align: right;">Required M (A/m)</th>
+<th style="text-align: right;">Carrier TRM (kA/m)</th>
+<th style="text-align: right;">Magnetite, solid volume</th>
+<th style="text-align: right;">Required porosity</th>
+<th style="text-align: right;">Density increment at fixed porosity (kg/m³)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>North · Coherent cylinder</td>
+<td style="text-align: right;">1.01</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.022%</td>
+<td style="text-align: right;">9.60%</td>
+<td style="text-align: right;">0.46</td>
+</tr>
+<tr>
+<td>North · Coherent cylinder</td>
+<td style="text-align: right;">1.01</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0.011%</td>
+<td style="text-align: right;">9.59%</td>
+<td style="text-align: right;">0.23</td>
+</tr>
+<tr>
+<td>North · After Poisson correction</td>
+<td style="text-align: right;">39.75</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.885%</td>
+<td style="text-align: right;">10.21%</td>
+<td style="text-align: right;">18.13</td>
+</tr>
+<tr>
+<td>North · After Poisson correction</td>
+<td style="text-align: right;">39.75</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0.441%</td>
+<td style="text-align: right;">9.90%</td>
+<td style="text-align: right;">9.06</td>
+</tr>
+<tr>
+<td>South · Coherent cylinder</td>
+<td style="text-align: right;">4.21</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.098%</td>
+<td style="text-align: right;">14.14%</td>
+<td style="text-align: right;">1.92</td>
+</tr>
+<tr>
+<td>South · Coherent cylinder</td>
+<td style="text-align: right;">4.21</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0.049%</td>
+<td style="text-align: right;">14.10%</td>
+<td style="text-align: right;">0.96</td>
+</tr>
+<tr>
+<td>South · After Poisson correction</td>
+<td style="text-align: right;">207.92</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5.031%</td>
+<td style="text-align: right;">17.34%</td>
+<td style="text-align: right;">94.81</td>
+</tr>
+<tr>
+<td>South · After Poisson correction</td>
+<td style="text-align: right;">207.92</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2.467%</td>
+<td style="text-align: right;">15.70%</td>
+<td style="text-align: right;">47.41</td>
+</tr>
+</tbody>
+</table>
+<p>For the southern coherent target, <strong>4.21 A/m</strong>, efficient recording needs only <strong>0.049–0.098% magnetite by solid volume</strong>. Its density increment relative to the same porous matrix without carrier is <strong>0.96–1.92 kg/m³</strong>. Thus the earlier implication that a few A/m necessarily requires several percent magnetite is unsupported.</p>
+<p>For the <strong>207.92 A/m</strong> southern target after the saved cancellation correction, the fraction rises to <strong>2.47–5.03%</strong>, with <strong>15.70–17.34% porosity</strong>. The lower carrier-efficiency endpoint slightly exceeds the declared 5% solid-fraction screen, while the higher endpoint passes it. Neither endpoint is a geological probability or an inferred Martian abundance. The 10th and 90th percentile targets, and the other declared cylinder geometries, remain in the <a href="/research/files/followup/mixture/prior_test_scenarios.csv">scenario export</a>.</p>
+<p><img alt="Density–remanence balances and their dependence on coherence" src="/research/files/followup/mixture/mixture.png" /></p>
+<p><a href="/research/files/followup/mixture/mixture.svg">Vector figure</a>. Left: the density relation for three matrices. Right: required fractions at the southern density, with carrier remanence varied across 5–10 kA/m. Values beyond the dotted screens are shown to expose the trade-off; being plotted does not establish admissibility under a cap or survival of that porosity at depth.</p>
+<h3 id="what-a-stated-porosity-cap-permits">What a stated porosity cap permits</h3>
+<p>With no more than 5% magnetite in the solids, matrix density 2,900 kg/m³, empty pores, <code>q = 1</code>, full coherence and carrier remanence 5–10 kA/m:</p>
+<table>
+<thead>
+<tr>
+<th>Density target</th>
+<th style="text-align: right;">Porosity cap</th>
+<th style="text-align: right;">Maximum source M across the carrier range (A/m)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>North</td>
+<td style="text-align: right;">10%</td>
+<td style="text-align: right;">26.3–52.6</td>
+</tr>
+<tr>
+<td>North</td>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">217.5–435.0</td>
+</tr>
+<tr>
+<td>North</td>
+<td style="text-align: right;">30%</td>
+<td style="text-align: right;">217.5–435.0</td>
+</tr>
+<tr>
+<td>South</td>
+<td style="text-align: right;">10%</td>
+<td style="text-align: right;">No density-compatible mixture</td>
+</tr>
+<tr>
+<td>South</td>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">206.7–413.4</td>
+</tr>
+<tr>
+<td>South</td>
+<td style="text-align: right;">30%</td>
+<td style="text-align: right;">206.7–413.4</td>
+</tr>
+</tbody>
+</table>
+<p>Where a mixture exists in this table its attainable interval begins at zero. A 10% porosity cap cannot reach the southern density even without a magnetic requirement; that is a failure of the selected matrix–porosity combination, not evidence against magnetization. When coherence falls to 0.02 the same magnetic capacities are multiplied by 0.02. A 5 µT field or preservation efficiency 0.1 each supplies another factor of 0.1 under the declared scaling. The <a href="/research/files/followup/mixture/attainable_intervals.csv">full interval export</a> factors out carrier remanence and coherence and also reports nonzero lower bounds where required by density.</p>
+<h3 id="a-local-source-need-not-fill-the-density-averaging-volume">A local source need not fill the density-averaging volume</h3>
+<p>The same southern target of 207.92 A/m gives the following conditional results when it occupies a fraction <code>q</code> of that volume. The matrix and porosity are shared with the background:</p>
+<table>
+<thead>
+<tr>
+<th>Source fraction q</th>
+<th style="text-align: right;">Carrier TRM (kA/m)</th>
+<th style="text-align: right;">Source magnetite, solid volume</th>
+<th style="text-align: right;">Porosity</th>
+<th style="text-align: right;">Average density increment (kg/m³)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4.886%</td>
+<td style="text-align: right;">14.89%</td>
+<td style="text-align: right;">23.70</td>
+</tr>
+<tr>
+<td>0.5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4.933%</td>
+<td style="text-align: right;">15.70%</td>
+<td style="text-align: right;">47.41</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5.031%</td>
+<td style="text-align: right;">17.34%</td>
+<td style="text-align: right;">94.81</td>
+</tr>
+<tr>
+<td>0.25</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2.431%</td>
+<td style="text-align: right;">14.48%</td>
+<td style="text-align: right;">11.85</td>
+</tr>
+<tr>
+<td>0.5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2.443%</td>
+<td style="text-align: right;">14.89%</td>
+<td style="text-align: right;">23.70</td>
+</tr>
+<tr>
+<td>1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2.467%</td>
+<td style="text-align: right;">15.70%</td>
+<td style="text-align: right;">47.41</td>
+</tr>
+</tbody>
+</table>
+<p>Diluting the source volume reduces the mean density contribution. These cases do not assert a measured layer thickness or spatial filling fraction. The source magnetization stays local; it must not be compared to the average magnetization without the additional factor <code>q</code>.</p>
+<p>Density offsets of ±1 and ±2 times each published quoted error are evaluated deterministically in the grid. They are not sampled as Gaussian errors or interpreted as joint confidence regions. No fraction of passing parameter combinations is reported as a probability.</p>
+<h2 id="verdict-and-limits">Verdict and limits</h2>
+<p><strong>Adds a constraint.</strong> A low-density southern crust and magnetized sources can coexist algebraically within declared material scenarios. The density comparison does not by itself reject either the coherent or the cancellation-corrected median source requirement. Compatibility depends strongly on remanence efficiency, coherence, matrix density, porosity and the volume correspondence. Density alone provides no unique mineral abundance or universally applicable magnetization ceiling.</p>
+<p>The adopted porosities are not independently established for the deep magnetic source. A physically viable geological history would also have to explain their survival, the mineral grain state and chemistry, thermal stability, source geometry and vector cancellation. Alternative carriers and matrix remanence are omitted. This calculation does not rerun the gravity inversion or its covariance and does not promote a local cylinder target into a hemispheric measurement.</p>
+<p>Compositional control of Martian magnetism is established prior work; <a href="https://doi.org/10.1029/2020GL090379">AlHantoobi et al. (2021)</a> also distinguishes the depths sampled by surface spectroscopy and by magnetic anomalies. Selected text was consulted; its supporting material and full calibration were not reproduced. No novelty claim is made. The <a href="/research/files/followup/mixture/sources.json">source ledger</a> records the reading depth and reuse scope.</p>
+<h2 id="what-the-surface-follow-ups-actually-established">What the surface follow-ups actually established</h2>
+<p>The <a href="/assets/reading/arabia_preflight.html">Arabia preflight</a> and <a href="/assets/reading/boundary_walk.html">boundary transects</a> lack support for their declared comparisons. The boundary calculation used direct polygon inclusion and direct magnetic coefficients, not a 2° magnetic interpolation. The <a href="/assets/reading/depth_age.html">depth–age result</a> does not show a stable association under its chosen sensitivities. These findings justify pausing repetition of the same designs, not declaring geological surface information universally exhausted.</p>
+<p>An audit of the saved depth–age table gives <strong>8 positive northern cases out of 12</strong>, not 10; changing wedge offset repeats the same point correlation and changes only the bootstrap interval. The 38 km median in the oldest northern bin describes <strong>one window</strong>; the 30 km bin contains nine. Correlating all lower or all upper uncertainty endpoints is a sensitivity exercise, not a joint posterior for the unknown depths. A null or unstable association neither confirms excavation nor excludes resurfacing, whose distinct removal, burial and heating histories need not all predict the same depth trend. The primary numerical outputs are preserved.</p>
+<p>Rapidly cooled bodies remain a useful next model, alongside different reversal histories, recording episodes, carrier efficiencies and source geometries. The present calculations have not established that rapid cooling is the only remaining route.</p>
+<h2 id="reproduce">Reproduce</h2>
+<pre><code class="language-bash">python scripts/followup/mixture.py
+python scripts/followup/render_mixture.py
+python -m pytest -q tests/test_mixture.py
+python scripts/research/render_site.py
+python scripts/research/render_docs.py
+</code></pre>
+<p>The numerical builder verifies the frozen input hashes and writes original project-generated tables and figures. The report renderer reuses those results. <a href="/research/files/followup/mixture/manifest.json">Manifest</a>, <a href="/research/files/followup/mixture/inverse_grid.csv">inverse grid</a>, <a href="/research/files/followup/mixture/attainable_intervals.csv">attainable intervals</a>, <a href="/research/files/followup/mixture/zero_carrier_baseline.csv">zero-carrier baselines</a>, <a href="/research/files/followup/mixture/prior_test_scenarios.csv">prior-test scenarios</a> and <a href="/research/files/followup/mixture/summary.json">summary</a> are inspectable. Validation covers mass balance, physical endpoints, unit conversion, volume averaging, cancellation applied once, and agreement with independent linear optimization. This remains an internal numerical check, not external scientific review.</p><div class="reading-tools"><a href="/research/explore#dossiers">← Reading dossiers</a><a href="/research/files/DENSITY_REMANENCE.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/DENSITY_REMANENCE.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Living research notes · Check each article’s date, sources and limitations.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>

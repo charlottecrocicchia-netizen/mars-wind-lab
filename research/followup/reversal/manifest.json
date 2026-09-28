@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-09-28T20:38:12.501816+00:00",
+  "protocol_sha256": "2dbefd157d417862f2ad4c6c025f47168173ec7e2058f7a70d82854a30bfa4a4",
+  "frozen_input_sha256": {
+    "research/followup/bodies/protocol.json": "ffd9c00da74376ace51e1601c78afadeac693989d33d5dc7c48f9c1d49bdfcfe",
+    "src/marswind/rapid_bodies.py": "9af39ca7817a680ac7ad08e245a31f8a45e28a6f774697ed9942a4efabe1c2ab",
+    "src/marswind/recording.py": "d8646f46ac7f9e1b84bc26e5834f64c31de222358adce728c049f4e28dfdec9e",
+    "research/followup/mixture/protocol.json": "b4d4de3dfd3c947bc26f1d1505fcb7ccba3286e5e4988cb82ccad582c2d55f26"
+  },
+  "code_sha256": {
+    "src/marswind/reversal_identifiability.py": "478eff44dab4aa5a389ea111029dccd9af5e43839a9498343198ad1529b48b1e",
+    "scripts/followup/reversal_identifiability.py": "1f5464cb32bd6538a0121e235e2189da064aa243d74e9f0e19c6bbe0629dfab9",
+    "tests/test_reversal_identifiability.py": "4d7c9a9f5cf45b022c3e8378ea2fe6cd278707c43b57e588b91f9597ecca9fed"
+  },
+  "outputs_sha256": {
+    "calibration.csv": "722e941a1847d9540ecdf8b27035b0e5d3eda7102636e3d172f903cb69cdeab0",
+    "classification.csv": "c4b46cdd40cd42989904e62ed6cb2d54468d5a2036a34fc86b273d78273dbcef",
+    "example_maps.csv": "9976d0f5fa1495293d1decb4f5f1eda2abea00ed5de6e0e1b74b126cf271d9b8",
+    "identifiability.png": "d01e94c2e5ed73def16f79117d6c036cf7d5fb90d6d878ac0cebb813f18413d9",
+    "identifiability.svg": "02b7f9fa7c86eda1abff4f7a22a23b9b5b7b9a61a7d4d2d60ecdb201fd55fcae",
+    "map_checks.csv": "018b605d254e34837ef93ffd80086a6d556afd6abcd33fea8617b2b7e5458ede",
+    "protocol.json": "2dbefd157d417862f2ad4c6c025f47168173ec7e2058f7a70d82854a30bfa4a4",
+    "record_checks.csv": "5831ceb21012a6b3fc444647722c5de0d6d17d3db2db6b783670032ffef1d385",
+    "sources.csv": "4757cf5aedd2c0d8837d16a355a66581c2640010b93d08d8da5dda5bdb918f25",
+    "sources.json": "203a118d77da6b95761ae298ea5aa4e07ef6dfd064e44a780ee9292ff959318e",
+    "summary.json": "024714b5889694554eba889b7c5179c61597c5dec61272da71617f0ddac951f2",
+    "trial_counts.npz": "0a06893050e8bae55a637f4d8e4488234a53a79ee36a8a7c2091d0179071100e",
+    "unknown_clock_profile.csv": "cf59f72b9acbf9e9ad0e0241b1ae0514690e04b8658c3ae3525ae410c093937c"
+  },
+  "report_sha256": "02bcdfd20c5a6e71929ae6304891a6c6ec66bb7c4a6f459e64f9a2e697991c74",
+  "software": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "declared_utc": "2026-09-28T20:10:25.699913+00:00",
+  "question": "How thick can an igneous body be and still record a coherent thermoremanence under a frequently reversing dynamo, and what does a stack of such bodies retain?",
+  "physics": "Exact conductive cooling of an infinite slab in an infinite host (Carslaw & Jaeger 1959 \u00a72.4), no latent heat, uniform diffusivity. Acquisition on cooling through a uniform blocking band; linear recording; retained fraction = |signed record| / known acquired fraction, as in Tests 2 and 4.",
+  "diffusivity_m2_s": 1e-06,
+  "emplacement_temperature_c": 1200,
+  "host_temperatures_c": [
+    100,
+    300,
+    400
+  ],
+  "host_note": "Host temperatures span shallow crust to the depth where the accepted conductive histories reach about 400 \u00b0C; the host must be below the band.",
+  "thicknesses_m": [
+    30,
+    100,
+    300,
+    1000,
+    3000,
+    10000,
+    30000
+  ],
+  "blocking_bands_c": {
+    "magnetite_430_580": [
+      430,
+      580
+    ],
+    "pyrrhotite_175_325": [
+      175,
+      325
+    ]
+  },
+  "chron_durations_myr": [
+    0.67,
+    2,
+    5,
+    20,
+    100
+  ],
+  "periodic_phases": 16,
+  "poisson_realizations": 128,
+  "retention_threshold": 0.5,
+  "stack": {
+    "bodies": [
+      1,
+      3,
+      10,
+      30,
+      100
+    ],
+    "emplacement_spans_myr": [
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "chron_myr": 0.67,
+    "realizations": 400,
+    "note": "Equal bodies, random emplacement times within the span, polarity = field sign at emplacement, each body fully coherent (thin-body limit)."
+  },
+  "decision_rule": "For each host temperature, band and chron, report the largest declared thickness whose median Poisson retention is at least 0.5. Report the stack coherence distribution. No thickness is asserted for Mars; the output is an inequality conditional on the declared physics.",
+  "positions": 32,
+  "time_points": 400
+}

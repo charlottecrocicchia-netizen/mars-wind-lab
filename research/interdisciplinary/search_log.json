@@ -1,0 +1,91 @@
+{
+  "review_date": "2026-09-28",
+  "method": "Targeted iterative web search, exact DOI lookups, author/publisher repositories, original abstracts via Europe PMC, and earlier project source assessments. Not a new exhaustive systematic search.",
+  "query_batches_recorded": [
+    {
+      "date": "2026-09-28",
+      "queries": [
+        "Mars hemispheric dichotomy origin review impact convection crust differentiation 2025 2026",
+        "Mars paleomagnetism dynamo history meteorite ALH 84001 2023 2024 2025 2026",
+        "Mars ancient crust zircon isotope reservoirs water NWA 7034 2024 2025 2026",
+        "Mars climate water escape magnetic field atmospheric loss review 2024 2025"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "queries": [
+        "Mars crust dichotomy thermal gravity mantle hemispheric Berne 2026 Nature 10893",
+        "Mars dichotomy Bonnet Gibet 2025 crustal differentiation 2024JE008486",
+        "Mars remagnetization Tissint 2025 2026 paleomagnetism dynamo",
+        "Mars magnetic field atmospheric escape not protection Gunell 2018 2025 sputtering Curry Nature"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "queries": [
+        "\"A tale of two planets\" Mars Borg Kruijer 2025 isotopes",
+        "\"Mars\" \"zircon\" \"hydrothermal\" \"2024\" 4.45",
+        "\"Mars\" \"ocean\" \"Zhurong\" \"2025\" buried beach deposits",
+        "\"Mars\" \"true polar wander\" \"Tharsis\" \"2016\" valley networks"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "queries": [
+        "\"A tale of two planets\" \"Kruijer\"",
+        "\"Mars\" \"Steele\" \"2024\" \"reversals\" basins dynamo",
+        "\"Lafayette\" \"742\" \"2024\" alteration",
+        "\"Mars\" \"Bouvier\" \"2018\" \"4.547\""
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "queries": [
+        "\"2404257121\" abstract",
+        "\"Magnetic Properties of Martian Impact Basins Including\" Steele 2025",
+        "\"Liquid water in the Martian mid-crust\" 2024",
+        "\"Mars\" \"water\" \"crust\" \"Scheller\" \"2021\""
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "queries": [
+        "site.pnas.org \"2404257121\"",
+        "site.pubmed.ncbi.nlm.nih.gov \"Disparate evolutionary\"",
+        "site.agupubs.onlinelibrary.wiley.com \"2025JE009173\"",
+        "site.science.org \"Zircon trace element evidence\""
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "queries": [
+        "\"Episodic warm climates on early Mars primed by crustal hydration\"",
+        "\"Experimental constraints on a long-lived magma layer at the Martian core–mantle boundary\"",
+        "\"Combined impact and interior evolution models in three dimensions\""
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "queries": [
+        "\"Direct Detection of Hydrogen\" \"Naver\" Mars 2026",
+        "\"Planetary Crusts\" Taylor McLennan 2009 Cambridge",
+        "\"Martian Impact Basins\" \"2025JE009173\""
+      ]
+    }
+  ],
+  "log_limitations": "These are the query batches retained in the session ledger, not a complete reproducible search-engine result export. Additional exact-title lookups included Wordsworth 2021, Rosenblatt 2016, Carboni 2025 and McNeil 2025; books and earlier project assessments also informed discovery. Search rankings and indexed excerpts can change.",
+  "screening": "Prioritize original research, official producer documentation and author/publisher books. Exclude news/reposts as evidence. Keep inaccessible primary sources as previews or metadata leads. Retain disagreement and model alternatives.",
+  "access_limitations": [
+    "Crossref exact-DOI enrichment attempted for 46 records; many HTTP 429 responses; did not retry aggressively or treat failures as successful retrievals.",
+    "Some publisher and PMC pages were blocked or unavailable. Reading status is limited accordingly.",
+    "No new third-party scientific dataset or code imported; temporary article copies and fetched abstracts are excluded from committed exports."
+  ],
+  "coverage_gaps": [
+    "Complete article and supplement audits",
+    "A comprehensive monograph/chapter review",
+    "Full cross-language search and citation chasing",
+    "Accretion chronology, mantle rheology and reaction kinetics beyond the selected anchors",
+    "Independent reconstruction or numerical reproduction of cited results"
+  ],
+  "relationship_to_existing_catalog": "This supplement does not update the 1990-record catalog or its earlier reading totals; sources overlap and counts must not be added."
+}

@@ -1,6 +1,6 @@
 # Martian dynamo: a programme of discriminating tests
 
-**Assessment date: 27 September 2026.** [Explore the proposals](/research/dynamo) · [Machine-readable register](dynamo/tests.json) · [CSV export](dynamo/tests.csv)
+**Assessment date: 27 September 2026.** [Explore the proposals](DYNAMO_TESTS.md) · [Machine-readable register](dynamo/tests.json) · [CSV export](dynamo/tests.csv)
 
 The supplied research synthesis is a useful discovery map. This assessment converts its 30 proposals into original, conditional test designs. **Full discriminating tests remain open.** Five questions now have executed building blocks: recording and detection benchmarks, regional transfer checks and a candidate laboratory ledger. [Inspect the calculations and their limits](EXECUTED_EXPERIMENTS.md). They do not establish a dynamo history.
 

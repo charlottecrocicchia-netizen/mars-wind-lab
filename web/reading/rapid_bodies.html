@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rapidly cooled bodies under a reversing dynamo — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css?v=design1"><link rel="stylesheet" href="/assets/workspace.css?v=20260927-design"></head><body class="workspace">
+<a class="skip" href="#article">Skip to the article</a><header class="workspace-header"><a href="/" class="wordmark"><i></i><span>Martian dichotomy<small>CHARLOTTE CROCICCHIA</small></span></a><nav aria-label="Main navigation" lang="en"><a href="/">Questions &amp; answers</a><a href="/research/method">How we work</a><a href="/research/tests">Results</a><a href="/research/explore" aria-current="page">Explore</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">FIVE READING DOSSIERS</p><a href="/research/dossiers/science">Scientific context</a><a href="/research/dossiers/literature">Literature method</a><a href="/research/dossiers/experiments">Earlier experiments</a><a href="/research/dossiers/interdisciplinary">Interdisciplinary review</a><a href="/research/dossiers/audit" aria-current="page">Audit and current evidence</a></aside><article class="prose" id="article"><div class="collection-context"><p>Current technical reference</p><a href="/research/dossiers/audit">← Audit and current evidence</a><span> · </span><a href="/research/tests">Current results →</a></div><h1 id="rapidly-cooled-bodies-under-a-reversing-dynamo">Rapidly cooled bodies under a reversing dynamo</h1>
+<p><strong>Status: declared-scenario calculation completed. Verdict: adds a constraint. Rapid cooling can protect one body; stack cancellation depends on the shared field and emplacement span.</strong> <a href="/research/files/followup/bodies/protocol.json">Protocol</a> · <a href="/research/files/followup/bodies/retention.csv">Retention table</a> · <a href="/research/files/followup/bodies/thickness_bounds.json">Thickness bounds</a> · <a href="/research/files/followup/bodies/stack.csv">Stack table</a> · <a href="/research/files/followup/bodies/manifest.json">Manifest</a></p>
+<h2 id="why">Why</h2>
+<p>Test 4 found that crust cooling conductively over hundreds of millions of years keeps about 2% of a steady record under randomly timed reversals every 0.67 Myr. The natural escape is a source that cooled within one chron: a sill, dyke or lava unit. This calculation asks how thick such a body can be, and whether many such bodies can add up to a strong coherent source. It is a declared physical scenario, not an inference about a particular Martian region.</p>
+<h2 id="how">How</h2>
+<p>An infinite planar slab of thickness h at 1200 °C is emplaced into a host at 100, 300, 400 °C; it cools by conduction with diffusivity 1e-06 m²/s and no latent heat (analytic heat-kernel solution; recording kernels use piecewise-linear temperature interpolation). Each of 32 positions across the half-slab acquires remanence while cooling through a uniform blocking band, 430–580 °C for magnetite and 175–325 °C for pyrrhotite. The body's kernel is integrated against periodic reversals (16 phases) and Poisson reversals (128 seeds) with mean chrons of 0.67, 2, 5, 20, 100 Myr; the retained fraction of a steady record is reported. A stack of N fully coherent bodies emplaced at random times within a span records the field sign at each emplacement (mean chron 0.67 Myr, 400 realizations). The protocol was saved before evaluation; it is a local declaration, not external preregistration.</p>
+<h2 id="result">Result</h2>
+<h3 id="one-body">One body</h3>
+<p>Magnetite band, host at 300 °C, mean chron 0.67 Myr:</p>
+<table>
+<thead>
+<tr>
+<th>Thickness</th>
+<th style="text-align: right;">Mid-plane cooling through the band (Myr)</th>
+<th style="text-align: right;">Poisson retention, median</th>
+<th style="text-align: right;">Poisson 5–95%</th>
+<th style="text-align: right;">Periodic retention, median</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30 m</td>
+<td style="text-align: right;">8.534e-05</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">100.0–100.0%</td>
+<td style="text-align: right;">100.00%</td>
+</tr>
+<tr>
+<td>100 m</td>
+<td style="text-align: right;">0.0009482</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">100.0–100.0%</td>
+<td style="text-align: right;">100.00%</td>
+</tr>
+<tr>
+<td>300 m</td>
+<td style="text-align: right;">0.008534</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">100.0–100.0%</td>
+<td style="text-align: right;">100.00%</td>
+</tr>
+<tr>
+<td>1 km</td>
+<td style="text-align: right;">0.09482</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">49.1–100.0%</td>
+<td style="text-align: right;">100.00%</td>
+</tr>
+<tr>
+<td>3 km</td>
+<td style="text-align: right;">0.8534</td>
+<td style="text-align: right;">76.0%</td>
+<td style="text-align: right;">14.3–100.0%</td>
+<td style="text-align: right;">49.07%</td>
+</tr>
+<tr>
+<td>10 km</td>
+<td style="text-align: right;">9.482</td>
+<td style="text-align: right;">21.0%</td>
+<td style="text-align: right;">2.4–58.6%</td>
+<td style="text-align: right;">4.99%</td>
+</tr>
+<tr>
+<td>30 km</td>
+<td style="text-align: right;">85.34</td>
+<td style="text-align: right;">8.5%</td>
+<td style="text-align: right;">0.6–19.0%</td>
+<td style="text-align: right;">0.07%</td>
+</tr>
+</tbody>
+</table>
+<p>Largest declared thickness with median Poisson retention ≥ 50%:</p>
+<table>
+<thead>
+<tr>
+<th>Band</th>
+<th style="text-align: right;">Host (°C)</th>
+<th style="text-align: right;">Mean chron (Myr)</th>
+<th style="text-align: right;">Largest passing tested thickness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0.67</td>
+<td style="text-align: right;">3 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">30 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">30 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">0.67</td>
+<td style="text-align: right;">3 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">30 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">0.67</td>
+<td style="text-align: right;">1 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10 km</td>
+</tr>
+<tr>
+<td>magnetite 430 580</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">10 km</td>
+</tr>
+<tr>
+<td>pyrrhotite 175 325</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0.67</td>
+<td style="text-align: right;">1 km</td>
+</tr>
+<tr>
+<td>pyrrhotite 175 325</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3 km</td>
+</tr>
+<tr>
+<td>pyrrhotite 175 325</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3 km</td>
+</tr>
+<tr>
+<td>pyrrhotite 175 325</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10 km</td>
+</tr>
+<tr>
+<td>pyrrhotite 175 325</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">10 km</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-stack-of-bodies">A stack of bodies</h3>
+<p>Mean chron 0.67 Myr, each body fully coherent:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Bodies</th>
+<th style="text-align: right;">Emplacement span (Myr)</th>
+<th style="text-align: right;">Net coherence, median</th>
+<th style="text-align: right;">Net coherence, RMS</th>
+<th style="text-align: right;">1/√N</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3.0</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.98</td>
+<td style="text-align: right;">0.58</td>
+</tr>
+<tr>
+<td style="text-align: right;">3.0</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.81</td>
+<td style="text-align: right;">0.58</td>
+</tr>
+<tr>
+<td style="text-align: right;">3.0</td>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">0.59</td>
+<td style="text-align: right;">0.58</td>
+</tr>
+<tr>
+<td style="text-align: right;">3.0</td>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: right;">0.58</td>
+<td style="text-align: right;">0.58</td>
+</tr>
+<tr>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.95</td>
+<td style="text-align: right;">0.32</td>
+</tr>
+<tr>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: right;">0.71</td>
+<td style="text-align: right;">0.32</td>
+</tr>
+<tr>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.41</td>
+<td style="text-align: right;">0.32</td>
+</tr>
+<tr>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.34</td>
+<td style="text-align: right;">0.32</td>
+</tr>
+<tr>
+<td style="text-align: right;">30.0</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">0.18</td>
+</tr>
+<tr>
+<td style="text-align: right;">30.0</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: right;">0.67</td>
+<td style="text-align: right;">0.18</td>
+</tr>
+<tr>
+<td style="text-align: right;">30.0</td>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.31</td>
+<td style="text-align: right;">0.18</td>
+</tr>
+<tr>
+<td style="text-align: right;">30.0</td>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">0.13</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.18</td>
+</tr>
+<tr>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">1.00</td>
+<td style="text-align: right;">0.96</td>
+<td style="text-align: right;">0.10</td>
+</tr>
+<tr>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">1.0</td>
+<td style="text-align: right;">0.58</td>
+<td style="text-align: right;">0.67</td>
+<td style="text-align: right;">0.10</td>
+</tr>
+<tr>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">10.0</td>
+<td style="text-align: right;">0.20</td>
+<td style="text-align: right;">0.27</td>
+<td style="text-align: right;">0.10</td>
+</tr>
+<tr>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">100.0</td>
+<td style="text-align: right;">0.08</td>
+<td style="text-align: right;">0.13</td>
+<td style="text-align: right;">0.10</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Retention of one body against thickness, and net coherence of stacks" src="/research/files/followup/bodies/bodies.png" /></p>
+<h2 id="reading">Reading</h2>
+<p>The 3 km body in the primary case crosses the mid-plane blocking band in <strong>0.853 Myr</strong>, longer than a 0.67 Myr mean chron, and retains <strong>76%</strong> at the simulated median. The 1 km body crosses in 0.0948 Myr. These are scenario results, not universal thickness cutoffs. Each tabulated thickness limit is the largest <strong>tested</strong> value meeting the median criterion; a passing 30 km case only reaches the top of the tested grid. The continuous threshold and its Monte Carlo uncertainty were not estimated.</p>
+<p>The bodies share one telegraph field, so independent emplacement times do not imply independent polarities. For N equal instantaneous recorders distributed uniformly over a span T, let x = 2T/τ, with mean chron τ. The telegraph correlation is derived in the <a href="https://www.math.kth.se/matstat/gru/sf2940/lectnotemat5.pdf">KTH stochastic-process notes, section 12.5.3</a> (the relevant derivation was consulted; no code or data copied). Directly integrating E[S(t)S(s)] = exp(−2|t−s|/τ) over the two independent uniform emplacement times gives:</p>
+<pre><code class="language-text">A = 2 * (x - 1 + exp(-x)) / x²
+RMS² = 1/N + (1 - 1/N)*A
+</code></pre>
+<p>The limit 1/√N applies when the correlation term is negligible, approximately <strong>T ≫ Nτ</strong>, not merely T ≫ τ. At fixed span, increasing N leaves a nonzero correlation floor. For N = 100 and τ = 0.67 Myr the analytic RMS is <strong>0.272 at 10 Myr</strong> and <strong>0.129 at 100 Myr</strong>, consistent with the simulation. The corresponding simulated medians are 0.20 and 0.08; RMS and median must not be interchanged. Favorable stochastic histories can retain a record across multiple chrons, so single-chron emplacement is not a necessary condition for every realization.</p>
+<p>This is a retention calculation for equal sources, not an orbital-field inversion for a crustal stack. Source geometry, volume, carrier efficiency, emplacement history and reversal history remain coupled. None of these results alone requires a change in the dynamo rate or makes reversal inference the only possible next calculation. The subsequent <a href="/assets/reading/reversal_identifiability.html">synthetic identifiability prerequisite</a> tests one explicit rate–recording ambiguity before any observed-map inference.</p>
+<h3 id="corrections-following-the-implementation-review">Corrections following the implementation review</h3>
+<p>The initial cooling column reported elapsed time from emplacement to a sampled point near the lower band boundary. It now reports the analytic difference between both crossing times; both absolute crossing times are saved in the CSV. Retention kernels and their simulated fractions are unchanged. The stack CSV now includes the exact correlated-field RMS for comparison. The original protocol timestamp is preserved when rebuilding. Earlier files and hashes are retained under <code>followup/bodies_audit/before/</code>. The original Carslaw &amp; Jaeger section number has not been independently checked; the formula is verified against the heat-kernel expression and analytic inversion instead.</p>
+<h2 id="limits">Limits</h2>
+<p>No latent heat, no host cooling with depth, no chemical remanence, no shock, uniform blocking band, infinite slab geometry, no forward field at orbital altitude. The stack model assumes independent random emplacement times and equal bodies, whose polarities are correlated through one shared field. It uses the instantaneous-recording limit; finite cooling and mutual reheating within a stack are not coupled. The thicknesses and chrons are declared scenarios. Ogawa &amp; Manga (2007) and earlier dyke-source models treat related geometries; their results were not reproduced and no novelty is claimed.</p>
+<h2 id="reproduce">Reproduce</h2>
+<pre><code class="language-bash">python scripts/followup/rapid_bodies.py
+python -m pytest -q tests/test_rapid_bodies.py
+python scripts/research/render_docs.py
+</code></pre><div class="reading-tools"><a href="/research/explore#dossiers">← Reading dossiers</a><a href="/research/files/RAPID_BODIES.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/RAPID_BODIES.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Living research notes · Check each article’s date, sources and limitations.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>

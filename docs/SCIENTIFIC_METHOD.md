@@ -1,58 +1,51 @@
 # Scientific method and interpretation
 
-Mars Wind Lab is an analysis interface to the official Mars Climate Database 6.1 sampler. It does not solve a new general circulation model. This document distinguishes implemented diagnostics from scientific questions that remain open.
+The active project asks which histories can explain the Martian crustal magnetic contrast while respecting geology, thermal evolution and crustal structure. It connects evidence across disciplines without treating different measurements as interchangeable clocks.
 
-## Sampling the atmospheric state
+Start with [Where the evidence stands](../research/STATE_OF_EVIDENCE.md), then the [six-test report](../research/DISCRIMINATING_TESTS.md). This guide explains how to read their claims.
 
-The adapter calls `CALL_MCD` with scenario 1 (climatology / average EUV), `hireskey=0`, `perturkey=1`, `datekey=1` and `zkey=2` for geometric altitude above the areoid. Lower and upper atmospheric fields are combined by the official routine. Code 17 (below surface) becomes a missing sample; other errors stop the calculation. Winds, thermodynamic fields and RMS variability are sampled together.
+## What each layer tells us
 
-Raw NetCDF pseudo-altitude must not be treated as physical height. EOF files encode variability and cannot substitute for absolute fields. A denser query grid does not increase the physical resolution of the underlying GCM. Interpolation smooths extrema and gradients; results should not be described as exact atmospheric maxima.
+| Layer | Observation or model product | What it does not supply by itself |
+| --- | --- | --- |
+| Orbital magnetism | A spatially filtered field at a stated altitude and model resolution | Unique source direction, mineralogy or ancient field intensity |
+| Surface geology | Mapped units and relative surface epochs | The acquisition age of a buried magnetic source |
+| Gravity and topography | Constraints on mass distribution and surface shape | Crustal thickness independent of density assumptions |
+| Thermal calculations | Cooling and acquisition under specified geometry, heating and boundary conditions | A uniquely reconstructed crustal history |
+| Rock magnetism | Carrier, grain and recording properties of studied material | Representative properties of an entire hemisphere |
+| Meteorite chronology | Formation, alteration, shock or ejection events with distinct clocks | A confirmed source location or a complete global reversal sequence |
 
-Two time conventions are explicit: the same local true solar hour at each longitude, or a simultaneous field referenced to the true solar hour at 0° E. Guided column experiments always use the first convention at one fixed location.
+A **remanence** is a magnetic record retained by rock. A **chron** is an interval of one polarity. A **blocking band** describes the temperatures over which the declared carrier acquires its modeled record. **Identifiability** asks whether distinct model histories can be distinguished by the specified observations.
 
-## Implemented diagnostics
+## The workflow
 
-Horizontal speed is `sqrt(u² + v²)`. The vertical shear magnitude is `sqrt((du/dz)² + (dv/dz)²)`, with derivatives in SI units. Maps use a centred ±1 km difference; profiles use their own geometric grid. Spherical area weights are used for global means, excluding missing samples and renormalizing the remaining area. Atlas arrows have normalized lengths.
+1. Record input provenance, reuse terms, units, resolution and missing values.
+2. Declare the comparison, scenarios, controls and interpretation rule before evaluation. Repository declarations are not external preregistration.
+3. Implement the calculation and save its tables, figures, settings and available input/code/output hashes.
+4. Check analytic cases, synthetic recovery, numerical convergence and spatial support. Report failed prerequisites.
+5. Write a conclusion at the scope demonstrated. Preserve corrections and distinguish current reports from historical notes.
 
-Thermodynamic sound speed is `c₀ = sqrt(γRT)`, with MCD values for `γ` and specific gas constant `R`. It does not include frequency-dependent molecular dispersion or relaxation. Effective sound speed is the directional diagnostic `c_eff = c₀ + W_parallel`, where `W_parallel = u sin α + v cos α` and α is clockwise from north. A local profile cannot establish a source–receiver path, arrival time, attenuation or ground detection.
+The [implementation audit](../research/DISCRIMINATING_AUDIT.md) and [follow-up reports](../research/README.md#follow-up-results) document both errors and unresolved assumptions. This is an internal, AI-assisted process, not external scientific certification.
 
-### Direction experiment
+## Reading a verdict
 
-Hold the entire thermodynamic column fixed and compare `c₀`, `c₀ + W_parallel`, and `c₀ − W_parallel`. This algebraically isolates advection; it does not recompute a physically wind-free climate. The displayed point maximizes `|W_parallel/c₀|` over the valid query grid. Nonpositive effective speeds in either direction are flagged and must not be interpreted as ordinary travel speeds.
+| Verdict | Meaning |
+| --- | --- |
+| Supports a stated prediction | The specified observation or calculation agrees with that prediction under its assumptions |
+| Weakens a scenario | A named scenario fails a declared comparison; identify which assumptions are needed |
+| Adds a constraint | The result limits a range or exposes a trade-off without selecting one history |
+| Not decisive | Support is insufficient, uncertainties remain, or the alternatives are observationally indistinguishable |
 
-### Seasonal decomposition
+An ensemble percentile describes the declared simulation ensemble. It is not automatically a probability for Mars. Nearby map cells and overlapping source windows are not independent samples. Predictive association is not a causal attribution.
 
-At the same geometric altitudes, location, azimuth and local time:
+## Why the latest controls matter
 
-`Δc_eff = (c₀,B − c₀,A) + (W_parallel,B − W_parallel,A)`.
+The [boundary comparison](../research/BOUNDARY_WALK.md) lacks enough common spatial support for its planned inferential comparison. The [material balance](../research/DENSITY_REMANENCE.md) relates remanence to density only under explicit efficiency, porosity and volume assumptions. The [body model](../research/RAPID_BODIES.md) separates individual cooling from correlations among bodies sharing one reversing field.
 
-This is an exact decomposition of the diagnostic. The first term includes temperature, composition and heat capacities; it is not a temperature-only contribution. The displayed point maximizes `|Δc_eff|`. It identifies changes in the terms, not their dynamical causes. Opposite signs can partly or completely cancel.
+The [reversal prerequisite](../research/REVERSAL_IDENTIFIABILITY.md) constructs distinct histories with identical synthetic fields when recording clocks can change. Its ideal known-clock control demonstrates a way to break that particular ambiguity, not a chronology measured for Mars. Failing this gate is a result; fitting the observed map anyway would not supply the missing independent clock.
 
-### Reference wavelength and density scale
+## Scope and earlier work
 
-Define `λ₀ = c₀ T_ref`, where `T_ref` is the period in the resting medium, and `Hρ = |d ln ρ / dz|⁻¹`. The ratio `λ₀/Hρ` examines one local scale-separation consideration. The logarithmic derivative uses the geometric grid and never bridges missing blocks. At least three consecutive valid samples are required.
+The six tests and follow-ups do not form a fully coupled inversion of crustal growth, mineral chemistry, water, impacts, density and dynamo evolution. The [roadmap](ROADMAP.md) lists useful independent constraints and remaining model development.
 
-A ratio near or above 1 is inconsistent with a locally short wave relative to this scale. A small ratio alone is not sufficient to validate ray theory: velocity gradients, flow, turning points and losses also matter. `λ₀` is not a calculated modal vertical wavelength. Reference-period changes are exact linear rescalings of this diagnostic, not full frequency-dependent propagation calculations.
-
-## Experimental modal benchmark
-
-The scalar pressure column solves `−(a p′)′ + k² a p = ω² b p`, with `a=1/ρ`, `b=1/(ρc²)`, `k=sqrt(ℓ(ℓ+1))/R` and `R=3389.5 km`. It uses P1 finite elements, a positive diagonal mass, two rigid boundaries and no gravity. The first-order shift `k <W_parallel>_b` retains only diagonal advection. Nodal weights sum to one.
-
-For uniform flow, `(ω − k·W)² = c²k²` gives `δω = k·W` at first order. An analytic test checks the full shift, avoiding a spurious factor of one half. A grid comparison checks part of the discretization error; it does not validate the rigid 200 km ceiling or omitted physics.
-
-Non-Hermiticity alone proves neither attenuation nor complex eigenvalues. Attenuation requires a defensible operator, inner product, boundary fluxes and dissipation or exchange terms. This benchmark does not infer damping from a uniform wind.
-
-
-## Sources and next validation steps
-
-The [MCD documentation](https://www-mars.lmd.jussieu.fr/mars/info_web/index.html) describes the source model and requested references. [Ortiz et al. (2022)](https://doi.org/10.1029/2021GL096225) provides the Martian wind/acoustic context. The density-scale comparison is an additional local diagnostic implemented here.
-
-Next steps include physically motivated boundaries, gravity and frequency-dependent losses, verified global mode conventions, multiple dust/EUV scenarios, and independent TWINS/SEIS comparisons with instrument responses and quality flags. No SEIS inversion, energy partition or observationally validated arrival prediction is provided in this version.
-
-## Animation semantics
-
-A seasonal sequence varies only solar longitude; an altitude sequence varies only geometric height. All other atmospheric query parameters are held fixed. Every frame is independently sampled through the same official MCD adapter as a standalone map. No interpolation is added between frames. A seasonal sequence has 24 frames at 15° intervals; an altitude sequence has 20 frames at 10 km intervals.
-
-One colour range is computed over all finite values of the selected field across the entire sequence. Signed fields use symmetric bounds; nonnegative speed/shear fields start at zero. Missing values remain missing. This prevents independent frame scaling from creating apparent variability. The 5° spatial sampling and MCD interpolation limits still apply.
-
-Playback speed is chosen for presentation. Solar longitude is an orbital angle, not a uniform time coordinate; advancing in altitude is a spatial sweep. Neither animation is a parcel trajectory or a forecast. MP4 renders the same sampled fields and shared scale on a flat map with explicit metadata.
+Earlier atmospheric diagnostics and the scalar acoustic benchmark are described in the preserved [atmospheric method](archive/ATMOSPHERIC_METHOD.md). They are separate from the current website and do not provide a coupled solid-planet/atmosphere solution. Their use remains subject to the [source policy](SOURCE_POLICY.md).

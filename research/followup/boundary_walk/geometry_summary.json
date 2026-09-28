@@ -1,0 +1,63 @@
+{
+  "protocol_sha256": "af2bd5de1c733eb3cbdafd90d824e41a6fc7e7a725b7f6c0e5942b3a655ca337",
+  "unique_stations": 1466,
+  "supplied_rows": 1467,
+  "curve_length_km": 24042.767861445536,
+  "orientation_probes_resolved": 1466,
+  "lines": [
+    {
+      "shift_south_km": 0,
+      "unwrapped_polyline_is_simple": true,
+      "centers_south_of_true_boundary": 71,
+      "centers_pure_noachian": 446
+    },
+    {
+      "shift_south_km": 500,
+      "unwrapped_polyline_is_simple": false,
+      "centers_south_of_true_boundary": 1466,
+      "centers_pure_noachian": 837
+    },
+    {
+      "shift_south_km": 1000,
+      "unwrapped_polyline_is_simple": false,
+      "centers_south_of_true_boundary": 1466,
+      "centers_pure_noachian": 907
+    }
+  ],
+  "eligible_counts_both_noachian": [
+    [
+      120,
+      16,
+      30
+    ],
+    [
+      646,
+      437,
+      43
+    ],
+    [
+      658,
+      601,
+      520
+    ]
+  ],
+  "eligible_counts_same_epoch": [
+    [
+      69,
+      5,
+      1
+    ],
+    [
+      371,
+      290,
+      33
+    ],
+    [
+      348,
+      306,
+      292
+    ]
+  ],
+  "geometry_csv_sha256": "ab688abf3a32d65f36cae2a2ea7920bd99fab3c158e6a61fa2c0413dc1f3917f",
+  "saved_before_field_evaluation_utc": "2026-09-28T14:16:39.929149+00:00"
+}

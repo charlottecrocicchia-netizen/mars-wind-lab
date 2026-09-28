@@ -1,0 +1,136 @@
+{
+  "version": "1.0",
+  "declared_utc": "2026-09-28T14:02:20.256895+00:00",
+  "status": "Local declaration before geology selection, null simulation and field evaluation; not external preregistration",
+  "scope": "Boundary-normal contrasts and shifted-line negative controls, plus descriptive regional decomposition of the previously identified 23 cells",
+  "input_sha256": {
+    "data/observations/raw/crustal_models/selected/dichotomy_coordinates-JAH-0-360.txt": "42f2b9f32c9e9100ef4a9977171a54654c3bf25602555945405a93ca45ac6bb2",
+    "data/observations/raw/geology/units.json": "7bdc007316104b7017dfb7f6fb4a87a136ff5afb520b248c3570465e5a024880",
+    "data/observations/raw/magnetic_field/Langlais2019.sh.gz": "3cad9e268f0673be1702f1df504a4cbcb8dba4480c7b3f629921911488fe247b",
+    "data/observations/raw/mola/megt90n000cb.img": "25f16fb7aaf857898dcf98bc4f841341a24f8b9f7e98453ca083bc45d897ca2c",
+    "research/data/atlas.json": "b8a85777d9b7c55b699cc2665cefeb479048e42544b401a7f93d8c55d5bbfd34",
+    "research/followup/arabia/northern_early_noachian_cells.csv": "e5a93d4814bfdf9efc533815018f7a7fd0d1a91b75fcfa351049111c25eb0d70"
+  },
+  "radius_for_geodesics_km": 3389.5,
+  "magnetic_reference_radius_km": 3393.5,
+  "magnetic_model": "Langlais et al. 2019, degree 134, evaluated directly from local coefficients",
+  "altitudes_km": [
+    150,
+    400
+  ],
+  "primary_altitude_km": 150,
+  "station_rule": "All unique vertices of the supplied closed polyline; drop duplicated final vertex. Base-curve Voronoi arc weights: half previous plus half next segment length.",
+  "normal_rule": "Spherical tangent from points 100 km before and after each station along its own closed polyline; project onto tangent plane. Choose south normal by opposite-side probes 50 km away using the original boundary for the real line. Transport the orientation to each shifted line.",
+  "tangent_half_window_km": 100,
+  "orientation_probe_km": 50,
+  "offset_distances_km": [
+    200,
+    400,
+    600
+  ],
+  "primary_offset_km": 200,
+  "line_shifts_south_km": [
+    0,
+    500,
+    1000
+  ],
+  "shift_rule": "Move each original station along its original south normal; recompute tangents/normals on the shifted line. Keep original station correspondence and original arc weights. Shifted lines may fold; record geometry defects rather than assuming a valid null.",
+  "boundary_classification": "Curve2Mask at 0.25 degree nodes, nearest node; exclude real pairs unless north endpoint is north and south endpoint is south. Both endpoints and center of a shifted control must lie south of the true boundary.",
+  "geology": "Direct point classification in authorized USGS SIM 3292 polygons; ambiguous/unassigned points excluded; no nearest-atlas age interpolation",
+  "selections": [
+    "both_pure_noachian",
+    "same_noachian_epoch_rank"
+  ],
+  "primary_selection": "both_pure_noachian",
+  "noachian_rule": "Single-period N codes only; exclude mixed HN/AN etc. Both Noachian does not imply equal epoch. Same rank is a stricter sensitivity, with undivided N and mN sharing rank 2.",
+  "control_center_rule": "Require shifted center itself to be pure Noachian, in addition to its pair endpoints.",
+  "observable": "log(1 + |B_south| / 1 nT) - log(1 + |B_north| / 1 nT)",
+  "blocks": {
+    "nominal_length_km": 1000,
+    "closure": "Choose round(total_length/1000) equal arc bins to tile the closed curve without a short leftover block",
+    "offset_fractions": [
+      0,
+      0.5
+    ],
+    "minimum_retained_arc_weight_km": 200,
+    "primary_offset_fraction": 0,
+    "statistic": "Arc-weighted within-block mean, then equal-block-weighted mean; also report total retained arc-weighted mean descriptively",
+    "minimum_blocks_for_calibration": 8
+  },
+  "comparisons": [
+    "each_line_on_its_own_selection",
+    "real_minus_shift500_on_common_stations",
+    "real_minus_shift1000_on_common_stations"
+  ],
+  "common_rule": "For each distance and age selection, use the intersection valid on all three lines for both negative-control comparisons. Do not compare means on different support as a specificity test.",
+  "sign_flips": {
+    "seed": 20260928,
+    "draws": 10000,
+    "exact_if_blocks_at_most": 12,
+    "sidedness": "two-sided",
+    "meaning": "Conditional reference under joint invariance to whole-block sign reversal, not guaranteed by a 1000 km bin label"
+  },
+  "synthetic_null": {
+    "performed_before_observed_field": true,
+    "field": "Stationary zero-mean Gaussian log-field on 3-D spherical coordinates, approximated by 512 random Fourier features; evaluated on the actual selected stations and same block operators",
+    "correlation_lengths_km": [
+      160,
+      500,
+      1000
+    ],
+    "features": 512,
+    "realizations_per_length": 1000,
+    "nominal_alpha": 0.05,
+    "maximum_empirical_false_positive_rate": 0.075,
+    "scope": "Calibrate primary 150 km-equivalent geometry, d=200 km, both-Noachian, zero block offset: real line and two common-support differences. Same synthetic log-field definition for each geometry; no magnetic outcomes used.",
+    "gate": "Fewer than eight retained blocks or any tested null exceeding 7.5% false positives prevents a calibrated observed significance claim. Passing these nulls is conditional evidence, not proof of real-data exchangeability."
+  },
+  "interpretation": "Neither a positive step nor a small specificity difference selects an archive or field mechanism uniquely. No equivalence claim from a non-significant test. Broad Noachian matching does not control lithology, depth, reheating or spatial leakage.",
+  "regional_23": {
+    "definitions": "User-suggested geographic groups, fixed by coordinate boxes; labels are descriptive, not independently mapped geological provinces",
+    "regions": {
+      "Xanthe_Chryse": {
+        "latitude": [
+          5,
+          17
+        ],
+        "longitude": [
+          303,
+          309
+        ]
+      },
+      "Cimmeria_margin": {
+        "latitude": [
+          -13,
+          -11
+        ],
+        "longitude": [
+          177,
+          185
+        ]
+      },
+      "Arabia_margin": {
+        "latitude": [
+          21,
+          23
+        ],
+        "longitude": [
+          337,
+          339
+        ]
+      },
+      "Tempe": {
+        "latitude": [
+          45,
+          45
+        ],
+        "longitude": [
+          289,
+          291
+        ]
+      }
+    },
+    "summaries": "Area-weighted arithmetic mean |B|, back-transformed mean log(1+|B|) matching the original Test 1 statistic, and contribution to the total weighted log signal",
+    "strong_anomaly_distance": "Nearest southern atlas cell center with model |B| >= 100 nT at 150 km; declared descriptive threshold, 2 degree grid, not source localization or proof of contamination"
+  }
+}

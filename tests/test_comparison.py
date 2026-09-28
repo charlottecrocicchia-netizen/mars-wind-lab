@@ -91,8 +91,11 @@ class Navigation(HTMLParser):
         if tag=='nav':self.inside=False
 
 
-def test_navigation_has_the_same_five_destinations_on_all_pages():
-    expected=['/','/research/data','/research/tests','/research/comparison','/research/library']
+def test_navigation_has_the_same_destinations_on_all_pages():
+    import sys;sys.path.insert(0,str(ROOT/'scripts/research'))
+    from site_layout import DESTINATIONS
+    expected=[url for url,_ in DESTINATIONS]
+    assert len(expected)==4
     for path in (ROOT/'web').rglob('*.html'):
         parser=Navigation();parser.feed(path.read_text())
         assert parser.links==expected,path

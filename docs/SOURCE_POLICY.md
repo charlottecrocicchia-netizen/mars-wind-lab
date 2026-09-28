@@ -4,7 +4,11 @@ This independent project uses its own analysis implementation, published scienti
 
 ## Code and numerical methods
 
-The project-specific Python diagnostics, scalar finite-element benchmark and thin Fortran batch adapter are maintained here. The scalar benchmark is derived from the documented differential equation in [Scientific method](SCIENTIFIC_METHOD.md), and checked against uniform-column analytic frequencies, convergence and uniform-advection identities. It is not a reconstruction or translation of the former internship software. A complete coupled solid-planet/atmosphere solver remains future work; the scalar benchmark is not a substitute for such a solver.
+The density–remanence follow-up reuses existing authorized project outputs, isolated cited material-property facts, and original mass-balance calculations. No new external dataset, article figure or third-party implementation is redistributed. Its [source ledger](../research/followup/mixture/sources.json) records the numerical facts, reading depth and conditional use; mineral-property scenarios do not establish the composition or porosity of Martian source rocks.
+
+The project-specific Python diagnostics, scalar finite-element benchmark and thin Fortran batch adapter are maintained here. The scalar benchmark is derived from the documented differential equation in the [historical atmospheric method](archive/ATMOSPHERIC_METHOD.md), and checked against uniform-column analytic frequencies, convergence and uniform-advection identities. It is not a reconstruction or translation of the former internship software. A complete coupled solid-planet/atmosphere solver remains future work; the scalar benchmark is not a substitute for such a solver.
+
+The rapid-body and reversal-identifiability calculations use original analytic and synthetic implementations with no newly redistributed external dataset or source code. Their reports distinguish cited mathematical methods from numerical results produced here. The pre-correction body snapshot is preserved for audit, not presented as current results. Website and GitHub link corrections do not change the saved scientific arrays; editorial manifest entries identify such report-only updates.
 
 Third-party packages retain their licenses. Plotly's MIT notice is retained in `web/PLOTLY-LICENSE.txt`; the NASA decorative asset has its own [credit and usage references](ASSETS.md). A publication may be read and cited without making its text, figures or accompanying software freely reusable.
 
@@ -34,6 +38,8 @@ The acquisition registry is `scripts/data/sources.json`; the recorded file ident
 - Weiss 2025 article and supplement: recorded CC BY-NC-ND 4.0. Do not adapt or redistribute protected figures/text as if openly licensed for adaptation. The retained numerical inventory is an attributed transcription with separately authored notes.
 
 These entries record source metadata, not a blanket authorization for all uses. Check the actual product's terms before adding it or changing its use, especially before publication or commercial deployment. Keep raw research PDFs local and out of Git.
+
+The Arabia Terra preflight adds the numerical named-feature outline from [USGS Gazetteer feature 336](https://planetarynames.wr.usgs.gov/Feature/336), detailed geometry `wkt-25452`. Its attribution, retrieval timestamp and reuse basis are embedded in `research/followup/arabia/arabia_polygon.geojson`. The [USGS public-domain and credit policy](https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits) covers USGS-produced numerical information. The supplied outline represents an approximate named-feature extent, not a geological boundary. No article figure, third-party map image or additional restricted archive was incorporated.
 
 ## Open permission questions
 

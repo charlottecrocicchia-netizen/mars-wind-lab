@@ -1,0 +1,23 @@
+{
+  "generated_utc": "2026-09-28T20:23:23.104720+00:00",
+  "code_sha256": {
+    "src/marswind/rapid_bodies.py": "9af39ca7817a680ac7ad08e245a31f8a45e28a6f774697ed9942a4efabe1c2ab",
+    "src/marswind/recording.py": "d8646f46ac7f9e1b84bc26e5834f64c31de222358adce728c049f4e28dfdec9e",
+    "scripts/followup/rapid_bodies.py": "267518b4571335ee3c2e4eaecdf69132e5c5c0fe653133a932c07ca888840212"
+  },
+  "outputs_sha256": {
+    "bodies.png": "0f0e03465b77cd4192ac0404ef9f6b8fa1b3c0350e69413af6f489cde207e5c9",
+    "bodies.svg": "40374cb202871853139c2ac692f035fec2b102595b8f28920b7a079b6511af48",
+    "protocol.json": "ffd9c00da74376ace51e1601c78afadeac693989d33d5dc7c48f9c1d49bdfcfe",
+    "retention.csv": "0272beb549a0b4f3bc6d453dda903e05fb316dc8765ab30fa05c3c772ab97d01",
+    "stack.csv": "b72498121261559e3d0a44f450128595cb294c2f98526c9c862d989ba9e95d41",
+    "summary.json": "4e73b0ebb1b5647a389f5f7e20c0ee94ea86393c6038c62aa25535aa4c4df7f4",
+    "thickness_bounds.json": "eee739835be62d33f6c111cd4708c8f86e91310caef160566d96715ef13bcfc9"
+  },
+  "software": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  },
+  "report_sha256": "b57e4d06a08f9978177ff0e232b42fc09d88c163209b144f8378ff5b48216c69"
+}

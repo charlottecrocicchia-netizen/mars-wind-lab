@@ -1,0 +1,27 @@
+{
+  "generated_utc": "2026-09-28T14:33:05.796472+00:00",
+  "inputs_sha256": {
+    "research/data/atlas.json": "b8a85777d9b7c55b699cc2665cefeb479048e42544b401a7f93d8c55d5bbfd34",
+    "research/data/depths.json": "3f763e592258675cd709a0207c262a1a2761b1f120378c26517d51bee874b579",
+    "research/discriminating/amplitude_windows.csv": "22c52cbce74c5023962dbfb8f4d3e74b903a8a80bba66d17f0735d5675e0769b"
+  },
+  "code_sha256": {
+    "src/marswind/depth_age.py": "7368508ad04956cd27c340e00c9ef472d133ac9a6c6e17851d7e46bb43a98edc",
+    "src/marswind/agetransfer.py": "4036116985b7dfb94c4ca572b8fccc92c003b857dee98bd3453d98d7ef386a30",
+    "scripts/followup/depth_age.py": "3b47f58702ac62b249895a3ec645bc7cf9c8d1cc5bdefd93bc3c79f6bb3b89e7"
+  },
+  "outputs_sha256": {
+    "correlations.csv": "fca362441dd4847a2be20717311ff10b2cb0bbb15734ae240edd2a9fd0485e5a",
+    "depth_age.png": "3f2d6b4ce7e30ae64cfebb9b65ac67fcb305d68d7175999d5f71cf833e087ef5",
+    "depth_age.svg": "e6857056180c49da346dd34c21a39dc1a48512f34d58f6d652b8a7a51153b38b",
+    "depth_by_noachian_fraction.csv": "21f6f41086c9f8ee5976096eac814cc8a269e58d6835fbab4d565553f1d40922",
+    "protocol.json": "946338e8707c1c792371b6e8e4ded5e53813aad9576214aed25d5f577b9eca40",
+    "summary.json": "1f989a77b3cb8ea035df3f24e91d42bb3cd6562b64bf36c1a392681d7fd95533",
+    "windows.csv": "e0085c806a5cb1a46ec173a0c505dabcb95ab45ab8338590632b20bb9bcc6fcd"
+  },
+  "software": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  }
+}

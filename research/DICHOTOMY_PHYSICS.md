@@ -1,6 +1,6 @@
 # Three physical tests of the Martian dichotomy
 
-Executed 27 September 2026. [Open the interactive workbench](/research/physics) · [Learn the magnetic methods](PALEOMAGNETISM_FOUNDATIONS.md).
+Executed 27 September 2026. [Open the interactive workbench](DICHOTOMY_PHYSICS.md) · [Learn the magnetic methods](PALEOMAGNETISM_FOUNDATIONS.md).
 
 We implemented three bounded calculations from published ideas and permitted inputs. They expose what an explanation must account for. **They do not identify the origin of the dichotomy, recover a dated ancient boundary, or establish a new discovery.** Differentiation, thermal amplification and flexural deformation already have substantial published prior art.
 

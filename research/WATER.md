@@ -12,7 +12,7 @@ This mechanism has published precedents. [Mittelholz et al. (2025)](https://doi.
 
 The November 2023 [MOCAAS archive](https://www.ias.u-psud.fr/moccas/) is downloaded and processed: five mineral-class maps from OMEGA/Mars Express and five from CRISM/MRO. The classes include Fe/Mg clays, Al clays/hydrated silica, sulfate groups, and carbonate/locally serpentine signatures. The map preserves the source's class ambiguities. [Carter et al. (2023)](https://doi.org/10.1016/j.icarus.2022.115164).
 
-The [interactive water view](/research/data?view=water) compares those detections with topography or the crustal field at 150 km. A 2° marker means at least one native detection in that cell. It is neither a deposit centroid nor the altered fraction of the cell. Every nonzero raster pixel is included before aggregation, and instrument overlaps are unioned.
+The [interactive water view](data/README.md?view=water) compares those detections with topography or the crustal field at 150 km. A 2° marker means at least one native detection in that cell. It is neither a deposit centroid nor the altered fraction of the cell. Every nonzero raster pixel is included before aggregation, and instrument overlaps are unioned.
 
 The [numerical product](data/water.json) records input hashes, processing code hashes and occupied cells. Original rasters remain local because the archive does not state an explicit reuse license. We publish a coarse project-computed occupancy summary and the retrieval/processing code.
 
@@ -24,7 +24,7 @@ This audit identifies what must be supplied before a hypothesis test is valid. R
 
 ## A separate clock inside a meteorite
 
-[Tremblay et al. (2024)](https://doi.org/10.7185/geochemlet.2443) date Lafayette iddingsite alteration to **742 ± 15 Ma (2σ)**. The authors interpret local, transient activity; the result is not evidence for a global ocean at that time. Keep this event separate from the rock's much older crystallization and its later ejection. It does not automatically date Lafayette's magnetic component. The [Lafayette entry](/research/data?view=laboratory&sample=lafayette) shows these clocks separately.
+[Tremblay et al. (2024)](https://doi.org/10.7185/geochemlet.2443) date Lafayette iddingsite alteration to **742 ± 15 Ma (2σ)**. The authors interpret local, transient activity; the result is not evidence for a global ocean at that time. Keep this event separate from the rock's much older crystallization and its later ejection. It does not automatically date Lafayette's magnetic component. The [Lafayette entry](data/README.md?view=laboratory&sample=lafayette) shows these clocks separately.
 
 Fluid histories can be constrained through mineral assemblages and chemistry as well as age. [Bridges & Schwenzer (2012)](https://www.sciencedirect.com/science/article/pii/S0012821X12005407) model the nakhlite hydrothermal brine. Such modeled conditions are conditional constraints, not direct thermometer measurements from every nakhlite.
 

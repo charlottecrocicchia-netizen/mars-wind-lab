@@ -1,6 +1,6 @@
 # Read the rock before inferring the ancient field
 
-A short learning path tied to this project's actual controls. [Open the interactive example](/research/physics?view=paleomagnetism) · [Three physical studies](DICHOTOMY_PHYSICS.md).
+A short learning path tied to this project's actual controls. [Open the interactive example](DICHOTOMY_PHYSICS.md?view=paleomagnetism) · [Three physical studies](DICHOTOMY_PHYSICS.md).
 
 The central question is not simply whether a rock is magnetic. It is **which process made each component, when that happened, and how its response relates to the field we want to infer**. Direction, strength and acquisition age require different evidence.
 
@@ -27,7 +27,7 @@ Induced magnetization depends on a present field; remanence persists after remov
 
 Demagnetization progressively changes the measured vector. A fitted line can describe one segment; a plane can describe another geometry. Component analysis is associated with [Kirschvink (1980)](https://doi.org/10.1111/j.1365-246X.1980.tb02601.x). Our existing SVD implementation reports angular scatter through MAD. **MAD is not a confidence interval on the ancient field and does not establish antiquity.** We accessed the publisher's summary in this pass, not the full methodological paper.
 
-In our already executed contaminated NWA control, 19 of 32 candidate fits have MAD below 5°. They overlap and are not 32 independent specimens. The published [hand-magnet study](https://doi.org/10.1029/2022JE007464) is why these data are a contamination control, not evidence for 19 ancient fields. [Inspect the actual fits](/research/experiments?view=laboratory).
+In our already executed contaminated NWA control, 19 of 32 candidate fits have MAD below 5°. They overlap and are not 32 independent specimens. The published [hand-magnet study](https://doi.org/10.1029/2022JE007464) is why these data are a contamination control, not evidence for 19 ancient fields. [Inspect the actual fits](EXECUTED_EXPERIMENTS.md?view=laboratory).
 
 **Project exercise:** selecting the straightest segment produces a small MAD. What has improved? The geometric description of that selected segment. What is still missing? Evidence for its acquisition process, age, specimen orientation and independence from later overprints. A sample-coordinate direction cannot be promoted to a Martian geographic direction without an orientation history.
 
@@ -75,13 +75,13 @@ This table is a project admission rule for future claims. It is not a claim that
 
 [Nagy et al. (2017)](https://doi.org/10.1073/pnas.1708344114) show why retention cannot be reduced to a single-domain-only rule: suitable vortex-state magnetite can be very stable. Their result is not a license to assign a billion-year lifetime to every grain. Our thermal histories test temperature compatibility; they do not calculate a specimen-specific micromagnetic retention probability.
 
-For each project sample, we must keep the following clocks distinct: crystallization, chemical alteration, shock, acquisition or resetting of the magnetic component, and ejection. A crystallization age does not automatically date every remanent component. A proposed source crater does not restore a lost specimen orientation. The [event timeline](/research/comparison?view=timeline) makes these distinctions visible.
+For each project sample, we must keep the following clocks distinct: crystallization, chemical alteration, shock, acquisition or resetting of the magnetic component, and ejection. A crystallization age does not automatically date every remanent component. A proposed source crater does not restore a lost specimen orientation. The [event timeline](COMPARISON.md?view=timeline) makes these distinctions visible.
 
 **Project exercise:** a modeled rock stays below its selected ordering temperature after an impact. Is its ancient record proved intact? **No.** Grain-scale relaxation, chemical change, shock and earlier history remain unresolved. The model has only passed its stated temperature test.
 
 ## 6. Keep local magnetic evidence separate from a planetary dynamo claim
 
-Our [recording experiment](/research/experiments?view=recording) already constructs different input field histories with the same recovered contribution. Our [detection experiment](/research/experiments?view=detection) shows how source geometry and altitude filter a signal. These are project examples of non-uniqueness, not proofs of which history occurred on Mars.
+Our [recording experiment](EXECUTED_EXPERIMENTS.md?view=recording) already constructs different input field histories with the same recovered contribution. Our [detection experiment](EXECUTED_EXPERIMENTS.md?view=detection) shows how source geometry and altitude filter a signal. These are project examples of non-uniqueness, not proofs of which history occurred on Mars.
 
 A weak orbital anomaly is therefore not, by itself, a date for dynamo shutdown. A measured meteorite component is also not a direct observation of a planet-wide dipole. A planetary inference needs a spatial and chronological sampling argument, compatible recording processes, and comparisons with alternative field geometries and overprints.
 

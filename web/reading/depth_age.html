@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Source depth against surface age — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css?v=design1"><link rel="stylesheet" href="/assets/workspace.css?v=20260927-design"></head><body class="workspace">
+<a class="skip" href="#article">Skip to the article</a><header class="workspace-header"><a href="/" class="wordmark"><i></i><span>Martian dichotomy<small>CHARLOTTE CROCICCHIA</small></span></a><nav aria-label="Main navigation" lang="en"><a href="/">Questions &amp; answers</a><a href="/research/method">How we work</a><a href="/research/tests">Results</a><a href="/research/explore" aria-current="page">Explore</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">FIVE READING DOSSIERS</p><a href="/research/dossiers/science">Scientific context</a><a href="/research/dossiers/literature">Literature method</a><a href="/research/dossiers/experiments">Earlier experiments</a><a href="/research/dossiers/interdisciplinary">Interdisciplinary review</a><a href="/research/dossiers/audit" aria-current="page">Audit and current evidence</a></aside><article class="prose" id="article"><div class="collection-context"><p>Current technical reference</p><a href="/research/dossiers/audit">← Audit and current evidence</a><span> · </span><a href="/research/tests">Current results →</a></div><h1 id="source-depth-against-surface-age">Source depth against surface age</h1>
+<p><strong>Status: calculation completed · 295 usable source-depth windows (107 north, 188 south).</strong> <a href="/research/files/followup/depth_age/protocol.json">Protocol</a> · <a href="/research/files/followup/depth_age/windows.csv">Per-window table</a> · <a href="/research/files/followup/depth_age/correlations.csv">All correlations</a> · <a href="/research/files/followup/depth_age/manifest.json">Manifest</a></p>
+<h2 id="why">Why</h2>
+<p>Gong &amp; Wieczorek (2021) report equivalent source depths of about 9 km in the north and 32 km in the south and read this as excavation of northern material by the Borealis impact. A resurfacing-archive explanation of the weak north makes a different prediction: where young surfaces removed, buried or reheated the shallow record, the surviving northern sources should be deeper, so depth should increase as the Noachian fraction of the overlying surface decreases. The prediction and the decision rule were written into the protocol before any depth or field value was read.</p>
+<h2 id="how">How</h2>
+<p>For each usable window (nonnegative best fit with published 1σ bounds) the area-weighted Noachian fraction and mean epoch rank of the USGS SIM 3292 units are computed within 10° and 20° of the window centre on the 2° atlas. Windows with more than 25% unassigned area are dropped. The rank correlation between depth (best fit, lower and upper 1σ bound) and each surface summary is computed per hemisphere. Because windows are 10° apart with 20° radii, the interval comes from a block bootstrap over six 60° longitude wedges (offsets 0° and 30°), 2,000 draws. Twelve cases per hemisphere and covariate; an association is reported only if all twelve share a sign and the primary interval excludes zero.</p>
+<h2 id="result">Result</h2>
+<table>
+<thead>
+<tr>
+<th>Hemisphere</th>
+<th style="text-align: right;">Primary ρ (depth vs Noachian fraction, 10°, best depth)</th>
+<th>5–95% block interval</th>
+<th style="text-align: right;">Wedges</th>
+<th>Sign consistent across 12 cases</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>North</td>
+<td style="text-align: right;">+0.21</td>
+<td>[-0.03, +0.40]</td>
+<td style="text-align: right;">6</td>
+<td>False</td>
+<td>no supported dependence</td>
+</tr>
+<tr>
+<td>South</td>
+<td style="text-align: right;">-0.12</td>
+<td>[-0.27, +0.09]</td>
+<td style="text-align: right;">6</td>
+<td>False</td>
+<td>no supported dependence</td>
+</tr>
+</tbody>
+</table>
+<p>Median equivalent depth by Noachian fraction within 10°:</p>
+<table>
+<thead>
+<tr>
+<th>North: Noachian fraction</th>
+<th style="text-align: right;">Windows</th>
+<th style="text-align: right;">Median depth (km)</th>
+<th style="text-align: right;">Mean depth (km)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.00–0.25</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td>0.25–0.50</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td>0.50–0.75</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td>0.75–1.00</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">38</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>South: Noachian fraction</th>
+<th style="text-align: right;">Windows</th>
+<th style="text-align: right;">Median depth (km)</th>
+<th style="text-align: right;">Mean depth (km)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.00–0.25</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">39</td>
+</tr>
+<tr>
+<td>0.25–0.50</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr>
+<td>0.50–0.75</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr>
+<td>0.75–1.00</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">31</td>
+</tr>
+</tbody>
+</table>
+<p>All declared cases at offset 0° (offset 30° is in the CSV):</p>
+<table>
+<thead>
+<tr>
+<th>North</th>
+<th>Radius</th>
+<th>Depth variant</th>
+<th style="text-align: right;">Windows</th>
+<th style="text-align: right;">ρ</th>
+<th>5–95%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>noachian fraction</td>
+<td>10°</td>
+<td>best</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">+0.21</td>
+<td>[-0.03, +0.40]</td>
+</tr>
+<tr>
+<td>noachian fraction</td>
+<td>10°</td>
+<td>lower 1sigma</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">+0.25</td>
+<td>[+0.11, +0.53]</td>
+</tr>
+<tr>
+<td>noachian fraction</td>
+<td>10°</td>
+<td>upper 1sigma</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">-0.23</td>
+<td>[-0.36, -0.09]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>10°</td>
+<td>best</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">-0.20</td>
+<td>[-0.39, +0.07]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>10°</td>
+<td>lower 1sigma</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">-0.16</td>
+<td>[-0.41, -0.02]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>10°</td>
+<td>upper 1sigma</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">+0.23</td>
+<td>[+0.05, +0.44]</td>
+</tr>
+<tr>
+<td>noachian fraction</td>
+<td>20°</td>
+<td>best</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">+0.18</td>
+<td>[-0.09, +0.42]</td>
+</tr>
+<tr>
+<td>noachian fraction</td>
+<td>20°</td>
+<td>lower 1sigma</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">+0.36</td>
+<td>[+0.22, +0.61]</td>
+</tr>
+<tr>
+<td>noachian fraction</td>
+<td>20°</td>
+<td>upper 1sigma</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">-0.34</td>
+<td>[-0.50, -0.16]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>20°</td>
+<td>best</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">-0.20</td>
+<td>[-0.38, +0.03]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>20°</td>
+<td>lower 1sigma</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">-0.20</td>
+<td>[-0.50, -0.03]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>20°</td>
+<td>upper 1sigma</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">+0.27</td>
+<td>[+0.07, +0.50]</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>South</th>
+<th>Radius</th>
+<th>Depth variant</th>
+<th style="text-align: right;">Windows</th>
+<th style="text-align: right;">ρ</th>
+<th>5–95%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>noachian fraction</td>
+<td>10°</td>
+<td>best</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">-0.12</td>
+<td>[-0.27, +0.09]</td>
+</tr>
+<tr>
+<td>noachian fraction</td>
+<td>10°</td>
+<td>lower 1sigma</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">+0.09</td>
+<td>[-0.04, +0.26]</td>
+</tr>
+<tr>
+<td>noachian fraction</td>
+<td>10°</td>
+<td>upper 1sigma</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">-0.18</td>
+<td>[-0.36, +0.06]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>10°</td>
+<td>best</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">+0.16</td>
+<td>[-0.07, +0.34]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>10°</td>
+<td>lower 1sigma</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">-0.14</td>
+<td>[-0.31, +0.03]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>10°</td>
+<td>upper 1sigma</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">+0.28</td>
+<td>[+0.04, +0.44]</td>
+</tr>
+<tr>
+<td>noachian fraction</td>
+<td>20°</td>
+<td>best</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">-0.07</td>
+<td>[-0.29, +0.16]</td>
+</tr>
+<tr>
+<td>noachian fraction</td>
+<td>20°</td>
+<td>lower 1sigma</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">+0.07</td>
+<td>[-0.11, +0.28]</td>
+</tr>
+<tr>
+<td>noachian fraction</td>
+<td>20°</td>
+<td>upper 1sigma</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">-0.10</td>
+<td>[-0.28, +0.10]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>20°</td>
+<td>best</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">+0.11</td>
+<td>[-0.16, +0.35]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>20°</td>
+<td>lower 1sigma</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">-0.14</td>
+<td>[-0.34, +0.03]</td>
+</tr>
+<tr>
+<td>mean rank</td>
+<td>20°</td>
+<td>upper 1sigma</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">+0.21</td>
+<td>[-0.03, +0.40]</td>
+</tr>
+</tbody>
+</table>
+<p>For context, depth against log RMS field at 150 km: north ρ = -0.04 [-0.43, +0.40], south ρ = +0.14 [-0.05, +0.35]. Gong &amp; Wieczorek's statement that the strongest anomalies are associated with deep sources can be checked against these values.</p>
+<p><img alt="Depth against Noachian fraction" src="/research/files/followup/depth_age/depth_age.png" /></p>
+<h2 id="reading">Reading</h2>
+<p>The verdict follows the declared rule. A reported association would mean that, within one hemisphere, windows over younger surfaces have systematically different equivalent depths; it would not date the sources, identify a mechanism, or separate resurfacing from lateral variations in crustal structure. No supported dependence would mean that this dataset cannot distinguish the two declared predictions at the 60° wedge scale. Six wedges is a coarse resampling unit; the intervals are correspondingly wide and should be read as such.</p>
+<h2 id="limits">Limits</h2>
+<p>Equivalent thin-layer depths are model quantities from one field model, with 1σ bounds that often span tens of kilometres. The 2° map units summarise surface age coarsely and mixed-period units are averaged. Windows overlap heavily; the wedge bootstrap addresses one scale of dependence only. No p-value is computed.</p>
+<h2 id="reproduce">Reproduce</h2>
+<pre><code class="language-bash">python scripts/followup/depth_age.py
+python -m pytest -q tests/test_depth_age.py
+python scripts/research/render_docs.py
+</code></pre><div class="reading-tools"><a href="/research/explore#dossiers">← Reading dossiers</a><a href="/research/files/DEPTH_AGE.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/DEPTH_AGE.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Living research notes · Check each article’s date, sources and limitations.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>

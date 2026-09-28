@@ -1,0 +1,41 @@
+{
+  "generated_by": "scripts/followup/boundary_walk.py",
+  "input_sha256": {
+    "data/observations/raw/crustal_models/selected/dichotomy_coordinates-JAH-0-360.txt": "42f2b9f32c9e9100ef4a9977171a54654c3bf25602555945405a93ca45ac6bb2",
+    "data/observations/raw/geology/units.json": "7bdc007316104b7017dfb7f6fb4a87a136ff5afb520b248c3570465e5a024880",
+    "data/observations/raw/magnetic_field/Langlais2019.sh.gz": "3cad9e268f0673be1702f1df504a4cbcb8dba4480c7b3f629921911488fe247b",
+    "data/observations/raw/mola/megt90n000cb.img": "25f16fb7aaf857898dcf98bc4f841341a24f8b9f7e98453ca083bc45d897ca2c",
+    "research/data/atlas.json": "b8a85777d9b7c55b699cc2665cefeb479048e42544b401a7f93d8c55d5bbfd34",
+    "research/followup/arabia/northern_early_noachian_cells.csv": "e5a93d4814bfdf9efc533815018f7a7fd0d1a91b75fcfa351049111c25eb0d70"
+  },
+  "protocol_sha256": "af2bd5de1c733eb3cbdafd90d824e41a6fc7e7a725b7f6c0e5942b3a655ca337",
+  "code_sha256": {
+    "scripts/followup/boundary_walk.py": "ff0de7d0d396f5c8c18ca91ce8bbef6fe05e4c6791b63e48573156ff3050bd35",
+    "src/marswind/boundary_walk.py": "a945ba90ec13369d43acedf85d0b7ba40ae1bae96e672b7fdb68ccc319c631b9",
+    "src/marswind/agetransfer.py": "4036116985b7dfb94c4ca572b8fccc92c003b857dee98bd3453d98d7ef386a30",
+    "src/marswind/spatial_matching.py": "30bfac6e03746f76e52e3e507319ba32cb964980c4346c654993ed142e5cceb3",
+    "scripts/followup/render_boundary_walk.py": "f8bab91815ba15faee99f1b43e8a3e86b16139c429628877e4d58f505b9738f4"
+  },
+  "outputs_sha256": {
+    "block_contrasts.csv": "97be48584b1e37c14107719e04eea3808919a69ec9b32173e1c47a89d9f657ae",
+    "boundary_walk.png": "7aad59be6898d7545beeee0ecf44a61ea5ea179613cdc5f1c74624b2cd7af213",
+    "boundary_walk.svg": "3610c2cc98b22c54be0be6715bb392874c34fe38415eab0dcf151666cd1be0e2",
+    "contrasts.csv": "136b602b35534e8b53189948287997df459ad6870f8857842f20e772761a45fb",
+    "geometry.npz": "7fa93e232c111ee021dbcd8f6f30e1456953ebcf3ab515ea43b34034729e2bf1",
+    "geometry_and_eligibility.csv": "ab688abf3a32d65f36cae2a2ea7920bd99fab3c158e6a61fa2c0413dc1f3917f",
+    "geometry_summary.json": "a742d72681be7c2848ca7c4c81a8ead461b15f48eeb5ca937a1c375b94958da0",
+    "protocol.json": "af2bd5de1c733eb3cbdafd90d824e41a6fc7e7a725b7f6c0e5942b3a655ca337",
+    "regional_23_cells.csv": "12d2e1669c3635bbee59bab00cd351ad5e6ff1aac7196359497d5f4b388a5662",
+    "regional_23_summary.csv": "60bc67f270d220c51e26c39bcad5af22a9aa942ff47afd5a6389bf7fed05ea1e",
+    "selected_field_values.csv": "299e518c21e36f7a8a440182a2d827c6ee311e81d1653ca75fbc825343b936b2",
+    "summary.json": "bcdd34242394443cfc36fe3bf3a6c88f479568e2129ba0de2984b0d9fac9a50f",
+    "synthetic_null.json": "8c2e4ba53e2479d2c218afa845f2d08a1add9335517d839a30e95066ce335f85"
+  },
+  "software": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "pyshtools": "4.14.1",
+    "shapely": "2.1.2"
+  },
+  "report_sha256": "d06bef84020c6c29580a284562bdd53c9ca3b26af5eddd41332623ee47935780"
+}

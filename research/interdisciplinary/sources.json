@@ -1,0 +1,1009 @@
+{
+  "schema_version": 1,
+  "assessment_date": "2026-09-28",
+  "scope": "Targeted interdisciplinary review; separate from the 1990-record discovery catalog. Inclusion does not mean complete reading.",
+  "complete_methodological_audits": 0,
+  "status_definitions": {
+    "selected_sections": "Selected original full-text passages consulted; no complete methods/supplement/reproduction audit.",
+    "abstract": "Original author/publisher abstract consulted, including publisher-supplied Crossref or Europe PMC copies.",
+    "producer_documentation": "Original data-producer documentation consulted; not a complete paper reading.",
+    "preview": "Limited primary publisher/author indexed excerpts or book previews consulted.",
+    "prior_assessment": "Earlier project assessment reconsulted; original source not freshly read beyond available preview this pass.",
+    "metadata": "Bibliographic identification only; a reading lead, not scientific supporting evidence."
+  },
+  "sources": [
+    {
+      "id": "andrews2008",
+      "citation_label": "Andrews-Hanna et al., 2008",
+      "title": "The Borealis basin and the origin of the martian crustal dichotomy",
+      "year": 2008,
+      "doi": "10.1038/nature07011",
+      "url": "https://doi.org/10.1038/nature07011",
+      "domain": "Origin and crust",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "PubMed abstract.",
+      "finding": "Tharsis-compensated geometry supports a northern basin interpretation.",
+      "limitation": "Reconstruction and compensation assumptions matter; geometry is not a unique impact diagnosis.",
+      "dependency_groups": [
+        "gravity_topography"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "ballantyne2023",
+      "citation_label": "Ballantyne et al., 2023",
+      "title": "Investigating the feasibility of an impact-induced Martian Dichotomy",
+      "year": 2023,
+      "doi": "10.1016/j.icarus.2022.115395",
+      "url": "https://doi.org/10.1016/j.icarus.2022.115395",
+      "domain": "Origin and crust",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Author arXiv abstract, https://arxiv.org/abs/2212.02466.",
+      "finding": "Impact feasibility depends on material strength and initial conditions.",
+      "limitation": "Simulation feasibility is not identification of the historical event.",
+      "dependency_groups": [
+        "impact_models"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "cheng2024",
+      "citation_label": "Cheng et al., 2024",
+      "title": "Combined impact and interior evolution models in three dimensions indicate a southern impact origin of the Martian Dichotomy",
+      "year": 2024,
+      "doi": "10.1016/j.icarus.2024.116137",
+      "url": "https://doi.org/10.1016/j.icarus.2024.116137",
+      "domain": "Origin and crust",
+      "source_kind": "research_article",
+      "reading_status": "prior_assessment",
+      "consulted": "Existing project abstract assessment and current indexed author preview; author PDF could not be opened.",
+      "finding": "Impact and subsequent interior evolution are modelled together.",
+      "limitation": "Full methods and parameter coverage were not reassessed; conditional southern-impact preference.",
+      "dependency_groups": [
+        "impact_models"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "bonnet2022",
+      "citation_label": "Bonnet Gibet et al., 2022",
+      "title": "A Positive Feedback Between Crustal Thickness and Melt Extraction for the Origin of the Martian Dichotomy",
+      "year": 2022,
+      "doi": "10.1029/2022je007472",
+      "url": "https://doi.org/10.1029/2022JE007472",
+      "domain": "Origin and crust",
+      "source_kind": "research_article",
+      "reading_status": "prior_assessment",
+      "consulted": "Earlier project source notes; full-text access blocked in this pass.",
+      "finding": "Asymmetric crust growth can be amplified through thermal/melt feedback.",
+      "limitation": "An amplification mechanism does not automatically establish its initial trigger or degree-one selection.",
+      "dependency_groups": [
+        "thermal_models"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "bonnet2025",
+      "citation_label": "Bonnet Gibet et al., 2025",
+      "title": "Martian Highlands Differentiation Concomitant to Dichotomy Formation",
+      "year": 2025,
+      "doi": "10.1029/2024je008486",
+      "url": "https://doi.org/10.1029/2024JE008486",
+      "domain": "Origin and crust",
+      "source_kind": "research_article",
+      "reading_status": "selected_sections",
+      "consulted": "DLR author PDF: abstract and introductory/model-context passages.",
+      "finding": "Parameterized evolution links dichotomy growth and highland differentiation.",
+      "limitation": "A simplified mantle/lithosphere framework is not a regional reconstruction.",
+      "dependency_groups": [
+        "thermal_models"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "wieczorek2022",
+      "citation_label": "Wieczorek et al., 2022",
+      "title": "InSight Constraints on the Global Character of the Martian Crust",
+      "year": 2022,
+      "doi": "10.1029/2022je007298",
+      "url": "https://doi.org/10.1029/2022JE007298",
+      "domain": "Origin and crust",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Publisher-supplied Crossref abstract.",
+      "finding": "Local seismic information constrains global crustal models.",
+      "limitation": "Global thickness remains conditional on density, composition and modelling assumptions.",
+      "dependency_groups": [
+        "gravity_topography",
+        "insight"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "kim2023",
+      "citation_label": "Kim et al., 2023",
+      "title": "Global Crustal Thickness Revealed by Surface Waves Orbiting Mars",
+      "year": 2023,
+      "doi": "10.1029/2023gl103482",
+      "url": "https://doi.org/10.1029/2023GL103482",
+      "domain": "Origin and crust",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Publisher-supplied Crossref abstract.",
+      "finding": "Orbiting surface waves constrain path-averaged crustal structure.",
+      "limitation": "Sparse paths and adopted structure do not constitute uniform global seismic sampling.",
+      "dependency_groups": [
+        "insight"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "goossens2026",
+      "citation_label": "Goossens and Sabaka, 2026",
+      "title": "Crustal Density Differences Along Mars' Dichotomy Boundary From Gravity and Topography",
+      "year": 2026,
+      "doi": "10.1029/2026gl122393",
+      "url": "https://doi.org/10.1029/2026GL122393",
+      "domain": "Origin and crust",
+      "source_kind": "research_article",
+      "reading_status": "producer_documentation",
+      "consulted": "NASA product description, model variants and uncertainty description: https://pgda.gsfc.nasa.gov/products/102.",
+      "finding": "Boundary-constrained gravity analysis supplies alternative density estimates and ensembles.",
+      "limitation": "Paper methods not fully audited; estimates and covariance-derived clones form one inference family.",
+      "dependency_groups": [
+        "gravity_topography"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "mackay2026",
+      "citation_label": "Mackay-Champion et al., 2026",
+      "title": "Seismic evidence for a melt-depleted lower crust and transcrustal magmatism on Mars",
+      "year": 2026,
+      "doi": "10.1038/s41550-026-02907-5",
+      "url": "https://doi.org/10.1038/s41550-026-02907-5",
+      "domain": "Origin and crust",
+      "source_kind": "research_article",
+      "reading_status": "selected_sections",
+      "consulted": "Publisher main text and selected modelling passages.",
+      "finding": "Petrological interpretation links local deeper crust to melt-depleted cumulates.",
+      "limitation": "Local InSight inference and assumed mineral equilibria do not establish a global layer.",
+      "dependency_groups": [
+        "insight",
+        "petrology"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "mclennan2026",
+      "citation_label": "McLennan et al., 2026",
+      "title": "Composition of the Martian Crust and Its Relationship to the Martian Mantle: A Post‐InSight View",
+      "year": 2026,
+      "doi": "10.1029/2025rg000882",
+      "url": "https://doi.org/10.1029/2025RG000882",
+      "domain": "Origin and crust",
+      "source_kind": "review",
+      "reading_status": "abstract",
+      "consulted": "Publisher abstract and availability statement.",
+      "finding": "Review connects post-InSight crustal composition and mantle inventories.",
+      "limitation": "Synthesis estimates are not additional independent observations.",
+      "dependency_groups": [
+        "review_of_shared_inputs"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "berne2026",
+      "citation_label": "Berne et al., 2026",
+      "title": "Tidal tomography reveals a thermal anomaly beneath Mars’s crustal dichotomy",
+      "year": 2026,
+      "doi": "10.1038/s41586-026-10893-x",
+      "url": "https://doi.org/10.1038/s41586-026-10893-x",
+      "domain": "Interior and dynamo",
+      "source_kind": "research_article",
+      "reading_status": "selected_sections",
+      "consulted": "Publisher abstract, thermal interpretation and selected methods passages.",
+      "finding": "Tidal interpretation indicates a present southern thermal anomaly.",
+      "limitation": "Temperature conversion depends on rheology and corrections; origin and ancient temperature remain indirect.",
+      "dependency_groups": [
+        "gravity_tides"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "sun2025",
+      "citation_label": "Sun and Tkalčić, 2024 online / 2025 issue",
+      "title": "Constraints on the Origin of the Martian Dichotomy From Southern Highlands Marsquakes",
+      "year": 2024,
+      "doi": "10.1029/2024gl110921",
+      "url": "https://doi.org/10.1029/2024GL110921",
+      "domain": "Interior and dynamo",
+      "source_kind": "research_article",
+      "reading_status": "preview",
+      "consulted": "Publisher indexed passages and earlier project notes.",
+      "finding": "Southern marsquakes add regional attenuation evidence.",
+      "limitation": "Source, scattering and geometry complicate thermal and origin interpretations; date conventions differ.",
+      "dependency_groups": [
+        "insight"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "samuel2023",
+      "citation_label": "Samuel et al., 2023",
+      "title": "Geophysical evidence for an enriched molten silicate layer above Mars’s core",
+      "year": 2023,
+      "doi": "10.1038/s41586-023-06601-8",
+      "url": "https://doi.org/10.1038/s41586-023-06601-8",
+      "domain": "Interior and dynamo",
+      "source_kind": "research_article",
+      "reading_status": "prior_assessment",
+      "consulted": "Prior project abstract assessment reconsulted; no complete current methods reading.",
+      "finding": "A molten silicate layer changes interpretation of core structure.",
+      "limitation": "Present structure does not independently date the dynamo or establish its past power source.",
+      "dependency_groups": [
+        "insight"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "bi2025",
+      "citation_label": "Bi et al., 2025",
+      "title": "Seismic detection of a 600-km solid inner core in Mars",
+      "year": 2025,
+      "doi": "10.1038/s41586-025-09361-9",
+      "url": "https://doi.org/10.1038/s41586-025-09361-9",
+      "domain": "Interior and dynamo",
+      "source_kind": "research_article",
+      "reading_status": "selected_sections",
+      "consulted": "Publisher abstract, main interpretation and selected phase-identification methods.",
+      "finding": "Seismic phases are interpreted as a present solid inner core.",
+      "limitation": "Inference depends on phase assignment and structure; associated correction must accompany reuse.",
+      "dependency_groups": [
+        "insight"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "bi2025correction",
+      "citation_label": "Bi et al., 2025 correction",
+      "title": "Author Correction: Seismic detection of a 600-km solid inner core in Mars",
+      "year": 2025,
+      "doi": "10.1038/s41586-025-09981-1",
+      "url": "https://doi.org/10.1038/s41586-025-09981-1",
+      "domain": "Interior and dynamo",
+      "source_kind": "correction",
+      "reading_status": "prior_assessment",
+      "consulted": "Correction linked on main article; earlier project correction note reconsulted. Current full notice could not be reopened.",
+      "finding": "Correction notice associated with the inner-core paper.",
+      "limitation": "Not an independent result; details must be rechecked before numerical reproduction.",
+      "dependency_groups": [
+        "insight"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "pierru2026",
+      "citation_label": "Pierru et al., 2026",
+      "title": "Experimental constraints on a long-lived magma layer at the Martian core–mantle boundary",
+      "year": 2026,
+      "doi": "10.1038/s41561-026-02104-z",
+      "url": "https://doi.org/10.1038/s41561-026-02104-z",
+      "domain": "Interior and dynamo",
+      "source_kind": "research_article",
+      "reading_status": "preview",
+      "consulted": "Publisher indexed abstract/material-physics excerpts; direct full page unavailable.",
+      "finding": "Experiments constrain the physical viability of dense basal melts.",
+      "limitation": "A laboratory constraint is not a direct Martian boundary-layer detection; full methods outstanding.",
+      "dependency_groups": [
+        "experimental_materials"
+      ],
+      "metadata_provenance": "Primary publisher, author repository or original abstract metadata",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "langlais2019",
+      "citation_label": "Langlais et al., 2019",
+      "title": "A New Model of the Crustal Magnetic Field of Mars Using MGS and MAVEN",
+      "year": 2019,
+      "doi": "10.1029/2018je005854",
+      "url": "https://doi.org/10.1029/2018JE005854",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "prior_assessment",
+      "consulted": "Catalog abstract and existing project magnetic-model notes reconsulted.",
+      "finding": "MGS and MAVEN measurements support a crustal field model.",
+      "limitation": "A field map is not a unique source-magnetization or paleointensity map.",
+      "dependency_groups": [
+        "mgs_maven"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "gong2021",
+      "citation_label": "Gong and Wieczorek, 2021",
+      "title": "Depth of Martian Magnetization From Localized Power Spectrum Analysis",
+      "year": 2021,
+      "doi": "10.1029/2020je006690",
+      "url": "https://doi.org/10.1029/2020JE006690",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Publisher-supplied Crossref abstract.",
+      "finding": "Localized magnetic spectra constrain equivalent source depths.",
+      "limitation": "Thin-source and spectral assumptions do not give unique physical layer boundaries.",
+      "dependency_groups": [
+        "mgs_maven"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "mittelholz2020",
+      "citation_label": "Mittelholz et al., 2020",
+      "title": "Timing of the martian dynamo: New constraints for a core field 4.5 and 3.7 Ga ago",
+      "year": 2020,
+      "doi": "10.1126/sciadv.aba0513",
+      "url": "https://doi.org/10.1126/sciadv.aba0513",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "prior_assessment",
+      "consulted": "Existing project abstract/source notes reconsulted.",
+      "finding": "Selected geological units imply possible early and later dynamo activity.",
+      "limitation": "Orbital sources inherit uncertain geological age association.",
+      "dependency_groups": [
+        "mgs_maven",
+        "geological_ages"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "steele2023",
+      "citation_label": "Steele et al., 2023",
+      "title": "Paleomagnetic evidence for a long-lived, potentially reversing martian dynamo at ~3.9 Ga",
+      "year": 2023,
+      "doi": "10.1126/sciadv.ade9071",
+      "url": "https://doi.org/10.1126/sciadv.ade9071",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Author abstract, https://dash.harvard.edu/entities/publication/68f0ab8f-d50d-4cd5-bdaa-81e9052b9dca.",
+      "finding": "ALH 84001 components support an ancient, potentially reversing field interpretation.",
+      "limitation": "Acquisition chronology and coordinate reconstruction remain necessary.",
+      "dependency_groups": [
+        "alh84001"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "steele2024",
+      "citation_label": "Steele et al., 2024",
+      "title": "Weak magnetism of Martian impact basins may reflect cooling in a reversing dynamo",
+      "year": 2024,
+      "doi": "10.1038/s41467-024-51092-4",
+      "url": "https://doi.org/10.1038/s41467-024-51092-4",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Publisher indexed abstract; complete page could not be opened this pass.",
+      "finding": "Reversing fields during cooling can reduce basin-scale magnetic signals.",
+      "limitation": "Tested basin sizes and carrier/cooling assumptions limit extrapolation.",
+      "dependency_groups": [
+        "basin_recording_models"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "steele2025",
+      "citation_label": "Steele, Fu and Day, 2025",
+      "title": "Magnetic Properties of Martian Impact Basins Including the Effect of Mantle Excavation",
+      "year": 2025,
+      "doi": "10.1029/2025je009173",
+      "url": "https://doi.org/10.1029/2025JE009173",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "metadata",
+      "consulted": "Author publication list: https://jmdday.scrippsprofiles.ucsd.edu/publications/.",
+      "finding": "Lead for assessing mantle excavation and basin magnetic properties.",
+      "limitation": "Primary scientific text not assessed here; not used as supporting result.",
+      "dependency_groups": [
+        "basin_recording_models"
+      ],
+      "metadata_provenance": "Primary publisher, author repository or original abstract metadata",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "yan2025",
+      "citation_label": "Yan et al., 2025",
+      "title": "Mars' Hemispheric Magnetic Field From a Full‐Sphere Dynamo",
+      "year": 2025,
+      "doi": "10.1029/2024gl113926",
+      "url": "https://doi.org/10.1029/2024GL113926",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "selected_sections",
+      "consulted": "Publisher abstract and indexed introductory/discussion sections.",
+      "finding": "Nonuniform core-boundary heat flux can produce asymmetric full-sphere dynamos.",
+      "limitation": "Imposed boundary conditions and temporal averaging must match rock recording.",
+      "dependency_groups": [
+        "dynamo_models"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "vervelidou2023",
+      "citation_label": "Vervelidou et al., 2023",
+      "title": "Hand Magnets and the Destruction of Ancient Meteorite Magnetism",
+      "year": 2023,
+      "doi": "10.1029/2022je007464",
+      "url": "https://doi.org/10.1029/2022JE007464",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Publisher abstract; earlier project selected-section notes retained separately.",
+      "finding": "Handling overprints compromise the tested meteorites magnetic archives.",
+      "limitation": "The investigated stones do not represent every untested paired stone or invalidate their geochemistry.",
+      "dependency_groups": [
+        "nwa7034_suite"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "volk2021",
+      "citation_label": "Volk et al., 2021",
+      "title": "Paleointensity and Rock Magnetism of Martian Nakhlite Meteorite Miller Range 03346: Evidence for Intense Small‐Scale Crustal Magnetization on Mars",
+      "year": 2021,
+      "doi": "10.1029/2021je006856",
+      "url": "https://doi.org/10.1029/2021JE006856",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "prior_assessment",
+      "consulted": "Existing project selected-section assessment reconsulted.",
+      "finding": "MIL 03346 permits a local crustal-field interpretation of a young record.",
+      "limitation": "A young recorded field need not be a core dynamo; no new intensity extracted here.",
+      "dependency_groups": [
+        "nakhlites"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "gattacceca2013",
+      "citation_label": "Gattacceca et al., 2013",
+      "title": "Opaque minerals, magnetic properties, and paleomagnetism of the Tissint Martian meteorite",
+      "year": 2013,
+      "doi": "10.1111/maps.12172",
+      "url": "https://doi.org/10.1111/maps.12172",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "prior_assessment",
+      "consulted": "Existing project mineralogical and magnetic source notes reconsulted.",
+      "finding": "Tissint links carrier properties and remanence interpretations.",
+      "limitation": "Crystallization age cannot substitute automatically for acquisition age.",
+      "dependency_groups": [
+        "tissint"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "mansbach2024",
+      "citation_label": "Mansbach et al., 2024",
+      "title": "Likely Ferromagnetic Minerals Identified by the Perseverance Rover and Implications for Future Paleomagnetic Analyses of Returned Martian Samples",
+      "year": 2024,
+      "doi": "10.1029/2024je008505",
+      "url": "https://doi.org/10.1029/2024JE008505",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "preview",
+      "consulted": "Publisher indexed abstract and introductory passages.",
+      "finding": "Perseverance observations identify promising magnetic-mineral candidates.",
+      "limitation": "Carrier identification does not supply returned-sample laboratory paleointensity.",
+      "dependency_groups": [
+        "perseverance"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "du2023",
+      "citation_label": "Du et al., 2023",
+      "title": "Ground magnetic survey on Mars from the Zhurong rover",
+      "year": 2023,
+      "doi": "10.1038/s41550-023-02008-7",
+      "url": "https://doi.org/10.1038/s41550-023-02008-7",
+      "domain": "Magnetic recording",
+      "source_kind": "research_article",
+      "reading_status": "prior_assessment",
+      "consulted": "Catalog abstract and existing regional source notes reconsulted.",
+      "finding": "Zhurong measures a weak local northern surface field.",
+      "limitation": "One traverse cannot characterize all northern crustal magnetization.",
+      "dependency_groups": [
+        "zhurong"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "bouvier2018",
+      "citation_label": "Bouvier et al., 2018",
+      "title": "Evidence for extremely rapid magma ocean crystallization and crust formation on Mars",
+      "year": 2018,
+      "doi": "10.1038/s41586-018-0222-z",
+      "url": "https://doi.org/10.1038/s41586-018-0222-z",
+      "domain": "Chronology and water",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Original article abstract served through Europe PMC.",
+      "finding": "Ancient zircon dates and Hf modelling constrain early crustal production.",
+      "limitation": "Mineral ages and source model ages are different constraints; neither dates the dichotomy directly.",
+      "dependency_groups": [
+        "nwa7034_suite"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "borg2025",
+      "citation_label": "Borg and Kruijer, 2025",
+      "title": "A tale of two planets: Disparate evolutionary models for Mars inferred from radiogenic isotope compositions of Martian meteorites",
+      "year": 2025,
+      "doi": "10.1073/pnas.2404257121",
+      "url": "https://doi.org/10.1073/pnas.2404257121",
+      "domain": "Chronology and water",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Original article abstract served through Europe PMC; PMC full page blocked.",
+      "finding": "Different meteorite groups imply different reservoir histories.",
+      "limitation": "Meteorite-source histories do not uniquely map onto hemispheres.",
+      "dependency_groups": [
+        "meteorite_isotopes"
+      ],
+      "metadata_provenance": "Primary publisher, author repository or original abstract metadata",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "gillespie2024",
+      "citation_label": "Gillespie et al., 2024",
+      "title": "Zircon trace element evidence for early hydrothermal activity on Mars",
+      "year": 2024,
+      "doi": "10.1126/sciadv.adq3694",
+      "url": "https://doi.org/10.1126/sciadv.adq3694",
+      "domain": "Chronology and water",
+      "source_kind": "research_article",
+      "reading_status": "selected_sections",
+      "consulted": "Europe PMC abstract plus accessible indexed original discussion passages.",
+      "finding": "Zircon chemistry and inclusions support an early hydrothermal interpretation.",
+      "limitation": "The studied grain does not yield a measured ancient paleofield or global water inventory.",
+      "dependency_groups": [
+        "nwa7034_suite"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "tremblay2024",
+      "citation_label": "Tremblay et al., 2024",
+      "title": "Dating recent aqueous activity on Mars",
+      "year": 2024,
+      "doi": "10.7185/geochemlet.2443",
+      "url": "https://doi.org/10.7185/geochemlet.2443",
+      "domain": "Chronology and water",
+      "source_kind": "research_article",
+      "reading_status": "selected_sections",
+      "consulted": "Publisher methods, results and diffusion/resetting discussion: https://www.geochemicalperspectivesletters.org/article2443/.",
+      "finding": "Micro-encapsulated Ar-Ar analyses date Lafayette iddingsite.",
+      "limitation": "Alteration dating is local and is not magnetic acquisition dating; diffusion assumptions matter.",
+      "dependency_groups": [
+        "nakhlites"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "mittelholz2025",
+      "citation_label": "Mittelholz et al., 2025",
+      "title": "Gravity and Magnetic Field Signatures in Hydrothermally Affected Regions on Mars",
+      "year": 2025,
+      "doi": "10.1029/2024je008832",
+      "url": "https://doi.org/10.1029/2024JE008832",
+      "domain": "Chronology and water",
+      "source_kind": "research_article",
+      "reading_status": "selected_sections",
+      "consulted": "DLR article PDF, abstract and joint-inversion method, especially section 3.2.1.",
+      "finding": "Joint gravity/magnetic structures are interpreted in hydrothermal contexts.",
+      "limitation": "Structural coupling is imposed as regularization; association is not independent proof of alteration.",
+      "dependency_groups": [
+        "gravity_topography",
+        "mgs_maven"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "carter2023",
+      "citation_label": "Carter et al., 2023",
+      "title": "A Mars orbital catalog of aqueous alteration signatures (MOCAAS)",
+      "year": 2023,
+      "doi": "10.1016/j.icarus.2022.115164",
+      "url": "https://doi.org/10.1016/j.icarus.2022.115164",
+      "domain": "Chronology and water",
+      "source_kind": "research_article",
+      "reading_status": "prior_assessment",
+      "consulted": "Earlier project abstract and data-policy assessment reconsulted.",
+      "finding": "Orbital mineral detections map exposed aqueous alteration signatures.",
+      "limitation": "Nondetection depends on coverage and exposure; no new raw data redistributed.",
+      "dependency_groups": [
+        "orbital_spectroscopy"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "scheller2021",
+      "citation_label": "Scheller et al., 2021",
+      "title": "Long-term drying of Mars by sequestration of ocean-scale volumes of water in the crust",
+      "year": 2021,
+      "doi": "10.1126/science.abc7717",
+      "url": "https://doi.org/10.1126/science.abc7717",
+      "domain": "Chronology and water",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Original article abstract served through Europe PMC.",
+      "finding": "Crustal sequestration can contribute substantially in water-evolution models.",
+      "limitation": "Fractions depend on assumed reservoirs and fluxes; not a direct measured global partition.",
+      "dependency_groups": [
+        "water_budget_models"
+      ],
+      "metadata_provenance": "Primary publisher, author repository or original abstract metadata",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "wright2024",
+      "citation_label": "Wright, Morzfeld and Manga, 2024",
+      "title": "Liquid water in the Martian mid-crust",
+      "year": 2024,
+      "doi": "10.1073/pnas.2409983121",
+      "url": "https://doi.org/10.1073/pnas.2409983121",
+      "domain": "Chronology and water",
+      "source_kind": "research_article",
+      "reading_status": "preview",
+      "consulted": "Author-repository indexed abstract and result excerpts.",
+      "finding": "Rock-physics interpretation favours water-filled fractured mid-crust beneath InSight.",
+      "limitation": "Alternative material models and global extrapolation remain separate questions.",
+      "dependency_groups": [
+        "insight"
+      ],
+      "metadata_provenance": "Primary publisher, author repository or original abstract metadata",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "naver2026",
+      "citation_label": "Naver et al., 2026",
+      "title": "Direct Detection of Hydrogen Reveals a New Macroscopic Crustal Water Reservoir on Early Mars",
+      "year": 2026,
+      "doi": "10.1029/2026gl121841",
+      "url": "https://doi.org/10.1029/2026GL121841",
+      "domain": "Chronology and water",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Publisher indexed abstract; article published 13 August 2026.",
+      "finding": "Combined imaging identifies hydrogen-bearing material in NWA 7034.",
+      "limitation": "Full origin/weathering controls and scaling to global inventory require methods audit.",
+      "dependency_groups": [
+        "nwa7034_suite"
+      ],
+      "metadata_provenance": "Primary publisher, author repository or original abstract metadata",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "udry2025",
+      "citation_label": "Udry et al., 2025",
+      "title": "Fundamental constraints and questions from the study of Martian meteorites and the need for returned samples",
+      "year": 2025,
+      "doi": "10.1073/pnas.2404254121",
+      "url": "https://doi.org/10.1073/pnas.2404254121",
+      "domain": "Chronology and water",
+      "source_kind": "review",
+      "reading_status": "abstract",
+      "consulted": "Publisher-supplied Crossref abstract.",
+      "finding": "Meteorite review identifies sampling gaps and returned-sample needs.",
+      "limitation": "Coverage statements refer to the sample set assessed at publication, not all later finds.",
+      "dependency_groups": [
+        "review_of_shared_inputs"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "curry2025",
+      "citation_label": "Curry et al., 2025",
+      "title": "First direct observations of atmospheric sputtering at Mars",
+      "year": 2025,
+      "doi": "10.1126/sciadv.adt1538",
+      "url": "https://doi.org/10.1126/sciadv.adt1538",
+      "domain": "Climate and escape",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Original article abstract served through Europe PMC.",
+      "finding": "MAVEN observations identify present atmospheric sputtering.",
+      "limitation": "Present escape observations are not a directly measured ancient integrated loss.",
+      "dependency_groups": [
+        "maven_atmosphere"
+      ],
+      "metadata_provenance": "Primary publisher, author repository or original abstract metadata",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "gunell2018",
+      "citation_label": "Gunell et al., 2018",
+      "title": "Why an intrinsic magnetic field does not protect a planet against atmospheric escape",
+      "year": 2018,
+      "doi": "10.1051/0004-6361/201832934",
+      "url": "https://doi.org/10.1051/0004-6361/201832934",
+      "domain": "Climate and escape",
+      "source_kind": "research_article",
+      "reading_status": "preview",
+      "consulted": "Publisher indexed abstract and discussion excerpts.",
+      "finding": "Escape pathways respond differently to intrinsic magnetization in idealized comparisons.",
+      "limitation": "Neither universal shielding nor universal enhancement follows for every atmosphere and epoch.",
+      "dependency_groups": [
+        "escape_models"
+      ],
+      "metadata_provenance": "Primary publisher, author repository or original abstract metadata",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "wordsworth2021",
+      "citation_label": "Wordsworth et al., 2021",
+      "title": "A coupled model of episodic warming, oxidation and geochemical transitions on early Mars",
+      "year": 2021,
+      "doi": "10.1038/s41561-021-00701-8",
+      "url": "https://doi.org/10.1038/s41561-021-00701-8",
+      "domain": "Climate and escape",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Publisher abstract.",
+      "finding": "Coupled atmospheric/geochemical modelling explores episodic warming and oxidation.",
+      "limitation": "A conditional climate history is not a measured global sequence.",
+      "dependency_groups": [
+        "climate_models"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "adams2025",
+      "citation_label": "Adams et al., 2025",
+      "title": "Episodic warm climates on early Mars primed by crustal hydration",
+      "year": 2025,
+      "doi": "10.1038/s41561-024-01626-8",
+      "url": "https://doi.org/10.1038/s41561-024-01626-8",
+      "domain": "Climate and escape",
+      "source_kind": "research_article",
+      "reading_status": "preview",
+      "consulted": "Author abstract and indexed model passages; author repository and Caltech manuscript located.",
+      "finding": "Hydration-associated chemistry can supply hydrogen for episodic warm climates in a model.",
+      "limitation": "Net fluid/reactant budgets and atmospheric assumptions must be carried into any joint model.",
+      "dependency_groups": [
+        "climate_models"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "mcneil2025",
+      "citation_label": "McNeil et al., 2025",
+      "title": "Dichotomy retreat and aqueous alteration on Noachian Mars recorded in highland remnants",
+      "year": 2025,
+      "doi": "10.1038/s41561-024-01634-8",
+      "url": "https://doi.org/10.1038/s41561-024-01634-8",
+      "domain": "Surface and orbital history",
+      "source_kind": "research_article",
+      "reading_status": "preview",
+      "consulted": "Publisher abstract and indexed methods excerpts.",
+      "finding": "Highland remnants near Mawrth preserve evidence of alteration and margin retreat.",
+      "limitation": "Regional remnant mapping does not reconstruct the entire primordial boundary.",
+      "dependency_groups": [
+        "orbital_geology"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "carboni2025",
+      "citation_label": "Carboni et al., 2025",
+      "title": "Gravity-driven fold-thrust belt at the Martian dichotomy",
+      "year": 2025,
+      "doi": "10.1016/j.epsl.2025.119645",
+      "url": "https://doi.org/10.1016/j.epsl.2025.119645",
+      "domain": "Surface and orbital history",
+      "source_kind": "research_article",
+      "reading_status": "preview",
+      "consulted": "Publisher indexed preview and existing project abstract notes.",
+      "finding": "Nilosyrtis structures motivate gravity-driven extension and shortening.",
+      "limitation": "Mapped kinematics cannot be replaced by a simple topographic flexure fit.",
+      "dependency_groups": [
+        "orbital_geology"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "bouley2016",
+      "citation_label": "Bouley et al., 2016",
+      "title": "Late Tharsis formation and implications for early Mars",
+      "year": 2016,
+      "doi": "10.1038/nature17171",
+      "url": "https://doi.org/10.1038/nature17171",
+      "domain": "Surface and orbital history",
+      "source_kind": "research_article",
+      "reading_status": "abstract",
+      "consulted": "Publisher abstract.",
+      "finding": "Tharsis timing and reorientation affect reconstructed paleogeography.",
+      "limitation": "Reference-frame choices do not independently establish every event age or climate history.",
+      "dependency_groups": [
+        "orbital_geology",
+        "rotation_models"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "li2025",
+      "citation_label": "Li et al., 2025",
+      "title": "Ancient ocean coastal deposits imaged on Mars",
+      "year": 2025,
+      "doi": "10.1073/pnas.2422213122",
+      "url": "https://doi.org/10.1073/pnas.2422213122",
+      "domain": "Surface and orbital history",
+      "source_kind": "research_article",
+      "reading_status": "selected_sections",
+      "consulted": "Author PDF: abstract and early results/discussion pages.",
+      "finding": "Buried dipping radar reflectors are interpreted as coastal deposits along the traverse.",
+      "limitation": "Local sedimentary interpretation and regional age context do not identify a synchronous global shoreline.",
+      "dependency_groups": [
+        "zhurong"
+      ],
+      "metadata_provenance": "existing project catalog",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "rosenblatt2016",
+      "citation_label": "Rosenblatt et al., 2016",
+      "title": "Accretion of Phobos and Deimos in an extended debris disc stirred by transient moons",
+      "year": 2016,
+      "doi": "10.1038/ngeo2742",
+      "url": "https://doi.org/10.1038/ngeo2742",
+      "domain": "Surface and orbital history",
+      "source_kind": "research_article",
+      "reading_status": "preview",
+      "consulted": "Publisher abstract preview.",
+      "finding": "An impact debris disc with transient moons can form small satellites in simulations.",
+      "limitation": "Does not prove the satellite-forming event was the dichotomy-forming impact.",
+      "dependency_groups": [
+        "satellite_models"
+      ],
+      "metadata_provenance": "Primary publisher, author repository or original abstract metadata",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "canup2018",
+      "citation_label": "Canup and Salmon, 2018",
+      "title": "Origin of Phobos and Deimos by the impact of a Vesta-to-Ceres sized body with Mars",
+      "year": 2018,
+      "doi": "10.1126/sciadv.aar6887",
+      "url": "https://doi.org/10.1126/sciadv.aar6887",
+      "domain": "Surface and orbital history",
+      "source_kind": "research_article",
+      "reading_status": "preview",
+      "consulted": "Indexed original PMC abstract and model excerpts.",
+      "finding": "Impact-disc evolution offers another satellite-formation parameter range.",
+      "limitation": "A feasible disc model does not uniquely determine Mars impact history.",
+      "dependency_groups": [
+        "satellite_models"
+      ],
+      "metadata_provenance": "Crossref exact DOI response, 2026-09-28",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "tauxe",
+      "citation_label": "Tauxe and collaborators, online edition accessed 2026",
+      "title": "Essentials of Paleomagnetism",
+      "year": null,
+      "doi": null,
+      "url": "https://pmagpy.github.io/Essentials-JupyterBook/",
+      "domain": "Books and foundations",
+      "source_kind": "book",
+      "reading_status": "selected_sections",
+      "consulted": "Selected passages in chapters 6 (mineralogy), 7 (remanence) and 10 (paleointensity).",
+      "finding": "Physical foundation for carrier, acquisition and experimental-validity questions.",
+      "limitation": "Not a complete reading; planetary conclusions require Mars-specific observations.",
+      "dependency_groups": [
+        "physical_foundations"
+      ],
+      "metadata_provenance": "Author textbook or publisher page",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "dunlop1997",
+      "citation_label": "Dunlop and Özdemir, 1997",
+      "title": "Rock Magnetism: Fundamentals and Frontiers",
+      "year": 1997,
+      "doi": "10.1017/CBO9780511612794",
+      "url": "https://doi.org/10.1017/CBO9780511612794",
+      "domain": "Books and foundations",
+      "source_kind": "book",
+      "reading_status": "preview",
+      "consulted": "Cambridge publisher description and table of contents.",
+      "finding": "Reading route for mineral, grain-state and remanence physics.",
+      "limitation": "Book chapters were not read in this pass; no detailed argument rests on this preview.",
+      "dependency_groups": [
+        "physical_foundations"
+      ],
+      "metadata_provenance": "Author textbook or publisher page",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "taylor2009",
+      "citation_label": "Taylor and McLennan, 2008/2009",
+      "title": "Planetary Crusts: Their Composition, Origin and Evolution",
+      "year": 2009,
+      "doi": "10.1017/CBO9780511575358",
+      "url": "https://doi.org/10.1017/CBO9780511575358",
+      "domain": "Books and foundations",
+      "source_kind": "book",
+      "reading_status": "preview",
+      "consulted": "Cambridge frontmatter and contents, especially Mars chapters 5–6. Publisher print-date metadata says 2008; inspected frontmatter says first published 2009.",
+      "finding": "Reading route for comparative differentiation and crustal geochemistry.",
+      "limitation": "No complete chapter reading; publication-date variants retained explicitly.",
+      "dependency_groups": [
+        "physical_foundations"
+      ],
+      "metadata_provenance": "Author textbook or publisher page",
+      "assessment_date": "2026-09-28"
+    },
+    {
+      "id": "barlow2008",
+      "citation_label": "Barlow, 2008",
+      "title": "Mars: An Introduction to its Interior, Surface and Atmosphere",
+      "year": 2008,
+      "doi": null,
+      "url": "https://www.cambridge.org/core/books/mars-an-introduction-to-its-interior-surface-and-atmosphere/58F3894495CB56B382E37EB0B498491A/listing",
+      "domain": "Books and foundations",
+      "source_kind": "book",
+      "reading_status": "preview",
+      "consulted": "Cambridge chapter summaries/preview.",
+      "finding": "Whole-planet framework connecting interior, surface and atmosphere.",
+      "limitation": "Pre-InSight reference; chapter previews are not a reading of the complete book.",
+      "dependency_groups": [
+        "physical_foundations"
+      ],
+      "metadata_provenance": "Author textbook or publisher page",
+      "assessment_date": "2026-09-28"
+    }
+  ]
+}

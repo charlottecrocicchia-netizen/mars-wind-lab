@@ -57,6 +57,6 @@ No new paleointensity, provenance assignment or magnetization inversion is compu
 
 ## Expanded laboratory and paleointensity coverage
 
-The site now has a [16-entry study explorer](/research/data?view=laboratory): all 15 entries in Weiss et al. (2025), SI Table S1, plus the NWA paired-stone contamination suite. It includes MIL 03346, ALH 84001, EETA 79001, LEW 88516, GRV 020090, Yamato 000593, Shergotty, Zagami, Tissint, SaU 005, Dho 019, Nakhla, Governador Valadares, Lafayette and Chassigny. This population is distinct from the 94-record chronology table.
+The site now has a [16-entry study explorer](data/README.md?view=laboratory): all 15 entries in Weiss et al. (2025), SI Table S1, plus the NWA paired-stone contamination suite. It includes MIL 03346, ALH 84001, EETA 79001, LEW 88516, GRV 020090, Yamato 000593, Shergotty, Zagami, Tissint, SaU 005, Dho 019, Nakhla, Governador Valadares, Lafayette and Chassigny. This population is distinct from the 94-record chronology table.
 
 MIL laboratory files and the ALH MagIC archive are now downloaded, alongside the NWA measurements. See [Primary and secondary remanence](RECORDING.md) for interpretation and exact coverage, and [Water and alteration](WATER.md) for the separately dated Lafayette alteration and orbital mineral products. Missing raw curves are explicitly labelled; published estimates are not presented as newly measured values.

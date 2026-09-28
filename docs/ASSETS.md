@@ -4,7 +4,7 @@ The README's Python-version and code-license badges are original SVG labels in `
 
 ## Repository screenshots
 
-`docs/images/site-overview.png` and `docs/images/meteorite-atlas.png` are unaltered browser captures of the local research website taken on 27 September 2026. The second image shows the meteorite atlas with Karratha selected. These are interface previews of the committed research snapshot, not new measurements or inferred meteorite locations.
+`docs/images/site-overview.png` is an unaltered browser capture of the current home page, refreshed on 28 September 2026. `docs/images/meteorite-atlas.png`, captured on 27 September, shows the meteorite atlas with Karratha selected. These are interface previews of the saved research snapshot, not new measurements or inferred meteorite locations.
 
 The map and globe use the existing authorized MOLA display grid; meteorite proposals retain their source links and uncertainty labels. Underlying data attribution and terms remain in the [manifest](../research/data/manifest.json) and [meteorite records](../research/data/meteorites.json). Capture only the website viewport when refreshing these images, so browser controls and unrelated personal information are excluded.
 

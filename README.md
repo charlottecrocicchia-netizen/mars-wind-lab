@@ -2,9 +2,9 @@
 
 # Martian Dichotomy
 
-### One planet. Two different histories?
+### Why does Mars preserve such different magnetic records in the north and south?
 
-**Interactive maps, original experiments and a traceable research notebook.**
+**Public observations · Reproducible physical tests · An interactive research atlas**
 
 A personal research project by **Charlotte Crocicchia** · Mars Wind Lab
 
@@ -12,59 +12,58 @@ A personal research project by **Charlotte Crocicchia** · Mars Wind Lab
 [![Python 3.11+](docs/images/python-version.svg)](pyproject.toml)
 [![Code license: MIT](docs/images/code-license.svg)](LICENSE)
 
-[Explore the project](#explore-the-project) · [Research results](#what-the-tests-show) · [Run locally](#run-locally) · [Methods & sources](#methods--sources)
+[Start reading](research/STATE_OF_EVIDENCE.md) · [Explore the research](research/README.md) · [Run the website](#run-the-website) · [Reproduce the work](docs/DEVELOPMENT.md)
 
 </div>
 
-![The research website: a blue Mars globe, proposed meteorite sources and the question “One planet. Two different histories?”](docs/images/site-overview.png)
+![The research website, with four navigation entries and the current magnetic, crustal and ground-field comparisons](docs/images/site-overview.png)
 
-Mars has low northern plains and high southern terrain. How did that contrast form, and what can rocks, crustal structure and magnetic records tell us about its history?
+Mars has low northern plains, high southern terrain and a strong contrast in its crustal magnetic field. Did the ancient field differ between hemispheres, or did the rocks record and preserve it differently?
 
-This workspace brings the evidence together so you can **explore a place, inspect a measurement, compare an explanation and follow a calculation**. Observations, published interpretations and our own experiments remain clearly identified. The origin of the dichotomy is still an open question.
+This project brings together **geology, gravity, crustal structure, thermal history, rock magnetism, paleomagnetism and meteorite chronology**. It combines an attributed literature collection, interactive maps and original numerical calculations. Each result states its assumptions, evidence and limits.
 
-## Explore the project
+**Current snapshot · 28 September 2026:** six discriminating tests, six follow-ups and documented implementation corrections. The work constrains possible histories; it does **not** establish a unique origin of the Martian dichotomy. Scientific notes are prepared with AI assistance and internal checks, without a claim of external peer review.
 
-| On the website | What you can do | Read on GitHub |
+## Choose your starting point
+
+| You want to… | Start here |
+| --- | --- |
+| **Understand what we have learned** | [Where the evidence stands](research/STATE_OF_EVIDENCE.md) — observations, conditional results and unresolved questions |
+| **Follow the scientific reasoning** | [Research guide](research/README.md) — the six tests, follow-ups and reading routes |
+| **Explore maps and samples** | [Run the website](#run-the-website), then follow the [short interface guide](docs/USAGE.md) |
+| **Inspect or reproduce a result** | [Development and reproduction](docs/DEVELOPMENT.md) — required inputs, commands and saved outputs |
+| **Check sources or contribute** | [Source policy](docs/SOURCE_POLICY.md), [validation](docs/VALIDATION.md) and [contributing guide](CONTRIBUTING.md) |
+
+## What the current work says
+
+| Finding | What it means | Evidence |
 | --- | --- | --- |
-| **Overview** | Start with the question and the latest computed results. | [Research guide](research/README.md) |
-| **Atlas** | Compare relief, crust, magnetism and geology; follow meteorites to their proposed source craters. | [Data guide & provenance](research/data/README.md) |
-| **Results** | Explore experiments, regional comparisons and downloadable outputs. | [Executed experiments](research/EXECUTED_EXPERIMENTS.md) |
-| **Hypotheses** | Compare four origin families and distinguish formation, alteration, magnetization and ejection ages. | [Comparison & chronology](research/COMPARISON.md) |
-| **Sources** | Search the literature and inspect reading notes, methods and source links. | [Search & reading method](research/METHOD.md) |
+| The orbital magnetic contrast persists across the tested hemisphere definitions. | The contrast needs explaining; its amplitude is not directly the ancient dynamo-intensity ratio. | [Current synthesis](research/STATE_OF_EVIDENCE.md) |
+| The inferred south-minus-north crustal thickness ranges from **6.6 to 41.4 km** across the declared density scenarios. | The sign is stable in those scenarios, while the size depends strongly on density. | [Six-test report](research/DISCRIMINATING_TESTS.md) |
+| Slow acquisition can strongly cancel a reversing field; rapid cooling can preserve individual bodies. | Mineral properties, cooling duration, source geometry and emplacement timing must be considered together. | [Cooling and reversals](research/RAPID_BODIES.md) |
+| Distinct reversal histories can produce **identical synthetic orbital fields** when acquisition clocks are free. | The declared model cannot uniquely recover reversal timing without independent constraints on acquisition. No Martian transition date is inferred. | [Identifiability test](research/REVERSAL_IDENTIFIABILITY.md) |
 
-### From a meteorite to a place on Mars
+Some useful results are limits on the proposed tests themselves. [Arabia matching](research/ARABIA_PREFLIGHT.md) and [boundary transects](research/BOUNDARY_WALK.md) fail their spatial-support screens. [Source depth versus surface age](research/DEPTH_AGE.md) has no supported association under its declared rule. [Density and remanence](research/DENSITY_REMANENCE.md) are compatible under some material assumptions, but the calculation does not measure deep-crust mineral abundance or porosity.
 
-![The meteorite atlas with Karratha selected, showing proposed source craters, the dichotomy boundary and a linked interpretation panel](docs/images/meteorite-atlas.png)
+The [research guide](research/README.md) keeps every question, report and output together. The [change log](CHANGELOG.md) records this snapshot, including the corrections.
 
-**94 sample records · 10 ejection groups · 16 candidate craters.** Select a sample or crater to follow its published source proposals. Mapped locations are candidates, not confirmed origins; shared ejection groups do not represent independent samples of Mars. [Data and references](research/data/meteorites.json)
+## How the evidence is built
 
-*Both images are captures of the working website. [Visual credits](docs/ASSETS.md)*
+```mermaid
+flowchart LR
+    A[Attributed inputs] --> B[Declared protocol]
+    B --> C[Original calculations]
+    C --> D[Saved tables and figures]
+    D --> E[Analytic checks and audit]
+    E --> F[Qualified conclusion]
+    E -->|Correction needed| C
+```
 
-## What the tests show
+Protocols, source ledgers and manifests accompany the calculations. Numerical checks establish implementation behavior; they do not prove a geological history. [Scientific method](docs/SCIENTIFIC_METHOD.md) explains the distinction between measurements, model outputs and interpretations.
 
-Our completed calculations currently establish methodological limits, rather than a unique explanation for the dichotomy:
+## Run the website
 
-- **A good local prediction can fail elsewhere.** Map-prediction performance changes when whole regions are held out instead of scattered cells.
-- **Different magnetic histories can leave the same record.** A synthetic reheating experiment illustrates how rock recording can erase distinctions between field histories.
-- **A clean laboratory fit can be misleading.** A contaminated control can produce tightly aligned demagnetization segments; fit quality alone cannot establish ancient remanence.
-
-Each result links its assumptions, numerical checks and outputs in the [experiment report](research/EXECUTED_EXPERIMENTS.md). Explore the [regional study](research/PILOT_STUDY.md), [thermal experiment](research/THERMAL_EXPERIMENT.md) and [planned dynamo tests](research/DYNAMO_TESTS.md) for the next questions.
-
-### Three new physical studies
-
-The [physical studies report](research/DICHOTOMY_PHYSICS.md) adds executable calculations and an interactive workbench at `/research/physics`:
-
-- **Composition & buoyancy:** separate thickness and density in the support budget of four published crust maps, then explore 180 layered-column cases.
-- **Thermal amplification:** test whether a slightly faster hemispheric mode actually dominates other spatial scales. Initial conditions remain decisive in this linear benchmark.
-- **Earlier boundaries:** explore conditional elastic unloading of four MOLA profiles. A jump between slope features must not be interpreted as tectonic displacement.
-
-The [paleomagnetism learning guide](research/PALEOMAGNETISM_FOUNDATIONS.md) connects recording physics to our laboratory controls. Its synthetic Arai example gives three perfect lines but different apparent fields from one known input field.
-
-[Protocol](research/physics/protocol.json) · [Source assessments](research/physics/sources.json) · [Reproducible outputs](research/physics/manifest.json). These bounded studies do not yet identify a unique origin of the dichotomy.
-
-## Run locally
-
-Requires **Python 3.11+** and Git. The repository includes the research snapshot needed to browse the site; no raw scientific archive download is needed.
+**Requires Python 3.11+ and Git.** Saved reports, figures and the browsing snapshot are included. Opening the website does not rerun the scientific models or require MCD.
 
 ```bash
 git clone https://github.com/charlottecrocicchia-netizen/mars-wind-lab.git
@@ -75,22 +74,54 @@ python -m pip install -e .
 python -m uvicorn marswind.server:app --app-dir src --host 127.0.0.1 --port 8765
 ```
 
-Open **[localhost:8765](http://127.0.0.1:8765/)**. On an already configured Mac, double-click `Launch Mars Wind.command` to start the same site. On Windows, replace the activation command with `.venv\Scripts\Activate.ps1` in PowerShell.
+Open **[http://127.0.0.1:8765](http://127.0.0.1:8765/)** in your browser. This is a local address on your own computer; GitHub hosts the repository, not a public deployment of this application. Keep the terminal open and press **Ctrl+C** to stop.
 
-The website runs on your computer. GitHub hosts the code, notes and saved outputs; GitHub Actions runs the scientific and browser-data checks.
+On Windows, use `py -3 -m venv .venv` and `.venv\Scripts\Activate.ps1` in PowerShell. On a configured Mac, double-click [Launch Mars Wind.command](Launch%20Mars%20Wind.command).
 
-## Methods & sources
+The four website sections are **Questions & answers → How we work → Results → Explore**. Explore contains the atlas, source catalogue, workshops and five reading dossiers.
 
-The site, research notes and repository documentation are in English. Calculations are independently implemented from published methods and permitted inputs, with analytic benchmarks and sensitivity checks where applicable.
+<details>
+<summary><strong>Preview the meteorite atlas</strong></summary>
 
-- [Research plan](research/RESEARCH_PLAN.md) and [critical literature review](research/DICHOTOMY_REVIEW.md)
-- [Source policy](docs/SOURCE_POLICY.md), [dataset manifest](research/data/manifest.json) and [regional-study provenance](research/pilot/sources.json)
-- [Development, reproduction & checks](docs/DEVELOPMENT.md)
+![The meteorite atlas with Karratha selected and published candidate source craters](docs/images/meteorite-atlas.png)
 
-The active literature selection contains **1,823 records**, including **76 core references** and **70 consulted beyond metadata**. These counts describe the current selection, not an exhaustive review. Research notes prepared with AI assistance record reading depth and uncertainty.
+The atlas links sample records, event ages, ejection groups and proposed source craters. Candidate locations remain hypotheses; members of one ejection group are not independent samples of the planet. [Records and references](research/data/meteorites.json) · [Visual credits](docs/ASSETS.md)
 
-## Credits & license
+</details>
 
-Created by **Charlotte Crocicchia**. Original code is released under the [MIT license](LICENSE). External datasets and visual assets retain their own attribution and terms; see the [data guide](research/data/README.md), [visual credits](docs/ASSETS.md) and [Plotly license](web/PLOTLY-LICENSE.txt).
+## Reproduce and contribute
 
-This is an independent personal research project, with no institutional endorsement.
+For the local checks and page renderers:
+
+```bash
+python -m pip install -e '.[test,research,observations]'
+python -m pytest -q -m 'not integration'
+node --test tests/*.test.mjs
+python scripts/research/render_site.py
+python scripts/research/render_docs.py
+```
+
+Node.js is needed for the JavaScript checks; CI uses version 22. The [workflow](.github/workflows/tests.yml) tests Python 3.11 and 3.14. Six optional historical integration tests require a separately authorized MCD installation and are excluded from the standard run.
+
+**Browsing, rendering and recomputing are different operations.** Full gravity, thermal and spatial builds require the permitted scientific inputs listed in [Development](docs/DEVELOPMENT.md). Large raw archives remain outside Git. A saved output or a passing unit test does not mean a fresh clone can rerun every full-data analysis without those inputs.
+
+See [Contributing](CONTRIBUTING.md) for corrections, reproducible bug reports and scientific changes. The [roadmap](docs/ROADMAP.md) separates completed work from possible next investigations.
+
+## Repository map
+
+| Path | Purpose |
+| --- | --- |
+| [research/](research/README.md) | Research reports, protocols, source records and numerical outputs |
+| [src/marswind/](src/marswind/) | Original analysis modules and the local web server |
+| [scripts/](scripts/) | Numerical builders, exports and page renderers |
+| [web/](web/) | Saved website, interactive tools and generated reading pages |
+| [tests/](tests/) | Analytic, synthetic, provenance, navigation and browser-data checks |
+| [docs/](docs/README.md) | Usage, methods, reproduction, validation and source policy |
+
+The repository name **Mars Wind Lab** comes from an earlier atmospheric phase. The active website focuses on the dichotomy and magnetic record. Historical atmospheric modules remain documented separately; the website no longer invokes them.
+
+## Attribution and reuse
+
+Created by **Charlotte Crocicchia** as an independent personal research project. Project-authored code is [MIT licensed](LICENSE). External datasets and assets retain their own terms and attribution; the code license does not relicense them. See the [source policy](docs/SOURCE_POLICY.md), [data guide](research/data/README.md) and [visual credits](docs/ASSETS.md).
+
+Use [CITATION.cff](CITATION.cff) for repository attribution, include the commit used, and cite the original scientific sources for their measurements and published methods. The literature inventory records reading depth; inclusion is not an endorsement or a completed methodological review.

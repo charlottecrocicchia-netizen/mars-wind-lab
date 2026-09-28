@@ -1,0 +1,102 @@
+{
+  "scope": "Synthetic controls and saved-run convergence inspection, not replacement Mars results.",
+  "reversal_control": {
+    "kernel": "Uniform acquisition over 800 Myr; identical kernel for both field models",
+    "mean_chron_myr": 0.67,
+    "periodic_phases": 16,
+    "poisson_realizations": 512,
+    "periodic_median_fraction": 2.4999999999863605e-05,
+    "poisson_median_fraction": 0.018557232924043168,
+    "poisson_q05_q95": [
+      0.0027542265359167947,
+      0.054288770285623185
+    ],
+    "poisson_rms": 0.028243032790615238,
+    "analytic_poisson_rms": 0.028933532395388574,
+    "limit": "Sensitivity demonstration; not a reproduction of Steele et al. or a rerun of the accepted thermal ensemble."
+  },
+  "filter_control": {
+    "input_degree": 50,
+    "true_relief_coefficient_m": 10.0,
+    "requested_filter_gain_at_degree_50": 0.5,
+    "recovered_gain": 0.500000000001921,
+    "iterations": 1,
+    "last_change_m": 4.405364961712621e-13,
+    "note": "Before the 28 September correction the iteration undid the filter (gain 1 - (1 - taper)^(n + 1)); the regularised scheme now applies the filter to the whole linear solution."
+  },
+  "reference_shell_control": {
+    "degree": 3,
+    "order": 1,
+    "shell_thickness_km": 50.0,
+    "density_harmonic_coefficient_kg_m3": 100.0,
+    "analytic_exterior_coefficient": 0.00015411510911329457,
+    "relief_only_construction_coefficient": 0.0,
+    "corrected_shell_plus_relief_coefficient": 0.0001541151091132944,
+    "relative_error_vs_analytic": 1.0552523163272156e-15,
+    "limit": "The relief-only value documents the original omission. The corrected construction includes shell_potential and is checked against the independent radial integral."
+  },
+  "basal_endpoint_control": {
+    "declared_present_mw_m2": 15.0,
+    "early_mw_m2": 60.0,
+    "decay_gyr": 3.0,
+    "actual_at_4_5_gyr_mw_m2": 15.0
+  },
+  "saved_inversion_convergence": [
+    {
+      "id": "equal_2900",
+      "iterations": 17,
+      "final_update_norm_m": null,
+      "last_change_m": 0.712834,
+      "converged": true,
+      "unfiltered_data_misfit_m": 2825.152028
+    },
+    {
+      "id": "goossens_sabaka",
+      "iterations": 15,
+      "final_update_norm_m": null,
+      "last_change_m": 0.613093,
+      "converged": true,
+      "unfiltered_data_misfit_m": 1195.379814
+    },
+    {
+      "id": "kim_south_lighter",
+      "iterations": 21,
+      "final_update_norm_m": null,
+      "last_change_m": 0.918377,
+      "converged": true,
+      "unfiltered_data_misfit_m": 1780.720316
+    },
+    {
+      "id": "kim_south_denser",
+      "iterations": 22,
+      "final_update_norm_m": null,
+      "last_change_m": 0.76557,
+      "converged": true,
+      "unfiltered_data_misfit_m": 3597.734325
+    },
+    {
+      "id": "goossens_sabaka_mantle_3500",
+      "iterations": 14,
+      "final_update_norm_m": null,
+      "last_change_m": 0.636554,
+      "converged": true,
+      "unfiltered_data_misfit_m": 1033.141484
+    },
+    {
+      "id": "equal_2900_mantle_3500",
+      "iterations": 15,
+      "final_update_norm_m": null,
+      "last_change_m": 0.692051,
+      "converged": true,
+      "unfiltered_data_misfit_m": 2083.879223
+    }
+  ],
+  "inspected_files_sha256": {
+    "src/marswind/crustinversion.py": "80ddccf9cbe9a8e664375fac46ac890cf4b1851773382abebb942ff128d7717a",
+    "src/marswind/crusthistory.py": "db0aa62958b470c36f88638c1661c98ca8f3b64048f48e13434451e2841d9e5b",
+    "src/marswind/recording.py": "d8646f46ac7f9e1b84bc26e5834f64c31de222358adce728c049f4e28dfdec9e",
+    "scripts/discriminating/build.py": "3da2837bc78bcff88a08cc9530c4793442fa9b9d25d1c59ca176cf9096723f1c",
+    "research/DISCRIMINATING_TESTS.md": "7a034aa17dacdece2251e63330727b39bdc1a60a8a8e8791d6527419308ba798",
+    "research/discriminating/crust_inversion.json": "c4b2e03fc39ea43100beeaf908e76fb8b516b9b83e0c3db8f94bd2c2f17a8902"
+  }
+}

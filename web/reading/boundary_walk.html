@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Boundary transects and the 23 northern cells — Mars Dichotomy</title><link rel="stylesheet" href="/assets/research.css?v=design1"><link rel="stylesheet" href="/assets/workspace.css?v=20260927-design"></head><body class="workspace">
+<a class="skip" href="#article">Skip to the article</a><header class="workspace-header"><a href="/" class="wordmark"><i></i><span>Martian dichotomy<small>CHARLOTTE CROCICCHIA</small></span></a><nav aria-label="Main navigation" lang="en"><a href="/">Questions &amp; answers</a><a href="/research/method">How we work</a><a href="/research/tests">Results</a><a href="/research/explore" aria-current="page">Explore</a></nav></header>
+<main class="reading-layout"><aside class="reading-nav" aria-label="Reading navigation"><p class="eyebrow">FIVE READING DOSSIERS</p><a href="/research/dossiers/science">Scientific context</a><a href="/research/dossiers/literature">Literature method</a><a href="/research/dossiers/experiments">Earlier experiments</a><a href="/research/dossiers/interdisciplinary">Interdisciplinary review</a><a href="/research/dossiers/audit" aria-current="page">Audit and current evidence</a></aside><article class="prose" id="article"><div class="collection-context"><p>Current technical reference</p><a href="/research/dossiers/audit">← Audit and current evidence</a><span> · </span><a href="/research/tests">Current results →</a></div><h1 id="boundary-transects-and-the-23-northern-cells">Boundary transects and the 23 northern cells</h1>
+<p><strong>Status: calculation completed; insufficient spatial support for the declared inference.</strong> The numerical contrasts below are descriptive. They neither validate an archive explanation nor establish a difference in the ancient field.</p>
+<h2 id="why">Why</h2>
+<p>The proposed comparison asks whether the magnetic amplitude changes across the dichotomy boundary when both sampled surfaces are Noachian, and whether that change exceeds changes across two lines displaced into the south. Pairing across a line supplies a geometric correspondence; it does not guarantee enough old terrain, balance in crustal properties, or independent spatial blocks.</p>
+<h2 id="how">How</h2>
+<p>The <a href="/research/files/followup/boundary_walk/protocol.json">protocol</a> was declared locally on 2026-09-28, before this calculation's geology selection and magnetic evaluation. Earlier project results were already known; this was not a historically blind or externally preregistered discovery. The geometry and null-gate records precede the field evaluation in the saved run.</p>
+<p>We retain all <strong>1,466 distinct vertices</strong> of the supplied Andrews-Hanna polyline; its 1,467th row repeats the first. Great-circle segments give a length of <strong>24,043 km</strong>. Each station represents half its preceding and following segment lengths, so dense vertices do not automatically receive greater aggregate weight. Tangents use points 100 km before and after each station; spherical normals determine paired locations at ±200, ±400 and ±600 km. The primary distance is ±200 km. The field is evaluated directly from degree-134 Langlais coefficients at 150 km above the model's 3,393.5 km reference sphere; 400 km is a sensitivity. Geodesic distances use a 3,389.5 km sphere.</p>
+<p>Geology comes from direct point inclusion in authorized USGS SIM 3292 polygons. Ambiguous or unassigned points and mixed-period units are excluded. The main selection requires both endpoints to be pure Noachian; this can still pair different Noachian epochs. A stricter sensitivity requires equal epoch rank. Undivided Noachian and Middle Noachian share the pre-existing rank 2 convention, so this is still not an exact age match. Boundary side is checked against a 0.25° mask. Neither sampling interval adds observational resolution.</p>
+<p>Control lines shift stations 500 and 1,000 km along the original southern normal, then recompute their own tangents. Each control's center and both endpoints must be south of the original boundary and Noachian. Both displaced lines fold in the longitude–latitude diagnostic. Their local normals and overlapping source footprints therefore require caution; these are not automatically interchangeable realizations of a null boundary.</p>
+<p>The observable is <strong>Δ = log(1 + |B south| / 1 nT) − log(1 + |B north| / 1 nT)</strong>. Positive values mean stronger modeled amplitude on the southern endpoint. The original curve is tiled by 24 blocks of about 1001.8 km. A block must contain at least 200 km of eligible station weights. The main statistic weights stations by represented arc within each retained block, then weights the block means equally. Blocks shifted by half a block are a declared sensitivity. The true-minus-control contrasts use the <strong>intersection of eligible stations on all three lines</strong>.</p>
+<h2 id="result">Result</h2>
+<p>At ±200 km the true line has <strong>120 eligible pairs</strong>, representing 1834 km of station weights, but only <strong>3 adequately covered blocks</strong>. Those blocks actually contain 92 pairs and 1400 km of weights. Requiring equal Noachian epoch rank reduces the true-line selection to 69 pairs and one retained block.</p>
+<table>
+<thead>
+<tr>
+<th>Comparison at 150 km, ±200 km</th>
+<th style="text-align: right;">Eligible pairs</th>
+<th style="text-align: right;">Retained blocks</th>
+<th style="text-align: right;">Equal-block mean Δ</th>
+<th style="text-align: right;">All-eligible arc mean Δ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>True boundary</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-0.099</td>
+<td style="text-align: right;">-0.205</td>
+</tr>
+<tr>
+<td>Shifted 500 km</td>
+<td style="text-align: right;">646</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.285</td>
+<td style="text-align: right;">0.355</td>
+</tr>
+<tr>
+<td>Shifted 1,000 km</td>
+<td style="text-align: right;">658</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">-0.070</td>
+<td style="text-align: right;">-0.183</td>
+</tr>
+<tr>
+<td>True minus 500 km, common stations</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">Not estimable</td>
+<td style="text-align: right;">-0.551</td>
+</tr>
+<tr>
+<td>True minus 1,000 km, common stations</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">Not estimable</td>
+<td style="text-align: right;">-0.147</td>
+</tr>
+</tbody>
+</table>
+<p>The two stand-alone control means use much broader geographical support than the true-line mean. Comparing those three means directly would not test boundary specificity. On common support, only <strong>29 stations</strong> remain, with <strong>399 km</strong> of eligible station weights scattered across blocks. None of those blocks passes the declared 200 km coverage threshold. The arc-weighted control differences are reported for inspection, but the primary block comparison is not estimable.</p>
+<p><img alt="Boundary geometry and the supported primary block contrasts" src="/research/files/followup/boundary_walk/boundary_walk.png" /></p>
+<p><a href="/research/files/followup/boundary_walk/boundary_walk.svg">Download the figure as SVG</a>. Dots on the map mark centers with eligible ±200 km pairs; they are not individual spacecraft observations. No control-difference points appear in the lower panel because no common-support block qualifies.</p>
+<h3 id="sensitivity-to-distance-epoch-and-altitude">Sensitivity to distance, epoch and altitude</h3>
+<table>
+<thead>
+<tr>
+<th>Altitude (km)</th>
+<th>Age selection</th>
+<th style="text-align: right;">Distance each side (km)</th>
+<th style="text-align: right;">True-line pairs</th>
+<th style="text-align: right;">Retained blocks</th>
+<th style="text-align: right;">Equal-block mean Δ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>150</td>
+<td>Both Noachian</td>
+<td style="text-align: right;">±200</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-0.099</td>
+</tr>
+<tr>
+<td>150</td>
+<td>Both Noachian</td>
+<td style="text-align: right;">±400</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.605</td>
+</tr>
+<tr>
+<td>150</td>
+<td>Both Noachian</td>
+<td style="text-align: right;">±600</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.420</td>
+</tr>
+<tr>
+<td>150</td>
+<td>Same epoch rank</td>
+<td style="text-align: right;">±200</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.095</td>
+</tr>
+<tr>
+<td>150</td>
+<td>Same epoch rank</td>
+<td style="text-align: right;">±400</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">Not estimable</td>
+</tr>
+<tr>
+<td>150</td>
+<td>Same epoch rank</td>
+<td style="text-align: right;">±600</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">Not estimable</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Both Noachian</td>
+<td style="text-align: right;">±200</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">-0.392</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Both Noachian</td>
+<td style="text-align: right;">±400</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.601</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Both Noachian</td>
+<td style="text-align: right;">±600</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.115</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Same epoch rank</td>
+<td style="text-align: right;">±200</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.038</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Same epoch rank</td>
+<td style="text-align: right;">±400</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">Not estimable</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Same epoch rank</td>
+<td style="text-align: right;">±600</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">Not estimable</td>
+</tr>
+</tbody>
+</table>
+<p>Changing distance changes the geographical population and can change the sign. These rows are not repeated estimates of one global effect. A half-block displacement leaves four main-selection blocks instead of three at ±200 km, with Δ = −0.109; the common-support comparison still has zero admissible blocks. These declared sensitivities do not repair the inferential support.</p>
+<h2 id="verdict">Verdict</h2>
+<p><strong>Not decisive.</strong> The small supported subset has no uniform positive step: its three primary block contrasts are approximately +0.828, −0.137 and −0.989. This does not establish absence of a step along the whole boundary. The common-support negative-control comparison cannot be estimated under the frozen block rule. Consequently, this design neither requires a hemispheric field difference nor demonstrates that preservation alone suffices.</p>
+<p>The protocol requires at least eight supported blocks before synthetic calibration. All three primary cases fail that prerequisite (3, 0 and 0 blocks), so the spatial Gaussian null simulations were <strong>not run for those cases</strong>. The saved <a href="/research/files/followup/boundary_walk/synthetic_null.json">null-gate record</a> states this explicitly. Unit checks separately confirm that the implementation detects invalid independent sign flips when all blocks share the same signal.</p>
+<p>The CSV includes <code>reference_sign_flip_tail</code> as a computational diagnostic under independent block-sign invariance. It is <strong>not a calibrated scientific p-value</strong>. This distinction also applies to small tail fractions on a displaced line: that line was outside the primary calibration scope, has different support, and folds. A nominal 1,000 km block label does not establish the required joint symmetry. This follows the exchangeability and sign-flipping requirements described by <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4010955/">Winkler et al. (2014)</a>.</p>
+<h2 id="regional-decomposition-of-the-23-cells">Regional decomposition of the 23 cells</h2>
+<p>This auxiliary calculation retains the exact old atlas cells and area weights. The four geographical boxes were declared from the proposed groups; they are descriptive labels rather than independently mapped provinces. All fields here are at 150 km. Both kinds of mean use cosine-latitude area weights. The share column decomposes the total weighted log(1 + |B| / 1 nT), not magnetic energy or a linear source contribution.</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th style="text-align: right;">Cells</th>
+<th style="text-align: right;">Arithmetic mean (nT)</th>
+<th style="text-align: right;">Back-transformed log mean (nT)</th>
+<th style="text-align: right;">Share of weighted log total</th>
+<th style="text-align: right;">Distance proxy min / median (km)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xanthe–Chryse</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">78.9</td>
+<td style="text-align: right;">63.3</td>
+<td style="text-align: right;">65.6%</td>
+<td style="text-align: right;">236 / 544</td>
+</tr>
+<tr>
+<td>Cimmeria margin</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">57.2</td>
+<td style="text-align: right;">50.3</td>
+<td style="text-align: right;">22.1%</td>
+<td style="text-align: right;">118 / 166</td>
+</tr>
+<tr>
+<td>Arabia margin</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">79.8</td>
+<td style="text-align: right;">79.8</td>
+<td style="text-align: right;">9.4%</td>
+<td style="text-align: right;">246 / 325</td>
+</tr>
+<tr>
+<td>Tempe</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5.1</td>
+<td style="text-align: right;">5.1</td>
+<td style="text-align: right;">2.9%</td>
+<td style="text-align: right;">2625 / 2648</td>
+</tr>
+<tr>
+<td>All 23</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">69.3</td>
+<td style="text-align: right;">52.5</td>
+<td style="text-align: right;">100.0%</td>
+<td style="text-align: right;">118 / 424</td>
+</tr>
+</tbody>
+</table>
+<p>The original Test 1 statistic is <strong>52.5 nT after back-transforming the mean logarithm</strong>, while the arithmetic mean is <strong>69.3 nT</strong>. Xanthe–Chryse supplies 14 of the 23 cells and 65.6% of the weighted logarithmic total; adding Cimmeria raises this share to 87.7%. The aggregate similarity with southern Early Noachian terrain therefore does not establish a representative northern equivalence.</p>
+<p>The distance proxy is the great-circle distance to the nearest <strong>southern 2° atlas cell center with |B| ≥ 100 nT at 150 km</strong>. For Cimmeria its minimum is 118 km and median 166 km. This thresholded coarse-grid proxy neither verifies nor rules out a physical anomaly within 100 km. An orbital field contains contributions from neighboring sources, but these distances cannot establish that the five cells are contaminated by southern sources. Source separation would need its own forward model and uncertainty analysis. The <a href="/research/files/followup/boundary_walk/regional_23_cells.csv">individual-cell export</a> and <a href="/research/files/followup/boundary_walk/regional_23_summary.csv">regional summary</a> include both 150 and 400 km.</p>
+<h2 id="limits-and-source-provenance">Limits and source provenance</h2>
+<p>Noachian surface classification does not control magnetic acquisition time, buried lithology, source depth, thermal alteration or lateral field contributions. This is a comparison of one published magnetic model, without a propagated coefficient covariance or spacecraft-error model. The degree-134 model's reported roughly 160 km surface resolution is not a measured correlation length; upward continuation further smooths the signal. See <a href="https://doi.org/10.1029/2018JE005854">Langlais et al. (2019)</a>. The two shifted curves and the stricter age selection do not turn this study into a causal experiment.</p>
+<p>Inputs reuse the already authorized project copies: the boundary from the <a href="https://doi.org/10.1029/2022JE007298">Wieczorek et al. (2022) crustal archive</a>, geological units from <a href="https://doi.org/10.3133/sim3292">Tanaka et al. (2014), USGS SIM 3292</a>, Langlais model coefficients, and the existing atlas and 23-cell ledger. Their original attributions and reuse terms remain in the project's source policy and atlas manifest. No new external dataset, article figure or third-party implementation was incorporated. The frozen input bundle also fingerprints MOLA, but this calculation does not use elevation as a covariate.</p>
+<p>Reading depth: existing archive documentation and numerical files; the Langlais indexed abstract/model-resolution description; and selected Winkler method passages on exchangeability and sign symmetry. This is not a full literature review or an established novelty claim. These scripts and the checks are an internal implementation review, not independent peer review. The previous <a href="/assets/reading/arabia_preflight.html">Arabia preflight</a> and its numerical outputs remain unchanged.</p>
+<h2 id="reproduce">Reproduce</h2>
+<p>Run from the repository root with the permitted source files and scientific environment installed:</p>
+<pre><code class="language-bash">python scripts/followup/boundary_walk.py
+python scripts/followup/render_boundary_walk.py
+python -m pytest -q tests/test_boundary_walk.py
+python scripts/research/render_site.py
+python scripts/research/render_docs.py
+</code></pre>
+<p>The builder validates input hashes, writes geometry and the calibration decision before evaluating the observed field, and saves 120 contrast configurations. The report renderer only reads these outputs. <a href="/research/files/followup/boundary_walk/manifest.json">Run manifest</a>, <a href="/research/files/followup/boundary_walk/geometry_and_eligibility.csv">geometry ledger</a>, <a href="/research/files/followup/boundary_walk/contrasts.csv">all contrasts</a>, <a href="/research/files/followup/boundary_walk/block_contrasts.csv">block contrasts</a>, <a href="/research/files/followup/boundary_walk/selected_field_values.csv">selected field values</a> and <a href="/research/files/followup/boundary_walk/summary.json">summary</a> allow the result to be inspected. Timestamps and hashes identify a saved local run; they do not provide independent proof of preregistration.</p><div class="reading-tools"><a href="/research/explore#dossiers">← Reading dossiers</a><a href="/research/files/BOUNDARY_WALK.md" download>Download Markdown ↓</a><a href="https://github.com/charlottecrocicchia-netizen/mars-wind-lab/blob/main/research/BOUNDARY_WALK.md">View on GitHub ↗</a></div></article></main>
+<footer><span>Living research notes · Check each article’s date, sources and limitations.</span><span>Project research notes assembled with AI assistance. Reading depth and outstanding checks are documented in the method.</span></footer></body></html>

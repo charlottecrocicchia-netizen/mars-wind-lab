@@ -1,0 +1,27 @@
+{
+  "evaluation_started_utc": "2026-09-28T20:38:10.295114+00:00",
+  "counterexample": {
+    "global_identifiability_fails_in_declared_class": true,
+    "max_relative_map_error": 1.7945634877455301e-13,
+    "max_absolute_map_error_nt": 2.602362769721367e-13,
+    "max_absolute_record_error": 1.1318168624541158e-12,
+    "realizations": 128,
+    "changing_activity_window_myr": [
+      0,
+      200
+    ],
+    "constant_activity_window_myr": [
+      0.0,
+      110.0
+    ]
+  },
+  "dated_control": {
+    "primary_power": 1.0,
+    "primary_max_false_positive": 0.0495,
+    "positive_control_passes": true,
+    "profile_equivalent_draws": 4000,
+    "profile_total_draws": 4000
+  },
+  "observed_mars_fit_executed": false,
+  "scope": "Synthetic prerequisite; failure of global identifiability only in the declared nuisance class."
+}

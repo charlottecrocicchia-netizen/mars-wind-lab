@@ -1,5 +1,7 @@
 # Search method and coverage
 
+**28 September supplement:** the [interdisciplinary review and source ledger](INTERDISCIPLINARY_SOURCES.md) document a separate targeted research pass. The historical catalog counts and procedures below remain unchanged; overlapping sources must not be counted twice.
+
 ## Question and scope
 
 Which observations distinguish possible **formation mechanisms** of the Martian hemispheric dichotomy from its **later modification**? The search also covers evidence needed to evaluate those observations: interior and magnetic inversions, meteorite preservation, geochronology, surface alteration and mission sampling.

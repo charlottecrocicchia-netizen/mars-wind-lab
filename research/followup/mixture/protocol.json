@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "declared_utc": "2026-09-28T19:51:38.617446+00:00",
+  "status": "Local declaration before the material-grid calculation, not external preregistration. Previous project outputs were already known.",
+  "question": "Under which declared material and volume assumptions can a low-density crust support a specified remanent magnetization?",
+  "input_sha256": {
+    "research/discriminating/amplitude.json": "b7a05335a08d58c1f683cddb209eb1970fea4e66f4657f55711ccf4875bae932",
+    "research/discriminating/crust_inversion.json": "c4b2e03fc39ea43100beeaf908e76fb8b516b9b83e0c3db8f94bd2c2f17a8902",
+    "research/followup/depth_age/correlations.csv": "fca362441dd4847a2be20717311ff10b2cb0bbb15734ae240edd2a9fd0485e5a",
+    "research/followup/depth_age/summary.json": "1f989a77b3cb8ea035df3f24e91d42bb3cd6562b64bf36c1a392681d7fd95533"
+  },
+  "density_targets_kg_m3": {
+    "North": {
+      "central": 2622,
+      "quoted_error": 42
+    },
+    "South": {
+      "central": 2492,
+      "quoted_error": 36
+    }
+  },
+  "density_offsets_in_quoted_error": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "density_uncertainty_rule": "Deterministic sensitivity bands; no Gaussian distribution, joint covariance, posterior or probability of feasibility is assumed.",
+  "matrix_density_kg_m3": [
+    2400,
+    2600,
+    2700,
+    2900,
+    3100
+  ],
+  "pore_density_kg_m3": [
+    0,
+    1000
+  ],
+  "carrier_density_kg_m3": 5180,
+  "carrier": "Magnetite only, nonmagnetic matrix and pores. Carrier fraction f is by solid volume inside the source; no other carriers or matrix remanence.",
+  "remanence_at_50_microtesla_a_m": [
+    5000,
+    10000
+  ],
+  "remanence_source": "Dunlop & Arkani-Hamed 2005, Table 3: SD magnetite TRM 5\u201310 kA/m at 50 microtesla. This is a domain-state scenario, not a measured Martian crust calibration. Saturation magnetization is not used.",
+  "acquisition_field_microtesla": [
+    5,
+    50
+  ],
+  "field_scaling": "Linear weak-field scaling to 5 microtesla is a declared approximation, not a new experimental calibration.",
+  "preservation_efficiency": [
+    0.1,
+    1.0
+  ],
+  "coherent_fraction": [
+    0.02,
+    0.1,
+    1.0
+  ],
+  "effective_carrier_remanence": "M50*(B/50)*preservation_efficiency; coherence multiplies once after acquisition. Efficiency 0.1 is a sensitivity, not a measured loss.",
+  "source_volume_fraction_q": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "volume_rule": "All material has the same matrix and porosity. Only fraction q of the density averaging volume contains magnetite; the remaining fraction is the same porous nonmagnetic matrix. Density is an arithmetic volume average, not a gravity sensitivity kernel. M_source is per bulk source volume, and M_whole_volume=q*M_source.",
+  "net_source_targets_a_m": [
+    1,
+    4,
+    20
+  ],
+  "porosity_caps": [
+    0,
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "solid_carrier_caps": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "primary_material_scenario": {
+    "matrix_density_kg_m3": 2900,
+    "pore_density_kg_m3": 0,
+    "q": 1.0,
+    "field_microtesla": 50,
+    "preservation_efficiency": 1.0,
+    "coherent_fraction": 1.0,
+    "porosity_cap": 0.2,
+    "solid_carrier_cap": 0.05
+  },
+  "equations": {
+    "density": "rho=(1-phi)*(rho_matrix+q*f*(rho_carrier-rho_matrix))+phi*rho_pore",
+    "source_magnetization": "M=(1-phi)*f*M_carrier*c",
+    "inverse": "b=M/(M_carrier*c); phi=(rho_matrix+q*b*(rho_carrier-rho_matrix)-rho)/(rho_matrix-rho_pore); f=b/(1-phi)"
+  },
+  "calculation": "Solve exact density and magnetization equations for every declared combination; report unconstrained candidates plus physical admissibility and cap screens. Compute exact attainable intervals over porosity and mineral caps, rather than relying on a coarse grid in f or phi.",
+  "application_to_tests_3_4": "Read q10/q50/q90 of three base cylinder geometries plus thick20_centered_after_poisson_cancellation_chron_0.67_myr. Apply already penalized target with c=1 only, to avoid a second cancellation penalty. These are volume-assumption illustrations, not co-located density measurements or independent data.",
+  "decision": "A combination fails if its candidate is unphysical or outside declared caps; a surviving combination establishes algebraic compatibility only. No universal rejection of low-density magnetic crust, mineral abundance inference, or geological probability from a sampled parameter fraction.",
+  "verification": [
+    "Forward/inverse mass and remanence conservation",
+    "Porosity-free endpoints and zero carrier",
+    "Independent linear-program optimization of attainable ranges",
+    "Known dimensional example and rejection of unphysical inputs",
+    "Exactly one application of coherence; volume averaging q"
+  ],
+  "limitations": [
+    "Hemispheric density and local/deep magnetic-source support are not established to coincide.",
+    "Porosity up to 30 percent at depth is a stress test, not demonstrated stable deep crust.",
+    "Matrix density, field strength, grain state, alteration and vector geometry remain uncertain.",
+    "Uncertainty endpoints for density and prior depth products do not define joint probability distributions."
+  ]
+}

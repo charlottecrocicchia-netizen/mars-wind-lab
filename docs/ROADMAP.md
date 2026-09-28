@@ -1,24 +1,32 @@
-# A personal research project around Mars
+# Research roadmap
 
-Mars Wind Lab is the atmosphere-and-acoustics part of Charlotte Crocicchia’s personal project. The aim is to build useful tools for exploring Mars, within a broader interest in its hemispheric dichotomy. The items below are proposed directions, not implemented features or established results.
+**Current status: 28 September 2026.** The [synthesis](../research/STATE_OF_EVIDENCE.md) is the starting point for results. This roadmap separates completed work from possible next investigations; it is not a list of promised discoveries.
 
-## A next testable question
+## Completed within declared scopes
 
-**At comparable climate states, how do atmospheric structures differ between selected northern-lowland and southern-highland sites?**
+- Six discriminating tests and the implementation corrections recorded in the audit.
+- Arabia matching prerequisites, boundary transects and a regional decomposition of the 23 northern Early Noachian cells.
+- Source depth versus surface age under declared block and uncertainty sensitivities.
+- Conditional density–remanence balances and attainable material intervals.
+- Single-slab recording and a stack in the instantaneous-recording limit, with correlated polarities.
+- A synthetic reversal-identifiability prerequisite and an ideal independently dated-sign control.
 
-A rigorous comparison must distinguish latitude, season, local solar time, altitude above the areoid and height above terrain. Comparing only two profiles can confound all of these effects. A study needs a defined site ensemble, documented topography and controls. This would investigate atmospheric environments; explaining the origin of the dichotomy requires other models and observations.
+See the [research index](../research/README.md) for reports and outputs. Failed support or identifiability gates remain results, not completed geological inferences.
 
-## Proposed steps
+## The next useful constraints
 
-1. Add site comparisons with explicit vertical references and MOLA topographic context.
-2. Extend dust/EUV scenarios and quantify sensitivity to climate variability.
-3. Retrieve TWINS observations with quality flags and compare quantities actually observable at the surface.
-4. Build propagation calculations for specified source–receiver geometries, with checks on approximations, gravity and frequency-dependent losses.
-5. Reconstruct global-mode conventions, frequencies and boundary conditions before calculating coupling.
-6. Confront explicit predictions with observations, uncertainty estimates and recovery tests.
+| Direction | What to constrain independently | Gate before a Mars interpretation |
+| --- | --- | --- |
+| Acquisition chronology | Source ages, cooling rates, remagnetization and age uncertainties | Recover rates under realistic time uncertainty, rather than a free recording clock |
+| Coupled source architecture | Finite body geometry, material volumes, mutual reheating and field at altitude | Verify energy/volume balances and synthetic recovery before inferring a crustal stack |
+| Density and mineralogy | Composition, pore survival, depth dependence and compatible seismic/gravity volumes | Test the same material volume against both magnetic and density observations |
+| Spatial comparisons | Better supported terrain contrasts at appropriate resolution | Pass common-support and spatial-null calibration before assigning significance |
+| Literature review | Full methods and model/data conventions behind key comparisons | Record what was actually read and reproduce the necessary operator before claiming equivalence |
 
-The project should be judged by questions it can answer, errors it can quantify and calculations another person can reproduce.
+A new public dataset or a more restrictive physical model may make a question testable. The present failures do not establish that public data are universally exhausted or that one remaining calculation can solve the dichotomy.
 
-## Dichotomy evidence and physical tests
+## Work deliberately left open
 
-The [evidence atlas](../research/README.md) adds a dated literature inventory, a selective synthesis and a meteorite-magnetism dossier. The [research programme](../research/RESEARCH_PLAN.md) prioritizes spatially fair magnetic comparisons, sample-record preservation, explicit chronology and seasonal atmospheric-loading corrections for gravity. These investigations are proposed; the required joint geological/magnetic dataset and inversions have not yet been implemented. The catalog's reading status and citation queue make outstanding review work explicit.
+No observed-map reversal transition is dated. No complete finite-source thermal stack is inverted. No unique crustal mineral abundance, porosity profile or dichotomy origin is inferred. Novelty of the proposed combinations remains unestablished.
+
+The original [follow-up protocols](../research/NEXT_TEST_PROTOCOLS.md) retain their execution notes. Broader [interdisciplinary proposals](../research/INTERDISCIPLINARY_TESTS.md) and the earlier [research programme](../research/RESEARCH_PLAN.md) remain background. The old [atmospheric roadmap](archive/ATMOSPHERIC_ROADMAP.md) is preserved separately from the active work.

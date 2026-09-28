@@ -24,14 +24,14 @@ The overview's strongest causal chains should therefore become **hypotheses with
 
 ## Next additions, in a practical order
 
-The first two deliverables are now available as a qualitative, sourced [comparison and chronology](/research/comparison). They are not new model fits.
+The first two deliverables are now available as a qualitative, sourced [comparison and chronology](COMPARISON.md). They are not new model fits.
 
 | Priority | Question and deliverable | Controls and readiness |
 |---|---|---|
 | 1 · Available: common evidence table | For northern impact, southern impact, internal growth and hybrid scenarios, record each published prediction, observable, epoch, uncertainty, shared input and a possible failure. | Start from the existing catalog. Use “not tested” where a prediction is absent; a missing prediction is not agreement. Do not assign probabilities without comparable simulations and a statistical model. |
 | 2 · Available: separate clocks | Build an event table distinguishing reservoir extraction, crystallization, shock, alteration, remanence and ejection. | Record sample/pairing and analytical uncertainty. An ancient grain is not a dated global boundary. The current selection transcribes a few cited factual ages and preserves uncertainty types; it does not import entire analytical tables. |
 
-The existing [thermal–magnetic protocol](TEST_PROTOCOL.md) remains the first physical study. This review strengthens its chronology and alternative explanations. See the [research programme](RESEARCH_PLAN.md) and [executed tests](/research/tests) for the current work.
+The existing [thermal–magnetic protocol](TEST_PROTOCOL.md) remains the first physical study. This review strengthens its chronology and alternative explanations. See the [research programme](RESEARCH_PLAN.md) and [executed tests](DISCRIMINATING_TESTS.md) for the current work.
 
 ## Mission context and remaining checks
 

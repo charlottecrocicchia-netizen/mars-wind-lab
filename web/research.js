@@ -54,6 +54,7 @@ async function loadLibrary(){
   const catalog=await catalogResponse.json();
   papers=catalog.filter(p=>!p.domains.some(domain=>domain.startsWith('Atmosphere')));
   byId('totalCount').textContent=papers.length.toLocaleString('en-US');byId('coreCount').textContent=papers.filter(p=>p.core).length;byId('readCount').textContent=papers.filter(p=>p.review_depth!=='metadata').length;
+  byId('catalogStats').hidden=false;
   // A discovery-topic label must not make an unrelated title match a keyword.
   for(const p of papers)p.searchText=normalize([p.title,...p.authors,p.doi,p.finding,p.dichotomy_use,p.limitation].join(' '));
   addOptions('topic',papers.flatMap(p=>p.domains));addOptions('kind',papers.map(p=>p.type),typeLabels);
